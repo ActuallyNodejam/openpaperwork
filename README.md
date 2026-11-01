@@ -134,7 +134,7 @@ OpenPaperwork is not affiliated with or endorsed by them.</sub>
 What you have goes in, a workflow runs and a script checks the file, and the checked file comes out.
 
 <p align="center">
-  <img src="docs/community-preview/assets/readme/flow-light.png" alt="Input, process, output. Input: what you have, here the Exempel Mätteknik folder with order-4471.pdf, prices-2026.xlsx and notes.txt, or nothing at all. Process: the invoice workflow, plus a line if you like; code builds the PDF and XML, the check fails on the missing company seat (Aktiebolagslagen 28 kap. 5 §), the agent adds it from the notes, and the Swedish invoice rules pass. Output: Faktura 2026-1187.pdf with its XML, beside your originals." width="880">
+  <img src="docs/community-preview/assets/readme/flow-light.png" alt="Input, process, output. Your files, a folder or nothing go into a workflow, where code builds the file and the model writes; a check against the published rule follows, and a fail goes back to the workflow with the reason. The file lands beside your originals." width="880">
 </p>
 
 <p align="center">
