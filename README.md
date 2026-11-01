@@ -33,6 +33,12 @@ and has a scripted check for it, and a fail goes back to the agent with the reas
 
 <p align="center"><sub>A real run in Claude Code on Claude Haiku: 72 seconds, pack check clean, 51 rules passed. Invented names and numbers.</sub></p>
 
+More than invoices: 91 standards, laws and style guides, from Swedish annual reports to IEEE papers.
+
+<p align="center">
+  <img src="docs/community-preview/assets/readme/more-light.png" alt="Fifteen pages the library's own scripts built from its starters: a German e-invoice, an NDA, a sales deck, UK board minutes, a US quotation, a Norwegian employment contract, an IEEE paper, a requirements specification, a budget sheet, a UK letter, a Swedish annual report, a service deck, a Finnish order confirmation, a Canadian offer letter and a cloud service agreement, and an open tile for what comes next." width="880">
+</p>
+
 ## Quickstart
 
 **One line.** In the folder that holds your notes, order or data:
