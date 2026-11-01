@@ -1,0 +1,18 @@
+{
+ "issuer": "es-reglamento-facturacion",
+ "version": "2026",
+ "link": "https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696",
+ "license": "Spanish legal and regulatory provisions are not objects of intellectual property (Ley de Propiedad Intelectual, Real Decreto Legislativo 1/1996, art. 13); notice licenses/einvoice-es-it-pl-official-texts.txt. Restated in our own words. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-10",
+ "status": "draft",
+ "title": "What a Spanish factura and factura rectificativa state",
+ "source": "Reglamento por el que se regulan las obligaciones de facturación (Real Decreto 1619/2012), BOE consolidated text, updated 31 March 2026 (Real Decreto 238/2026 changed arts. 8 to 10 from 20 April 2026; arts. 6 and 7 are as in force since 7 December 2023). Art. 6.1: the number and, where there is one, the series (a; a rectifying invoice in a series of its own, a 2.º), the date (b), both parties' full names (c), the seller's NIF and the recipient's for a supply made in Spain by a seller established there, for a reverse charge and for an exempt intra-EU supply (d), both addresses (e), what is supplied with the unit price without tax and any discount (f), the rate (g), the tax, stated apart (h), the date of the supply when it differs (i), a reference to the exemption (j), «inversión del sujeto pasivo» for a reverse charge (m). Art. 15.4: a rectifying invoice states the identifying data of the invoice it rectifies; art. 15.5: its amounts state the rectification itself, whatever its sign, or the amounts as they stand after it. Art. 6.5: the QR code and the words «VERI*FACTU» are for invoices issued by a system under Real Decreto 1007/2023, which invoicing software must meet before 1 January 2027 for corporate-tax payers and before 1 July 2027 for the other obligors (disposición final cuarta as amended by Real Decreto-ley 15/2025); this library is no such system. The NIF: Real Decreto 1065/2007 art. 19 and 20 and Orden EHA/451/2008 art. 2 (a letter, seven digits and a control character for an entity; the check character's formula was not read from an official text, so a mismatch only warns). Read 2026-10-09.",
+ "rules": [
+  {
+   "id": "ES-INVOICE",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "text": "The number, the series when there is one, the date, the seller's NIF (nine characters in a published form), both parties' names and addresses, the recipient's NIF for a supply in Spain, a reverse charge or an exempt intra-EU supply, each line's unit price and rate, the tax per rate, the date of the supply when it differs, the exemption's reference and «inversión del sujeto pasivo» for a reverse charge, on the page; a rectifying invoice has a series of its own and names the invoice it rectifies; the Facturae beside the page is class OR with its Corrective block, else OO."
+  }
+ ]
+}

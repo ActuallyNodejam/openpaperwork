@@ -1,0 +1,137 @@
+# Label and comment on pull requests whose description does not follow the pull
+# request template. It uses pull_request_target so it can write a label and a
+# comment on fork pull requests. That is only safe because this workflow checks
+# out nothing, runs no pull request code, uses no secrets and reads only the
+# pull request description and the template on the default branch. Do not add a
+# checkout, a script from the pull request, or a secret here.
+name: pr-standards
+
+on:
+  pull_request_target:
+    types: [opened, edited, synchronize, reopened]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-standards-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  check-compliance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    steps:
+      - name: Check PR template compliance
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7.1.0
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const login = pr.user.login;
+            const { owner, repo } = context.repo;
+            const base = context.payload.repository.default_branch;
+            const url = context.payload.repository.html_url;
+
+            if (login === 'github-actions[bot]' || login === 'dependabot[bot]') return;
+
+            async function readDefault(path) {
+              try {
+                const { data } = await github.rest.repos.getContent({ owner, repo, path, ref: base });
+                return Buffer.from(data.content, 'base64').toString();
+              } catch (e) {
+                return '';
+              }
+            }
+
+            const members = (await readDefault('.github/TEAM_MEMBERS'))
+              .split('\n').map(l => l.trim()).filter(l => l && !l.startsWith('#'));
+            if (members.map(m => m.toLowerCase()).includes(login.toLowerCase())) {
+              console.log(`Skipping: ${login} is a listed team member`);
+              return;
+            }
+            if (['OWNER', 'MEMBER'].includes(pr.author_association)) {
+              console.log(`Skipping: ${login} is ${pr.author_association}`);
+              return;
+            }
+
+            // The sections come from our own template, so the check follows the template.
+            const template = await readDefault('.github/pull_request_template.md');
+            const headings = [...template.matchAll(/^## (.+)$/gm)].map(m => m[1].trim());
+            const placeholder = new Set(template.split('\n').map(l => l.trim()).filter(Boolean));
+            const body = pr.body || '';
+            const issues = [];
+
+            if (headings.length === 0) {
+              console.log('No template headings found on the default branch; nothing to check.');
+              return;
+            }
+
+            // "Credit" and "AI use" may be "None"; every other section needs real words.
+            const short = new Set(['Credit', 'AI use']);
+            for (const heading of headings) {
+              const escaped = heading.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+              const match = body.match(new RegExp('^## ' + escaped + '\\s*$([\\s\\S]*?)(?=^## |(?![\\s\\S]))', 'm'));
+              if (!match) {
+                issues.push(`The "${heading}" section is missing.`);
+                continue;
+              }
+              const own = match[1].split('\n').map(l => l.trim()).filter(l => l && !placeholder.has(l)).join(' ');
+              const min = short.has(heading) ? 2 : 20;
+              if (own.length < min) {
+                issues.push(`The "${heading}" section is empty or still has only the template text.`);
+              }
+            }
+
+            // A fix links the issue it fixes. The template's own example line does not count.
+            const ownBody = body.split('\n').filter(l => !placeholder.has(l.trim())).join('\n');
+            const isFix = /^\s*fix|\bfix(es|ed)?\b|\bbug\b/i.test(pr.title);
+            const linksIssue = /(^|\s|\()#\d+\b|\/issues\/\d+/.test(ownBody);
+            const noIssue = isFix && !linksIssue;
+            if (noIssue) issues.push('A fix links the issue it fixes, for example "Fixes #123". Open the issue first if there is none.');
+
+            // needs:compliance is the template, needs:issue the missing link. Both close after 72 hours
+            // (close-waiting.yml), counted from the first time this comment was written.
+            const want = { 'needs:compliance': issues.length > (noIssue ? 1 : 0), 'needs:issue': noIssue };
+            const labels = pr.labels.map(l => l.name);
+            const marker = '<!-- pr-compliance -->';
+            const { data: comments } = await github.rest.issues.listComments({ owner, repo, issue_number: pr.number });
+            const existing = comments.find(c => c.body.includes(marker));
+            const template_url = `${url}/blob/${base}/.github/pull_request_template.md`;
+            const contributing_url = `${url}/blob/${base}/CONTRIBUTING.md`;
+
+            for (const [name, on] of Object.entries(want)) {
+              if (on && !labels.includes(name)) {
+                await github.rest.issues.addLabels({ owner, repo, issue_number: pr.number, labels: [name] });
+              } else if (!on && labels.includes(name)) {
+                try { await github.rest.issues.removeLabel({ owner, repo, issue_number: pr.number, name }); } catch (e) {}
+              }
+            }
+
+            if (issues.length > 0) {
+              const text = `${marker}
+            Thanks for the contribution. The description does not yet follow our [pull request template](${template_url}) and [contributing guide](${contributing_url}).
+
+            **What to change:**
+            ${issues.map(i => `- ${i}`).join('\n')}
+
+            Please edit the description. A maintainer will look again after that. If it still does not follow the template 72 hours after this comment, the pull request is closed; you can open it again once it does. If you think this was flagged incorrectly, tell a maintainer.`;
+              if (existing) {
+                await github.rest.issues.updateComment({ owner, repo, comment_id: existing.id, body: text });
+              } else {
+                await github.rest.issues.createComment({ owner, repo, issue_number: pr.number, body: text });
+              }
+              console.log(`PR #${pr.number} needs changes: ${issues.join(' ')}`);
+            } else if (existing) {
+              await github.rest.issues.deleteComment({ owner, repo, comment_id: existing.id });
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: pr.number,
+                body: 'Thanks for updating the description. It now follows the template.',
+              });
+              console.log(`PR #${pr.number} now follows the template`);
+            } else {
+              console.log(`PR #${pr.number} follows the template`);
+            }

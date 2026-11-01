@@ -1,0 +1,83 @@
+{
+  "issuer": "tyosopimuslaki",
+  "version": "2001-55",
+  "link": "https://www.finlex.fi/fi/lainsaadanto/2001/55",
+  "license": "Finnish law, not protected by copyright (tekijänoikeuslaki 9 §); restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Työsopimuslaki 1:4 § and 2:4 §: selvitys työnteon keskeisistä ehdoista",
+  "source": "Työsopimuslaki (55/2001), 1 luku 4 § and 2 luku 4 §, Finlex consolidated text through 412/2026 (in force 1 June 2026). Read 2026-10-09.",
+  "note": "A drafting check, not legal advice: the scripted rules read whether a particular is there, never whether a term is lawful.",
+  "rules": [
+    {
+      "id": "FI-01",
+      "grader": "script",
+      "text": "Items 1 to 8 are given within seven days of the start and 9 to 15 within a month; work abroad before departure.",
+      "source": "2:4 § 4 mom.",
+      "check": "employment_check.py EMPLOY-DATES"
+    },
+    {
+      "id": "FI-02",
+      "grader": "script",
+      "text": "The parties with their homes or places of business, the start, the place of work and the main duties.",
+      "source": "2:4 § 3 mom. 1, 2, 5, 6",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "FI-03",
+      "grader": "script",
+      "text": "A fixed term gives its end or estimated end and its ground, or that it was made without a justified reason (1 luku 3 § as amended by 412/2026).",
+      "source": "2:4 § 3 mom. 3",
+      "check": "employment_check.py EMPLOY-FI-TEMP"
+    },
+    {
+      "id": "FI-04",
+      "grader": "script",
+      "text": "A probation of at most six months, and in a fixed term at most half of it.",
+      "source": "2:4 § 3 mom. 4; 1:4 §",
+      "check": "employment_check.py EMPLOY-PROBATION"
+    },
+    {
+      "id": "FI-05",
+      "grader": "script",
+      "text": "The basis of the pay and the pay period.",
+      "source": "2:4 § 3 mom. 7",
+      "check": "employment_check.py EMPLOY-PAY"
+    },
+    {
+      "id": "FI-06",
+      "grader": "script",
+      "text": "The working time; for a variable working time when and how much work is needed and the days and hours work may be ordered without consent.",
+      "source": "2:4 § 3 mom. 8, 9",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "FI-07",
+      "grader": "script",
+      "text": "Agency work, training, annual leave, the notice period, the collective agreement, and the insurers of the pension and of accidents at work.",
+      "source": "2:4 § 3 mom. 10-15",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "FI-08",
+      "grader": "script",
+      "text": "Only items 4, 7, 8 and 11 to 15 may point to the law or the collective agreement.",
+      "source": "2:4 § 4 mom.",
+      "check": "employment_check.py EMPLOY-REFERENCE"
+    },
+    {
+      "id": "FI-09",
+      "grader": "script",
+      "text": "Work abroad for a month or more: the countries, length, currency, benefits and terms of return.",
+      "source": "2:4 § 3 mom. 16",
+      "check": "employment_check.py EMPLOY-ABROAD"
+    },
+    {
+      "id": "FI-10",
+      "grader": "script",
+      "text": "The statement is written in Finnish throughout, headings included.",
+      "source": "house rule for a Finnish document",
+      "check": "employment_check.py EMPLOY-LANG"
+    }
+  ]
+}

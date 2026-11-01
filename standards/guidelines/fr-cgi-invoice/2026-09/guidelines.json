@@ -1,0 +1,91 @@
+{
+ "issuer": "fr-cgi-invoice",
+ "version": "2026-09",
+ "link": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050811276",
+ "license": "Licence Ouverte / Open Licence 2.0 (Etalab), as Légifrance and impots.gouv.fr state for their contents; notice licenses/fr-official-texts-etalab-2.0.txt. The mentions are restated in our own words; the fixed wordings the texts give are quoted. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "What a French seller's invoice and credit note must say",
+ "source": "Code général des impôts, annexe II, article 242 nonies A (Légifrance LEGIARTI000050811276), as it applies to invoices issued from 1 September 2026 (décret n° 2022-1299 as amended by décret n° 2024-266); CGI article 289 I-5 for a credit note; Code de commerce L441-9, L441-10 II and D441-5; BOFiP BOI-TVA-DECLA-30-20-20-20 §220 and BOI-TVA-DECLA-30-20-20-30; service-public.fr F31808 and F23211; the calendar from impots.gouv.fr (reception by every company from 1 September 2026, issuance by large and mid-size companies from 1 September 2026, by PME and micro-entreprises from 1 September 2027). All read 2026-10-09. VAT law moves into the Code des impositions sur les biens et services on 1 January 2027 (ordonnance n° 2025-1247 as amended by ordonnance n° 2026-671; BOFiP BOI-RES-TVA-000253-20261007); invoices may cite the CGI until 30 June 2028 (BOFiP BOI-RES-TVA-000253), and L441-9 and L441-10 show versions ending 1 January 2027 with no successor text yet.",
+ "rules": [
+  {
+   "id": "FR-SELLER",
+   "grader": "script",
+   "script": "fr_invoice_check.py",
+   "text": "The seller's name, SIREN (nine digits whose check digit holds), legal form, and for a company registered at the RCS its share capital and RCS with the register's city, and its VAT number, are on the page; the SIREN is BT-30 in the XML."
+  },
+  {
+   "id": "FR-BUYER",
+   "grader": "script",
+   "script": "fr_invoice_check.py",
+   "text": "The buyer's name and address, a French buyer's SIREN (from 1 September 2026) and its VAT number when the XML has one are on the page; the SIREN is BT-47 in the XML."
+  },
+  {
+   "id": "FR-PAYMENT",
+   "grader": "script",
+   "script": "fr_invoice_check.py",
+   "text": "The due date, the late-payment penalty rate, the 40 euro indemnity for recovery costs and the early-payment discount or its absence are on the page, and as the notes PMD, PMT and AAB in the XML."
+  },
+  {
+   "id": "FR-MENTIONS",
+   "grader": "script",
+   "script": "fr_invoice_check.py",
+   "text": "The nature of the operation (goods, services or both), the option for VAT on debits when taken, the delivery address when different, Autoliquidation for a reverse charge and the exemption's reason are on the page; the nature is BT-23 B1, S1 or M1."
+  },
+  {
+   "id": "FR-242-1",
+   "text": "Seller and buyer: names, addresses and identification numbers (the SIREN); the buyer's from 1 September 2026 (242 nonies A I 1°).",
+   "check": "fr_invoice_check.py FR-SELLER, FR-BUYER"
+  },
+  {
+   "id": "FR-242-2",
+   "text": "The seller's VAT number, and the buyer's for an intra-EU supply or a reverse charge (I 2° and 4°).",
+   "check": "fr_invoice_check.py FR-SELLER, FR-BUYER"
+  },
+  {
+   "id": "FR-242-7BIS",
+   "text": "The delivery address of the goods when it differs from the buyer's address (I 7° bis).",
+   "check": "fr_invoice_check.py FR-MENTIONS"
+  },
+  {
+   "id": "FR-242-8BIS",
+   "text": "Whether the invoice covers only deliveries of goods, only services, or both (I 8° bis).",
+   "check": "fr_invoice_check.py FR-MENTIONS"
+  },
+  {
+   "id": "FR-242-11BIS",
+   "text": "\"Option pour le paiement de la taxe d'après les débits\" when the seller opted (I 11° bis).",
+   "check": "fr_invoice_check.py FR-MENTIONS"
+  },
+  {
+   "id": "FR-242-12",
+   "text": "For an exemption, the reference to the provision that grants it, as \"Exonération TVA, art. 262 ter-I du code général des impôts\" or an equivalent (I 12°; BOI-TVA-DECLA-30-20-20-30).",
+   "check": "fr_invoice_check.py FR-MENTIONS"
+  },
+  {
+   "id": "FR-242-13",
+   "text": "For a reverse charge, the word \"Autoliquidation\" (I 13°).",
+   "check": "fr_invoice_check.py FR-MENTIONS"
+  },
+  {
+   "id": "FR-L441-9",
+   "text": "The date payment is due, the discount conditions for early payment, the penalty rate due from the day after that date, and the indemnity for recovery costs (Code de commerce L441-9; L441-10 II: by default the ECB rate plus 10 points, never under three times the legal interest rate).",
+   "check": "fr_invoice_check.py FR-PAYMENT"
+  },
+  {
+   "id": "FR-D441-5",
+   "text": "The indemnity for recovery costs is 40 euros (Code de commerce D441-5; F23211).",
+   "check": "fr_invoice_check.py FR-PAYMENT"
+  },
+  {
+   "id": "FR-F31808",
+   "text": "A company states its legal form and share capital, and \"RCS\" with the register's city; a sole trader \"Entrepreneur individuel\" or \"EI\" (service-public.fr F31808).",
+   "check": "fr_invoice_check.py FR-SELLER"
+  },
+  {
+   "id": "FR-AVOIR",
+   "text": "A credit note (facture d'avoir) refers explicitly to the invoice it amends, by its number and date, and carries the mentions of an invoice (CGI 289 I-5; BOI-TVA-DECLA-30-20-20-20 §220).",
+   "check": "credit_note_check.py INV-CREDIT-REF"
+  }
+ ]
+}

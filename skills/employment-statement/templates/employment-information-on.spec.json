@@ -1,0 +1,37 @@
+{
+  "language": "en",
+  "law": "on",
+  "given": "2026-10-26",
+  "employer": {
+    "name": "Maplestone Print Shop Inc.",
+    "operating_name": "Maplestone Print",
+    "address": "88 Example Street, Kingston ON K7L 0A1",
+    "phone": "613-555-0199",
+    "signatory": "Priya Natarajan, Office Manager"
+  },
+  "worker": {
+    "name": "Ethan Clarke",
+    "address": "16 Sample Crescent, Kingston ON K7M 0A2"
+  },
+  "contact": {
+    "address": "88 Example Street, Kingston ON K7L 0A1",
+    "phone": "613-555-0199",
+    "names": [
+      "Priya Natarajan, Office Manager"
+    ]
+  },
+  "job": {
+    "title": "Print production assistant",
+    "description": "Runs the digital presses, trims and packs orders."
+  },
+  "start": "2026-11-02",
+  "place": "At first, the Kingston shop at 88 Example Street, Kingston ON K7L 0A1",
+  "pay": {
+    "amount": 19.5,
+    "currency": "CAD",
+    "per": "hour",
+    "paid": "every second Friday, for the two weeks ending the Sunday before",
+    "method": "direct deposit"
+  },
+  "hours": "At first about 32 hours a week, Tuesday to Friday, 8:00 to 16:30"
+}

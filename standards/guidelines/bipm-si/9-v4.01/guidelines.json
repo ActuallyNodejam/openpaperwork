@@ -1,0 +1,86 @@
+{
+  "issuer": "bipm-si",
+  "version": "9-v4.01",
+  "link": "https://www.bipm.org/en/publications/si-brochure",
+  "license": "CC BY 4.0, as the copyright statement in the PDF (version 4.01) gives it; the rules are restated in our own words with credit, notice in licenses/bipm-si-brochure-cc-by-4.0.txt. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-08",
+  "status": "draft",
+  "title": "The International System of Units (SI), 9th edition",
+  "source": "Bureau International des Poids et Mesures, The International System of Units (SI), 9th edition 2019, version 4.01 (June 2026), chapter 5 \"Writing unit symbols and names, and expressing the values of quantities\", https://doi.org/10.59161/AUEZ1291, read 2026-10-08.",
+  "rules": [
+    {
+      "id": "SI-01",
+      "grader": "script",
+      "text": "A space separates the number from the unit symbol, also when the value is used as an adjective (a 10 kΩ resistor).",
+      "source": "5.4.3",
+      "check": "requirements_check.py UNITS-SPACE"
+    },
+    {
+      "id": "SI-02",
+      "grader": "script",
+      "text": "The degree Celsius is spaced like any unit: 20 °C, not 20°C or 20° C.",
+      "source": "5.4.3",
+      "check": "requirements_check.py UNITS-SPACE"
+    },
+    {
+      "id": "SI-03",
+      "grader": "script",
+      "text": "No space comes before the degree, minute and second of a plane angle: 30° 22′ 8″.",
+      "source": "5.4.3",
+      "check": "requirements_check.py UNITS-SPACE"
+    },
+    {
+      "id": "SI-04",
+      "grader": "script",
+      "text": "A space separates the number and the symbol %: 5 %.",
+      "source": "5.4.7",
+      "check": "requirements_check.py UNITS-SPACE"
+    },
+    {
+      "id": "SI-05",
+      "grader": "script",
+      "text": "Unit symbols are lower case unless named after a person, and are never abbreviations: s not sec, cm³ not cc, m/s not mps.",
+      "source": "5.2",
+      "check": "requirements_check.py UNITS-SYMBOL"
+    },
+    {
+      "id": "SI-06",
+      "grader": "script",
+      "text": "A unit symbol takes no plural and no full stop, except the full stop that ends a sentence.",
+      "source": "5.2",
+      "check": "requirements_check.py UNITS-SYMBOL"
+    },
+    {
+      "id": "SI-07",
+      "grader": "script",
+      "text": "A solidus is used at most once in a unit unless parentheses remove the ambiguity.",
+      "source": "5.2",
+      "check": "requirements_check.py UNITS-SYMBOL"
+    },
+    {
+      "id": "SI-08",
+      "grader": "script",
+      "text": "Unit symbols and unit names are not mixed in one expression.",
+      "source": "5.2",
+      "check": "requirements_check.py UNITS-SYMBOL"
+    },
+    {
+      "id": "SI-09",
+      "grader": "judge",
+      "text": "A value is given in one unit: 10.234 m, not 10 m 23.4 cm.",
+      "source": "5.4.3"
+    },
+    {
+      "id": "SI-10",
+      "grader": "judge",
+      "text": "What qualifies a quantity goes with the quantity, not the unit: a maximum voltage of 1000 V, not 1000 Vmax.",
+      "source": "5.4.2"
+    },
+    {
+      "id": "SI-11",
+      "grader": "judge",
+      "text": "Long numbers may be grouped in threes by a space, never by a dot or a comma.",
+      "source": "5.4.4"
+    }
+  ]
+}

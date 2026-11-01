@@ -1,0 +1,54 @@
+{
+  "language": "en",
+  "date": "2026-10-09",
+  "sender": {
+    "name": "Example Analytics Ltd",
+    "street": "18 Wharf Road",
+    "city": "Leeds",
+    "postcode": "LS1 4BR",
+    "country": "GB",
+    "registered_office": "18 Wharf Road, Leeds LS1 4BR",
+    "register": "England and Wales",
+    "register_number": "09876543",
+    "vat_id": "GB 123 4567 89",
+    "email": "office@example-analytics.example",
+    "phone": "0113 496 0721"
+  },
+  "recipient": {
+    "name": "Example Packaging Co-operative",
+    "attention": "Mr Tom Ashworth, Secretary",
+    "street": "7 Mill Lane",
+    "city": "Hebden Bridge",
+    "postcode": "HX7 8AB",
+    "country": "GB"
+  },
+  "references": [
+    {
+      "kind": "yours",
+      "value": "TA/0926"
+    },
+    {
+      "kind": "ours",
+      "value": "NG-552"
+    }
+  ],
+  "contact": {
+    "name": "Priya Shah",
+    "phone": "0113 496 0725",
+    "email": "priya@example-analytics.example"
+  },
+  "subject": "Customer survey 2026: findings and next steps",
+  "salutation": "Dear Mr Ashworth",
+  "body": [
+    "Thank you for meeting us on 30 September. I enclose the report on this year's customer survey.",
+    "Of the 212 customers, 148 replied, a response rate of 70 per cent. Satisfaction with deliveries rose from 61 to 74 per cent; the one area that fell was communication about delays.",
+    "We would be glad to present the findings to your board in November. Please let me know which date suits you."
+  ],
+  "signatory": {
+    "name": "Priya Shah",
+    "role": "Research Director"
+  },
+  "enclosures": [
+    "Customer survey 2026 report"
+  ]
+}

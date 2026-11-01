@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- A scenario for the KoSIT validator (github.com/itplr-kosit/validator, Apache-2.0) that checks an
+  - ebInterface 6.1 invoice against AUSTRIAPRO's ebInterface 6.1 schema (Invoice.xsd, github.com/austriapro/
+  - ebinterface-standards at a3cf861e; free to implement, no licence stated, so it is fetched and run
+  - untouched, never copied). This file is ours; the files it names are run from where they are installed:
+  -   kosit/        the KoSIT XRechnung validator configuration (Apache-2.0): the report stylesheets
+  -   ebinterface/  Invoice.xsd of ebInterface 6.1
+  - skills/e-invoice/scripts/fetch_validators.py installs both at pinned versions.
+  -->
+<scenarios xmlns="http://www.xoev.de/de/validator/framework/1/scenarios" frameworkVersion="1.0.0">
+  <name>ebInterface 6.1</name>
+  <author>Nodejam OpenPaperwork, e-invoice pack</author>
+  <date>2026-10-09</date>
+  <description>
+    <p>Validates an ebInterface 6.1 invoice against the ebInterface 6.1 schema of AUSTRIAPRO.</p>
+  </description>
+  <scenario>
+    <name>ebInterface 6.1 (schema)</name>
+    <description><p>The ebInterface 6.1 Invoice schema.</p></description>
+    <namespace prefix="ebi">http://www.ebinterface.at/schema/6p1/</namespace>
+    <namespace prefix="rep">http://www.xoev.de/de/validator/varl/1</namespace>
+    <match>exists(/ebi:Invoice)</match>
+    <validateWithXmlSchema>
+      <resource>
+        <name>ebInterface 6.1 schema</name>
+        <location>ebinterface/Invoice.xsd</location>
+      </resource>
+    </validateWithXmlSchema>
+    <createReport>
+      <resource>
+        <name>Validation report</name>
+        <location>kosit/resources/xrechnung-report.xsl</location>
+      </resource>
+    </createReport>
+    <acceptMatch>/rep:report/rep:assessment[1]/rep:accept[1]</acceptMatch>
+  </scenario>
+  <noScenarioReport>
+    <resource>
+      <name>Default Report</name>
+      <location>kosit/resources/default-report.xsl</location>
+    </resource>
+  </noScenarioReport>
+</scenarios>

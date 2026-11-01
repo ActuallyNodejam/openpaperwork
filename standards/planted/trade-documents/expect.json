@@ -1,0 +1,38 @@
+{
+  "pack": "trade-documents",
+  "template": "quotation-au.spec.json",
+  "clean": "quotation.docx",
+  "files": [
+    "spec.json",
+    "quotation.docx"
+  ],
+  "faults": [
+    {
+      "file": "wrong-total.docx",
+      "replaces": "quotation.docx",
+      "planted": "the total including GST no longer adds up",
+      "fails": [
+        "TRADE-SUMS"
+      ],
+      "also_failed_when_made": []
+    },
+    {
+      "file": "wrong-line.docx",
+      "replaces": "quotation.docx",
+      "planted": "a line amount is not quantity times price",
+      "fails": [
+        "TRADE-SUMS"
+      ],
+      "also_failed_when_made": []
+    },
+    {
+      "file": "no-delivery-terms.docx",
+      "replaces": "quotation.docx",
+      "planted": "the Incoterms rule loses its named place",
+      "fails": [
+        "TRADE-INCOTERMS"
+      ],
+      "also_failed_when_made": []
+    }
+  ]
+}

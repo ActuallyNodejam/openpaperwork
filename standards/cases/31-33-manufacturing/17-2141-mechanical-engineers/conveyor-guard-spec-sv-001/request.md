@@ -1,0 +1,1 @@
+Här är mina anteckningar från mötet om det nya skyddet vid transportband 3 (`inputs/anteckningar.txt`). Skriv en kravspecifikation i Word, `kravspecifikation.docx`, som vi kan skicka till två leverantörer för offert: varje krav numrerat, med motivering och hur det verifieras.

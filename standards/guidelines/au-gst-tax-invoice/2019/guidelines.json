@@ -1,0 +1,18 @@
+{
+ "issuer": "au-gst-tax-invoice",
+ "version": "2019",
+ "link": "https://www.legislation.gov.au",
+ "license": "CC BY 4.0, Federal Register of Legislation (Commonwealth of Australia); notice licenses/einvoice-au-legislation-cc-by-4.0.txt. Restated in our own words. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "What an Australian tax invoice and adjustment note state",
+ "source": "A New Tax System (Goods and Services Tax) Act 1999 ss 29-70 and 29-75; A New Tax System (Goods and Services Tax) Regulations 2019 s 29-70.01. Read 2026-10-09. Peppol PINT A-NZ is not built.",
+ "rules": [
+  {
+   "id": "AU-TAX-INVOICE",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "text": "Headed Tax invoice (Adjustment note for a credit), the supplier's name and ABN (modulus 89), the date, the GST, GST-free lines marked when some are taxed, and from A$1,000 the buyer's name and its address or ABN, on the page."
+  }
+ ]
+}

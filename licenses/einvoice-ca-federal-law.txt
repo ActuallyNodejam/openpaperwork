@@ -1,0 +1,11 @@
+Input Tax Credit Information (GST/HST) Regulations, SOR/91-45, section 3, Justice Laws Website
+(laws-lois.justice.gc.ca), current to 2026-09-21, read 2026-10-09.
+
+Reproduced under the Reproduction of Federal Law Order (SI/97-5): anyone may, without charge or request
+for permission, reproduce enactments, provided due diligence is exercised in ensuring the accuracy of the
+materials reproduced and the reproduction is not represented as an official version.
+
+Changes: the information required under $100, from $100 and from $500 is restated in our own words in
+skills/e-invoice/scripts/countries.py and skills/_checks/einvoice_country.py (CA-GST-HST). This is not
+an official version of the regulations, and not tax advice. The Canada Revenue Agency's web pages were
+not copied.

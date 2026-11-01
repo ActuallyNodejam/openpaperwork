@@ -1,0 +1,132 @@
+{
+  "_about": "Starter for the Horizon Europe application form Part B (RIA and IA), version 5.1 of 22.01.2026. Section titles are the European Commission's, reused under CC BY 4.0. Keep the headings and their order; replace the placeholder lines.",
+  "page": {
+    "width_mm": 210,
+    "height_mm": 297,
+    "margins_mm": {
+      "top": 20,
+      "bottom": 20,
+      "left": 20,
+      "right": 20
+    }
+  },
+  "font": "Times New Roman",
+  "footer_page_numbers": true,
+  "properties": {
+    "title": "PROJECT ACRONYM: Part B"
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "PROJECT ACRONYM: full project title",
+      "level": 0
+    },
+    {
+      "type": "paragraph",
+      "text": "List of participants"
+    },
+    {
+      "type": "table",
+      "header": [
+        "Participant No",
+        "Participant organisation name",
+        "Short name",
+        "Country"
+      ],
+      "rows": [
+        [
+          "1 (Coordinator)",
+          "",
+          "",
+          ""
+        ],
+        [
+          "2",
+          "",
+          "",
+          ""
+        ]
+      ],
+      "style": "Table Grid",
+      "header_bold": true
+    },
+    {
+      "type": "heading",
+      "text": "1. Excellence",
+      "level": 1
+    },
+    {
+      "type": "heading",
+      "text": "1.1 Objectives and ambition",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Replace this line with your text."
+    },
+    {
+      "type": "heading",
+      "text": "1.2 Methodology",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Replace this line with your text."
+    },
+    {
+      "type": "heading",
+      "text": "2. Impact",
+      "level": 1
+    },
+    {
+      "type": "heading",
+      "text": "2.1 Project's pathways towards impact",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Replace this line with your text."
+    },
+    {
+      "type": "heading",
+      "text": "2.2 Measures to maximise impact - Dissemination, exploitation and communication",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Replace this line with your text."
+    },
+    {
+      "type": "heading",
+      "text": "2.3 Summary",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Optional. Remove this heading and line if the summary is not used."
+    },
+    {
+      "type": "heading",
+      "text": "3. Quality and efficiency of the implementation",
+      "level": 1
+    },
+    {
+      "type": "heading",
+      "text": "3.1 Work plan and resources",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Replace this line with your text."
+    },
+    {
+      "type": "heading",
+      "text": "3.2 Capacity of participants and consortium as a whole",
+      "level": 2
+    },
+    {
+      "type": "paragraph",
+      "text": "Replace this line with your text."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "language": "sv",
+  "company": {"name": "Exempel Rådgivning AB", "org_number": "556000-0000", "seat": "Umeå"},
+  "year": {"start": "2025-01-01", "end": "2025-12-31"},
+  "prior": {"start": "2024-01-01", "end": "2024-12-31"},
+  "report": {
+    "business": "Bolaget säljer rådgivning inom verksamhetsutveckling och projektledning till kommuner och industriföretag i Norrland.",
+    "events": "Bolaget tecknade under året ett ramavtal med ett regionalt kommunalförbund och ökade sin omsättning med 15 procent.",
+    "earlier_years": [{"year": "2023", "net_sales": 1512000, "result_after_financial": 198400, "solidity": 61},
+                      {"year": "2022", "net_sales": 1398000, "result_after_financial": 171200, "solidity": 58}]
+  },
+  "income": {
+    "net_sales": [2140000, 1865000],
+    "other_external": [-286000, -254000],
+    "personnel": [-1452000, -1318000],
+    "depreciation": [-14000, -11000],
+    "interest_income": [3200, 1100],
+    "interest_expense": [0, -400],
+    "tax_allocation_change": [-80000, -60000],
+    "tax": [-64000, -45000]
+  },
+  "balance": {
+    "trade_receivables": [318000, 276000],
+    "other_receivables": [12500, 9800],
+    "prepaid": [24000, 21000],
+    "cash": [663300, 424900],
+    "share_capital": [25000, 25000],
+    "retained": [null, 210300],
+    "tax_allocation_reserves": [180000, 100000],
+    "trade_payables": [38400, 31200],
+    "tax_liabilities": [22000, 18500],
+    "st_other": [96200, 84300],
+    "accrued": [158000, 135700]
+  },
+  "equity_changes": {"dividend_paid": 100000},
+  "disposition": {"dividend": 150000,
+                  "statement": "Styrelsen anser att den föreslagna utdelningen är försvarlig med hänsyn till de krav som verksamhetens art, omfattning och risker ställer på storleken av det egna kapitalet och bolagets konsolideringsbehov, likviditet och ställning i övrigt (17 kap. 3 § aktiebolagslagen)."},
+  "fixed_assets": {"equipment": {"opening_cost": [70000, 40000], "additions": [0, 30000],
+                                 "opening_depreciation": [-19000, -8000], "depreciation": [-14000, -11000]}},
+  "principles": ["Inventarier skrivs av linjärt över fem år.",
+                 "Fordringar tas upp till de belopp som beräknas bli betalda."],
+  "employees": [2, 2],
+  "pledged": [],
+  "contingent": [],
+  "signing": {"place": "Umeå", "date": "2026-03-18",
+              "board": [{"name": "Karin Lindvall", "role": "Styrelseledamot och verkställande direktör"},
+                        {"name": "Johan Berg", "role": "Styrelseledamot"}]}
+}

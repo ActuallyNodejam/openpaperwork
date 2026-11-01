@@ -1,0 +1,118 @@
+{
+ "id": "board-minutes-fi-001",
+ "title": "Kirjoita hallituksen kokouksen pöytäkirja",
+ "person": "The managing director of a small Finnish metal workshop, who keeps the board's minutes.",
+ "format": "docx",
+ "output": "poytakirja.docx",
+ "locale": "fi",
+ "sector": {
+  "naics": "31-33",
+  "name": "Manufacturing"
+ },
+ "occupation": {
+  "soc": "11-1011.00",
+  "name": "Chief Executives"
+ },
+ "review": [
+  "The purchase of the press brake is recorded with Outi Korhonen's dissent; Sari Heikkinen and Ville Rantanen sign; the minutes carry number 7/2026."
+ ],
+ "revised_review": [
+  "The price is 214 000 euroa; 204 000 appears nowhere."
+ ],
+ "truth": {
+  "revision": {
+   "stale": [
+    "204 000"
+   ]
+  }
+ },
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "head",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-HEAD",
+   "guidelines": [
+    "roberts-rules/1915#MIN-01",
+    "roberts-rules/1915#MIN-03"
+   ],
+   "text": "The body, the kind of meeting and the date are given."
+  },
+  {
+   "id": "times",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-TIMES",
+   "guidelines": [
+    "roberts-rules/1915#MIN-09"
+   ],
+   "text": "The opening and closing times are given."
+  },
+  {
+   "id": "signed",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-SIGNED",
+   "guidelines": [
+    "osakeyhtiolaki/2006-624#FI-MIN-01"
+   ],
+   "text": "The minutes carry the signature lines the statute asks for."
+  },
+  {
+   "id": "statute",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-STATUTE",
+   "guidelines": [
+    "osakeyhtiolaki/2006-624#FI-MIN-02",
+    "osakeyhtiolaki/2006-624#FI-MIN-03"
+   ],
+   "text": "What the statute asks the minutes to hold is there."
+  },
+  {
+   "id": "language",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-LANGUAGE",
+   "guidelines": [
+    "letter-layouts/2026-10#LETTER-LANGUAGE"
+   ],
+   "text": "Labels and signature roles are in the minutes' language."
+  },
+  {
+   "id": "decision",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "osakeyhtiolaki/2006-624#FI-MIN-02"
+   ],
+   "text": "The decision to buy the press brake is recorded with Outi Korhonen's dissent."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and addresses are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "roberts-rules/1915",
+  "osakeyhtiolaki/2006-624",
+  "letter-layouts/2026-10",
+  "every-file/1.1.0"
+ ]
+}

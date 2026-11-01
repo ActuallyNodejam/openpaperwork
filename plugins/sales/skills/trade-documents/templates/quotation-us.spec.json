@@ -1,0 +1,72 @@
+{
+  "type": "quotation",
+  "language": "en-US",
+  "number": "Q-2026-0388",
+  "issue_date": "2026-10-12",
+  "references": [
+    {
+      "label": "Your inquiry",
+      "value": "2026-10-09"
+    },
+    {
+      "label": "Our reference",
+      "value": "Megan Ortiz"
+    }
+  ],
+  "dates": [
+    {
+      "label": "Valid until",
+      "value": "2026-11-11"
+    },
+    {
+      "label": "Delivery time",
+      "value": "10 business days from order"
+    }
+  ],
+  "currency": "USD",
+  "seller": {
+    "name": "Prairie Lab Supply LLC",
+    "street": "400 Example Avenue",
+    "postcode": "68508",
+    "city": "Lincoln, NE",
+    "country": "US",
+    "email": "sales@prairie-lab.example",
+    "phone": "(402) 555-0110"
+  },
+  "buyer": {
+    "name": "Riverbend Water Testing Inc.",
+    "street": "75 Sample Street",
+    "postcode": "51501",
+    "city": "Council Bluffs, IA",
+    "country": "US"
+  },
+  "delivery_terms": {
+    "rule": "DAP",
+    "place": "Council Bluffs, IA"
+  },
+  "transport": "road",
+  "payment_terms": "Net 30 days from invoice date",
+  "lines": [
+    {
+      "code": "PL-1180",
+      "description": "Benchtop pH meter with electrode",
+      "quantity": 3,
+      "unit": "pcs",
+      "unit_price": 685.0,
+      "discount_percent": 0,
+      "vat_rate": 7
+    },
+    {
+      "code": "PL-2045",
+      "description": "Buffer solution kit, pH 4/7/10, 500 mL",
+      "quantity": 12,
+      "unit": "pcs",
+      "unit_price": 38.5,
+      "discount_percent": 5,
+      "vat_rate": 7
+    }
+  ],
+  "notes": [
+    "Sales tax at 7 percent is the rate for the delivery address; a tax-exempt customer sends its exemption certificate with the order."
+  ]
+}

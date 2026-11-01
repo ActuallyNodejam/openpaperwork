@@ -1,0 +1,36 @@
+{
+  "issuer": "utrgv",
+  "version": "2024-08-13",
+  "date": "2026-10-03",
+  "status": "draft",
+  "title": "UTRGV Graduate College thesis format",
+  "source": {
+    "publisher": "The University of Texas Rio Grande Valley, Graduate College",
+    "document": "Thesis Formatting Guide, Updated August 13, 2024",
+    "url": "https://www.utrgv.edu/graduate/_files/documents/thesis-formatting-guide.pdf",
+    "retrieved": "2026-10-03",
+    "sha256": "5772a0eb63e349eae237795e0afc078741297728292c162a041afb32209f5224",
+    "pdf_metadata": "Created 2024-08-13 (Acrobat PDFMaker 24 for Word), modified 2025-03-03",
+    "note": "The PDF is not openly licensed and is not copied here. Rules paraphrase it and cite its section headings and printed page numbers. The guide defers to the department's style manual (APA, Chicago, MLA and others) for citations, so pair this pack with apa/7 or ieee/2025-03-28. Where the guide and the style manual differ on the reference list title, the guide asks for REFERENCES unless the manual requires otherwise and the Graduate College accepts it."
+  },
+  "license": "Rule wording: Apache-2.0 with this repository. The guide itself: UTRGV, all rights reserved.",
+  "precedence": "University guide over style manual for page layout (font, spacing, margins, headers, pagination); style manual over university guide for citation and reference entry form.",
+  "rules": [
+    {"id": "UTRGV-FONT-1", "grader": "script", "section": "III Draft preparation, Font", "page": 10, "text": "Times New Roman 12 point in black throughout; smaller type only in tables, figures and appendices."},
+    {"id": "UTRGV-FONT-2", "grader": "judge", "section": "III Draft preparation, Font", "page": 10, "text": "Bold is used only for level 1 to 4 headings."},
+    {"id": "UTRGV-SPACE-1", "grader": "script", "section": "III Draft preparation, Line spacing", "page": 10, "text": "Running text is double spaced with 0 pt before and after, and each paragraph starts with a first-line indent."},
+    {"id": "UTRGV-SPACE-2", "grader": "render", "section": "III Draft preparation, Line spacing", "page": 10, "text": "No widow or orphan lines and no large blank stretches inside a chapter."},
+    {"id": "UTRGV-QUOTE-1", "grader": "judge", "section": "III Draft preparation, Line spacing", "page": 10, "text": "A quotation under three lines stays in the text in quotation marks; a longer one is a block quote indented from both margins."},
+    {"id": "UTRGV-MARGIN-1", "grader": "script", "section": "III Draft preparation, Margins", "page": 10, "text": "Left, right and bottom margins are 1 inch; the top margin is 1 inch, or 2 inches on a page that opens with a major header."},
+    {"id": "UTRGV-PAGE-1", "grader": "script", "section": "III Draft preparation, Pagination", "page": 11, "text": "Page numbers are centered at the bottom, 0.5 inch from the edge, in Times New Roman 12."},
+    {"id": "UTRGV-PAGE-2", "grader": "render", "section": "III Draft preparation, Pagination", "page": 11, "text": "Title, committee, copyright and blank pages are unnumbered; preliminary pages use lower-case Roman numerals starting at iii on the abstract; Arabic numerals start at chapter I."},
+    {"id": "UTRGV-HEAD-1", "grader": "script", "section": "III Draft preparation, Major headers", "page": 11, "text": "Each major header (abstract, dedication, acknowledgments, table of contents, lists, chapters, references, appendix, vita) starts a new page in capitals, centered 2 inches from the top, not bold and not underlined; a long header is split into an inverted pyramid without end punctuation."},
+    {"id": "UTRGV-ABS-1", "grader": "script", "section": "IV Contents, Abstract", "page": 12, "text": "The abstract text has at most 150 words, banner excluded; numbers, initials and acronyms count as words and a hyphenated word counts as two."},
+    {"id": "UTRGV-ABS-2", "grader": "judge", "section": "IV Contents, Abstract", "page": 12, "text": "The abstract has no notes, citations or headings."},
+    {"id": "UTRGV-CHAP-1", "grader": "judge", "section": "IV Contents, Chapters", "page": 14, "text": "Chapter headings are in capitals with upper-case Roman numerals (CHAPTER II), with a double space between the chapter line, the title and the text."},
+    {"id": "UTRGV-CAP-1", "grader": "script", "section": "IV Contents, In-text tables and figures", "page": 14, "text": "Tables and figures are numbered in one consistent sequence and titled Table 1: Title, with a colon; a table title sits directly above its table and a figure title directly below its figure."},
+    {"id": "UTRGV-CAP-2", "grader": "render", "section": "IV Contents, In-text tables and figures", "page": 14, "text": "Tables, figures and their titles are centered and stay inside the 1 inch margins; a split table repeats its title as Table x (cont.)."},
+    {"id": "UTRGV-REF-1", "grader": "script", "section": "IV Contents, References", "page": 16, "text": "The section is titled REFERENCES unless the style manual requires another title; entries are alphabetical with a hanging indent, single spaced inside an entry and double spaced between entries, and list only works used in the text."},
+    {"id": "UTRGV-VITA-1", "grader": "judge", "section": "IV Contents, Vita", "page": 16, "text": "The vita is one page at most, in third person and past tense, naming degrees with years, the major field and a personal email address."}
+  ]
+}

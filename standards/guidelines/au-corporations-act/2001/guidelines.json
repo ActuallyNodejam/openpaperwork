@@ -1,0 +1,38 @@
+{
+  "issuer": "au-corporations-act",
+  "version": "2001",
+  "link": "https://www.legislation.gov.au/C2004A00818/latest/text",
+  "license": "Based on content from the Federal Register of Legislation, licensed CC BY 4.0; restated in our own words. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Corporations Act 2001 ss.248F, 251A and 251B",
+  "source": "Corporations Act 2001 (Cth), Compilation No. 149, 19 September 2026. Read on legislation.gov.au 2026-10-09.",
+  "rules": [
+    {
+      "id": "AU-MIN-01",
+      "grader": "judge",
+      "text": "Proceedings and resolutions of directors' and members' meetings are recorded in the minute books within one month.",
+      "source": "s.251A(1)"
+    },
+    {
+      "id": "AU-MIN-02",
+      "grader": "script",
+      "text": "The chair of the meeting, or of the next meeting, signs the minutes within a reasonable time.",
+      "source": "s.251A(2)",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "AU-MIN-03",
+      "grader": "script",
+      "text": "Two directors are a quorum unless the directors decide otherwise; the minutes say one was present.",
+      "source": "s.248F (replaceable rule)",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "AU-MIN-04",
+      "grader": "judge",
+      "text": "Members may inspect the members' minute books free of charge and have a copy within 14 days.",
+      "source": "s.251B"
+    }
+  ]
+}

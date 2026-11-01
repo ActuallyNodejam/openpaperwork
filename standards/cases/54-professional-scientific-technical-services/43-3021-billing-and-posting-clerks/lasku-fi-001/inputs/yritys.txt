@@ -1,0 +1,4 @@
+Koeyhtiö Ohjelmisto Oy, Koekatu 3, 00100 Helsinki. Y-tunnus 1234567-1, ALV-rek. Kotipaikka Helsinki.
+Pankki: IBAN FI21 1234 5600 0007 85, BIC NDEAFIHH. Laskun viitenumero 10485.
+Maksuehto 14 päivää netto, viivästyskorko korkolain mukainen, huomautusaika 8 pv. Edellinen lasku 2026-117.
+Yhteyshenkilö Ville Koe, +358 9 000 0001, lasku@koe.example.

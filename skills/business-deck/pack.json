@@ -1,0 +1,45 @@
+{
+  "domain": "marketing",
+  "hands_back": [
+    "*.pdf",
+    "*.pptx"
+  ],
+  "default": "deck.pdf",
+  "check": "python3 {here}/../_checks/packcheck.py business-deck {file}",
+  "recognises": {
+    "file": "*.deck.json",
+    "has": [
+      "pages"
+    ]
+  },
+  "asks": [
+    {
+      "id": "deck",
+      "kind": "a slide deck",
+      "words": {
+        "en": "deck, slide deck, slides, pitch deck, board deck, slideshow",
+        "de": "Präsentation, Folien, Foliensatz",
+        "fr": "diaporama, diapositives",
+        "nl": "presentatie",
+        "sv": "bildspel",
+        "nb": "presentasjon, lysbilder",
+        "da": "præsentation",
+        "fi": "diaesitys, powerpoint-esitys, kalvot, kalvosarja",
+        "es": "presentación, diapositivas",
+        "it": "presentazione, diapositive",
+        "pl": "prezentacja, slajdy"
+      },
+      "weak": {
+        "en": "presentation",
+        "fr": "présentation"
+      },
+      "with": {
+        "en": "slides, slide, deck, board, meeting, management, investor, investors, pitch, powerpoint, keynote, make, create, build, prepare, give, styrelsen, ledningen, gör, skapa",
+        "fr": "une, fais, faire, prépare, préparer, crée, créer, comité, direction, conseil, investisseurs"
+      },
+      "unless": {
+        "en": "deck of cards, on deck, steam deck, tape deck, flight deck"
+      }
+    }
+  ]
+}

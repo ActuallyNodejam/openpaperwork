@@ -1,0 +1,1 @@
+Peux-tu préparer la facture pour Logistique Essai (voir les fichiers dans `inputs/`) ? Il me faut `facture.pdf`, au format Factur-X, et le XML à côté, `facture.xml`. Date de facture : 12 octobre 2026.

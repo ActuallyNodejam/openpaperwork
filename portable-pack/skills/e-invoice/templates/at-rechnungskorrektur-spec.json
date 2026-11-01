@@ -1,0 +1,56 @@
+{
+  "number": "RK-2026-012",
+  "issue_date": "2026-10-20",
+  "delivery_date": "2026-10-09",
+  "currency": "EUR",
+  "order_reference": "BST-2026-118",
+  "seller": {
+    "name": "Donau Beispiel GmbH",
+    "legal_form": "GmbH",
+    "street": "Musterstraße 5",
+    "postcode": "1010",
+    "city": "Wien",
+    "country": "AT",
+    "vat_id": "ATU12345675",
+    "register_number": "FN 123456a",
+    "register": "Handelsgericht Wien",
+    "registered_office": "Wien",
+    "electronic_address": "9914:ATU12345675",
+    "managing_directors": [
+      "Katharina Beispiel"
+    ],
+    "contact": {
+      "name": "Lukas Beispiel",
+      "phone": "+43 1 000 00 00",
+      "email": "rechnung@donau.example"
+    }
+  },
+  "buyer": {
+    "name": "Beispiel Logistik GmbH",
+    "street": "Probegasse 2",
+    "postcode": "8010",
+    "city": "Graz",
+    "country": "AT",
+    "vat_id": "ATU76543215",
+    "electronic_address": "9914:ATU76543215"
+  },
+  "payment": {
+    "means_code": "58",
+    "iban": "AT61 1904 3002 3457 3201",
+    "bic": "BKAUATWW"
+  },
+  "lines": [
+    {
+      "name": "Kältetechnik, Wartung und Prüfung",
+      "quantity": 4,
+      "unit": "HUR",
+      "unit_price": 98.0,
+      "vat_rate": 20,
+      "vat_category": "S"
+    }
+  ],
+  "type_code": "381",
+  "preceding_invoice": "RE-2026-0331",
+  "preceding_invoice_date": "2026-10-12",
+  "note": "Korrektur: 4 Wartungsstunden zu viel verrechnet."
+}

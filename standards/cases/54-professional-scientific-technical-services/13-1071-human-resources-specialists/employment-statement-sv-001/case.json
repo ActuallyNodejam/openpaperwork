@@ -1,0 +1,124 @@
+{
+ "id": "employment-statement-sv-001",
+ "title": "Skriv anställningsbeviset för en nyanställd managementkonsult",
+ "person": "The CEO of a small Swedish management consultancy, who does the HR paperwork for a new consultant.",
+ "format": "docx",
+ "output": "anstallningsbevis.docx",
+ "locale": "sv",
+ "sector": {
+  "naics": "54",
+  "name": "Professional, Scientific, and Technical Services"
+ },
+ "occupation": {
+  "soc": "13-1071.00",
+  "name": "Human Resources Specialists"
+ },
+ "review": [
+  "Amira Haddad's permanent employment from 16 November 2026 starts with six months' probation; pay is 48 500 kr a month paid on the 25th to her salary account, with the 3 000 kr wellness allowance set out separately; 40 hours a week with a week's notice of the client schedule; 30 days' holiday and notice by reference to LAS written as given, not worked out; no collective agreement; employer contributions and the 4.5 percent pension under social security."
+ ],
+ "revised_review": [
+  "Pay is 50 000 kr a month and the start date 1 December 2026; the probation still runs six months from the start; nothing else changes."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "items",
+   "stage": "both",
+   "grader": "script",
+   "script": "employment_check.py",
+   "rule": "EMPLOY-ITEMS",
+   "guidelines": [
+    "anstallningsskyddslagen/1982-80#LAS-01",
+    "anstallningsskyddslagen/1982-80#LAS-02",
+    "anstallningsskyddslagen/1982-80#LAS-05",
+    "anstallningsskyddslagen/1982-80#LAS-07",
+    "anstallningsskyddslagen/1982-80#LAS-10",
+    "anstallningsskyddslagen/1982-80#LAS-11",
+    "anstallningsskyddslagen/1982-80#LAS-12",
+    "anstallningsskyddslagen/1982-80#LAS-13",
+    "eu-working-conditions/2019-1152#EMP-01",
+    "eu-working-conditions/2019-1152#EMP-15"
+   ],
+   "text": "Every particular 6 c § lists is there or marked not applicable."
+  },
+  {
+   "id": "dates",
+   "stage": "both",
+   "grader": "script",
+   "script": "employment_check.py",
+   "rule": "EMPLOY-DATES",
+   "guidelines": [
+    "anstallningsskyddslagen/1982-80#LAS-03",
+    "anstallningsskyddslagen/1982-80#LAS-14",
+    "eu-working-conditions/2019-1152#EMP-04",
+    "eu-working-conditions/2019-1152#EMP-17"
+   ],
+   "text": "The start date is given and the statement is dated by the first day."
+  },
+  {
+   "id": "probation",
+   "stage": "both",
+   "grader": "script",
+   "script": "employment_check.py",
+   "rule": "EMPLOY-PROBATION",
+   "guidelines": [
+    "anstallningsskyddslagen/1982-80#LAS-16",
+    "eu-working-conditions/2019-1152#EMP-07",
+    "eu-working-conditions/2019-1152#EMP-22"
+   ],
+   "text": "Six months' probation, its length and conditions stated."
+  },
+  {
+   "id": "pay",
+   "stage": "both",
+   "grader": "script",
+   "script": "employment_check.py",
+   "rule": "EMPLOY-PAY",
+   "guidelines": [
+    "anstallningsskyddslagen/1982-80#LAS-04",
+    "eu-working-conditions/2019-1152#EMP-11"
+   ],
+   "text": "48 500 kr a month (revision: 50 000 kr), paid monthly on the 25th to her salary account."
+  },
+  {
+   "id": "not-computed",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "anstallningsskyddslagen/1982-80#LAS-10",
+    "anstallningsskyddslagen/1982-80#LAS-11",
+    "eu-working-conditions/2019-1152#EMP-16"
+   ],
+   "text": "Holiday (30 days) and notice (by reference to LAS) are written as the notes give them; no notice period or holiday figure is worked out."
+  },
+  {
+   "id": "revised-terms",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "anstallningsskyddslagen/1982-80#LAS-17",
+    "eu-working-conditions/2019-1152#EMP-18"
+   ],
+   "text": "The revised statement gives 50 000 kr a month and the start date 1 December 2026."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies and people are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "anstallningsskyddslagen/1982-80",
+  "eu-working-conditions/2019-1152",
+  "every-file/1.1.0"
+ ]
+}

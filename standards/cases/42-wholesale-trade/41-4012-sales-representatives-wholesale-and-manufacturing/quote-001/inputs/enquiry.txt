@@ -1,0 +1,23 @@
+From: Maja Lindholm <maja@exempel-kontor.example>
+To: order@vasthamn.example
+Date: 12 October 2026
+Subject: Price request for our new office, our reference BK-2210
+
+Hi,
+
+We are opening a second office in January and need equipment. Could you quote us for:
+
+- 2 two-colour label printers (the ESP-210)
+- 4 of the 64 mm shredders
+- 10 boxes of the 180-sheet ring binders
+- 80 bags of your sample goods, 1 kg
+
+Delivered to us in Malmö please. Our details for the paperwork:
+
+Exempel Kontor AB, Industrigatan 8, 211 20 Malmö, Sweden
+VAT ID SE556677889901
+
+Please put our reference BK-2210 on the quotation.
+
+Thanks,
+Maja Lindholm, purchasing

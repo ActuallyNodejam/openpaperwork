@@ -1,0 +1,18 @@
+{
+ "issuer": "at-ustg",
+ "version": "2026",
+ "link": "https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10004873&Paragraf=11",
+ "license": "Austrian laws and official publications are free works (Urheberrechtsgesetz § 7); notice licenses/einvoice-be-nl-at-official-texts.txt. Restated in our own words. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "What an Austrian invoice states",
+ "source": "Umsatzsteuergesetz 1994 § 11 as in force since 24 December 2025 (RIS): Abs. 1 Z 3 lit. a (the supplier's name and address), lit. b (the recipient's, and the recipient's UID-Nummer when the total exceeds 10 000 euros), lit. c (quantity and kind), lit. d (the date or period of supply), lit. e and f (the price, the rate and the VAT, in euro too for another currency), lit. g (the date), lit. h (a running number), lit. i (the supplier's UID-Nummer); Abs. 1a: for a reverse charge the recipient's UID-Nummer and a note of the Steuerschuldnerschaft des Leistungsempfängers, in no prescribed words; Abs. 7 and 8: a Gutschrift is self-billing, so a correcting credit note is a Rechnungskorrektur. The UID check digit is the ministry's own formula (BMF, Konstruktionsregeln der UID, November 2020). Unternehmensgesetzbuch § 14 for the Firmenbuch details of letters and order forms. The federal e-invoicing decree is the e-Rechnungsverordnung (BGBl. II Nr. 505/2012): its portal takes ebInterface and UBL (Peppol), not CII. Read 2026-10-09.",
+ "rules": [
+  {
+   "id": "AT-INVOICE",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "text": "The number and date, the supplier's UID-Nummer (ATU and eight digits, its check digit), both parties' names and addresses, the date or period of supply, the VAT per rate, the recipient's UID-Nummer over 10 000 euros, any clear note of the recipient's tax liability for a reverse charge, the Firmenbuchnummer when the order gives one and the invoice a Rechnungskorrektur corrects, on the page."
+  }
+ ]
+}

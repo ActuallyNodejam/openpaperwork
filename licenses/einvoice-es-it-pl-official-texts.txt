@@ -1,0 +1,45 @@
+Spanish, Italian and Polish laws, official texts and e-invoice formats, used by the e-invoice pack
+
+Official texts are not protected by copyright in these countries:
+- Spain: texto refundido de la Ley de Propiedad Intelectual (Real Decreto Legislativo 1/1996) art. 13, legal
+  and regulatory provisions are not objects of intellectual property.
+- Italy: legge 22 aprile 1941, n. 633, art. 5, the act does not apply to the texts of official acts of the
+  state and of public administrations.
+- Poland: ustawa z dnia 4 lutego 1994 r. o prawie autorskim i prawach pokrewnych art. 4 pkt 1 and 2,
+  normative acts and official documents, materials, signs and symbols are not objects of copyright.
+
+Sources, read 2026-10-09:
+- Spain: Reglamento por el que se regulan las obligaciones de facturación (Real Decreto 1619/2012), art. 6.1
+  (m: «inversión del sujeto pasivo» quoted), art. 6.5 and art. 15, BOE consolidated text, last change in
+  force 7 December 2023; Real Decreto 1007/2023, art. 1, 3 and 7 and disposición final cuarta as amended by
+  Real Decreto-ley 15/2025 of 2 December 2025 (1 January 2027 and 1 July 2027); Real Decreto 1065/2007
+  art. 19 and 20 and Orden EHA/451/2008 art. 2 to 5 on the NIF; Ley 25/2013 art. 4, 5 and disposición
+  adicional segunda (boe.es).
+- Italy: DPR 26 ottobre 1972, n. 633, art. 17, 17-ter, 21 and 26, the text in force on 9 October 2026
+  («inversione contabile» quoted); D.Lgs. 19 gennaio 2026, n. 10 (Testo unico IVA), which repeals DPR
+  633/1972 from 1 January 2027, art. 64, 65, 72, 77 and 92; DM 3 aprile 2013, n. 55 (normattiva.it); DM
+  17 giugno 2014 art. 6 (gazzettaufficiale.it).
+- Poland: ustawa z dnia 11 marca 2004 r. o podatku od towarów i usług, art. 106e, 106ga, 106gb, 106j, 145l
+  and 145m («odwrotne obciążenie», «mechanizm podzielonej płatności» and «metoda kasowa» quoted), the
+  consolidated text kept by the Chancellery of the Sejm, as of 20 July 2026 (isap.sejm.gov.pl).
+
+Formats (nothing of these is in this repository; each schema is fetched at a pinned SHA-256 and run):
+- Facturae 3.2.2, facturae.gob.es. Reuse of the site's contents is allowed under Ley 37/2007 with the source
+  named. Origen de los datos: Ministerio de Hacienda y Administraciones Públicas - Ministerio de Industria,
+  Energía y Turismo.
+- FatturaPA, schema 1.2.3 and technical specifications 1.4, valid from 1 April 2025, fatturapa.gov.it. The
+  site reserves every right in its contents; the format itself is allegato A of DM 55/2013.
+- The logical structure FA(3) of the Krajowy System e-Faktur, Ministry of Finance, published as an
+  electronic document template at crd.gov.pl/wzor/2025/06/25/13775/ and in github.com/CIRFMF/ksef-docs. The
+  install writes two copies of it for a validator without a network: one whose schemaLocation attributes
+  name the file beside them, and one where every maxOccurs above 100 is unbounded as well.
+
+Not read from an official text: the check characters of the Spanish NIF, the Italian partita IVA and the
+Polish NIP (the pack refuses on the form of the number and only warns on the check character); the words
+«scissione dei pagamenti» of DM 23 gennaio 2015 (read in the FatturaPA specification); the stamp-duty
+threshold of DPR 642/1972 (the pack never decides whether stamp duty is due).
+
+Changes: the requirements are restated in our own words as builder refusals and page checks in
+skills/e-invoice/scripts/countries.py, skills/e-invoice/page/country_page.py and
+skills/_checks/einvoice_country.py; the element names the three builders write are in our own code; only the
+fixed mentions above are quoted. This is not legal or tax advice.

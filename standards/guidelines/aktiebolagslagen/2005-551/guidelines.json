@@ -1,0 +1,55 @@
+{
+  "issuer": "aktiebolagslagen",
+  "version": "2005-551",
+  "link": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/aktiebolagslag-2005551_sfs-2005-551/",
+  "license": "Swedish statute, outside copyright under upphovsrättslagen (1960:729) 9 §; the rules are restated in our own words and the section is cited. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-08",
+  "status": "draft",
+  "title": "Aktiebolagslag (2005:551)",
+  "source": "Aktiebolagslag (2005:551), as amended up to SFS 2026:783: 8 kap. 24–26 §§ (board minutes) and 7 kap. 48–49 §§ (general meeting minutes).",
+  "rules": [
+    {
+      "id": "MIN-15",
+      "grader": "judge",
+      "text": "A board keeps minutes of every meeting and records every decision.",
+      "source": "8 kap. 24 § första stycket"
+    },
+    {
+      "id": "MIN-16",
+      "grader": "script",
+      "text": "The minute-taker signs; the chair checks them unless the chair took them, and with several directors one more director the board picks checks them too.",
+      "source": "8 kap. 24 § andra stycket",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "MIN-17",
+      "grader": "judge",
+      "text": "A director or the CEO may have a dissent recorded.",
+      "source": "8 kap. 24 § tredje stycket"
+    },
+    {
+      "id": "MIN-18",
+      "grader": "judge",
+      "text": "Board minutes are numbered in sequence and kept securely.",
+      "source": "8 kap. 26 §"
+    },
+    {
+      "id": "MIN-19",
+      "grader": "judge",
+      "text": "Minutes of a general meeting give the date and place, every decision, the motions and the result of each vote, with the voting list attached.",
+      "source": "7 kap. 48 § första och andra stycket"
+    },
+    {
+      "id": "MIN-20",
+      "grader": "judge",
+      "text": "The minute-taker signs the general meeting's minutes; the chair, when not the writer, and at least one checker the meeting chose check them.",
+      "source": "7 kap. 48 § tredje stycket"
+    },
+    {
+      "id": "MIN-21",
+      "grader": "judge",
+      "text": "General meeting minutes are available within two weeks and kept securely.",
+      "source": "7 kap. 49 §, 7 kap. 48 a §"
+    }
+  ]
+}

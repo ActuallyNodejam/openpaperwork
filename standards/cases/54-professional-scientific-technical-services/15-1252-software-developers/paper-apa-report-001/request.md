@@ -1,0 +1,1 @@
+Write report.docx from notes.txt: an APA 7 student paper with a title page, an introduction, a method section with one subheading, results, a discussion and a reference list. Use the student paper format.

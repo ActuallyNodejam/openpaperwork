@@ -1,0 +1,196 @@
+{
+ "id": "annual-accounts-error-sv-001",
+ "title": "Gör årsredovisningen av handinskrivna siffror som innehåller två fel",
+ "person": "The owner of a bike shop in Växjö who typed the trial balance into a text file by hand and added up the disposition in her head.",
+ "format": "docx",
+ "output": "arsredovisning-2025.docx",
+ "locale": "sv",
+ "sector": {
+  "naics": "44-45",
+  "name": "Retail Trade"
+ },
+ "occupation": {
+  "soc": "43-3031.00",
+  "name": "Bookkeeping, Accounting, and Auditing Clerks"
+ },
+ "review": [
+  "Cykelverkstan i Växjö AB, 556000-0004, calendar year 2025 under K2: the hand-typed trial balance says 146 000 kr on the business account, the bank statement 138 000 kr, and the trial balance does not sum to zero by 8 000 kr; the report uses 138 000 kr, so total assets are 376 400 kr and equal equity and liabilities (2024: 340 200 kr). Profit 55 700 kr; 209 400 kr at the meeting's disposal (the notes say 219 400 kr), 40 000 kr dividend and 169 400 kr carried forward; signed in Växjö on 30 March 2026 by Hanna and Olof Berglund."
+ ],
+ "revised_review": [
+  "Dividend 35 000 kr and 174 400 kr carried forward; Kassa och bank stays 138 000 kr."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "parts",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-PARTS",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-01",
+    "arsredovisningslagen/1995-1554#ARL-15",
+    "eu-accounting-directive/2013-34#ACC-01",
+    "bfn-k2/2016-10#K2-01",
+    "bfn-k2/2016-10#K2-05"
+   ],
+   "text": "Management report (business, events, multi-year overview, changes in equity, disposition), income statement, balance sheet, notes and signatures, in that order, with the name and organisation number."
+  },
+  {
+   "id": "amounts",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-AMOUNTS",
+   "guidelines": [
+    "bfn-k2/2016-10#K2-02"
+   ],
+   "text": "Amounts in whole kronor, the unit stated once and kept."
+  },
+  {
+   "id": "years",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-YEARS",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-05",
+    "eu-accounting-directive/2013-34#ACC-02"
+   ],
+   "text": "Last year's figures beside this year's on every line, taken from last year's report."
+  },
+  {
+   "id": "sums",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-SUMS",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-07"
+   ],
+   "text": "Every subtotal and result line adds up, both years."
+  },
+  {
+   "id": "balance",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-BALANCE",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-06"
+   ],
+   "text": "Total assets 376 400 kr equal equity and liabilities (2024: 340 200 kr): the 8 000 kr typing error is not carried into the report."
+  },
+  {
+   "id": "result",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-RESULT",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-08"
+   ],
+   "text": "The year's result is the same in every place it appears."
+  },
+  {
+   "id": "equity",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-EQUITY",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-16",
+    "bfn-k2/2016-10#K2-06"
+   ],
+   "text": "The changes in equity run from last year's balance sheet to this year's."
+  },
+  {
+   "id": "disposition",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-DISPOSITION",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-17",
+    "bfn-k2/2016-10#K2-07"
+   ],
+   "text": "209 400 kr at the meeting's disposal; 40 000 kr dividend and 169 400 kr carried forward (revision: 35 000 kr and 174 400 kr)."
+  },
+  {
+   "id": "notes",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-NOTES",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-09",
+    "arsredovisningslagen/1995-1554#ARL-10",
+    "arsredovisningslagen/1995-1554#ARL-13",
+    "eu-accounting-directive/2013-34#ACC-06",
+    "eu-accounting-directive/2013-34#ACC-09",
+    "bfn-k2/2016-10#K2-08"
+   ],
+   "text": "Accounting policies, average number of employees and the fixed-asset note, numbered in order, the carrying amount matching the balance sheet."
+  },
+  {
+   "id": "signed",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-SIGNED",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-02",
+    "eu-accounting-directive/2013-34#ACC-11",
+    "bfn-k2/2016-10#K2-03"
+   ],
+   "text": "Both board members sign under a place and date after the year end."
+  },
+  {
+   "id": "error-found",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-06"
+   ],
+   "text": "The report uses the bank statement's 138 000 kr for Kassa och bank, and the reply tells the owner the trial balance said 146 000 kr and did not sum to zero; no other account is changed to close the gap."
+  },
+  {
+   "id": "disposition-arithmetic",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-17"
+   ],
+   "text": "The reply points out that the notes added the funds up to 219 400 kr when they are 209 400 kr, and the proposal carries 169 400 kr forward."
+  },
+  {
+   "id": "revised-dividend",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-17"
+   ],
+   "text": "The revised report proposes 35 000 kr and carries 174 400 kr forward, keeping the corrected bank balance."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, organisation numbers and figures are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "arsredovisningslagen/1995-1554",
+  "eu-accounting-directive/2013-34",
+  "bfn-k2/2016-10",
+  "every-file/1.1.0"
+ ]
+}

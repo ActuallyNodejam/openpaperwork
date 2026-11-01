@@ -1,0 +1,33 @@
+{
+  "domain": "legal",
+  "hands_back": [
+    "*.docx"
+  ],
+  "default": "agreement.docx",
+  "check": "python3 {here}/../_checks/packcheck.py contract-drafting {file}",
+  "recognises": {
+    "file": "*.json",
+    "has": [
+      "parties"
+    ],
+    "also": "redline.json"
+  },
+  "asks": [
+    {
+      "id": "agreement",
+      "kind": "an agreement (an NDA, a data processing agreement, a service agreement)",
+      "words": {
+        "en": "NDA, non-disclosure agreement, nondisclosure agreement, confidentiality agreement, DPA, data processing agreement, data processing addendum, cloud service agreement, service agreement, services agreement"
+      },
+      "weak": {
+        "en": "agreement, contract"
+      },
+      "with": {
+        "en": "draft, drafting, review, redline, sign, negotiate, mutual, clause, clauses, parties, template, standard"
+      },
+      "unless": {
+        "en": "in agreement"
+      }
+    }
+  ]
+}

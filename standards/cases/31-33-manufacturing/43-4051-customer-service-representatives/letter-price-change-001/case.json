@@ -1,0 +1,114 @@
+{
+ "id": "letter-price-change-001",
+ "title": "Answer a freight company's letter about next year's prices",
+ "person": "A customer manager at a small Swedish print shop writing to a freight customer in Scotland.",
+ "format": "docx",
+ "output": "letter.docx",
+ "locale": "en",
+ "sector": {
+  "naics": "31-33",
+  "name": "Manufacturing"
+ },
+ "occupation": {
+  "soc": "43-4051.00",
+  "name": "Customer Service Representatives"
+ },
+ "review": [
+  "It answers Ms Berg's letter of 2 October and states the new folder price of SEK 15.10 from 1 January 2027, up from SEK 14.20.",
+  "It offers this year's price for orders placed before 15 December and offers a quotation."
+ ],
+ "revised_review": [
+  "The cut-off is 1 December everywhere; 15 December appears nowhere.",
+  "Everything else is unchanged."
+ ],
+ "truth": {
+  "seller": {
+   "name": "Exempel Tryck AB",
+   "country": "Sweden",
+   "registered_office": "Gothenburg",
+   "register_number": "556677-8899"
+  },
+  "buyer": {
+   "name": "Example Freight Ltd",
+   "country": "United Kingdom"
+  },
+  "revision": {
+   "stale": [
+    "15 December"
+   ]
+  }
+ },
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "letter-din5008",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-DIN5008",
+   "guidelines": [
+    "din-5008/2020#LETTER-DIN5008"
+   ],
+   "text": "The letter sits on DIN 5008 Form B: margins of 25 mm left, 20 mm right and a 45 mm letterhead."
+  },
+  {
+   "id": "letter-parts",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-PARTS",
+   "guidelines": [
+    "din-5008/2020#LETTER-PARTS"
+   ],
+   "text": "Subject, salutation, closing and signatory are in the letter, as its spec names them."
+  },
+  {
+   "id": "letter-company",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-COMPANY",
+   "guidelines": [
+    "eu-company-law/2017-1132#LETTER-COMPANY"
+   ],
+   "text": "The registered office Gothenburg and number 556677-8899 are on the letter."
+  },
+  {
+   "id": "answers",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "It answers Ms Berg's letter of 2 October and states the new folder price of SEK 15.10 from 1 January 2027, up from SEK 14.20, with the reason."
+  },
+  {
+   "id": "offer",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "It offers this year's price for orders placed before the cut-off and offers a quotation; nothing else is promised."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and addresses are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "din-5008/2020",
+  "eu-company-law/2017-1132",
+  "every-file/1.1.0"
+ ]
+}

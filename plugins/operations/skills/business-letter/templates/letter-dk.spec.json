@@ -1,0 +1,52 @@
+{
+  "language": "da",
+  "date": "2026-10-09",
+  "sender": {
+    "name": "Kystlys Tryk ApS",
+    "street": "Havnegade 21",
+    "postcode": "8000",
+    "city": "Aarhus C",
+    "country": "DK",
+    "registered_office": "Aarhus",
+    "register_number": "41 22 63 85",
+    "email": "info@kystlys-tryk.example",
+    "phone": "+45 86 12 40 10"
+  },
+  "recipient": {
+    "name": "Vestjysk Kunstforening",
+    "attention": "Att. kasserer Mette Holm",
+    "street": "Torvet 4, 1.",
+    "postcode": "6950",
+    "city": "Ringkøbing",
+    "country": "DK"
+  },
+  "references": [
+    {
+      "kind": "yours",
+      "value": "Mail af 30.9."
+    },
+    {
+      "kind": "ours",
+      "value": "KT-2611"
+    }
+  ],
+  "contact": {
+    "name": "Søren Bach",
+    "phone": "+45 86 12 40 14",
+    "email": "sb@kystlys-tryk.example"
+  },
+  "subject": "Prisregulering på udstillingskataloger fra 1. januar 2027",
+  "salutation": "Kære Mette Holm",
+  "body": [
+    "Tak for jeres mail om kataloget til forårsudstillingen.",
+    "Fra 1. januar 2027 stiger prisen på et katalog på 48 sider fra 38,50 kr. til 41,00 kr., fordi papirprisen er steget med 7 procent. Ordrer, der er bestilt inden 15. december, trykkes til den nuværende pris.",
+    "Skriv endelig, hvis I vil have et tilbud på oplaget nu."
+  ],
+  "signatory": {
+    "name": "Søren Bach",
+    "role": "Kundeansvarlig"
+  },
+  "enclosures": [
+    "Prisliste 2027"
+  ]
+}

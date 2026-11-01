@@ -1,0 +1,7 @@
+Faktura 2026-1187, fakturadatum 2026-09-29, till Exempel Butik AB, Bygatan 3, 268 31 Svalöv (momsreg.nr SE556112233401)
+
+Exempelvara 500 g          24 st  à 89,00 kr  rabatt 10 %  = 1 922,40 kr  moms 12 %
+Kuvert vita 33 cm, kartong    6 st  à 145,00 kr             =   870,00 kr  moms 25 %
+Frakt                            1 st  à 195,00 kr             =   195,00 kr  moms 25 %
+
+Summa exkl. moms 2 987,40 kr, moms 12 % 230,69 kr, moms 25 % 266,25 kr, att betala 3 484,34 kr

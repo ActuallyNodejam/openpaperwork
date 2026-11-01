@@ -1,0 +1,116 @@
+{
+  "language": "en",
+  "product": "PS-30 bench power supply",
+  "organisation": "Larkfield Instruments Ltd",
+  "document": "LFI-RS-007",
+  "version": "0.2",
+  "date": "2026-10-20",
+  "status": "Draft for review",
+  "author": "Nadia Okafor",
+  "approver": "Tom Ashby",
+  "purpose": "This specification states what the PS-30 bench power supply has to do, so that design, test and the customer work from the same list.",
+  "scope": "It covers the supply unit, its front panel and its USB interface. Test leads and the bench it stands on are outside it.",
+  "definitions": [
+    {
+      "term": "Output",
+      "meaning": "The pair of 4 mm terminals on the front panel."
+    },
+    {
+      "term": "Ripple",
+      "meaning": "The peak-to-peak alternating part of the output voltage, measured over a 20 MHz bandwidth."
+    }
+  ],
+  "facts": [
+    "The supply will be used on lab benches at ambient temperatures of 0 °C to 40 °C.",
+    "Mains will be 230 V ± 10 % at 50 Hz."
+  ],
+  "requirements": [
+    {
+      "id": "PS-001",
+      "section": "Output",
+      "text": "The supply shall deliver an output voltage adjustable from 0 V to 30 V in steps of 10 mV.",
+      "rationale": "Covers the 24 V circuits the customer tests, with margin.",
+      "verification": "test"
+    },
+    {
+      "id": "PS-002",
+      "section": "Output",
+      "text": "The supply shall deliver an output current of up to 5 A at any output voltage.",
+      "rationale": "The heaviest board under test draws 4.2 A.",
+      "verification": "test"
+    },
+    {
+      "id": "PS-003",
+      "section": "Output",
+      "text": "The supply shall keep the output ripple below 5 mV peak to peak at an output current of 5 A.",
+      "rationale": "The customer's sensor boards read below 10 mV.",
+      "verification": "test"
+    },
+    {
+      "id": "PS-004",
+      "section": "Output",
+      "text": "The supply shall limit the output current to the set value within 1 ms of a short circuit at the output.",
+      "rationale": "Protects the board under test.",
+      "verification": "test"
+    },
+    {
+      "id": "PS-005",
+      "section": "Physical",
+      "text": "The supply shall have a mass of at most 4.5 kg.",
+      "rationale": "One person carries it between benches.",
+      "verification": "inspection"
+    },
+    {
+      "id": "PS-006",
+      "section": "Physical",
+      "text": "The supply shall convert mains power to output power with an efficiency of at least 85 % at full load (TBR-1).",
+      "rationale": "Keeps the case below the temperature a person can touch without a fan.",
+      "verification": "test"
+    },
+    {
+      "id": "PS-007",
+      "section": "Interface",
+      "text": "The supply shall report the measured output voltage and current over USB at least 10 times per second.",
+      "rationale": "The customer logs test runs from a PC.",
+      "verification": "demonstration"
+    },
+    {
+      "id": "PS-008",
+      "section": "Environment",
+      "text": "The supply shall hold the accuracy stated in its data sheet at ambient temperatures from 0 °C to 40 °C.",
+      "rationale": "The lab is not climate controlled.",
+      "verification": "analysis"
+    }
+  ],
+  "goals": [
+    {
+      "id": "PS-G01",
+      "text": "The supply should run without a fan at output powers up to 50 W.",
+      "rationale": "Teaching labs prefer a silent bench."
+    }
+  ],
+  "tbd": [
+    {
+      "id": "TBR-1",
+      "requirement": "PS-006",
+      "estimate": "85 %",
+      "closes": "Efficiency measured on the second prototype",
+      "owner": "Nadia Okafor",
+      "due": "2026-11-30"
+    }
+  ],
+  "history": [
+    {
+      "version": "0.1",
+      "date": "2026-10-06",
+      "change": "First draft",
+      "author": "Nadia Okafor"
+    },
+    {
+      "version": "0.2",
+      "date": "2026-10-20",
+      "change": "Ripple and efficiency added after the design review",
+      "author": "Nadia Okafor"
+    }
+  ]
+}

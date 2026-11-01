@@ -1,0 +1,75 @@
+{
+  "type": "order_confirmation",
+  "language": "nl-BE",
+  "number": "OB-2026-1042",
+  "issue_date": "2026-10-15",
+  "references": [
+    {
+      "label": "Uw bestelbon",
+      "value": "BB-7781"
+    },
+    {
+      "label": "Besteldatum",
+      "value": "2026-10-13"
+    }
+  ],
+  "dates": [
+    {
+      "label": "Bevestigde leveringsdatum",
+      "value": "2026-10-27"
+    }
+  ],
+  "currency": "EUR",
+  "seller": {
+    "name": "Voorbeeld Verpakkingen BV",
+    "street": "Kortrijksesteenweg 212",
+    "postcode": "9000",
+    "city": "Gent",
+    "country": "België",
+    "vat_id": "BE0712345678",
+    "email": "orders@voorbeeld-verpakkingen.example",
+    "phone": "+32 9 000 00 00",
+    "registered_office": "Kortrijksesteenweg 212, 9000 Gent",
+    "register": "RPR Gent, afdeling Gent",
+    "register_number": "0712.345.678"
+  },
+  "buyer": {
+    "name": "Scheldepoort Logistiek NV",
+    "street": "Noorderlaan 88",
+    "postcode": "2030",
+    "city": "Antwerpen",
+    "country": "België",
+    "vat_id": "BE0423456789"
+  },
+  "delivery_terms": {
+    "rule": "DAP",
+    "place": "Antwerpen, België"
+  },
+  "transport": "road",
+  "payment_terms": "30 dagen na factuurdatum",
+  "bank": {
+    "bank": "Voorbeeldbank",
+    "iban": "BE68 5390 0754 7034",
+    "bic": "VOORBEBB"
+  },
+  "lines": [
+    {
+      "code": "LV-30",
+      "description": "Golfkartonnen doos 600 × 400 × 400 mm, dubbele golf",
+      "quantity": 1200,
+      "unit": "pcs",
+      "unit_price": 1.38,
+      "discount_percent": 0,
+      "vat_rate": 21
+    },
+    {
+      "code": "LV-PAL",
+      "description": "Houten pallet 1200 × 800 mm",
+      "quantity": 20,
+      "unit": "pcs",
+      "unit_price": 14.5,
+      "discount_percent": 0,
+      "vat_rate": 21
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "type": "swimlane",
+  "title": "Who hands what to whom in a new hire",
+  "eyebrow": "Onboarding",
+  "description": "The hiring manager, HR, IT and the new hire each own their steps, and four handoffs carry the hire from offer to first day.",
+  "lanes": ["Hiring manager", "HR", "IT", "New hire"],
+  "steps": [
+    {"id": "offer", "name": "Sends the offer", "lane": "Hiring manager"},
+    {"id": "contract", "name": "Writes the contract", "lane": "HR", "note": "salary, start date"},
+    {"id": "sign", "name": "Signs", "lane": "New hire"},
+    {"id": "account", "name": "Sets up laptop and accounts", "lane": "IT", "focal": true},
+    {"id": "plan", "name": "Plans week one", "lane": "Hiring manager"},
+    {"id": "start", "name": "First day", "lane": "New hire"}
+  ],
+  "links": [
+    {"from": "offer", "to": "contract", "label": "accepted"},
+    {"from": "contract", "to": "sign", "label": "contract"},
+    {"from": "sign", "to": "account", "label": "start date"},
+    {"from": "sign", "to": "plan"},
+    {"from": "account", "to": "start", "label": "login"},
+    {"from": "plan", "to": "start", "label": "schedule"}
+  ],
+  "legend": [{"kind": "focal", "label": "the handoff that most often runs late"}],
+  "source": "HR handbook, onboarding"
+}

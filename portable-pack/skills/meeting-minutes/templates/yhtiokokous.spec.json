@@ -1,0 +1,56 @@
+{
+  "language": "fi",
+  "country": "FI",
+  "body": "Esimerkki Pakkaus Oy",
+  "company_number": "3214567-8",
+  "meeting": "annual general",
+  "number": "1/2026",
+  "date": "2026-04-23",
+  "start": "13:00",
+  "end": "13:50",
+  "place": "Yhtiön toimisto, Teollisuustie 9, Tampere",
+  "chair": "Pekka Laine",
+  "secretary": "Juha Niemi",
+  "checkers": [
+    "Leena Virtanen"
+  ],
+  "quorum": true,
+  "shareholders": [
+    {
+      "name": "Leena Virtanen",
+      "shares": 4000,
+      "votes": 4000
+    },
+    {
+      "name": "Esimerkki Invest Oy",
+      "shares": 3500,
+      "votes": 3500,
+      "by": "Mikko Salo"
+    },
+    {
+      "name": "Aino Koski",
+      "shares": 2500,
+      "votes": 2500
+    }
+  ],
+  "items": [
+    {
+      "title": "Tilinpäätöksen vahvistaminen",
+      "decisions": [
+        "Tilinpäätös vuodelta 2025 vahvistettiin"
+      ]
+    },
+    {
+      "title": "Voitonjako",
+      "decisions": [
+        "Osinkoa jaetaan 2,00 euroa osakkeelta, yhteensä 20 000 euroa"
+      ]
+    },
+    {
+      "title": "Vastuuvapaus",
+      "decisions": [
+        "Hallituksen jäsenille ja toimitusjohtajalle myönnettiin vastuuvapaus"
+      ]
+    }
+  ]
+}

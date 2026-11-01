@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "openpaperwork-hr",
+  "version": "0.1.0",
+  "description": "HR: the written terms of employment for the EU, the UK, Ireland, Sweden, Norway, Denmark, Finland, Belgium, the Netherlands, Austria, Spain, Italy, Poland, Canada, Ontario and Australia, and a US offer letter, with a check of every item the law asks for; not legal advice.",
+  "author": {
+    "name": "OpenPaperwork"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "hr"
+  ]
+}

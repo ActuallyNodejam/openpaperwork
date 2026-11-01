@@ -1,0 +1,38 @@
+{
+  "language": "fr",
+  "country": "CA",
+  "body": "Boréal Logiciels inc.",
+  "company_number": "1176543210",
+  "meeting": "board",
+  "date": "2026-10-16",
+  "start": "09:00",
+  "end": "10:30",
+  "place": "1200, boulevard René-Lévesque Ouest, Montréal",
+  "chair": "Isabelle Roy",
+  "secretary": "Louis Bergeron",
+  "present": [
+    "Isabelle Roy",
+    "François Côté",
+    "Nadia Benali"
+  ],
+  "in_attendance": [
+    "Louis Bergeron (secrétaire de la société)"
+  ],
+  "quorum": true,
+  "previous_minutes": "approved",
+  "items": [
+    {
+      "title": "Bureau de Québec",
+      "notes": "La présidente présente le projet d'ouverture d'un bureau à Québec.",
+      "decisions": [
+        "que la société ouvre un bureau à Québec et signe un bail de trois ans"
+      ]
+    },
+    {
+      "title": "Signataires bancaires",
+      "decisions": [
+        "que deux administrateurs signent tout chèque de plus de 25 000 $"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "language": "nl",
+  "country": "NL",
+  "body": "Waddenlicht Installaties B.V.",
+  "company_number": "81234567",
+  "meeting": "board",
+  "number": "2026-07",
+  "date": "2026-10-21",
+  "start": "09:30",
+  "end": "10:45",
+  "place": "Kantoor van de vennootschap, Oosterhamrikkade 60, Groningen",
+  "chair": "Marloes de Vries",
+  "secretary": "Ruben Bakker",
+  "present": [
+    "Marloes de Vries",
+    "Sander Visser"
+  ],
+  "in_attendance": [
+    "Ruben Bakker (controller)"
+  ],
+  "previous_minutes": "approved",
+  "items": [
+    {
+      "title": "Uitbreiding van het wagenpark",
+      "notes": "De controller licht de offerte voor zes elektrische bestelwagens toe.",
+      "decisions": [
+        "Het bestuur besluit zes elektrische bestelwagens te leasen voor vijf jaar"
+      ]
+    },
+    {
+      "title": "Begroting 2027",
+      "decisions": [
+        "Het bestuur stelt de begroting 2027 vast en legt haar voor aan de algemene vergadering"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "name": "openpaperwork",
+  "owner": {
+    "name": "OpenPaperwork"
+  },
+  "metadata": {
+    "description": "OpenPaperwork's library of standards packs: the whole library as one plugin, or one department only.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "openpaperwork",
+      "source": "./portable-pack",
+      "description": "OpenPaperwork's whole library, from invoices to board minutes: finance, sales, legal, HR, operations, marketing, engineering, academic and the formats, for Germany, France, Sweden, Norway, Denmark, Finland, the UK, the US, Canada, Australia, Belgium, the Netherlands, Austria, Ireland, Spain, Italy and Poland, with their scripted checks.",
+      "version": "0.1.0",
+      "category": "everything"
+    },
+    {
+      "name": "openpaperwork-finance",
+      "source": "./plugins/finance",
+      "description": "Finance: invoices and credit notes with the file each country takes (Factur-X / ZUGFeRD and XRechnung for Germany and France; Peppol BIS 3 for Norway, Denmark, Finland, the UK, Belgium, the Netherlands (or SI-UBL), Austria (or ebInterface) and Ireland; Facturae for Spain, FatturaPA for Italy, the KSeF invoice for Poland), tax invoices for Australia, Canada and the US, and a smaller Swedish company's annual report (K2), each with its scripted check.",
+      "version": "0.1.0",
+      "category": "finance"
+    },
+    {
+      "name": "openpaperwork-sales",
+      "source": "./plugins/sales",
+      "description": "Sales: quotations, order confirmations, delivery notes, pro forma invoices and purchase orders for Sweden, Norway, Denmark, Finland, Germany, Austria, the Netherlands, Belgium, France, Spain, Italy, Poland, the UK, Ireland, the US, Canada and Australia, each with the company details its own law asks for and a scripted check.",
+      "version": "0.1.0",
+      "category": "sales"
+    },
+    {
+      "name": "openpaperwork-legal",
+      "source": "./plugins/legal",
+      "description": "Legal: an NDA, a DPA or a cloud service agreement drafted on Common Paper's standard terms, and the other side's agreement reviewed and handed back with tracked changes, each with a drafting check; not legal advice.",
+      "version": "0.1.0",
+      "category": "legal"
+    },
+    {
+      "name": "openpaperwork-hr",
+      "source": "./plugins/hr",
+      "description": "HR: the written terms of employment for the EU, the UK, Ireland, Sweden, Norway, Denmark, Finland, Belgium, the Netherlands, Austria, Spain, Italy, Poland, Canada, Ontario and Australia, and a US offer letter, with a check of every item the law asks for; not legal advice.",
+      "version": "0.1.0",
+      "category": "hr"
+    },
+    {
+      "name": "openpaperwork-operations",
+      "source": "./plugins/operations",
+      "description": "Operations: business letters for Germany and Sweden (DIN 5008), Norway, Denmark, Finland, the US, the UK, Canada, Australia, Belgium, the Netherlands, Austria, Ireland, Spain, Italy and Poland, meeting minutes and company board and general-meeting minutes for the same countries except Germany, and decisions read out of a WhatsApp export.",
+      "version": "0.1.0",
+      "category": "operations"
+    },
+    {
+      "name": "openpaperwork-marketing",
+      "source": "./plugins/marketing",
+      "description": "Marketing: business decks handed back as a PDF, built to consulting structure, with an editable PowerPoint file with native charts and tables when asked, and fair and event posters made from a folder's own words and marks, each with its check.",
+      "version": "0.1.0",
+      "category": "marketing"
+    },
+    {
+      "name": "openpaperwork-engineering",
+      "source": "./plugins/engineering",
+      "description": "Engineering: requirements specifications with numbered shall statements, verification and SI units, with a check that flags vague words.",
+      "version": "0.1.0",
+      "category": "engineering"
+    },
+    {
+      "name": "openpaperwork-academic",
+      "source": "./plugins/academic",
+      "description": "Academic: IEEE and ACM papers, reference lists in APA 7, IEEE and Vancouver style with their check, literature search and a Zotero library (the paper pack needs a TeX engine, tectonic, on PATH).",
+      "version": "0.1.0",
+      "category": "academic"
+    },
+    {
+      "name": "openpaperwork-formats",
+      "source": "./plugins/formats",
+      "description": "Formats: Word, Excel, PowerPoint and PDF files, decks from a brand kit, and the floor every document, workbook and deck should pass (no cut-off text, no formula errors), with the same check as an MCP tool.",
+      "version": "0.1.0",
+      "category": "formats"
+    }
+  ]
+}

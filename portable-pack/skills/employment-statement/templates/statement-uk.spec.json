@@ -1,0 +1,63 @@
+{
+  "language": "en",
+  "law": "uk",
+  "given": "2026-11-02",
+  "employer": {
+    "name": "Larkspur Garden Supplies Ltd",
+    "number": "company number 09876543",
+    "address": "14 Mill Lane, Hebden Bridge HX7 8AB",
+    "signatory": "Priya Shah, Store Manager"
+  },
+  "worker": {
+    "name": "Tom Ellery",
+    "address": "3 Bank Street, Todmorden OL14 5AA"
+  },
+  "place": "The Hebden Bridge shop, 14 Mill Lane, Hebden Bridge HX7 8AB",
+  "job": {
+    "title": "Sales assistant",
+    "description": "Serving customers at the till and on the shop floor, receiving deliveries and keeping the plant tables stocked."
+  },
+  "start": "2026-11-02",
+  "term": {
+    "type": "permanent"
+  },
+  "probation": {
+    "months": 3,
+    "conditions": "a review with the store manager at the end of the period; during it either side may end the employment with one week's notice"
+  },
+  "pay": {
+    "amount": 13.25,
+    "currency": "GBP",
+    "per": "hour",
+    "paid": "weekly, every Friday, for the week before",
+    "method": "bank transfer to the worker's account",
+    "components": [
+      {
+        "name": "Sunday premium",
+        "text": "GBP 1.50 an hour on top for hours worked on a Sunday"
+      }
+    ]
+  },
+  "hours": {
+    "pattern": "fixed",
+    "standard": "30 hours a week, Wednesday to Sunday, 10:00 to 16:30 with a 30-minute unpaid break",
+    "overtime": "extra hours only by agreement, paid at the basic rate",
+    "shifts": "a shift may be swapped with a colleague with the store manager's agreement"
+  },
+  "leave": "5.6 weeks' paid holiday a year, bank holidays included, in proportion to the hours worked. The holiday year runs from 1 January. Holiday pay is the normal pay for the hours that would have been worked, and holiday accrued but not taken is paid when the employment ends",
+  "sickness": "Tell the store manager by 09:00 on the first day of absence. Statutory Sick Pay is paid from the first full day of sickness absence, at the statutory weekly rate or 80% of average weekly earnings if that is lower (from 6 April 2026, Employment Rights Act 2025 ss. 10 and 11); there is no company sick pay",
+  "pension": "The worker is enrolled in the company's workplace pension scheme when eligible under the automatic enrolment rules",
+  "benefits": "A 20 percent staff discount in the shop",
+  "termination": "Either side ends the employment in writing. The worker gives one week's notice. The employer gives the notice section 86 of the Employment Rights Act 1996 sets out",
+  "collective": null,
+  "training": "Till and fire-safety training in the first two weeks, paid, required and at the employer's cost",
+  "abroad": null,
+  "other_leave": null,
+  "disciplinary": {
+    "rules": "The staff handbook in the staff room and on the shared drive sets out the disciplinary rules",
+    "procedure": "Disciplinary and dismissal decisions follow the procedure in the staff handbook, which follows the Acas Code of Practice on disciplinary and grievance procedures",
+    "appeal_to": "the owner, Jane Holloway, in writing within five working days of the decision",
+    "grievance_to": "the store manager, in writing; a grievance about the store manager goes to the owner",
+    "steps": "a meeting within five working days of the appeal or grievance, then a written decision"
+  }
+}

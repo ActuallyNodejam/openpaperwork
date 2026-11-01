@@ -1,0 +1,97 @@
+{
+  "id": "update-001",
+  "title": "Make a short team update from figures",
+  "person": "A team lead preparing a five-minute internal update.",
+  "format": "pptx",
+  "output": "update.pptx",
+  "review": [
+    "The chart shows Q1 120/108 and Q2 150/135 with labels and a meaningful scale.",
+    "Median response time is 2.4 to 1.8 days initially, 2.4 to 2.1 after revision; any percentages use the correct baseline.",
+    "The period ratio limitation, unmeasured satisfaction and next action remain accurate.",
+    "All five slides render without clipping or unreadable labels, with editable text and an editable chart or data-driven editable shapes."
+  ],
+  "revised_review": [
+    "The obsolete 1.8 and 25% improvement do not remain as current facts in text, charts or notes.",
+    "The response-time improvement is 12.5% if a percentage is used; no causal claim is introduced."
+  ],
+  "version": "1.4.0",
+  "status": "draft",
+  "locale": "en",
+  "source": "Synthetic material created for this evaluation pack; no customer inputs.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+  "sector": {
+    "naics": "54",
+    "name": "Professional, Scientific, and Technical Services"
+  },
+  "occupation": {
+    "soc": "43-1011.00",
+    "name": "First-Line Supervisors of Office and Administrative Support Workers"
+  },
+  "guidelines": [
+    "openpaperwork/0.1.0",
+    "every-file/1.1.0"
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#FMT-2",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "chart",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-1",
+        "openpaperwork/0.1.0#FMT-2"
+      ],
+      "text": "An editable chart shows Q1 120 incoming / 108 resolved and Q2 150 / 135, with labels."
+    },
+    {
+      "id": "response-time",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-1"
+      ],
+      "text": "Median first response is given as 2.4 to 1.8 days (2.4 to 2.1 after the revision); any percentage uses 2.4 as the baseline."
+    },
+    {
+      "id": "limits",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-2"
+      ],
+      "text": "The period-ratio limitation, unmeasured satisfaction and the next action are stated accurately, with no revenue, satisfaction or causal claim."
+    },
+    {
+      "id": "slides",
+      "stage": "both",
+      "grader": "render",
+      "guidelines": [
+        "openpaperwork/0.1.0#PAGE-1"
+      ],
+      "max_pages": 5,
+      "min_pages": 5,
+      "text": "The deck renders as exactly five slides."
+    },
+    {
+      "id": "revised-figure",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#REV-1",
+        "openpaperwork/0.1.0#REV-2"
+      ],
+      "text": "The obsolete 1.8 days and 25% improvement no longer appear as current facts in text, charts or notes; a percentage, if used, is 12.5%; request counts are unchanged."
+    }
+  ],
+  "slides": 5
+}

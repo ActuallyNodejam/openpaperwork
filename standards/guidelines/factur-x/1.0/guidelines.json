@@ -1,0 +1,24 @@
+{
+ "issuer": "factur-x",
+ "version": "1.0",
+ "link": "https://fnfe-mpe.org/factur-x/factur-x_en/",
+ "license": "Cited only: the Factur-X 1.0 / ZUGFeRD 2.x specification (FNFE-MPE and FeRD) states no licence on its pages and is not copied or quoted. The implementation follows akretion factur-x 7.4 (BSD-3-Clause, credited in THIRD_PARTY.md); PDF/A-3 is ISO 19005-3, cited. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "One PDF/A-3 that is the invoice's page and its XML: Factur-X and ZUGFeRD 2",
+ "source": "Factur-X 1.0 (current release 1.09.2, with ZUGFeRD 2.5.2, 4 August 2026, fnfe-mpe.org and ferd-net.de): the hybrid invoice, a PDF/A-3 carrying the Cross Industry Invoice as factur-x.xml (xrechnung.xml for the XRECHNUNG profile of ZUGFeRD 2.x), with XMP naming DocumentType, DocumentFileName, Version and ConformanceLevel in urn:factur-x:pdfa:CrossIndustryDocument:invoice:1p0#. FNFE-MPE calls Factur-X one of the three formats of the French reform's minimum base. Read 2026-10-09.",
+ "rules": [
+  {
+   "id": "EINV-FACTURX",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "text": "The PDF carries the invoice XML as factur-x.xml (xrechnung.xml), listed in /AF with an AFRelationship, with XMP declaring PDF/A-3 and the Factur-X level the XML's guideline ID names, and the XML inside is the XML beside it."
+  },
+  {
+   "id": "EINV-PDFA",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "text": "veraPDF finds the PDF compliant with PDF/A-3B; skipped when veraPDF is not installed."
+  }
+ ]
+}

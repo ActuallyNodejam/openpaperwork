@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- A scenario for the KoSIT validator (github.com/itplr-kosit/validator, Apache-2.0) that checks
+  - a Polish structured invoice against the logical structure FA(3) of the Ministry of Finance
+  - (crd.gov.pl/wzor/2025/06/25/13775/schemat.xsd, kodSystemowy "FA (3)", wersjaSchemy "1-0E"; an official
+  - document, prawo autorskie art. 4 pkt 2).
+  - This file is ours; the files it names are run from where they are installed:
+  -   kosit/        the KoSIT XRechnung validator configuration (Apache-2.0): the report stylesheets
+  -   ksef/         schemat.xsd and its three type files, from one of the two copies the install writes: offline/
+  -                 (each schemaLocation names the file beside it instead of crd.gov.pl, and every maxOccurs
+  -                 above 100 is unbounded, which java checks at once) or, with FILETASK_KSEF_STRICT=1,
+  -                 strict/ (the schemaLocation change alone; about ten minutes a file)
+  - skills/e-invoice/scripts/fetch_validators.py installs them at pinned SHA-256 sums.
+  -->
+<scenarios xmlns="http://www.xoev.de/de/validator/framework/1/scenarios" frameworkVersion="1.0.0">
+  <name>KSeF FA(3)</name>
+  <author>Nodejam OpenPaperwork, e-invoice pack</author>
+  <date>2026-10-10</date>
+  <description>
+    <p>Validates a structured invoice against the logical structure FA(3).</p>
+  </description>
+  <scenario>
+    <name>KSeF FA(3) (schema)</name>
+    <description><p>Validates a structured invoice against the logical structure FA(3).</p></description>
+    <namespace prefix="doc">http://crd.gov.pl/wzor/2025/06/25/13775/</namespace>
+    <namespace prefix="rep">http://www.xoev.de/de/validator/varl/1</namespace>
+    <match>exists(/doc:Faktura)</match>
+    <validateWithXmlSchema>
+      <resource>
+        <name>FA(3) logical structure</name>
+        <location>ksef/schemat.xsd</location>
+      </resource>
+    </validateWithXmlSchema>
+    <createReport>
+      <resource>
+        <name>Validation report</name>
+        <location>kosit/resources/xrechnung-report.xsl</location>
+      </resource>
+    </createReport>
+    <acceptMatch>/rep:report/rep:assessment[1]/rep:accept[1]</acceptMatch>
+  </scenario>
+  <noScenarioReport>
+    <resource>
+      <name>Default Report</name>
+      <location>kosit/resources/default-report.xsl</location>
+    </resource>
+  </noScenarioReport>
+</scenarios>

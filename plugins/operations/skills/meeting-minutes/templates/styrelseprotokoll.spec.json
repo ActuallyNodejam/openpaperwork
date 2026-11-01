@@ -1,0 +1,23 @@
+{
+  "language": "sv",
+  "body": "Exempel Tryck AB (556677-8899)",
+  "meeting": "board",
+  "number": "5/2026",
+  "date": "2026-10-20",
+  "start": "16:00",
+  "end": "17:10",
+  "place": "Bolagets kontor, Verkstadsgatan 7, Göteborg",
+  "chair": "Karin Lind",
+  "secretary": "Jonas Wik",
+  "checkers": ["Sara Nyberg"],
+  "present": ["Karin Lind", "Sara Nyberg", "Jonas Wik"],
+  "previous_minutes": "approved",
+  "items": [
+    {"title": "Ny tryckpress",
+     "notes": "VD redogjorde för offerten på en ny digitalpress, 1 240 000 kr.",
+     "decisions": ["att köpa digitalpressen enligt offerten och finansiera den med leasing på fem år"],
+     "dissent": [{"name": "Sara Nyberg", "text": "mot beslutet, med hänvisning till kassaflödet"}]},
+    {"title": "Nästa möte",
+     "decisions": ["att nästa styrelsemöte hålls den 24 november 2026"]}
+  ]
+}

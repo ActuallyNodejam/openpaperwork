@@ -1,0 +1,129 @@
+{
+ "id": "employment-statement-abroad-001",
+ "title": "Write the employment statement for a service technician sent to Poland for six weeks",
+ "person": "The HR manager of a Swedish pump maker hiring a service technician whose first job is abroad.",
+ "format": "docx",
+ "output": "statement.docx",
+ "locale": "en",
+ "sector": {
+  "naics": "31-33",
+  "name": "Manufacturing"
+ },
+ "occupation": {
+  "soc": "11-3121.00",
+  "name": "Human Resources Managers"
+ },
+ "review": [
+  "Daniel Okafor's permanent employment from 11 January 2027 with six months' probation; SEK 39,000 a month on the 25th to his bank account and the SEK 1,200 stand-by allowance set out separately; 40 hours a week with the rota 14 days ahead; the work abroad names Poland (Gdańsk), 1 February to 14 March 2027, pay in SEK, the daily allowance, hotel and flights, the flight home and the mid-way trip home; the statement is dated before he leaves."
+ ],
+ "revised_review": [
+  "The work abroad now runs to 28 March 2027 (eight weeks) and adds Germany (Rostock) for the last two weeks; nothing else changes."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "items",
+   "stage": "both",
+   "grader": "script",
+   "script": "employment_check.py",
+   "rule": "EMPLOY-ITEMS",
+   "guidelines": [
+    "anstallningsskyddslagen/1982-80#LAS-01",
+    "anstallningsskyddslagen/1982-80#LAS-02",
+    "anstallningsskyddslagen/1982-80#LAS-07",
+    "anstallningsskyddslagen/1982-80#LAS-12",
+    "eu-working-conditions/2019-1152#EMP-01",
+    "eu-working-conditions/2019-1152#EMP-12"
+   ],
+   "text": "Every particular is there or marked not applicable."
+  },
+  {
+   "id": "dates",
+   "stage": "both",
+   "grader": "script",
+   "script": "employment_check.py",
+   "rule": "EMPLOY-DATES",
+   "guidelines": [
+    "anstallningsskyddslagen/1982-80#LAS-14",
+    "eu-working-conditions/2019-1152#EMP-04",
+    "eu-working-conditions/2019-1152#EMP-17"
+   ],
+   "text": "The start date is given and the statement is dated in time."
+  },
+  {
+   "id": "probation",
+   "stage": "both",
+   "grader": "script",
+   "script": "employment_check.py",
+   "rule": "EMPLOY-PROBATION",
+   "guidelines": [
+    "anstallningsskyddslagen/1982-80#LAS-16",
+    "eu-working-conditions/2019-1152#EMP-22"
+   ],
+   "text": "Six months' probation, stated."
+  },
+  {
+   "id": "pay",
+   "stage": "both",
+   "grader": "script",
+   "script": "employment_check.py",
+   "rule": "EMPLOY-PAY",
+   "guidelines": [
+    "anstallningsskyddslagen/1982-80#LAS-04",
+    "eu-working-conditions/2019-1152#EMP-11"
+   ],
+   "text": "SEK 39,000 a month, paid on the 25th by transfer."
+  },
+  {
+   "id": "abroad",
+   "stage": "both",
+   "grader": "script",
+   "script": "employment_check.py",
+   "rule": "EMPLOY-ABROAD",
+   "guidelines": [
+    "anstallningsskyddslagen/1982-80#LAS-15",
+    "eu-working-conditions/2019-1152#EMP-19",
+    "eu-working-conditions/2019-1152#EMP-21"
+   ],
+   "text": "Six weeks in Poland (revision: eight weeks, Poland and Germany): country, period, currency, benefits and the journey home, given before departure."
+  },
+  {
+   "id": "abroad-facts",
+   "stage": "first",
+   "grader": "judge",
+   "guidelines": [
+    "eu-working-conditions/2019-1152#EMP-19"
+   ],
+   "text": "Gdańsk, Poland, 1 February to 14 March 2027; salary in SEK; daily allowance, hotel and flights; flight home at the end and one trip home after three weeks."
+  },
+  {
+   "id": "revised-abroad",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "eu-working-conditions/2019-1152#EMP-18",
+    "anstallningsskyddslagen/1982-80#LAS-17"
+   ],
+   "text": "The work abroad runs to 28 March 2027 and names Germany (Rostock) for the last two weeks."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies and people are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "anstallningsskyddslagen/1982-80",
+  "eu-working-conditions/2019-1152",
+  "every-file/1.1.0"
+ ]
+}

@@ -1,0 +1,1 @@
+Prepara la conferma d'ordine per Esempio Distribuzione sulla base del loro ordine e del nostro listino (`inputs/`). In PDF, `conferma-ordine.pdf`, numero CO-2026-0412, data 13 ottobre 2026, consegna confermata il 6 novembre 2026.

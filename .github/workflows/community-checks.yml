@@ -1,0 +1,45 @@
+# Model-free checks. No secrets, no model, read-only token.
+# These checks validate the case protocol and the sign-off, not product task quality.
+# They run on every pull request: the sign-off has to, and the protocol tests take seconds.
+name: Community checks
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: community-checks-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  file-task-protocol:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out the proposed change
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6, reviewed 2026-10-01
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Check the offline task protocol
+        working-directory: standards
+        run: python3 -m unittest -v test_protocol.py
+  sign-off:
+    # Every commit carries Signed-off-by (the Developer Certificate of Origin, CONTRIBUTING.md).
+    # It reads the commits through the API and checks out nothing.
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      pull-requests: read
+    steps:
+      - name: Check every commit is signed off
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7.1.0
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const commits = await github.paginate(github.rest.pulls.listCommits,
+              { owner, repo, pull_number: context.payload.pull_request.number, per_page: 100 });
+            const missing = commits.filter(c => !/^Signed-off-by: .+ <.+>\s*$/m.test(c.commit.message));
+            for (const c of missing) core.error(`${c.sha.slice(0, 10)} "${c.commit.message.split('\n')[0]}" has no Signed-off-by line.`);
+            if (missing.length) core.setFailed(`${missing.length} of ${commits.length} commits are not signed off. Sign each with git commit -s (git rebase --signoff signs them all), then push again.`);

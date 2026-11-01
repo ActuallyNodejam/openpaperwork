@@ -1,0 +1,21 @@
+Irish VAT law and Revenue guidance on invoices, used by the e-invoice pack
+
+Contains Irish Public Sector Information licensed under a Creative Commons Attribution 4.0 International
+(CC BY 4.0) licence: https://creativecommons.org/licenses/by/4.0/
+- Value-Added Tax Consolidation Act 2010 ss. 66 and 67 and the Value-Added Tax Regulations 2010
+  (S.I. No. 639 of 2010) reg. 20, Irish Statute Book (Office of the Attorney General). Re-use of the Irish
+  Statute Book is under the Oireachtas (Open Data) PSI Licence, which incorporates the Creative Commons
+  Attribution 4.0 International License (irishstatutebook.ie, Open Data Initiative).
+- Revenue has no single invoice manual; its invoice guidance is two pages on revenue.ie: "What information
+  is required on a VAT invoice?" (published 16 March 2026) and "What information is required on a VAT
+  credit note?" (published 6 October 2026). Information provided courtesy of the Revenue Commissioners
+  under a Creative Commons Attribution 4.0 International (CC BY 4.0) licence (Revenue, "Re-use of public
+  sector information").
+- Revenue, "VAT Modernisation: Implementation of eInvoicing in Ireland" (the roadmap of the phases:
+  November 2028, November 2029, July 2030), under the same licence.
+- Companies Act 2014 s. 151, Irish Statute Book.
+Read 2026-10-09.
+
+Changes: the particulars of a VAT invoice and a credit note are restated in our own words as refusals and
+the IE-VAT-INVOICE check in skills/e-invoice/scripts/countries.py and skills/_checks/einvoice_country.py;
+no text is copied whole. This is not tax advice.

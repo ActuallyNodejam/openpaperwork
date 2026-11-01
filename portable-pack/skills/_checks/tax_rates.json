@@ -1,0 +1,33 @@
+{
+ "about": "The rates of value added tax (goods and services tax in Australia) each country the library writes for has, for the rule that a rate on a document is a rate its country has (skills/_checks/money_check.py). \"rates\" are the rates in force as read; \"other\" are rates that were in force until a date or belong to one scheme, each with its note: a document that carries one passes with a question. Zero is always a rate. Special territories and schemes with rates of their own (Corsica, the Canary Islands, Jungholz and Mittelberg, flat-rate farmers, the recargo de equivalencia) are not in the table. Canada and the United States have no national list: their sales taxes are named one by one on the document, and no rate there is checked against a table.",
+ "read": "2026-10-10",
+ "sources": {
+  "eu": "European Union, Your Europe, VAT rules and rates, the table \"List of VAT rates applied in EU member countries\" (https://europa.eu/youreurope/business/taxation/vat/vat-rules-rates/index_en.htm), last checked by its publisher 13 July 2026; read 2026-10-10",
+  "gb": "GOV.UK, VAT rates (https://www.gov.uk/vat-rates), Open Government Licence v3.0; read 2026-10-10",
+  "no": "Skatteetaten, Value added tax, rates for 2026 (https://www.skatteetaten.no/en/rates/value-added-tax/); read 2026-10-10",
+  "au": "A New Tax System (Goods and Services Tax) Act 1999 (Cth) s 9-70: GST is 10 percent of the value of the taxable supply (https://www.legislation.gov.au/C2004A00446/latest/text). Not read on 2026-10-10: the Australian Taxation Office's page refused the fetch, so the rate is cited from the Act and was not confirmed against an official page that day"
+ },
+ "countries": {
+  "AT": {"tax": "VAT", "rates": [20, 13, 10], "source": "eu"},
+  "BE": {"tax": "VAT", "rates": [21, 12, 6], "source": "eu"},
+  "DE": {"tax": "VAT", "rates": [19, 7], "source": "eu"},
+  "DK": {"tax": "VAT", "rates": [25], "source": "eu"},
+  "ES": {"tax": "VAT", "rates": [21, 10, 4], "source": "eu"},
+  "FI": {"tax": "VAT", "rates": [25.5, 13.5, 10], "source": "eu",
+         "other": {"14": "Finland's reduced rate until 31 December 2025: right only for a supply made before then",
+                   "24": "Finland's standard rate until 31 August 2024: right only for a supply made before then"}},
+  "FR": {"tax": "VAT", "rates": [20, 10, 5.5, 2.1], "source": "eu"},
+  "IE": {"tax": "VAT", "rates": [23, 13.5, 9], "source": "eu"},
+  "IT": {"tax": "VAT", "rates": [22, 10, 5, 4], "source": "eu"},
+  "NL": {"tax": "VAT", "rates": [21, 9], "source": "eu"},
+  "PL": {"tax": "VAT", "rates": [23, 8, 5], "source": "eu",
+         "other": {"22": "a rate the KSeF structure still takes for a supply under the rates in force before 2011",
+                   "7": "a rate the KSeF structure still takes for a supply under the rates in force before 2011",
+                   "4": "the flat rate for taxi services, which the KSeF structure takes",
+                   "3": "a flat rate the KSeF structure takes"}},
+  "SE": {"tax": "VAT", "rates": [25, 12, 6], "source": "eu"},
+  "GB": {"tax": "VAT", "rates": [20, 5], "source": "gb"},
+  "NO": {"tax": "VAT", "rates": [25, 15, 12], "source": "no"},
+  "AU": {"tax": "GST", "rates": [10], "source": "au"}
+ }
+}

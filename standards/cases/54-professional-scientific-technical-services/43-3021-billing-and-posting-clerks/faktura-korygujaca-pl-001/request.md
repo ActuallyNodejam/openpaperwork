@@ -1,0 +1,1 @@
+Na fakturze FV/2026/09/041 dla Przykład Wydawnictwo policzyliśmy część stron dwa razy. Przygotuj fakturę korygującą (dokumenty w `inputs/`): `korekta.pdf` i obok plik FA(3) `korekta.xml`. Data wystawienia: 9 października 2026.

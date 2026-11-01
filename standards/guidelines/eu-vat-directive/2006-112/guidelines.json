@@ -1,0 +1,32 @@
+{
+  "issuer": "eu-vat-directive",
+  "version": "2006-112",
+  "link": "https://eur-lex.europa.eu/eli/dir/2006/112/oj",
+  "license": "EU legal text, reusable under Commission Decision 2011/833/EU; the article is cited. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-07",
+  "status": "draft",
+  "source": "Council Directive 2006/112/EC on the common system of value added tax, Title XI Chapter 3 (invoicing), as amended: Art. 219, 219a, 226, 230 and 248a. Only the requirements are cited; no text is copied beyond the mentions the Directive itself prescribes.",
+  "rules": [
+    {
+      "id": "EINV-PAGE-MENTIONS",
+      "grader": "script",
+      "text": "A reverse-charge invoice carries the mention Reverse charge in the page's language, and an invoice in a currency other than the seller's national one states the VAT in the national currency too.",
+      "source": "Directive 2006/112/EC Art. 226(11a) and Art. 230",
+      "check": "einvoice_page.py EINV-PAGE-MENTIONS"
+    },
+    {
+      "id": "EINV-LANGUAGE",
+      "grader": "script",
+      "text": "The page is in the customer's language when the order names one, else the seller's country's, whose rules govern the invoice; a language the pack has no words for is written in English.",
+      "source": "Directive 2006/112/EC Art. 219a (whose rules apply) and Art. 248a (a state may ask for a translation); Stripe sets the invoice language per customer",
+      "check": "einvoice_page.py EINV-LOCALE-ORDER"
+    },
+    {
+      "id": "INV-CREDIT-AMENDS",
+      "grader": "script",
+      "text": "A document that amends an invoice, such as a credit note, counts as an invoice when it refers to that invoice specifically and unambiguously: it names the invoice it amends and carries what an invoice must carry.",
+      "source": "Directive 2006/112/EC Art. 219 (amending documents) and Art. 226 (the particulars of an invoice)",
+      "check": "credit_note_check.py INV-CREDIT-REF"
+    }
+  ]
+}

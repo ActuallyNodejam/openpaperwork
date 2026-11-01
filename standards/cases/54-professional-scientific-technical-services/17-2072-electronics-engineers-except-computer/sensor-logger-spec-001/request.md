@@ -1,0 +1,1 @@
+Here are my notes from the kickoff for the RL-5 river level logger (`inputs/kickoff-notes.txt`). Please turn them into a requirements specification in Word, `requirements.docx`, that we can send to the trust for review: each requirement numbered, with its rationale and how we will verify it.

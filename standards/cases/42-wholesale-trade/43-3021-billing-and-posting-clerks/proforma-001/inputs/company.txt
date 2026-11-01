@@ -1,0 +1,17 @@
+Västhamn Grossist AB
+Hamngatan 14, 411 14 Gothenburg, Sweden
+VAT ID SE559012345601
+order@vasthamn.example, +46 31 555 01 00
+Bank: Västkustbanken, IBAN SE45 5000 0000 0583 9825 7466, BIC VKBASESS
+
+How we do paperwork
+- Prices are in SEK excluding VAT unless a price list says otherwise.
+- Swedish customers: VAT 25% on equipment and supplies, 12% on goods at the reduced rate.
+- Customers outside the EU: no Swedish VAT (export), and they pay in advance.
+- Each line is rounded to two decimals, then VAT is worked out once per VAT rate on the sum of that rate's lines.
+- Quotations are valid for 30 days from the date of the quotation.
+- Payment for Swedish customers: 30 days net from invoice date.
+- We deliver by road. Standard delivery term for Swedish customers: delivered to the customer's address, unloading by the customer
+  (that is DAP under Incoterms 2020). If the customer collects from our warehouse in Gothenburg and we load their vehicle, it is FCA.
+
+Pro forma invoices are valid for 30 days. A pro forma invoice is not a tax invoice; the commercial invoice follows when the goods leave.

@@ -1,0 +1,1325 @@
+{
+  "note": "What people call each kind of file this plugin's packs make. Built by scripts/build-portable-pack.py from the asks list in each pack's pack.json and the titles the packs' own pages print; change it there, never here. Read by hooks/pack_route.py.",
+  "routes": [
+    {
+      "skill": "academic-references",
+      "checks": true,
+      "kinds": [
+        {
+          "id": "references",
+          "kind": "a reference list or citations in APA, IEEE or Vancouver style",
+          "words": {
+            "en": [
+              "reference list",
+              "bibliography",
+              "citations",
+              "apa 7",
+              "apa style",
+              "vancouver style",
+              "works cited"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "skill": "annual-accounts",
+      "checks": true,
+      "kinds": [
+        {
+          "id": "annual_report",
+          "kind": "the annual report of a smaller Swedish limited company (K2)",
+          "words": {
+            "sv": [
+              "årsredovisning"
+            ],
+            "en": [
+              "annual report",
+              "annual accounts"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "skill": "business-deck",
+      "checks": true,
+      "kinds": [
+        {
+          "id": "deck",
+          "kind": "a slide deck",
+          "words": {
+            "en": [
+              "deck",
+              "slide deck",
+              "slides",
+              "pitch deck",
+              "board deck",
+              "slideshow"
+            ],
+            "de": [
+              "Präsentation",
+              "Folien",
+              "Foliensatz"
+            ],
+            "fr": [
+              "diaporama",
+              "diapositives"
+            ],
+            "nl": [
+              "presentatie"
+            ],
+            "sv": [
+              "bildspel"
+            ],
+            "nb": [
+              "presentasjon",
+              "lysbilder"
+            ],
+            "da": [
+              "præsentation"
+            ],
+            "fi": [
+              "diaesitys",
+              "powerpoint-esitys",
+              "kalvot",
+              "kalvosarja"
+            ],
+            "es": [
+              "presentación",
+              "diapositivas"
+            ],
+            "it": [
+              "presentazione",
+              "diapositive"
+            ],
+            "pl": [
+              "prezentacja",
+              "slajdy"
+            ]
+          },
+          "weak": {
+            "en": [
+              "presentation"
+            ],
+            "fr": [
+              "présentation"
+            ]
+          },
+          "with": {
+            "en": [
+              "slides",
+              "slide",
+              "deck",
+              "board",
+              "meeting",
+              "management",
+              "investor",
+              "investors",
+              "pitch",
+              "powerpoint",
+              "keynote",
+              "make",
+              "create",
+              "build",
+              "prepare",
+              "give",
+              "styrelsen",
+              "ledningen",
+              "gör",
+              "skapa"
+            ],
+            "fr": [
+              "une",
+              "fais",
+              "faire",
+              "prépare",
+              "préparer",
+              "crée",
+              "créer",
+              "comité",
+              "direction",
+              "conseil",
+              "investisseurs"
+            ]
+          },
+          "unless": {
+            "en": [
+              "deck of cards",
+              "on deck",
+              "steam deck",
+              "tape deck",
+              "flight deck"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "skill": "business-letter",
+      "checks": true,
+      "kinds": [
+        {
+          "id": "letter",
+          "kind": "a letter",
+          "words": {
+            "en": [
+              "letter"
+            ],
+            "de": [
+              "Geschäftsbrief",
+              "Anschreiben",
+              "Kündigungsschreiben",
+              "Mahnschreiben",
+              "Mahnung",
+              "Zahlungserinnerung",
+              "Kündigung",
+              "Beschwerdebrief",
+              "Begleitschreiben",
+              "Bestätigungsschreiben",
+              "Briefe",
+              "Briefen"
+            ],
+            "fr": [
+              "lettre",
+              "courrier"
+            ],
+            "nl": [
+              "brieven",
+              "zakelijke brief",
+              "aanmaning",
+              "opzegbrief",
+              "opzeggingsbrief",
+              "klachtbrief",
+              "begeleidende brief"
+            ],
+            "sv": [
+              "brev",
+              "affärsbrev",
+              "uppsägningsbrev",
+              "reklamationsbrev",
+              "följebrev"
+            ],
+            "nb": [
+              "brev",
+              "forretningsbrev",
+              "oppsigelsesbrev",
+              "følgebrev"
+            ],
+            "da": [
+              "brev",
+              "forretningsbrev",
+              "opsigelsesbrev",
+              "følgebrev"
+            ],
+            "fi": [
+              "kirje",
+              "liikekirje",
+              "irtisanomiskirje",
+              "saatekirje"
+            ],
+            "es": [
+              "carta comercial",
+              "carta de reclamación",
+              "carta certificada",
+              "burofax"
+            ],
+            "it": [
+              "lettera",
+              "lettera commerciale",
+              "raccomandata",
+              "disdetta"
+            ],
+            "pl": [
+              "pismo",
+              "list polecony",
+              "wypowiedzenie",
+              "wezwanie do zapłaty"
+            ]
+          },
+          "weak": {
+            "de": [
+              "Brief"
+            ],
+            "nl": [
+              "brief"
+            ],
+            "es": [
+              "carta"
+            ],
+            "pl": [
+              "list"
+            ]
+          },
+          "with": {
+            "de": [
+              "einen",
+              "einem",
+              "den",
+              "dem",
+              "der",
+              "diesen",
+              "schreib",
+              "schreibe",
+              "schreiben",
+              "verfasse",
+              "verfassen",
+              "kunden",
+              "lieferanten",
+              "vermieter",
+              "firma",
+              "unterschreiben",
+              "abschicken"
+            ],
+            "nl": [
+              "een",
+              "deze",
+              "onze",
+              "mijn",
+              "schrijf",
+              "schrijven",
+              "stuur",
+              "sturen",
+              "versturen",
+              "opstellen",
+              "klant",
+              "leverancier",
+              "verhuurder",
+              "ondertekenen"
+            ],
+            "es": [
+              "una",
+              "esta",
+              "nuestra",
+              "escribe",
+              "escribir",
+              "redacta",
+              "redactar",
+              "enviar",
+              "envía",
+              "firmar",
+              "dirigida",
+              "formal",
+              "proveedor",
+              "cliente",
+              "arrendador"
+            ],
+            "pl": [
+              "napisz",
+              "napisać",
+              "wyślij",
+              "wysłać",
+              "formalny",
+              "firmowy",
+              "klienta",
+              "dostawcy",
+              "urzędu",
+              "wynajmującego",
+              "podpisu",
+              "przygotuj"
+            ]
+          },
+          "unless": {
+            "en": [
+              "capital letter",
+              "first letter",
+              "last letter",
+              "letter size",
+              "letter sized",
+              "letter paper",
+              "us letter",
+              "letter spacing",
+              "letter grade",
+              "lowercase letter",
+              "uppercase letter",
+              "letter case",
+              "drive letter",
+              "each letter",
+              "every letter",
+              "single letter",
+              "one letter",
+              "letter count",
+              "letter of the alphabet",
+              "letter of credit"
+            ],
+            "es": [
+              "a la carta"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "skill": "contract-drafting",
+      "checks": true,
+      "kinds": [
+        {
+          "id": "agreement",
+          "kind": "an agreement (an NDA, a data processing agreement, a service agreement)",
+          "words": {
+            "en": [
+              "NDA",
+              "non-disclosure agreement",
+              "nondisclosure agreement",
+              "confidentiality agreement",
+              "DPA",
+              "data processing agreement",
+              "data processing addendum",
+              "cloud service agreement",
+              "service agreement",
+              "services agreement"
+            ]
+          },
+          "weak": {
+            "en": [
+              "agreement",
+              "contract"
+            ]
+          },
+          "with": {
+            "en": [
+              "draft",
+              "drafting",
+              "review",
+              "redline",
+              "sign",
+              "negotiate",
+              "mutual",
+              "clause",
+              "clauses",
+              "parties",
+              "template",
+              "standard"
+            ]
+          },
+          "unless": {
+            "en": [
+              "in agreement"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "skill": "diagram",
+      "checks": true,
+      "kinds": [
+        {
+          "id": "diagram",
+          "kind": "a diagram",
+          "words": {
+            "en": [
+              "diagram",
+              "flowchart",
+              "flow chart",
+              "org chart",
+              "organisation chart",
+              "organization chart",
+              "swimlane",
+              "swim lane",
+              "gantt",
+              "gantt chart",
+              "timeline",
+              "process map",
+              "layer stack",
+              "2x2 matrix"
+            ],
+            "de": [
+              "Diagramm",
+              "Flussdiagramm",
+              "Organigramm",
+              "Zeitstrahl",
+              "Gantt-Diagramm",
+              "Ablaufdiagramm",
+              "Prozesslandkarte"
+            ],
+            "fr": [
+              "diagramme",
+              "organigramme",
+              "logigramme",
+              "frise chronologique",
+              "diagramme de Gantt"
+            ],
+            "nl": [
+              "stroomschema",
+              "organogram",
+              "tijdlijn",
+              "gantt-diagram",
+              "procesplaat"
+            ],
+            "sv": [
+              "flödesschema",
+              "organisationsschema",
+              "organisationskarta",
+              "tidslinje",
+              "processkarta",
+              "gantt-schema",
+              "simbana"
+            ],
+            "nb": [
+              "flytskjema",
+              "organisasjonskart",
+              "tidslinje",
+              "prosesskart"
+            ],
+            "da": [
+              "flowdiagram",
+              "organisationsdiagram",
+              "tidslinje",
+              "proceskort"
+            ],
+            "fi": [
+              "vuokaavio",
+              "organisaatiokaavio",
+              "aikajana",
+              "prosessikaavio"
+            ],
+            "es": [
+              "diagrama de flujo",
+              "organigrama",
+              "línea de tiempo",
+              "diagrama de Gantt"
+            ],
+            "it": [
+              "diagramma di flusso",
+              "organigramma",
+              "linea del tempo",
+              "diagramma di Gantt"
+            ],
+            "pl": [
+              "schemat blokowy",
+              "schemat organizacyjny",
+              "oś czasu",
+              "diagram Gantta"
+            ]
+          },
+          "weak": {
+            "sv": [
+              "diagram"
+            ],
+            "nb": [
+              "diagram"
+            ],
+            "da": [
+              "diagram"
+            ]
+          },
+          "with": {
+            "sv": [
+              "rita",
+              "gör",
+              "skapa",
+              "över",
+              "för",
+              "vem",
+              "flöde",
+              "faser",
+              "etapper",
+              "projektet",
+              "renoveringen",
+              "zoner"
+            ],
+            "nb": [
+              "tegn",
+              "lag",
+              "lage",
+              "over",
+              "for",
+              "hvem",
+              "faser"
+            ],
+            "da": [
+              "tegn",
+              "lav",
+              "lave",
+              "over",
+              "for",
+              "hvem",
+              "faser"
+            ]
+          },
+          "unless": {
+            "en": [
+              "bar chart",
+              "pie chart",
+              "line chart"
+            ],
+            "sv": [
+              "stapeldiagram",
+              "cirkeldiagram",
+              "linjediagram"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "skill": "e-invoice",
+      "checks": true,
+      "kinds": [
+        {
+          "id": "invoice",
+          "kind": "an invoice",
+          "words": {
+            "en": [
+              "invoice",
+              "tax invoice"
+            ],
+            "de": [
+              "Rechnung",
+              "Ausgangsrechnung",
+              "Abschlagsrechnung",
+              "Schlussrechnung",
+              "Teilrechnung",
+              "Kundenrechnung",
+              "XRechnung"
+            ],
+            "fr": [
+              "facture"
+            ],
+            "nl": [
+              "factuur",
+              "facturen",
+              "verkoopfactuur"
+            ],
+            "sv": [
+              "faktura",
+              "kundfaktura"
+            ],
+            "nb": [
+              "faktura"
+            ],
+            "da": [
+              "faktura"
+            ],
+            "fi": [
+              "lasku",
+              "myyntilasku",
+              "verkkolasku"
+            ],
+            "es": [
+              "factura"
+            ],
+            "it": [
+              "fattura"
+            ],
+            "pl": [
+              "faktura"
+            ]
+          }
+        },
+        {
+          "id": "credit_note",
+          "kind": "a credit note",
+          "words": {
+            "en": [
+              "credit note",
+              "credit memo",
+              "adjustment note"
+            ],
+            "de": [
+              "Gutschrift",
+              "Rechnungskorrektur",
+              "Stornorechnung",
+              "Korrekturrechnung"
+            ],
+            "fr": [
+              "note de crédit",
+              "facture d'avoir",
+              "facture rectificative"
+            ],
+            "nl": [
+              "creditnota",
+              "creditfactuur",
+              "credit nota"
+            ],
+            "sv": [
+              "kreditfaktura",
+              "kreditnota"
+            ],
+            "nb": [
+              "kreditnota",
+              "kreditfaktura"
+            ],
+            "da": [
+              "kreditnota",
+              "kreditfaktura"
+            ],
+            "fi": [
+              "hyvityslasku"
+            ],
+            "es": [
+              "factura rectificativa",
+              "nota de crédito",
+              "nota de abono"
+            ],
+            "it": [
+              "nota di credito",
+              "nota di accredito",
+              "nota di variazione"
+            ],
+            "pl": [
+              "faktura korygująca",
+              "korekta faktury",
+              "nota korygująca"
+            ]
+          },
+          "weak": {
+            "fr": [
+              "avoir"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "skill": "employment-statement",
+      "checks": true,
+      "kinds": [
+        {
+          "id": "statement",
+          "kind": "the written terms of employment",
+          "words": {
+            "en": [
+              "written statement of particulars",
+              "statement of particulars",
+              "written statement of employment",
+              "terms of employment",
+              "employment terms",
+              "statement of employment terms",
+              "employment statement",
+              "employment contract",
+              "contract of employment",
+              "employment agreement",
+              "offer letter"
+            ],
+            "de": [
+              "Dienstzettel",
+              "Arbeitsvertrag",
+              "Dienstvertrag",
+              "Nachweis der Arbeitsbedingungen",
+              "Niederschrift der Arbeitsbedingungen"
+            ],
+            "fr": [
+              "contrat de travail",
+              "conditions d'emploi",
+              "document d'information sur la relation de travail",
+              "lettre d'embauche",
+              "lettre d'engagement"
+            ],
+            "nl": [
+              "arbeidsovereenkomst",
+              "arbeidscontract",
+              "arbeidsvoorwaarden"
+            ],
+            "sv": [
+              "anställningsbevis",
+              "anställningsavtal",
+              "anställningsvillkor"
+            ],
+            "nb": [
+              "arbeidsavtale",
+              "ansettelsesavtale",
+              "arbeidskontrakt"
+            ],
+            "da": [
+              "ansættelsesbevis",
+              "ansættelseskontrakt",
+              "ansættelsesaftale",
+              "ansættelsesvilkår"
+            ],
+            "fi": [
+              "työsopimus",
+              "työsopimuksen",
+              "työsopimusta",
+              "selvitys työnteon keskeisistä ehdoista",
+              "työnteon keskeiset ehdot"
+            ],
+            "es": [
+              "contrato de trabajo",
+              "contrato laboral",
+              "elementos esenciales del contrato"
+            ],
+            "it": [
+              "contratto di lavoro",
+              "lettera di assunzione",
+              "informativa sul rapporto di lavoro"
+            ],
+            "pl": [
+              "umowa o pracę",
+              "informacja o warunkach zatrudnienia",
+              "warunki zatrudnienia"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "skill": "meeting-minutes",
+      "checks": true,
+      "kinds": [
+        {
+          "id": "minutes",
+          "kind": "the minutes of a meeting",
+          "words": {
+            "en": [
+              "meeting minutes",
+              "board minutes",
+              "minutes of",
+              "the minutes",
+              "agm minutes",
+              "committee minutes",
+              "draft minutes",
+              "shareholder minutes",
+              "minutes of the",
+              "proper minutes",
+              "formal minutes",
+              "minutes from"
+            ],
+            "de": [
+              "Protokoll",
+              "Sitzungsprotokoll",
+              "Besprechungsprotokoll",
+              "Ergebnisprotokoll",
+              "Beschlussprotokoll",
+              "Niederschrift"
+            ],
+            "fr": [
+              "procès-verbal",
+              "procès verbal",
+              "compte rendu de réunion",
+              "pv de réunion",
+              "pv d'assemblée",
+              "pv du conseil"
+            ],
+            "nl": [
+              "notulen"
+            ],
+            "sv": [
+              "protokoll",
+              "styrelseprotokoll",
+              "stämmoprotokoll",
+              "mötesprotokoll",
+              "årsstämmoprotokoll",
+              "bolagsstämmoprotokoll",
+              "mötesanteckningar",
+              "minnesanteckningar"
+            ],
+            "nb": [
+              "protokoll",
+              "styreprotokoll",
+              "møtereferat",
+              "møteprotokoll",
+              "generalforsamlingsprotokoll"
+            ],
+            "da": [
+              "protokol",
+              "bestyrelsesreferat",
+              "mødereferat",
+              "generalforsamlingsreferat",
+              "beslutningsreferat",
+              "forhandlingsprotokol"
+            ],
+            "fi": [
+              "pöytäkirja",
+              "kokouspöytäkirja"
+            ],
+            "es": [
+              "acta"
+            ],
+            "it": [
+              "verbale di assemblea",
+              "verbale di riunione",
+              "verbale del consiglio",
+              "verbale dell'assemblea",
+              "verbale della riunione",
+              "verbale del cda"
+            ],
+            "pl": [
+              "protokół"
+            ]
+          },
+          "weak": {
+            "nb": [
+              "referat"
+            ],
+            "da": [
+              "referat"
+            ],
+            "it": [
+              "verbale"
+            ]
+          },
+          "with": {
+            "nb": [
+              "møte",
+              "møtet",
+              "styremøte",
+              "styremøtet",
+              "generalforsamling",
+              "generalforsamlingen",
+              "skriv",
+              "fra"
+            ],
+            "da": [
+              "møde",
+              "mødet",
+              "bestyrelsesmøde",
+              "bestyrelsesmødet",
+              "generalforsamling",
+              "generalforsamlingen",
+              "skriv",
+              "fra"
+            ],
+            "it": [
+              "il",
+              "un",
+              "del",
+              "al",
+              "nel",
+              "riunione",
+              "assemblea",
+              "consiglio",
+              "cda",
+              "seduta",
+              "redigi",
+              "redigere",
+              "scrivi",
+              "stesura"
+            ]
+          },
+          "unless": {
+            "en": [
+              "the minutes before",
+              "the minutes after"
+            ]
+          },
+          "not_after": {
+            "en": [
+              "#",
+              "few",
+              "several",
+              "couple",
+              "many",
+              "some",
+              "more",
+              "two",
+              "three",
+              "four",
+              "five",
+              "ten",
+              "fifteen",
+              "twenty",
+              "thirty",
+              "forty",
+              "sixty",
+              "ninety"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "skill": "paper",
+      "checks": true,
+      "kinds": [
+        {
+          "id": "paper",
+          "kind": "a research paper in a publisher's layout",
+          "words": {
+            "en": [
+              "research paper",
+              "conference paper",
+              "journal paper",
+              "ieee paper",
+              "acm paper",
+              "preprint",
+              "manuscript",
+              "journal submission",
+              "conference submission"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "skill": "requirements-spec",
+      "checks": true,
+      "kinds": [
+        {
+          "id": "requirements",
+          "kind": "a requirements specification",
+          "words": {
+            "en": [
+              "requirements specification",
+              "requirements spec",
+              "requirement specification",
+              "requirements document",
+              "SRS"
+            ],
+            "sv": [
+              "kravspecifikation",
+              "kravspec"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "skill": "social-poster",
+      "checks": false,
+      "kinds": [
+        {
+          "id": "poster",
+          "kind": "a fair or event poster",
+          "words": {
+            "en": [
+              "event poster",
+              "fair poster",
+              "trade show poster",
+              "trade-show poster",
+              "poster",
+              "instagram square",
+              "instagram story",
+              "fair post",
+              "trade fair post",
+              "save-the-date card",
+              "thank-you post",
+              "agenda card"
+            ],
+            "de": [
+              "Plakat",
+              "Messeplakat"
+            ],
+            "sv": [
+              "affisch",
+              "mässaffisch"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "skill": "trade-documents",
+      "checks": true,
+      "kinds": [
+        {
+          "id": "quotation",
+          "kind": "a quotation",
+          "words": {
+            "en": [
+              "quotation",
+              "price quote",
+              "sales quote",
+              "price offer",
+              "cost estimate",
+              "price estimate"
+            ],
+            "de": [
+              "Angebot",
+              "Kostenvoranschlag",
+              "Offerte",
+              "Preisangebot"
+            ],
+            "fr": [
+              "devis",
+              "offre de prix",
+              "proposition de prix",
+              "soumission"
+            ],
+            "nl": [
+              "offerte",
+              "prijsofferte",
+              "prijsopgave"
+            ],
+            "sv": [
+              "offert",
+              "prisoffert",
+              "anbud"
+            ],
+            "nb": [
+              "tilbud",
+              "pristilbud"
+            ],
+            "da": [
+              "tilbud",
+              "pristilbud"
+            ],
+            "fi": [
+              "tarjous",
+              "tarjouksen",
+              "tarjousta",
+              "tarjoukset",
+              "hintatarjous"
+            ],
+            "es": [
+              "presupuesto",
+              "cotización",
+              "oferta comercial"
+            ],
+            "it": [
+              "preventivo",
+              "offerta commerciale"
+            ],
+            "pl": [
+              "oferta",
+              "oferta handlowa",
+              "wycena"
+            ]
+          },
+          "weak": {
+            "en": [
+              "quote"
+            ]
+          },
+          "with": {
+            "en": [
+              "price",
+              "pricing",
+              "priced",
+              "customer",
+              "client",
+              "supplier",
+              "send",
+              "prepare",
+              "units",
+              "hours",
+              "job",
+              "vat"
+            ]
+          }
+        },
+        {
+          "id": "order_confirmation",
+          "kind": "an order confirmation",
+          "words": {
+            "en": [
+              "order confirmation",
+              "order acknowledgement",
+              "order acknowledgment"
+            ],
+            "de": [
+              "Auftragsbestätigung",
+              "Bestellbestätigung"
+            ],
+            "fr": [
+              "confirmation de commande",
+              "accusé de réception de commande"
+            ],
+            "nl": [
+              "orderbevestiging",
+              "opdrachtbevestiging"
+            ],
+            "sv": [
+              "orderbekräftelse",
+              "ordererkännande"
+            ],
+            "nb": [
+              "ordrebekreftelse"
+            ],
+            "da": [
+              "ordrebekræftelse"
+            ],
+            "fi": [
+              "tilausvahvistus",
+              "tilausvahvistuksen",
+              "tilausvahvistusta"
+            ],
+            "es": [
+              "confirmación de pedido",
+              "confirmación del pedido"
+            ],
+            "it": [
+              "conferma d'ordine",
+              "conferma dell'ordine",
+              "conferma ordine"
+            ],
+            "pl": [
+              "potwierdzenie zamówienia"
+            ]
+          }
+        },
+        {
+          "id": "delivery_note",
+          "kind": "a delivery note",
+          "words": {
+            "en": [
+              "delivery note",
+              "packing slip",
+              "delivery docket",
+              "packing list",
+              "dispatch note"
+            ],
+            "de": [
+              "Lieferschein"
+            ],
+            "fr": [
+              "bon de livraison",
+              "bordereau de livraison"
+            ],
+            "nl": [
+              "pakbon",
+              "pakbonnen",
+              "leveringsbon",
+              "afleverbon"
+            ],
+            "sv": [
+              "följesedel",
+              "följesedlar",
+              "leveranssedel"
+            ],
+            "nb": [
+              "følgeseddel",
+              "følgesedler",
+              "pakkseddel"
+            ],
+            "da": [
+              "følgeseddel",
+              "følgesedler"
+            ],
+            "fi": [
+              "lähete",
+              "lähetteen",
+              "lähetettä",
+              "lähetyslista"
+            ],
+            "es": [
+              "albarán",
+              "albaranes",
+              "nota de entrega"
+            ],
+            "it": [
+              "documento di trasporto",
+              "DDT",
+              "bolla di consegna",
+              "bolla di accompagnamento"
+            ],
+            "pl": [
+              "dowód dostawy",
+              "dokument dostawy"
+            ]
+          }
+        },
+        {
+          "id": "proforma_invoice",
+          "kind": "a pro forma invoice",
+          "words": {
+            "en": [
+              "pro forma invoice",
+              "proforma invoice",
+              "pro forma",
+              "proforma"
+            ],
+            "de": [
+              "Proformarechnung",
+              "Pro-forma-Rechnung"
+            ],
+            "fr": [
+              "facture pro forma",
+              "facture proforma"
+            ],
+            "nl": [
+              "pro-formafactuur",
+              "proformafactuur",
+              "pro forma factuur"
+            ],
+            "sv": [
+              "proformafaktura"
+            ],
+            "nb": [
+              "proformafaktura"
+            ],
+            "da": [
+              "proformafaktura"
+            ],
+            "fi": [
+              "proformalasku"
+            ],
+            "es": [
+              "factura proforma",
+              "factura pro forma"
+            ],
+            "it": [
+              "fattura proforma",
+              "fattura pro forma"
+            ],
+            "pl": [
+              "faktura pro forma",
+              "faktura proforma"
+            ]
+          }
+        },
+        {
+          "id": "purchase_order",
+          "kind": "a purchase order",
+          "words": {
+            "en": [
+              "purchase order"
+            ],
+            "de": [
+              "Bestellung",
+              "Bestellschein",
+              "Einkaufsbestellung"
+            ],
+            "fr": [
+              "bon de commande"
+            ],
+            "nl": [
+              "inkooporder",
+              "bestelbon",
+              "bestelorder"
+            ],
+            "sv": [
+              "inköpsorder",
+              "beställning"
+            ],
+            "nb": [
+              "innkjøpsordre",
+              "bestilling"
+            ],
+            "da": [
+              "indkøbsordre",
+              "bestilling"
+            ],
+            "fi": [
+              "ostotilaus",
+              "ostotilauksen",
+              "ostotilausta"
+            ],
+            "es": [
+              "pedido de compra",
+              "orden de compra"
+            ],
+            "it": [
+              "ordine d'acquisto",
+              "ordine di acquisto",
+              "buono d'ordine"
+            ],
+            "pl": [
+              "zamówienie",
+              "zamówienie zakupu"
+            ]
+          },
+          "weak": {
+            "es": [
+              "pedido"
+            ]
+          },
+          "with": {
+            "es": [
+              "el",
+              "un",
+              "nuestro",
+              "este",
+              "proveedor",
+              "compra",
+              "hoja",
+              "redacta",
+              "prepara"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

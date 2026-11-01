@@ -1,0 +1,58 @@
+{
+  "language": "es",
+  "date": "2026-10-09",
+  "sender": {
+    "name": "Ejemplo Imprenta S.L.",
+    "street": "Calle del Ejemplo 12",
+    "postcode": "28000",
+    "city": "Madrid",
+    "province": "Madrid",
+    "country": "ES",
+    "vat_id": "B00000000",
+    "registered_office": "Calle del Ejemplo 12, 28000 Madrid",
+    "register": "Registro Mercantil de Madrid",
+    "register_number": "tomo 00000, folio 000, hoja M-000000",
+    "email": "info@ejemplo-imprenta.example",
+    "phone": "+34 000 000 000",
+    "web": "ejemplo-imprenta.example"
+  },
+  "recipient": {
+    "name": "Ejemplo Papelería S.L.",
+    "attention": "Sra. Lucía Ferrer",
+    "street": "Avenida de la Muestra 45, 2.º B",
+    "postcode": "46000",
+    "city": "Valencia",
+    "province": "Valencia",
+    "country": "ES"
+  },
+  "references": [
+    {
+      "kind": "yours",
+      "value": "LF/2026-041"
+    },
+    {
+      "kind": "ours",
+      "value": "EI-1187"
+    }
+  ],
+  "contact": {
+    "name": "Marcos Vidal",
+    "phone": "+34 000 000 004",
+    "email": "marcos@ejemplo-imprenta.example"
+  },
+  "subject": "Presupuesto para su catálogo de primavera de 2027",
+  "salutation": "Estimada señora Ferrer:",
+  "body": [
+    "Le agradecemos su solicitud del 2 de octubre. Imprimiremos con mucho gusto su catálogo de primavera: 3000 ejemplares de 48 páginas en formato A4, con encuadernación cosida.",
+    "El precio es de 6840 euros, IVA no incluido. Entregamos en un plazo de doce días laborables desde que usted apruebe la prueba de imprenta.",
+    "Este presupuesto es válido hasta el 13 de noviembre de 2026. Para cualquier consulta puede dirigirse a Marcos Vidal."
+  ],
+  "signatory": {
+    "name": "Elena Robles",
+    "role": "Directora comercial"
+  },
+  "enclosures": [
+    "Muestras de papel",
+    "Condiciones generales"
+  ]
+}

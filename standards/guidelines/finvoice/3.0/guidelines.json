@@ -1,0 +1,24 @@
+{
+ "issuer": "finvoice",
+ "version": "3.0",
+ "link": "https://www.finanssiala.fi/en/topics/finvoice-standard",
+ "license": "Finanssiala's Finvoice page: \"All materials on this page are freely usable.\" The schema is fetched for the check, not copied; notice licenses/finvoice-finanssiala.txt. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "Finvoice 3.0 and the Finnish payment lines",
+ "source": "Finvoice 3.0, Finanssiala ry: Finvoice3.0.xsd of 27.9.2023 and the implementation guidelines; the bank barcode (Pankkiviivakoodi) version 4 and the Finnish creditor reference (viitenumero, check digit 7-3-1). Read 2026-10-09.",
+ "rules": [
+  {
+   "id": "EINV-FINVOICE",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "text": "Finanssiala's Finvoice 3.0 schema accepts the Finvoice message beside the page; skipped when it is not installed."
+  },
+  {
+   "id": "FI-PAYMENT",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "text": "The page states the due date, the IBAN, a viitenumero whose check digit holds, and a bank barcode that encodes that IBAN, total, reference and due date."
+  }
+ ]
+}

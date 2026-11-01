@@ -1,0 +1,97 @@
+{
+ "title": "Service desk quarter, Q1 to Q2 2026",
+ "brand": {
+  "accent": "#C2410C"
+ },
+ "pages": [
+  {
+   "type": "cover",
+   "kicker": "Service desk",
+   "title": "Q1 to Q2 2026",
+   "subtitle": "Requests, resolution and the queue"
+  },
+  {
+   "type": "numbers",
+   "title": "The quarter in three figures",
+   "subtitle": "From the data",
+   "figures": [
+    {
+     "value": "150",
+     "label": "requests in Q2"
+    },
+    {
+     "value": "135",
+     "label": "resolved in Q2"
+    },
+    {
+     "value": "90",
+     "label": "resolution rate"
+    }
+   ]
+  },
+  {
+   "type": "chart-bullets",
+   "title": "Requests by type",
+   "subtitle": "Q2 against Q1",
+   "bars": [
+    {
+     "label": "access",
+     "value": 62
+    },
+    {
+     "label": "hardware",
+     "value": 48
+    }
+   ],
+   "bullets": [
+    "Access is the largest group",
+    "Hardware rose from Q1"
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Requests and resolution by quarter",
+   "columns": [
+    "Measure",
+    "Q1",
+    "Q2"
+   ],
+   "rows": [
+    [
+     "Requests",
+     "120",
+     "150"
+    ],
+    [
+     "Resolved",
+     "108",
+     "135"
+    ]
+   ]
+  },
+  {
+   "type": "timeline",
+   "title": "What changed",
+   "steps": [
+    {
+     "when": "Q1",
+     "what": "Median 2.4 hours"
+    },
+    {
+     "when": "Q2",
+     "what": "Median 2.1 hours"
+    },
+    {
+     "when": "Q4",
+     "what": "Access queue cleared"
+    }
+   ]
+  },
+  {
+   "type": "closing",
+   "title": "Where we are",
+   "subtitle": "Next quarter",
+   "note": "Hold the median at 2.1 and clear the access queue."
+  }
+ ]
+}

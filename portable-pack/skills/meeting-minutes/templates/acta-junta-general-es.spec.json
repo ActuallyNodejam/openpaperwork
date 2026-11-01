@@ -1,0 +1,72 @@
+{
+  "language": "es",
+  "country": "ES",
+  "body": "Ejemplo Imprenta S.L.",
+  "company_number": "B00000000",
+  "meeting": "annual general",
+  "date": "2026-06-18",
+  "start": "12:00",
+  "end": "12:50",
+  "place": "Calle del Ejemplo 12, Madrid",
+  "convened": {
+    "date": "2026-06-01",
+    "how": "por correo certificado con acuse de recibo a cada socio"
+  },
+  "chair": "Elena Robles",
+  "secretary": "Marcos Vidal",
+  "quorum": true,
+  "total_shares": 3000,
+  "shareholders": [
+    {
+      "name": "Elena Robles",
+      "shares": 1500,
+      "votes": 1500
+    },
+    {
+      "name": "Ejemplo Inversiones S.L.",
+      "shares": 900,
+      "votes": 900,
+      "by": "Javier Soler"
+    },
+    {
+      "name": "Nuria Campos",
+      "shares": 600,
+      "votes": 600
+    }
+  ],
+  "items": [
+    {
+      "title": "Cuentas anuales de 2025",
+      "notes": "Se examinan las cuentas anuales del ejercicio 2025, formuladas por el órgano de administración el 20 de marzo de 2026.",
+      "decisions": [
+        {
+          "text": "aprobar las cuentas anuales del ejercicio 2025",
+          "votes": {
+            "for": 3000,
+            "against": 0,
+            "abstained": 0
+          }
+        }
+      ]
+    },
+    {
+      "title": "Aplicación del resultado",
+      "decisions": [
+        {
+          "text": "destinar el resultado del ejercicio, 184.300 euros, a reservas voluntarias",
+          "votes": {
+            "for": 2400,
+            "against": 600,
+            "abstained": 0
+          }
+        }
+      ],
+      "dissent": [
+        {
+          "name": "Nuria Campos",
+          "text": "propone repartir un dividendo de 60.000 euros"
+        }
+      ]
+    }
+  ]
+}

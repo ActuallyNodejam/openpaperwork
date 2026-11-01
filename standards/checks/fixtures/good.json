@@ -1,0 +1,124 @@
+{
+ "title": "Service desk quarter",
+ "brand": {
+  "accent": "#D9480F"
+ },
+ "pages": [
+  {
+   "type": "cover",
+   "kicker": "Service desk",
+   "title": "Q1 to Q2 2026",
+   "subtitle": "Requests, resolution and the queue",
+   "contents": [
+    "Volume",
+    "Response time",
+    "Limits",
+    "Next actions"
+   ]
+  },
+  {
+   "type": "numbers",
+   "title": "The quarter in three figures",
+   "kicker": "Volume",
+   "figures": [
+    {
+     "value": "150",
+     "label": "Incoming Q2",
+     "note": "Up from 120"
+    },
+    {
+     "value": "135",
+     "label": "Resolved Q2",
+     "note": "No new backlog"
+    },
+    {
+     "value": "90%",
+     "label": "Resolved / incoming",
+     "note": "Held"
+    }
+   ],
+   "bars": [
+    {
+     "label": "Q1",
+     "value": 120
+    },
+    {
+     "label": "Q2",
+     "value": 150
+    }
+   ]
+  },
+  {
+   "type": "chart-bullets",
+   "title": "Requests by type",
+   "kicker": "Types",
+   "bars": [
+    {
+     "label": "access",
+     "value": 62
+    },
+    {
+     "label": "hardware",
+     "value": 48
+    }
+   ],
+   "bullets": [
+    "Access is the largest group",
+    "Hardware rose from Q1"
+   ]
+  },
+  {
+   "type": "table",
+   "title": "Requests and resolution",
+   "kicker": "Table",
+   "columns": [
+    "Measure",
+    "Q1",
+    "Q2"
+   ],
+   "rows": [
+    [
+     "Requests",
+     "120",
+     "150"
+    ],
+    [
+     "Resolved",
+     "108",
+     "135"
+    ],
+    [
+     "Ratio",
+     "90%",
+     "90%"
+    ]
+   ]
+  },
+  {
+   "type": "timeline",
+   "title": "What changed",
+   "kicker": "Timeline",
+   "steps": [
+    {
+     "when": "Q1",
+     "what": "Median 2.4 hours"
+    },
+    {
+     "when": "Q2",
+     "what": "Median 2.1 hours"
+    },
+    {
+     "when": "Next",
+     "what": "Hold the median"
+    }
+   ]
+  },
+  {
+   "type": "closing",
+   "title": "Where we are",
+   "kicker": "Close",
+   "subtitle": "Next quarter",
+   "note": "Hold the median at 2.1 and clear the access queue."
+  }
+ ]
+}

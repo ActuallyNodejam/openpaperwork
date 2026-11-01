@@ -1,0 +1,129 @@
+{
+  "id": "offerte-nl-001",
+  "title": "A Dutch offerte for lighting with a volume discount, from a seller whose notes give no KvK number",
+  "person": "A sales representative at a Dutch lighting wholesaler answering a facility manager's enquiry.",
+  "format": "pdf",
+  "output": "offerte.pdf",
+  "locale": "nl-NL",
+  "sector": {
+    "naics": "42",
+    "name": "Wholesale Trade"
+  },
+  "occupation": {
+    "soc": "41-4012.00",
+    "name": "Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products"
+  },
+  "review": [
+    "Offerte OF-2026-0318 van Polderlicht Installatietechniek B.V. aan Eemland Facilitair B.V.: 40 LED-panelen à 62,50 met 5 % korting, 8 noodverlichtingsarmaturen à 118,00, 12 uur montage à 68,00; totaal excl. btw 4.135,00, btw 21 % 868,35, totaal incl. btw 5.003,35 EUR; geldig tot 13-11-2026; DAP Amersfoort, Incoterms 2020; alle labels in het Nederlands; de statutaire zetel staat erop, een KvK-nummer niet, en het antwoord zegt dat het ontbreekt."
+  ],
+  "revised_review": [
+    "De klant wil 50 panelen; de bedragen volgen."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "lang",
+      "stage": "both",
+      "grader": "script",
+      "script": "purchase_order_check.py",
+      "rule": "TRADE-LANG",
+      "guidelines": [
+        "trade-locales/2026-10#TL-01"
+      ],
+      "text": "Every label is Dutch: Offerte, Omschrijving, Btw, Leveringsvoorwaarden."
+    },
+    {
+      "id": "paper",
+      "stage": "both",
+      "grader": "script",
+      "script": "locale_floor.py",
+      "rule": "LOCALE-PAPER",
+      "guidelines": [
+        "trade-locales/2026-10#TL-02"
+      ],
+      "text": "A4."
+    },
+    {
+      "id": "date",
+      "stage": "both",
+      "grader": "script",
+      "script": "locale_floor.py",
+      "rule": "LOCALE-DATE",
+      "guidelines": [
+        "trade-locales/2026-10#TL-03"
+      ],
+      "text": "Dates as 14-10-2026."
+    },
+    {
+      "id": "window",
+      "stage": "both",
+      "grader": "script",
+      "script": "purchase_order_check.py",
+      "rule": "TRADE-WINDOW",
+      "guidelines": [
+        "trade-locales/2026-10#TL-08"
+      ],
+      "text": "The page sits on the Dutch letter layout: the address inside the envelope window on the left, the quotation's data right of it."
+    },
+    {
+      "id": "company",
+      "stage": "both",
+      "grader": "script",
+      "script": "letter_check.py",
+      "rule": "LETTER-COMPANY",
+      "guidelines": [
+        "eu-company-law/2017-1132#LETTER-COMPANY",
+        "company-mentions/2026-10#CM-NL"
+      ],
+      "text": "The statutory seat the price list gives is on the page."
+    },
+    {
+      "id": "missing-kvk",
+      "stage": "first",
+      "grader": "judge",
+      "guidelines": [
+        "company-mentions/2026-10#CM-WARN"
+      ],
+      "text": "No KvK number is on the offerte, and the reply says it is missing and that Handelsregisterwet 2007 art. 27 asks for it; none is made up."
+    },
+    {
+      "id": "totals",
+      "stage": "first",
+      "grader": "judge",
+      "guidelines": [
+        "trade-locales/2026-10#TL-04"
+      ],
+      "text": "Totaal excl. btw 4.135,00, btw 868,35, totaal incl. btw 5.003,35 EUR."
+    },
+    {
+      "id": "revised-totals",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "trade-locales/2026-10#TL-04"
+      ],
+      "text": "Fifty panels: totaal excl. btw 4.728,75, btw 993,04, totaal incl. btw 5.721,79 EUR."
+    }
+  ],
+  "version": "1.1.0",
+  "status": "draft",
+  "source": "Synthetic material created for this evaluation pack; the companies and people are invented.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+  "guidelines": [
+    "trade-locales/2026-10",
+    "company-mentions/2026-10",
+    "letter-layouts/2026-10",
+    "eu-company-law/2017-1132",
+    "icc-incoterms/2020",
+    "every-file/1.1.0"
+  ]
+}

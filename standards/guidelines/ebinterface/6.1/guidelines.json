@@ -1,0 +1,18 @@
+{
+ "issuer": "ebinterface",
+ "version": "6.1",
+ "link": "https://www.wko.at/netzwerke/was-ist-ebinterface",
+ "license": "Cited only: AUSTRIAPRO (Wirtschaftskammer Österreich) makes ebInterface free of charge to implement, and its schema repository (github.com/austriapro/ebinterface-standards) states no licence. Nothing of it is copied: the schema is fetched at commit a3cf861e87f4 and run untouched in the KoSIT validator (Apache-2.0). Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "ebInterface 6.1: the Austrian e-invoice the federal portal takes",
+ "source": "ebInterface 6.1 of 25 August 2022, schemas/ebInterface6p1/Invoice.xsd (SHA-256 8c736ca0953c). The federal portal erechnung.gv.at takes ebInterface and UBL (Peppol BIS), not CII, under the e-Rechnungsverordnung (BGBl. II Nr. 505/2012); a federal buyer's order number is the OrderID. Read 2026-10-09.",
+ "rules": [
+  {
+   "id": "EINV-EBINTERFACE",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "text": "The ebInterface 6.1 schema accepts the Austrian invoice or credit memo beside the page; skipped when it is not installed."
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+  "issuer": "dgcl",
+  "version": "title-8",
+  "link": "https://delcode.delaware.gov/title8/c001/sc04/index.html",
+  "license": "State statute, cited by section (government edicts carry no copyright); no text copied. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Delaware General Corporation Law §§ 141(b), 141(f), 142(a) and 224",
+  "source": "Delaware Code, Title 8, Chapter 1: § 141 (82 Del. Laws c. 256), § 142 (71 Del. Laws c. 339), § 224 (81 Del. Laws c. 86). Read on delcode.delaware.gov 2026-10-09.",
+  "rules": [
+    {
+      "id": "US-MIN-01",
+      "grader": "script",
+      "text": "One officer records the proceedings of the directors' and stockholders' meetings in a book kept for the purpose; who signs the minutes is for the bylaws.",
+      "source": "§ 142(a)",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "US-MIN-02",
+      "grader": "script",
+      "text": "The board acts only with a quorum (a majority of the directors unless the charter or bylaws say otherwise); the minutes say one was present.",
+      "source": "§ 141(b)",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "US-MIN-03",
+      "grader": "script",
+      "text": "Action without a meeting needs the written consent of every director, filed with the minutes.",
+      "source": "§ 141(f)",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "US-MIN-04",
+      "grader": "judge",
+      "text": "Minute books may be kept electronically if they can be printed legibly within a reasonable time.",
+      "source": "§ 224"
+    }
+  ]
+}

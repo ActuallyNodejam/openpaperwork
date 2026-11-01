@@ -1,0 +1,99 @@
+{
+  "id": "nda-redline-001",
+  "title": "Send the other side's NDA back with our changes",
+  "person": "The CEO of a small print company returning a counterparty's NDA with the changes she agreed with her lawyer.",
+  "format": "docx",
+  "output": "their-nda-redline.docx",
+  "locale": "en",
+  "sector": {
+    "naics": "31-33",
+    "name": "Manufacturing"
+  },
+  "occupation": {
+    "soc": "11-1011.00",
+    "name": "Chief Executives"
+  },
+  "truth": {
+    "input": "their-nda.docx",
+    "edits": {
+      "first": [
+        [
+          "ten (10) years after termination",
+          "three (3) years after termination"
+        ],
+        [
+          "including back-up copies",
+          "copies in routine back-ups may be kept"
+        ],
+        [
+          "to its employees",
+          "and professional advisers"
+        ]
+      ],
+      "revision": [
+        [
+          "NOK 500,000",
+          "deleted or capped"
+        ]
+      ]
+    }
+  },
+  "review": [
+    "Their own file comes back with tracked changes by Exempel Tryck AB: the survival period, the back-up copies and the advisers, each a change Halvard can accept or reject; rejecting every change gives their text back exactly."
+  ],
+  "revised_review": [
+    "The contractual penalty in clause 8.1 is struck as a further tracked change and the earlier changes remain."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "tracked",
+      "stage": "both",
+      "grader": "script",
+      "script": "legal_check.py",
+      "rule": "LEGAL-REDLINE",
+      "guidelines": [
+        "mike-workflows/ce62e6a2d3f4#REDLINE-DOCX"
+      ],
+      "text": "The edits are tracked changes with an author and a date."
+    },
+    {
+      "id": "original",
+      "stage": "both",
+      "grader": "script",
+      "script": "legal_check.py",
+      "rule": "LEGAL-ORIGINAL",
+      "guidelines": [
+        "mike-workflows/ce62e6a2d3f4#REDLINE-DOCX"
+      ],
+      "text": "Rejecting every change gives their agreement back exactly, and nothing else in the file changed."
+    },
+    {
+      "id": "no-advice",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-2"
+      ],
+      "text": "The reply says this is not legal advice, gives no verdict on the agreement as a whole and suggests a lawyer reads it before anyone signs."
+    }
+  ],
+  "guidelines": [
+    "openpaperwork/0.1.0",
+    "mike-workflows/ce62e6a2d3f4",
+    "every-file/1.1.0"
+  ],
+  "version": "1.0.0",
+  "status": "draft",
+  "source": "Synthetic material created for this evaluation pack; the companies and people are invented.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen."
+}

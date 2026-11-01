@@ -1,0 +1,51 @@
+{
+  "domain": "operations",
+  "hands_back": [
+    "*.docx"
+  ],
+  "default": "minutes.docx",
+  "check": "python3 {here}/../_checks/packcheck.py meeting-minutes {file}",
+  "recognises": {
+    "file": "*.json",
+    "has": [
+      "meeting",
+      "items",
+      "secretary"
+    ]
+  },
+  "asks": [
+    {
+      "id": "minutes",
+      "kind": "the minutes of a meeting",
+      "words": {
+        "en": "meeting minutes, board minutes, minutes of, the minutes, agm minutes, committee minutes, draft minutes, shareholder minutes, minutes of the, proper minutes, formal minutes, minutes from",
+        "de": "Protokoll, Sitzungsprotokoll, Besprechungsprotokoll, Ergebnisprotokoll, Beschlussprotokoll, Niederschrift",
+        "fr": "procès-verbal, procès verbal, compte rendu de réunion, pv de réunion, pv d'assemblée, pv du conseil",
+        "nl": "notulen",
+        "sv": "protokoll, styrelseprotokoll, stämmoprotokoll, mötesprotokoll, årsstämmoprotokoll, bolagsstämmoprotokoll, mötesanteckningar, minnesanteckningar",
+        "nb": "protokoll, styreprotokoll, møtereferat, møteprotokoll, generalforsamlingsprotokoll",
+        "da": "protokol, bestyrelsesreferat, mødereferat, generalforsamlingsreferat, beslutningsreferat, forhandlingsprotokol",
+        "fi": "pöytäkirja, kokouspöytäkirja",
+        "es": "acta",
+        "it": "verbale di assemblea, verbale di riunione, verbale del consiglio, verbale dell'assemblea, verbale della riunione, verbale del cda",
+        "pl": "protokół"
+      },
+      "weak": {
+        "nb": "referat",
+        "da": "referat",
+        "it": "verbale"
+      },
+      "with": {
+        "nb": "møte, møtet, styremøte, styremøtet, generalforsamling, generalforsamlingen, skriv, fra",
+        "da": "møde, mødet, bestyrelsesmøde, bestyrelsesmødet, generalforsamling, generalforsamlingen, skriv, fra",
+        "it": "il, un, del, al, nel, riunione, assemblea, consiglio, cda, seduta, redigi, redigere, scrivi, stesura"
+      },
+      "unless": {
+        "en": "the minutes before, the minutes after"
+      },
+      "not_after": {
+        "en": "#, few, several, couple, many, some, more, two, three, four, five, ten, fifteen, twenty, thirty, forty, sixty, ninety"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "issuer": "din-5008",
+  "version": "2020",
+  "link": "https://www.dinmedia.de/de/norm/din-5008/318422674",
+  "license": "DIN 5008:2020-03 is DIN's copyright, sold by DIN Media; rules are cited by section and paraphrased, no text of the standard is copied. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-07",
+  "status": "draft",
+  "source": "DIN 5008:2020-03, Schreib- und Gestaltungsregeln für die Text- und Informationsverarbeitung, Form B of the business letter on A4. Only the sheet geometry is used (address field, information block, left text edge, fold and hole marks); no standard text is copied.",
+  "note": "The millimetre values are unproved: DIN 5008 is a paid standard and was not bought; they are taken from public descriptions of Form B. Sweden uses this page as house style.",
+  "rules": [
+    {
+      "id": "EINV-PAGE-DIN5008",
+      "grader": "script",
+      "text": "An invoice page, in any language, is laid out on DIN 5008 Form B: the buyer sits in the window address field, the invoice data in the information block beside it, the text starts on one 25 mm left edge, amounts are flush right on one edge, nothing on the page, the information block included, passes the text's right margin, where the table ends, and no raw code such as C62 stands where a word belongs.",
+      "source": "DIN 5008:2020 Form B: address field 20 mm from the left and 45 mm from the top, 85 x 45 mm; information block from 125 mm across and 50 mm down; left margin 25 mm; subject line 8.46 mm below the address field; fold marks 105 and 210 mm, hole mark 148.5 mm",
+      "check": "einvoice_page.py EINV-PAGE-DIN5008"
+    },
+    {
+      "id": "LETTER-DIN5008",
+      "grader": "script",
+      "text": "A quotation, order confirmation, delivery note, pro forma invoice or purchase order as PDF or Word, sent from a country with no letter layout of its own (Germany, Sweden, France), sits on DIN 5008 Form B (for Sweden and France as house style; no national standard was read): the customer in the window address field, the document's data in the information block, one 25 mm left edge; in Word, margins of 25 mm left, 20 mm right and a 45 mm letterhead. A business letter's information block ends on the text's right edge, 20 mm from the paper's, as an invoice's does, and its address is written the way the recipient's post office reads it. A trade document sent from a country with a layout stands on that layout, as its invoice does, and is measured by TRADE-WINDOW (trade-locales/2026-10#TL-08); this rule then stands aside.",
+      "source": "DIN 5008:2020 Form B, the business letter; a quotation and an order confirmation are business letters (GmbHG 35a, HGB 37a)",
+      "check": "letter_check.py LETTER-DIN5008"
+    },
+    {
+      "id": "LETTER-PARTS",
+      "grader": "script",
+      "text": "A business letter carries the parts DIN 5008 sets out for it, in order: a subject line without a label, a salutation, the body, a closing, the signatory's name, and the enclosures when there are any.",
+      "source": "DIN 5008:2020, the business letter (Betreff, Anrede, Text, Gruß, Unterschrift, Anlagen); paraphrased, no text copied",
+      "check": "letter_check.py LETTER-PARTS"
+    }
+  ]
+}

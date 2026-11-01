@@ -1,0 +1,5 @@
+Granite Shield Instruments Ltd., 220 Example Drive, Ottawa ON K2K 0A1, Canada. GST/HST 123456789 RT0001. orders@granite-shield.example, 613-555-0123.
+GS-77 receiver: CAD 9,850.00, HS 8526.91, made in Canada. GS-12 pole: CAD 420.00, HS 9015.90, made in Canada.
+Exports outside Canada are zero-rated (no GST/HST). Pro formas valid 30 days, payment 100 % in advance.
+Bank: Example Bank of Canada, transit 00011, institution 001, account 1234567, SWIFT EXAMCATT.
+We pay the carriage to the US customer's address (CPT).

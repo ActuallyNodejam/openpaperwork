@@ -1,0 +1,43 @@
+name: A file task did not work
+description: Help us reproduce a problem with an ordinary work task.
+title: "[File task] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use invented or redistributable files. Remove names, credentials and private information.
+        For a security issue, use the private reporting route in SECURITY.md instead.
+  - type: textarea
+    id: request
+    attributes:
+      label: What did you ask OpenPaperwork to do?
+      description: Paste the request in your own words. Include any later correction.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should you have received?
+      description: For example, an editable one-page brief with the agreed actions.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+      description: Include the smallest safe input and output, or describe how to recreate them. Rendered pages help with layout problems.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Which version and setup did you use?
+      description: OpenPaperwork revision or version, operating system, and model/provider if known. Do not paste keys or complete logs containing private data.
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: What did you check or fix by hand?
+      description: Mention missing facts, broken formatting, repeated requests and anything you could not verify.

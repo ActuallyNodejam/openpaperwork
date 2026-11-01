@@ -1,0 +1,27 @@
+French official texts and public guidance, reused under the Licence Ouverte / Open Licence 2.0
+(Etalab), https://www.etalab.gouv.fr/licence-ouverte-open-licence/
+
+Légifrance states: "Sauf mention contraire, tous les contenus de ce site sont sous licence
+etalab-2.0" (https://www.legifrance.gouv.fr/contenu/pied-de-page/open-data-et-api).
+impots.gouv.fr states its contents are offered under the Licence Ouverte Etalab 2.0, the DGFiP's
+graphic elements excepted (https://www.impots.gouv.fr/mentions-legales); none is used.
+
+Sources, read 2026-10-09:
+- Code général des impôts, annexe II, article 242 nonies A (Légifrance, LEGIARTI000050811276), I 1°,
+  2°, 4°, 7° bis, 8° bis, 11° bis, 12° and 13°, in force for invoices from 1 September 2026 (décret
+  n° 2022-1299 as amended by décret n° 2024-266).
+- Code général des impôts, article 289 (I-5, a document that amends an invoice) and article 289 bis.
+- Code de commerce, articles L441-9, L441-10 (II) and D441-5 (Légifrance).
+- BOFiP BOI-TVA-DECLA-30-20-20-20 §220 (a credit note refers to the invoice's number and date) and
+  BOI-TVA-DECLA-30-20-20-30 (the exemption and Autoliquidation wording).
+- impots.gouv.fr, "À partir de quand suis-je concerné par la réforme de la facturation électronique ?"
+  (updated 16/01/2026): reception by every company from 1 September 2026, issuance by large and
+  mid-size companies from 1 September 2026 and by PME and micro-entreprises from 1 September 2027.
+- service-public.fr (entreprendre.service-public.gouv.fr) F31808, the mandatory mentions on an
+  invoice, and F23211, the 40 euro indemnity for recovery costs.
+
+Changes: the mentions are restated in our own words as builder fields and presence checks in
+skills/e-invoice and skills/_checks/fr_invoice_check.py; the fixed wordings the texts and F31808
+give ("Autoliquidation", "Option pour le paiement de la taxe d'après les débits", "Escompte pour
+paiement anticipé : néant", the 40 € indemnity) are quoted as the texts give them. Only the texts
+published in the Journal officiel are authentic. This is not legal or tax advice.

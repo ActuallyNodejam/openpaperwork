@@ -1,0 +1,55 @@
+{
+  "language": "fr",
+  "date": "2026-10-09",
+  "sender": {
+    "name": "Ateliers Mosans SA",
+    "street": "Rue des Brasseurs 21",
+    "postcode": "5000",
+    "city": "Namur",
+    "country": "BE",
+    "vat_id": "BE 0756.789.012",
+    "registered_office": "Rue des Brasseurs 21, 5000 Namur",
+    "register": "RPM Liège, division Namur",
+    "register_number": "0756.789.012",
+    "email": "info@ateliers-mosans.example",
+    "phone": "+32 81 00 00 00",
+    "web": "ateliers-mosans.example"
+  },
+  "recipient": {
+    "name": "Verrerie du Condroz SRL",
+    "attention": "Madame Isabelle Marchal",
+    "street": "Chaussée de Dinant 140",
+    "postcode": "5590",
+    "city": "Ciney",
+    "country": "BE"
+  },
+  "references": [
+    {
+      "kind": "yours",
+      "value": "IM/2026-17"
+    },
+    {
+      "kind": "ours",
+      "value": "AM-0932"
+    }
+  ],
+  "contact": {
+    "name": "Olivier Dumont",
+    "phone": "+32 81 00 00 06",
+    "email": "olivier@ateliers-mosans.example"
+  },
+  "subject": "Entretien annuel de votre four de trempe",
+  "salutation": "Madame,",
+  "body": [
+    "Nous vous remercions de votre demande du 30 septembre. Notre équipe peut assurer l'entretien annuel de votre four durant la semaine du 16 novembre.",
+    "L'intervention dure deux jours et comprend le remplacement des joints, le contrôle des brûleurs et un rapport de mesure. Son prix est de 3 450 euros hors TVA.",
+    "Nous vous prions de nous confirmer la date qui vous convient avant le 23 octobre."
+  ],
+  "signatory": {
+    "name": "Hélène Lambert",
+    "role": "Administratrice déléguée"
+  },
+  "enclosures": [
+    "Conditions générales"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "domain": "finance",
+  "hands_back": [
+    "*.docx"
+  ],
+  "default": "arsredovisning.docx",
+  "check": "python3 {here}/../_checks/packcheck.py annual-accounts {file}",
+  "recognises": {
+    "file": "*.json",
+    "has": [
+      "company",
+      "income",
+      "balance"
+    ]
+  },
+  "asks": [
+    {
+      "id": "annual_report",
+      "kind": "the annual report of a smaller Swedish limited company (K2)",
+      "words": {
+        "sv": "årsredovisning",
+        "en": "annual report, annual accounts"
+      }
+    }
+  ]
+}

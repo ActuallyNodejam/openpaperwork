@@ -1,0 +1,151 @@
+{
+ "id": "house-deck-001",
+ "title": "Build a six-page house-layout deck from data",
+ "format": "html",
+ "output": "deck.html",
+ "person": "a consultant preparing a review deck",
+ "sector": {
+  "naics": "54",
+  "name": "Professional, Scientific, and Technical Services"
+ },
+ "occupation": {
+  "soc": "15-1252.00",
+  "name": "Software Developers"
+ },
+ "status": "draft",
+ "version": "0.1.0",
+ "locale": "en-GB",
+ "guidelines": [
+  "house-deck/1"
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "first",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "deck-pages",
+   "stage": "both",
+   "grader": "script",
+   "script": "housedeck.py",
+   "rule": "DECK-PAGES",
+   "guidelines": [
+    "house-deck/1#DECK-PAGES"
+   ],
+   "text": "The deck has the six pages the request asks for."
+  },
+  {
+   "id": "deck-fill",
+   "stage": "first",
+   "grader": "script",
+   "script": "housedeck.py",
+   "rule": "DECK-FILL",
+   "text": "Every page carries the content its house page type calls for.",
+   "guidelines": [
+    "house-deck/1#DECK-PAGES"
+   ]
+  },
+  {
+   "id": "deck-type",
+   "stage": "both",
+   "grader": "script",
+   "script": "housedeck.py",
+   "rule": "DECK-TYPE",
+   "guidelines": [
+    "house-deck/1#DECK-TYPE"
+   ],
+   "text": "No text sits below the 18px floor and body copy is 22px or more."
+  },
+  {
+   "id": "deck-accent",
+   "stage": "both",
+   "grader": "script",
+   "script": "housedeck.py",
+   "rule": "DECK-ACCENT",
+   "guidelines": [
+    "house-deck/1#DECK-ACCENT"
+   ],
+   "text": "One accent colour at most, the one the brand kit gives."
+  },
+  {
+   "id": "deck-trace",
+   "stage": "both",
+   "grader": "script",
+   "script": "housedeck.py",
+   "rule": "DECK-TRACE",
+   "guidelines": [
+    "house-deck/1#DECK-TRACE"
+   ],
+   "text": "Every number on the pages traces to the case data."
+  },
+  {
+   "id": "deck-bounds",
+   "stage": "both",
+   "grader": "script",
+   "script": "housedeck.py",
+   "rule": "DECK-BOUNDS",
+   "guidelines": [
+    "house-deck/1#DECK-BOUNDS"
+   ],
+   "text": "No content crosses the footer line and no two content boxes overlap."
+  }
+ ],
+ "truth": {
+  "doc": "deck",
+  "pages": 6,
+  "types": [
+   "cover",
+   "numbers",
+   "chart-bullets",
+   "table",
+   "timeline",
+   "closing"
+  ],
+  "accents": [
+   "#d9480f",
+   "#ad3a0b",
+   "#f08c4a"
+  ],
+  "values": [
+   "120",
+   "150",
+   "108",
+   "135",
+   "90",
+   "2.4",
+   "2.1",
+   "48",
+   "30",
+   "18",
+   "24",
+   "62",
+   "48",
+   "24",
+   "16",
+   "36",
+   "9",
+   "5",
+   "70",
+   "1",
+   "2",
+   "2026"
+  ],
+  "axis_max": [
+   5,
+   70
+  ]
+ },
+ "review": [
+  "The deck has the six page types, the figures trace to the data and the accent is the kit's."
+ ],
+ "revised_review": [
+  "The deck still holds after a revision."
+ ],
+ "source": "Synthetic material created for this evaluation pack; no customer inputs.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after the first output is frozen."
+}

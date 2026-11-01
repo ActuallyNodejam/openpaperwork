@@ -1,0 +1,128 @@
+{
+  "id": "employment-statement-ie-001",
+  "title": "Write the Irish statement of terms of employment for an hourly-paid support agent",
+  "person": "An HR generalist at an Irish customer-support firm who owes a new starter the day-five statement.",
+  "format": "docx",
+  "output": "statement.docx",
+  "locale": "en-IE",
+  "sector": {
+    "naics": "54",
+    "name": "Professional, Scientific, and Technical Services"
+  },
+  "occupation": {
+    "soc": "13-1071.00",
+    "name": "Human Resources Specialists"
+  },
+  "review": [
+    "Statement for Conor Byrne, customer support agent in Limerick from 11/01/2027, permanent with six months' probation; EUR 16.20 an hour paid weekly by credit transfer, pay reference period one week; 7.8 hours a normal day and 39 a normal week, overtime at time and a quarter; 20 days' annual leave; statutory sick pay; no occupational pension; notice under the 1973 Act; no collective agreement, registered employment agreement or employment regulation order; the note on the average hourly rate; signed and dated for the employer within five days of the start."
+  ],
+  "revised_review": [
+    "The rate becomes EUR 16.80 an hour; nothing else changes."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "core",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-IE-CORE",
+      "guidelines": [
+        "ie-terms-of-employment/2022-12#IE-02"
+      ],
+      "text": "The five-day core terms: both full names, the employer's address, 7.8 hours a normal day and 39 a normal week, the overtime terms and the pay reference period."
+    },
+    {
+      "id": "items",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-ITEMS",
+      "guidelines": [
+        "ie-terms-of-employment/2022-12#IE-03"
+      ],
+      "text": "Every item of s. 3(1) is there or marked not applicable, with the note on the average hourly rate."
+    },
+    {
+      "id": "dates",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-DATES",
+      "guidelines": [
+        "ie-terms-of-employment/2022-12#IE-01"
+      ],
+      "text": "Dated within five days of 11 January 2027."
+    },
+    {
+      "id": "probation",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-PROBATION",
+      "guidelines": [
+        "ie-terms-of-employment/2022-12#IE-05"
+      ],
+      "text": "Six months, the limit s. 6D sets."
+    },
+    {
+      "id": "pay",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-PAY",
+      "guidelines": [
+        "ie-terms-of-employment/2022-12#IE-04"
+      ],
+      "text": "EUR 16.20 an hour, weekly, by credit transfer."
+    },
+    {
+      "id": "signed",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-SIGNED",
+      "guidelines": [
+        "ie-terms-of-employment/2022-12#IE-06"
+      ],
+      "text": "Signed and dated for the employer."
+    },
+    {
+      "id": "reference",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-REFERENCE",
+      "guidelines": [
+        "ie-terms-of-employment/2022-12#IE-08"
+      ],
+      "text": "Leave, sick pay and notice may point to the Acts; the names, place, job, dates and hours are stated."
+    },
+    {
+      "id": "revised-pay",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "ie-terms-of-employment/2022-12#IE-04"
+      ],
+      "text": "The rate is EUR 16.80 an hour and nothing else changed."
+    }
+  ],
+  "version": "1.0.0",
+  "status": "draft",
+  "source": "Synthetic material created for this evaluation pack; the companies and people are invented.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+  "guidelines": [
+    "ie-terms-of-employment/2022-12",
+    "every-file/1.1.0"
+  ]
+}

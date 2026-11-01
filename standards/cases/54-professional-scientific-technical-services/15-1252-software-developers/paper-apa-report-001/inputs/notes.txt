@@ -1,0 +1,1 @@
+Rough notes for the report: fourteen days, one managed vector service. Warm median 110 ms, warm p90 190 ms. Cold median 780 ms, cold p90 4100 ms. Cold starts 3.1 percent of queries, 41 percent of waiting time. Correlation with index size 0.71, with replica count 0.08. Keep-warm plus a second minimum replica removed 86 percent of cold starts above one second.

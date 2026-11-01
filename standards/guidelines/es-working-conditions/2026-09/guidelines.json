@@ -1,0 +1,83 @@
+{
+  "issuer": "es-working-conditions",
+  "version": "2026-09",
+  "link": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-19200",
+  "license": "Spanish legal provisions, not the object of intellectual property (Ley de Propiedad Intelectual art. 13); the BOE's consolidated text reused under the Agencia Estatal Boletín Oficial del Estado's conditions of 27 June 2024, which ask that the source be cited and the text called informative only: Basado en datos de la Agencia Estatal Boletín Oficial del Estado, https://www.boe.es. Restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Real Decreto 723/2026: la información sobre los elementos esenciales del contrato de trabajo",
+  "source": "Real Decreto 723/2026, de 9 de septiembre (BOE núm. 228 of 15 September 2026, BOE-A-2026-19200), arts. 2 to 7, in force 5 October 2026: it transposes Directive (EU) 2019/1152, develops Estatuto de los Trabajadores art. 8.5 and repealed Real Decreto 1659/1998, de 24 de julio. Estatuto de los Trabajadores (Real Decreto Legislativo 2/2015) arts. 8.5 and 14, consolidated text last updated 3 October 2026. The consolidated texts are informative only. Read 2026-10-09.",
+  "note": "A drafting check, not legal advice: the scripted rules read whether a particular is there, never whether a term is lawful.",
+  "rules": [
+    {
+      "id": "ES-01",
+      "grader": "script",
+      "text": "The information is given before the employment begins (under the repealed decree it was within two months); for work abroad before departure. It is owed for employment of more than four weeks.",
+      "source": "art. 7.1, 7.2; art. 2.2",
+      "check": "employment_check.py EMPLOY-DATES"
+    },
+    {
+      "id": "ES-02",
+      "grader": "script",
+      "text": "The parties, the start and a temporary contract's end or expected length with the cause that allows it, the company's registered address and the usual workplace (or that it varies or is the worker's to choose), the content of the work and the professional group or category.",
+      "source": "art. 3.2 a) to e)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "ES-03",
+      "grader": "script",
+      "text": "The base pay and each supplement separately, how often and how it is paid; or a precise reference to the law or the collective agreement that sets them.",
+      "source": "art. 3.2 f), art. 3.3",
+      "check": "employment_check.py EMPLOY-PAY"
+    },
+    {
+      "id": "ES-04",
+      "grader": "script",
+      "text": "The working time by day, by week and by year, how it may be changed, overtime and the holidays; for an irregular distribution the reference hours and days and the notice.",
+      "source": "art. 3.2 g)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "ES-05",
+      "grader": "script",
+      "text": "A probation states its length. Unless a convenio colectivo named in the statement sets it, it is at most six months for a técnico titulado, three for another worker in a company of fewer than 25 workers, two for any other worker, and one month in a temporary contract of six months or less.",
+      "source": "art. 3.2 h); Estatuto de los Trabajadores art. 14.1",
+      "check": "employment_check.py EMPLOY-PROBATION"
+    },
+    {
+      "id": "ES-06",
+      "grader": "script",
+      "text": "Training, the user undertaking of an agency worker, automated decision systems, the equality plan with the protocol against sexual harassment (whatever the company's size), the ending of the contract, the Social Security body or mutual and how the terms may be changed: each given, or marked not applicable with the reason; the protocol, the Social Security item and the changes never are.",
+      "source": "art. 3.2 i) to n), p), q)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "ES-07",
+      "grader": "script",
+      "text": "The collective agreement with its code, the bulletin and date it was published in and its period of validity.",
+      "source": "art. 3.2 o)",
+      "check": "employment_check.py EMPLOY-AGREEMENT"
+    },
+    {
+      "id": "ES-08",
+      "grader": "script",
+      "text": "Only the pay, the working time, the holidays, the probation, the training, the ending and the Social Security item may be given by reference to a law or the collective agreement; the rest are stated.",
+      "source": "art. 3.3",
+      "check": "employment_check.py EMPLOY-REFERENCE"
+    },
+    {
+      "id": "ES-09",
+      "grader": "script",
+      "text": "Work abroad over four consecutive weeks: the country, the length, the currency, the payments in cash or kind and the repatriation.",
+      "source": "art. 4",
+      "check": "employment_check.py EMPLOY-ABROAD"
+    },
+    {
+      "id": "ES-10",
+      "grader": "script",
+      "text": "Every heading is in Spanish.",
+      "source": "art. 3",
+      "check": "employment_check.py EMPLOY-LANG"
+    }
+  ]
+}

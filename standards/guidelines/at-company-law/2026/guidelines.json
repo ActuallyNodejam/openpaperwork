@@ -1,0 +1,45 @@
+{
+  "issuer": "at-company-law",
+  "version": "2026",
+  "link": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001720",
+  "license": "Austrian statutes, outside copyright (Urheberrechtsgesetz § 7); restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "GmbH-Gesetz §§ 30g and 40 and Aktiengesetz §§ 92 and 120: the Niederschrift of a supervisory board and of a general meeting",
+  "source": "GmbH-Gesetz (https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001720) and Aktiengesetz (https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10002070), consolidated federal law as of 2026-10-09, read on RIS that day.",
+  "rules": [
+    {
+      "id": "AT-MIN-01",
+      "grader": "script",
+      "text": "A Niederschrift is drawn up of the supervisory board's proceedings and resolutions and signed by its chair or the deputy.",
+      "source": "AktG § 92 Abs. 2; GmbHG § 30g Abs. 2",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "AT-MIN-02",
+      "grader": "script",
+      "text": "The resolutions of a GmbH's general meeting are entered in a Niederschrift without delay.",
+      "source": "GmbHG § 40 Abs. 1",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "AT-MIN-03",
+      "grader": "script",
+      "text": "A copy of the resolutions, stating the day they were entered in the Niederschrift, goes to every shareholder by registered letter without delay; the Niederschrift states that day.",
+      "source": "GmbHG § 40 Abs. 2",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "AT-MIN-04",
+      "grader": "judge",
+      "text": "The Niederschriften and the resolutions passed in writing are kept in order, and every shareholder may read them during business hours.",
+      "source": "GmbHG § 40 Abs. 1"
+    },
+    {
+      "id": "AT-MIN-05",
+      "grader": "judge",
+      "text": "A resolution of an Aktiengesellschaft's general meeting is valid only as a notary records it; a file written here is a working record and the reply says so.",
+      "source": "AktG § 120 Abs. 1 and 2"
+    }
+  ]
+}

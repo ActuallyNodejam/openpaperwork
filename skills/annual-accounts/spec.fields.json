@@ -1,0 +1,30 @@
+{
+ "about": "Every key annual_create.py reads from an annual report's data file. The builder stops on a key that is not here, on a value of another shape, and on a line of the income statement or balance sheet its layouts do not have (skills/_shared/spec_guard.py; the lines are INCOME, ASSETS and LIABILITIES in the builder). What the report must say that has no field of its own goes in notes, each with a title and a text.",
+ "open": {"": "notes"},
+ "defs": {
+  "pair": "any",
+  "period": {"start": "text", "end": "text"}
+ },
+ "fields": {
+  "language": "text",
+  "company": {"name": "text", "org_number": "text", "seat": "text"},
+  "year": "@period", "prior": "@period", "first_year": "flag", "unknown": ["text"],
+  "report": {"business": "text", "events": "text",
+             "earlier_years": [{"year": "text", "net_sales": "number", "result_after_financial": "number", "solidity": "number"}]},
+  "income": {"*": "@pair"},
+  "balance": {"*": "@pair"},
+  "equity_changes": {"dividend_paid": "number", "shareholder_contribution": "number", "new_share_capital": "number",
+                     "new_share_premium": "number", "other": "any"},
+  "disposition": {"dividend": "number", "statement": "text", "carried_forward": "number"},
+  "fixed_assets": {"*": {"opening_cost": "@pair", "additions": "@pair", "disposals_cost": "@pair",
+                         "opening_depreciation": "@pair", "depreciation": "@pair", "disposals_depreciation": "@pair"}},
+  "principles": ["text"],
+  "employees": "any",
+  "pledged": [{"label": "text", "amounts": "@pair"}],
+  "contingent": [{"label": "text", "amounts": "@pair"}],
+  "events_after": "text",
+  "notes": [{"title": "text", "text": "text", "attach": "text"}],
+  "signing": {"place": "text", "date": "text", "board": [{"name": "text", "role": "text"}],
+              "auditor": {"name": "text", "firm": "text", "date": "text", "role": "text"}}
+ }
+}

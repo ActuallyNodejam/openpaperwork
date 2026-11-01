@@ -1,0 +1,55 @@
+{
+  "law": "pl",
+  "language": "pl",
+  "given": "2026-11-03",
+  "contract_date": "2026-10-26",
+  "employer": {
+    "name": "Przykład Druk sp. z o.o.",
+    "number": "KRS 0000123456, NIP 1234563218",
+    "address": "ul. Przykładowa 5, 00-001 Warszawa",
+    "signatory": "Tomasz Lewandowski, prezes zarządu"
+  },
+  "worker": {
+    "name": "Katarzyna Zielińska",
+    "address": "ul. Wzorcowa 12 m. 4, 00-002 Warszawa"
+  },
+  "term": {
+    "type": "permanent"
+  },
+  "job": {
+    "title": "Specjalistka do spraw przygotowania do druku",
+    "description": "Przygotowanie plików, odbitek próbnych i form drukowych do druku offsetowego."
+  },
+  "place": "ul. Przykładowa 5, 00-001 Warszawa",
+  "pay": {
+    "amount": 8500,
+    "currency": "PLN",
+    "per": "month",
+    "components": [
+      {
+        "name": "Premia regulaminowa",
+        "text": "do 10% wynagrodzenia zasadniczego, na zasadach regulaminu wynagradzania"
+      }
+    ],
+    "paid": "raz w miesiącu, do 10. dnia następnego miesiąca kalendarzowego",
+    "method": "przelew na rachunek bankowy pracownika",
+    "other_pay": "poza wymienionymi w umowie pracownikowi nie przysługują inne składniki ani świadczenia"
+  },
+  "hours": {
+    "pattern": "fixed",
+    "basis": "pełny etat",
+    "norm": "8 godzin na dobę i przeciętnie 40 godzin w przeciętnie pięciodniowym tygodniu pracy w okresie rozliczeniowym (art. 129 § 1 Kodeksu pracy)",
+    "standard": "8 godzin na dobę i 40 godzin tygodniowo",
+    "breaks": "co najmniej 15 minut, wliczane do czasu pracy, przy dobowym wymiarze co najmniej 6 godzin (art. 134 Kodeksu pracy)",
+    "rest_days": "co najmniej 11 godzin nieprzerwanego odpoczynku w każdej dobie i 35 godzin w każdym tygodniu (art. 132 i 133 Kodeksu pracy)",
+    "overtime": "zgodnie z art. 151–151(6) Kodeksu pracy, z dodatkiem 50% albo 100% wynagrodzenia lub czasem wolnym"
+  },
+  "start": "2026-11-02",
+  "probation": null,
+  "leave": "Zgodnie z art. 154 Kodeksu pracy: 20 dni urlopu wypoczynkowego w roku przy zatrudnieniu krótszym niż 10 lat, 26 dni przy zatrudnieniu co najmniej 10 lat",
+  "termination": "Zgodnie z art. 30–36 i art. 264 Kodeksu pracy: oświadczenie składa się na piśmie; okres wypowiedzenia wynosi 2 tygodnie, 1 miesiąc albo 3 miesiące, zależnie od okresu zatrudnienia; odwołanie do sądu pracy wnosi się w ciągu 21 dni",
+  "training": null,
+  "collective": null,
+  "rules": "U pracodawcy obowiązuje regulamin pracy; ustala on termin, miejsce, czas i częstotliwość wypłaty wynagrodzenia, porę nocną oraz sposób potwierdzania przybycia i obecności w pracy i usprawiedliwiania nieobecności",
+  "social_security": "Zakład Ubezpieczeń Społecznych (ZUS), do którego wpływają składki na ubezpieczenia społeczne; pracodawca nie zapewnia dodatkowej ochrony"
+}

@@ -1,0 +1,69 @@
+[
+  {
+    "id": "brief-001",
+    "title": "Turn meeting notes into a shareable brief",
+    "format": "docx",
+    "output": "brief.docx",
+    "person": "A project coordinator preparing a short internal brief.",
+    "request": "Turn the supplied meeting notes into brief.docx, an editable brief of at most two pages. Include purpose, agreed decisions, an action table with owners and dates, and open questions. Keep uncertainties explicit. Use clear headings and plain English. Do not invent decisions or assign an owner where none was agreed.",
+    "inputs": {
+      "notes.txt": "Fictional workshop, 2026-10-05. We are planning an internal training day for 24 people on 2026-11-12. Budget ceiling is EUR 1800. Agreed: use the existing training room; do not book an external venue. Mira owns the agenda, due 2026-10-16. Leon checks accessibility requirements, due 2026-10-19. Lunch supplier is undecided and has no assigned owner. Remote attendance is an open question.\n"
+    },
+    "revision": "The training day has moved to 2026-11-19. Mira now needs to deliver the agenda by 2026-10-20. Update the brief, preserve everything else, and make clear which dates changed.",
+    "review": [
+      "All decisions, action owners and dates match the notes.",
+      "Lunch supplier and remote attendance remain unresolved; no invented owner.",
+      "The brief renders within two pages, has readable headings/table and no clipping.",
+      "Text and action table remain editable rather than flattened images."
+    ],
+    "revised_review": [
+      "The event and agenda dates are updated everywhere; prior dates appear only if clearly marked as previous.",
+      "The unchanged budget, people count, room decision and Leon deadline are preserved."
+    ]
+  },
+  {
+    "id": "quotes-001",
+    "title": "Compare quotes against a budget and deadline",
+    "format": "xlsx",
+    "output": "comparison.xlsx",
+    "person": "An operations assistant choosing equipment for a small team.",
+    "request": "Create comparison.xlsx from quotes.csv for 12 desk lamps. Budget is EUR 600 before tax; delivery must be on or before 2026-11-10. Include a Comparison sheet with columns Supplier, Quantity, Unit price EUR, Shipping EUR, Total EUR, Delivery date, Eligible. Calculate each total with an editable formula. Keep every quote, explain ineligible options, and recommend the cheapest eligible supplier in a Recommendation sheet. Assume the quotes are comparable; do not add tax or other charges.",
+    "inputs": {
+      "quotes.csv": "Supplier,Quantity,Unit price EUR,Shipping EUR,Delivery date\nNorthlight,12,42.50,30.00,2026-11-09\nFielddesk,12,39.00,24.00,2026-11-14\nStudio Supply,12,44.00,0.00,2026-11-08\n"
+    },
+    "revision": "Studio Supply has changed its unit price to EUR 49.00 and delivery to 2026-11-13. Update only that quote, recalculate the comparison and revise the recommendation. The budget and required delivery date stay unchanged.",
+    "review": [
+      "All input quantities, prices, shipping and dates are preserved except the explicitly revised quote.",
+      "Recalculation in a named spreadsheet engine proves formulas respond to input edits; cached values alone do not prove this.",
+      "Eligibility combines both budget and delivery; reasons and recommendation are correct.",
+      "Currency, dates and labels are readable with no clipped columns; the workbook remains editable."
+    ],
+    "revised_review": [
+      "Studio Supply is ineligible after its delivery change; Northlight is now the cheapest eligible option.",
+      "No old recommendation survives in notes, formatting or summaries."
+    ]
+  },
+  {
+    "id": "update-001",
+    "title": "Make a short team update from figures",
+    "format": "pptx",
+    "output": "update.pptx",
+    "person": "A team lead preparing a five-minute internal update.",
+    "request": "Create update.pptx as an editable five-slide deck for a five-minute team update. Use the supplied figures and notes. Cover the main message, incoming and resolved requests, response time, the limitation, and the next action. Include one clearly labeled chart comparing incoming and resolved requests across Q1 and Q2. Keep the conclusion accurate and text readable. Do not invent revenue, satisfaction or causal claims.",
+    "inputs": {
+      "figures.csv": "Quarter,Incoming requests,Resolved requests,Median first response days\nQ1,120,108,2.4\nQ2,150,135,1.8\n",
+      "notes.txt": "Fictional internal service team. Resolved/incoming is a period ratio, not a cohort closure rate. Customer satisfaction was not measured. Next action: review the ten oldest unresolved requests with the team next Monday. No causal study was performed.\n"
+    },
+    "revision": "The Q2 median first response was corrected from 1.8 days to 2.1 days. Update the deck and any improvement calculation or wording. Keep the request counts and other facts unchanged.",
+    "review": [
+      "The chart shows Q1 120/108 and Q2 150/135 with labels and a meaningful scale.",
+      "Median response time is 2.4 to 1.8 days initially, 2.4 to 2.1 after revision; any percentages use the correct baseline.",
+      "The period ratio limitation, unmeasured satisfaction and next action remain accurate.",
+      "All five slides render without clipping or unreadable labels, with editable text and an editable chart or data-driven editable shapes."
+    ],
+    "revised_review": [
+      "The obsolete 1.8 and 25% improvement do not remain as current facts in text, charts or notes.",
+      "The response-time improvement is 12.5% if a percentage is used; no causal claim is introduced."
+    ]
+  }
+]

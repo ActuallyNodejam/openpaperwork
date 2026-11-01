@@ -1,0 +1,106 @@
+{
+  "id": "proforma-ca-001",
+  "title": "A Canadian pro forma invoice for an export to the United States, on Letter paper",
+  "person": "A customer service representative at an Ottawa instrument maker preparing a pro forma for a US customer's advance payment.",
+  "format": "pdf",
+  "output": "proforma.pdf",
+  "locale": "en-CA",
+  "sector": {
+    "naics": "31-33",
+    "name": "Manufacturing"
+  },
+  "occupation": {
+    "soc": "43-4051.00",
+    "name": "Customer Service Representatives"
+  },
+  "review": [
+    "Pro forma invoice PF-2026-0063 from Granite Shield Instruments Ltd. to Lakeshore Survey Partners LLC: two GNSS receivers (8526.91, Canada) at 9,850.00 and two survey poles (9015.90, Canada) at 420.00, total 20,540.00 CAD, no GST/HST on the export, CPT Buffalo, NY, Incoterms 2020, payment in advance to the Canadian account; Canadian English labels; US Letter; dates 2026-10-13."
+  ],
+  "revised_review": [
+    "Three receivers instead of two; the total follows."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "lang",
+      "stage": "both",
+      "grader": "script",
+      "script": "purchase_order_check.py",
+      "rule": "TRADE-LANG",
+      "guidelines": [
+        "trade-locales/2026-10#TL-01"
+      ],
+      "text": "Every label in Canadian English: GST/HST, not VAT."
+    },
+    {
+      "id": "paper",
+      "stage": "both",
+      "grader": "script",
+      "script": "locale_floor.py",
+      "rule": "LOCALE-PAPER",
+      "guidelines": [
+        "trade-locales/2026-10#TL-02"
+      ],
+      "text": "US Letter."
+    },
+    {
+      "id": "date",
+      "stage": "both",
+      "grader": "script",
+      "script": "locale_floor.py",
+      "rule": "LOCALE-DATE",
+      "guidelines": [
+        "trade-locales/2026-10#TL-03"
+      ],
+      "text": "Dates as 2026-10-13."
+    },
+    {
+      "id": "number",
+      "stage": "both",
+      "grader": "script",
+      "script": "locale_floor.py",
+      "rule": "LOCALE-NUMBER",
+      "guidelines": [
+        "openpaperwork/0.1.0#LOCALE-NUMBER"
+      ],
+      "text": "Amounts as 20,540.00."
+    },
+    {
+      "id": "export",
+      "stage": "first",
+      "grader": "judge",
+      "guidelines": [
+        "trade-locales/2026-10#TL-04"
+      ],
+      "text": "Each goods line has its HS code and origin, the note says no GST/HST is charged on the export, and the total is 20,540.00 CAD."
+    },
+    {
+      "id": "revised-total",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "trade-locales/2026-10#TL-04"
+      ],
+      "text": "Three receivers: total 30,390.00 CAD, nothing else changed."
+    }
+  ],
+  "version": "1.0.0",
+  "status": "draft",
+  "source": "Synthetic material created for this evaluation pack; the companies and people are invented.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+  "guidelines": [
+    "trade-locales/2026-10",
+    "icc-incoterms/2020",
+    "openpaperwork/0.1.0",
+    "every-file/1.1.0"
+  ]
+}

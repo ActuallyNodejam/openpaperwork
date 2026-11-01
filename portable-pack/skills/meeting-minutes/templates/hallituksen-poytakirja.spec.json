@@ -1,0 +1,53 @@
+{
+  "language": "fi",
+  "country": "FI",
+  "body": "Esimerkki Pakkaus Oy",
+  "company_number": "3214567-8",
+  "meeting": "board",
+  "number": "9/2026",
+  "date": "2026-10-22",
+  "start": "14:00",
+  "end": "15:20",
+  "place": "Yhtiön toimisto, Teollisuustie 9, Tampere",
+  "chair": "Leena Virtanen",
+  "secretary": "Juha Niemi",
+  "checkers": [
+    "Mikko Salo"
+  ],
+  "present": [
+    "Leena Virtanen",
+    "Mikko Salo",
+    "Aino Koski"
+  ],
+  "in_attendance": [
+    "Juha Niemi (toimitusjohtaja)"
+  ],
+  "quorum": true,
+  "items": [
+    {
+      "title": "Edellisen kokouksen pöytäkirja",
+      "decisions": [
+        "Edellisen kokouksen pöytäkirja 8/2026 hyväksyttiin"
+      ]
+    },
+    {
+      "title": "Uusi CNC-kone",
+      "notes": "Toimitusjohtaja esitteli kolme tarjousta.",
+      "decisions": [
+        "Yhtiö hankkii CNC-koneen Konepaja Laakso Oy:ltä 186 000 euron hintaan (alv 0 %)"
+      ],
+      "dissent": [
+        {
+          "name": "Aino Koski",
+          "text": "hankinta olisi pitänyt rahoittaa leasingilla"
+        }
+      ]
+    },
+    {
+      "title": "Seuraava kokous",
+      "decisions": [
+        "Seuraava kokous pidetään 3.12.2026"
+      ]
+    }
+  ]
+}

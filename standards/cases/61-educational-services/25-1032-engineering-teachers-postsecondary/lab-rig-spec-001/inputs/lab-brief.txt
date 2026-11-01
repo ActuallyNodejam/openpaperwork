@@ -1,0 +1,12 @@
+Beam bending rig for the ME2 strength of materials lab. Dr Amara Osei, Harwick University School of Engineering, 8 Oct 2026.
+What the students do: load a simply supported beam at mid-span in steps, read the deflection, compare with theory.
+- Beams: steel, aluminium and brass, 20 x 6 mm section, span adjustable 300 mm to 800 mm.
+- Loads up to 500N via a hanger and slotted masses, steps of 5 N.
+- Deflection read with a dial gauge, 0.01mm resolution, 0 - 25mm travel.
+- Must be safe for students and easy to set up in under 10 mins.
+- Should fit on a standard bench, 1.5m x 0.75m max footprint.
+- Frame stiff enough that frame deflection is < 1% of beam deflection at full load.
+- Rig total mass 40kgs max so two people can move it.
+- We need 6 rigs, delivered before the spring term starts on 11 January 2027.
+- Load cell option? TBD. I decide with Rob Kell (technician) once quotes are in, by 4 Dec 2026.
+- Instruction sheet etc.

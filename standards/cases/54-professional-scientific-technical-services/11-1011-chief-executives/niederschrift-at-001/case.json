@@ -1,0 +1,118 @@
+{
+ "id": "niederschrift-at-001",
+ "title": "Schreib die Niederschrift der Generalversammlung eines Ingenieurbüros",
+ "person": "The managing director of a small Austrian engineering office, a GmbH with two shareholders.",
+ "format": "docx",
+ "output": "niederschrift.docx",
+ "locale": "de-AT",
+ "sector": {
+  "naics": "54",
+  "name": "Professional, Scientific, and Technical Services"
+ },
+ "occupation": {
+  "soc": "11-1011.00",
+  "name": "Chief Executives"
+ },
+ "review": [
+  "The three resolutions are recorded as resolutions, the day they were entered in the Niederschrift is given, and the shareholders present are listed."
+ ],
+ "revised_review": [
+  "The distribution is 40.000 Euro; 60.000 Euro appears nowhere."
+ ],
+ "truth": {
+  "revision": {
+   "stale": [
+    "60.000"
+   ]
+  }
+ },
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "head",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-HEAD",
+   "guidelines": [
+    "roberts-rules/1915#MIN-01",
+    "roberts-rules/1915#MIN-03"
+   ],
+   "text": "The body, the kind of meeting and the date are given."
+  },
+  {
+   "id": "times",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-TIMES",
+   "guidelines": [
+    "roberts-rules/1915#MIN-09"
+   ],
+   "text": "The opening and closing times are given."
+  },
+  {
+   "id": "signed",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-SIGNED",
+   "guidelines": [
+    "roberts-rules/1915#MIN-13"
+   ],
+   "text": "The minute-taker signs."
+  },
+  {
+   "id": "statute",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-STATUTE",
+   "guidelines": [
+    "at-company-law/2026#AT-MIN-02",
+    "at-company-law/2026#AT-MIN-03"
+   ],
+   "text": "Every resolution is in the Niederschrift, and so is the day it was entered."
+  },
+  {
+   "id": "language",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-LANGUAGE",
+   "guidelines": [
+    "letter-layouts/2026-10#LETTER-LANGUAGE"
+   ],
+   "text": "Labels and signature roles are in German."
+  },
+  {
+   "id": "decisions",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "at-company-law/2026#AT-MIN-03"
+   ],
+   "text": "The annual accounts for 2025 are adopted, 60.000 Euro of the profit of 152.000 Euro are distributed and the rest carried forward, and the management is discharged; the reply says a copy goes to every shareholder by registered letter."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and addresses are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "roberts-rules/1915",
+  "at-company-law/2026",
+  "letter-layouts/2026-10",
+  "every-file/1.1.0"
+ ]
+}

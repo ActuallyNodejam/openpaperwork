@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "openpaperwork-academic",
+  "version": "0.1.0",
+  "description": "Academic: IEEE and ACM papers, reference lists in APA 7, IEEE and Vancouver style with their check, literature search and a Zotero library (the paper pack needs a TeX engine, tectonic, on PATH).",
+  "author": {
+    "name": "OpenPaperwork"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "academic"
+  ]
+}

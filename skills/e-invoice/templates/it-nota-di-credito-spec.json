@@ -1,0 +1,57 @@
+{
+  "type_code": "381",
+  "number": "2026/NC-9",
+  "issue_date": "2026-10-20",
+  "currency": "EUR",
+  "preceding_invoice": "2026/118",
+  "preceding_invoice_date": "2026-10-09",
+  "note": "Reso di 200 cataloghi con difetto di taglio",
+  "seller": {
+    "name": "Esempio Stampa S.r.l.",
+    "legal_form": "S.r.l.",
+    "street": "Via dell'Esempio 12",
+    "postcode": "20121",
+    "city": "Milano",
+    "province": "MI",
+    "country": "IT",
+    "vat_id": "IT01234567897",
+    "tax_code": "01234567897",
+    "tax_regime": "RF01",
+    "rea": {
+      "office": "MI",
+      "number": "0000000",
+      "share_capital": 10000,
+      "sole_shareholder": false,
+      "in_liquidation": false
+    },
+    "contact": {
+      "name": "Giulia Esempio",
+      "phone": "+39 02 0000 0000",
+      "email": "fatture@stampa.example"
+    },
+    "registered_office": "Milano",
+    "register": "Registro delle Imprese di Milano",
+    "register_number": "01234567897",
+    "share_capital": "10.000,00 euro i.v."
+  },
+  "buyer": {
+    "name": "Esempio Libreria S.p.A.",
+    "street": "Corso del Campione 4",
+    "postcode": "10121",
+    "city": "Torino",
+    "province": "TO",
+    "country": "IT",
+    "vat_id": "IT09876543217",
+    "recipient_code": "ABC1234"
+  },
+  "lines": [
+    {
+      "name": "Stampa catalogo, 48 pagine, quadricromia",
+      "quantity": 200,
+      "unit": "C62",
+      "unit_price": 1.84,
+      "vat_rate": 22,
+      "vat_category": "S"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+The board asked for narrower margins and a risk section. Change all four margins to 20 mm. Add a section "Risks" after Recommendations with this text: "The checklist may raise the share of rejected applications in its first months. Scanning depends on the December budget decision." Keep everything else and stay within the page limit.

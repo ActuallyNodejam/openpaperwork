@@ -1,0 +1,87 @@
+{
+  "type": "quotation",
+  "language": "es",
+  "number": "P-2026-0214",
+  "issue_date": "2026-10-14",
+  "references": [
+    {
+      "label": "Su solicitud del",
+      "value": "2026-10-09"
+    },
+    {
+      "label": "Nuestra referencia",
+      "value": "Carmen Vidal"
+    }
+  ],
+  "dates": [
+    {
+      "label": "Válido hasta",
+      "value": "2026-11-13"
+    },
+    {
+      "label": "Plazo de entrega",
+      "value": "10 días laborables"
+    }
+  ],
+  "currency": "EUR",
+  "seller": {
+    "name": "Ejemplo Imprenta S.L.",
+    "street": "Calle del Ejemplo 12",
+    "postcode": "28001",
+    "city": "Madrid",
+    "province": "Madrid",
+    "country": "España",
+    "vat_id": "ESB12345674",
+    "email": "ventas@ejemplo-imprenta.example",
+    "phone": "+34 910 000 000",
+    "registered_office": "Calle del Ejemplo 12, 28001 Madrid",
+    "register": "Registro Mercantil de Madrid",
+    "register_number": "tomo 12345, folio 67, hoja M-123456"
+  },
+  "buyer": {
+    "name": "Ejemplo Editorial S.A.",
+    "street": "Paseo de la Muestra 30",
+    "postcode": "08001",
+    "city": "Barcelona",
+    "province": "Barcelona",
+    "country": "España",
+    "vat_id": "ESA87654323"
+  },
+  "delivery_terms": {
+    "rule": "DAP",
+    "place": "Barcelona, España"
+  },
+  "transport": "road",
+  "payment_terms": "transferencia a 30 días desde la fecha de la factura",
+  "lines": [
+    {
+      "code": "CAT-A4-48",
+      "description": "Catálogo A4 de 48 páginas, cuatricromía",
+      "quantity": 2000,
+      "unit": "pcs",
+      "unit_price": 1.45,
+      "discount_percent": 5,
+      "vat_rate": 21
+    },
+    {
+      "code": "CUB-300",
+      "description": "Cubierta de 300 g con plastificado mate",
+      "quantity": 2000,
+      "unit": "pcs",
+      "unit_price": 0.22,
+      "discount_percent": 0,
+      "vat_rate": 21
+    },
+    {
+      "description": "Maquetación y pruebas de color",
+      "quantity": 6,
+      "unit": "h",
+      "unit_price": 48.0,
+      "discount_percent": 0,
+      "vat_rate": 21
+    }
+  ],
+  "notes": [
+    "El descuento del 5 % se aplica a tiradas de 2.000 ejemplares o más."
+  ]
+}

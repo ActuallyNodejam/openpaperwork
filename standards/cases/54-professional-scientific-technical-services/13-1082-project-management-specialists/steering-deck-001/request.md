@@ -1,0 +1,1 @@
+Please make the steering-group deck from my notes (`inputs/rollout-notes.md`), `Rollout steering group October.pdf`. They want the budget as a chart by hub, the picking errors before and after as a table, the risks, the dates, and what I need them to confirm on 26 October.

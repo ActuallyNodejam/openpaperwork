@@ -1,0 +1,1 @@
+Write paper.pdf from notes.txt: an IEEE conference paper in two columns with a title, an abstract, index terms, four sections, one table and a reference list, kept to one page for this case. Submit it for blind review, so no author names.

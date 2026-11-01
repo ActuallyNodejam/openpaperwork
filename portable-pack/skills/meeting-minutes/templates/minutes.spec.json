@@ -1,0 +1,24 @@
+{
+  "language": "en",
+  "body": "Ålsta Rowing Club",
+  "meeting": "regular",
+  "number": "7/2026",
+  "date": "2026-10-14",
+  "start": "18:30",
+  "end": "20:05",
+  "place": "The boat house, Strandvägen 4",
+  "chair": "Maria Lund",
+  "secretary": "Per Ek",
+  "present": ["Maria Lund", "Per Ek", "Eva Berg", "Lars Holm", "Maja Sund", "and 7 members"],
+  "absent": ["Omar Aziz"],
+  "previous_minutes": "approved",
+  "items": [
+    {"title": "Boat-house lease",
+     "notes": "The treasurer reported that the landlord offers a new three-year lease at SEK 48,000 a year.",
+     "motions": [{"text": "that the club accept the new three-year lease at SEK 48,000 a year", "mover": "Eva Berg",
+                  "result": "adopted", "votes": {"for": 9, "against": 2, "abstained": 1}}]},
+    {"title": "Autumn regatta",
+     "motions": [{"text": "that the club enter two eights in the autumn regatta", "mover": "Lars Holm", "result": "adopted"},
+                 {"text": "that the club hire a bus for the regatta", "mover": "Maja Sund", "result": "lost"}]}
+  ]
+}

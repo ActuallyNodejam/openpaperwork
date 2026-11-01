@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- A scenario for the KoSIT validator (github.com/itplr-kosit/validator, Apache-2.0) that checks a UBL 2.1
+  - invoice or credit note against Peppol BIS Billing 3.0: the UBL 2.1 schema, the CEN EN 16931 UBL rules
+  - and the Peppol rules with their national rules (Norway NO-R-*, Denmark DK-R-*, Sweden, Italy, Greece,
+  - the Netherlands, Germany). This file is ours; the files it names are run untouched from where they are
+  - installed, never copied into this repository:
+  -   kosit/   the KoSIT XRechnung validator configuration (Apache-2.0): the UBL 2.1 schema and the
+  -            report stylesheet
+  -   peppol/  OpenPeppol Peppol BIS Billing 3.0 release 3.0.21 (CEN-EN16931-UBL.sch, PEPPOL-EN16931-UBL.sch),
+  -            compiled to XSLT on install with SchXslt 1.10.1 (MIT). OpenPeppol's terms do not allow
+  -            redistribution, so the rules are fetched, never copied.
+  - skills/e-invoice/scripts/fetch_validators.py installs both at pinned versions.
+  -->
+<scenarios xmlns="http://www.xoev.de/de/validator/framework/1/scenarios" frameworkVersion="1.0.0">
+  <name>Peppol BIS Billing 3.0 (UBL)</name>
+  <author>Nodejam OpenPaperwork, e-invoice pack</author>
+  <date>2026-10-09</date>
+  <description>
+    <p>Validates a UBL 2.1 Invoice or CreditNote against Peppol BIS Billing 3.0 (EN 16931 and the Peppol
+      rules, with the Norwegian EHF and Danish national rules).</p>
+  </description>
+  <scenario>
+    <name>Peppol BIS Billing 3.0 (UBL Invoice)</name>
+    <description><p>UBL 2.1 Invoice, CEN EN 16931 and Peppol BIS 3.0 rules.</p></description>
+    <namespace prefix="inv">urn:oasis:names:specification:ubl:schema:xsd:Invoice-2</namespace>
+    <namespace prefix="rep">http://www.xoev.de/de/validator/varl/1</namespace>
+    <match>exists(/inv:Invoice)</match>
+    <validateWithXmlSchema>
+      <resource>
+        <name>XML Schema for UBL 2.1 Invoice</name>
+        <location>kosit/resources/ubl/2.1/xsd/maindoc/UBL-Invoice-2.1.xsd</location>
+      </resource>
+    </validateWithXmlSchema>
+    <validateWithSchematron>
+      <resource>
+        <name>CEN EN 16931 rules (UBL), Peppol BIS 3.0.21</name>
+        <location>peppol/CEN-EN16931-UBL.xsl</location>
+      </resource>
+    </validateWithSchematron>
+    <validateWithSchematron>
+      <resource>
+        <name>Peppol BIS Billing 3.0 rules (UBL), 3.0.21</name>
+        <location>peppol/PEPPOL-EN16931-UBL.xsl</location>
+      </resource>
+    </validateWithSchematron>
+    <createReport>
+      <resource>
+        <name>Validation report</name>
+        <location>kosit/resources/xrechnung-report.xsl</location>
+      </resource>
+    </createReport>
+    <acceptMatch>/rep:report/rep:assessment[1]/rep:accept[1]</acceptMatch>
+  </scenario>
+  <scenario>
+    <name>Peppol BIS Billing 3.0 (UBL CreditNote)</name>
+    <description><p>UBL 2.1 CreditNote, CEN EN 16931 and Peppol BIS 3.0 rules.</p></description>
+    <namespace prefix="cn">urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2</namespace>
+    <namespace prefix="rep">http://www.xoev.de/de/validator/varl/1</namespace>
+    <match>exists(/cn:CreditNote)</match>
+    <validateWithXmlSchema>
+      <resource>
+        <name>XML Schema for UBL 2.1 CreditNote</name>
+        <location>kosit/resources/ubl/2.1/xsd/maindoc/UBL-CreditNote-2.1.xsd</location>
+      </resource>
+    </validateWithXmlSchema>
+    <validateWithSchematron>
+      <resource>
+        <name>CEN EN 16931 rules (UBL), Peppol BIS 3.0.21</name>
+        <location>peppol/CEN-EN16931-UBL.xsl</location>
+      </resource>
+    </validateWithSchematron>
+    <validateWithSchematron>
+      <resource>
+        <name>Peppol BIS Billing 3.0 rules (UBL), 3.0.21</name>
+        <location>peppol/PEPPOL-EN16931-UBL.xsl</location>
+      </resource>
+    </validateWithSchematron>
+    <createReport>
+      <resource>
+        <name>Validation report</name>
+        <location>kosit/resources/xrechnung-report.xsl</location>
+      </resource>
+    </createReport>
+    <acceptMatch>/rep:report/rep:assessment[1]/rep:accept[1]</acceptMatch>
+  </scenario>
+  <noScenarioReport>
+    <resource>
+      <name>Default Report</name>
+      <location>kosit/resources/default-report.xsl</location>
+    </resource>
+  </noScenarioReport>
+</scenarios>

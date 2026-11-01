@@ -1,0 +1,58 @@
+{
+  "language": "fi",
+  "law": "fi",
+  "given": "2027-02-15",
+  "employer": {
+    "name": "Revontuli Ohjelmistot Oy",
+    "number": "Y-tunnus 1234567-8",
+    "address": "Hämeenkatu 10, 33100 Tampere",
+    "signatory": "Aino Laine, toimitusjohtaja"
+  },
+  "worker": {
+    "name": "Mikko Virtanen",
+    "address": "Satakunnankatu 5 B 12, 33210 Tampere"
+  },
+  "start": "2027-03-01",
+  "term": {
+    "type": "fixed",
+    "end": "2027-12-31",
+    "basis": "työntekijä palkataan asiakasprojektiin, joka päättyy vuoden 2027 lopussa"
+  },
+  "probation": {
+    "months": 4,
+    "conditions": "koeaikana työsopimus voidaan molemmin puolin purkaa (työsopimuslaki 1 luku 4 §)"
+  },
+  "place": "Toimisto, Hämeenkatu 10, 33100 Tampere; etätyötä enintään kaksi päivää viikossa sovitusti",
+  "job": {
+    "title": "Ohjelmistokehittäjä",
+    "description": "Suunnittelee, toteuttaa ja testaa asiakasprojektin ohjelmistoa."
+  },
+  "pay": {
+    "amount": 4200,
+    "currency": "EUR",
+    "per": "month",
+    "paid": "kuukausi, palkka maksetaan kuun 15. päivänä",
+    "method": "tilisiirto työntekijän pankkitilille",
+    "components": [
+      {
+        "name": "Lounasetu",
+        "text": "lounasetu verohallinnon ohjeen mukaisena luontoisetuna"
+      }
+    ]
+  },
+  "hours": {
+    "pattern": "fixed",
+    "standard": "37,5 tuntia viikossa, maanantaista perjantaihin, liukuva työaika klo 7–18",
+    "overtime": "lisä- ja ylityöstä maksetaan työaikalain mukainen korvaus"
+  },
+  "agency": null,
+  "training": "Työnantaja tarjoaa kaksi koulutuspäivää vuodessa",
+  "leave": "Vuosiloma määräytyy vuosilomalain (162/2005) mukaan",
+  "termination": "Määräaikainen työsopimus päättyy 31.12.2027 ilman irtisanomista. Osapuolet ovat sopineet, että sopimus voidaan irtisanoa myös kesken kauden; irtisanomisaika määräytyy työsopimuslain 6 luvun 3 §:n mukaan",
+  "collective": null,
+  "insurance": {
+    "pension": "Eläkevakuutusyhtiö Esimerkki",
+    "accident": "Vakuutusyhtiö Malli"
+  },
+  "abroad": null
+}

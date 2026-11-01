@@ -1,0 +1,1 @@
+Lindental cancelled one of the three training days and sent back ten of the printed handbooks (see the files in `inputs/`). Please make the credit note against our invoice RE-2026-0311: as an XRechnung for their e-invoicing portal, `credit-note.xml`, and the same credit note as a readable PDF, `credit-note.pdf`.

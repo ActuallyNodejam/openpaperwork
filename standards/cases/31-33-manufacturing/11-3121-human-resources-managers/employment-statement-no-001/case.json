@@ -1,0 +1,139 @@
+{
+  "id": "employment-statement-no-001",
+  "title": "Write a Norwegian arbeidsavtale for a temporary production operator covering a parental leave",
+  "person": "The HR manager of a small Norwegian boat-parts maker hiring a substitute while an operator is on parental leave.",
+  "format": "docx",
+  "output": "arbeidsavtale.docx",
+  "locale": "nb-NO",
+  "sector": {
+    "naics": "31-33",
+    "name": "Manufacturing"
+  },
+  "occupation": {
+    "soc": "11-3121.00",
+    "name": "Human Resources Managers"
+  },
+  "review": [
+    "Arbeidsavtalen for Sigrid Aune som vikar (operatør) i Ålesund fra 11. januar til 30. juni 2027, grunnlaget er vikariat for en ansatt i foreldrepermisjon; prøvetid to måneder; NOK 285 per time utbetalt den 20. hver måned til bankkonto, skifttillegg særskilt; 37,5 timer per uke dagtid mandag til fredag 07.00–15.00 med 30 minutters betalt pause; ferie etter ferieloven og oppsigelse etter arbeidsmiljøloven; ingen tariffavtale."
+  ],
+  "revised_review": [
+    "Vikariatet forlenges til 31. august 2027; alt annet er uendret."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "items",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-ITEMS",
+      "guidelines": [
+        "arbeidsmiljoloven/2024-07#NO-02",
+        "arbeidsmiljoloven/2024-07#NO-05",
+        "arbeidsmiljoloven/2024-07#NO-08"
+      ],
+      "text": "Every § 14-6 item is there or marked ikke aktuelt."
+    },
+    {
+      "id": "temp",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-NO-TEMP",
+      "guidelines": [
+        "arbeidsmiljoloven/2024-07#NO-03"
+      ],
+      "text": "The temporary hire gives its end and its basis (vikariat)."
+    },
+    {
+      "id": "probation",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-PROBATION",
+      "guidelines": [
+        "arbeidsmiljoloven/2024-07#NO-04"
+      ],
+      "text": "Two months' probation, within half of the temporary hire."
+    },
+    {
+      "id": "hours",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-NO-HOURS",
+      "guidelines": [
+        "arbeidsmiljoloven/2024-07#NO-07"
+      ],
+      "text": "Daily and weekly hours, when they fall, and the breaks."
+    },
+    {
+      "id": "pay",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-PAY",
+      "guidelines": [
+        "arbeidsmiljoloven/2024-07#NO-06"
+      ],
+      "text": "NOK 285 an hour, the shift supplement separately, paid on the 20th to a bank account."
+    },
+    {
+      "id": "reference",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-REFERENCE",
+      "guidelines": [
+        "arbeidsmiljoloven/2024-07#NO-09"
+      ],
+      "text": "Nothing outside g-k, m, p and q only points to a law or agreement."
+    },
+    {
+      "id": "lang",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-LANG",
+      "guidelines": [
+        "arbeidsmiljoloven/2024-07#NO-11"
+      ],
+      "text": "Every heading is Norwegian."
+    },
+    {
+      "id": "end-date",
+      "stage": "first",
+      "grader": "judge",
+      "guidelines": [
+        "arbeidsmiljoloven/2024-07#NO-03"
+      ],
+      "text": "The temporary hire ends 30 June 2027."
+    },
+    {
+      "id": "revised-end-date",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "arbeidsmiljoloven/2024-07#NO-03"
+      ],
+      "text": "The temporary hire ends 31 August 2027 and nothing else changed."
+    }
+  ],
+  "version": "1.0.0",
+  "status": "draft",
+  "source": "Synthetic material created for this evaluation pack; the companies and people are invented.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+  "guidelines": [
+    "arbeidsmiljoloven/2024-07",
+    "every-file/1.1.0"
+  ]
+}

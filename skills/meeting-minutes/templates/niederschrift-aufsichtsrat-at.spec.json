@@ -1,0 +1,43 @@
+{
+  "language": "de",
+  "country": "AT",
+  "body": "Traunufer Logistik AG",
+  "company_number": "FN 434343 x",
+  "meeting": "board",
+  "number": "3/2026",
+  "date": "2026-10-22",
+  "start": "10:00",
+  "end": "11:30",
+  "place": "Sitz der Gesellschaft, Industriezeile 47, 4020 Linz",
+  "chair": "Dr. Elisabeth Gruber",
+  "secretary": "Mag. Stefan Wimmer",
+  "present": [
+    "Dr. Elisabeth Gruber",
+    "Ing. Markus Hofer",
+    "Mag. Katharina Leitner"
+  ],
+  "in_attendance": [
+    "DI Thomas Pichler (Vorstand)",
+    "Mag. Stefan Wimmer (Schriftführer)"
+  ],
+  "quorum": true,
+  "previous_minutes": "approved",
+  "items": [
+    {
+      "title": "Bericht des Vorstands zum dritten Quartal",
+      "notes": "Der Vorstand berichtet über Umsatz, Ergebnis und Liquidität zum 30. September 2026."
+    },
+    {
+      "title": "Erweiterung des Lagers Enns",
+      "decisions": [
+        "Der Aufsichtsrat stimmt dem Ausbau des Lagers Enns mit einem Investitionsvolumen von 3,2 Millionen Euro zu"
+      ]
+    },
+    {
+      "title": "Nächste Sitzung",
+      "decisions": [
+        "Die nächste Sitzung findet am 10. Dezember 2026 statt"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# Built or local, never part of the library.
+.DS_Store
+.env
+.env.local
+.venv/
+__pycache__/
+node_modules/
+.cache/
+*.nodejam-pack.zip

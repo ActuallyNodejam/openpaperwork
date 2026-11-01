@@ -1,0 +1,63 @@
+{
+  "language": "pl",
+  "country": "PL",
+  "body": "Przykład Druk sp. z o.o.",
+  "company_number": "0000000000",
+  "meeting": "annual general",
+  "date": "2026-06-18",
+  "start": "11:00",
+  "end": "11:45",
+  "place": "ul. Przykładowa 5, Warszawa",
+  "chair": "Agnieszka Sowa",
+  "secretary": "Tomasz Wrona",
+  "quorum": true,
+  "shareholders": [
+    {
+      "name": "Agnieszka Sowa",
+      "shares": 60,
+      "votes": 60
+    },
+    {
+      "name": "Przykład Inwestycje sp. z o.o.",
+      "shares": 30,
+      "votes": 30,
+      "by": "Marek Zając"
+    },
+    {
+      "name": "Katarzyna Lis",
+      "shares": 10,
+      "votes": 10
+    }
+  ],
+  "items": [
+    {
+      "title": "Zatwierdzenie sprawozdania finansowego za rok 2025",
+      "notes": "Zarząd przedstawił sprawozdanie finansowe za rok obrotowy 2025, wykazujące zysk netto w kwocie 412 600 zł.",
+      "decisions": [
+        {
+          "text": "zatwierdzić sprawozdanie finansowe spółki za rok obrotowy 2025",
+          "unanimous": true
+        }
+      ]
+    },
+    {
+      "title": "Podział zysku",
+      "decisions": [
+        {
+          "text": "przeznaczyć zysk netto za rok 2025 w całości na kapitał zapasowy",
+          "votes": {
+            "for": 90,
+            "against": 10,
+            "abstained": 0
+          }
+        }
+      ],
+      "dissent": [
+        {
+          "name": "Katarzyna Lis",
+          "text": "wnosi o wypłatę dywidendy w kwocie 100 000 zł"
+        }
+      ]
+    }
+  ]
+}

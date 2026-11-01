@@ -1,0 +1,19 @@
+{
+ "issuer": "nl-wet-ob",
+ "version": "2026",
+ "link": "https://wetten.overheid.nl/BWBR0002629/2026-01-01",
+ "license": "Dutch laws carry no copyright (Auteurswet art. 11); the Belastingdienst publishes its site text under CC0; notice licenses/einvoice-be-nl-at-official-texts.txt. Restated in our own words; the fixed mention is quoted. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "What a Dutch invoice states",
+ "source": "Wet op de omzetbelasting 1968 as in force on 1 January 2026: art. 35a lid 1 (a the date, b a sequential number, c the supplier's btw-identificatienummer, d the customer's for a reverse charge or an intra-EU supply, e both parties' full names and addresses, f quantity and kind, g the date of supply, h the amount per rate and the unit price, i the rate, j the VAT, m the mention «btw verlegd»), lid 4 (the VAT in euro) and art. 34f (a document that changes an invoice refers to it specifically and unambiguously). Handelsregisterwet 2007 art. 27 lid 1: the KvK number on outgoing letters, orders, invoices and offers. Peppol NL-R-001 to NL-R-009 (cited) for the same in the UBL. Read 2026-10-09.",
+ "note": "Unproved: the article mapping in these rules was not proved against the official text in the 2026-10-20 standards audit.",
+ "rules": [
+  {
+   "id": "NL-INVOICE",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "text": "The number and date, the supplier's btw-id (NL, nine digits, B, two digits) and eight-digit KvK number, both parties' names and addresses, each line's unit price, the VAT per rate, «btw verlegd» with the customer's btw-id for a reverse charge and the invoice a credit note refers to, on the page; in the UBL the KvK number under scheme 0106."
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+Cykelverkstan i Växjö AB, 556000-0004
+Saldobalans per 2025-12-31, inskriven för hand (kronor; debet positivt, kredit negativt). Resultatet är inte överfört.
+
+Konto  Benämning                                   Saldo
+1210   Maskiner och verktyg                        60 000
+1219   Ackumulerade avskrivningar maskiner        -36 000
+1460   Lager av handelsvaror                      186 000
+1510   Kundfordringar                               9 800
+1630   Avräkning skattekonto                        3 100
+1790   Förutbetalda kostnader                      15 500
+1930   Företagskonto                              146 000
+2081   Aktiekapital                               -50 000
+2091   Balanserad vinst                          -153 700
+2440   Leverantörsskulder                         -48 600
+2510   Skatteskulder                               -4 200
+2650   Redovisningskonto för moms                 -17 800
+2710   Personalskatt                              -12 600
+2731   Avräkning lagstadgade sociala avgifter     -10 900
+2920   Upplupna semesterlöner                     -15 400
+2990   Övriga upplupna kostnader                   -7 500
+3041   Försäljning reparationer                  -212 000
+3051   Försäljning varor                       -1 024 000
+4010   Inköp av handelsvaror                      627 000
+4990   Lagerförändring                            -15 000
+5010   Lokalhyra                                  120 000
+5410   Förbrukningsinventarier                     18 400
+6071   Kortavgifter                                16 200
+6310   Företagsförsäkringar                         7 900
+6530   Redovisningstjänster                        24 000
+6991   Övriga externa kostnader                    11 500
+7210   Löner                                      260 000
+7510   Arbetsgivaravgifter                         82 000
+7831   Avskrivningar på maskiner                   12 000
+8410   Räntekostnader                               1 900
+8910   Skatt på årets resultat                     14 400

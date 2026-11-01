@@ -1,0 +1,63 @@
+{
+  "language": "nb",
+  "law": "no",
+  "given": "2026-12-14",
+  "employer": {
+    "name": "Eksempel Trykkeri AS",
+    "number": "org.nr. 123 456 789",
+    "address": "Strandkaien 12, 5013 Bergen",
+    "signatory": "Ingrid Halvorsen, daglig leder"
+  },
+  "worker": {
+    "name": "Jonas Berg",
+    "address": "Møllendalsveien 4, 5009 Bergen"
+  },
+  "place": "Trykkeriet, Strandkaien 12, 5013 Bergen",
+  "job": {
+    "title": "Trykker",
+    "description": "Trykker og pakker ordrer, tar imot papir og holder trykkeriet rent."
+  },
+  "start": "2027-01-04",
+  "term": {
+    "type": "fixed",
+    "end": "2027-06-30",
+    "kind": "vikariat",
+    "basis": "arbeid i stedet for en ansatt i foreldrepermisjon"
+  },
+  "probation": {
+    "months": 2,
+    "conditions": "prøvetiden kan forlenges med lengden av fravær i prøvetiden, jf. arbeidsmiljøloven § 15-6 fjerde ledd"
+  },
+  "leave": "25 virkedager ferie per ferieår og feriepenger etter ferieloven. Ferietidspunktet fastsettes etter drøfting med arbeidstakeren (ferieloven § 6). Det er ikke avtalt annet betalt fravær enn det som følger av lov",
+  "termination": "Oppsigelse skal være skriftlig (arbeidsmiljøloven § 15-4). I prøvetiden er oppsigelsesfristen 14 dager for begge parter; ellers gjelder fristene i arbeidsmiljøloven § 15-3. Vikariatet opphører 30. juni 2027 uten oppsigelse",
+  "pay": {
+    "amount": 46000,
+    "currency": "NOK",
+    "per": "month",
+    "paid": "den 20. hver måned",
+    "method": "overføring til arbeidstakerens bankkonto",
+    "components": [
+      {
+        "name": "Kveldstillegg",
+        "text": "NOK 60 per time for arbeid mellom kl. 18.00 og 21.00"
+      },
+      {
+        "name": "Pensjon",
+        "text": "innskuddspensjon med 2 prosent av lønnen etter lov om obligatorisk tjenestepensjon"
+      }
+    ]
+  },
+  "hours": {
+    "pattern": "fixed",
+    "standard": "37,5 timer per uke, 7,5 timer per dag, mandag til fredag kl. 07.30–15.30",
+    "overtime": "arbeid utover avtalt arbeidstid bare etter avtale; overtid betales med minst 40 prosent tillegg (arbeidsmiljøloven § 10-6 ellevte ledd)",
+    "shifts": "det er ikke skiftarbeid; bytte av arbeidsdag avtales med daglig leder"
+  },
+  "breaks": "30 minutters pause per dag, regnet som arbeidstid",
+  "special_hours": null,
+  "collective": null,
+  "agency": null,
+  "training": "Opplæring i trykkmaskinene og brannvern de to første ukene, betalt av arbeidsgiver",
+  "social_security": "Arbeidsgiveren betaler arbeidsgiveravgift til Skatteetaten, har yrkesskadeforsikring i Eksempel Forsikring AS og obligatorisk tjenestepensjon i Eksempel Pensjon AS",
+  "abroad": null
+}

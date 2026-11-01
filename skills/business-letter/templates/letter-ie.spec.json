@@ -1,0 +1,61 @@
+{
+  "language": "en",
+  "date": "2026-10-09",
+  "sender": {
+    "name": "Shannonbank Analytics Limited",
+    "street": "4 Harbour Row",
+    "city": "Limerick",
+    "postcode": "V94 X2Y3",
+    "country": "IE",
+    "vat_id": "IE 1234567FA",
+    "registered_office": "4 Harbour Row, Limerick, V94 X2Y3",
+    "register": "Ireland",
+    "register_number": "123456",
+    "managing_directors": [
+      "Niamh Gallagher",
+      "Declan Walsh",
+      "Sinéad Kelly"
+    ],
+    "email": "office@shannonbank.example",
+    "phone": "+353 61 000 000",
+    "web": "shannonbank.example"
+  },
+  "recipient": {
+    "name": "Example Freight Limited",
+    "attention": "Mr Tomás Moran, Secretary",
+    "street": "12 Bridge Street",
+    "city": "Westport",
+    "county": "Co. Mayo",
+    "postcode": "F28 X2Y4",
+    "country": "IE"
+  },
+  "references": [
+    {
+      "kind": "yours",
+      "value": "TM/0926"
+    },
+    {
+      "kind": "ours",
+      "value": "SA-552"
+    }
+  ],
+  "contact": {
+    "name": "Sinéad Kelly",
+    "phone": "+353 61 000 004",
+    "email": "sinead@shannonbank.example"
+  },
+  "subject": "Customer survey 2026: findings and next steps",
+  "salutation": "Dear Mr Moran",
+  "body": [
+    "Thank you for meeting us on 30 September. I enclose the report on this year's customer survey.",
+    "Of the 212 customers, 148 replied, a response rate of 70 per cent. Satisfaction with deliveries rose from 61 to 74 per cent; the one area that fell was communication about delays.",
+    "We would be glad to present the findings to your board in November. Please let me know which date suits you."
+  ],
+  "signatory": {
+    "name": "Sinéad Kelly",
+    "role": "Research Director"
+  },
+  "enclosures": [
+    "Customer survey 2026 report"
+  ]
+}

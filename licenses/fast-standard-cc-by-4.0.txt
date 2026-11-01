@@ -1,0 +1,12 @@
+The FAST Standard: Practical, structured design rules for financial modelling, version 02c (July 2019)
+FAST Standard Organisation
+https://fast-standard.org/wp-content/uploads/2019/10/FAST-Standard-02c-July-2019.pdf
+Read 2026-10-08.
+
+Licensed under the Creative Commons Attribution 4.0 International License (stated on page 2 of the PDF and at
+https://fast-standard.org/the-fast-standard/).
+https://creativecommons.org/licenses/by/4.0/
+
+Changes: the rules used here (1.03-01, 1.03-02, 2.01-08, 3.04-01, 4.01-03, 4.01-04, 4.02-02) are restated in our
+own words in skills/_checks/sheet_check.py, skills/xlsx/SKILL.md and standards/guidelines/fast-standard,
+and a list of universal numbers is our own addition.

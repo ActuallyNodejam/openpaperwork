@@ -1,0 +1,100 @@
+{
+  "id": "memo-001",
+  "title": "Turn meeting notes into a one-page staff memo",
+  "format": "docx",
+  "output": "memo.docx",
+  "person": "A practice manager announcing a policy change to clinic staff.",
+  "sector": {
+    "naics": "62",
+    "name": "Health Care and Social Assistance"
+  },
+  "occupation": {
+    "soc": "43-6013.00",
+    "name": "Medical Secretaries and Administrative Assistants"
+  },
+  "review": [
+    "The rule change, start date, scope, staff action and contact match the notes.",
+    "No late-cancellation fee is presented as agreed; patient letters are not drafted.",
+    "One page with a memo header, readable and editable."
+  ],
+  "revised_review": [
+    "Start date 2026-11-16 and contact Sam Ek appear everywhere; old values only if marked as previous."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#FMT-2",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "facts",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-1"
+      ],
+      "text": "The memo states the 24-hour rule replacing the 12-hour rule, covering routine appointments with urgent same-day appointments excluded, the LC code staff record in the booking system, and is from Dana Holm to reception and nursing staff. At the first stage it starts 2026-11-02 and questions go to Dana Holm."
+    },
+    {
+      "id": "no-invention",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-2"
+      ],
+      "text": "No late-cancellation fee or penalty is presented as decided, and the memo does not draft letters to patients or add rules absent from the notes."
+    },
+    {
+      "id": "structure",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#READ-1"
+      ],
+      "text": "The memo opens with To, From, Date and Subject lines and reads in plain English."
+    },
+    {
+      "id": "pages",
+      "stage": "both",
+      "grader": "render",
+      "guidelines": [
+        "openpaperwork/0.1.0#PAGE-1"
+      ],
+      "max_pages": 1,
+      "text": "The memo renders on one page."
+    },
+    {
+      "id": "revised",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#REV-1"
+      ],
+      "text": "The start date is 2026-11-16 and questions go to Sam Ek, deputy practice manager, everywhere they appear; 2026-11-02 or Dana Holm as contact appear only if clearly marked as previous."
+    },
+    {
+      "id": "kept",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#REV-2"
+      ],
+      "text": "The 24-hour and 12-hour rules, the scope, the LC code, the sender Dana Holm and the recipients are unchanged."
+    }
+  ],
+  "status": "draft",
+  "locale": "en",
+  "source": "Synthetic material created for this evaluation pack; no customer inputs.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+  "guidelines": [
+    "openpaperwork/0.1.0",
+    "every-file/1.1.0"
+  ],
+  "version": "1.2.0"
+}

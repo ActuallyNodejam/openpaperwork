@@ -1,0 +1,24 @@
+{
+ "issuer": "no-bokforingsforskriften",
+ "version": "2026",
+ "link": "https://lovdata.no/dokument/SF/forskrift/2004-12-01-1558/KAPITTEL_5-1",
+ "license": "Norwegian regulations are free of copyright (åndsverkloven § 14); notice licenses/einvoice-nordic-official-texts.txt. Restated in our own words; the marks the text gives are quoted. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "What a Norwegian sales document states",
+ "source": "Forskrift om bokføring (FOR-2004-12-01-1558) §§ 5-1-1 to 5-1-5, in force 2026-10-09; lov 20. juni 2025 nr. 106 om Foretaksregisteret § 7-2 for the register named on an AS or ASA's documents (in force 2026-01-01; § 10-2 of the 1985 act, which the regulation's own text still cites, before it), and the word Foretaksregisteret from the regulation itself; Peppol NO-R-001 and NO-R-002 (cited) for the same in EHF. Read 2026-10-09.",
+ "rules": [
+  {
+   "id": "NO-SELLER",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "text": "The seller's name and organisasjonsnummer (modulus 11), followed by MVA when it charges VAT, and Foretaksregisteret for an AS, ASA or NUF, on the page; in the UBL the VAT number NO<org.nr.>MVA and Foretaksregisteret under TAX."
+  },
+  {
+   "id": "NO-CONTENT",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "text": "Number and date, the buyer, the time and place of delivery, the due date, the VAT in Norwegian kroner and per rate, and \"Omvendt avgiftsplikt – Merverdiavgift ikke beregnet\" for a reverse charge, on the page."
+  }
+ ]
+}

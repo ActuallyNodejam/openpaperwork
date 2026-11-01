@@ -1,0 +1,1 @@
+Turn my notes (`inputs/proposal-notes.md`) into the proposal deck for Example Clinics Ltd, `Cleaning proposal Example Clinics.pptx`. Seven pages at most: they will go through it in half an hour. One chart of what each clinic costs to clean today, today against our offer side by side, the dates, and what we need from them by when.

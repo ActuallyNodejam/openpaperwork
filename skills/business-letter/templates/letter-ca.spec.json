@@ -1,0 +1,50 @@
+{
+  "language": "en",
+  "date": "2026-10-09",
+  "sender": {
+    "name": "Maple Leaf Instruments Ltd.",
+    "street": "250 Albert Street",
+    "city": "Ottawa",
+    "province": "ON",
+    "postcode": "K1P 5G4",
+    "country": "CA",
+    "email": "service@mapleleaf-instruments.example",
+    "phone": "613-555-0190"
+  },
+  "recipient": {
+    "name": "Prairie Water Laboratory",
+    "attention": "Attention: Dr. Lena Okafor",
+    "street": "15 Scarth Street",
+    "city": "Regina",
+    "province": "SK",
+    "postcode": "S4P 3Y2",
+    "country": "CA"
+  },
+  "references": [
+    {
+      "kind": "yours",
+      "value": "PO 7741"
+    },
+    {
+      "kind": "ours",
+      "value": "SV-3308"
+    }
+  ],
+  "contact": {
+    "name": "Marc Gagnon",
+    "phone": "613-555-0193",
+    "email": "marc@mapleleaf-instruments.example"
+  },
+  "subject": "Calibration of your two spectrometers",
+  "salutation": "Dear Dr. Okafor:",
+  "body": [
+    "Thank you for your purchase order of September 29.",
+    "Our technician will calibrate both spectrometers at your laboratory on November 3, 2026. The visit takes one day, and the instruments will be back in service the same evening.",
+    "The calibration certificates follow by mail within a week of the visit."
+  ],
+  "closing": "Sincerely,",
+  "signatory": {
+    "name": "Marc Gagnon",
+    "role": "Service Coordinator"
+  }
+}

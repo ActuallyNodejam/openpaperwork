@@ -1,0 +1,1077 @@
+{
+ "note": "Asks the prompt-time hint is held to (hooks/pack_route.py, and the app's own pack-route.ts reads the same file): every kind of file in every language its pack serves, each with the skills the hint must name, in order, and ordinary asks that must get no hint. Invented companies, no real names.",
+ "asks": [
+  {
+   "ask": "Make the invoice for this job, ready to send; my notes are in notes.txt.",
+   "skills": [
+    "e-invoice"
+   ],
+   "kinds": [
+    "an invoice"
+   ]
+  },
+  {
+   "ask": "Schreib bitte die Rechnung für Beispiel Druck GmbH, die Angaben stehen in notes.txt.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Erstelle die Rechnungen für Oktober.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Prépare la facture pour ce client, mes notes sont dans notes.txt.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Maak de factuur voor deze klant op basis van notes.txt.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Skriv fakturan till Exempel Tryck AB, underlaget finns i notes.txt.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Gör fakturorna för september.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Lag fakturaen til kunden, notatene ligger i notes.txt.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Lav fakturaen til kunden ud fra notes.txt.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Tee lasku asiakkaalle, tiedot ovat tiedostossa notes.txt.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Laadi tämän työn laskun luonnos.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Prepara la factura de este trabajo, mis notas están en notes.txt.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Prepara la fattura per questo lavoro, pronta da mandare al cliente: i miei appunti sono in notes.txt.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Emetti le fatture di ottobre.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Wystaw fakturę za tę usługę, dane są w notes.txt.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "We overcharged them: issue a credit note against invoice 2026-118.",
+   "skills": [
+    "e-invoice"
+   ],
+   "kinds": [
+    "a credit note",
+    "an invoice"
+   ]
+  },
+  {
+   "ask": "Bitte eine Gutschrift zur Rechnung RE-2026-1093 erstellen.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Établis un avoir sur la facture F-2026-0412.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Il faut une note de crédit pour la facture F-2026-0412.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Maak een creditnota voor factuur 2026-077.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Gör en kreditfaktura på faktura 1042.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Lag en kreditnota for faktura 2231.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Lav en kreditnota til faktura 5521.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Tee hyvityslasku laskulle 20260917.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Emite una factura rectificativa de la factura 2026-A-0158.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Prepara la nota di credito per la fattura 118/2026.",
+   "skills": [
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Wystaw fakturę korygującą do faktury FV/2026/10/014.",
+   "skills": [
+    "e-invoice"
+   ],
+   "kinds": [
+    "a credit note",
+    "an invoice"
+   ]
+  },
+  {
+   "ask": "Put together a quotation for 40 hours of installation work.",
+   "skills": [
+    "trade-documents"
+   ],
+   "kinds": [
+    "a quotation"
+   ]
+  },
+  {
+   "ask": "Can you send the customer a quote for 500 units?",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Erstelle ein Angebot über 200 Kartons für Beispiel Verpackung GmbH.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Fais un devis pour le nettoyage des bureaux.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Maak een offerte voor het onderhoud van de printers.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Skriv en offert på tryck av 2 000 broschyrer.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Lag et tilbud på renhold av kontoret.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Lav et tilbud på 300 flyttekasser.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Laadi tarjous toimiston siivouksesta.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Prepara un presupuesto para la limpieza de la oficina.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Prepara un preventivo per la stampa di 1.000 volantini.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Przygotuj ofertę na dostawę 500 kartonów.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Write the order confirmation for their order 4471.",
+   "skills": [
+    "trade-documents"
+   ],
+   "kinds": [
+    "an order confirmation"
+   ]
+  },
+  {
+   "ask": "Schreib die Auftragsbestätigung für Bestellung 4471.",
+   "skills": [
+    "trade-documents"
+   ],
+   "kinds": [
+    "an order confirmation",
+    "a purchase order"
+   ]
+  },
+  {
+   "ask": "Prépare la confirmation de commande pour ce client.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Stuur een orderbevestiging naar de klant.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Gör en orderbekräftelse till kunden.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Lag en ordrebekreftelse til kunden.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Lav en ordrebekræftelse til kunden.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Tee tilausvahvistus asiakkaalle.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Prepara la confirmación de pedido para el cliente.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Prepara la conferma d'ordine per il cliente.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Przygotuj potwierdzenie zamówienia dla klienta.",
+   "skills": [
+    "trade-documents"
+   ],
+   "kinds": [
+    "an order confirmation"
+   ]
+  },
+  {
+   "ask": "Make a delivery note for tomorrow's shipment.",
+   "skills": [
+    "trade-documents"
+   ],
+   "kinds": [
+    "a delivery note"
+   ]
+  },
+  {
+   "ask": "I need a packing slip for this shipment.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Erstelle den Lieferschein für die Lieferung morgen.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Prépare le bon de livraison pour demain.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Maak een pakbon voor de zending van morgen.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Skriv en följesedel till leveransen i morgon.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Lag en følgeseddel til leveransen.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Lav en følgeseddel til leverancen.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Tee lähete huomiseen toimitukseen.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Prepara el albarán de la entrega de mañana.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Prepara il documento di trasporto per la consegna.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Przygotuj dowód dostawy do jutrzejszej wysyłki.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "The customs broker wants a pro forma invoice for this shipment.",
+   "skills": [
+    "trade-documents"
+   ],
+   "kinds": [
+    "a pro forma invoice"
+   ]
+  },
+  {
+   "ask": "Wir brauchen eine Proformarechnung für den Zoll.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Il faut une facture pro forma pour la douane.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Maak een pro-formafactuur voor de douane.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Gör en proformafaktura till tullen.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Lag en proformafaktura til tollen.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Lav en proformafaktura til tolden.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Tee proformalasku tullia varten.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Necesitamos una factura proforma para la aduana.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Serve una fattura proforma per la dogana.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Potrzebna jest faktura pro forma dla urzędu celnego.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Raise a purchase order for 20 office chairs.",
+   "skills": [
+    "trade-documents"
+   ],
+   "kinds": [
+    "a purchase order"
+   ]
+  },
+  {
+   "ask": "Schreib die Bestellung über 20 Bürostühle.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Prépare un bon de commande pour 20 chaises de bureau.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Maak een inkooporder voor 20 bureaustoelen.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Skriv en inköpsorder på 20 kontorsstolar.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Lag en innkjøpsordre på 20 kontorstoler.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Lav en indkøbsordre på 20 kontorstole.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Tee ostotilaus 20 toimistotuolista.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Prepara un pedido de compra de 20 sillas de oficina.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Prepara un ordine d'acquisto per 20 sedie da ufficio.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Przygotuj zamówienie na 20 krzeseł biurowych.",
+   "skills": [
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Write the letter to our cleaning contractor from these notes so I can sign and mail it today; the notes are in notes.txt.",
+   "skills": [
+    "business-letter"
+   ],
+   "kinds": [
+    "a letter"
+   ]
+  },
+  {
+   "ask": "Schreib den Brief an den Vermieter, dass wir zum Jahresende ausziehen.",
+   "skills": [
+    "business-letter"
+   ]
+  },
+  {
+   "ask": "Setz bitte die Kündigung für den Wartungsdienst auf.",
+   "skills": [
+    "business-letter"
+   ]
+  },
+  {
+   "ask": "Rédige une lettre au fournisseur pour signaler le retard.",
+   "skills": [
+    "business-letter"
+   ]
+  },
+  {
+   "ask": "Schrijf een brief aan de leverancier over de vertraging.",
+   "skills": [
+    "business-letter"
+   ]
+  },
+  {
+   "ask": "Skriv ett brev till hyresvärden om lokalen.",
+   "skills": [
+    "business-letter"
+   ]
+  },
+  {
+   "ask": "Skriv et brev til leverandøren om forsinkelsen.",
+   "skills": [
+    "business-letter"
+   ]
+  },
+  {
+   "ask": "Skriv et brev til udlejeren om lokalerne.",
+   "skills": [
+    "business-letter"
+   ]
+  },
+  {
+   "ask": "Kirjoita kirje toimittajalle viivästyksestä.",
+   "skills": [
+    "business-letter"
+   ]
+  },
+  {
+   "ask": "Escribe una carta al proveedor por el retraso.",
+   "skills": [
+    "business-letter"
+   ]
+  },
+  {
+   "ask": "Scrivi una lettera al fornitore per il ritardo.",
+   "skills": [
+    "business-letter"
+   ]
+  },
+  {
+   "ask": "Napisz pismo do dostawcy w sprawie opóźnienia.",
+   "skills": [
+    "business-letter"
+   ]
+  },
+  {
+   "ask": "Napisz list do klienta z przeprosinami.",
+   "skills": [
+    "business-letter"
+   ]
+  },
+  {
+   "ask": "Write up the minutes of yesterday's board meeting from my notes.",
+   "skills": [
+    "meeting-minutes"
+   ],
+   "kinds": [
+    "the minutes of a meeting"
+   ]
+  },
+  {
+   "ask": "Schreib das Protokoll der Sitzung vom Dienstag.",
+   "skills": [
+    "meeting-minutes"
+   ]
+  },
+  {
+   "ask": "Rédige le procès-verbal de l'assemblée générale.",
+   "skills": [
+    "meeting-minutes"
+   ]
+  },
+  {
+   "ask": "Maak de notulen van de bestuursvergadering.",
+   "skills": [
+    "meeting-minutes"
+   ]
+  },
+  {
+   "ask": "Skriv protokollet från styrelsemötet i går.",
+   "skills": [
+    "meeting-minutes"
+   ]
+  },
+  {
+   "ask": "Skriv protokollen fra generalforsamlingen.",
+   "skills": [
+    "meeting-minutes"
+   ]
+  },
+  {
+   "ask": "Skriv referat fra styremøtet i går.",
+   "skills": [
+    "meeting-minutes"
+   ]
+  },
+  {
+   "ask": "Skriv referatet fra bestyrelsesmødet.",
+   "skills": [
+    "meeting-minutes"
+   ]
+  },
+  {
+   "ask": "Laadi pöytäkirja eilisestä hallituksen kokouksesta.",
+   "skills": [
+    "meeting-minutes"
+   ]
+  },
+  {
+   "ask": "Redacta el acta de la junta de ayer.",
+   "skills": [
+    "meeting-minutes"
+   ]
+  },
+  {
+   "ask": "Scrivi il verbale dell'assemblea di ieri.",
+   "skills": [
+    "meeting-minutes"
+   ]
+  },
+  {
+   "ask": "Sporządź protokół z wczorajszego zebrania zarządu.",
+   "skills": [
+    "meeting-minutes"
+   ]
+  },
+  {
+   "ask": "Put together the written terms of employment for our new starter from these notes, ready for both to sign.",
+   "skills": [
+    "employment-statement"
+   ],
+   "kinds": [
+    "the written terms of employment"
+   ]
+  },
+  {
+   "ask": "Draft the employment contract for our new accountant.",
+   "skills": [
+    "employment-statement"
+   ]
+  },
+  {
+   "ask": "Write the offer letter for our new sales rep in New York.",
+   "skills": [
+    "employment-statement"
+   ]
+  },
+  {
+   "ask": "Erstelle den Dienstzettel für die neue Mitarbeiterin.",
+   "skills": [
+    "employment-statement"
+   ]
+  },
+  {
+   "ask": "Prépare le contrat de travail du nouvel employé.",
+   "skills": [
+    "employment-statement"
+   ]
+  },
+  {
+   "ask": "Stel de arbeidsovereenkomst op voor de nieuwe medewerker.",
+   "skills": [
+    "employment-statement"
+   ]
+  },
+  {
+   "ask": "Skriv anställningsbeviset för vår nya säljare.",
+   "skills": [
+    "employment-statement"
+   ]
+  },
+  {
+   "ask": "Lag arbeidsavtalen for den nye medarbeideren.",
+   "skills": [
+    "employment-statement"
+   ]
+  },
+  {
+   "ask": "Lav ansættelsesbeviset til den nye medarbejder.",
+   "skills": [
+    "employment-statement"
+   ]
+  },
+  {
+   "ask": "Laadi työsopimus uudelle työntekijälle.",
+   "skills": [
+    "employment-statement"
+   ]
+  },
+  {
+   "ask": "Prepara el contrato de trabajo del nuevo empleado.",
+   "skills": [
+    "employment-statement"
+   ]
+  },
+  {
+   "ask": "Prepara il contratto di lavoro per il nuovo assunto.",
+   "skills": [
+    "employment-statement"
+   ]
+  },
+  {
+   "ask": "Przygotuj umowę o pracę dla nowego pracownika.",
+   "skills": [
+    "employment-statement"
+   ]
+  },
+  {
+   "ask": "Turn these notes into the slides for Thursday's management meeting; the notes are in notes.txt.",
+   "skills": [
+    "business-deck"
+   ],
+   "kinds": [
+    "a slide deck"
+   ]
+  },
+  {
+   "ask": "Build a board deck on the third-quarter numbers.",
+   "skills": [
+    "business-deck"
+   ]
+  },
+  {
+   "ask": "Make a presentation for the investors.",
+   "skills": [
+    "business-deck"
+   ]
+  },
+  {
+   "ask": "Mach daraus eine Präsentation für die Geschäftsführung.",
+   "skills": [
+    "business-deck"
+   ]
+  },
+  {
+   "ask": "Fais une présentation pour le comité de direction.",
+   "skills": [
+    "business-deck"
+   ]
+  },
+  {
+   "ask": "Maak een presentatie voor het managementteam.",
+   "skills": [
+    "business-deck"
+   ]
+  },
+  {
+   "ask": "Gör ett bildspel till ledningsgruppen.",
+   "skills": [
+    "business-deck"
+   ]
+  },
+  {
+   "ask": "Gör en presentation till styrelsen.",
+   "skills": [
+    "business-deck"
+   ]
+  },
+  {
+   "ask": "Lag en presentasjon til ledergruppen.",
+   "skills": [
+    "business-deck"
+   ]
+  },
+  {
+   "ask": "Lav en præsentation til bestyrelsen.",
+   "skills": [
+    "business-deck"
+   ]
+  },
+  {
+   "ask": "Tee kalvot johtoryhmän kokoukseen.",
+   "skills": [
+    "business-deck"
+   ]
+  },
+  {
+   "ask": "Haz una presentación para la dirección.",
+   "skills": [
+    "business-deck"
+   ]
+  },
+  {
+   "ask": "Prepara una presentazione per il consiglio.",
+   "skills": [
+    "business-deck"
+   ]
+  },
+  {
+   "ask": "Zrób prezentację dla zarządu.",
+   "skills": [
+    "business-deck"
+   ]
+  },
+  {
+   "ask": "Draft an NDA for the talks with the supplier.",
+   "skills": [
+    "contract-drafting"
+   ],
+   "kinds": [
+    "an agreement (an NDA, a data processing agreement, a service agreement)"
+   ]
+  },
+  {
+   "ask": "Review their data processing agreement and redline it.",
+   "skills": [
+    "contract-drafting"
+   ]
+  },
+  {
+   "ask": "Review the contract and flag what we should push back on.",
+   "skills": [
+    "contract-drafting"
+   ]
+  },
+  {
+   "ask": "Gör årsredovisningen för 2025.",
+   "skills": [
+    "annual-accounts"
+   ]
+  },
+  {
+   "ask": "Prepare the annual report for our Swedish AB.",
+   "skills": [
+    "annual-accounts"
+   ]
+  },
+  {
+   "ask": "Write a requirements specification for the new booking system.",
+   "skills": [
+    "requirements-spec"
+   ]
+  },
+  {
+   "ask": "Skriv en kravspecifikation för bokningssystemet.",
+   "skills": [
+    "requirements-spec"
+   ]
+  },
+  {
+   "ask": "Format this as a conference paper, ready to submit.",
+   "skills": [
+    "paper"
+   ]
+  },
+  {
+   "ask": "Fix the reference list, it should be APA 7.",
+   "skills": [
+    "academic-references"
+   ]
+  },
+  {
+   "ask": "Make the event poster for the spring fair.",
+   "skills": [
+    "social-poster"
+   ]
+  },
+  {
+   "ask": "Mach ein Plakat für die Messe.",
+   "skills": [
+    "social-poster"
+   ]
+  },
+  {
+   "ask": "Gör en affisch till mässan.",
+   "skills": [
+    "social-poster"
+   ]
+  },
+  {
+   "ask": "Write a letter to the customer and attach the invoice for October.",
+   "skills": [
+    "business-letter",
+    "e-invoice"
+   ]
+  },
+  {
+   "ask": "Schreib die Rechnung und den Lieferschein für die Lieferung an Beispiel Druck GmbH.",
+   "skills": [
+    "e-invoice",
+    "trade-documents"
+   ]
+  },
+  {
+   "ask": "Draw a flowchart of how a support ticket moves through the team.",
+   "skills": [
+    "diagram"
+   ],
+   "kinds": [
+    "a diagram"
+   ]
+  },
+  {
+   "ask": "Erstelle ein Organigramm für unsere Abteilung.",
+   "skills": [
+    "diagram"
+   ]
+  },
+  {
+   "ask": "Fais un organigramme de l’équipe.",
+   "skills": [
+    "diagram"
+   ]
+  },
+  {
+   "ask": "Maak een organogram van de afdeling.",
+   "skills": [
+    "diagram"
+   ]
+  },
+  {
+   "ask": "Rita ett flödesschema över hur ett ärende går.",
+   "skills": [
+    "diagram"
+   ]
+  },
+  {
+   "ask": "Gör ett diagram över projektets faser.",
+   "skills": [
+    "diagram"
+   ]
+  },
+  {
+   "ask": "Lag et flytskjema over hvordan en sak går.",
+   "skills": [
+    "diagram"
+   ]
+  },
+  {
+   "ask": "Lav et organisationsdiagram over afdelingen.",
+   "skills": [
+    "diagram"
+   ]
+  },
+  {
+   "ask": "Tee vuokaavio asiakaspalvelun prosessista.",
+   "skills": [
+    "diagram"
+   ]
+  },
+  {
+   "ask": "Haz un organigrama del equipo.",
+   "skills": [
+    "diagram"
+   ]
+  },
+  {
+   "ask": "Prepara un organigramma del reparto.",
+   "skills": [
+    "diagram"
+   ]
+  },
+  {
+   "ask": "Narysuj schemat blokowy obsługi zgłoszenia.",
+   "skills": [
+    "diagram"
+   ]
+  },
+  {
+   "ask": "Turn my notes from today's board meeting into proper minutes.",
+   "skills": [
+    "meeting-minutes"
+   ]
+  },
+  {
+   "ask": "Make the commercial invoice and packing list for this shipment.",
+   "skills": [
+    "e-invoice",
+    "trade-documents"
+   ]
+  }
+ ],
+ "ordinary": [
+  "Give me a brief summary of the attached report.",
+  "List the files in this folder.",
+  "In order to finish this I need the numbers from last year.",
+  "Ten minutes ago you said something else.",
+  "Can you note down three ideas for the team day?",
+  "Fix the bug in main.py and run it again.",
+  "Write a to-do list for tomorrow.",
+  "The capital letter at the start of each heading is missing.",
+  "Translate this paragraph into German.",
+  "How many minutes are in a working week?",
+  "Brief me on where the project stands.",
+  "Summarise the attached file in five bullets.",
+  "Rename the columns in data.csv and sort by date.",
+  "We are in agreement on the plan, what comes next?",
+  "Print it on letter size paper, please.",
+  "Give me a quote from Shakespeare about time.",
+  "What is on deck for today?",
+  "He pedido una pizza para todos.",
+  "Kannst du das kurz zusammenfassen?",
+  "Schedule a meeting in 15 minutes.",
+  "Improve the presentation of this table.",
+  "Wait 5 minutes of silence, then continue.",
+  "Je voudrais avoir un résumé de ce texte.",
+  "Mi piace la comunicazione verbale diretta.",
+  "Das Referat über Photosynthese ist morgen fällig.",
+  "Jag har en lista på saker att göra.",
+  "Order the rows by amount and offer a short note on the outliers.",
+  "Schreiben Sie mir bitte, was noch fehlt.",
+  "Is this contract work billable?",
+  "Add page numbers to report.docx.",
+  "/compact",
+  "A pack check is not clean (try 1 of 3):\n\ne-invoice (invoice.pdf): FAIL EINV-VAT-LABEL the invoice names no VAT"
+ ]
+}

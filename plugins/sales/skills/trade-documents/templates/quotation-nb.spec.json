@@ -1,0 +1,85 @@
+{
+  "type": "quotation",
+  "language": "nb",
+  "number": "T-2026-0412",
+  "issue_date": "2026-10-12",
+  "references": [
+    {
+      "label": "Deres forespørsel",
+      "value": "2026-10-08"
+    },
+    {
+      "label": "Vår referanse",
+      "value": "Kari Moen"
+    }
+  ],
+  "dates": [
+    {
+      "label": "Gyldig til",
+      "value": "2026-11-11"
+    },
+    {
+      "label": "Leveringstid",
+      "value": "5 virkedager etter ordre"
+    }
+  ],
+  "currency": "NOK",
+  "seller": {
+    "name": "Eksempel Verktøy AS",
+    "street": "Industrivegen 14",
+    "postcode": "7080",
+    "city": "Heimdal",
+    "country": "Norge",
+    "vat_id": "NO 123 456 789 MVA",
+    "email": "salg@eksempel-verktoy.example",
+    "phone": "+47 70 00 00 00",
+    "registered_office": "Trondheim",
+    "register": "Foretaksregisteret",
+    "register_number": "123 456 789"
+  },
+  "buyer": {
+    "name": "Eksempel Transport AS",
+    "street": "Storgata 5",
+    "postcode": "9008",
+    "city": "Tromsø",
+    "country": "Norge",
+    "vat_id": "NO 987 654 321 MVA"
+  },
+  "delivery_terms": {
+    "rule": "DAP",
+    "place": "Tromsø, Norge"
+  },
+  "transport": "road",
+  "payment_terms": "30 dager netto fra fakturadato",
+  "lines": [
+    {
+      "code": "NV-210",
+      "description": "Momentnøkkel 1/2\", 40–200 Nm",
+      "quantity": 6,
+      "unit": "pcs",
+      "unit_price": 1490.0,
+      "discount_percent": 0,
+      "vat_rate": 25
+    },
+    {
+      "code": "NV-332",
+      "description": "Pipesett 1/4\" og 1/2\", 94 deler",
+      "quantity": 4,
+      "unit": "pcs",
+      "unit_price": 2290.0,
+      "discount_percent": 10,
+      "vat_rate": 25
+    },
+    {
+      "description": "Frakt",
+      "quantity": 1,
+      "unit": "pcs",
+      "unit_price": 450.0,
+      "discount_percent": 0,
+      "vat_rate": 25
+    }
+  ],
+  "notes": [
+    "Rabatten på 10 prosent gjelder pipesett ved kjøp av minst fire sett."
+  ]
+}

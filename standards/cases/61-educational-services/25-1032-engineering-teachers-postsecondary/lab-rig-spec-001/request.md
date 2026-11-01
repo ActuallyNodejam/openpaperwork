@@ -1,0 +1,1 @@
+Attached is my brief for the new beam-bending rigs (`inputs/lab-brief.txt`). Please write it up as a requirements specification in Word, `requirements.docx`, that the workshop and an outside supplier can quote against: every requirement numbered, with its rationale and how we will check it.

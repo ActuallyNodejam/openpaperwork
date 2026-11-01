@@ -1,0 +1,96 @@
+{
+ "id": "letter-service-sv-001",
+ "title": "Ask the service company in Swedish to repair the salon's ventilation",
+ "person": "A sole trader who runs a hair salon writing to the service company about a fault.",
+ "format": "docx",
+ "output": "brev.docx",
+ "locale": "sv",
+ "sector": {
+  "naics": "81",
+  "name": "Other Services (except Public Administration)"
+ },
+ "occupation": {
+  "soc": "39-5012.00",
+  "name": "Hairdressers, Hairstylists, and Cosmetologists"
+ },
+ "review": [
+  "The letter is in Swedish and reports that the ventilation in the salon at Storgatan 9 has not worked since 6 October.",
+  "It asks for a repair within two weeks and refers to the service agreement number 4417-02."
+ ],
+ "revised_review": [
+  "It also says the salon can open early for the technician on weekdays from 8:00.",
+  "Everything else is unchanged."
+ ],
+ "truth": {
+  "seller": {
+   "name": "Salong Lyra, Mira Holm",
+   "country": "Sweden"
+  },
+  "buyer": {
+   "name": "Exempel Ventilation AB",
+   "country": "Sweden"
+  }
+ },
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "letter-din5008",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-DIN5008",
+   "guidelines": [
+    "din-5008/2020#LETTER-DIN5008"
+   ],
+   "text": "The letter sits on DIN 5008 Form B: margins of 25 mm left, 20 mm right and a 45 mm letterhead."
+  },
+  {
+   "id": "letter-parts",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-PARTS",
+   "guidelines": [
+    "din-5008/2020#LETTER-PARTS"
+   ],
+   "text": "Subject, salutation, closing and signatory are in the letter, as its spec names them."
+  },
+  {
+   "id": "asks",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "In Swedish, it reports the ventilation fault at Storgatan 9 since 6 October, asks for a repair within two weeks and gives the service agreement number 4417-02."
+  },
+  {
+   "id": "no-threat",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-2"
+   ],
+   "text": "It invents no legal threat, rent reduction or deadline beyond what the notes say."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and addresses are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "din-5008/2020",
+  "eu-company-law/2017-1132",
+  "every-file/1.1.0"
+ ]
+}

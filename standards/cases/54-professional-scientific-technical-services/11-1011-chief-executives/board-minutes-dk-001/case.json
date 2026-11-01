@@ -1,0 +1,117 @@
+{
+ "id": "board-minutes-dk-001",
+ "title": "Skriv bestyrelsesprotokollen fra mødet om det nye kontor",
+ "person": "The managing director of a small Danish software company, who takes the board's minutes.",
+ "format": "docx",
+ "output": "protokol.docx",
+ "locale": "da",
+ "sector": {
+  "naics": "54",
+  "name": "Professional, Scientific, and Technical Services"
+ },
+ "occupation": {
+  "soc": "11-1011.00",
+  "name": "Chief Executives"
+ },
+ "review": [
+  "The decision to rent the second floor at Vestergade 12 is recorded with Rikke Lauridsen's view; all three directors sign."
+ ],
+ "revised_review": [
+  "The rent is 31.000 kr. a month; 29.000 appears nowhere."
+ ],
+ "truth": {
+  "revision": {
+   "stale": [
+    "29.000"
+   ]
+  }
+ },
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "head",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-HEAD",
+   "guidelines": [
+    "roberts-rules/1915#MIN-01",
+    "roberts-rules/1915#MIN-03"
+   ],
+   "text": "The body, the kind of meeting and the date are given."
+  },
+  {
+   "id": "times",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-TIMES",
+   "guidelines": [
+    "roberts-rules/1915#MIN-09"
+   ],
+   "text": "The opening and closing times are given."
+  },
+  {
+   "id": "signed",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-SIGNED",
+   "guidelines": [
+    "selskabsloven/2025-331#DK-MIN-01"
+   ],
+   "text": "The minutes carry the signature lines the statute asks for."
+  },
+  {
+   "id": "statute",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-STATUTE",
+   "guidelines": [
+    "selskabsloven/2025-331#DK-MIN-02"
+   ],
+   "text": "What the statute asks the minutes to hold is there."
+  },
+  {
+   "id": "language",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-LANGUAGE",
+   "guidelines": [
+    "letter-layouts/2026-10#LETTER-LANGUAGE"
+   ],
+   "text": "Labels and signature roles are in the minutes' language."
+  },
+  {
+   "id": "decision",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "selskabsloven/2025-331#DK-MIN-02"
+   ],
+   "text": "The decision to rent Vestergade 12 for five years is recorded, with Rikke Lauridsen's view entered as she asked."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and addresses are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "roberts-rules/1915",
+  "selskabsloven/2025-331",
+  "letter-layouts/2026-10",
+  "every-file/1.1.0"
+ ]
+}

@@ -1,0 +1,55 @@
+{
+  "law": "be",
+  "language": "fr",
+  "given": "2026-11-02",
+  "employer": {
+    "name": "Atelier Graphique Hesbaye SRL",
+    "number": "BCE 0798.111.222",
+    "address": "Rue Saint-Gilles 58, 4000 Liège",
+    "signatory": "Martine Lejeune, gérante"
+  },
+  "worker": {
+    "name": "Julien Mertens",
+    "address": "Rue des Vennes 12, 4020 Liège"
+  },
+  "place": "Rue Saint-Gilles 58, 4000 Liège",
+  "job": {
+    "title": "Graphiste PAO (employé)",
+    "description": "Mise en page des catalogues et des emballages des clients, préparation des fichiers pour l'impression."
+  },
+  "start": "2026-11-02",
+  "term": {
+    "type": "permanent"
+  },
+  "probation": null,
+  "pay": {
+    "amount": 3150,
+    "currency": "EUR",
+    "per": "month",
+    "paid": "mensuellement, au plus tard le quatrième jour ouvrable du mois suivant",
+    "method": "virement sur le compte bancaire du travailleur",
+    "components": [
+      {
+        "name": "Chèques-repas",
+        "text": "8 EUR par jour de travail presté, dont 1,09 EUR à charge du travailleur"
+      },
+      {
+        "name": "Assurance groupe (avantage extra-légal de sécurité sociale)",
+        "text": "3 % de la rémunération annuelle brute, versés par l'employeur"
+      }
+    ]
+  },
+  "hours": {
+    "pattern": "fixed",
+    "standard": "38 heures par semaine, temps plein",
+    "schedule": "du lundi au vendredi, de 8 h 30 à 17 h 06",
+    "breaks": "de 12 h 30 à 13 h 00",
+    "rest_days": "samedi et dimanche",
+    "overtime": "uniquement à la demande de l'employeur, avec le sursalaire légal ; voir le règlement de travail, chapitre 4"
+  },
+  "training": "Deux jours de formation par an, choisis avec la gérante",
+  "leave": "Vacances annuelles selon les lois relatives aux vacances annuelles des travailleurs salariés, coordonnées le 28 juin 1971, et le règlement de travail",
+  "termination": "Préavis notifié par écrit, d'une durée fixée par les articles 37/2 et suivants de la loi du 3 juillet 1978 relative aux contrats de travail ; les actions naissant du contrat se prescrivent un an après sa fin (article 15 de la même loi)",
+  "collective": "Commission paritaire auxiliaire pour employés (CP 200) ; les conventions conclues dans l'entreprise figurent en annexe du règlement de travail",
+  "social_security": "Office national de sécurité sociale (ONSS)"
+}

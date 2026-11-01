@@ -1,0 +1,1 @@
+Kannst du die Rechnung für die Testlogistik Linz für September erstellen (Unterlagen in `inputs/`)? Ich brauche `rechnung.pdf` und daneben die ebInterface-Datei `rechnung.xml`. Rechnungsdatum 12. Oktober 2026.

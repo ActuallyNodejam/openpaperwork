@@ -1,0 +1,107 @@
+{
+  "id": "tracked-001",
+  "title": "Mark agreed contract changes as tracked changes",
+  "format": "docx",
+  "output": "agreement-tracked.docx",
+  "person": "A paralegal sending a counterparty the agreed edits for review.",
+  "sector": {
+    "naics": "54",
+    "name": "Professional, Scientific, and Technical Services"
+  },
+  "occupation": {
+    "soc": "23-2011.00",
+    "name": "Paralegals and Legal Assistants"
+  },
+  "truth": {
+    "input": "agreement.docx",
+    "replacements": {
+      "first": [
+        [
+          "EUR 4,000",
+          "EUR 4,400"
+        ],
+        [
+          "30 days",
+          "45 days"
+        ]
+      ],
+      "revision": [
+        [
+          "EUR 4,000",
+          "EUR 4,400"
+        ],
+        [
+          "30 days",
+          "45 days"
+        ],
+        [
+          "60 days",
+          "90 days"
+        ]
+      ]
+    }
+  },
+  "review": [
+    "Fee and payment changes are revision marks a reviewer can accept or reject.",
+    "Nothing else in the agreement changed."
+  ],
+  "revised_review": [
+    "The notice change is added as a further mark and the earlier marks remain."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.2.0#FMT-1",
+        "openpaperwork/0.2.0#FMT-2",
+        "openpaperwork/0.2.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "track-marks",
+      "stage": "both",
+      "grader": "script",
+      "script": "tracked.py",
+      "rule": "TRACK-1",
+      "guidelines": [
+        "openpaperwork/0.2.0#TRACK-1",
+        "openpaperwork/0.2.0#EDIT-1"
+      ],
+      "text": "The file has revision marks, and accepting them gives the input with exactly the requested replacements for this stage."
+    },
+    {
+      "id": "reject-restores",
+      "stage": "both",
+      "grader": "script",
+      "script": "tracked.py",
+      "rule": "TRACK-2",
+      "guidelines": [
+        "openpaperwork/0.2.0#TRACK-1",
+        "openpaperwork/0.2.0#EDIT-1"
+      ],
+      "text": "Rejecting every revision mark restores the input agreement exactly."
+    },
+    {
+      "id": "pages",
+      "stage": "both",
+      "grader": "render",
+      "guidelines": [
+        "openpaperwork/0.2.0#PAGE-1"
+      ],
+      "max_pages": 2,
+      "text": "The agreement renders within two pages."
+    }
+  ],
+  "status": "draft",
+  "locale": "en",
+  "version": "1.2.0",
+  "guidelines": [
+    "openpaperwork/0.2.0",
+    "every-file/1.1.0"
+  ],
+  "source": "Synthetic material created for this evaluation pack; no customer inputs.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen."
+}

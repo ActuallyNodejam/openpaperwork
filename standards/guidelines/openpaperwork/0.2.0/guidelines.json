@@ -1,0 +1,80 @@
+{
+  "issuer": "openpaperwork",
+  "version": "0.2.0",
+  "license": "House rules; no external standard is claimed. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-03",
+  "status": "draft",
+  "source": "0.1.0 plus rules for editing existing files, tracked changes and messy data, added 2026-10-03.",
+  "rules": [
+    {
+      "id": "FACT-1",
+      "grader": "judge",
+      "text": "Every figure, date, name and decision taken from the inputs appears unchanged."
+    },
+    {
+      "id": "FACT-2",
+      "grader": "judge",
+      "text": "Nothing is invented: no decision, owner, figure, cause or claim the inputs do not support, and open items stay open."
+    },
+    {
+      "id": "REV-1",
+      "grader": "judge",
+      "text": "A revision replaces each changed value everywhere it appears, including derived figures, summaries, charts and notes. An old value survives only when clearly marked as previous."
+    },
+    {
+      "id": "REV-2",
+      "grader": "judge",
+      "text": "A revision keeps every value it was not asked to change."
+    },
+    {
+      "id": "REV-3",
+      "grader": "check",
+      "text": "The first output stays unchanged on disk after the revision."
+    },
+    {
+      "id": "FMT-1",
+      "grader": "check",
+      "text": "The output is a valid package of the requested format, saved under the requested file name."
+    },
+    {
+      "id": "FMT-2",
+      "grader": "check",
+      "text": "Text, tables and charts stay editable rather than flattened into pictures."
+    },
+    {
+      "id": "CALC-1",
+      "grader": "check",
+      "text": "Calculated values are formulas whose saved results are correct and which recalculate when an input changes."
+    },
+    {
+      "id": "PAGE-1",
+      "grader": "render",
+      "text": "The file renders within the requested length: the page limit for a document, the slide count for a deck, and each sheet one page wide when printed."
+    },
+    {
+      "id": "READ-1",
+      "grader": "judge",
+      "text": "Headings, labels, units and currency let a reader understand the content without the inputs."
+    },
+    {
+      "id": "VIS-1",
+      "grader": "visual",
+      "text": "Nothing is clipped, overlapping or unreadable on the rendered pages. Not checked automatically in 0.1.0."
+    },
+    {
+      "id": "EDIT-1",
+      "grader": "judge",
+      "text": "When an existing file is edited, only the requested content changes; titles, slides, sections, layout and styling the request does not mention stay as they were."
+    },
+    {
+      "id": "TRACK-1",
+      "grader": "check",
+      "text": "Requested tracked changes are real revision marks: accepting them gives exactly the requested wording and rejecting them restores the original."
+    },
+    {
+      "id": "DATA-1",
+      "grader": "judge",
+      "text": "Input data in mixed formats is normalized without losing, inventing or double-counting records, and removed records are listed."
+    }
+  ]
+}

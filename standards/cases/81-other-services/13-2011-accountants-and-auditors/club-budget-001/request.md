@@ -1,0 +1,1 @@
+Here are my notes for next season (`inputs/notes.txt`). Please make the club budget as an Excel workbook, `budget.xlsx`, with income, costs and the result, so I can show it at the annual meeting and change the numbers later.

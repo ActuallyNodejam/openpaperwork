@@ -1,0 +1,14 @@
+PURCHASE ORDER PO-7731
+Exempel Kontor AB, Industrigatan 8, 211 20 Malmö, Sweden. VAT ID SE556677889901
+Date: 21 October 2026
+To: Västhamn Grossist AB
+Your quotation: Q-2026-0187, Revision 1
+
+Please supply:
+  ESP-210  Label printer, two colour          2 pcs
+  GRD-064  Paper shredder, 64 mm feed          3 pcs
+  CUP-180  Ring binders 180 sheets, box of 48   10 boxes
+  BEA-1KG  Sample goods, 1 kg bag           120 bags
+
+Prices and terms as quoted. Requested delivery: 4 November 2026 to Industrigatan 8, Malmö.
+Maja Lindholm, purchasing

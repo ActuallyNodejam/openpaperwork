@@ -1,0 +1,18 @@
+{
+ "issuer": "facturae",
+ "version": "3.2.2",
+ "link": "https://www.facturae.gob.es/formato/Paginas/version-3-2.aspx",
+ "license": "Reuse of facturae.gob.es contents is allowed under Ley 37/2007 with the source named (Origen de los datos: Ministerio de Hacienda y Administraciones Públicas - Ministerio de Industria, Energía y Turismo). Nothing of the schema is copied: it is fetched at a pinned SHA-256 and run untouched in the KoSIT validator (Apache-2.0). Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-10",
+ "status": "draft",
+ "title": "Facturae 3.2.2: the Spanish state's e-invoice file",
+ "source": "Facturae 3.2.2, Facturaev3_2_2.xml as facturae.gob.es publishes it (SHA-256 b4bbcd587f5f). Invoices to Spanish public bodies are structured and carry an advanced electronic signature (Ley 25/2013 art. 5; disposición adicional segunda: Facturae and XAdES); certain suppliers must send them through the general entry point (art. 4). The library writes the file without a signature and says so: the schema accepts an unsigned file, no entry point does. Read 2026-10-09.",
+ "rules": [
+  {
+   "id": "EINV-FACTURAE",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "text": "The Facturae 3.2.2 schema accepts the Spanish invoice or rectifying invoice beside the page; skipped when it is not installed. The file is unsigned, and the rule's evidence says so."
+  }
+ ]
+}

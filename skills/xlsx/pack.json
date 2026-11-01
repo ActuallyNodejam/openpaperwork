@@ -1,0 +1,7 @@
+{
+  "domain": "formats",
+  "hands_back": [
+    "*.xlsx"
+  ],
+  "check": "python3 {here}/../_checks/packcheck.py xlsx {file}"
+}

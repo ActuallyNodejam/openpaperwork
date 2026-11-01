@@ -1,0 +1,327 @@
+{
+  "note": "What people call each kind of file this plugin's packs make. Built by scripts/build-portable-pack.py from the asks list in each pack's pack.json and the titles the packs' own pages print; change it there, never here. Read by hooks/pack_route.py.",
+  "routes": [
+    {
+      "skill": "trade-documents",
+      "checks": true,
+      "kinds": [
+        {
+          "id": "quotation",
+          "kind": "a quotation",
+          "words": {
+            "en": [
+              "quotation",
+              "price quote",
+              "sales quote",
+              "price offer",
+              "cost estimate",
+              "price estimate"
+            ],
+            "de": [
+              "Angebot",
+              "Kostenvoranschlag",
+              "Offerte",
+              "Preisangebot"
+            ],
+            "fr": [
+              "devis",
+              "offre de prix",
+              "proposition de prix",
+              "soumission"
+            ],
+            "nl": [
+              "offerte",
+              "prijsofferte",
+              "prijsopgave"
+            ],
+            "sv": [
+              "offert",
+              "prisoffert",
+              "anbud"
+            ],
+            "nb": [
+              "tilbud",
+              "pristilbud"
+            ],
+            "da": [
+              "tilbud",
+              "pristilbud"
+            ],
+            "fi": [
+              "tarjous",
+              "tarjouksen",
+              "tarjousta",
+              "tarjoukset",
+              "hintatarjous"
+            ],
+            "es": [
+              "presupuesto",
+              "cotización",
+              "oferta comercial"
+            ],
+            "it": [
+              "preventivo",
+              "offerta commerciale"
+            ],
+            "pl": [
+              "oferta",
+              "oferta handlowa",
+              "wycena"
+            ]
+          },
+          "weak": {
+            "en": [
+              "quote"
+            ]
+          },
+          "with": {
+            "en": [
+              "price",
+              "pricing",
+              "priced",
+              "customer",
+              "client",
+              "supplier",
+              "send",
+              "prepare",
+              "units",
+              "hours",
+              "job",
+              "vat"
+            ]
+          }
+        },
+        {
+          "id": "order_confirmation",
+          "kind": "an order confirmation",
+          "words": {
+            "en": [
+              "order confirmation",
+              "order acknowledgement",
+              "order acknowledgment"
+            ],
+            "de": [
+              "Auftragsbestätigung",
+              "Bestellbestätigung"
+            ],
+            "fr": [
+              "confirmation de commande",
+              "accusé de réception de commande"
+            ],
+            "nl": [
+              "orderbevestiging",
+              "opdrachtbevestiging"
+            ],
+            "sv": [
+              "orderbekräftelse",
+              "ordererkännande"
+            ],
+            "nb": [
+              "ordrebekreftelse"
+            ],
+            "da": [
+              "ordrebekræftelse"
+            ],
+            "fi": [
+              "tilausvahvistus",
+              "tilausvahvistuksen",
+              "tilausvahvistusta"
+            ],
+            "es": [
+              "confirmación de pedido",
+              "confirmación del pedido"
+            ],
+            "it": [
+              "conferma d'ordine",
+              "conferma dell'ordine",
+              "conferma ordine"
+            ],
+            "pl": [
+              "potwierdzenie zamówienia"
+            ]
+          }
+        },
+        {
+          "id": "delivery_note",
+          "kind": "a delivery note",
+          "words": {
+            "en": [
+              "delivery note",
+              "packing slip",
+              "delivery docket",
+              "packing list",
+              "dispatch note"
+            ],
+            "de": [
+              "Lieferschein"
+            ],
+            "fr": [
+              "bon de livraison",
+              "bordereau de livraison"
+            ],
+            "nl": [
+              "pakbon",
+              "pakbonnen",
+              "leveringsbon",
+              "afleverbon"
+            ],
+            "sv": [
+              "följesedel",
+              "följesedlar",
+              "leveranssedel"
+            ],
+            "nb": [
+              "følgeseddel",
+              "følgesedler",
+              "pakkseddel"
+            ],
+            "da": [
+              "følgeseddel",
+              "følgesedler"
+            ],
+            "fi": [
+              "lähete",
+              "lähetteen",
+              "lähetettä",
+              "lähetyslista"
+            ],
+            "es": [
+              "albarán",
+              "albaranes",
+              "nota de entrega"
+            ],
+            "it": [
+              "documento di trasporto",
+              "DDT",
+              "bolla di consegna",
+              "bolla di accompagnamento"
+            ],
+            "pl": [
+              "dowód dostawy",
+              "dokument dostawy"
+            ]
+          }
+        },
+        {
+          "id": "proforma_invoice",
+          "kind": "a pro forma invoice",
+          "words": {
+            "en": [
+              "pro forma invoice",
+              "proforma invoice",
+              "pro forma",
+              "proforma"
+            ],
+            "de": [
+              "Proformarechnung",
+              "Pro-forma-Rechnung"
+            ],
+            "fr": [
+              "facture pro forma",
+              "facture proforma"
+            ],
+            "nl": [
+              "pro-formafactuur",
+              "proformafactuur",
+              "pro forma factuur"
+            ],
+            "sv": [
+              "proformafaktura"
+            ],
+            "nb": [
+              "proformafaktura"
+            ],
+            "da": [
+              "proformafaktura"
+            ],
+            "fi": [
+              "proformalasku"
+            ],
+            "es": [
+              "factura proforma",
+              "factura pro forma"
+            ],
+            "it": [
+              "fattura proforma",
+              "fattura pro forma"
+            ],
+            "pl": [
+              "faktura pro forma",
+              "faktura proforma"
+            ]
+          }
+        },
+        {
+          "id": "purchase_order",
+          "kind": "a purchase order",
+          "words": {
+            "en": [
+              "purchase order"
+            ],
+            "de": [
+              "Bestellung",
+              "Bestellschein",
+              "Einkaufsbestellung"
+            ],
+            "fr": [
+              "bon de commande"
+            ],
+            "nl": [
+              "inkooporder",
+              "bestelbon",
+              "bestelorder"
+            ],
+            "sv": [
+              "inköpsorder",
+              "beställning"
+            ],
+            "nb": [
+              "innkjøpsordre",
+              "bestilling"
+            ],
+            "da": [
+              "indkøbsordre",
+              "bestilling"
+            ],
+            "fi": [
+              "ostotilaus",
+              "ostotilauksen",
+              "ostotilausta"
+            ],
+            "es": [
+              "pedido de compra",
+              "orden de compra"
+            ],
+            "it": [
+              "ordine d'acquisto",
+              "ordine di acquisto",
+              "buono d'ordine"
+            ],
+            "pl": [
+              "zamówienie",
+              "zamówienie zakupu"
+            ]
+          },
+          "weak": {
+            "es": [
+              "pedido"
+            ]
+          },
+          "with": {
+            "es": [
+              "el",
+              "un",
+              "nuestro",
+              "este",
+              "proveedor",
+              "compra",
+              "hoja",
+              "redacta",
+              "prepara"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

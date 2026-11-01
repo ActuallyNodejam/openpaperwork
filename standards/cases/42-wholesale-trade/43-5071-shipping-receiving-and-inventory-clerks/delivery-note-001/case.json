@@ -1,0 +1,328 @@
+{
+ "id": "delivery-note-001",
+ "title": "Make the delivery note for a part shipment",
+ "person": "A warehouse clerk at a small wholesaler preparing the paper that travels with the goods.",
+ "format": "pdf",
+ "output": "delivery-note.pdf",
+ "review": [
+  "The goods are addressed to the warehouse at Lagervägen 3, 213 76 Malmö, with the customer named.",
+  "It says that the second label printer is still to come."
+ ],
+ "revised_review": [
+  "The old gross weight is gone.",
+  "It shows 9 of 10 boxes of binders delivered and says the missing box follows with the second label printer.",
+  "The other lines, the references, the address and the package count are unchanged."
+ ],
+ "version": "1.1.1",
+ "status": "draft",
+ "locale": "en",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and numbers are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "sector": {
+  "naics": "42",
+  "name": "Wholesale Trade"
+ },
+ "occupation": {
+  "soc": "43-5071.00",
+  "name": "Shipping, Receiving, and Inventory Clerks"
+ },
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "oasis-ubl/2.1",
+  "icc-incoterms/2020",
+  "every-file/1.1.0"
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "names-itself",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-TYPE",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-TYPE"
+   ],
+   "text": "The file is headed as a delivery note."
+  },
+  {
+   "id": "header",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-HEAD",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-HEAD"
+   ],
+   "text": "Number DN-2026-0519, the date 4 November 2026, and both companies."
+  },
+  {
+   "id": "references",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-REFS",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-REFS"
+   ],
+   "text": "It refers to the customer order PO-7731 and our order confirmation OC-2026-0342."
+  },
+  {
+   "id": "lines",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-LINES",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-LINES"
+   ],
+   "text": "Each item shows ordered, delivered and outstanding quantities: one label printer outstanding (and one box of binders after the revision)."
+  },
+  {
+   "id": "shipment",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-SHIP",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-SHIP"
+   ],
+   "text": "It states 4 packages and the gross weight (349 kg, 338 kg after the revision) and has a place to sign for receipt."
+  },
+  {
+   "id": "no-prices",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-NOPRICE",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-NOPRICE"
+   ],
+   "text": "No price, amount or currency appears on the delivery note."
+  },
+  {
+   "id": "delivery-term",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "INCO-1",
+   "guidelines": [
+    "icc-incoterms/2020#INCO-1"
+   ],
+   "text": "The delivery term reads DAP Malmö, Incoterms 2020."
+  },
+  {
+   "id": "delivery-address",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "The goods are addressed to the warehouse at Lagervägen 3, 213 76 Malmö, with the customer named."
+  },
+  {
+   "id": "outstanding-told",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "It says that the second label printer is still to come."
+  },
+  {
+   "id": "nothing-stale",
+   "stage": "revision",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-STALE",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-1"
+   ],
+   "text": "The old gross weight is gone."
+  },
+  {
+   "id": "cups-explained",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-1"
+   ],
+   "text": "It shows 9 of 10 boxes of binders delivered and says the missing box follows with the second label printer."
+  },
+  {
+   "id": "kept",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-2"
+   ],
+   "text": "The other lines, the references, the address and the package count are unchanged."
+  },
+  {
+   "id": "letter-din5008",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-DIN5008",
+   "guidelines": [
+    "din-5008/2020#LETTER-DIN5008"
+   ],
+   "text": "A PDF or Word document sits on DIN 5008 Form B; a workbook skips this."
+  },
+  {
+   "id": "letter-company",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-COMPANY",
+   "guidelines": [
+    "eu-company-law/2017-1132#LETTER-COMPANY"
+   ],
+   "text": "The seller's register details are on the letter when the files give them."
+  }
+ ],
+ "truth": {
+  "doc": "delivery_note",
+  "number": "DN-2026-0519",
+  "issue_date": "2026-11-04",
+  "seller": {
+   "name": "Västhamn Grossist AB",
+   "unknown": ["registered_office", "register_number"],
+   "street": "Hamngatan 14",
+   "postcode": "411 14",
+   "city": "Gothenburg",
+   "country": "Sweden"
+  },
+  "buyer": {
+   "name": "Exempel Kontor AB",
+   "street": "Industrigatan 8",
+   "postcode": "211 20",
+   "city": "Malmö",
+   "country": "Sweden"
+  },
+  "references": [
+   "PO-7731",
+   "OC-2026-0342"
+  ],
+  "incoterm": {
+   "rule": "DAP",
+   "place": "Malmö"
+  },
+  "transport": "road",
+  "packages": 4,
+  "prices": [
+   38500,
+   6200,
+   1150,
+   189,
+   77000,
+   18600,
+   11500,
+   21546,
+   128646,
+   158006.52
+  ],
+  "first": {
+   "lines": [
+    {
+     "code": "ESP-210",
+     "description": "Label printer, two colour",
+     "quantity": 2,
+     "unit": "pcs",
+     "unit_price": 38500.0,
+     "discount_percent": 0,
+     "vat_rate": 25,
+     "delivered": 1
+    },
+    {
+     "code": "GRD-064",
+     "description": "Paper shredder, 64 mm feed",
+     "quantity": 3,
+     "unit": "pcs",
+     "unit_price": 6200.0,
+     "discount_percent": 0,
+     "vat_rate": 25,
+     "delivered": 3
+    },
+    {
+     "code": "CUP-180",
+     "description": "Ring binders 180 sheets, box of 48",
+     "quantity": 10,
+     "unit": "box",
+     "unit_price": 1150.0,
+     "discount_percent": 0,
+     "vat_rate": 25,
+     "delivered": 10
+    },
+    {
+     "code": "BEA-1KG",
+     "description": "Sample goods, 1 kg bag",
+     "quantity": 120,
+     "unit": "bag",
+     "unit_price": 189.0,
+     "discount_percent": 5,
+     "vat_rate": 12,
+     "delivered": 120
+    }
+   ],
+   "gross_weight_kg": 349
+  },
+  "revision": {
+   "lines": [
+    {
+     "code": "ESP-210",
+     "description": "Label printer, two colour",
+     "quantity": 2,
+     "unit": "pcs",
+     "unit_price": 38500.0,
+     "discount_percent": 0,
+     "vat_rate": 25,
+     "delivered": 1
+    },
+    {
+     "code": "GRD-064",
+     "description": "Paper shredder, 64 mm feed",
+     "quantity": 3,
+     "unit": "pcs",
+     "unit_price": 6200.0,
+     "discount_percent": 0,
+     "vat_rate": 25,
+     "delivered": 3
+    },
+    {
+     "code": "CUP-180",
+     "description": "Ring binders 180 sheets, box of 48",
+     "quantity": 10,
+     "unit": "box",
+     "unit_price": 1150.0,
+     "discount_percent": 0,
+     "vat_rate": 25,
+     "delivered": 9
+    },
+    {
+     "code": "BEA-1KG",
+     "description": "Sample goods, 1 kg bag",
+     "quantity": 120,
+     "unit": "bag",
+     "unit_price": 189.0,
+     "discount_percent": 5,
+     "vat_rate": 12,
+     "delivered": 120
+    }
+   ],
+   "gross_weight_kg": 338,
+   "stale": [
+    "\\b349\\b"
+   ]
+  }
+ }
+}

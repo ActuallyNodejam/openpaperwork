@@ -1,0 +1,56 @@
+{
+  "language": "de",
+  "date": "2026-10-09",
+  "sender": {
+    "name": "Beispiel Netzwerktechnik GmbH",
+    "street": "Gewerbepark 9",
+    "postcode": "6020",
+    "city": "Innsbruck",
+    "country": "AT",
+    "vat_id": "ATU12345678",
+    "registered_office": "Innsbruck",
+    "register": "Landesgericht Innsbruck",
+    "register_number": "FN 123456 a",
+    "email": "office@netzwerk.example",
+    "phone": "+43 512 000 000",
+    "web": "netzwerk.example"
+  },
+  "recipient": {
+    "name": "Gemeinde Seefelden",
+    "attention": "Frau Mag. Theresa Huber",
+    "street": "Dorfplatz 1/2",
+    "postcode": "6100",
+    "city": "Seefelden",
+    "country": "AT"
+  },
+  "references": [
+    {
+      "kind": "yours",
+      "value": "IT-2026/57"
+    },
+    {
+      "kind": "ours",
+      "value": "BN-2231"
+    }
+  ],
+  "contact": {
+    "name": "Paul Egger",
+    "phone": "+43 512 000 004",
+    "email": "egger@netzwerk.example"
+  },
+  "subject": "Angebot für das neue Netzwerk im Gemeindeamt",
+  "salutation": "Sehr geehrte Frau Mag. Huber,",
+  "body": [
+    "vielen Dank für Ihre Anfrage vom 28. September. Gerne bieten wir Ihnen das neue Netzwerk für das Gemeindeamt samt Verkabelung an.",
+    "Der Preis beträgt 412.000 Euro zuzüglich Umsatzsteuer. Wir beginnen im März 2027 und übergeben die Anlage bis Ende Juli 2027.",
+    "Unser Angebot gilt bis 13. November 2026. Für Fragen steht Ihnen Herr Egger gerne zur Verfügung."
+  ],
+  "signatory": {
+    "name": "Ing. Johanna Auer",
+    "role": "Geschäftsführerin"
+  },
+  "enclosures": [
+    "Leistungsverzeichnis",
+    "Terminplan"
+  ]
+}

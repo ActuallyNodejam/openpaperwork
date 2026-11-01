@@ -1,0 +1,18 @@
+{
+  "type": "quadrant",
+  "title": "Which fixes to do first",
+  "eyebrow": "Priorities",
+  "description": "Seven fixes placed by their value and effort; the new invoice template is worth the most for the least work.",
+  "x": {"name": "Effort"},
+  "y": {"name": "Value"},
+  "quadrants": {"top_left": "do first", "top_right": "plan", "bottom_left": "fill in", "bottom_right": "skip"},
+  "items": [
+    {"name": "Invoice template", "x": 0.2, "y": 0.85, "focal": true},
+    {"name": "Shared calendar", "x": 0.35, "y": 0.7},
+    {"name": "New CRM", "x": 0.85, "y": 0.75},
+    {"name": "Expense app", "x": 0.65, "y": 0.6},
+    {"name": "Rename folders", "x": 0.15, "y": 0.3},
+    {"name": "Office plants", "x": 0.3, "y": 0.15},
+    {"name": "Own intranet", "x": 0.9, "y": 0.2}
+  ]
+}

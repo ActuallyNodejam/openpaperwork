@@ -1,0 +1,49 @@
+{
+  "language": "nb",
+  "country": "NO",
+  "body": "Fjellvind Rørlegger AS",
+  "company_number": "923 456 781",
+  "meeting": "extraordinary general",
+  "method": "meeting",
+  "date": "2026-11-05",
+  "start": "10:00",
+  "end": "10:40",
+  "place": "Selskapets kontor, Industrivegen 14, Gjøvik",
+  "chair": "Kari Nordby",
+  "secretary": "Erlend Moe",
+  "checkers": [
+    "Anders Lie"
+  ],
+  "notice_approved": true,
+  "shareholders": [
+    {
+      "name": "Eksempel Holding AS",
+      "shares": 600,
+      "votes": 600,
+      "by": "Kari Nordby"
+    },
+    {
+      "name": "Anders Lie",
+      "shares": 250,
+      "votes": 250
+    },
+    {
+      "name": "Sofie Brekke",
+      "shares": 150,
+      "votes": 150,
+      "by": "Anders Lie (fullmakt)"
+    }
+  ],
+  "items": [
+    {
+      "title": "Utbytte",
+      "notes": "Styret foreslo et ekstraordinært utbytte på grunnlag av årsregnskapet for 2025.",
+      "decisions": [
+        {
+          "text": "Det utdeles et ekstraordinært utbytte på kr 120 per aksje, til sammen kr 120 000",
+          "unanimous": true
+        }
+      ]
+    }
+  ]
+}

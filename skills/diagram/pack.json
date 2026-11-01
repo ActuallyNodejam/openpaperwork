@@ -1,0 +1,50 @@
+{
+  "domain": "operations",
+  "hands_back": [
+    "*.pdf",
+    "*.svg",
+    "*.png"
+  ],
+  "default": "diagram.pdf",
+  "check": "python3 {here}/../_checks/packcheck.py diagram {file}",
+  "recognises": {
+    "file": "*.diagram.json",
+    "has": [
+      "type",
+      "title"
+    ]
+  },
+  "asks": [
+    {
+      "id": "diagram",
+      "kind": "a diagram",
+      "words": {
+        "en": "diagram, flowchart, flow chart, org chart, organisation chart, organization chart, swimlane, swim lane, gantt, gantt chart, timeline, process map, layer stack, 2x2 matrix",
+        "de": "Diagramm, Flussdiagramm, Organigramm, Zeitstrahl, Gantt-Diagramm, Ablaufdiagramm, Prozesslandkarte",
+        "fr": "diagramme, organigramme, logigramme, frise chronologique, diagramme de Gantt",
+        "nl": "stroomschema, organogram, tijdlijn, gantt-diagram, procesplaat",
+        "sv": "flödesschema, organisationsschema, organisationskarta, tidslinje, processkarta, gantt-schema, simbana",
+        "nb": "flytskjema, organisasjonskart, tidslinje, prosesskart",
+        "da": "flowdiagram, organisationsdiagram, tidslinje, proceskort",
+        "fi": "vuokaavio, organisaatiokaavio, aikajana, prosessikaavio",
+        "es": "diagrama de flujo, organigrama, línea de tiempo, diagrama de Gantt",
+        "it": "diagramma di flusso, organigramma, linea del tempo, diagramma di Gantt",
+        "pl": "schemat blokowy, schemat organizacyjny, oś czasu, diagram Gantta"
+      },
+      "weak": {
+        "sv": "diagram",
+        "nb": "diagram",
+        "da": "diagram"
+      },
+      "with": {
+        "sv": "rita, gör, skapa, över, för, vem, flöde, faser, etapper, projektet, renoveringen, zoner",
+        "nb": "tegn, lag, lage, over, for, hvem, faser",
+        "da": "tegn, lav, lave, over, for, hvem, faser"
+      },
+      "unless": {
+        "en": "bar chart, pie chart, line chart",
+        "sv": "stapeldiagram, cirkeldiagram, linjediagram"
+      }
+    }
+  ]
+}

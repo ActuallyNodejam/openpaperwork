@@ -1,0 +1,1 @@
+Create deck.pptx from content.md, following the brand kit in kit.json exactly. Use exactly six slides, one per section, and shorten the text to fit the kit's limits without changing any figure or date. Do not invent content.

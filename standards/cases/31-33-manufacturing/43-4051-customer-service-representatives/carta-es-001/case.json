@@ -1,0 +1,149 @@
+{
+ "id": "carta-es-001",
+ "title": "Escribe una carta a una tienda en línea sobre el retraso en la entrega de sus cajas",
+ "person": "A customer manager at a small Spanish carton maker writing to an online shop that orders its shipping boxes there.",
+ "format": "pdf",
+ "output": "carta.pdf",
+ "locale": "es-ES",
+ "sector": {
+  "naics": "31-33",
+  "name": "Manufacturing"
+ },
+ "occupation": {
+  "soc": "43-4051.00",
+  "name": "Customer Service Representatives"
+ },
+ "review": [
+  "It answers the online shop's message of 1 October, gives the new delivery date of 30 October with the reason, and offers the 5 per cent discount."
+ ],
+ "revised_review": [
+  "The delivery date is 6 November everywhere; 30 October appears nowhere."
+ ],
+ "truth": {
+  "seller": {
+   "name": "Ejemplo Cartonajes S.L.",
+   "country": "ES",
+   "registered_office": "Calle del Ejemplo 41, 46000 Valencia",
+   "register": "Registro Mercantil de Valencia",
+   "register_number": "tomo 00000, folio 000, hoja V-000000"
+  },
+  "buyer": {
+   "name": "Ejemplo Tienda S.L.",
+   "country": "ES"
+  },
+  "revision": {
+   "stale": [
+    "30 de octubre"
+   ]
+  }
+ },
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "window",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-WINDOW",
+   "guidelines": [
+    "letter-layouts/2026-10#LETTER-WINDOW"
+   ],
+   "text": "The address sits in the window on the right, inside the zone Correos publishes."
+  },
+  {
+   "id": "address",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-ADDRESS",
+   "guidelines": [
+    "letter-layouts/2026-10#LETTER-ADDRESS"
+   ],
+   "text": "The address is written as Correos reads it: the postcode and the locality in capitals, the province on its own line."
+  },
+  {
+   "id": "date",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-DATE",
+   "guidelines": [
+    "letter-layouts/2026-10#LETTER-DATE"
+   ],
+   "text": "The place and the date are written out in Spanish, with a comma between them."
+  },
+  {
+   "id": "form",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-FORM",
+   "guidelines": [
+    "letter-layouts/2026-10#LETTER-FORM"
+   ],
+   "text": "The salutation ends with a colon and the closing with a comma."
+  },
+  {
+   "id": "parts",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-PARTS",
+   "guidelines": [
+    "din-5008/2020#LETTER-PARTS"
+   ],
+   "text": "Subject, closing and signatory are in the letter, as its spec names them."
+  },
+  {
+   "id": "language",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-LANGUAGE",
+   "guidelines": [
+    "letter-layouts/2026-10#LETTER-LANGUAGE"
+   ],
+   "text": "Every label is in Spanish."
+  },
+  {
+   "id": "company",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-COMPANY",
+   "guidelines": [
+    "es-company-law/2026#ES-CO-01"
+   ],
+   "text": "The registered office and the entry in the Registro Mercantil are on the letter."
+  },
+  {
+   "id": "answers",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "It gives the new delivery date, the reason (the cutting die arrived late) and the 5 per cent discount on this order."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and addresses are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "letter-layouts/2026-10",
+  "din-5008/2020",
+  "es-company-law/2026",
+  "every-file/1.1.0"
+ ]
+}

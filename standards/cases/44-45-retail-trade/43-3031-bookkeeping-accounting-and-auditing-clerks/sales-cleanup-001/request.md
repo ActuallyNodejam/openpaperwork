@@ -1,0 +1,1 @@
+The till export in `inputs/till-export.csv` is a mess: the amounts come out as text and closed days as a dash. Please turn it into a clean Excel workbook, `sales.xlsx`, with the amounts as real numbers and a total per shop. My notes are in `inputs/notes.txt`.

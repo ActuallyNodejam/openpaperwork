@@ -1,0 +1,99 @@
+{
+ "issuer": "nlm-citing-medicine",
+ "version": "2",
+ "link": "https://www.ncbi.nlm.nih.gov/books/NBK7256/",
+ "license": "Works of the US Government, not subject to copyright in the United States (17 U.S.C. 105); the rules are restated in our own words with credit, and every example is invented. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "Citing Medicine, 2nd edition: Vancouver references (citation-sequence)",
+ "source": "Karen Patrias, author; Dan Wendling, technical editor. Citing Medicine: The NLM Style Guide for Authors, Editors, and Publishers, 2nd edition, National Library of Medicine (US), 2007-, chapters 1 (journals) and 2 (books); and NLM, Samples of Formatted References for Authors of Journal Articles, https://www.nlm.nih.gov/bsd/uniform_requirements.html, read 2026-10-09. The CSL vancouver.csl (CC BY-SA 3.0) was read to learn the forms; nothing of it is copied.",
+ "rules": [
+  {
+   "id": "CM-01",
+   "grader": "script",
+   "text": "Sources are numbered in the order the text first cites them, starting at 1.",
+   "source": "Citing Medicine, introduction: the citation-sequence system",
+   "check": "academic_style.py VANC-ORDER"
+  },
+  {
+   "id": "CM-02",
+   "grader": "script",
+   "text": "The reference list runs in number order, one entry per number, with no gaps.",
+   "source": "Citing Medicine, citation-sequence system",
+   "check": "academic_style.py VANC-LIST"
+  },
+  {
+   "id": "CM-03",
+   "grader": "script",
+   "text": "Every entry is cited in the text and every number cited has an entry.",
+   "source": "Citing Medicine, citation-sequence system",
+   "check": "academic_style.py VANC-CITED"
+  },
+  {
+   "id": "CM-04",
+   "grader": "script",
+   "text": "A source cited again keeps the number it was first given; it is listed once.",
+   "source": "Citing Medicine, citation-sequence system",
+   "check": "academic_style.py VANC-ONCE"
+  },
+  {
+   "id": "CM-05",
+   "grader": "script",
+   "text": "Authors are written surname first, then up to the initials with no full stops or spaces between them, separated by commas.",
+   "source": "Chapter 1A, author",
+   "check": "academic_style.py VANC-AUTHORS"
+  },
+  {
+   "id": "CM-06",
+   "grader": "script",
+   "text": "With more than six authors, list the first six and then et al.; with six or fewer, list them all.",
+   "source": "NLM sample references, item 1",
+   "check": "academic_style.py VANC-AUTHORS"
+  },
+  {
+   "id": "CM-07",
+   "grader": "script",
+   "text": "Journal titles are abbreviated as in the NLM Catalog, written without full stops.",
+   "source": "Chapter 1A, title of journal",
+   "check": "academic_style.py VANC-JOURNAL"
+  },
+  {
+   "id": "CM-08",
+   "grader": "script",
+   "text": "A journal entry gives the date, then volume, issue and pages as year;volume(issue):pages, with no vol., no. or pp. and no spaces.",
+   "source": "Chapter 1A, date, volume, issue and location; NLM sample references, item 1",
+   "check": "academic_style.py VANC-DATE"
+  },
+  {
+   "id": "CM-09",
+   "grader": "script",
+   "text": "A source read on the Internet carries [Internet] after the journal or title, the date it was cited in square brackets, and Available from: with its URL.",
+   "source": "Chapter 1B and 2B",
+   "check": "academic_style.py VANC-ONLINE"
+  },
+  {
+   "id": "CM-10",
+   "grader": "judge",
+   "text": "Article titles keep the capitals of the source in sentence form, no quotation marks and no italics.",
+   "source": "Chapter 1A, article title"
+  },
+  {
+   "id": "CM-11",
+   "grader": "judge",
+   "text": "An organisation as author is written in full as it appears on the source.",
+   "source": "Chapter 1A, author; NLM sample references, item 2"
+  },
+  {
+   "id": "CM-12",
+   "grader": "judge",
+   "text": "A book entry gives the edition when it is not the first, then the place, the publisher and the year: 2nd ed. City: Publisher; 2022.",
+   "source": "Chapter 2A"
+  },
+  {
+   "id": "CM-13",
+   "grader": "judge",
+   "text": "No detail the source does not give is added: an issue, a page range, a DOI or an access date is written only when it is known.",
+   "source": "Citing Medicine, general rules on what to include"
+  }
+ ]
+}

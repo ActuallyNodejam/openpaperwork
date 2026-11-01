@@ -1,0 +1,40 @@
+{
+  "pack": "business-letter",
+  "template": "letter-uk.spec.json",
+  "clean": "letter.docx",
+  "files": [
+    "spec.json",
+    "letter.docx"
+  ],
+  "faults": [
+    {
+      "file": "no-salutation.docx",
+      "replaces": "letter.docx",
+      "planted": "the salutation is removed",
+      "fails": [
+        "LETTER-PARTS"
+      ],
+      "also_failed_when_made": []
+    },
+    {
+      "file": "no-closing.docx",
+      "replaces": "letter.docx",
+      "planted": "the complimentary close is removed",
+      "fails": [
+        "LETTER-PARTS"
+      ],
+      "also_failed_when_made": []
+    },
+    {
+      "file": "no-sender-company.docx",
+      "replaces": "letter.docx",
+      "planted": "the recipient company line is emptied",
+      "fails": [
+        "LETTER-ADDRESS"
+      ],
+      "also_failed_when_made": [
+        "LETTER-WINDOW"
+      ]
+    }
+  ]
+}

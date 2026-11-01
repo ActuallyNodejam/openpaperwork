@@ -1,0 +1,18 @@
+{
+ "issuer": "dk-momsbekendtgorelsen",
+ "version": "2026",
+ "link": "https://www.retsinformation.dk",
+ "license": "Danish law is free of copyright (ophavsretsloven § 9); notice licenses/einvoice-nordic-official-texts.txt. Restated in our own words. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "What a Danish full invoice and credit note state",
+ "source": "Momsbekendtgørelsen § 58, stk. 1 (fuld faktura) and stk. 2 (a credit note that refers to the invoice), as Skattestyrelsens Juridiske Vejledning A.B.3.3.1.4 restates them; § 66 for the simplified invoice under 3.000 kr, cited. Read 2026-10-09.",
+ "rules": [
+  {
+   "id": "DK-INVOICE",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "text": "The seller's CVR-nummer, both parties' names and addresses, number, date, each line's unit price, the rate and the VAT on the page; a Danish bank transfer's registration and account number; the CVR under scheme 0184 in the UBL."
+  }
+ ]
+}

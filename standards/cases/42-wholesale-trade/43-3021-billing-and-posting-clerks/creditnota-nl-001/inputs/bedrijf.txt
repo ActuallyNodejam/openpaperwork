@@ -1,0 +1,3 @@
+Voorbeeld Groothandel B.V., Proefweg 20, 3542 AB Utrecht. Btw-id NL123456782B01, KvK 12345678, statutaire zetel Utrecht. Peppol 0106:12345678.
+Bank: IBAN NL91 ABNA 0417 1643 00, BIC ABNANL2A. Creditnota's nummeren we C-2026-0xx; de laatste is C-2026-013.
+Contact administratie: Daan Proef, +31 30 000 0000, administratie@voorbeeld.example.

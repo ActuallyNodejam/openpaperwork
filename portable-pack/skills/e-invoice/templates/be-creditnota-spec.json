@@ -1,0 +1,54 @@
+{
+  "number": "CN/2026/031",
+  "issue_date": "2026-10-20",
+  "delivery_date": "2026-10-08",
+  "currency": "EUR",
+  "buyer_reference": "Els Voorbeeld",
+  "seller": {
+    "name": "Schelde Proefwerk BV",
+    "legal_form": "BV",
+    "street": "Voorbeeldstraat 12",
+    "postcode": "2000",
+    "city": "Antwerpen",
+    "country": "BE",
+    "register_number": "0123.456.749",
+    "vat_id": "BE0123456749",
+    "register": "RPR Antwerpen, afdeling Antwerpen",
+    "registered_office": "Antwerpen",
+    "electronic_address": "0208:0123456749",
+    "contact": {
+      "name": "Pieter Voorbeeld",
+      "phone": "+32 3 000 00 00",
+      "email": "factuur@schelde.example"
+    }
+  },
+  "buyer": {
+    "name": "Voorbeeld Schoonmaak NV",
+    "street": "Proefplein 3",
+    "postcode": "9000",
+    "city": "Gent",
+    "country": "BE",
+    "register_number": "0987.654.394",
+    "vat_id": "BE0987654394",
+    "electronic_address": "0208:0987654394"
+  },
+  "payment": {
+    "means_code": "58",
+    "iban": "BE68 5390 0754 7034",
+    "bic": "GKCCBEBB"
+  },
+  "lines": [
+    {
+      "name": "Advies productieplanning",
+      "quantity": 2,
+      "unit": "HUR",
+      "unit_price": 95.0,
+      "vat_rate": 21,
+      "vat_category": "S"
+    }
+  ],
+  "type_code": "381",
+  "preceding_invoice": "2026/0412",
+  "preceding_invoice_date": "2026-10-12",
+  "note": "Creditering van twee uren advies, factuur 2026/0412."
+}

@@ -1,0 +1,1 @@
+Sam has come back: the trust wants a reading every 10 min instead of every 15 min, and the logger also has to raise an alarm within 5 min when the level rises more than 0.5 m in an hour. Please update the specification.

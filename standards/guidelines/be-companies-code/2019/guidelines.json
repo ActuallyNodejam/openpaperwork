@@ -1,0 +1,53 @@
+{
+  "issuer": "be-companies-code",
+  "version": "2019",
+  "link": "https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel",
+  "license": "Belgian official act, outside copyright (Code de droit économique art. XI.172 § 2); restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Wetboek van vennootschappen en verenigingen / Code des sociétés et des associations: the minutes of a board and of a general meeting",
+  "source": "Wetboek van vennootschappen en verenigingen of 23 March 2019 (numac 2019A40586), consolidated Dutch text read on Justel 2026-10-09. The French text carries the same article numbers and was not read. Book 5 is the BV/SRL, book 6 the CV/SC, book 7 the NV/SA.",
+  "rules": [
+    {
+      "id": "BE-MIN-01",
+      "grader": "script",
+      "text": "The minutes of a collegiate board are signed by the chair and by the directors who ask to sign.",
+      "source": "art. 5:75 (BV/SRL), 6:63 (CV/SC), 7:95 (NV/SA)",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "BE-MIN-02",
+      "grader": "script",
+      "text": "A director with a financial interest that conflicts with the company's tells the other directors; the declaration and the explanation go in the minutes, and in a collegiate board that director takes no part in the deliberation or the vote.",
+      "source": "art. 5:76 § 1 and § 2, 6:64, 7:96 § 1",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "BE-MIN-03",
+      "grader": "script",
+      "text": "An attendance list is kept at every general meeting.",
+      "source": "art. 5:90, 6:76, 7:138",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "BE-MIN-04",
+      "grader": "script",
+      "text": "The minutes of a general meeting are signed by the members of the bureau and by the shareholders who ask to sign.",
+      "source": "art. 5:93, 6:79, 7:141 § 1",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "BE-MIN-05",
+      "grader": "script",
+      "text": "When shareholders take part online, the minutes mention the technical problems and incidents that kept them from taking part or voting.",
+      "source": "art. 5:89 § 1, 6:75 § 1, 7:137 § 1",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "BE-MIN-06",
+      "grader": "judge",
+      "text": "The part of the minutes on a conflict of interest goes whole into the annual report or the document filed with the accounts.",
+      "source": "art. 5:77 § 1, 6:65 § 1, 7:96 § 1"
+    }
+  ]
+}

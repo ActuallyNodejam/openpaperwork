@@ -1,0 +1,20 @@
+{
+  "name": "openpaperwork",
+  "description": "OpenPaperwork's whole library, from invoices to board minutes: finance, sales, legal, HR, operations, marketing, engineering, academic and the formats, for Germany, France, Sweden, Norway, Denmark, Finland, the UK, the US, Canada, Australia, Belgium, the Netherlands, Austria, Ireland, Spain, Italy and Poland, with their scripted checks.",
+  "version": "0.1.0",
+  "author": {
+    "name": "OpenPaperwork"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "finance",
+    "sales",
+    "legal",
+    "hr",
+    "operations",
+    "marketing",
+    "engineering",
+    "academic",
+    "formats"
+  ]
+}

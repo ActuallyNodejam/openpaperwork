@@ -1,0 +1,62 @@
+{
+  "issuer": "canada-labour-code",
+  "version": "2026",
+  "link": "https://laws-lois.justice.gc.ca/eng/regulations/C.R.C.,_c._986/",
+  "license": "Federal enactments, reproduced under the Reproduction of Federal Law Order (SI/97-5); not an official version. Restated in our own words. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Canada Labour Code s. 253.2 and Canada Labour Standards Regulations s. 3.1: the employment statement",
+  "source": "Canada Labour Code (R.S.C., 1985, c. L-2) s. 253.2; Canada Labour Standards Regulations (C.R.C., c. 986) s. 3.1 (SOR/2023-79), current to 2026-09-21, English and French. Read 2026-10-09.",
+  "note": "A drafting check, not legal advice: the scripted rules read whether a particular is there, never whether a term is lawful.",
+  "rules": [
+    {
+      "id": "CA-01",
+      "grader": "script",
+      "text": "The statement is given within the first 30 days of the employment.",
+      "source": "CLC s. 253.2(1)",
+      "check": "employment_check.py EMPLOY-DATES"
+    },
+    {
+      "id": "CA-02",
+      "grader": "script",
+      "text": "The parties, the job title with a short description of the duties, the address of the ordinary place of work, the start and the term.",
+      "source": "CLSR 3.1 (a)-(e)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "CA-03",
+      "grader": "script",
+      "text": "The probation's length if there is one, the qualifications and any required training.",
+      "source": "CLSR 3.1 (f)-(h)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "CA-04",
+      "grader": "script",
+      "text": "The hours with how they are counted and the overtime rules; the wage or salary and the overtime rate.",
+      "source": "CLSR 3.1 (i), (j)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "CA-05",
+      "grader": "script",
+      "text": "How often pay days come and other pay is paid.",
+      "source": "CLSR 3.1 (k)",
+      "check": "employment_check.py EMPLOY-PAY"
+    },
+    {
+      "id": "CA-06",
+      "grader": "script",
+      "text": "The mandatory deductions and how work-related expenses are claimed.",
+      "source": "CLSR 3.1 (l), (m)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "CA-07",
+      "grader": "script",
+      "text": "A federal statement prints on US Letter, the paper Canada writes on.",
+      "source": "house rule for a Canadian document",
+      "check": "locale_floor.py LOCALE-PAPER"
+    }
+  ]
+}

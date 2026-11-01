@@ -1,0 +1,56 @@
+{
+  "note": "What people call each kind of file this plugin's packs make. Built by scripts/build-portable-pack.py from the asks list in each pack's pack.json and the titles the packs' own pages print; change it there, never here. Read by hooks/pack_route.py.",
+  "routes": [
+    {
+      "skill": "contract-drafting",
+      "checks": true,
+      "kinds": [
+        {
+          "id": "agreement",
+          "kind": "an agreement (an NDA, a data processing agreement, a service agreement)",
+          "words": {
+            "en": [
+              "NDA",
+              "non-disclosure agreement",
+              "nondisclosure agreement",
+              "confidentiality agreement",
+              "DPA",
+              "data processing agreement",
+              "data processing addendum",
+              "cloud service agreement",
+              "service agreement",
+              "services agreement"
+            ]
+          },
+          "weak": {
+            "en": [
+              "agreement",
+              "contract"
+            ]
+          },
+          "with": {
+            "en": [
+              "draft",
+              "drafting",
+              "review",
+              "redline",
+              "sign",
+              "negotiate",
+              "mutual",
+              "clause",
+              "clauses",
+              "parties",
+              "template",
+              "standard"
+            ]
+          },
+          "unless": {
+            "en": [
+              "in agreement"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

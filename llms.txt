@@ -1,0 +1,46 @@
+# OpenPaperwork
+
+> A library of 91 standards, laws and style guides for the agent you already have. Each
+> pack holds a guideline with a named source, a starter, and a scripted check, so the agent
+> you already have (Claude, ChatGPT, Cursor, Antigravity and others that read Agent Skills) writes the
+> content and a script decides whether the invoice, agreement, letter, deck or paper meets
+> the rules. Apache 2.0 licence. No account and no agent of its own.
+
+Facts an agent should hold before it acts here:
+
+- A pack is a plain Agent Skill: a `SKILL.md`, the scripts that build the file, and the check.
+- A run is finished only when the pack's check prints `pack check clean`. A fail names the
+  rule and the evidence; fix what it names and run the check again.
+- Scripts copy every number, date and identifier from the person's own file. Never retype them.
+- A passing check means the file meets the cited rules. It is not certification and not
+  legal, tax or accounting advice.
+- Never ask a person to paste an API key into a chat, and never write one into this tree.
+
+## Start here
+
+- One line through the skills CLI: `npx skills add ActuallyNodejam/openpaperwork`; each pack is a plain Agent Skill, no manifest needed
+- [README.md](README.md): what it is, install for each agent, what the library covers
+- [AGENTS.md](AGENTS.md): setting up and changing this repository as a coding agent
+- [Use the packs in your agent](docs/community-preview/PORTABLE_PACK.md): install, what each pack covers, what a run looks like
+- [Bring your own agent](docs/community-preview/BRING_YOUR_OWN_AGENT.md): install and sign-in for each supported agent
+
+## The library
+
+- [Pack list](standards/PACKS.md): every pack with its guideline set, checks and starter files
+- [Where each pack stands](docs/community-preview/STANDARDS.md): sources, and which settle the page as well as the content
+- [Sources and licences](standards/SOURCES.md): where each rule comes from
+- [Skills](skills): one folder per pack, each with its `SKILL.md`
+- [Plugin marketplace](.claude-plugin/marketplace.json): `openpaperwork`, the whole library as one plugin for the Claude app and Claude Code, and one plugin per department; each workflow is started by its command, such as `/openpaperwork:invoice`
+
+## Contributing
+
+- [CONTRIBUTING.md](CONTRIBUTING.md): how a change is proposed and what evidence it needs
+- [Add a standard](docs/community-preview/ADD_A_STANDARD.md): guideline, check, starter, three cases
+- [Case protocol](standards/README.md): preparing a case and checking an output, offline
+
+## Optional
+
+- [Philosophy](docs/community-preview/PHILOSOPHY.md)
+- [Roadmap](docs/community-preview/ROADMAP.md)
+- [Credits](docs/community-preview/CREDITS.md) and [third-party notices](THIRD_PARTY.md)
+- [Releasing](docs/community-preview/RELEASING.md)

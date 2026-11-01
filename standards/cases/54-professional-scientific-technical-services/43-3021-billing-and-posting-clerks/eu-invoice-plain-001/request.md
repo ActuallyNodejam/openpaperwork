@@ -1,0 +1,1 @@
+Create invoice.xml and invoice.pdf from order.json: an EN 16931 invoice in the Cross Industry Invoice syntax used by Factur-X, plus the same invoice as a readable one-page PDF for the customer. Use only the details in order.json.

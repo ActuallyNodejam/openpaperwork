@@ -1,0 +1,12 @@
+Guide for the Use of the International System of Units (SI), NIST Special Publication 811, 2008 Edition
+Ambler Thompson and Barry N. Taylor, National Institute of Standards and Technology
+https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication811e2008.pdf
+Read 2026-10-08.
+
+A work of the United States Government, not subject to copyright in the United States (17 U.S.C. 105).
+Credited here though no licence asks for it. NIST does not endorse this software.
+
+Changes: sections 6.1.3 to 6.1.8 (plurals, periods, the solidus, symbols with names, abbreviations such as
+sec, mins, hrs, lit and amps), 7.2 (the space between value and unit symbol) and 7.10.2 (the space before %)
+are restated in our own words in skills/_checks/requirements_check.py, skills/requirements-spec/SKILL.md and
+standards/guidelines/nist-sp811; no text is copied whole.

@@ -1,0 +1,4 @@
+{
+  "note": "What people call each kind of file this plugin's packs make. Built by scripts/build-portable-pack.py from the asks list in each pack's pack.json and the titles the packs' own pages print; change it there, never here. Read by hooks/pack_route.py.",
+  "routes": []
+}

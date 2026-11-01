@@ -1,0 +1,20 @@
+{
+ "about": "Every key requirements_create.py reads from a requirements specification's data file. The builder stops on a key that is not here, and on a value of another shape (skills/_shared/spec_guard.py). Context and assumptions that are no requirement go in facts, one statement each.",
+ "open": {"": "facts"},
+ "hints": {
+  "requirements.verification_method": "how a requirement is verified is \"verification\"",
+  "requirements.priority": "a requirement has no priority field: say it in its \"rationale\"",
+  "requirements.title": "a requirement is its id and its text; a heading for a group of them is \"section\""
+ },
+ "fields": {
+  "language": "text", "title": "text", "organisation": "text", "document": "text", "version": "text",
+  "date": "text", "status": "text", "author": "text", "approver": "text", "product": "text",
+  "purpose": "text", "scope": "text",
+  "definitions": [{"term": "text", "meaning": "text"}],
+  "facts": ["text"],
+  "goals": [{"id": "text", "text": "text", "rationale": "text"}],
+  "requirements": [{"id": "text", "section": "text", "text": "text", "rationale": "text", "verification": "text"}],
+  "tbd": [{"id": "text", "requirement": "text", "owner": "text", "due": "text", "estimate": "text", "closes": "text"}],
+  "history": [{"version": "text", "date": "text", "author": "text", "change": "text"}]
+ }
+}

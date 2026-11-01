@@ -1,0 +1,19 @@
+From: Henrik Aas <henrik@eksempel-kontor.example>
+To: order@vasthamn.example
+Date: 22 October 2026
+Subject: Order for our new office, our order number FB-2026-114
+
+Hello,
+
+We would like to order:
+- 1 ESP-210 label printer
+- 2 GRD-064 shredders
+- 40 bags of sample goods, 1 kg
+
+Please send a pro forma invoice in EUR so we can pay in advance and prepare the import.
+
+Eksempel Kontor AS, Sandviksbodene 12, 5035 Bergen, Norway
+Organisation number NO 987 654 321 MVA
+
+Best regards,
+Henrik Aas

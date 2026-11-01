@@ -1,0 +1,36 @@
+{
+ "about": "company.json: a company's own particulars, written once in the person's folder and read by every builder that prints a sender. The seller party of EN 16931-1 (BG-4 to BG-7: name, trading name, identifiers, legal registration, VAT number, address, contact), its payment details (BG-16, BG-17) and the mentions its own country's company law asks for (the register and its number, the registered office, the share capital, the directors). A particular the person's files do not give is listed under unknown and printed as nothing.",
+ "open": {"": "further"},
+ "hints": {
+  "address": "the address is \"street\", \"postcode\", \"city\" and \"country\"",
+  "town": "the town is \"city\"",
+  "vat": "the VAT number is \"vat_id\"",
+  "vat_number": "the VAT number is \"vat_id\"",
+  "company_number": "the register number is \"register_number\"",
+  "registration": "the register number is \"register_number\"",
+  "website": "the website is \"web\"",
+  "iban": "the bank account goes in \"payment\": {\"bank\": ..., \"iban\": ..., \"bic\": ...}",
+  "bank": "the bank account goes in \"payment\": {\"bank\": ..., \"iban\": ..., \"bic\": ...}",
+  "directors": "the directors are \"managing_directors\", a list of names"
+ },
+ "fields": {
+  "name": "text", "trading_name": "text", "legal_form": "text",
+  "street": "text", "street2": "text", "postcode": "text", "city": "text", "county": "text", "province": "text",
+  "state": "text", "country": "text",
+  "vat_id": "text", "tax_number": "text", "tax_code": "text",
+  "register": "text", "register_number": "text", "registered_office": "text",
+  "share_capital": "number | text", "paid_up_capital": "number | text", "sole_shareholder": "flag | text",
+  "in_liquidation": "flag | text", "directed_by": "text", "group": "text",
+  "managing_directors": "text | [text]",
+  "siren": "text", "siret": "text", "rcs": "text", "abn": "text", "acn": "text",
+  "org_number": "text", "business_id": "text", "cvr": "text", "kvk": "text", "enterprise_number": "text",
+  "email": "text", "phone": "text", "web": "text",
+  "contact": {"name": "text", "phone": "text", "email": "text"},
+  "payment": {"bank": "text", "iban": "text", "bic": "text", "account": "text", "account_name": "text",
+              "sort_code": "text", "bsb": "text", "routing": "text", "bank_reg": "text", "bankgiro": "text",
+              "plusgiro": "text"},
+  "signatory": {"name": "text", "role": "text"},
+  "further": ["text"],
+  "unknown": "text | [text]"
+ }
+}

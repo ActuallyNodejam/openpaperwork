@@ -1,0 +1,261 @@
+{
+ "id": "kreditnota-dk-001",
+ "title": "A Danish kreditnota for damaged cases of copy paper, as a page and a Peppol credit note",
+ "person": "The bookkeeper of a small Odense wholesaler crediting an office in Copenhagen.",
+ "format": "pdf",
+ "output": "kreditnota.pdf",
+ "extra_outputs": [
+  "kreditnota.xml"
+ ],
+ "locale": "da-DK",
+ "sector": {
+  "naics": "42",
+  "name": "Wholesale Trade"
+ },
+ "occupation": {
+  "soc": "43-3021.00",
+  "name": "Billing and Posting Clerks"
+ },
+ "review": [
+  "Kreditnota K-2026-031 af 14.10.2026 til faktura F-2026-0402 af 28.09.2026: 4 kasser à 189,00, 756,00 ekskl. moms, moms 189,00, i alt 945,00; CVR 12345674."
+ ],
+ "revised_review": [
+  "5 kasser: 945,00 ekskl. moms, 236,25 moms, 1 181,25 i alt; ellers uændret."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "locale-date",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-DATE",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-DATE"
+   ],
+   "text": "Dates on the page are in the dd.MM.yyyy form."
+  },
+  {
+   "id": "locale-number",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-NUMBER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-NUMBER"
+   ],
+   "text": "Amounts use the locale's separators."
+  },
+  {
+   "id": "locale-paper",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-PAPER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-PAPER"
+   ],
+   "text": "The page is the locale's paper."
+  },
+  {
+   "id": "locale-order",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-LOCALE-ORDER",
+   "guidelines": [
+    "cen-en16931/2017#EINV-LOCALE-ORDER"
+   ],
+   "text": "The page is written in the language of the order itself."
+  },
+  {
+   "id": "page-din5008",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-DIN5008",
+   "guidelines": [
+    "din-5008/2020#EINV-PAGE-DIN5008"
+   ],
+   "text": "The page is laid out on the library's letter sheet (DIN 5008 Form B)."
+  },
+  {
+   "id": "vat-label",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-VAT-LABEL",
+   "guidelines": [
+    "cen-en16931/2017#EINV-VAT-LABEL"
+   ],
+   "text": "Every VAT number on the page carries its label."
+  },
+  {
+   "id": "peppol",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PEPPOL",
+   "guidelines": [
+    "peppol-bis-billing/3.0#EINV-PEPPOL"
+   ],
+   "text": "The official Peppol BIS Billing 3.0 rules accept the UBL beside the page; skipped without them."
+  },
+  {
+   "id": "credit-type",
+   "stage": "both",
+   "grader": "script",
+   "script": "credit_note_check.py",
+   "rule": "INV-CREDIT-TYPE",
+   "guidelines": [
+    "cen-en16931/2017#INV-CREDIT-TYPE"
+   ],
+   "text": "A credit note: UBL CreditNote, type 381, its own number, a page that calls itself one."
+  },
+  {
+   "id": "credit-ref",
+   "stage": "both",
+   "grader": "script",
+   "script": "credit_note_check.py",
+   "rule": "INV-CREDIT-REF",
+   "guidelines": [
+    "cen-en16931/2017#INV-CREDIT-REF"
+   ],
+   "text": "It names the invoice it amends, number and date, in the XML and on the page."
+  },
+  {
+   "id": "credit-vat",
+   "stage": "both",
+   "grader": "script",
+   "script": "credit_note_check.py",
+   "rule": "INV-CREDIT-VAT",
+   "guidelines": [
+    "cen-en16931/2017#INV-CREDIT-VAT"
+   ],
+   "text": "One VAT group per rate, totals that add up."
+  },
+  {
+   "id": "dk-invoice",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "rule": "DK-INVOICE",
+   "guidelines": [
+    "dk-momsbekendtgorelsen/2026#DK-INVOICE"
+   ],
+   "text": "CVR, both parties, unit price, rate and VAT on the page; the CVR under 0184 in the UBL."
+  },
+  {
+   "id": "company-particulars",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PARTICULARS",
+   "guidelines": [
+    "invoice-company-particulars/2026-10#EINV-PARTICULARS"
+   ],
+   "text": "The page states what the seller's own company statute puts on an invoice; a particular the files do not give is declared unknown and printed nowhere."
+  },
+  {
+   "id": "only-what-was-done",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "Only the damaged cases are credited, at the invoice's price; nothing is invented."
+  },
+  {
+   "id": "revision-kept",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-2"
+   ],
+   "text": "The revision changes the number of cases and the totals that follow, and nothing else."
+  }
+ ],
+ "truth": {
+  "type_code": "381",
+  "number": "K-2026-031",
+  "issue_date": "2026-10-14",
+  "preceding_invoice": "F-2026-0402",
+  "preceding_invoice_date": "2026-09-28",
+  "delivery_date": "2026-09-28",
+  "currency": "DKK",
+  "buyer_reference": "Sofie Eksempel",
+  "note": "Kreditering af beskadigede kasser fra faktura F-2026-0402.",
+  "seller": {
+   "name": "Prøvehuset Engros ApS",
+   "legal_form": "ApS",
+   "street": "Prøvevej 20",
+   "postcode": "5000",
+   "city": "Odense C",
+   "country": "DK",
+   "cvr": "12345674",
+   "vat_id": "DK12345674",
+   "electronic_address": "0184:12345674",
+   "registered_office": "Odense"
+  },
+  "buyer": {
+   "name": "Eksempel Kontor A/S",
+   "street": "Testgade 7",
+   "postcode": "1050",
+   "city": "København K",
+   "country": "DK",
+   "cvr": "11223346",
+   "vat_id": "DK11223346",
+   "electronic_address": "0184:11223346"
+  },
+  "payment": {
+   "means_code": "42",
+   "bank_reg": "1234",
+   "account": "0001234567"
+  },
+  "doc": "credit_note",
+  "first": {
+   "lines": [
+    {
+     "name": "Kopipapir, kasse à 6 kg",
+     "quantity": 4,
+     "unit": "C62",
+     "unit_price": 189.0,
+     "vat_rate": 25,
+     "vat_category": "S"
+    }
+   ]
+  },
+  "revision": {
+   "lines": [
+    {
+     "name": "Kopipapir, kasse à 6 kg",
+     "quantity": 5,
+     "unit": "C62",
+     "unit_price": 189.0,
+     "vat_rate": 25,
+     "vat_category": "S"
+    }
+   ]
+  }
+ },
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "cen-en16931/2017",
+  "din-5008/2020",
+  "dk-momsbekendtgorelsen/2026",
+  "peppol-bis-billing/3.0"
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and every business, VAT and bank number are invented and obviously fake.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen."
+}

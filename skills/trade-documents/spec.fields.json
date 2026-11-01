@@ -1,0 +1,143 @@
+{
+ "about": "Every key trade_create.py reads from the data file of a quotation, order confirmation, delivery note, pro forma invoice or purchase order. The builder stops on a key that is not here, and on a value of another shape (skills/_shared/spec_guard.py). A fact with no field of its own goes in notes (lines under the totals), or, for a company's own particulars, in seller.further or buyer.further (the sender's print in the footer with its register details).",
+ "open": {
+  "": "notes",
+  "seller": "further",
+  "buyer": "further"
+ },
+ "hints": {
+  "contact": "a contact person goes in \"references\" as {\"label\": \"Contact\", \"value\": \"name, phone, e-mail\"} with the label in the document's language; it prints in the information block",
+  "seller.contact": "a contact person goes in \"references\" as {\"label\": \"Contact\", \"value\": \"name, phone, e-mail\"} with the label in the document's language; it prints in the information block",
+  "buyer.contact": "a contact person goes in \"references\" as {\"label\": \"Contact\", \"value\": \"name, phone, e-mail\"} with the label in the document's language; it prints in the information block",
+  "raised_by": "who raised the order goes in \"references\" as {\"label\": \"Raised by\", \"value\": \"name, role, phone, e-mail\"} with the label in the document's language",
+  "terms": "terms go in \"payment_terms\" (one line), \"delivery_terms\" (an Incoterms rule and place) or \"notes\" (a list of lines under the totals)",
+  "valid_until": "a date with its label goes in \"dates\" as {\"label\": \"Valid until\", \"value\": \"2026-11-14\"}",
+  "delivery_date": "a date with its label goes in \"dates\" as {\"label\": \"Delivery date\", \"value\": \"2026-11-02\"}; a purchase order's own is \"requested_delivery_date\"",
+  "lines.name": "a line's text is \"description\"",
+  "lines.price": "a line's price is \"unit_price\", a number",
+  "lines.note": "a line has no note of its own: put it in the line's \"description\" or in the top-level \"notes\"",
+  "deliver_to.attention": "the delivery address prints as name, street, postcode, city and country: write the person or the opening hours in \"notes\"",
+  "unknown": "what the person's files do not give, printed as nothing and named in the reply: \"number\" (a document not numbered yet) and \"bank\"; a party's own particulars go in that party's \"unknown\""
+ },
+ "defs": {
+  "party": {
+   "name": "text",
+   "legal_form": "text",
+   "attention": "text",
+   "street": "text",
+   "street2": "text",
+   "building": "text",
+   "locality": "text",
+   "postcode": "text",
+   "city": "text",
+   "county": "text",
+   "province": "text",
+   "state": "text",
+   "country": "text",
+   "language": "text",
+   "email": "text",
+   "phone": "text",
+   "vat_id": "text",
+   "registered_office": "text",
+   "register": "text",
+   "register_number": "text",
+   "managing_directors": "text | [text]",
+   "share_capital": "text",
+   "paid_up_capital": "text",
+   "sole_shareholder": "flag | text",
+   "in_liquidation": "flag | text",
+   "directed_by": "text",
+   "group": "text",
+   "siren": "text",
+   "rcs": "text",
+   "abn": "text",
+   "further": [
+    "text"
+   ],
+   "unknown": "text | [text]"
+  }
+ },
+ "fields": {
+  "type": "text",
+  "language": "text",
+  "layout": "text",
+  "number": "text",
+  "issue_date": "text",
+  "currency": "text",
+  "allowances": [
+   {
+    "amount": "number",
+    "percent": "number",
+    "base": "number",
+    "reason": "text",
+    "reason_code": "text",
+    "vat_rate": "rate",
+    "vat_category": "text"
+   }
+  ],
+  "paid_amount": "number",
+  "paid_note": "text",
+  "paid_date": "text",
+  "seller": "@party",
+  "buyer": "@party",
+  "deliver_to": {
+   "name": "text",
+   "street": "text",
+   "postcode": "text",
+   "city": "text",
+   "country": "text"
+  },
+  "references": [
+   {
+    "label": "text",
+    "value": "text"
+   }
+  ],
+  "dates": [
+   {
+    "label": "text",
+    "value": "text"
+   }
+  ],
+  "delivery_terms": {
+   "rule": "text",
+   "place": "text"
+  },
+  "transport": "text",
+  "payment_terms": "text",
+  "bank": {
+   "bank": "text",
+   "iban": "text",
+   "bic": "text",
+   "account": "text"
+  },
+  "unknown": [
+   "text"
+  ],
+  "lines": [
+   {
+    "code": "text",
+    "description": "text",
+    "quantity": "number",
+    "unit": "text",
+    "unit_price": "number",
+    "discount_percent": "number",
+    "discount_amount": "number",
+    "discount_reason": "text",
+    "discount_reason_code": "text",
+    "vat_rate": "rate",
+    "delivered": "number",
+    "hs_code": "text",
+    "origin": "text"
+   }
+  ],
+  "packages": "number",
+  "gross_weight_kg": "number",
+  "notes": [
+   "text"
+  ],
+  "quotation": "text",
+  "requested_delivery_date": "text",
+  "tax_name": "text"
+ }
+}

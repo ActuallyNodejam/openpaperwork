@@ -1,0 +1,118 @@
+{
+  "id": "reconcile-001",
+  "title": "Reconcile payments against invoices",
+  "format": "xlsx",
+  "output": "reconciliation.xlsx",
+  "person": "A bookkeeper checking a month of customer payments.",
+  "sector": {
+    "naics": "42",
+    "name": "Wholesale Trade"
+  },
+  "occupation": {
+    "soc": "43-3031.00",
+    "name": "Bookkeeping, Accounting, and Auditing Clerks"
+  },
+  "review": [
+    "Every invoice and payment from the three inputs is kept.",
+    "Paid and Open are formulas over the Payments sheet; statuses and the open total are correct.",
+    "The INV-1040 payment is on the Unmatched sheet; the overpayment is flagged, not netted.",
+    "Readable labels and currency with no clipped columns."
+  ],
+  "revised_review": [
+    "INV-1043 is Paid and the open total falls to 135.00."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#FMT-2",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "inputs-kept",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-1",
+        "openpaperwork/0.1.0#REV-2"
+      ],
+      "text": "All five invoices and all five payments appear with their original references, parties, dates and amounts; at the revision stage the 2026-10-02 INV-1043 payment of 920.00 is added and nothing else changes."
+    },
+    {
+      "id": "matching",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-1"
+      ],
+      "text": "First stage: INV-1041 Paid (open 0.00), INV-1042 Part paid (paid 300.00, open 180.00), INV-1043 Unpaid (open 920.00), INV-1044 Paid, INV-1045 Overpaid (paid 650.00, open -45.00 or flagged as 45.00 overpaid); open total 1055.00 (or 1100.00 receivable with the 45.00 overpayment shown separately). Revision stage: INV-1043 Paid and the open total 135.00 (or 180.00 with the overpayment separate)."
+    },
+    {
+      "id": "unmatched",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-2"
+      ],
+      "text": "The 95.00 payment referenced INV-1040 is on the Unmatched sheet and counted against no invoice; the INV-1045 overpayment is flagged, not written off, netted against another invoice or moved."
+    },
+    {
+      "id": "recalc",
+      "stage": "both",
+      "grader": "recalc",
+      "guidelines": [
+        "openpaperwork/0.1.0#CALC-1"
+      ],
+      "text": "After raising the INV-1042 payment by EUR 10 in a copy, recalculation in LibreOffice raises INV-1042 Paid EUR by EUR 10.",
+      "recalc": {
+        "edit": {
+          "sheet": "Payments",
+          "key_col": "Reference",
+          "key": "INV-1042",
+          "col": "Amount EUR",
+          "delta": 10
+        },
+        "check": {
+          "sheet": "Invoices",
+          "key_col": "Invoice",
+          "key": "INV-1042",
+          "col": "Paid EUR",
+          "factor": 1
+        }
+      }
+    },
+    {
+      "id": "print-width",
+      "stage": "both",
+      "grader": "render",
+      "guidelines": [
+        "openpaperwork/0.1.0#PAGE-1"
+      ],
+      "max_pages": "sheets",
+      "text": "Printed, each sheet fits on one page, so the PDF has no more pages than the workbook has sheets."
+    },
+    {
+      "id": "labels",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#READ-1"
+      ],
+      "text": "Sheets, headers, currency and statuses are clearly labelled and readable."
+    }
+  ],
+  "status": "draft",
+  "locale": "en",
+  "source": "Synthetic material created for this evaluation pack; no customer inputs.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+  "guidelines": [
+    "openpaperwork/0.1.0",
+    "every-file/1.1.0"
+  ],
+  "version": "1.2.0"
+}

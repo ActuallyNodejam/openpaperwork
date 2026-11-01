@@ -1,0 +1,60 @@
+{
+  "issuer": "aksjeloven",
+  "version": "1997-44",
+  "link": "https://lovdata.no/lov/1997-06-13-44",
+  "license": "Norwegian law, not protected by copyright (åndsverkloven § 14); restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Aksjeloven § 6-29 (styreprotokoll) and § 5-16 (protokoll fra generalforsamling)",
+  "source": "Lov om aksjeselskaper (aksjeloven), LOV-1997-06-13-44; § 6-29 as amended by lov 16. juni 2017 nr. 71, § 5-16 as amended by lov 28. mai 2021 nr. 51. Read on lovdata.no 2026-10-09.",
+  "rules": [
+    {
+      "id": "NO-MIN-01",
+      "grader": "script",
+      "text": "Board minutes give at least the time and place, the participants, how the board dealt with the matter (Behandlingsmåte) and its decisions.",
+      "source": "§ 6-29 (1) første punktum",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "NO-MIN-02",
+      "grader": "script",
+      "text": "When a decision is not unanimous, the minutes say who voted for and who voted against.",
+      "source": "§ 6-29 (1)",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "NO-MIN-03",
+      "grader": "script",
+      "text": "Every board member who took part signs; a board of five or more that met may instead pick two members to sign.",
+      "source": "§ 6-29 (1)",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "NO-MIN-04",
+      "grader": "script",
+      "text": "A board member or the general manager who disagrees may have their view recorded in the minutes.",
+      "source": "§ 6-29 (2)",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "NO-MIN-05",
+      "grader": "script",
+      "text": "General meeting minutes give the time and form of the meeting and each decision with the result of the vote; the list of shareholders present is put in or attached.",
+      "source": "§ 5-16 (1)",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "NO-MIN-06",
+      "grader": "script",
+      "text": "The chair and at least one other person the general meeting picks among those present sign the minutes.",
+      "source": "§ 5-16 (2)",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "NO-MIN-07",
+      "grader": "judge",
+      "text": "Board and general meeting minutes are kept safely for the company's life.",
+      "source": "§ 6-29 (3), § 5-16 (3)"
+    }
+  ]
+}

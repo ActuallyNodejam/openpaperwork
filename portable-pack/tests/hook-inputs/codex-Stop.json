@@ -1,0 +1,11 @@
+{
+  "session_id": "01a12300-f6e9-7661-bda5-22f9b9da8b61",
+  "turn_id": "01a12300-f71e-79b3-b11c-947978b4727b",
+  "transcript_path": "/home/person/.codex/sessions/2026/10/10/rollout-2026-10-10T01-30-28-01a12300-f6e9-7661-bda5-22f9b9da8b61.jsonl",
+  "cwd": "/home/person/work",
+  "hook_event_name": "Stop",
+  "model": "gpt-5.6-terra",
+  "permission_mode": "bypassPermissions",
+  "stop_hook_active": false,
+  "last_assistant_message": "Ran `python3 make_invoice.py order.json invoice.pdf` successfully."
+}

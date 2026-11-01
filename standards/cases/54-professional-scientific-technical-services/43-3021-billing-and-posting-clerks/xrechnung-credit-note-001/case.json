@@ -1,0 +1,205 @@
+{
+ "id": "xrechnung-credit-note-001",
+ "title": "Credit a German public buyer for a cancelled training day and returned handbooks, as XRechnung and a page",
+ "person": "The billing clerk of a small training company crediting a district administration against an invoice already sent.",
+ "format": "xml",
+ "output": "credit-note.xml",
+ "extra_outputs": [
+  "credit-note.pdf"
+ ],
+ "locale": "de-DE",
+ "sector": {
+  "naics": "54",
+  "name": "Professional, Scientific, and Technical Services"
+ },
+ "occupation": {
+  "soc": "43-3021.00",
+  "name": "Billing and Posting Clerks"
+ },
+ "review": [
+  "The credit note GS-2026-0042 credits one training day at 1.200,00 EUR (19 %) and ten handbooks at 24,50 EUR (7 %) against invoice RE-2026-0311 of 15.09.2026: 1.445,00 EUR plus 245,15 EUR VAT, 1.690,15 EUR."
+ ],
+ "revised_review": [
+  "Twelve handbooks are credited instead of ten (294,00 EUR at 7 %), the total is 1.742,58 EUR, and nothing else changed."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "credit-type",
+   "stage": "both",
+   "grader": "script",
+   "script": "credit_note_check.py",
+   "rule": "INV-CREDIT-TYPE",
+   "guidelines": [
+    "cen-en16931/2017#INV-CREDIT-TYPE"
+   ],
+   "text": "The XML is a credit note, type 381, with its own number, and the page calls itself one."
+  },
+  {
+   "id": "credit-ref",
+   "stage": "both",
+   "grader": "script",
+   "script": "credit_note_check.py",
+   "rule": "INV-CREDIT-REF",
+   "guidelines": [
+    "cen-en16931/2017#INV-CREDIT-REF",
+    "eu-vat-directive/2006-112#INV-CREDIT-AMENDS"
+   ],
+   "text": "The credit note names the invoice it amends by number and date, in the XML and on the page."
+  },
+  {
+   "id": "credit-sign",
+   "stage": "both",
+   "grader": "script",
+   "script": "credit_note_check.py",
+   "rule": "INV-CREDIT-SIGN",
+   "guidelines": [
+    "cen-en16931/2017#INV-CREDIT-SIGN"
+   ],
+   "text": "Every amount and quantity is positive."
+  },
+  {
+   "id": "credit-vat",
+   "stage": "both",
+   "grader": "script",
+   "script": "credit_note_check.py",
+   "rule": "INV-CREDIT-VAT",
+   "guidelines": [
+    "cen-en16931/2017#INV-CREDIT-VAT"
+   ],
+   "text": "One VAT group per rate, each the sum of the credited lines, and totals that add up to the case's figures."
+  },
+  {
+   "id": "xrechnung",
+   "stage": "both",
+   "grader": "script",
+   "script": "credit_note_check.py",
+   "rule": "INV-XRECHNUNG",
+   "guidelines": [
+    "kosit-xrechnung/3.0#INV-XRECHNUNG",
+    "kosit-xrechnung/3.0#BR-DE-1",
+    "kosit-xrechnung/3.0#BR-DE-2",
+    "kosit-xrechnung/3.0#BR-DE-5",
+    "kosit-xrechnung/3.0#BR-DE-6",
+    "kosit-xrechnung/3.0#BR-DE-7",
+    "kosit-xrechnung/3.0#BR-DE-15"
+   ],
+   "text": "The XRechnung rules hold: the Leitweg-ID as buyer reference, payment instructions, and the seller's contact with name, phone and email."
+  },
+  {
+   "id": "page-kind",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-KIND",
+   "guidelines": [
+    "cen-en16931/2017#EINV-PAGE-KIND"
+   ],
+   "text": "The page says credit note in its own language and names the invoice it corrects."
+  },
+  {
+   "id": "page-din5008",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-DIN5008",
+   "guidelines": [
+    "din-5008/2020#EINV-PAGE-DIN5008"
+   ],
+   "text": "The page is laid out on DIN 5008 Form B."
+  },
+  {
+   "id": "only-what-came-back",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "Only the cancelled day and the returned handbooks are credited, at the prices and VAT rates of invoice RE-2026-0311; the two training days that took place and the other handbooks are not."
+  },
+  {
+   "id": "revision-kept",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-2"
+   ],
+   "text": "The revision changes the handbook quantity and the totals that follow from it, and nothing else."
+  }
+ ],
+ "truth": {
+  "doc": "credit_note",
+  "type_code": "381",
+  "number": "GS-2026-0042",
+  "issue_date": "2026-10-12",
+  "preceding_invoice": "RE-2026-0311",
+  "preceding_invoice_date": "2026-09-15",
+  "xrechnung": true,
+  "buyer_reference": "05558000-LT2026-63",
+  "currency": "EUR",
+  "seller": {
+   "name": "Beispiel Seminare GmbH",
+   "country": "DE"
+  },
+  "buyer": {
+   "name": "Kreisverwaltung Lindental",
+   "country": "DE"
+  },
+  "first": {
+   "lines": [
+    {
+     "name": "Schulungstag Datenschutz für die Sachbearbeitung",
+     "quantity": 1,
+     "unit_price": 1200.0,
+     "vat_rate": 19,
+     "vat_category": "S"
+    },
+    {
+     "name": "Kurshandbuch Datenschutz, gedruckt",
+     "quantity": 10,
+     "unit_price": 24.5,
+     "vat_rate": 7,
+     "vat_category": "S"
+    }
+   ]
+  },
+  "revision": {
+   "lines": [
+    {
+     "name": "Schulungstag Datenschutz für die Sachbearbeitung",
+     "quantity": 1,
+     "unit_price": 1200.0,
+     "vat_rate": 19,
+     "vat_category": "S"
+    },
+    {
+     "name": "Kurshandbuch Datenschutz, gedruckt",
+     "quantity": 12,
+     "unit_price": 24.5,
+     "vat_rate": 7,
+     "vat_category": "S"
+    }
+   ]
+  }
+ },
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and numbers are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "cen-en16931/2017",
+  "kosit-xrechnung/3.0",
+  "eu-vat-directive/2006-112",
+  "din-5008/2020"
+ ]
+}

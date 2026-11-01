@@ -1,0 +1,51 @@
+name: Bug report
+description: Something came out wrong. Say what you asked for and what you got, in your own words.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use invented or redistributable files. Remove names, credentials and private information.
+        For a security issue, use the private route in SECURITY.md instead.
+  - type: input
+    id: agent
+    attributes:
+      label: Agent and pack
+      description: Which agent ran it (Claude, ChatGPT, Cursor, Antigravity or another), and which pack if you know.
+    validations:
+      required: false
+  - type: textarea
+    id: what
+    attributes:
+      label: What you asked and what you got
+      description: Your request as you typed it, the file that came back and what is wrong with it.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: OpenPaperwork version
+      description: The version in NODEJAM_VERSION, or the commit, if you know it.
+    validations:
+      required: false
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to get the same result
+      description: The folder's files (invented), the request, and anything you did between turns.
+    validations:
+      required: false
+  - type: textarea
+    id: picture
+    attributes:
+      label: Screenshot
+      description: Attach a screenshot of the page or the reply. Remove private names and information first.
+    validations:
+      required: false
+  - type: input
+    id: system
+    attributes:
+      label: Computer
+      description: The system and its version, for example macOS 26.1 or Ubuntu 24.04.
+    validations:
+      required: false

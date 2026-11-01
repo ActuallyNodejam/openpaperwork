@@ -1,0 +1,56 @@
+# The Python packages the office skills in skills/ import, for the maintainers' checks
+# (scripts/merge-check.sh). People get the same from portable-pack/requirements.txt.
+#
+# python-docx, python-pptx and openpyxl come as their import-compatible forks
+# paper-docx, paper-pptx and paper-xlsx (MIT, same import names; the forks replace
+# the originals). paper-xlsx loads an existing workbook in preserve mode, so an
+# edit keeps the charts, pictures, sparklines and pivots openpyxl drops; the
+# other two add refuse-instead-of-corrupt edits. skills/xlsx/scripts/xlsx_keep.py.
+#
+# Left out on purpose:
+# - marker-pdf (skills/pdf/scripts/extract_marker.py): PyTorch plus OCR models,
+#   about 5 GB. The script reports it missing; OCR stays a server job.
+# - pymupdf and pymupdf4llm: AGPL-3.0. Scanned pages go through
+#   pdf_page_image.py (pypdfium2) and the agent reads the images.
+# - pikepdf: 10.10 wheels need macOS 15; pypdf covers the same jobs.
+# - pytest: tests only.
+#
+# cryptography stays on 48.0.1 (Engine has 49.0.0): 49 and 50 are arm64-only on
+# macOS (no Intel Mac wheel; re-checked 2026-10-12), and the advisories that
+# flag this version fix only in 49 or later, so a bump would trade the Intel
+# Mac away.
+# It comes in through pdfminer.six and gives pypdf its AES-256 (pdf_secure.py).
+[project]
+name = "nodejam-python-runtime"
+version = "0.1.0"
+requires-python = "==3.12.*"
+dependencies = [
+  "paper-docx==0.2.1",
+  "paper-pptx==0.2.1",
+  "paper-xlsx==0.2.2",
+  "lxml==6.1.0",
+  "pypdf==6.20.0",
+  "pypdfium2==5.6.0",
+  "pdfplumber==0.11.9",
+  "pdfminer-six==20251230",
+  "pillow==12.3.0",
+  "numpy==2.3.3",
+  "reportlab==4.5.0",
+  "cryptography==48.0.1",
+  "cffi==2.0.0",
+  "charset-normalizer==3.4.6",
+  "xlsxwriter==3.2.9",
+  "et-xmlfile==2.0.0",
+  "typing-extensions==4.15.0",
+  # IS-Net uses the ported rembg mask path; preserve macOS 12 support.
+  "onnxruntime==1.19.2",
+]
+
+[tool.uv]
+package = false
+# Fail the lock if any dep lacks a wheel for a Mac we ship to.
+required-environments = [
+  "sys_platform == 'darwin' and platform_machine == 'x86_64'",
+  "sys_platform == 'darwin' and platform_machine == 'arm64'",
+  "sys_platform == 'linux' and platform_machine == 'x86_64'",
+]

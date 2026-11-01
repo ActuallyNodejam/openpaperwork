@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- A scenario for the KoSIT validator (github.com/itplr-kosit/validator, Apache-2.0) that checks
+  - an Italian FatturaPA file (FPR12 or FPA12) against schema 1.2.3 of fatturapa.gov.it, valid from 1 April
+  - 2025 (the site reserves all rights in its contents, so the schema is fetched and run, never copied).
+  - This file is ours; the files it names are run from where they are installed, untouched:
+  -   kosit/        the KoSIT XRechnung validator configuration (Apache-2.0): the report stylesheets and
+  -                 the XML Signature schema among its UBL 2.1 files
+  -   fatturapa/    Schema_VFPR12_v1.2.3.xsd
+  - skills/e-invoice/scripts/fetch_validators.py installs them at pinned SHA-256 sums.
+  - The schema imports the W3C XML Signature schema by its address on w3.org. The validator runs without a
+  - network, so the same schema is named first, from the copy OASIS UBL 2.1 carries inside the KoSIT
+  - configuration; the import then finds its namespace loaded and fetches nothing.
+  -->
+<scenarios xmlns="http://www.xoev.de/de/validator/framework/1/scenarios" frameworkVersion="1.0.0">
+  <name>FatturaPA 1.2.3</name>
+  <author>Nodejam OpenPaperwork, e-invoice pack</author>
+  <date>2026-10-10</date>
+  <description>
+    <p>Validates a FatturaPA file against the FatturaPA schema 1.2.3.</p>
+  </description>
+  <scenario>
+    <name>FatturaPA 1.2.3 (schema)</name>
+    <description><p>Validates a FatturaPA file against the FatturaPA schema 1.2.3.</p></description>
+    <namespace prefix="doc">http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2</namespace>
+    <namespace prefix="rep">http://www.xoev.de/de/validator/varl/1</namespace>
+    <match>exists(/doc:FatturaElettronica)</match>
+    <validateWithXmlSchema>
+      <resource>
+        <name>XML Signature core schema (the copy UBL 2.1 carries)</name>
+        <location>kosit/resources/ubl/2.1/xsd/common/UBL-xmldsig-core-schema-2.1.xsd</location>
+      </resource>
+      <resource>
+        <name>FatturaPA schema 1.2.3</name>
+        <location>fatturapa/Schema_VFPR12_v1.2.3.xsd</location>
+      </resource>
+    </validateWithXmlSchema>
+    <createReport>
+      <resource>
+        <name>Validation report</name>
+        <location>kosit/resources/xrechnung-report.xsl</location>
+      </resource>
+    </createReport>
+    <acceptMatch>/rep:report/rep:assessment[1]/rep:accept[1]</acceptMatch>
+  </scenario>
+  <noScenarioReport>
+    <resource>
+      <name>Default Report</name>
+      <location>kosit/resources/default-report.xsl</location>
+    </resource>
+  </noScenarioReport>
+</scenarios>

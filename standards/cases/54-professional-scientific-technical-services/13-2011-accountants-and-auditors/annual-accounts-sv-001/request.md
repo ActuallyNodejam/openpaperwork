@@ -1,0 +1,1 @@
+Kan du göra årsredovisningen för 2025 för Tallbacka Projektledning AB utifrån saldobalansen (`inputs/saldobalans-2025.txt`), förra årets årsredovisning (`inputs/arsredovisning-2024.txt`) och mina anteckningar (`inputs/anteckningar.txt`)? På svenska, som Word-fil, `arsredovisning-2025.docx`.

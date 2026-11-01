@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Service desk quarter</title><style>
+:root{--font:"Helvetica Neue",Helvetica,Arial,sans-serif;
+ --ground:#0B0D10;--paper:#FFFFFF;--ink:#12100E;--ink-2:#4A443E;--ink-3:#9A9views;
+ --line:#E3DCD3;--accent:#D9480F;
+ --m-x:106px;--gutter:24px;--col:120.33px;--head-h:200px;--body-h:768px;--foot-h:112px;
+ --label:19px;--title:44px;--sub:26px;--body:22px;--small:19px;--figure:76px}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{margin:0;padding:0;background:var(--paper);font-family:var(--font);color:var(--ink)}
+.slide{position:relative;width:1920px;height:1080px;display:grid;
+ grid-template-columns:repeat(12,var(--col));
+ grid-template-rows:var(--head-h) var(--body-h) var(--foot-h);
+ column-gap:var(--gutter);padding:0 var(--m-x);justify-content:start;page-break-after:always;
+ border-bottom:1px solid var(--line)}
+.head{grid-column:1 / span 12;grid-row:1;display:flex;flex-direction:column;justify-content:flex-end;
+ padding-bottom:20px;gap:10px}
+.head .label{font-size:var(--label);letter-spacing:2px;text-transform:uppercase;color:var(--accent)}
+.head h1{font-size:var(--title);line-height:1.12;max-width:1500px}
+.head .rule{height:2px;background:var(--accent);width:100%}
+.head .logo{margin-left:auto;font-size:var(--label);letter-spacing:1px;color:var(--ink-2)}
+.body{grid-column:1 / span 12;grid-row:2;display:grid;grid-template-columns:repeat(12,var(--col));
+ column-gap:var(--gutter);align-content:stretch;height:100%}
+.foot{grid-column:1 / span 12;grid-row:3;border-top:1px solid var(--line);display:flex;
+ justify-content:space-between;align-items:center;font-size:var(--small);color:var(--ink-2)}
+.box{display:flex;flex-direction:column;justify-content:center;gap:18px;height:100%}
+.box.text{grid-column:1 / span 4}
+.box.visual{grid-column:5 / span 8}
+.box.full{grid-column:1 / span 12}
+.box.lower{grid-column:1 / span 8;justify-content:flex-end;padding-bottom:40px}
+.box{grid-column:1 / span 12}
+.big{font-size:64px;line-height:1.08;letter-spacing:-.5px}
+.sub{font-size:var(--sub);color:var(--ink-2);max-width:1100px}
+.contents{display:flex;gap:36px;font-size:var(--small);color:var(--ink-2);margin-top:18px}
+.contents b{color:var(--accent);margin-right:8px}
+.stat .n{font-size:var(--figure);line-height:1;font-variant-numeric:tabular-nums}
+.stat .cap{font-size:var(--label);letter-spacing:1px;text-transform:uppercase;color:var(--ink-2)}
+.stat .note{font-size:var(--body);line-height:1.4;color:var(--ink-2)}
+ul.bullets{list-style:none;display:flex;flex-direction:column;gap:16px}
+ul.bullets li{font-size:var(--body);line-height:1.45;color:var(--ink-2);padding-left:20px;position:relative}
+ul.bullets li:before{content:"";position:absolute;left:0;top:12px;width:8px;height:8px;
+ background:var(--accent)}
+table{width:100%;border-collapse:collapse}
+th{font-size:var(--label);letter-spacing:1px;text-transform:uppercase;color:var(--ink-2);
+ text-align:left;border-bottom:1px solid var(--line);padding:14px 10px}
+td{font-size:var(--body);border-bottom:1px solid var(--line);padding:18px 10px}
+.n{text-align:right;font-variant-numeric:tabular-nums}
+.steps{display:grid;grid-template-columns:repeat(9,1fr);align-items:center;height:100%}
+.step{border-top:2px solid var(--accent);padding-top:18px}
+.step .when{font-size:var(--label);letter-spacing:1px;text-transform:uppercase;color:var(--accent)}
+.step .what{font-size:var(--body);color:var(--ink-2);margin-top:8px}
+svg{width:100%;height:100%}
+</style></head><body>
+<section class="slide cover"><div class="head"><div class="label">Service desk</div><div class="logo"></div></div><div class="body"><div class="box lower"><div class="big">Q1 to Q2 2026</div><div class="sub">Requests, resolution and the queue</div><div class="contents"><span><b>01</b>Volume</span><span><b>02</b>Response time</span><span><b>03</b>Limits</span><span><b>04</b>Next actions</span></div></div></div><div class="foot"><div class="name">Service desk quarter</div><div class="page">01</div></div></section><section class="slide" data-type="numbers"><div class="head"><div class="label">Volume</div><h1>The quarter in three figures</h1><div class="rule"></div></div><div class="body"><div class="box text"><div class="stat"><div class="n">150</div><div class="cap">Incoming Q2</div><div class="note">Up from 120</div></div><div class="stat"><div class="n">135</div><div class="cap">Resolved Q2</div><div class="note">No new backlog</div></div><div class="stat"><div class="n">90%</div><div class="cap">Resolved / incoming</div><div class="note">Held</div></div></div><div class="box visual"><div class="vhead"><span></span></div><svg viewBox="0 0 1083 656" preserveAspectRatio="xMidYMid meet"><line x1="70" y1="600" x2="1010" y2="600" stroke="var(--line)" stroke-width="2"/><rect x="100" y="200" width="190" height="400" fill="var(--accent)"></rect><text x="195" y="176" fill="var(--ink)" font-size="32" text-anchor="middle">120</text><text x="195" y="640" fill="var(--ink-2)" font-size="28" text-anchor="middle">Q1</text><rect x="320" y="100" width="190" height="500" fill="var(--ink-2)"></rect><text x="415" y="76" fill="var(--ink)" font-size="32" text-anchor="middle">150</text><text x="415" y="640" fill="var(--ink-2)" font-size="28" text-anchor="middle">Q2</text></svg></div></div><div class="foot"><div class="name">Service desk quarter</div><div class="page">02</div></div></section><section class="slide" data-type="chart-bullets"><div class="head"><div class="label">Types</div><h1>Requests by type</h1><div class="rule"></div></div><div class="body"><div class="box text"><ul class="bullets"><li>Access is the largest group</li><li>Hardware rose from Q1</li></ul></div><div class="box visual"><div class="vhead"><span></span></div><svg viewBox="0 0 1083 656" preserveAspectRatio="xMidYMid meet"><line x1="70" y1="600" x2="1010" y2="600" stroke="var(--line)" stroke-width="2"/><rect x="100" y="100" width="190" height="500" fill="var(--accent)"></rect><text x="195" y="76" fill="var(--ink)" font-size="32" text-anchor="middle">62</text><text x="195" y="640" fill="var(--ink-2)" font-size="28" text-anchor="middle">access</text><rect x="320" y="213" width="190" height="387" fill="var(--ink-2)"></rect><text x="415" y="189" fill="var(--ink)" font-size="32" text-anchor="middle">48</text><text x="415" y="640" fill="var(--ink-2)" font-size="28" text-anchor="middle">hardware</text></svg></div></div><div class="foot"><div class="name">Service desk quarter</div><div class="page">03</div></div></section><section class="slide" data-type="table"><div class="head"><div class="label">Table</div><h1>Requests and resolution</h1><div class="rule"></div></div><div class="body"><div class="box full"><table><thead><tr><th>Measure</th><th class="n">Q1</th><th class="n">Q2</th></tr></thead><tbody><tr><td>Requests</td><td class="n">120</td><td class="n">150</td></tr><tr><td>Resolved</td><td class="n">108</td><td class="n">135</td></tr><tr><td>Ratio</td><td class="n">90%</td><td class="n">90%</td></tr></tbody></table></div></div><div class="foot"><div class="name">Service desk quarter</div><div class="page">04</div></div></section><section class="slide" data-type="timeline"><div class="head"><div class="label">Timeline</div><h1>What changed</h1><div class="rule"></div></div><div class="body"><div class="box full"><div class="steps"><div class="step"><div class="when">Q1</div><div class="what">Median first response 2.4 hours, 108 of 120 resolved, no backlog.</div></div><div class="step"><div class="when">Q2</div><div class="what">Median 2.1 hours, 135 of 150 resolved, access queue 62.</div></div><div class="step"><div class="when">Next</div><div class="what">Hold the median at 2.1, clear access, keep hardware at 48.</div></div><div class="step"><div class="when">Owner</div><div class="what">Service desk, weekly review against the same table.</div></div></div></div></div><div class="foot"><div class="name">Service desk quarter</div><div class="page">05</div></div></section><section class="slide" data-type="closing"><div class="head"><div class="label">Close</div><h1>Where we are</h1><div class="rule"></div></div><div class="body"><div class="box full"><div class="big">Hold the median at 2.1 and clear the access queue.</div><div class="sub">Next quarter</div></div></div><div class="foot"><div class="name">Service desk quarter</div><div class="page">06</div></div></section></body></html>

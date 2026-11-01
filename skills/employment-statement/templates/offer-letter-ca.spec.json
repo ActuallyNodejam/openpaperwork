@@ -1,0 +1,50 @@
+{
+  "language": "en",
+  "law": "us",
+  "work_state": "CA",
+  "given": "2026-10-20",
+  "employer": {
+    "name": "Golden Poppy Electronics Inc.",
+    "address": "500 Example Boulevard, Sacramento, CA 95814",
+    "phone": "(916) 555-0177",
+    "signatory": "Luis Romero, Plant Manager"
+  },
+  "worker": {
+    "name": "Hannah Cho",
+    "address": "1800 J Street, Apt 12, Sacramento, CA 95811"
+  },
+  "job": {
+    "title": "Assembly technician",
+    "description": "Assembling and testing circuit boards on the second line. You report to the line supervisor."
+  },
+  "start": "2026-11-09",
+  "place": "The Sacramento plant, 500 Example Boulevard, Sacramento, CA 95814",
+  "term": {
+    "type": "at-will"
+  },
+  "flsa": {
+    "status": "non-exempt"
+  },
+  "pay": {
+    "amount": 24.0,
+    "currency": "USD",
+    "per": "hour",
+    "overtime_rate": "$36.00 an hour for overtime, $48.00 an hour for double time",
+    "paid": "every other Friday",
+    "method": "direct deposit to your bank account"
+  },
+  "hours": {
+    "pattern": "fixed",
+    "standard": "full-time, 40 hours a week, Monday to Friday, 6:00 a.m. to 2:30 p.m. with a 30-minute unpaid meal period"
+  },
+  "leave": "Paid sick leave as California law provides, and 10 days of paid vacation a year",
+  "benefits": "Health, dental and vision insurance from the first of the month after your start date",
+  "conditions": null,
+  "state_notice": {
+    "allowances": "None",
+    "payday": "every other Friday",
+    "comp_carrier": "Example Mutual Insurance Company, 100 Example Plaza, San Francisco, CA 94105, (415) 555-0100",
+    "sick_leave": "You may accrue and use sick leave, have a right to request and use accrued paid sick leave, may not be terminated or retaliated against for using or requesting it, and may file a complaint against an employer who retaliates",
+    "disaster": "None issued for Sacramento County in the 30 days before your first day"
+  }
+}

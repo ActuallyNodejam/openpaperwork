@@ -1,0 +1,46 @@
+{
+  "title": "Falls after the move to single rooms: a ward audit",
+  "byline": "Ward 7 audit group, an invented example",
+  "language": "en-GB",
+  "marks": "brackets",
+  "sections": [
+    {
+      "heading": "Background",
+      "paragraphs": [
+        "Inpatient falls are among the harms most often reported on medical wards [@okafor2021]. Single rooms may make falls harder to see from the nursing station [@brennan2019; @ward2024].",
+        "The audit standard was set from the trust's falls policy and an earlier audit cycle [@ward2024]."
+      ]
+    },
+    {
+      "heading": "Method",
+      "paragraphs": [
+        "Incident reports for the six months before and after the move were read against the audit tool [@mistral2022], and the findings were grouped by time of day [@quill2025]."
+      ]
+    },
+    {
+      "heading": "Findings",
+      "paragraphs": [
+        "Falls at night rose after the move, the pattern an earlier ward study reported [@okafor2021; @brennan2019; @ward2024; @mistral2022]."
+      ]
+    }
+  ],
+  "references": {
+    "okafor2021": {"type": "article", "authors": ["Okafor-Lindqvist PA", "Brennan-Toft J", "Halloway R"],
+                   "title": "Falls on acute medical wards: an invented cohort", "journal": "J Invent Nurs Stud",
+                   "year": 2021, "volume": "12", "issue": "3", "pages": "45-57", "doi": "10.0000/example.2021.003"},
+    "brennan2019": {"type": "article",
+                    "authors": ["Brennan-Toft J", "Asterly M", "Pell D", "Quorrin S", "Venn T", "Yarrow K", "Zeller F"],
+                    "title": "Line of sight from the nursing station: an invented observation study",
+                    "journal": "Invent Health Facil Q", "year": 2019, "month": "Sep", "volume": "8", "issue": "2",
+                    "pages": "101-9"},
+    "ward2024": {"type": "report", "group": "Example Valley Hospitals Trust",
+                 "title": "Falls prevention policy, invented edition", "place": "Example Valley",
+                 "publisher": "Example Valley Hospitals Trust", "year": 2024, "number": "Policy No.: FP-3"},
+    "mistral2022": {"type": "book", "authors": ["Mistral A", "Fenwick-Oyelaran B"],
+                    "title": "Clinical audit for ward teams: a made-up handbook", "edition": "2nd",
+                    "place": "Exampleton", "publisher": "Placeholder Press", "year": 2022},
+    "quill2025": {"type": "web", "title": "Audit tools for inpatient falls (an invented page)",
+                  "place": "Exampleton", "publisher": "Example Audit Network", "year": 2025,
+                  "updated": "2025 Jun 3", "cited": "2026 Oct 9", "url": "https://example.org/falls-audit-tools"}
+  }
+}

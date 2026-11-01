@@ -1,0 +1,55 @@
+{
+  "language": "nl",
+  "country": "BE",
+  "body": "Hageland Fietsatelier BV",
+  "company_number": "0745.678.901",
+  "meeting": "annual general",
+  "date": "2026-05-19",
+  "start": "18:00",
+  "end": "18:50",
+  "place": "Zetel van de vennootschap, Diestsestraat 88, 3000 Leuven",
+  "chair": "Sofie Jacobs",
+  "secretary": "Tom Willems",
+  "checkers": [
+    "An Goossens"
+  ],
+  "shareholders": [
+    {
+      "name": "Sofie Jacobs",
+      "shares": 600,
+      "votes": 600
+    },
+    {
+      "name": "Voorbeeld Beheer BV",
+      "shares": 300,
+      "votes": 300,
+      "by": "Sofie Jacobs"
+    },
+    {
+      "name": "An Goossens",
+      "shares": 100,
+      "votes": 100
+    }
+  ],
+  "quorum": true,
+  "items": [
+    {
+      "title": "Goedkeuring van de jaarrekening over 2025",
+      "decisions": [
+        "De jaarrekening over het boekjaar 2025 wordt goedgekeurd"
+      ]
+    },
+    {
+      "title": "Bestemming van het resultaat",
+      "decisions": [
+        "De winst van 86.400 euro wordt overgedragen naar het volgende boekjaar"
+      ]
+    },
+    {
+      "title": "Kwijting aan de bestuurders",
+      "decisions": [
+        "Aan de bestuurders wordt kwijting verleend voor het boekjaar 2025"
+      ]
+    }
+  ]
+}

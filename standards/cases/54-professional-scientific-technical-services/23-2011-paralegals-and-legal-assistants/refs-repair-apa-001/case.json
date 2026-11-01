@@ -1,0 +1,127 @@
+{
+ "id": "refs-repair-apa-001",
+ "title": "Repair a numbered reference list into APA 7",
+ "version": "0.1.0",
+ "status": "draft",
+ "format": "docx",
+ "guideline": "apa/7",
+ "checks": [
+  "refcheck"
+ ],
+ "truth": {
+  "doc": "paper",
+  "format": "apa-7-student",
+  "references": 3,
+  "first": {
+   "references": [],
+   "citations": []
+  }
+ },
+ "sector": {
+  "naics": "54",
+  "name": "Professional, Scientific, and Technical Services"
+ },
+ "occupation": {
+  "soc": "23-2011.00",
+  "name": "Paralegals and Legal Assistants"
+ },
+ "output": "report.docx",
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "apa-no-intro",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "APA-NO-INTRO",
+   "guidelines": [
+    "apa/7#APA-NO-INTRO"
+   ],
+   "text": "The paper has no heading named Introduction; the paper title is the opening heading."
+  },
+  {
+   "id": "apa-refs-page",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "APA-REFS-NEW-PAGE",
+   "guidelines": [
+    "apa/7#APA-REFS-NEW-PAGE"
+   ],
+   "text": "The reference list starts on a page of its own."
+  },
+  {
+   "id": "apa-ref-cited",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "APA-REF-CITED",
+   "guidelines": [
+    "apa/7#APA-REF-CITED"
+   ],
+   "text": "Every listed reference is cited in the text and every in-text citation has an entry."
+  },
+  {
+   "id": "locale-paper",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-PAPER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-PAPER"
+   ],
+   "text": "The page is the locale paper size."
+  },
+  {
+   "id": "locale-date",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-DATE",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-DATE"
+   ],
+   "text": "Dates are written in the locale order."
+  },
+  {
+   "id": "locale-number",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-NUMBER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-NUMBER"
+   ],
+   "text": "Numbers use the locale separators."
+  },
+  {
+   "id": "locale-currency",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-CURRENCY",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-CURRENCY"
+   ],
+   "text": "The amount carries the locale currency."
+  }
+ ],
+ "review": [
+  "The file says what the case asks for."
+ ],
+ "revised_review": [
+  "The file still says it after the revision."
+ ],
+ "source": "Synthetic material created for this evaluation pack; no customer inputs.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after the first output is frozen.",
+ "locale": "en-US"
+}

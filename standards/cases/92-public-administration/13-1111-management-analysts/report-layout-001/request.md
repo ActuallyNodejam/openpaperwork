@@ -1,0 +1,1 @@
+Write report.docx from findings.md and steps.csv, following house-style.json exactly. Keep every section in the order given, put the step table in the Findings section, and stay within the page limit. Do not add findings that are not in the inputs.

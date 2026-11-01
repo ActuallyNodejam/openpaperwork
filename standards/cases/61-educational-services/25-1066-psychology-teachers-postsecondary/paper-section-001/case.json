@@ -1,0 +1,513 @@
+{
+  "id": "paper-section-001",
+  "title": "Turn reading notes into an APA 7 related-work section",
+  "person": "A psychology lecturer drafting the related-work section of a short empirical paper.",
+  "format": "docx",
+  "output": "related-work.docx",
+  "review": [
+    "The file renders within three pages.",
+    "Each number and finding (41% under 7 h of 18,400; 6% per hour of 96; caffeine doubling and about 40 min later onset of 310; 14 min of 154; 120 students in Ruiz) matches the notes and is cited to the study it came from.",
+    "The caveats survive: the survey sleep is self-reported, Lindqvist et al. is correlational, Nguyen and Fischer is mostly lab work, Ruiz found an effect only for students completing at least 4 of 5 sessions with no overall effect and no grade data, and Haddad is not cited for a number.",
+    "The unread Park (2017) source is not cited or listed and nothing is attributed to it.",
+    "The section follows the planned order (prevalence, memory, what delays sleep in exam weeks, interventions) and ends on the gap the study fills; the text before References is 600 to 900 words."
+  ],
+  "revised_review": [
+    "Lindqvist et al. reads 2021 in every citation and in References; 2020 appears nowhere for it.",
+    "Mensah and Ortiz (2025) is cited for the evening screen-use point with the 9 minute, n = 212 randomized finding, and appears in References.",
+    "Everything else, including every other finding, caveat and reference, is unchanged in substance."
+  ],
+  "version": "1.3.0",
+  "status": "draft",
+  "locale": "en",
+  "source": "Synthetic material created for this evaluation pack; fictional authors, journals and DOIs under the Crossref test prefix 10.5555.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+  "sector": {
+    "naics": "61",
+    "name": "Educational Services"
+  },
+  "occupation": {
+    "soc": "25-1066.00",
+    "name": "Psychology Teachers, Postsecondary"
+  },
+  "guidelines": [
+    "openpaperwork/0.1.0",
+    "apa/7",
+    "every-file/1.1.0"
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#FMT-2",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "reference-set",
+      "stage": "both",
+      "grader": "script",
+      "rule": "CASE-REFSET",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-2"
+      ],
+      "text": "The References list holds exactly the given sources (seven, or eight after the revision), none invented or repeated, and no other source is cited."
+    },
+    {
+      "id": "cite-list-match",
+      "stage": "both",
+      "grader": "script",
+      "rule": "APA-CIT-1",
+      "guidelines": [
+        "apa/7#APA-CIT-1"
+      ],
+      "text": "Every citation matches a References entry by first author and year, and every entry is cited."
+    },
+    {
+      "id": "cite-author-form",
+      "stage": "both",
+      "grader": "script",
+      "rule": "APA-CIT-2",
+      "guidelines": [
+        "apa/7#APA-CIT-2"
+      ],
+      "text": "Moreau and Lindqvist are cited with et al.; one- and two-author works name every author."
+    },
+    {
+      "id": "cite-ampersand",
+      "stage": "both",
+      "grader": "script",
+      "rule": "APA-CIT-3",
+      "guidelines": [
+        "apa/7#APA-CIT-3"
+      ],
+      "text": "Two-author citations use & in parentheses and and in running text."
+    },
+    {
+      "id": "ref-order",
+      "stage": "both",
+      "grader": "script",
+      "rule": "APA-REF-1",
+      "guidelines": [
+        "apa/7#APA-REF-1"
+      ],
+      "text": "References are alphabetical by first author."
+    },
+    {
+      "id": "ref-hanging",
+      "stage": "both",
+      "grader": "script",
+      "rule": "APA-REF-2",
+      "guidelines": [
+        "apa/7#APA-REF-2"
+      ],
+      "text": "References have a 0.5 inch hanging indent."
+    },
+    {
+      "id": "ref-doi",
+      "stage": "both",
+      "grader": "script",
+      "rule": "APA-REF-3",
+      "guidelines": [
+        "apa/7#APA-REF-3"
+      ],
+      "text": "DOIs are https://doi.org/ links; the book, chapter and report get no DOI."
+    },
+    {
+      "id": "ref-authors",
+      "stage": "both",
+      "grader": "script",
+      "rule": "APA-REF-4",
+      "guidelines": [
+        "apa/7#APA-REF-4"
+      ],
+      "text": "Author elements list every author as Surname, Initials with & before the last."
+    },
+    {
+      "id": "ref-year",
+      "stage": "both",
+      "grader": "script",
+      "rule": "APA-REF-5",
+      "guidelines": [
+        "apa/7#APA-REF-5"
+      ],
+      "text": "Each entry has the correct year in (Year). form (Lindqvist 2021 after the revision)."
+    },
+    {
+      "id": "ref-numbers",
+      "stage": "both",
+      "grader": "script",
+      "rule": "APA-REF-6",
+      "guidelines": [
+        "apa/7#APA-REF-6"
+      ],
+      "text": "Volume(issue) and en-dash page ranges are right for every article."
+    },
+    {
+      "id": "ref-italics",
+      "stage": "both",
+      "grader": "script",
+      "rule": "APA-REF-7",
+      "guidelines": [
+        "apa/7#APA-REF-7"
+      ],
+      "text": "Journal names and volumes, the book, report and edited-book titles are italic; article and chapter titles are not."
+    },
+    {
+      "id": "ref-titles",
+      "stage": "both",
+      "grader": "script",
+      "rule": "APA-REF-8",
+      "guidelines": [
+        "apa/7#APA-REF-8"
+      ],
+      "text": "Titles are in sentence case exactly as sources.csv gives them."
+    },
+    {
+      "id": "ref-label",
+      "stage": "both",
+      "grader": "script",
+      "rule": "APA-FMT-1",
+      "guidelines": [
+        "apa/7#APA-FMT-1"
+      ],
+      "text": "The References label is bold and centered."
+    },
+    {
+      "id": "double-spacing",
+      "stage": "both",
+      "grader": "script",
+      "rule": "APA-FMT-2",
+      "guidelines": [
+        "apa/7#APA-FMT-2"
+      ],
+      "text": "All text is double spaced with no extra space between paragraphs."
+    },
+    {
+      "id": "font",
+      "stage": "both",
+      "grader": "script",
+      "rule": "APA-FMT-3",
+      "guidelines": [
+        "apa/7#APA-FMT-3"
+      ],
+      "text": "One accepted APA font is used throughout."
+    },
+    {
+      "id": "indent",
+      "stage": "both",
+      "grader": "script",
+      "rule": "APA-FMT-4",
+      "guidelines": [
+        "apa/7#APA-FMT-4"
+      ],
+      "text": "Body paragraphs have a 0.5 inch first-line indent."
+    },
+    {
+      "id": "heading",
+      "stage": "both",
+      "grader": "script",
+      "rule": "APA-FMT-5",
+      "guidelines": [
+        "apa/7#APA-FMT-5"
+      ],
+      "text": "Related Work is a centered bold level 1 heading."
+    },
+    {
+      "id": "pages",
+      "stage": "both",
+      "grader": "render",
+      "guidelines": [
+        "openpaperwork/0.1.0#PAGE-1"
+      ],
+      "max_pages": 3,
+      "text": "The file renders within three pages."
+    },
+    {
+      "id": "facts",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-1",
+        "apa/7#APA-CIT-5"
+      ],
+      "text": "Each number and finding (41% under 7 h of 18,400; 6% per hour of 96; caffeine doubling and about 40 min later onset of 310; 14 min of 154; 120 students in Ruiz) matches the notes and is cited to the study it came from."
+    },
+    {
+      "id": "caveats",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-2"
+      ],
+      "text": "The caveats survive: the survey sleep is self-reported, Lindqvist et al. is correlational, Nguyen and Fischer is mostly lab work, Ruiz found an effect only for students completing at least 4 of 5 sessions with no overall effect and no grade data, and Haddad is not cited for a number."
+    },
+    {
+      "id": "no-park",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-2"
+      ],
+      "text": "The unread Park (2017) source is not cited or listed and nothing is attributed to it."
+    },
+    {
+      "id": "structure",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#READ-1"
+      ],
+      "text": "The section follows the planned order (prevalence, memory, what delays sleep in exam weeks, interventions) and ends on the gap the study fills; the text before References is 600 to 900 words."
+    },
+    {
+      "id": "revised-year",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#REV-1"
+      ],
+      "text": "Lindqvist et al. reads 2021 in every citation and in References; 2020 appears nowhere for it."
+    },
+    {
+      "id": "mensah-added",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#REV-1",
+        "apa/7#APA-CIT-5"
+      ],
+      "text": "Mensah and Ortiz (2025) is cited for the evening screen-use point with the 9 minute, n = 212 randomized finding, and appears in References."
+    },
+    {
+      "id": "kept",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#REV-2"
+      ],
+      "text": "Everything else, including every other finding, caveat and reference, is unchanged in substance."
+    }
+  ],
+  "truth": {
+    "style": "apa",
+    "first": {
+      "references": [
+        {
+          "id": "haddad",
+          "type": "book",
+          "authors": [
+            "Haddad"
+          ],
+          "year": "2019",
+          "title": "The rested learner: Sleep, memory, and academic life"
+        },
+        {
+          "id": "kowalczyk",
+          "type": "article",
+          "authors": [
+            "Kowalczyk",
+            "Tanaka"
+          ],
+          "year": "2022",
+          "title": "Caffeine use and sleep timing during examination periods",
+          "container": "Psychology of Learning Quarterly",
+          "volume": "31",
+          "issue": "4",
+          "pages": "455–470",
+          "doi": "10.5555/plq.31.4.455"
+        },
+        {
+          "id": "lindqvist",
+          "type": "article",
+          "authors": [
+            "Lindqvist",
+            "Baptiste",
+            "Osei"
+          ],
+          "year": "2020",
+          "title": "Sleep duration and next-day recall in first-year undergraduates",
+          "container": "Journal of Student Sleep Research",
+          "volume": "14",
+          "issue": "2",
+          "pages": "101–118",
+          "doi": "10.5555/jssr.14.2.101"
+        },
+        {
+          "id": "moreau",
+          "type": "article",
+          "authors": [
+            "Moreau",
+            "Adeyemi",
+            "Silva",
+            "Grant"
+          ],
+          "year": "2023",
+          "title": "Evening screen use and sleep latency in college students: A diary study",
+          "container": "Journal of Student Sleep Research",
+          "volume": "17",
+          "issue": "1",
+          "pages": "22–39",
+          "doi": "10.5555/jssr.17.1.22"
+        },
+        {
+          "id": "nguyen",
+          "type": "chapter",
+          "authors": [
+            "Nguyen",
+            "Fischer"
+          ],
+          "year": "2018",
+          "title": "Sleep and consolidation of declarative memory",
+          "container": "Memory in everyday learning",
+          "pages": "77–98"
+        },
+        {
+          "id": "ruiz",
+          "type": "article",
+          "authors": [
+            "Ruiz"
+          ],
+          "year": "2021",
+          "title": "A brief sleep-hygiene intervention for exam weeks",
+          "container": "Applied Educational Psychology",
+          "volume": "9",
+          "issue": "3",
+          "pages": "210–224",
+          "doi": "10.5555/aep.9.3.210"
+        },
+        {
+          "id": "wellbeing",
+          "type": "report",
+          "group": true,
+          "authors": [
+            "Student Wellbeing Survey Group"
+          ],
+          "year": "2024",
+          "title": "National student wellbeing survey 2024: Sleep and study"
+        }
+      ],
+      "level1_headings": [
+        "Related Work"
+      ]
+    },
+    "revision": {
+      "references": [
+        {
+          "id": "haddad",
+          "type": "book",
+          "authors": [
+            "Haddad"
+          ],
+          "year": "2019",
+          "title": "The rested learner: Sleep, memory, and academic life"
+        },
+        {
+          "id": "kowalczyk",
+          "type": "article",
+          "authors": [
+            "Kowalczyk",
+            "Tanaka"
+          ],
+          "year": "2022",
+          "title": "Caffeine use and sleep timing during examination periods",
+          "container": "Psychology of Learning Quarterly",
+          "volume": "31",
+          "issue": "4",
+          "pages": "455–470",
+          "doi": "10.5555/plq.31.4.455"
+        },
+        {
+          "id": "lindqvist",
+          "type": "article",
+          "authors": [
+            "Lindqvist",
+            "Baptiste",
+            "Osei"
+          ],
+          "year": "2021",
+          "title": "Sleep duration and next-day recall in first-year undergraduates",
+          "container": "Journal of Student Sleep Research",
+          "volume": "14",
+          "issue": "2",
+          "pages": "101–118",
+          "doi": "10.5555/jssr.14.2.101"
+        },
+        {
+          "id": "mensah",
+          "type": "article",
+          "authors": [
+            "Mensah",
+            "Ortiz"
+          ],
+          "year": "2025",
+          "title": "Phone-free bedrooms and sleep onset in undergraduates: A randomized trial",
+          "container": "Journal of Student Sleep Research",
+          "volume": "19",
+          "issue": "2",
+          "pages": "140–152",
+          "doi": "10.5555/jssr.19.2.140"
+        },
+        {
+          "id": "moreau",
+          "type": "article",
+          "authors": [
+            "Moreau",
+            "Adeyemi",
+            "Silva",
+            "Grant"
+          ],
+          "year": "2023",
+          "title": "Evening screen use and sleep latency in college students: A diary study",
+          "container": "Journal of Student Sleep Research",
+          "volume": "17",
+          "issue": "1",
+          "pages": "22–39",
+          "doi": "10.5555/jssr.17.1.22"
+        },
+        {
+          "id": "nguyen",
+          "type": "chapter",
+          "authors": [
+            "Nguyen",
+            "Fischer"
+          ],
+          "year": "2018",
+          "title": "Sleep and consolidation of declarative memory",
+          "container": "Memory in everyday learning",
+          "pages": "77–98"
+        },
+        {
+          "id": "ruiz",
+          "type": "article",
+          "authors": [
+            "Ruiz"
+          ],
+          "year": "2021",
+          "title": "A brief sleep-hygiene intervention for exam weeks",
+          "container": "Applied Educational Psychology",
+          "volume": "9",
+          "issue": "3",
+          "pages": "210–224",
+          "doi": "10.5555/aep.9.3.210"
+        },
+        {
+          "id": "wellbeing",
+          "type": "report",
+          "group": true,
+          "authors": [
+            "Student Wellbeing Survey Group"
+          ],
+          "year": "2024",
+          "title": "National student wellbeing survey 2024: Sleep and study"
+        }
+      ],
+      "level1_headings": [
+        "Related Work"
+      ]
+    }
+  }
+}

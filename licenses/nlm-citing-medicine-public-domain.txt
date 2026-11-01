@@ -1,0 +1,18 @@
+Citing Medicine: The NLM Style Guide for Authors, Editors, and Publishers, 2nd edition
+Karen Patrias, author; Dan Wendling, technical editor. National Library of Medicine (US), Bethesda (MD), 2007-.
+https://www.ncbi.nlm.nih.gov/books/NBK7256/
+and Samples of Formatted References for Authors of Journal Articles, National Library of Medicine,
+https://www.nlm.nih.gov/bsd/uniform_requirements.html, read 2026-10-09.
+
+Works of the United States Government, not subject to copyright in the United States (17 U.S.C. 105).
+Credited here though no licence asks for it. The National Library of Medicine does not endorse this software.
+
+Changes: the citation-sequence system and the forms of chapter 1 (journal articles, 1B on the Internet) and
+chapter 2 (books), and the sample references' six-author limit and year;volume(issue):pages form, are restated
+in our own words in skills/_checks/academic_style.py (the VANC- rules), skills/academic-references (SKILL.md,
+scripts/vancouver_create.py) and standards/guidelines/nlm-citing-medicine. The example references there
+are invented.
+
+Also read, not copied: the ICMJE Recommendations (updated January 2026), section IV.A.3.g, cited by section and
+restated, no text quoted; and vancouver.csl from the Citation Style Language styles repository (CC BY-SA 3.0),
+read to learn the forms, no file or text copied.

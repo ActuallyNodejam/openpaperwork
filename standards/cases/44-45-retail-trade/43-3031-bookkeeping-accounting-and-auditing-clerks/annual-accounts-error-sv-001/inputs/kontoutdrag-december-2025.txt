@@ -1,0 +1,10 @@
+Banken, kontoutdrag för Cykelverkstan i Växjö AB
+Företagskonto, december 2025
+
+Datum        Text                         Belopp       Saldo
+2025-12-01   Ingående saldo                           131 450,00
+2025-12-05   Kortinlösen november        48 920,00   180 370,00
+2025-12-10   Leverantörsbetalningar     -31 640,00   148 730,00
+2025-12-25   Löner december             -21 900,00   126 830,00
+2025-12-30   Kortinlösen december        11 170,00   138 000,00
+2025-12-31   Utgående saldo                           138 000,00

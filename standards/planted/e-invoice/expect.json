@@ -1,0 +1,24 @@
+{
+  "pack": "e-invoice",
+  "template": "invoice-spec.json",
+  "clean": "invoice.pdf",
+  "files": [
+    "spec.json",
+    "invoice.xml",
+    "invoice.html",
+    "invoice.pdf"
+  ],
+  "faults": [
+    {
+      "file": "xml-total-edited.xml",
+      "replaces": "invoice.xml",
+      "planted": "the amount due in the XML beside the PDF is changed by hand",
+      "fails": [
+        "EINV-FACTURX"
+      ],
+      "also_failed_when_made": [
+        "EINV-KOSIT"
+      ]
+    }
+  ]
+}

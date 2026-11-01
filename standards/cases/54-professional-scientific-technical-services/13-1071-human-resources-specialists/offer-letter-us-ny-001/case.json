@@ -1,0 +1,117 @@
+{
+  "id": "offer-letter-us-ny-001",
+  "title": "Write a New York offer letter for a non-exempt lab technician with the state pay notice",
+  "person": "An HR specialist at a small Albany testing lab hiring an hourly lab technician.",
+  "format": "docx",
+  "output": "offer-letter.docx",
+  "locale": "en-US",
+  "sector": {
+    "naics": "54",
+    "name": "Professional, Scientific, and Technical Services"
+  },
+  "occupation": {
+    "soc": "13-1071.00",
+    "name": "Human Resources Specialists"
+  },
+  "review": [
+    "An at-will offer to Jordan Ellis as lab technician from November 16, 2026; non-exempt with overtime at one and one-half times over 40 hours, $24.00 an hour and $36.00 overtime, paid weekly on Fridays by direct deposit; the New York 195(1) notice with no allowances, pay day Friday, the employer's name, DBA, addresses, telephone, primary language English and an acknowledgment; on Letter paper; no federal duty claimed."
+  ],
+  "revised_review": [
+    "The rate is $25.00 an hour and $37.50 overtime; nothing else changes."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "atwill",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-US-ATWILL",
+      "guidelines": [
+        "us-employment-offer/2026-10#US-01"
+      ],
+      "text": "The employment is at will."
+    },
+    {
+      "id": "flsa",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-US-FLSA",
+      "guidelines": [
+        "us-employment-offer/2026-10#US-02"
+      ],
+      "text": "Non-exempt, with the overtime rule."
+    },
+    {
+      "id": "ny",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-US-STATE",
+      "guidelines": [
+        "us-employment-offer/2026-10#US-03"
+      ],
+      "text": "The New York pay notice items and the acknowledgment."
+    },
+    {
+      "id": "wording",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-US-WORDING",
+      "guidelines": [
+        "us-employment-offer/2026-10#US-05"
+      ],
+      "text": "No claim of a federal written-offer duty."
+    },
+    {
+      "id": "items",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-ITEMS",
+      "guidelines": [
+        "us-employment-offer/2026-10#US-06"
+      ],
+      "text": "Parties, position, start, pay and classification."
+    },
+    {
+      "id": "paper",
+      "stage": "both",
+      "grader": "script",
+      "script": "locale_floor.py",
+      "rule": "LOCALE-PAPER",
+      "guidelines": [
+        "us-employment-offer/2026-10#US-07"
+      ],
+      "text": "US Letter."
+    },
+    {
+      "id": "revised-rate",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "us-employment-offer/2026-10#US-03"
+      ],
+      "text": "$25.00 an hour and $37.50 overtime everywhere the rate appears, nothing else changed."
+    }
+  ],
+  "version": "1.0.0",
+  "status": "draft",
+  "source": "Synthetic material created for this evaluation pack; the companies and people are invented.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+  "guidelines": [
+    "us-employment-offer/2026-10",
+    "every-file/1.1.0"
+  ]
+}

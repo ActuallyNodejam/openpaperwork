@@ -1,0 +1,99 @@
+{
+ "id": "board-minutes-sv-001",
+ "title": "Skriv styrelseprotokollet från mötet om den nya tryckpressen",
+ "person": "The CEO of a small Swedish print company, who takes the board's minutes.",
+ "format": "docx",
+ "output": "protokoll.docx",
+ "locale": "sv",
+ "sector": {
+  "naics": "31-33",
+  "name": "Manufacturing"
+ },
+ "occupation": {
+  "soc": "11-1011.00",
+  "name": "Chief Executives"
+ },
+ "review": [
+  "The decision to buy the digital press on a five-year lease is recorded, with Sara Nyberg's dissent; Jonas Wik signs and Karin Lind and Sara Nyberg check the minutes."
+ ],
+ "revised_review": [
+  "The next meeting is on 1 December 2026, not 24 November."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "head",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-HEAD",
+   "guidelines": [
+    "roberts-rules/1915#MIN-01",
+    "roberts-rules/1915#MIN-02",
+    "roberts-rules/1915#MIN-03"
+   ],
+   "text": "The body, the kind of meeting and the date are given."
+  },
+  {
+   "id": "times",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-TIMES",
+   "guidelines": [
+    "roberts-rules/1915#MIN-09"
+   ],
+   "text": "The opening and adjournment times are given."
+  },
+  {
+   "id": "signed",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-SIGNED",
+   "guidelines": [
+    "roberts-rules/1915#MIN-13"
+   ],
+   "text": "The secretary signs."
+  },
+  {
+   "id": "checked",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-SIGNED",
+   "guidelines": [
+    "aktiebolagslagen/2005-551#MIN-16"
+   ],
+   "text": "Jonas Wik signs vid protokollet; Karin Lind and Sara Nyberg check (justeras)."
+  },
+  {
+   "id": "dissent",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "aktiebolagslagen/2005-551#MIN-17"
+   ],
+   "text": "Sara Nyberg's dissent against the purchase is recorded."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the clubs, companies and people are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "roberts-rules/1915",
+  "aktiebolagslagen/2005-551",
+  "every-file/1.1.0"
+ ]
+}

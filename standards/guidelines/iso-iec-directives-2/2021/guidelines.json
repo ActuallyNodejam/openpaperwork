@@ -1,0 +1,50 @@
+{
+  "issuer": "iso-iec-directives-2",
+  "version": "2021",
+  "link": "https://www.iso.org/directives-and-policies.html",
+  "license": "Copyright ISO/IEC 2021, published free of charge by ISO and IEC. Cited only: each rule is paraphrased in our own words and no text is copied. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-08",
+  "status": "draft",
+  "title": "ISO/IEC Directives, Part 2: Principles and rules for the structure and drafting of ISO and IEC documents",
+  "source": "ISO/IEC Directives, Part 2, ninth edition (Edition 9.0, 2021-05), clause 7 \"Verbal forms for expressions of provisions\" (7.2 to 7.6), read 2026-10-08.",
+  "rules": [
+    {
+      "id": "VF-01",
+      "grader": "script",
+      "text": "A requirement is written with shall, and a prohibition with shall not.",
+      "source": "7.2",
+      "check": "requirements_check.py REQ-VERB"
+    },
+    {
+      "id": "VF-02",
+      "grader": "script",
+      "text": "Must does not stand in for shall; it marks a constraint that comes from outside the document.",
+      "source": "7.2, 7.6",
+      "check": "requirements_check.py REQ-VERB"
+    },
+    {
+      "id": "VF-03",
+      "grader": "judge",
+      "text": "A recommendation is written with should.",
+      "source": "7.3"
+    },
+    {
+      "id": "VF-04",
+      "grader": "judge",
+      "text": "A permission is written with may, not with can or might.",
+      "source": "7.4"
+    },
+    {
+      "id": "VF-05",
+      "grader": "judge",
+      "text": "A possibility or a capability is written with can, not with may.",
+      "source": "7.5"
+    },
+    {
+      "id": "VF-06",
+      "grader": "judge",
+      "text": "May not is never used for a prohibition; a negative permission is rewritten as what is allowed or as a requirement.",
+      "source": "7.2, 7.4"
+    }
+  ]
+}

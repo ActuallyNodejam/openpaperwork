@@ -1,0 +1,76 @@
+{
+  "issuer": "kodeks-pracy",
+  "version": "2026-08",
+  "link": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU19740240141",
+  "license": "Polish normative acts, not the object of copyright (ustawa o prawie autorskim i prawach pokrewnych art. 4 pkt 1); restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Kodeks pracy art. 29: umowa o pracę i informacja o warunkach zatrudnienia",
+  "source": "Ustawa z dnia 26 czerwca 1974 r. – Kodeks pracy, arts. 25, 29 and 29(1), t.j. Dz. U. z 2025 r. poz. 277 as in force on 2026-10-20 (the amendment Dz. U. z 2026 r. poz. 1046 enters into force on 5 November 2026), ISAP. Read 2026-10-09.",
+  "note": "A drafting check, not legal advice: the scripted rules read whether a particular is there, never whether a term is lawful.",
+  "rules": [
+    {
+      "id": "PL-01",
+      "grader": "script",
+      "text": "The contract's own terms are stated, never given by a pointer: the parties with the employer's seat address, the type of contract and the date it was concluded, the kind of work, the place, the pay with its components, the working time basis and the first day.",
+      "source": "art. 29 § 1",
+      "check": "employment_check.py EMPLOY-PL-CONTRACT"
+    },
+    {
+      "id": "PL-02",
+      "grader": "script",
+      "text": "The information of § 3 pkt 1 within 7 days of admission to work, the social insurance institution within 30 days, work abroad before departure.",
+      "source": "art. 29 § 3; art. 29(1) § 2",
+      "check": "employment_check.py EMPLOY-DATES"
+    },
+    {
+      "id": "PL-03",
+      "grader": "script",
+      "text": "The daily and weekly norm and basis of working time, the breaks, the daily and weekly rest, overtime and its compensation, shift changes, moving between places of work, other pay components and benefits, paid leave, the ending of the employment with its notice periods and the time to appeal, training, the collective agreement and the social insurance institution.",
+      "source": "art. 29 § 3 pkt 1 a) to l), pkt 2",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "PL-04",
+      "grader": "script",
+      "text": "Where the employer has no work regulations: when, where and how often pay is paid, the night time, and how arrival, presence and an absence are confirmed and excused; else the statement says the work regulations apply.",
+      "source": "art. 29 § 3 pkt 1 m)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "PL-05",
+      "grader": "script",
+      "text": "The pay as an amount with its components.",
+      "source": "art. 29 § 1 pkt 3",
+      "check": "employment_check.py EMPLOY-PAY"
+    },
+    {
+      "id": "PL-06",
+      "grader": "script",
+      "text": "A trial-period contract of at most 3 months.",
+      "source": "art. 25 § 2, § 2(2), § 2(3)",
+      "check": "employment_check.py EMPLOY-PROBATION"
+    },
+    {
+      "id": "PL-07",
+      "grader": "script",
+      "text": "The information of § 3 pkt 1 a) to f), h) to k) and pkt 2 may name the provisions of law that set it; the contract's own terms and the collective agreement may not.",
+      "source": "art. 29 § 3(1)",
+      "check": "employment_check.py EMPLOY-REFERENCE"
+    },
+    {
+      "id": "PL-08",
+      "grader": "script",
+      "text": "Work abroad over 4 consecutive weeks: the country, the expected length, the currency, the benefits and whether and how the return is provided.",
+      "source": "art. 29(1) § 2",
+      "check": "employment_check.py EMPLOY-ABROAD"
+    },
+    {
+      "id": "PL-09",
+      "grader": "script",
+      "text": "Every heading is in Polish.",
+      "source": "art. 29",
+      "check": "employment_check.py EMPLOY-LANG"
+    }
+  ]
+}

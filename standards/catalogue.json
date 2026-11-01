@@ -1,0 +1,1062 @@
+[
+  {
+    "id": "brief-001",
+    "title": "Turn meeting notes into a shareable brief",
+    "version": "1.3.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/13-1082-project-management-specialists/brief-001",
+    "sector": "54",
+    "occupation": "13-1082.00"
+  },
+  {
+    "id": "quotes-001",
+    "title": "Compare quotes against a budget and deadline",
+    "version": "1.4.0",
+    "status": "draft",
+    "format": "xlsx",
+    "path": "cases/54-professional-scientific-technical-services/13-1023-purchasing-agents/quotes-001",
+    "sector": "54",
+    "occupation": "13-1023.00"
+  },
+  {
+    "id": "update-001",
+    "title": "Make a short team update from figures",
+    "version": "1.4.0",
+    "status": "draft",
+    "format": "pptx",
+    "path": "cases/54-professional-scientific-technical-services/43-1011-first-line-supervisors-office-admin/update-001",
+    "sector": "54",
+    "occupation": "43-1011.00"
+  },
+  {
+    "id": "budget-001",
+    "title": "Summarize quarterly spending against a budget",
+    "version": "1.2.0",
+    "status": "draft",
+    "format": "xlsx",
+    "path": "cases/81-other-services/11-9151-social-and-community-service-managers/budget-001",
+    "sector": "81",
+    "occupation": "11-9151.00"
+  },
+  {
+    "id": "memo-001",
+    "title": "Turn meeting notes into a one-page staff memo",
+    "version": "1.2.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/62-health-care-and-social-assistance/43-6013-medical-secretaries-and-administrative-assistants/memo-001",
+    "sector": "62",
+    "occupation": "43-6013.00"
+  },
+  {
+    "id": "safety-001",
+    "title": "Make a quarterly safety briefing deck",
+    "version": "1.2.0",
+    "status": "draft",
+    "format": "pptx",
+    "path": "cases/48-49-transportation-and-warehousing/53-1042-first-line-supervisors-of-helpers-laborers-and-material-movers-hand/safety-001",
+    "sector": "48-49",
+    "occupation": "53-1042.00"
+  },
+  {
+    "id": "reconcile-001",
+    "title": "Reconcile payments against invoices",
+    "version": "1.2.0",
+    "status": "draft",
+    "format": "xlsx",
+    "path": "cases/42-wholesale-trade/43-3031-bookkeeping-accounting-and-auditing-clerks/reconcile-001",
+    "sector": "42",
+    "occupation": "43-3031.00"
+  },
+  {
+    "id": "paper-section-001",
+    "title": "Turn reading notes into an APA 7 related-work section",
+    "version": "1.3.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/61-educational-services/25-1066-psychology-teachers-postsecondary/paper-section-001",
+    "sector": "61",
+    "occupation": "25-1066.00"
+  },
+  {
+    "id": "apa-refs-001",
+    "title": "Convert a draft with numbered citations to APA 7 references",
+    "version": "1.3.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/61-educational-services/19-4061-social-science-research-assistants/apa-refs-001",
+    "sector": "61",
+    "occupation": "19-4061.00"
+  },
+  {
+    "id": "tracked-001",
+    "title": "Mark agreed contract changes as tracked changes",
+    "version": "1.2.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/23-2011-paralegals-and-legal-assistants/tracked-001",
+    "sector": "54",
+    "occupation": "23-2011.00"
+  },
+  {
+    "id": "deck-edit-001",
+    "title": "Update an existing quarterly deck in place",
+    "version": "1.2.0",
+    "status": "draft",
+    "format": "pptx",
+    "path": "cases/52-finance-and-insurance/13-2051-financial-and-investment-analysts/deck-edit-001",
+    "sector": "52",
+    "occupation": "13-2051.00"
+  },
+  {
+    "id": "messy-sales-001",
+    "title": "Clean a messy sales export and total it by region",
+    "version": "1.2.0",
+    "status": "draft",
+    "format": "xlsx",
+    "path": "cases/44-45-retail-trade/13-1161-market-research-analysts-and-marketing-specialists/messy-sales-001",
+    "sector": "44-45",
+    "occupation": "13-1161.00"
+  },
+  {
+    "id": "report-layout-001",
+    "title": "Write a report that follows a house style file",
+    "version": "1.2.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/92-public-administration/13-1111-management-analysts/report-layout-001",
+    "sector": "92",
+    "occupation": "13-1111.00"
+  },
+  {
+    "id": "brand-deck-001",
+    "title": "Build a deck that follows a brand kit file",
+    "version": "1.2.0",
+    "status": "draft",
+    "format": "pptx",
+    "path": "cases/54-professional-scientific-technical-services/27-1024-graphic-designers/brand-deck-001",
+    "sector": "54",
+    "occupation": "27-1024.00"
+  },
+  {
+    "id": "invoice-001",
+    "title": "Issue an invoice with mixed VAT rates",
+    "version": "1.2.0",
+    "status": "draft",
+    "format": "xlsx",
+    "path": "cases/54-professional-scientific-technical-services/43-3021-billing-and-posting-clerks/invoice-001",
+    "sector": "54",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "paper-ieee-001",
+    "title": "Find real studies and write a blind-review IEEE conference paper opening",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/61-educational-services/25-1066-psychology-teachers-postsecondary/paper-ieee-001",
+    "sector": "61",
+    "occupation": "25-1066.00"
+  },
+  {
+    "id": "paper-acm-001",
+    "title": "Find real studies and write a blind-review ACM conference paper opening",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/61-educational-services/25-1066-psychology-teachers-postsecondary/paper-acm-001",
+    "sector": "61",
+    "occupation": "25-1066.00"
+  },
+  {
+    "id": "e-invoice-001",
+    "title": "Issue an EN 16931 electronic invoice",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "xml",
+    "path": "cases/54-professional-scientific-technical-services/43-3021-billing-and-posting-clerks/e-invoice-001",
+    "sector": "54",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "proposal-001",
+    "title": "Put a project draft into the Horizon Europe proposal format",
+    "version": "1.1.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/27-3042-technical-writers/proposal-001",
+    "sector": "54",
+    "occupation": "27-3042.00"
+  },
+  {
+    "id": "quote-001",
+    "title": "Answer a customer enquiry with a quotation",
+    "version": "1.1.1",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/42-wholesale-trade/41-4012-sales-representatives-wholesale-and-manufacturing/quote-001",
+    "sector": "42",
+    "occupation": "41-4012.00"
+  },
+  {
+    "id": "order-confirmation-001",
+    "title": "Confirm a purchase order with one item partly in stock",
+    "version": "1.1.1",
+    "status": "draft",
+    "format": "xlsx",
+    "path": "cases/42-wholesale-trade/43-4151-order-clerks/order-confirmation-001",
+    "sector": "42",
+    "occupation": "43-4151.00"
+  },
+  {
+    "id": "delivery-note-001",
+    "title": "Make the delivery note for a part shipment",
+    "version": "1.1.1",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/42-wholesale-trade/43-5071-shipping-receiving-and-inventory-clerks/delivery-note-001",
+    "sector": "42",
+    "occupation": "43-5071.00"
+  },
+  {
+    "id": "proforma-001",
+    "title": "Make a pro forma invoice for an export customer",
+    "version": "1.1.1",
+    "status": "draft",
+    "format": "xlsx",
+    "path": "cases/42-wholesale-trade/43-3021-billing-and-posting-clerks/proforma-001",
+    "sector": "42",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "eu-invoice-plain-001",
+    "title": "Issue a plain EU invoice as XML and a readable PDF",
+    "version": "0.1.0",
+    "status": "draft",
+    "format": "xml",
+    "path": "cases/54-professional-scientific-technical-services/43-3021-billing-and-posting-clerks/eu-invoice-plain-001",
+    "sector": "54",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "eu-invoice-page-001",
+    "title": "Render an EU invoice as a readable one-page PDF",
+    "version": "0.1.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/54-professional-scientific-technical-services/43-3021-billing-and-posting-clerks/eu-invoice-page-001",
+    "sector": "54",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "eu-invoice-reverse-charge-001",
+    "title": "Issue a cross-border reverse-charge invoice as XML and a readable PDF",
+    "version": "0.1.0",
+    "status": "draft",
+    "format": "xml",
+    "path": "cases/54-professional-scientific-technical-services/43-3021-billing-and-posting-clerks/eu-invoice-reverse-charge-001",
+    "sector": "54",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "eu-invoice-credit-note-001",
+    "title": "Issue a credit note as XML and a readable PDF against an original invoice",
+    "version": "0.1.0",
+    "status": "draft",
+    "format": "xml",
+    "path": "cases/54-professional-scientific-technical-services/43-3021-billing-and-posting-clerks/eu-invoice-credit-note-001",
+    "sector": "54",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "paper-ieee-coldstart-001",
+    "title": "Write an IEEE two-column conference paper from measurement notes",
+    "version": "0.1.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/54-professional-scientific-technical-services/15-1252-software-developers/paper-ieee-coldstart-001",
+    "sector": "54",
+    "occupation": "15-1252.00"
+  },
+  {
+    "id": "paper-apa-report-001",
+    "title": "Write an APA 7 student paper with references",
+    "version": "0.1.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/15-1252-software-developers/paper-apa-report-001",
+    "sector": "54",
+    "occupation": "15-1252.00"
+  },
+  {
+    "id": "refs-repair-apa-001",
+    "title": "Repair a numbered reference list into APA 7",
+    "version": "0.1.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/23-2011-paralegals-and-legal-assistants/refs-repair-apa-001",
+    "sector": "54",
+    "occupation": "23-2011.00"
+  },
+  {
+    "id": "house-deck-001",
+    "title": "Build a six-page house-layout deck from data",
+    "version": "0.1.0",
+    "status": "draft",
+    "format": "html",
+    "path": "cases/54-professional-scientific-technical-services/15-1252-software-developers/house-deck-001",
+    "sector": "54",
+    "occupation": "15-1252.00"
+  },
+  {
+    "id": "annual-accounts-error-sv-001",
+    "title": "Gör årsredovisningen av handinskrivna siffror som innehåller två fel",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/44-45-retail-trade/43-3031-bookkeeping-accounting-and-auditing-clerks/annual-accounts-error-sv-001",
+    "sector": "44-45",
+    "occupation": "43-3031.00"
+  },
+  {
+    "id": "annual-accounts-sv-001",
+    "title": "Gör årsredovisningen för ett litet konsultbolag med vinst och utdelning",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/13-2011-accountants-and-auditors/annual-accounts-sv-001",
+    "sector": "54",
+    "occupation": "13-2011.00"
+  },
+  {
+    "id": "annual-accounts-en-001",
+    "title": "Prepare the annual report for a small bookshop with a loss and a shareholder contribution",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/44-45-retail-trade/41-1011-first-line-supervisors-of-retail-sales-workers/annual-accounts-en-001",
+    "sector": "44-45",
+    "occupation": "41-1011.00"
+  },
+  {
+    "id": "nda-review-001",
+    "title": "Review the NDA the other side sent",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/23-2011-paralegals-and-legal-assistants/nda-review-001",
+    "sector": "54",
+    "occupation": "23-2011.00"
+  },
+  {
+    "id": "nda-redline-001",
+    "title": "Send the other side's NDA back with our changes",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/31-33-manufacturing/11-1011-chief-executives/nda-redline-001",
+    "sector": "31-33",
+    "occupation": "11-1011.00"
+  },
+  {
+    "id": "saas-agreement-001",
+    "title": "A subscription agreement for our stock system",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/11-3021-computer-and-information-systems-managers/saas-agreement-001",
+    "sector": "54",
+    "occupation": "11-3021.00"
+  },
+  {
+    "id": "facture-fr-001",
+    "title": "Invoice a French customer for an audit, as a Factur-X PDF with its XML",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/54-professional-scientific-technical-services/43-3021-billing-and-posting-clerks/facture-fr-001",
+    "sector": "54",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "facture-avoir-fr-001",
+    "title": "A facture d'avoir for returned stationery, as a Factur-X PDF with its XML",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/42-wholesale-trade/43-3021-billing-and-posting-clerks/facture-avoir-fr-001",
+    "sector": "42",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "zugferd-de-001",
+    "title": "A German service invoice as a ZUGFeRD PDF with its XML",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/54-professional-scientific-technical-services/43-3021-billing-and-posting-clerks/zugferd-de-001",
+    "sector": "54",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "faktura-no-001",
+    "title": "Invoice a Norwegian print shop for planning work, as a page and an EHF (Peppol BIS) file",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/54-professional-scientific-technical-services/43-3021-billing-and-posting-clerks/faktura-no-001",
+    "sector": "54",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "kreditnota-dk-001",
+    "title": "A Danish kreditnota for damaged cases of copy paper, as a page and a Peppol credit note",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/42-wholesale-trade/43-3021-billing-and-posting-clerks/kreditnota-dk-001",
+    "sector": "42",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "lasku-fi-001",
+    "title": "A Finnish lasku for software licences and training, as a page and a Finvoice message",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/54-professional-scientific-technical-services/43-3021-billing-and-posting-clerks/lasku-fi-001",
+    "sector": "54",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "vat-invoice-uk-001",
+    "title": "A UK VAT invoice for printed programmes and design, as a page and a Peppol file",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/31-33-manufacturing/43-3021-billing-and-posting-clerks/vat-invoice-uk-001",
+    "sector": "32",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "tax-invoice-au-001",
+    "title": "An Australian tax invoice for an installed label printer",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/42-wholesale-trade/43-3021-billing-and-posting-clerks/tax-invoice-au-001",
+    "sector": "42",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "facture-ca-001",
+    "title": "A Quebec facture with GST and QST for a translation, in French on Letter paper",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/54-professional-scientific-technical-services/43-3021-billing-and-posting-clerks/facture-ca-001",
+    "sector": "54",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "invoice-us-001",
+    "title": "A US invoice for office chairs with Denver sales tax, on Letter paper",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/42-wholesale-trade/43-3021-billing-and-posting-clerks/invoice-us-001",
+    "sector": "42",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "factuur-be-001",
+    "title": "A Belgian factuur for shipping boxes and printing, as a page and a Peppol file",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/42-wholesale-trade/43-3021-billing-and-posting-clerks/factuur-be-001",
+    "sector": "42",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "creditnota-nl-001",
+    "title": "A Dutch creditnota for damaged boxes of copy paper, as a page and a Peppol credit note",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/42-wholesale-trade/43-3021-billing-and-posting-clerks/creditnota-nl-001",
+    "sector": "42",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "rechnung-at-001",
+    "title": "An Austrian Rechnung over 10 000 euros for a month of maintenance, as a page and an ebInterface file",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/54-professional-scientific-technical-services/43-3021-billing-and-posting-clerks/rechnung-at-001",
+    "sector": "54",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "vat-invoice-ie-001",
+    "title": "An Irish VAT invoice at two rates for an access control service and training, as a page and a Peppol file",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/31-33-manufacturing/43-3021-billing-and-posting-clerks/vat-invoice-ie-001",
+    "sector": "32",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "employment-statement-no-001",
+    "title": "Write a Norwegian arbeidsavtale for a temporary production operator covering a parental leave",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/31-33-manufacturing/11-3121-human-resources-managers/employment-statement-no-001",
+    "sector": "31-33",
+    "occupation": "11-3121.00"
+  },
+  {
+    "id": "employment-statement-fi-001",
+    "title": "Write the Finnish statement of the principal terms of work for a fixed-term data analyst",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/13-1071-human-resources-specialists/employment-statement-fi-001",
+    "sector": "54",
+    "occupation": "13-1071.00"
+  },
+  {
+    "id": "quotation-nb-001",
+    "title": "A Norwegian tilbud for workshop tools with a volume discount and freight",
+    "version": "1.1.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/42-wholesale-trade/41-4012-sales-representatives-wholesale-and-manufacturing/quotation-nb-001",
+    "sector": "42",
+    "occupation": "41-4012.00"
+  },
+  {
+    "id": "offer-letter-us-ny-001",
+    "title": "Write a New York offer letter for a non-exempt lab technician with the state pay notice",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/13-1071-human-resources-specialists/offer-letter-us-ny-001",
+    "sector": "54",
+    "occupation": "13-1071.00"
+  },
+  {
+    "id": "employment-statement-au-001",
+    "title": "Write the statement of employment terms for an Australian casual retail assistant",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/44-45-retail-trade/41-1011-first-line-supervisors-of-retail-sales-workers/employment-statement-au-001",
+    "sector": "44-45",
+    "occupation": "41-1011.00"
+  },
+  {
+    "id": "proforma-ca-001",
+    "title": "A Canadian pro forma invoice for an export to the United States, on Letter paper",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/31-33-manufacturing/43-4051-customer-service-representatives/proforma-ca-001",
+    "sector": "31-33",
+    "occupation": "43-4051.00"
+  },
+  {
+    "id": "letter-no-001",
+    "title": "Skriv brev til en tannklinikk om nye priser på skrivere",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/31-33-manufacturing/43-4051-customer-service-representatives/letter-no-001",
+    "sector": "31-33",
+    "occupation": "43-4051.00"
+  },
+  {
+    "id": "board-minutes-dk-001",
+    "title": "Skriv bestyrelsesprotokollen fra mødet om det nye kontor",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/11-1011-chief-executives/board-minutes-dk-001",
+    "sector": "54",
+    "occupation": "11-1011.00"
+  },
+  {
+    "id": "board-minutes-fi-001",
+    "title": "Kirjoita hallituksen kokouksen pöytäkirja",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/31-33-manufacturing/11-1011-chief-executives/board-minutes-fi-001",
+    "sector": "31-33",
+    "occupation": "11-1011.00"
+  },
+  {
+    "id": "letter-us-001",
+    "title": "Write a client letter about next year's bookkeeping fee",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/54-professional-scientific-technical-services/13-2011-accountants-and-auditors/letter-us-001",
+    "sector": "54",
+    "occupation": "13-2011.00"
+  },
+  {
+    "id": "lettre-ca-001",
+    "title": "Rédiger une lettre à un client pour confirmer une formation",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/54-professional-scientific-technical-services/43-1011-first-line-supervisors-office-admin/lettre-ca-001",
+    "sector": "54",
+    "occupation": "43-1011.00"
+  },
+  {
+    "id": "board-minutes-uk-001",
+    "title": "Write up the board minutes from the meeting about the new office",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/11-1011-chief-executives/board-minutes-uk-001",
+    "sector": "54",
+    "occupation": "11-1011.00"
+  },
+  {
+    "id": "employment-statement-nl-001",
+    "title": "Write the Dutch opgave van de arbeidsvoorwaarden for a one-year calibration technician",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/13-1071-human-resources-specialists/employment-statement-nl-001",
+    "sector": "54",
+    "occupation": "13-1071.00"
+  },
+  {
+    "id": "employment-statement-ie-001",
+    "title": "Write the Irish statement of terms of employment for an hourly-paid support agent",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/13-1071-human-resources-specialists/employment-statement-ie-001",
+    "sector": "54",
+    "occupation": "13-1071.00"
+  },
+  {
+    "id": "offerte-nl-001",
+    "title": "A Dutch offerte for lighting with a volume discount, from a seller whose notes give no KvK number",
+    "version": "1.1.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/42-wholesale-trade/41-4012-sales-representatives-wholesale-and-manufacturing/offerte-nl-001",
+    "sector": "42",
+    "occupation": "41-4012.00"
+  },
+  {
+    "id": "brief-be-001",
+    "title": "Schrijf een brief aan een webwinkel over de latere levering van haar verpakkingen",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/31-33-manufacturing/43-4051-customer-service-representatives/brief-be-001",
+    "sector": "31-33",
+    "occupation": "43-4051.00"
+  },
+  {
+    "id": "niederschrift-at-001",
+    "title": "Schreib die Niederschrift der Generalversammlung eines Ingenieurbüros",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/11-1011-chief-executives/niederschrift-at-001",
+    "sector": "54",
+    "occupation": "11-1011.00"
+  },
+  {
+    "id": "board-minutes-ie-001",
+    "title": "Write up the board minutes of an Irish company from the secretary's notes",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/11-1011-chief-executives/board-minutes-ie-001",
+    "sector": "54",
+    "occupation": "11-1011.00"
+  },
+  {
+    "id": "carta-es-001",
+    "title": "Escribe una carta a una tienda en línea sobre el retraso en la entrega de sus cajas",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/31-33-manufacturing/43-4051-customer-service-representatives/carta-es-001",
+    "sector": "31-33",
+    "occupation": "43-4051.00"
+  },
+  {
+    "id": "verbale-it-001",
+    "title": "Scrivi il verbale dell'assemblea ordinaria di una società di ingegneria",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/11-1011-chief-executives/verbale-it-001",
+    "sector": "54",
+    "occupation": "11-1011.00"
+  },
+  {
+    "id": "protokol-pl-001",
+    "title": "Napisz protokół z posiedzenia zarządu spółki logistycznej",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/11-1011-chief-executives/protokol-pl-001",
+    "sector": "54",
+    "occupation": "11-1011.00"
+  },
+  {
+    "id": "employment-statement-es-001",
+    "title": "Escribe la información sobre los elementos esenciales del contrato para una nueva técnica de almacén",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/13-1071-human-resources-specialists/employment-statement-es-001",
+    "sector": "54",
+    "occupation": "13-1071.00"
+  },
+  {
+    "id": "employment-statement-pl-001",
+    "title": "Napisz informację o warunkach zatrudnienia dla nowego technika serwisu",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/13-1071-human-resources-specialists/employment-statement-pl-001",
+    "sector": "54",
+    "occupation": "13-1071.00"
+  },
+  {
+    "id": "conferma-ordine-it-001",
+    "title": "Una conferma d'ordine per carta da stampa, da un venditore le cui note non danno il capitale sociale",
+    "version": "1.1.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/42-wholesale-trade/41-4012-sales-representatives-wholesale-and-manufacturing/conferma-ordine-it-001",
+    "sector": "42",
+    "occupation": "41-4012.00"
+  },
+  {
+    "id": "factura-es-001",
+    "title": "A Spanish factura for a month of translation work, as a page and an unsigned Facturae file",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/54-professional-scientific-technical-services/43-3021-billing-and-posting-clerks/factura-es-001",
+    "sector": "54",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "fattura-it-001",
+    "title": "An Italian fattura for a month of project management, as a courtesy page and a FatturaPA file",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/54-professional-scientific-technical-services/43-3021-billing-and-posting-clerks/fattura-it-001",
+    "sector": "54",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "faktura-korygujaca-pl-001",
+    "title": "A Polish faktura korygująca for pages billed twice, as a page and a KSeF FA(3) file",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/54-professional-scientific-technical-services/43-3021-billing-and-posting-clerks/faktura-korygujaca-pl-001",
+    "sector": "54",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "board-deck-001",
+    "title": "A board update on a quarter, as a deck the directors can edit",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pptx",
+    "path": "cases/54-professional-scientific-technical-services/11-1011-chief-executives/board-deck-001",
+    "sector": "54",
+    "occupation": "11-1011.00"
+  },
+  {
+    "id": "proposal-deck-001",
+    "title": "A proposal to take over the cleaning of six clinics, as a short deck",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pptx",
+    "path": "cases/54-professional-scientific-technical-services/13-1111-management-analysts/proposal-deck-001",
+    "sector": "54",
+    "occupation": "13-1111.00"
+  },
+  {
+    "id": "proposal-deck-002",
+    "title": "A full proposal for the cleaning of six offices, with the options placed, a quote, a picture and an appendix",
+    "version": "1.1.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/54-professional-scientific-technical-services/13-1111-management-analysts/proposal-deck-002",
+    "sector": "54",
+    "occupation": "13-1111.00"
+  },
+  {
+    "id": "steering-deck-001",
+    "title": "A steering-group update on a warehouse system rollout, as a deck",
+    "version": "1.1.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/54-professional-scientific-technical-services/13-1082-project-management-specialists/steering-deck-001",
+    "sector": "54",
+    "occupation": "13-1082.00"
+  },
+  {
+    "id": "board-minutes-sv-001",
+    "title": "Skriv styrelseprotokollet från mötet om den nya tryckpressen",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/31-33-manufacturing/11-1011-chief-executives/board-minutes-sv-001",
+    "sector": "31-33",
+    "occupation": "11-1011.00"
+  },
+  {
+    "id": "mutual-nda-001",
+    "title": "A mutual NDA before a partnership meeting",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/31-33-manufacturing/11-1011-chief-executives/mutual-nda-001",
+    "sector": "31-33",
+    "occupation": "11-1011.00"
+  },
+  {
+    "id": "employment-statement-abroad-001",
+    "title": "Write the employment statement for a service technician sent to Poland for six weeks",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/31-33-manufacturing/11-3121-human-resources-managers/employment-statement-abroad-001",
+    "sector": "31-33",
+    "occupation": "11-3121.00"
+  },
+  {
+    "id": "purchase-order-001",
+    "title": "Order components from a German supplier against its quotation, delivered across the border",
+    "version": "1.1.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/31-33-manufacturing/13-1023-purchasing-agents/purchase-order-001",
+    "sector": "31-33",
+    "occupation": "13-1023.00"
+  },
+  {
+    "id": "conveyor-guard-spec-sv-001",
+    "title": "Skriv kravspecifikationen för ett nytt skydd vid ett transportband",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/31-33-manufacturing/17-2141-mechanical-engineers/conveyor-guard-spec-sv-001",
+    "sector": "31-33",
+    "occupation": "17-2141.00"
+  },
+  {
+    "id": "letter-price-change-001",
+    "title": "Answer a freight company's letter about next year's prices",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/31-33-manufacturing/43-4051-customer-service-representatives/letter-price-change-001",
+    "sector": "31-33",
+    "occupation": "43-4051.00"
+  },
+  {
+    "id": "credit-note-sv-001",
+    "title": "Kreditera en butikskund för skadade varor och saknade kuvert, som e-faktura och PDF",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "xml",
+    "path": "cases/42-wholesale-trade/43-3021-billing-and-posting-clerks/credit-note-sv-001",
+    "sector": "42",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "dpa-bookkeeping-001",
+    "title": "A data processing agreement with the bookkeeping service",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/44-45-retail-trade/11-3021-computer-and-information-systems-managers/dpa-bookkeeping-001",
+    "sector": "44-45",
+    "occupation": "11-3021.00"
+  },
+  {
+    "id": "employment-statement-uk-001",
+    "title": "Write the written statement for a bookshop's Christmas temp on a fixed-term contract",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/44-45-retail-trade/41-1011-first-line-supervisors-of-retail-sales-workers/employment-statement-uk-001",
+    "sector": "44-45",
+    "occupation": "41-1011.00"
+  },
+  {
+    "id": "price-list-vat-001",
+    "title": "Make a price list with VAT and a trade discount the shop can change",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "xlsx",
+    "path": "cases/44-45-retail-trade/41-2031-retail-salespersons/price-list-vat-001",
+    "sector": "44-45",
+    "occupation": "41-2031.00"
+  },
+  {
+    "id": "sales-cleanup-001",
+    "title": "Clean a shop's till export into a workbook that adds up",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "xlsx",
+    "path": "cases/44-45-retail-trade/43-3031-bookkeeping-accounting-and-auditing-clerks/sales-cleanup-001",
+    "sector": "44-45",
+    "occupation": "43-3031.00"
+  },
+  {
+    "id": "employment-statement-sv-001",
+    "title": "Skriv anställningsbeviset för en nyanställd managementkonsult",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/13-1071-human-resources-specialists/employment-statement-sv-001",
+    "sector": "54",
+    "occupation": "13-1071.00"
+  },
+  {
+    "id": "nda-law-missing-001",
+    "title": "An NDA where the notes do not say which law",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/13-1111-management-analysts/nda-law-missing-001",
+    "sector": "54",
+    "occupation": "13-1111.00"
+  },
+  {
+    "id": "sensor-logger-spec-001",
+    "title": "Turn a customer kickoff into the requirements specification for a river-level logger",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/54-professional-scientific-technical-services/17-2072-electronics-engineers-except-computer/sensor-logger-spec-001",
+    "sector": "54",
+    "occupation": "17-2072.00"
+  },
+  {
+    "id": "xrechnung-credit-note-001",
+    "title": "Credit a German public buyer for a cancelled training day and returned handbooks, as XRechnung and a page",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "xml",
+    "path": "cases/54-professional-scientific-technical-services/43-3021-billing-and-posting-clerks/xrechnung-credit-note-001",
+    "sector": "54",
+    "occupation": "43-3021.00"
+  },
+  {
+    "id": "letter-de-termin-001",
+    "title": "Confirm a service visit in German, on the company letter",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "pdf",
+    "path": "cases/54-professional-scientific-technical-services/43-6014-secretaries-and-administrative-assistants/letter-de-termin-001",
+    "sector": "54",
+    "occupation": "43-6014.00"
+  },
+  {
+    "id": "lab-rig-spec-001",
+    "title": "Specify a beam-bending rig for a second-year strength of materials lab",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/61-educational-services/25-1032-engineering-teachers-postsecondary/lab-rig-spec-001",
+    "sector": "61",
+    "occupation": "25-1032.00"
+  },
+  {
+    "id": "hand-hygiene-essay-vancouver-001",
+    "title": "Reference a nursing student's essay in Vancouver with superscript numbers",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/61-educational-services/29-1141-registered-nurses/hand-hygiene-essay-vancouver-001",
+    "sector": "61",
+    "occupation": "29-1141.00"
+  },
+  {
+    "id": "pta-special-minutes-001",
+    "title": "Minutes of a parents' association special meeting with a counted vote",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/61-educational-services/43-6014-secretaries-and-administrative-assistants/pta-special-minutes-001",
+    "sector": "61",
+    "occupation": "43-6014.00"
+  },
+  {
+    "id": "sepsis-draft-refs-repair-001",
+    "title": "Repair the Vancouver references of a draft quality-improvement report",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/62-health-care-and-social-assistance/11-9111-medical-and-health-services-managers/sepsis-draft-refs-repair-001",
+    "sector": "62",
+    "occupation": "11-9111.00"
+  },
+  {
+    "id": "falls-audit-vancouver-001",
+    "title": "Write up a ward falls audit with Vancouver references",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/62-health-care-and-social-assistance/29-1141-registered-nurses/falls-audit-vancouver-001",
+    "sector": "62",
+    "occupation": "29-1141.00"
+  },
+  {
+    "id": "club-minutes-001",
+    "title": "Write up a rowing club's monthly meeting from the secretary's notes",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/71-arts-entertainment-and-recreation/43-6014-secretaries-and-administrative-assistants/club-minutes-001",
+    "sector": "71",
+    "occupation": "43-6014.00"
+  },
+  {
+    "id": "club-budget-001",
+    "title": "Turn the treasurer's notes into next season's club budget",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "xlsx",
+    "path": "cases/81-other-services/13-2011-accountants-and-auditors/club-budget-001",
+    "sector": "81",
+    "occupation": "13-2011.00"
+  },
+  {
+    "id": "letter-service-sv-001",
+    "title": "Ask the service company in Swedish to repair the salon's ventilation",
+    "version": "1.0.0",
+    "status": "draft",
+    "format": "docx",
+    "path": "cases/81-other-services/39-5012-hairdressers-hairstylists-and-cosmetologists/letter-service-sv-001",
+    "sector": "81",
+    "occupation": "39-5012.00"
+  }
+]

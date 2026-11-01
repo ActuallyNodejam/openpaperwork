@@ -1,0 +1,327 @@
+{
+ "id": "facture-avoir-fr-001",
+ "title": "A facture d'avoir for returned stationery, as a Factur-X PDF with its XML",
+ "person": "The billing clerk of a stationery wholesaler in Lille crediting a bookshop for goods sent back.",
+ "format": "pdf",
+ "output": "avoir.pdf",
+ "extra_outputs": [
+  "avoir.xml"
+ ],
+ "locale": "fr-FR",
+ "sector": {
+  "naics": "42",
+  "name": "Wholesale Trade"
+ },
+ "occupation": {
+  "soc": "43-3021.00",
+  "name": "Billing and Posting Clerks"
+ },
+ "review": [
+  "Avoir AV-2026-0022 du 08/10/2026 sur la facture FA-2026-0388 du 18/09/2026 : 40 cahiers à 2,40 € et 2 boîtes à 18,50 €, 133,00 € HT, 26,60 € de TVA, 159,60 € TTC; livraisons de biens, adresse de livraison l'entrepôt."
+ ],
+ "revised_review": [
+  "3 boîtes : 151,50 € HT, 30,30 € de TVA, 181,80 € TTC; rien d'autre ne change."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "factur-x",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-FACTURX",
+   "guidelines": [
+    "factur-x/1.0#EINV-FACTURX"
+   ],
+   "text": "The PDF is a Factur-X / ZUGFeRD file: the invoice XML inside it, the level in its XMP, the same XML as the one beside it."
+  },
+  {
+   "id": "pdf-a",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PDFA",
+   "guidelines": [
+    "factur-x/1.0#EINV-PDFA"
+   ],
+   "text": "The PDF is PDF/A-3B (veraPDF); skipped without veraPDF."
+  },
+  {
+   "id": "kosit",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-KOSIT",
+   "guidelines": [
+    "kosit-xrechnung/3.0#EINV-KOSIT"
+   ],
+   "text": "The KoSIT validator accepts the XML; skipped without it."
+  },
+  {
+   "id": "locale-date",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-DATE",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-DATE"
+   ],
+   "text": "Dates on the page are in the dd/MM/yyyy form."
+  },
+  {
+   "id": "locale-number",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-NUMBER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-NUMBER"
+   ],
+   "text": "Amounts use the locale's separators."
+  },
+  {
+   "id": "locale-order",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-LOCALE-ORDER",
+   "guidelines": [
+    "cen-en16931/2017#EINV-LOCALE-ORDER"
+   ],
+   "text": "The page is written in the language of the order itself."
+  },
+  {
+   "id": "vat-label",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-VAT-LABEL",
+   "guidelines": [
+    "cen-en16931/2017#EINV-VAT-LABEL"
+   ],
+   "text": "Every VAT number on the page carries its label."
+  },
+  {
+   "id": "page-din5008",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-DIN5008",
+   "guidelines": [
+    "din-5008/2020#EINV-PAGE-DIN5008"
+   ],
+   "text": "The page is laid out on the library's letter sheet (DIN 5008 Form B)."
+  },
+  {
+   "id": "fr-seller",
+   "stage": "both",
+   "grader": "script",
+   "script": "fr_invoice_check.py",
+   "rule": "FR-SELLER",
+   "guidelines": [
+    "fr-cgi-invoice/2026-09#FR-SELLER",
+    "fr-cgi-invoice/2026-09#FR-F31808",
+    "fnfe-france-rfe/1.4.0#BR-FR-10"
+   ],
+   "text": "Seller's SIREN, legal form, capital, RCS and VAT number on the page and in the XML."
+  },
+  {
+   "id": "fr-buyer",
+   "stage": "both",
+   "grader": "script",
+   "script": "fr_invoice_check.py",
+   "rule": "FR-BUYER",
+   "guidelines": [
+    "fr-cgi-invoice/2026-09#FR-BUYER",
+    "fnfe-france-rfe/1.4.0#BR-FR-11"
+   ],
+   "text": "The buyer's SIREN and VAT number on the page and in the XML."
+  },
+  {
+   "id": "fr-payment",
+   "stage": "both",
+   "grader": "script",
+   "script": "fr_invoice_check.py",
+   "rule": "FR-PAYMENT",
+   "guidelines": [
+    "fr-cgi-invoice/2026-09#FR-L441-9",
+    "fr-cgi-invoice/2026-09#FR-D441-5",
+    "fnfe-france-rfe/1.4.0#BR-FR-05"
+   ],
+   "text": "Penalties, the 40 euro indemnity and the discount on the page and as notes PMD, PMT, AAB."
+  },
+  {
+   "id": "fr-mentions",
+   "stage": "both",
+   "grader": "script",
+   "script": "fr_invoice_check.py",
+   "rule": "FR-MENTIONS",
+   "guidelines": [
+    "fr-cgi-invoice/2026-09#FR-MENTIONS",
+    "fnfe-france-rfe/1.4.0#BR-FR-08"
+   ],
+   "text": "The nature of the operation (and BT-23), VAT on debits, the delivery address as the order has them."
+  },
+  {
+   "id": "fr-ctc",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-FR-CTC",
+   "guidelines": [
+    "fnfe-france-rfe/1.4.0#EINV-FR-CTC"
+   ],
+   "text": "The KoSIT validator with the FNFE BR-FR rules accepts the XML; skipped without it."
+  },
+  {
+   "id": "credit-type",
+   "stage": "both",
+   "grader": "script",
+   "script": "credit_note_check.py",
+   "rule": "INV-CREDIT-TYPE",
+   "guidelines": [
+    "cen-en16931/2017#INV-CREDIT-TYPE"
+   ],
+   "text": "Type 381 with its own number; the page says Facture d'avoir."
+  },
+  {
+   "id": "credit-ref",
+   "stage": "both",
+   "grader": "script",
+   "script": "credit_note_check.py",
+   "rule": "INV-CREDIT-REF",
+   "guidelines": [
+    "cen-en16931/2017#INV-CREDIT-REF",
+    "fr-cgi-invoice/2026-09#FR-AVOIR"
+   ],
+   "text": "The invoice amended, FA-2026-0388 of 18/09/2026, in the XML and on the page."
+  },
+  {
+   "id": "credit-vat",
+   "stage": "both",
+   "grader": "script",
+   "script": "credit_note_check.py",
+   "rule": "INV-CREDIT-VAT",
+   "guidelines": [
+    "cen-en16931/2017#INV-CREDIT-VAT"
+   ],
+   "text": "One VAT group, the sum of the credited lines; totals add up."
+  },
+  {
+   "id": "company-particulars",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PARTICULARS",
+   "guidelines": [
+    "invoice-company-particulars/2026-10#EINV-PARTICULARS"
+   ],
+   "text": "The page states what the seller's own company statute puts on an invoice; a particular the files do not give is declared unknown and printed nowhere."
+  },
+  {
+   "id": "only-what-came-back",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "Only the returned notebooks and pen boxes are credited, at the invoice's prices and rate."
+  },
+  {
+   "id": "revision-kept",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-2"
+   ],
+   "text": "The revision changes the pen boxes and the totals that follow, and nothing else."
+  }
+ ],
+ "truth": {
+  "doc": "credit_note",
+  "type_code": "381",
+  "number": "AV-2026-0022",
+  "issue_date": "2026-10-08",
+  "preceding_invoice": "FA-2026-0388",
+  "preceding_invoice_date": "2026-09-18",
+  "currency": "EUR",
+  "operation": "goods",
+  "delivery_address": {
+   "street": "14 rue du Dépôt",
+   "postcode": "67100",
+   "city": "Strasbourg",
+   "country": "FR"
+  },
+  "seller": {
+   "name": "Papeterie Exemple SARL",
+   "country": "FR",
+   "siren": "000000059",
+   "legal_form": "SARL",
+   "share_capital": 8000,
+   "rcs": "RCS Lille"
+  },
+  "buyer": {
+   "name": "Librairie Essai SAS",
+   "country": "FR",
+   "siren": "000000067"
+  },
+  "first": {
+   "lines": [
+    {
+     "name": "Cahier ligné A5, 96 pages",
+     "quantity": 40,
+     "unit_price": 2.4,
+     "vat_rate": 20,
+     "vat_category": "S"
+    },
+    {
+     "name": "Stylo bille bleu, boîte de 50",
+     "quantity": 2,
+     "unit_price": 18.5,
+     "vat_rate": 20,
+     "vat_category": "S"
+    }
+   ]
+  },
+  "revision": {
+   "lines": [
+    {
+     "name": "Cahier ligné A5, 96 pages",
+     "quantity": 40,
+     "unit_price": 2.4,
+     "vat_rate": 20,
+     "vat_category": "S"
+    },
+    {
+     "name": "Stylo bille bleu, boîte de 50",
+     "quantity": 3,
+     "unit_price": 18.5,
+     "vat_rate": 20,
+     "vat_category": "S"
+    }
+   ]
+  }
+ },
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "cen-en16931/2017",
+  "fr-cgi-invoice/2026-09",
+  "fnfe-france-rfe/1.4.0",
+  "factur-x/1.0",
+  "kosit-xrechnung/3.0",
+  "din-5008/2020"
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices, SIREN, VAT and bank numbers are invented and obviously fake.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen."
+}

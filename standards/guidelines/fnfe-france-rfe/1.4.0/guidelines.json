@@ -1,0 +1,68 @@
+{
+ "issuer": "fnfe-france-rfe",
+ "version": "1.4.0",
+ "link": "https://github.com/fnfempe/France_RFE",
+ "license": "Apache-2.0: FNFE-MPE France_RFE at commit 97ba0f3d4ef2 (2026-09-04), the validation artefacts for AFNOR XP Z12-012. Rules restated in our own words and code, credited in THIRD_PARTY.md and licenses/fnfe-france-rfe-apache-2.0.txt; the schematron runs untouched in the KoSIT validator. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "The French e-invoicing rules (BR-FR) a Cross Industry Invoice from a French seller meets",
+ "source": "FNFE-MPE France_RFE 1.4.0, FNFE_RFE_INVOICE/CII/EN16931/schematron/BR-FR-Flux2-Schematron-CII.sch and the XP Z12-012 annex A rule sheet (BR-France CTC), read 2026-10-09. AFNOR XP Z12-012 itself is sold by AFNOR and is cited only. The whole rule set reaches a file through EINV-FR-CTC; the rules below are also restated in skills/_checks/fr_invoice_check.py and skills/e-invoice/scripts/einvoice_create.py.",
+ "rules": [
+  {
+   "id": "EINV-FR-CTC",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "text": "For a French seller, the KoSIT validator with the EN 16931 CII schematron and the FNFE-MPE BR-FR rules accepts the XML; skipped when the validator is not installed."
+  },
+  {
+   "id": "BR-FR-05",
+   "text": "Every invoice carries the notes PMT (the 40 euro indemnity), PMD (the late-payment penalties) and AAB (the discount or its absence).",
+   "check": "fr_invoice_check.py FR-PAYMENT"
+  },
+  {
+   "id": "BR-FR-06",
+   "text": "Each of the notes PMD, PMT, AAB and TXD appears once.",
+   "check": "fr_invoice_check.py FR-PAYMENT"
+  },
+  {
+   "id": "BR-FR-08",
+   "text": "The billing framework (BT-23) is given: B1 goods, S1 services, M1 both, and the other listed codes for paid, final, subcontracted, e-reported, multi-seller and two-way invoices.",
+   "check": "fr_invoice_check.py FR-MENTIONS"
+  },
+  {
+   "id": "BR-FR-09",
+   "text": "A SIRET (scheme 0009) has 14 digits and starts with the SIREN.",
+   "check": "einvoice_create.py (refused at build)"
+  },
+  {
+   "id": "BR-FR-10",
+   "text": "The seller's SIREN (BT-30) is given, nine digits.",
+   "check": "fr_invoice_check.py FR-SELLER"
+  },
+  {
+   "id": "BR-FR-11",
+   "text": "For the e-invoicing scope (note BAR = B2B), the buyer's SIREN (BT-47) is given, nine digits.",
+   "check": "fr_invoice_check.py FR-BUYER"
+  },
+  {
+   "id": "BR-FR-12",
+   "text": "The buyer's electronic address (BT-49) is given (BR-FR-12 checks that it is there).",
+   "check": "einvoice_page.py EINV-FR-CTC"
+  },
+  {
+   "id": "BR-FR-13",
+   "text": "The seller's electronic address (BT-34) is given.",
+   "check": "einvoice_page.py EINV-FR-CTC"
+  },
+  {
+   "id": "BR-FR-16",
+   "text": "The VAT rate is one of the French rates (20, 10, 5.5, 2.1 and the overseas and Corsican rates), in percent.",
+   "check": "einvoice_create.py (warned at build); einvoice_page.py EINV-FR-CTC"
+  },
+  {
+   "id": "BR-FR-MAP-03",
+   "text": "VAT due on debits is BT-8 = 5 in CII.",
+   "check": "fr_invoice_check.py FR-MENTIONS"
+  }
+ ]
+}

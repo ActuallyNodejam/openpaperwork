@@ -1,0 +1,40 @@
+{
+  "issuer": "icc-incoterms",
+  "version": "2020",
+  "link": "https://iccwbo.org/business-solutions/incoterms-rules/incoterms-2020/",
+  "date": "2026-10-03",
+  "status": "draft",
+  "title": "Writing a delivery term under Incoterms 2020",
+  "source": {
+    "standard": "Incoterms 2020, International Chamber of Commerce, in force from 1 January 2020, https://iccwbo.org/business-solutions/incoterms-rules/incoterms-2020/",
+    "retrieved": "2026-10-03",
+    "note": "Incoterms is a registered trademark of the ICC and the rules are its copyright. Nothing from the rules is copied. This set states only how a term is written (the three-letter rule, a named place, and the edition) and which four rules are for sea and inland waterway transport, which are facts about the rule set. It is not legal advice on which rule to choose and is not endorsed by the ICC."
+  },
+  "license": "Rule wording: Apache-2.0 with this repository.",
+  "rules": [
+    {
+      "id": "INCO-1",
+      "grader": "script",
+      "script": "trade.py",
+      "text": "A delivery term is one of the eleven Incoterms 2020 rules (EXW, FCA, CPT, CIP, DAP, DPU, DDP, FAS, FOB, CFR, CIF) followed by a named place and the words Incoterms 2020. Rules from earlier editions such as DAT or DDU are not used."
+    },
+    {
+      "id": "INCO-2",
+      "grader": "script",
+      "script": "trade.py",
+      "text": "FAS, FOB, CFR and CIF are used only when the goods travel by sea or inland waterway."
+    },
+    {
+      "id": "INCO-3",
+      "grader": "judge",
+      "text": "The rule fits what the parties agreed about who arranges and pays for carriage and insurance; when the document adds freight or insurance charges the term says so (for example CPT or CIP rather than FCA)."
+    },
+    {
+      "id": "TRADE-PO-INCOTERMS",
+      "grader": "script",
+      "script": "purchase_order_check.py",
+      "text": "When the goods of a purchase order cross a border, it states the delivery term agreed with the supplier as an Incoterms 2020 rule, a named place and the words Incoterms 2020; FAS, FOB, CFR and CIF only for goods that go by sea. The check never picks the rule.",
+      "source": "INCO-1 and INCO-2 applied to UBL-Order-2.1 cac:DeliveryTerms"
+    }
+  ]
+}

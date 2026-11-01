@@ -1,0 +1,58 @@
+{
+  "language": "nb",
+  "country": "NO",
+  "body": "Fjellvind Rørlegger AS",
+  "company_number": "923 456 781",
+  "meeting": "board",
+  "method": "meeting",
+  "number": "6/2026",
+  "date": "2026-10-20",
+  "start": "16:00",
+  "end": "17:30",
+  "place": "Selskapets kontor, Industrivegen 14, Gjøvik",
+  "chair": "Kari Nordby",
+  "secretary": "Erlend Moe",
+  "present": [
+    "Kari Nordby",
+    "Anders Lie",
+    "Sofie Brekke"
+  ],
+  "in_attendance": [
+    "Erlend Moe (daglig leder)"
+  ],
+  "quorum": true,
+  "previous_minutes": "approved",
+  "items": [
+    {
+      "title": "Kjøp av ny servicebil",
+      "notes": "Daglig leder la fram tre tilbud på elektrisk varebil.",
+      "decisions": [
+        {
+          "text": "Selskapet kjøper varebilen fra Gjøvik Bil AS for kr 612 000 eks. mva.",
+          "for": [
+            "Kari Nordby",
+            "Anders Lie"
+          ],
+          "against": [
+            "Sofie Brekke"
+          ]
+        }
+      ],
+      "dissent": [
+        {
+          "name": "Sofie Brekke",
+          "text": "Hun mener selskapet heller bør lease bilen for å spare likviditet"
+        }
+      ]
+    },
+    {
+      "title": "Neste styremøte",
+      "decisions": [
+        {
+          "text": "Neste styremøte holdes 1. desember 2026 kl. 16.00",
+          "unanimous": true
+        }
+      ]
+    }
+  ]
+}

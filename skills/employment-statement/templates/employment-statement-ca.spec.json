@@ -1,0 +1,45 @@
+{
+  "language": "en",
+  "law": "ca",
+  "given": "2026-11-16",
+  "employer": {
+    "name": "Northlake Freight Lines Ltd.",
+    "address": "1200 Example Road, Winnipeg MB R3C 0A1",
+    "signatory": "Gail Thompson, Human Resources Manager"
+  },
+  "worker": {
+    "name": "Arjun Mehta",
+    "address": "77 Example Avenue, Winnipeg MB R3B 0A2"
+  },
+  "job": {
+    "title": "Dispatcher",
+    "description": "Plans the drivers' routes between Winnipeg and Thunder Bay, tracks the loads and answers the drivers on the radio."
+  },
+  "place": "1200 Example Road, Winnipeg MB R3C 0A1",
+  "start": "2026-11-02",
+  "term": {
+    "type": "permanent"
+  },
+  "probation": {
+    "months": 3,
+    "conditions": "a review with the dispatch manager at the end of the period"
+  },
+  "qualifications": "Two years of dispatch experience and a working knowledge of hours-of-service rules for commercial drivers",
+  "training": "Two weeks of training on the dispatch software at the start, paid and at the employer's cost",
+  "hours": {
+    "pattern": "fixed",
+    "standard": "40 hours a week, Monday to Friday, 8:00 to 16:30 with a 30-minute unpaid break",
+    "overtime": "hours beyond 8 in a day or 40 in a week are overtime and are worked only when the dispatch manager asks (Canada Labour Code ss. 169 and 174)"
+  },
+  "pay": {
+    "amount": 27.0,
+    "currency": "CAD",
+    "per": "hour",
+    "overtime_rate": "$40.50 an hour",
+    "paid": "every second Thursday",
+    "other_pay": "a yearly bonus, if any, is paid in March",
+    "method": "direct deposit to the employee's bank account"
+  },
+  "deductions": "Income tax, Canada Pension Plan contributions and Employment Insurance premiums",
+  "expenses": "Claim work-related expenses on the expense form with the receipts; approved claims are repaid with the next pay"
+}

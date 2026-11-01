@@ -1,0 +1,8 @@
+Beispiel Seminare GmbH, Hafenstraße 18, 28217 Bremen, Germany
+USt-IdNr. DE287654310
+Sitz Bremen, Amtsgericht Bremen HRB 34567 HB, Geschäftsführerin: Jana Feld
+Bank: IBAN DE89 3704 0044 0532 0130 00, payment means: SEPA credit transfer
+Contact for invoices and credit notes: Tobias Krein, +49 421 5550 1830, rechnung@beispiel-seminare.example
+
+Credit notes are numbered GS-2026-xxxx; the last one was GS-2026-0041. Date them on the day they are made: 12.10.2026.
+Refunds are paid within 14 days.

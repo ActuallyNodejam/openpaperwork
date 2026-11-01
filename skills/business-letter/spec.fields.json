@@ -1,0 +1,111 @@
+{
+ "about": "Every key letter_create.py reads from a letter's data file. The builder stops on a key that is not here, and on a value of another shape (skills/_shared/spec_guard.py). A fact with no field of its own goes in the body, or, for the sender's own particulars, in sender.further.",
+ "open": {
+  "sender": "further"
+ },
+ "hints": {
+  "notes": "a letter has no notes: what the letter says goes in \"body\", one string a paragraph",
+  "postscript": "write a postscript as the last paragraph of \"body\"",
+  "sender.contact": "the person to reach goes in the top-level \"contact\" (name, phone, email), printed in the information block",
+  "sender.website": "the sender's website is \"sender.web\"",
+  "recipient.email": "an e-mail address is not part of a postal address; if the letter must show it, write it in \"body\"",
+  "recipient.phone": "a phone number is not part of a postal address; if the letter must show it, write it in \"body\"",
+  "sender.street2": "the sender's own address prints as street, postcode and city: write a second address line into \"sender.street\", after a comma",
+  "sender.building": "the sender's own address prints as street, postcode and city: write a second address line into \"sender.street\", after a comma",
+  "sender.locality": "the sender's own address prints as street, postcode and city: write a second address line into \"sender.street\", after a comma",
+  "sender.county": "the sender's own address prints as street, postcode and city: write a second address line into \"sender.street\", after a comma",
+  "signatory.title": "the signatory's role or job title is \"signatory.role\"",
+  "reference": "a reference goes in \"references\", a list: {\"kind\": \"ours\", \"value\": \"KL-114\"} or {\"label\": \"Your letter of\", \"value\": \"2026-10-02\"}",
+  "our_reference": "a reference goes in \"references\", a list: {\"kind\": \"ours\", \"value\": \"KL-114\"}",
+  "your_reference": "a reference goes in \"references\", a list: {\"kind\": \"yours\", \"value\": \"...\"}",
+  "reference_ours": "a reference goes in \"references\", a list: {\"kind\": \"ours\", \"value\": \"KL-114\"}",
+  "reference_their": "a reference goes in \"references\", a list: {\"kind\": \"yours\", \"value\": \"...\"}",
+  "sender.address": "the sender's address is \"sender.street\", \"sender.postcode\" and \"sender.city\"",
+  "sender.town": "the sender's town is \"sender.city\"",
+  "recipient.address": "the recipient's address is \"recipient.street\", \"recipient.postcode\" and \"recipient.city\"",
+  "recipient.town": "the recipient's town is \"recipient.city\"",
+  "recipient.company": "the recipient's company is \"recipient.name\"; a person there goes in \"recipient.attention\"",
+  "recipient.contact": "a person at the recipient goes in \"recipient.attention\"",
+  "country": "the countries are \"sender.country\" and \"recipient.country\""
+ },
+ "defs": {
+  "sender": {
+   "name": "text",
+   "legal_form": "text",
+   "street": "text",
+   "postcode": "text",
+   "city": "text",
+   "province": "text",
+   "state": "text",
+   "country": "text",
+   "email": "text",
+   "phone": "text",
+   "web": "text",
+   "vat_id": "text",
+   "registered_office": "text",
+   "register": "text",
+   "register_number": "text",
+   "managing_directors": "text | [text]",
+   "share_capital": "text",
+   "paid_up_capital": "text",
+   "sole_shareholder": "flag | text",
+   "in_liquidation": "flag | text",
+   "directed_by": "text",
+   "group": "text",
+   "siren": "text",
+   "rcs": "text",
+   "abn": "text",
+   "further": [
+    "text"
+   ],
+   "unknown": "text | [text]"
+  },
+  "recipient": {
+   "name": "text",
+   "attention": "text",
+   "street": "text",
+   "street2": "text",
+   "building": "text",
+   "locality": "text",
+   "postcode": "text",
+   "city": "text",
+   "county": "text",
+   "province": "text",
+   "state": "text",
+   "country": "text",
+   "language": "text"
+  }
+ },
+ "fields": {
+  "language": "text",
+  "layout": "text",
+  "date": "text",
+  "sender": "@sender",
+  "recipient": "@recipient",
+  "references": [
+   {
+    "label": "text",
+    "kind": "text",
+    "value": "text"
+   }
+  ],
+  "contact": {
+   "name": "text",
+   "phone": "text",
+   "email": "text"
+  },
+  "subject": "text",
+  "salutation": "text",
+  "body": [
+   "text"
+  ],
+  "closing": "text",
+  "signatory": {
+   "name": "text",
+   "role": "text"
+  },
+  "enclosures": [
+   "text"
+  ]
+ }
+}

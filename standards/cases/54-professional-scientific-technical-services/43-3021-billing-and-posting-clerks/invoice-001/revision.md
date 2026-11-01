@@ -1,0 +1,1 @@
+The buyer is replaced by its Danish parent: Lindqvist Group ApS, Nørregade 7, 1165 København, Denmark, VAT ID DK12345678. Treat every line as reverse charge for this invoice: the VAT rate is 0 on all lines, and the invoice carries the note "Reverse charge". Update the invoice and its totals, and keep the lines, prices and discounts unchanged.

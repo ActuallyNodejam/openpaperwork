@@ -1,0 +1,118 @@
+{
+  "id": "employment-statement-pl-001",
+  "title": "Napisz informację o warunkach zatrudnienia dla nowego technika serwisu",
+  "person": "An HR specialist at a Polish service company who owes a new technician the information within seven days of his first day.",
+  "format": "docx",
+  "output": "informacja.docx",
+  "locale": "pl-PL",
+  "sector": {
+    "naics": "54",
+    "name": "Professional, Scientific, and Technical Services"
+  },
+  "occupation": {
+    "soc": "13-1071.00",
+    "name": "Human Resources Specialists"
+  },
+  "review": [
+    "Informacja dla Pawła Kowalczyka: technik serwisu w Gdańsku i u klientów, umowa na czas nieokreślony zawarta 2.11.2026, pierwszy dzień pracy 9.11.2026; wynagrodzenie zasadnicze 8 900 zł brutto miesięcznie i premia kwartalna; pełny etat, norma 8 godzin na dobę i przeciętnie 40 tygodniowo, przerwa, odpoczynek i nadgodziny według Kodeksu pracy; urlop i wypowiedzenie przez wskazanie przepisów; regulamin pracy obowiązuje; ZUS; bez układu zbiorowego i okresu próbnego; informacja datowana w ciągu 7 dni od dopuszczenia do pracy."
+  ],
+  "revised_review": [
+    "Wynagrodzenie zasadnicze wynosi 9 200 zł brutto miesięcznie; poza tym bez zmian."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "contract",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-PL-CONTRACT",
+      "guidelines": [
+        "kodeks-pracy/2026-08#PL-01"
+      ],
+      "text": "The contract's own terms are stated: an indefinite contract concluded on 2 November 2026, the kind and the place of work, the pay, full time and the first day."
+    },
+    {
+      "id": "items",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-ITEMS",
+      "guidelines": [
+        "kodeks-pracy/2026-08#PL-03",
+        "kodeks-pracy/2026-08#PL-04"
+      ],
+      "text": "The norm and basis of working time, the break and the rest, leave, the notice periods, training, that no collective agreement applies, that the work regulations apply, and ZUS."
+    },
+    {
+      "id": "dates",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-DATES",
+      "guidelines": [
+        "kodeks-pracy/2026-08#PL-02"
+      ],
+      "text": "Dated within 7 days of 9 November 2026."
+    },
+    {
+      "id": "pay",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-PAY",
+      "guidelines": [
+        "kodeks-pracy/2026-08#PL-05"
+      ],
+      "text": "8 900 zł brutto miesięcznie with the quarterly bonus on its own line."
+    },
+    {
+      "id": "reference",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-REFERENCE",
+      "guidelines": [
+        "kodeks-pracy/2026-08#PL-07"
+      ],
+      "text": "Leave and the ending point to the Labour Code; the contract's own terms are stated."
+    },
+    {
+      "id": "lang",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-LANG",
+      "guidelines": [
+        "kodeks-pracy/2026-08#PL-09"
+      ],
+      "text": "Every heading is Polish."
+    },
+    {
+      "id": "revised-pay",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "kodeks-pracy/2026-08#PL-05"
+      ],
+      "text": "The base pay is 9 200 zł brutto miesięcznie and nothing else changed."
+    }
+  ],
+  "version": "1.0.0",
+  "status": "draft",
+  "source": "Synthetic material created for this evaluation pack; the companies and people are invented.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+  "guidelines": [
+    "kodeks-pracy/2026-08",
+    "every-file/1.1.0"
+  ]
+}

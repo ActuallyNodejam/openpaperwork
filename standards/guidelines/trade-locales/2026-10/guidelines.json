@@ -1,0 +1,71 @@
+{
+  "issuer": "trade-locales",
+  "version": "2026-10",
+  "link": "https://cldr.unicode.org/",
+  "license": "Number and date forms from Unicode CLDR (Unicode License v3); paper sizes ISO 216 and ANSI, named only; the document names and labels are our own words in each language's published business usage. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-10",
+  "status": "draft",
+  "title": "Trade documents in each market's language and on its paper",
+  "source": "Unicode CLDR for numbers and dates (nb, fi, en-US, en-CA, fr-CA, en-AU; nl-NL, nl-BE, fr-BE, de-AT and en-IE from wave 8; es-ES, it-IT and pl-PL from wave 9; fr-FR for the trade documents from 2026-10-10), ISO 216 (A4) and US Letter; the words of skills/_checks/trade_words.json. Read 2026-10-09. The page a document sits on: the envelope windows of guidelines/letter-layouts/2026-10, through skills/_shared/letter.py (2026-10-10).",
+  "rules": [
+    {
+      "id": "TL-01",
+      "grader": "script",
+      "text": "Every label is in the document's language: the name of the document, the information block, the column heads, the totals and the terms; a label from another language fails.",
+      "source": "skills/_checks/trade_words.json",
+      "check": "purchase_order_check.py TRADE-LANG"
+    },
+    {
+      "id": "TL-02",
+      "grader": "script",
+      "text": "The page is A4, or US Letter in the United States and Canada, in PDF, Word and Excel.",
+      "source": "ISO 216; ANSI Letter",
+      "check": "locale_floor.py LOCALE-PAPER"
+    },
+    {
+      "id": "TL-03",
+      "grader": "script",
+      "text": "Dates and numbers in the locale's CLDR forms.",
+      "source": "CLDR",
+      "check": "locale_floor.py LOCALE-DATE"
+    },
+    {
+      "id": "TL-04",
+      "grader": "judge",
+      "text": "The tax is named as the market names it: MVA, ALV, sales tax, GST/HST or TPS/TVH, GST, btw, TVA (HTVA, TVAC), USt. with the Austrian UID-Nr., IVA with the Spanish NIF-IVA and the Italian partita IVA, VAT with the Polish NIP.",
+      "source": "each market's tax authority usage"
+    },
+    {
+      "id": "TL-05",
+      "grader": "judge",
+      "text": "A Belgian document is in the language of the seller's region unless the customer's language is named: Dutch in Flanders, French in Wallonia; Brussels writes either.",
+      "source": "decreet 19 juli 1973; décret 30 juin 1982; skills/trade-documents/scripts/trade_create.py"
+    },
+    {
+      "id": "TL-06",
+      "grader": "script",
+      "text": "On a printed PDF the information block stands where the page's layout puts it: from 125 mm across on DIN 5008 Form B and beside an envelope window on the left, left of a window on the right (Belgium, Spain, Italy, Poland), above a No. 10 window (the United States, Canada). It ends on the text's right edge, where the table ends, or before a window on the right, with each of its labels on one line; a long value wraps in its own column.",
+      "source": "DIN 5008:2020 Form B for where the block starts; skills/_shared/letter.py layout_info for a country layout; the invoice page's rule (EINV-PAGE-DIN5008) for where it ends",
+      "check": "purchase_order_check.py TRADE-BLOCK"
+    },
+    {
+      "id": "TL-07",
+      "grader": "judge",
+      "text": "The address field is written the way the recipient's post office reads it, as the letter and the invoice to the same recipient write it: the town in capitals where the operator asks for it, no country line at home, the country last and in capitals abroad. The sender's own address in the footer is the company's imprint, not an address for the post: ordinary case, the same lines its letter and its invoice print (28001 Madrid, 40121 Bologna (BO), Leeds LS1 4BR), the country last when the document goes abroad; the return line of a Form B page, the delivery line and a workbook's footer row are one line each with the same town line.",
+      "source": "skills/_shared/letter.py postal_lines (the address field), own_address and town_line (the footer); guidelines/letter-layouts/2026-10; guidelines/house-honest/1 ONE-FOOTER"
+    },
+    {
+      "id": "TL-08",
+      "grader": "script",
+      "text": "A trade document sits on the letter layout of the country it is sent from (the seller's, or the buyer's on a purchase order), the sheet that country's invoice and letter use. A PDF: every address line inside the envelope window less what the operator keeps clear, nothing else in the window, the heading on the layout's left margin and the table ending on its right margin. A Word file: the layout's paper and margins, and fixed rows and cells that put the address's first line inside the window. A country with no layout of its own (Germany, Sweden, France) keeps DIN 5008 Form B, as does a document whose language prints on the other paper; a workbook keeps the address on the same side and is not measured.",
+      "source": "skills/_shared/letter.py LAYOUTS, letter_layout and layout_css; guidelines/letter-layouts/2026-10 for each country's window and what was read for it (no operator publishes a window position, only its zone)",
+      "check": "purchase_order_check.py TRADE-WINDOW"
+    },
+    {
+      "id": "TL-09",
+      "grader": "judge",
+      "text": "A French seller's document, and one in French with no Belgian or Canadian party, is written in France's French: Devis, Bon de commande, Bon de livraison, Facture pro forma, Total HT and Total TTC. Belgium keeps its own (Offre de prix, HTVA, TVAC) and Canada its own. The footer of a French company's document carries its legal form with the share capital and RCS with the register's town and the SIREN, as its invoice does.",
+      "source": "skills/_checks/trade_words.json (fr-FR: the pack's own Belgian French with France's terms, our own words in published business usage, no text copied); Code de commerce R123-237 for the company line (guidelines/company-mentions/2026-10); skills/trade-documents/scripts/trade_create.py named_locale, skills/_shared/letter.py french_lines"
+    }
+  ]
+}

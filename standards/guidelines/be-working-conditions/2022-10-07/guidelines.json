@@ -1,0 +1,83 @@
+{
+  "issuer": "be-working-conditions",
+  "version": "2022-10-07",
+  "link": "https://www.ejustice.just.fgov.be/eli/loi/2022/10/07/2022206298/justel",
+  "license": "Belgian official act, not protected by copyright (Code de droit économique art. XI.172 § 2); restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Loi du 7 octobre 2022 / wet van 7 oktober 2022, arts. 4 to 7: information on the employment relationship",
+  "source": "Loi du 7 octobre 2022 transposant partiellement la directive (UE) 2019/1152 (Moniteur belge 31 October 2022, numac 2022206298, in force 10 November 2022), arts. 4 to 7, in French and Dutch; loi du 3 juillet 1978 relative aux contrats de travail arts. 15, 67 (repealed from 1 January 2014) and 127; decreet van 19 juli 1973 (Flemish Community) arts. 2 and 5; décret du 30 juin 1982 (French Community) arts. 1 and 2. Justel consolidated texts, read 2026-10-09.",
+  "note": "A drafting check, not legal advice: the scripted rules read whether a particular is there, never whether a term is lawful.",
+  "rules": [
+    {
+      "id": "BE-01",
+      "grader": "script",
+      "text": "The items of art. 4 are given by the first working day; those of art. 5 within a month; work abroad before departure.",
+      "source": "art. 4 § 1, art. 5, art. 6",
+      "check": "employment_check.py EMPLOY-DATES"
+    },
+    {
+      "id": "BE-02",
+      "grader": "script",
+      "text": "The parties, the place of work (or that it varies, with the employer's seat), the function, the start and a fixed term's end or expected length.",
+      "source": "art. 4 § 2 1° to 5°",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "BE-03",
+      "grader": "script",
+      "text": "The pay: the starting amount, every other element separately, the extra-legal social security benefits, and how and how often it is paid.",
+      "source": "art. 4 § 2 6°",
+      "check": "employment_check.py EMPLOY-PAY"
+    },
+    {
+      "id": "BE-04",
+      "grader": "script",
+      "text": "A fixed schedule gives when the regular day starts and ends, the breaks and the regular days off, or the work rules' schedule; a variable one the principle, the hours, the daily window and the days, and how the schedule is announced.",
+      "source": "art. 4 § 2 8°, 9°",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "BE-05",
+      "grader": "script",
+      "text": "Training, annual holidays, the termination procedure with the time to challenge a dismissal, the collective agreements with the joint committee, and the social security institution: each given, or said to be in the work rules. Art. 5 binds this document only for a worker outside the work rules act of 8 April 1965; for everyone else the work rules carry these items.",
+      "source": "art. 5 1° to 5°",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "BE-10",
+      "grader": "script",
+      "text": "The pay, the hours, and art. 5's training, holidays and termination may point to a law, a regulation or a collective agreement, and art. 5's items to the work rules; the parties, place, function and dates are stated.",
+      "source": "art. 4 § 2 6°, 8°; art. 5",
+      "check": "employment_check.py EMPLOY-REFERENCE"
+    },
+    {
+      "id": "BE-06",
+      "grader": "script",
+      "text": "No trial period on an ordinary employment contract since 1 January 2014; student and agency contracts excepted.",
+      "source": "loi du 3 juillet 1978 art. 67 (repealed), art. 127; art. 4 § 2 7°",
+      "check": "employment_check.py EMPLOY-PROBATION"
+    },
+    {
+      "id": "BE-07",
+      "grader": "script",
+      "text": "Work abroad over four consecutive weeks: the country and length, the currency, the benefits and the return home.",
+      "source": "art. 6",
+      "check": "employment_check.py EMPLOY-ABROAD"
+    },
+    {
+      "id": "BE-08",
+      "grader": "script",
+      "text": "The statement is in the language of the workplace's region: Dutch in Flanders, French in Wallonia, either in Brussels.",
+      "source": "decreet 19 juli 1973 art. 5; décret 30 juin 1982 art. 2",
+      "check": "employment_check.py EMPLOY-BE-LANG"
+    },
+    {
+      "id": "BE-09",
+      "grader": "script",
+      "text": "Every heading is in the statement's language.",
+      "source": "decreet 19 juli 1973 art. 5; décret 30 juin 1982 art. 2",
+      "check": "employment_check.py EMPLOY-LANG"
+    }
+  ]
+}

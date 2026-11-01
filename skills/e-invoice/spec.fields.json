@@ -1,0 +1,82 @@
+{
+ "about": "Every key the invoice builders read from an order's data file: the page (page/build_page.py), the EN 16931 XML (scripts/einvoice_create.py) and the national files (scripts/*_create.py). The builders stop on a key that is not here, and on a value of another shape (skills/_shared/spec_guard.py). A fact with no field of its own goes in note (one line under the totals, also carried in the XML as the invoice note), or, for the seller's own particulars, in seller.further (printed in the footer with its register details).",
+ "open": {"": "note", "seller": "further"},
+ "hints": {
+  "notes": "an invoice has one free line, \"note\" (text), printed under the totals and carried in the XML",
+  "terms": "payment terms go in \"payment_terms\" (text)",
+  "bank": "the bank account goes in \"payment\": {\"bank\": ..., \"iban\": ..., \"bic\": ...}",
+  "iban": "the bank account goes in \"payment\": {\"bank\": ..., \"iban\": ..., \"bic\": ...}",
+  "supply_date": "the date of supply is \"delivery_date\" (or \"delivery_period\": {\"from\": ..., \"to\": ...})",
+  "date_of_supply": "the date of supply is \"delivery_date\" (or \"delivery_period\": {\"from\": ..., \"to\": ...})",
+  "invoice_number": "the invoice number is \"number\", written exactly as the person's files give it",
+  "date": "the invoice date is \"issue_date\"",
+  "customer": "the customer is \"buyer\"",
+  "supplier": "the supplier is \"seller\"",
+  "lines.description": "a line's text is \"name\"",
+  "lines.price": "a line's price is \"unit_price\", a number",
+  "lines.vat": "a line's VAT rate is \"vat_rate\", a percentage written as a number (20 for 20 percent)",
+  "seller.iban": "the bank account goes in the top-level \"payment\": {\"bank\": ..., \"iban\": ..., \"bic\": ...}",
+  "seller.vat_number": "the VAT number is \"vat_id\"",
+  "buyer.vat_number": "the VAT number is \"vat_id\""
+ },
+ "defs": {
+  "eaddress": {"id": "text", "scheme": "text"},
+  "contact": {"name": "text", "email": "text", "phone": "text", "website": "text"},
+  "rea": {"office": "text", "number": "text", "share_capital": "number | text", "sole_shareholder": "flag | text", "in_liquidation": "flag | text"},
+  "party": {
+   "name": "text", "trade_name": "text", "trading_name": "text", "legal_form": "text",
+   "person": "any", "first_name": "text", "surname": "text", "second_surname": "text", "private": "any",
+   "attention": "text", "street": "text", "street2": "text", "building": "text", "locality": "text",
+   "postcode": "text", "city": "text", "county": "text", "province": "text", "state": "text",
+   "country": "text", "country_name": "text", "country_alpha3": "text", "language": "text",
+   "contact": "@contact", "contact_name": "text", "email": "text", "phone": "text", "website": "text", "pec": "text",
+   "electronic_address": "text | @eaddress", "recipient_code": "text",
+   "vat_id": "text", "vat": "text", "tax_number": "text", "tax_code": "text", "tax_regime": "text",
+   "org_number": "text", "business_id": "text", "cvr": "text", "kvk": "text", "enterprise_number": "text",
+   "siren": "text", "siret": "text", "rcs": "text", "regon": "text", "abn": "text", "acn": "text",
+   "gst_number": "text", "qst_number": "text", "sales_tax_permit": "text",
+   "registered_office": "text", "registered_in": "text", "register": "text", "register_number": "text",
+   "managing_directors": "text | [text]", "share_capital": "number | text", "paid_up_capital": "number | text",
+   "sole_shareholder": "flag | text", "in_liquidation": "flag | text", "directed_by": "text", "group": "text",
+   "rea": "@rea",
+   "unknown": "text | [text]",
+   "further": ["text"]
+  },
+  "period": {"from": "text", "to": "text"}
+ },
+ "fields": {
+  "syntax": "text", "type_code": "text", "language": "text", "layout": "text",
+  "number": "text", "series": "text", "issue_date": "text", "due_date": "text", "created_at": "text",
+  "delivery_date": "text", "delivery_period": "@period", "delivery_place": "text",
+  "delivery_address": {"name": "text", "street": "text", "postcode": "text", "city": "text", "country": "text"},
+  "currency": "text", "tax_currency": "text", "exchange_rate": "number", "exchange_rate_date": "text",
+  "buyer_reference": "text", "order_reference": "text", "order_date": "text", "business_process": "text",
+  "preceding_invoice": "text", "preceding_invoice_date": "text", "preceding_series": "text",
+  "preceding_ksef_number": "text", "preceding_outside_ksef": "any",
+  "correction": {"reason_code": "text", "period": "@period"},
+  "seller": "@party", "buyer": "@party",
+  "lines": [{
+   "name": "text", "description": "text", "sku": "text", "order_line": "text", "hs_code": "text", "origin": "text",
+   "quantity": "number", "unit": "text", "unit_price": "number", "discount_percent": "number", "discount_amount": "number", "discount_reason": "text", "discount_reason_code": "text", "net": "number",
+   "vat_rate": "rate", "vat_category": "text", "taxable": "flag",
+   "exemption_code": "text", "exemption_reason": "text", "exemption_basis": "text", "nature": "text"
+  }],
+  "allowances": [{"amount": "number", "percent": "number", "base": "number", "reason": "text", "reason_code": "text",
+                  "vat_rate": "rate", "vat_category": "text"}],
+  "paid_amount": "number", "paid_note": "text", "paid_date": "text",
+  "taxes": [{"name": "text", "rate": "number", "lines": "any"}],
+  "payment": {
+   "bank": "text", "iban": "text", "bic": "text", "account": "text", "account_name": "text", "reference": "text",
+   "means_code": "text", "bank_reg": "text", "sort_code": "text", "bsb": "text", "routing": "text",
+   "transit": "text", "kid": "text", "bankgiro": "text", "plusgiro": "text"
+  },
+  "payment_terms": "text", "note": "text",
+  "exemption_code": "text", "exemption_reason": "text", "exemption_basis": "text", "nature": "text",
+  "operation": "text", "vat_on_debits": "flag", "fr_treatment": "text", "xrechnung": "flag",
+  "late_interest": "text", "late_interest_percent": "number | text", "late_penalty_rate": "number | text",
+  "early_payment_discount": "text", "complaint_period": "text",
+  "split_payment": "flag", "cash_method": "flag", "stamp_duty": "any", "public_buyer": "any",
+  "transmission_number": "text", "transmitter": {"code": "text", "country": "text"},
+  "unknown": "text | [text]"
+ }
+}

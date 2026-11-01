@@ -1,0 +1,99 @@
+{
+  "issuer": "kosit-xrechnung",
+  "version": "3.0",
+  "link": "https://github.com/itplr-kosit/xrechnung-schematron",
+  "license": "Apache-2.0: the KoSIT XRechnung schematron, release v2.6.0 (commit 217c6cbf8ac9), ported with credit in THIRD_PARTY.md and licenses/xrechnung-schematron-apache-2.0.txt. The rules are restated in our own words and code; no schematron or XSLT is copied. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-08",
+  "status": "draft",
+  "title": "The German rules an XRechnung invoice or credit note adds to EN 16931",
+  "source": "XRechnung 3.0, the German core invoice usage specification of EN 16931 maintained by the Koordinierungsstelle fuer IT-Standards (KoSIT), as its schematron release v2.6.0 (2026-09-02) states the rules for the Cross Industry Invoice syntax: src/validation/schematron/cii/XRechnung-CII-validation.sch and common.sch, read 2026-10-08. Only the rules below are ported; the others reach a file through the KoSIT validator, a separate tool. They apply when the buyer asks for XRechnung, which a German public buyer does. The KoSIT validator itself, with the XRechnung 3.0.2 configuration, runs untouched as EINV-KOSIT; it found the PEPPOL-EN16931-R001, -R010 and -R020 rules our first XRechnung missed (2026-10-09).",
+  "rules": [
+    {
+      "id": "INV-XRECHNUNG",
+      "grader": "script",
+      "script": "credit_note_check.py",
+      "text": "An invoice or credit note for a buyer who asks for XRechnung carries the XRechnung specification identifier, the buyer reference, the payment instructions, a seller contact with name, phone and email, and the seller's and buyer's city and post code (the BR-DE rules below)."
+    },
+    {
+      "id": "BR-DE-1",
+      "text": "The invoice carries payment instructions (BG-16).",
+      "check": "credit_note_check.py INV-XRECHNUNG"
+    },
+    {
+      "id": "BR-DE-2",
+      "text": "The seller's contact group (BG-6) is there.",
+      "check": "credit_note_check.py INV-XRECHNUNG"
+    },
+    {
+      "id": "BR-DE-3",
+      "text": "The seller's city (BT-37) is given.",
+      "check": "credit_note_check.py INV-XRECHNUNG"
+    },
+    {
+      "id": "BR-DE-4",
+      "text": "The seller's post code (BT-38) is given.",
+      "check": "credit_note_check.py INV-XRECHNUNG"
+    },
+    {
+      "id": "BR-DE-5",
+      "text": "The seller's contact names a person or a department (BT-41).",
+      "check": "credit_note_check.py INV-XRECHNUNG"
+    },
+    {
+      "id": "BR-DE-6",
+      "text": "The seller's contact has a telephone number (BT-42).",
+      "check": "credit_note_check.py INV-XRECHNUNG"
+    },
+    {
+      "id": "BR-DE-7",
+      "text": "The seller's contact has an email address (BT-43).",
+      "check": "credit_note_check.py INV-XRECHNUNG"
+    },
+    {
+      "id": "BR-DE-8",
+      "text": "The buyer's city (BT-52) is given.",
+      "check": "credit_note_check.py INV-XRECHNUNG"
+    },
+    {
+      "id": "BR-DE-9",
+      "text": "The buyer's post code (BT-53) is given.",
+      "check": "credit_note_check.py INV-XRECHNUNG"
+    },
+    {
+      "id": "BR-DE-15",
+      "text": "The buyer reference (BT-10) is given; for a German public buyer it is the Leitweg-ID.",
+      "check": "credit_note_check.py INV-XRECHNUNG"
+    },
+    {
+      "id": "BR-DE-21",
+      "text": "The specification identifier (BT-24) names XRechnung 3.0; the schematron gives this as a warning.",
+      "check": "credit_note_check.py INV-XRECHNUNG"
+    },
+    {
+      "id": "BR-DE-23-a",
+      "text": "A payment by credit transfer (payment means code 30 or 58) gives the account to pay into (BG-17).",
+      "check": "credit_note_check.py INV-XRECHNUNG"
+    },
+    {
+      "id": "EINV-KOSIT",
+      "grader": "script",
+      "script": "einvoice_page.py",
+      "text": "The official KoSIT validator (v1.6.3, Apache-2.0, run untouched) with the XRechnung 3.0.2 configuration of 2026-08-31 accepts the XML: the XRechnung scenario for an XRechnung, EN16931 (CII) otherwise; skipped when the validator is not installed."
+    },
+    {
+      "id": "PEPPOL-EN16931-R001",
+      "text": "The business process (BT-23) is given; the e-invoice pack writes the Peppol billing process urn:fdc:peppol.eu:2017:poacc:billing:01:1.0.",
+      "check": "einvoice_page.py EINV-KOSIT"
+    },
+    {
+      "id": "PEPPOL-EN16931-R010",
+      "text": "The buyer's electronic address (BT-49) is given; for a public buyer its Leitweg-ID under scheme 0204 when the order names no other.",
+      "check": "einvoice_page.py EINV-KOSIT"
+    },
+    {
+      "id": "PEPPOL-EN16931-R020",
+      "text": "The seller's electronic address (BT-34) is given; the seller contact's email when the order names no other.",
+      "check": "einvoice_page.py EINV-KOSIT"
+    }
+  ]
+}

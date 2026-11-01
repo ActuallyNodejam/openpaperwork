@@ -1,0 +1,287 @@
+{
+ "id": "facture-fr-001",
+ "title": "Invoice a French customer for an audit, as a Factur-X PDF with its XML",
+ "person": "The billing clerk of a small consultancy in Nantes invoicing a logistics group in Bordeaux under the French e-invoicing reform.",
+ "format": "pdf",
+ "output": "facture.pdf",
+ "extra_outputs": [
+  "facture.xml"
+ ],
+ "locale": "fr-FR",
+ "sector": {
+  "naics": "54",
+  "name": "Professional, Scientific, and Technical Services"
+ },
+ "occupation": {
+  "soc": "43-3021.00",
+  "name": "Billing and Posting Clerks"
+ },
+ "review": [
+  "Facture FA-2026-0118 du 12/10/2026 : 3 jours à 950,00 € et 8 heures à 110,00 €, 3 730,00 € HT, TVA 20 % 746,00 €, 4 476,00 € TTC, échéance 11/11/2026; prestations de services, option pour les débits."
+ ],
+ "revised_review": [
+  "10 heures au lieu de 8 : 3 950,00 € HT, 790,00 € de TVA, 4 740,00 € TTC; rien d'autre ne change."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "factur-x",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-FACTURX",
+   "guidelines": [
+    "factur-x/1.0#EINV-FACTURX"
+   ],
+   "text": "The PDF is a Factur-X / ZUGFeRD file: the invoice XML inside it, the level in its XMP, the same XML as the one beside it."
+  },
+  {
+   "id": "pdf-a",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PDFA",
+   "guidelines": [
+    "factur-x/1.0#EINV-PDFA"
+   ],
+   "text": "The PDF is PDF/A-3B (veraPDF); skipped without veraPDF."
+  },
+  {
+   "id": "kosit",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-KOSIT",
+   "guidelines": [
+    "kosit-xrechnung/3.0#EINV-KOSIT"
+   ],
+   "text": "The KoSIT validator accepts the XML; skipped without it."
+  },
+  {
+   "id": "locale-date",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-DATE",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-DATE"
+   ],
+   "text": "Dates on the page are in the dd/MM/yyyy form."
+  },
+  {
+   "id": "locale-number",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-NUMBER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-NUMBER"
+   ],
+   "text": "Amounts use the locale's separators."
+  },
+  {
+   "id": "locale-order",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-LOCALE-ORDER",
+   "guidelines": [
+    "cen-en16931/2017#EINV-LOCALE-ORDER"
+   ],
+   "text": "The page is written in the language of the order itself."
+  },
+  {
+   "id": "vat-label",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-VAT-LABEL",
+   "guidelines": [
+    "cen-en16931/2017#EINV-VAT-LABEL"
+   ],
+   "text": "Every VAT number on the page carries its label."
+  },
+  {
+   "id": "page-din5008",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-DIN5008",
+   "guidelines": [
+    "din-5008/2020#EINV-PAGE-DIN5008"
+   ],
+   "text": "The page is laid out on the library's letter sheet (DIN 5008 Form B)."
+  },
+  {
+   "id": "fr-seller",
+   "stage": "both",
+   "grader": "script",
+   "script": "fr_invoice_check.py",
+   "rule": "FR-SELLER",
+   "guidelines": [
+    "fr-cgi-invoice/2026-09#FR-SELLER",
+    "fr-cgi-invoice/2026-09#FR-F31808",
+    "fnfe-france-rfe/1.4.0#BR-FR-10"
+   ],
+   "text": "Seller's SIREN, legal form, capital, RCS and VAT number on the page and in the XML."
+  },
+  {
+   "id": "fr-buyer",
+   "stage": "both",
+   "grader": "script",
+   "script": "fr_invoice_check.py",
+   "rule": "FR-BUYER",
+   "guidelines": [
+    "fr-cgi-invoice/2026-09#FR-BUYER",
+    "fnfe-france-rfe/1.4.0#BR-FR-11"
+   ],
+   "text": "The buyer's SIREN and VAT number on the page and in the XML."
+  },
+  {
+   "id": "fr-payment",
+   "stage": "both",
+   "grader": "script",
+   "script": "fr_invoice_check.py",
+   "rule": "FR-PAYMENT",
+   "guidelines": [
+    "fr-cgi-invoice/2026-09#FR-L441-9",
+    "fr-cgi-invoice/2026-09#FR-D441-5",
+    "fnfe-france-rfe/1.4.0#BR-FR-05"
+   ],
+   "text": "Penalties, the 40 euro indemnity and the discount on the page and as notes PMD, PMT, AAB."
+  },
+  {
+   "id": "fr-mentions",
+   "stage": "both",
+   "grader": "script",
+   "script": "fr_invoice_check.py",
+   "rule": "FR-MENTIONS",
+   "guidelines": [
+    "fr-cgi-invoice/2026-09#FR-MENTIONS",
+    "fnfe-france-rfe/1.4.0#BR-FR-08"
+   ],
+   "text": "The nature of the operation (and BT-23), VAT on debits, the delivery address as the order has them."
+  },
+  {
+   "id": "fr-ctc",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-FR-CTC",
+   "guidelines": [
+    "fnfe-france-rfe/1.4.0#EINV-FR-CTC"
+   ],
+   "text": "The KoSIT validator with the FNFE BR-FR rules accepts the XML; skipped without it."
+  },
+  {
+   "id": "company-particulars",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PARTICULARS",
+   "guidelines": [
+    "invoice-company-particulars/2026-10#EINV-PARTICULARS"
+   ],
+   "text": "The page states what the seller's own company statute puts on an invoice; a particular the files do not give is declared unknown and printed nowhere."
+  },
+  {
+   "id": "only-what-was-done",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "Only the audit days and the report hours are invoiced, at the agreed prices; nothing is invented (no discount, no other rate)."
+  },
+  {
+   "id": "revision-kept",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-2"
+   ],
+   "text": "The revision changes the hours and the totals that follow, and nothing else."
+  }
+ ],
+ "truth": {
+  "doc": "invoice",
+  "type_code": "380",
+  "number": "FA-2026-0118",
+  "issue_date": "2026-10-12",
+  "due_date": "2026-11-11",
+  "currency": "EUR",
+  "operation": "services",
+  "vat_on_debits": true,
+  "seller": {
+   "name": "Studio Exemple Conseil SAS",
+   "country": "FR",
+   "siren": "000000034",
+   "legal_form": "SAS",
+   "share_capital": 20000,
+   "rcs": "RCS Nantes"
+  },
+  "buyer": {
+   "name": "Logistique Essai SARL",
+   "country": "FR",
+   "siren": "000000042"
+  },
+  "first": {
+   "lines": [
+    {
+     "name": "Audit des procédés de fabrication",
+     "quantity": 3,
+     "unit_price": 950.0,
+     "vat_rate": 20,
+     "vat_category": "S"
+    },
+    {
+     "name": "Rédaction du rapport et restitution",
+     "quantity": 8,
+     "unit_price": 110.0,
+     "vat_rate": 20,
+     "vat_category": "S"
+    }
+   ]
+  },
+  "revision": {
+   "lines": [
+    {
+     "name": "Audit des procédés de fabrication",
+     "quantity": 3,
+     "unit_price": 950.0,
+     "vat_rate": 20,
+     "vat_category": "S"
+    },
+    {
+     "name": "Rédaction du rapport et restitution",
+     "quantity": 10,
+     "unit_price": 110.0,
+     "vat_rate": 20,
+     "vat_category": "S"
+    }
+   ]
+  }
+ },
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "cen-en16931/2017",
+  "fr-cgi-invoice/2026-09",
+  "fnfe-france-rfe/1.4.0",
+  "factur-x/1.0",
+  "kosit-xrechnung/3.0",
+  "din-5008/2020"
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices, SIREN, VAT and bank numbers are invented and obviously fake.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen."
+}

@@ -1,0 +1,1 @@
+Create safety.pptx, an editable four-slide deck for the warehouse's quarterly safety briefing, from incidents.csv and notes.txt. Cover the headline, one clearly labelled chart of near misses and minor injuries by month, the main cause, and the agreed actions with owner and start date. Keep text readable. Do not invent rates, trends or causes.

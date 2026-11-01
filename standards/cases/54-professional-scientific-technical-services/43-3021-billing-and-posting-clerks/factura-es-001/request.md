@@ -1,0 +1,1 @@
+¿Puedes preparar la factura de septiembre para Ejemplo Editorial (documentos en `inputs/`)? Necesito `factura.pdf` y, al lado, el fichero Facturae `factura.xml`. Fecha de expedición: 9 de octubre de 2026.

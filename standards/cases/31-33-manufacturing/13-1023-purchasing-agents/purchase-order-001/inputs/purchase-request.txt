@@ -1,0 +1,6 @@
+Purchase request PR-118, from production planning, 10 October 2026
+For the SB-7 sensor board batch:
+- 450 x 12-pin connectors (Rheintal RB-C12)
+- 200 x 40 mm heat sinks (RB-H40)
+- 300 x 5x20 fuse holders (RB-F5)
+Needed at our goods reception by 9 November 2026.

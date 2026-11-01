@@ -1,0 +1,61 @@
+{
+  "number": "INV-1043",
+  "issue_date": "2026-10-05",
+  "due_date": "2026-10-19",
+  "delivery_date": "2026-10-03",
+  "currency": "AUD",
+  "payment_terms": "14 days net",
+  "buyer_reference": "PO 5521",
+  "seller": {
+    "name": "Example Plumbing Supplies Pty Ltd",
+    "street": "1 Sample Street",
+    "postcode": "3000",
+    "city": "Melbourne VIC",
+    "country": "AU",
+    "acn": "000 000 000",
+    "abn": "12 345 678 012",
+    "contact": {
+      "name": "Alex Example",
+      "phone": "+61 3 0000 0000",
+      "email": "accounts@plumb.example"
+    }
+  },
+  "buyer": {
+    "name": "Example Office Cleaning Pty Ltd",
+    "street": "2 Example Road",
+    "postcode": "2000",
+    "city": "Sydney NSW",
+    "country": "AU",
+    "abn": "98 765 432 041"
+  },
+  "payment": {
+    "bsb": "062-000",
+    "account": "1234 5678"
+  },
+  "lines": [
+    {
+      "name": "Hot water unit, installed",
+      "quantity": 1,
+      "unit": "C62",
+      "unit_price": 3200.0,
+      "vat_rate": 10,
+      "vat_category": "S"
+    },
+    {
+      "name": "Installation labour",
+      "quantity": 4,
+      "unit": "HUR",
+      "unit_price": 110.0,
+      "vat_rate": 10,
+      "vat_category": "S"
+    },
+    {
+      "name": "Sunscreen SPF 50+ for site crew",
+      "quantity": 2,
+      "unit": "C62",
+      "unit_price": 12.0,
+      "vat_rate": 0,
+      "vat_category": "Z"
+    }
+  ]
+}

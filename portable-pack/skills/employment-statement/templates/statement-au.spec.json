@@ -1,0 +1,46 @@
+{
+  "language": "en",
+  "law": "au",
+  "given": "2026-11-02",
+  "employer": {
+    "name": "Bluegum Outdoor Gear Pty Ltd",
+    "number": "ABN 12 345 678 901",
+    "address": "18 Example Street, Fitzroy VIC 3065",
+    "signatory": "Chloe Nguyen, Store Manager"
+  },
+  "worker": {
+    "name": "Liam O'Connor",
+    "address": "5/22 Sample Road, Brunswick VIC 3056"
+  },
+  "job": {
+    "title": "Retail assistant",
+    "description": "Serving customers, fitting boots and packs, and receiving stock."
+  },
+  "place": "The Fitzroy store, 18 Example Street, Fitzroy VIC 3065",
+  "start": "2026-11-07",
+  "term": {
+    "type": "casual"
+  },
+  "probation": null,
+  "award": "General Retail Industry Award 2020 (MA000004), Retail Employee Level 1",
+  "pay": {
+    "amount": 32.1,
+    "currency": "AUD",
+    "per": "hour",
+    "paid": "weekly, every Thursday",
+    "method": "electronic funds transfer to the employee's account",
+    "components": [
+      {
+        "name": "Casual loading",
+        "text": "the hourly rate includes the 25 percent casual loading"
+      }
+    ]
+  },
+  "hours": {
+    "pattern": "fixed",
+    "standard": "as rostered, usually Saturday and Sunday, 9:00 to 17:00; each engagement is at least 3 hours"
+  },
+  "leave": "Paid family and domestic violence leave, and unpaid carer's and compassionate leave, as the National Employment Standards provide",
+  "termination": "Either side may end the employment; notice follows the award and the National Employment Standards",
+  "super": "Superannuation guarantee contributions are paid into the employee's chosen fund, or the employer's default fund if none is chosen"
+}

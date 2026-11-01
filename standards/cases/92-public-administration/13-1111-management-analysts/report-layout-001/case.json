@@ -1,0 +1,156 @@
+{
+  "id": "report-layout-001",
+  "title": "Write a report that follows a house style file",
+  "format": "docx",
+  "output": "report.docx",
+  "person": "A management analyst delivering a short review to a municipal board.",
+  "sector": {
+    "naics": "92",
+    "name": "Public Administration"
+  },
+  "occupation": {
+    "soc": "13-1111.00",
+    "name": "Management Analysts"
+  },
+  "truth": {
+    "style": {
+      "page": "A4",
+      "font": "Liberation Sans",
+      "body_pt": 10.5
+    },
+    "margins_mm": {
+      "first": 25,
+      "revision": 20
+    },
+    "sections": {
+      "first": [
+        "Summary",
+        "Method",
+        "Findings",
+        "Recommendations",
+        "Next steps"
+      ],
+      "revision": [
+        "Summary",
+        "Method",
+        "Findings",
+        "Recommendations",
+        "Risks",
+        "Next steps"
+      ]
+    }
+  },
+  "review": [
+    "The report follows the house style file and stays within three pages.",
+    "No finding is added or dropped."
+  ],
+  "revised_review": [
+    "Margins are 20 mm and the Risks section sits after Recommendations."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.3.0#FMT-1",
+        "openpaperwork/0.3.0#FMT-2",
+        "openpaperwork/0.3.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "lay-page",
+      "stage": "both",
+      "grader": "script",
+      "script": "layout.py",
+      "rule": "LAY-PAGE",
+      "guidelines": [
+        "openpaperwork/0.3.0#LAY-PAGE"
+      ],
+      "text": "Page size and all four margins match the house style in every section."
+    },
+    {
+      "id": "lay-font",
+      "stage": "both",
+      "grader": "script",
+      "script": "layout.py",
+      "rule": "LAY-FONT",
+      "guidelines": [
+        "openpaperwork/0.3.0#LAY-FONT"
+      ],
+      "text": "All text resolves to the house-style font through runs, styles and defaults; a font left to the theme is a different font."
+    },
+    {
+      "id": "lay-size",
+      "stage": "both",
+      "grader": "script",
+      "script": "layout.py",
+      "rule": "LAY-SIZE",
+      "guidelines": [
+        "openpaperwork/0.3.0#LAY-SIZE"
+      ],
+      "text": "Body text resolves to the house-style point size."
+    },
+    {
+      "id": "lay-head",
+      "stage": "both",
+      "grader": "script",
+      "script": "layout.py",
+      "rule": "LAY-HEAD",
+      "guidelines": [
+        "openpaperwork/0.3.0#LAY-HEAD"
+      ],
+      "text": "Sections use the built-in heading style and the title the built-in title style, in the requested order."
+    },
+    {
+      "id": "lay-foot",
+      "stage": "both",
+      "grader": "script",
+      "script": "layout.py",
+      "rule": "LAY-FOOT",
+      "guidelines": [
+        "openpaperwork/0.3.0#LAY-FOOT"
+      ],
+      "text": "The footer carries a page number field."
+    },
+    {
+      "id": "pages",
+      "stage": "both",
+      "grader": "render",
+      "guidelines": [
+        "openpaperwork/0.3.0#PAGE-1"
+      ],
+      "max_pages": 3,
+      "text": "The report renders within three pages."
+    },
+    {
+      "id": "content",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.3.0#FACT-1",
+        "openpaperwork/0.3.0#FACT-2"
+      ],
+      "text": "The report states median handling time 41 days in 2025 and 33 days in 2026, the 70-day target met by 96 percent, 240 cases read, and the step table lists all seven steps with their median days (1, 9, 14, 5, 6, 3, 1) and delay shares; no finding or recommendation is added."
+    },
+    {
+      "id": "risks",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.3.0#REV-1"
+      ],
+      "text": "A Risks section after Recommendations says the checklist may raise the share of rejected applications in its first months and that scanning depends on the December budget decision."
+    }
+  ],
+  "status": "draft",
+  "locale": "en",
+  "version": "1.2.0",
+  "guidelines": [
+    "openpaperwork/0.3.0",
+    "every-file/1.1.0"
+  ],
+  "source": "Synthetic material created for this evaluation pack; no customer inputs.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen."
+}

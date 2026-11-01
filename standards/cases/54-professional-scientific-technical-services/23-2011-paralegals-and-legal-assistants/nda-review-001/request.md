@@ -1,0 +1,1 @@
+Halvard Data sent us their NDA, `inputs/their-nda.docx`, before Thursday's meeting. Can you review it for us (we are the ones receiving their information) and give me a short memo in Word, `review.docx`, with what we should push back on?

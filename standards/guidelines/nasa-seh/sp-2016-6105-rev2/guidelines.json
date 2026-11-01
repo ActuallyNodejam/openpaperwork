@@ -1,0 +1,122 @@
+{
+  "issuer": "nasa-seh",
+  "version": "sp-2016-6105-rev2",
+  "link": "https://www.nasa.gov/seh/appendix-c-how-to-write-a-good-requirement",
+  "license": "A work of the US Government, not subject to copyright in the United States (17 U.S.C. 105); the checklist is restated in our own words with credit, the term lists kept as published. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-08",
+  "status": "draft",
+  "title": "NASA Systems Engineering Handbook, Appendix C: How to Write a Good Requirement",
+  "source": "NASA Systems Engineering Handbook, NASA/SP-2016-6105 Rev 2, Appendix C \"How to Write a Good Requirement\" (checklists C.1 to C.4), web edition last updated 26 July 2023, read 2026-10-08.",
+  "rules": [
+    {
+      "id": "RQ-01",
+      "grader": "script",
+      "text": "Shall marks a requirement, will a fact or a declaration of purpose, should a goal.",
+      "source": "C.1",
+      "check": "requirements_check.py REQ-VERB"
+    },
+    {
+      "id": "RQ-02",
+      "grader": "judge",
+      "text": "A requirement names who or what acts, in the active voice: the product shall do, perform, provide or weigh something.",
+      "source": "C.2"
+    },
+    {
+      "id": "RQ-03",
+      "grader": "judge",
+      "text": "Performance and other quantitative values carry their tolerances (less than, at least, plus or minus).",
+      "source": "C.2"
+    },
+    {
+      "id": "RQ-04",
+      "grader": "judge",
+      "text": "A requirement says what is needed, not how to provide it, and is not a description of an operation.",
+      "source": "C.2; C.4 Compliance"
+    },
+    {
+      "id": "RQ-05",
+      "grader": "script",
+      "text": "A requirement is stated positively rather than with shall not; the check reports a negative as a warning.",
+      "source": "C.3",
+      "check": "requirements_check.py REQ-NEGATIVE"
+    },
+    {
+      "id": "RQ-06",
+      "grader": "script",
+      "text": "TBD values are few; a best estimate marked TBR is preferred, and each names what closes it, who closes it and by when.",
+      "source": "C.3",
+      "check": "requirements_check.py REQ-TBD"
+    },
+    {
+      "id": "RQ-07",
+      "grader": "judge",
+      "text": "Each requirement comes with a rationale, and its assumptions are stated.",
+      "source": "C.3; C.4 Completeness"
+    },
+    {
+      "id": "RQ-08",
+      "grader": "script",
+      "text": "A requirement has no ambiguous terms such as as appropriate, etc., and/or, or but not limited to.",
+      "source": "C.4 Clarity",
+      "check": "requirements_check.py REQ-VAGUE"
+    },
+    {
+      "id": "RQ-09",
+      "grader": "script",
+      "text": "One thought per requirement statement: two requirements are not joined in one sentence.",
+      "source": "C.4 Clarity",
+      "check": "requirements_check.py REQ-ONE"
+    },
+    {
+      "id": "RQ-10",
+      "grader": "judge",
+      "text": "A requirement uses no indefinite pronoun such as this or these.",
+      "source": "C.4 Clarity"
+    },
+    {
+      "id": "RQ-11",
+      "grader": "script",
+      "text": "Every requirement is uniquely numbered so another document can refer to it.",
+      "source": "C.4 Traceability",
+      "check": "requirements_check.py REQ-ID"
+    },
+    {
+      "id": "RQ-12",
+      "grader": "script",
+      "text": "Every requirement can be verified by test, demonstration, inspection or analysis, and says which.",
+      "source": "C.4 Verifiability/Testability",
+      "check": "requirements_check.py REQ-VERIFY"
+    },
+    {
+      "id": "RQ-13",
+      "grader": "script",
+      "text": "A requirement has none of the unverifiable terms flexible, easy, sufficient, safe, ad hoc, adequate, accommodate, user-friendly, usable, when required, if required, appropriate, fast, portable, light-weight, small, large, maximize, minimize, robust, quickly, easily or clearly.",
+      "source": "C.4 Verifiability/Testability",
+      "check": "requirements_check.py REQ-VAGUE"
+    },
+    {
+      "id": "RQ-14",
+      "grader": "judge",
+      "text": "Other vague words ending in -ly or -ize are avoided as well.",
+      "source": "C.4 Verifiability/Testability"
+    },
+    {
+      "id": "RQ-15",
+      "grader": "judge",
+      "text": "Every incomplete requirement is captured as a TBD or TBR, and all of them are kept in one list with the requirements.",
+      "source": "C.4 Completeness"
+    },
+    {
+      "id": "RQ-16",
+      "grader": "judge",
+      "text": "Terms are used the same way throughout and the key ones are defined.",
+      "source": "C.4 Consistency"
+    },
+    {
+      "id": "RQ-17",
+      "grader": "judge",
+      "text": "Requirements hold no personnel or task assignments; deliveries and duties belong in the statement of work.",
+      "source": "C.4 Compliance"
+    }
+  ]
+}

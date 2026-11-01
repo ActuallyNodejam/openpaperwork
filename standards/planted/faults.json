@@ -1,0 +1,235 @@
+{
+  "business-letter": {
+    "template": "letter-uk.spec.json",
+    "builder": "letter_create.py",
+    "output": "letter.docx",
+    "faults": [
+      {
+        "id": "no-salutation",
+        "find": "Dear Mr Ashworth",
+        "replace": null,
+        "why": "the salutation is removed",
+        "expect": [
+          "LETTER-PARTS"
+        ]
+      },
+      {
+        "id": "no-closing",
+        "find": "Yours sincerely",
+        "replace": null,
+        "why": "the complimentary close is removed",
+        "expect": [
+          "LETTER-PARTS"
+        ]
+      },
+      {
+        "id": "no-sender-company",
+        "find": "Example Packaging Co-operative",
+        "replace": "",
+        "why": "the recipient company line is emptied",
+        "expect": [
+          "LETTER-ADDRESS"
+        ]
+      }
+    ]
+  },
+  "meeting-minutes": {
+    "template": "board-minutes-uk.spec.json",
+    "builder": "minutes_create.py",
+    "output": "minutes.docx",
+    "faults": [
+      {
+        "id": "no-quorum",
+        "find": "The chair confirmed that a quorum was present.",
+        "replace": null,
+        "why": "the quorum statement is removed",
+        "expect": [
+          "MINUTES-STATUTE"
+        ]
+      },
+      {
+        "id": "no-resolution",
+        "find": "Resolved that an interim dividend",
+        "replace": "The board discussed an interim dividend",
+        "why": "a motion is recorded without its resolution",
+        "expect": [
+          "MINUTES-STATUTE"
+        ]
+      },
+      {
+        "id": "no-chair",
+        "find": "Helen Carter",
+        "replace": "",
+        "why": "the chair's name is removed",
+        "expect": [
+          "MINUTES-OFFICERS"
+        ]
+      }
+    ]
+  },
+  "employment-statement": {
+    "template": "employment-statement-ca.spec.json",
+    "builder": "statement_create.py",
+    "output": "statement.docx",
+    "faults": [
+      {
+        "id": "no-pay",
+        "find": "Basic pay: $27.00 an hour.",
+        "replace": null,
+        "why": "the basic pay line is removed",
+        "expect": [
+          "EMPLOY-PAY"
+        ]
+      },
+      {
+        "id": "no-start-date",
+        "find": "The employment begins on November 2, 2026.",
+        "replace": null,
+        "why": "the start date is removed",
+        "expect": [
+          "EMPLOY-DATES"
+        ]
+      },
+      {
+        "id": "gap-left",
+        "find": "Dispatcher.",
+        "replace": "[TO CONFIRM: job title]",
+        "why": "a gap is left for the person",
+        "expect": [
+          "OUTPUT-OPEN-GAP"
+        ]
+      }
+    ]
+  },
+  "trade-documents": {
+    "template": "quotation-au.spec.json",
+    "builder": "trade_create.py",
+    "output": "quotation.docx",
+    "faults": [
+      {
+        "id": "wrong-total",
+        "find": "7,579.00",
+        "replace": "7,597.00",
+        "why": "the total including GST no longer adds up",
+        "expect": [
+          "TRADE-SUMS"
+        ]
+      },
+      {
+        "id": "wrong-line",
+        "find": "6,360.00",
+        "replace": "6,630.00",
+        "why": "a line amount is not quantity times price",
+        "expect": [
+          "TRADE-SUMS"
+        ]
+      },
+      {
+        "id": "no-delivery-terms",
+        "find": "Toowoomba QLD",
+        "replace": "",
+        "why": "the Incoterms rule loses its named place",
+        "expect": [
+          "TRADE-INCOTERMS"
+        ]
+      }
+    ]
+  },
+  "requirements-spec": {
+    "template": "requirements.spec.json",
+    "builder": "requirements_create.py",
+    "output": "requirements.docx",
+    "faults": [
+      {
+        "id": "vague-word",
+        "find": "The supply shall have a mass o",
+        "replace": "The supply shall be lightweight and have a mass o",
+        "why": "a vague word enters a requirement",
+        "expect": [
+          "REQ-VAGUE"
+        ]
+      },
+      {
+        "id": "no-owner",
+        "find": "Nadia Okafor",
+        "replace": "",
+        "why": "a TBR item loses its owner",
+        "expect": [
+          "REQ-TBD"
+        ]
+      },
+      {
+        "id": "may-not-shall",
+        "find": "The supply shall deliver an ou",
+        "replace": "The supply may deliver an ou",
+        "why": "a requirement drops its shall",
+        "expect": [
+          "REQ-VERB"
+        ]
+      }
+    ]
+  },
+  "contract-drafting": {
+    "template": "nda.spec.json",
+    "builder": "agreement_create.py",
+    "output": "agreement.docx",
+    "spec": {
+      "governing_law": "the laws of Sweden",
+      "courts": "the courts of Gothenburg"
+    },
+    "faults": [
+      {
+        "id": "no-governing-law",
+        "find": "the laws of Sweden",
+        "replace": "",
+        "why": "the governing law is removed",
+        "expect": [
+          "LEGAL-LAW"
+        ]
+      },
+      {
+        "id": "no-second-party",
+        "find": "Brightwater Analytics Ltd",
+        "replace": "",
+        "why": "a party's name is removed",
+        "expect": [
+          "LEGAL-PARTIES",
+          "LEGAL-SIGN"
+        ]
+      }
+    ]
+  },
+  "e-invoice": {
+    "template": "invoice-spec.json",
+    "steps": [
+      [
+        "scripts/einvoice_create.py",
+        "spec.json",
+        "invoice.xml"
+      ],
+      [
+        "page/build_page.py",
+        "spec.json",
+        "invoice.pdf"
+      ]
+    ],
+    "files": [
+      "invoice.xml",
+      "invoice.html",
+      "invoice.pdf"
+    ],
+    "check": "invoice.pdf",
+    "faults": [
+      {
+        "id": "xml-total-edited",
+        "file": "invoice.xml",
+        "find": "(<ram:DuePayableAmount[^>]*>)([0-9]+)",
+        "replace": "\\g<1>9\\g<2>",
+        "why": "the amount due in the XML beside the PDF is changed by hand",
+        "expect": [
+          "EINV-FACTURX"
+        ]
+      }
+    ]
+  }
+}

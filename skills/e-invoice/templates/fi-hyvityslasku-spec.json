@@ -1,0 +1,54 @@
+{
+  "number": "10471",
+  "issue_date": "2026-10-16",
+  "delivery_date": "2026-10-01",
+  "currency": "EUR",
+  "payment_terms": "Palautetaan 14 päivän kuluessa",
+  "buyer_reference": "Liisa Esimerkki",
+  "seller": {
+    "name": "Esimerkki Konsultointi Oy",
+    "legal_form": "Oy",
+    "street": "Esimerkkikatu 5",
+    "postcode": "00100",
+    "city": "Helsinki",
+    "country": "FI",
+    "business_id": "1234567-1",
+    "vat_id": "FI12345671",
+    "registered_office": "Helsinki",
+    "electronic_address": "0216:003712345671",
+    "contact": {
+      "name": "Matti Esimerkki",
+      "phone": "+358 9 000 0000",
+      "email": "lasku@esim.example"
+    }
+  },
+  "buyer": {
+    "name": "Testi Tehdas Oy",
+    "street": "Koekuja 2",
+    "postcode": "33100",
+    "city": "Tampere",
+    "country": "FI",
+    "business_id": "7654321-2",
+    "vat_id": "FI76543212",
+    "electronic_address": "0216:003776543212"
+  },
+  "payment": {
+    "means_code": "58",
+    "iban": "FI21 1234 5600 0007 85",
+    "bic": "NDEAFIHH"
+  },
+  "lines": [
+    {
+      "name": "Työpaja, puolipäivä, peruttu",
+      "quantity": 1,
+      "unit": "C62",
+      "unit_price": 640.0,
+      "vat_rate": 25.5,
+      "vat_category": "S"
+    }
+  ],
+  "type_code": "381",
+  "preceding_invoice": "10458",
+  "preceding_invoice_date": "2026-10-05",
+  "note": "Hyvitys laskulta 10458: työpaja peruttiin."
+}

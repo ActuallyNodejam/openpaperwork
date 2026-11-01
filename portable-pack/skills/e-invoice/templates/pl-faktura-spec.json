@@ -1,0 +1,67 @@
+{
+  "number": "FV/2026/10/118",
+  "issue_date": "2026-10-09",
+  "due_date": "2026-10-23",
+  "delivery_date": "2026-10-06",
+  "currency": "PLN",
+  "payment_terms": "14 days",
+  "order_reference": "ZAM-2026-077",
+  "split_payment": false,
+  "seller": {
+    "name": "Przykład Druk sp. z o.o.",
+    "legal_form": "sp. z o.o.",
+    "street": "ul. Przykładowa 12",
+    "postcode": "00-001",
+    "city": "Warszawa",
+    "country": "PL",
+    "vat_id": "PL1234563218",
+    "register_number": "0000000000",
+    "register": "Sąd Rejonowy dla m.st. Warszawy, XII Wydział Gospodarczy KRS",
+    "share_capital": "50 000,00 zł",
+    "registered_office": "Warszawa",
+    "contact": {
+      "name": "Zofia Przykład",
+      "phone": "+48 22 000 00 00",
+      "email": "faktury@druk.example"
+    }
+  },
+  "buyer": {
+    "name": "Przykład Księgarnia S.A.",
+    "street": "ul. Wzorcowa 4",
+    "postcode": "30-001",
+    "city": "Kraków",
+    "country": "PL",
+    "vat_id": "PL9876543210"
+  },
+  "payment": {
+    "means_code": "58",
+    "iban": "PL61 1090 1014 0000 0712 1981 2874",
+    "bic": "WBKPPLPP"
+  },
+  "lines": [
+    {
+      "name": "Druk katalogu, 48 stron, pełny kolor",
+      "quantity": 1500,
+      "unit": "C62",
+      "unit_price": 7.9,
+      "vat_rate": 23,
+      "vat_category": "S"
+    },
+    {
+      "name": "Projekt graficzny i skład",
+      "quantity": 12,
+      "unit": "HUR",
+      "unit_price": 240.0,
+      "vat_rate": 23,
+      "vat_category": "S"
+    },
+    {
+      "name": "Książka wzorcowa w oprawie",
+      "quantity": 40,
+      "unit": "C62",
+      "unit_price": 62.0,
+      "vat_rate": 5,
+      "vat_category": "S"
+    }
+  ]
+}

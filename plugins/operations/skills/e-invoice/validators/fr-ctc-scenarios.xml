@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- A scenario for the KoSIT validator (github.com/itplr-kosit/validator, Apache-2.0) that checks a
+  - Cross Industry Invoice against EN 16931 and the French e-invoicing rules. This file is ours; the
+  - files it names are run untouched from where they are installed, never copied into this repository:
+  -   kosit/  the KoSIT XRechnung validator configuration (Apache-2.0): the CII D16B schema, the CEN
+  -           EN 16931 CII schematron and the report stylesheet
+  -   fnfe/   FNFE-MPE France_RFE (Apache-2.0), the BR-FR rules of AFNOR XP Z12-012 for CII
+  - skills/e-invoice/scripts/fetch_validators.py installs both at pinned versions.
+  -->
+<scenarios xmlns="http://www.xoev.de/de/validator/framework/1/scenarios" frameworkVersion="1.0.0">
+  <name>EN 16931 and French e-invoicing rules (CII)</name>
+  <author>Nodejam OpenPaperwork, e-invoice pack</author>
+  <date>2026-10-09</date>
+  <description>
+    <p>Validates a UN/CEFACT Cross Industry Invoice against the CII D16B schema, the EN 16931 CII
+      schematron of the KoSIT configuration, and the FNFE-MPE BR-FR rules (France_RFE,
+      FNFE_RFE_INVOICE/CII/EN16931) for the French e-invoicing reform.</p>
+  </description>
+  <scenario>
+    <name>EN16931 with the French BR-FR rules (CII)</name>
+    <description>
+      <p>EN 16931 CII and BR-FR Flux 2 (XP Z12-012).</p>
+    </description>
+    <namespace prefix="rsm">urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100</namespace>
+    <namespace prefix="ram">urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100</namespace>
+    <namespace prefix="rep">http://www.xoev.de/de/validator/varl/1</namespace>
+    <match>exists(/rsm:CrossIndustryInvoice)</match>
+    <validateWithXmlSchema>
+      <resource>
+        <name>XML Schema for UN/CEFACT XML (SCRDM - CII uncoupled) D16B</name>
+        <location>kosit/resources/cii/16b/xsd/CrossIndustryInvoice_100pD16B.xsd</location>
+      </resource>
+    </validateWithXmlSchema>
+    <validateWithSchematron>
+      <resource>
+        <name>Schematron rules for EN16931 (CII)</name>
+        <location>kosit/resources/cii/16b/xsl/EN16931-CII-validation.xsl</location>
+      </resource>
+    </validateWithSchematron>
+    <validateWithSchematron>
+      <resource>
+        <name>FNFE-MPE BR-FR Flux 2 rules (CII)</name>
+        <location>fnfe/FNFE_RFE_INVOICE/CII/EN16931/2xslt/BR-FR-Flux2-Schematron-CII.xslt</location>
+      </resource>
+    </validateWithSchematron>
+    <createReport>
+      <resource>
+        <name>Validation report</name>
+        <location>kosit/resources/xrechnung-report.xsl</location>
+      </resource>
+    </createReport>
+    <acceptMatch>/rep:report/rep:assessment[1]/rep:accept[1]</acceptMatch>
+  </scenario>
+  <noScenarioReport>
+    <resource>
+      <name>Default Report</name>
+      <location>kosit/resources/default-report.xsl</location>
+    </resource>
+  </noScenarioReport>
+</scenarios>

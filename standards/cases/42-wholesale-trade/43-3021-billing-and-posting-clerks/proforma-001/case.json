@@ -1,0 +1,366 @@
+{
+ "id": "proforma-001",
+ "title": "Make a pro forma invoice for an export customer",
+ "person": "A billing clerk at a small wholesaler preparing an export order for prepayment and customs.",
+ "format": "xlsx",
+ "output": "proforma-invoice.xlsx",
+ "review": [
+  "It says it is not a tax invoice (or that the commercial invoice follows) and explains that no Swedish VAT is charged because the goods are exported.",
+  "No freight, insurance, duty or fee is charged that the inputs do not give, and the prices are the EUR price list prices."
+ ],
+ "revised_review": [
+  "The old delivery term is gone.",
+  "Freight 310.00 EUR and cargo insurance 24.50 EUR are shown as their own lines and included in the total.",
+  "The goods lines, prices, customs details, payment terms and references are unchanged."
+ ],
+ "version": "1.1.1",
+ "status": "draft",
+ "locale": "en",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and numbers are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "sector": {
+  "naics": "42",
+  "name": "Wholesale Trade"
+ },
+ "occupation": {
+  "soc": "43-3021.00",
+  "name": "Billing and Posting Clerks"
+ },
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "oasis-ubl/2.1",
+  "icc-incoterms/2020",
+  "cen-en16931/2017",
+  "every-file/1.1.0"
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "names-itself",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-TYPE",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-TYPE"
+   ],
+   "text": "The file is headed as a pro forma invoice, not as an invoice."
+  },
+  {
+   "id": "header",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-HEAD",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-HEAD"
+   ],
+   "text": "Number PF-2026-0058, the date 23 October 2026, both companies with their VAT or organisation numbers, and EUR."
+  },
+  {
+   "id": "references",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-REFS",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-REFS"
+   ],
+   "text": "It refers to the customer order FB-2026-114."
+  },
+  {
+   "id": "lines",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-LINES",
+   "guidelines": [
+    "cen-en16931/2017#EINV-LINES"
+   ],
+   "text": "Every line with quantity, unit price and a line amount that is a formula."
+  },
+  {
+   "id": "totals",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-TOTALS",
+   "guidelines": [
+    "cen-en16931/2017#EINV-TOTALS"
+   ],
+   "text": "The total is right (5 258.00 EUR, 5 592.50 EUR after the revision), VAT is shown as 0, and the totals are formulas."
+  },
+  {
+   "id": "customs",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-CUSTOMS",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-CUSTOMS"
+   ],
+   "text": "Every goods line carries its customs code and country of origin."
+  },
+  {
+   "id": "valid-until",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-DATES",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-DATES"
+   ],
+   "text": "It is valid until 22 November 2026."
+  },
+  {
+   "id": "payment",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-PAY",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-PAY"
+   ],
+   "text": "It asks for payment in advance and gives the bank details."
+  },
+  {
+   "id": "delivery-term",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "INCO-1",
+   "guidelines": [
+    "icc-incoterms/2020#INCO-1"
+   ],
+   "text": "The delivery term reads FCA Gothenburg, Incoterms 2020 (CIP Bergen after the revision)."
+  },
+  {
+   "id": "no-sea-rule",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "INCO-2",
+   "guidelines": [
+    "icc-incoterms/2020#INCO-2"
+   ],
+   "text": "No sea-only delivery rule is used for a road shipment."
+  },
+  {
+   "id": "not-a-tax-invoice",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-TYPE"
+   ],
+   "text": "It says it is not a tax invoice (or that the commercial invoice follows) and explains that no Swedish VAT is charged because the goods are exported."
+  },
+  {
+   "id": "nothing-invented",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-2"
+   ],
+   "text": "No freight, insurance, duty or fee is charged that the inputs do not give, and the prices are the EUR price list prices."
+  },
+  {
+   "id": "nothing-stale",
+   "stage": "revision",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-STALE",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-1"
+   ],
+   "text": "The old delivery term is gone."
+  },
+  {
+   "id": "charges-added",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-1"
+   ],
+   "text": "Freight 310.00 EUR and cargo insurance 24.50 EUR are shown as their own lines and included in the total."
+  },
+  {
+   "id": "kept",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-2"
+   ],
+   "text": "The goods lines, prices, customs details, payment terms and references are unchanged."
+  },
+  {
+   "id": "letter-din5008",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-DIN5008",
+   "guidelines": [
+    "din-5008/2020#LETTER-DIN5008"
+   ],
+   "text": "A PDF or Word document sits on DIN 5008 Form B; a workbook skips this."
+  },
+  {
+   "id": "letter-company",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-COMPANY",
+   "guidelines": [
+    "eu-company-law/2017-1132#LETTER-COMPANY"
+   ],
+   "text": "The seller's register details are on the letter when the files give them."
+  }
+ ],
+ "truth": {
+  "doc": "proforma_invoice",
+  "number": "PF-2026-0058",
+  "issue_date": "2026-10-23",
+  "currency": "EUR",
+  "seller": {
+   "name": "Västhamn Grossist AB",
+   "unknown": ["registered_office", "register_number"],
+   "street": "Hamngatan 14",
+   "postcode": "411 14",
+   "city": "Gothenburg",
+   "country": "Sweden",
+   "vat_id": "SE559012345601"
+  },
+  "buyer": {
+   "name": "Eksempel Kontor AS",
+   "street": "Sandviksbodene 12",
+   "postcode": "5035",
+   "city": "Bergen",
+   "country": "Norway",
+   "vat_id": "NO 987 654 321 MVA"
+  },
+  "references": [
+   "FB-2026-114"
+  ],
+  "payment": [
+   "advance|prepay|before (despatch|dispatch|shipment|collection)",
+   "SE45\\s?5000\\s?0000\\s?0583\\s?9825\\s?7466"
+  ],
+  "transport": "road",
+  "dates": {
+   "valid until": "2026-11-22"
+  },
+  "first": {
+   "lines": [
+    {
+     "code": "ESP-210",
+     "description": "Label printer, two colour",
+     "quantity": 1,
+     "unit": "pcs",
+     "unit_price": 3450.0,
+     "discount_percent": 0,
+     "vat_rate": 0,
+     "hs_code": "8443.32",
+     "origin": "Italy"
+    },
+    {
+     "code": "GRD-064",
+     "description": "Paper shredder, 64 mm feed",
+     "quantity": 2,
+     "unit": "pcs",
+     "unit_price": 560.0,
+     "discount_percent": 0,
+     "vat_rate": 0,
+     "hs_code": "8472.90",
+     "origin": "Italy"
+    },
+    {
+     "code": "BEA-1KG",
+     "description": "Sample goods, 1 kg bag",
+     "quantity": 40,
+     "unit": "bag",
+     "unit_price": 17.2,
+     "discount_percent": 0,
+     "vat_rate": 0,
+     "hs_code": "0000.00",
+     "origin": "Sweden"
+    }
+   ],
+   "incoterm": {
+    "rule": "FCA",
+    "place": "Gothenburg"
+   }
+  },
+  "revision": {
+   "lines": [
+    {
+     "code": "ESP-210",
+     "description": "Label printer, two colour",
+     "quantity": 1,
+     "unit": "pcs",
+     "unit_price": 3450.0,
+     "discount_percent": 0,
+     "vat_rate": 0,
+     "hs_code": "8443.32",
+     "origin": "Italy"
+    },
+    {
+     "code": "GRD-064",
+     "description": "Paper shredder, 64 mm feed",
+     "quantity": 2,
+     "unit": "pcs",
+     "unit_price": 560.0,
+     "discount_percent": 0,
+     "vat_rate": 0,
+     "hs_code": "8472.90",
+     "origin": "Italy"
+    },
+    {
+     "code": "BEA-1KG",
+     "description": "Sample goods, 1 kg bag",
+     "quantity": 40,
+     "unit": "bag",
+     "unit_price": 17.2,
+     "discount_percent": 0,
+     "vat_rate": 0,
+     "hs_code": "0000.00",
+     "origin": "Sweden"
+    },
+    {
+     "code": "",
+     "description": "Freight Gothenburg to Bergen",
+     "quantity": 1,
+     "unit": "lot",
+     "unit_price": 310.0,
+     "discount_percent": 0,
+     "vat_rate": 0,
+     "match": "freight|carriage|transport"
+    },
+    {
+     "code": "",
+     "description": "Cargo insurance",
+     "quantity": 1,
+     "unit": "lot",
+     "unit_price": 24.5,
+     "discount_percent": 0,
+     "vat_rate": 0,
+     "match": "insurance"
+    }
+   ],
+   "incoterm": {
+    "rule": "CIP",
+    "place": "Bergen"
+   },
+   "stale": [
+    "\\bFCA\\b"
+   ]
+  }
+ }
+}

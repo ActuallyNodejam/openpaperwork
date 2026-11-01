@@ -1,0 +1,250 @@
+{
+ "id": "lasku-fi-001",
+ "title": "A Finnish lasku for software licences and training, as a page and a Finvoice message",
+ "person": "The accountant of a small Helsinki software company invoicing a haulage firm in Turku.",
+ "format": "pdf",
+ "output": "lasku.pdf",
+ "extra_outputs": [
+  "lasku.xml"
+ ],
+ "locale": "fi-FI",
+ "sector": {
+  "naics": "54",
+  "name": "Professional, Scientific, and Technical Services"
+ },
+ "occupation": {
+  "soc": "43-3021.00",
+  "name": "Billing and Posting Clerks"
+ },
+ "review": [
+  "Lasku 2026-118, 12.10.2026: 12 × 45,00 ja 6 h × 95,00, veroton 1 110,00 €, ALV 25,5 % 283,05 €, yhteensä 1 393,05 €, eräpäivä 26.10.2026, viitenumero 10485."
+ ],
+ "revised_review": [
+  "15 lisenssiä: veroton 1 245,00 €, ALV 317,48 €, yhteensä 1 562,48 €; muuten ennallaan."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "locale-date",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-DATE",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-DATE"
+   ],
+   "text": "Dates on the page are in the d.M.yyyy form."
+  },
+  {
+   "id": "locale-number",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-NUMBER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-NUMBER"
+   ],
+   "text": "Amounts use the locale's separators."
+  },
+  {
+   "id": "locale-paper",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-PAPER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-PAPER"
+   ],
+   "text": "The page is the locale's paper."
+  },
+  {
+   "id": "locale-order",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-LOCALE-ORDER",
+   "guidelines": [
+    "cen-en16931/2017#EINV-LOCALE-ORDER"
+   ],
+   "text": "The page is written in the language of the order itself."
+  },
+  {
+   "id": "page-din5008",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-DIN5008",
+   "guidelines": [
+    "din-5008/2020#EINV-PAGE-DIN5008"
+   ],
+   "text": "The page is laid out on the library's letter sheet (DIN 5008 Form B)."
+  },
+  {
+   "id": "vat-label",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-VAT-LABEL",
+   "guidelines": [
+    "cen-en16931/2017#EINV-VAT-LABEL"
+   ],
+   "text": "Every VAT number on the page carries its label."
+  },
+  {
+   "id": "finvoice",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-FINVOICE",
+   "guidelines": [
+    "finvoice/3.0#EINV-FINVOICE"
+   ],
+   "text": "Finanssiala's Finvoice 3.0 schema accepts the XML; skipped without it."
+  },
+  {
+   "id": "fi-invoice",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "rule": "FI-INVOICE",
+   "guidelines": [
+    "fi-arvonlisaverolaki/2026#FI-INVOICE"
+   ],
+   "text": "Y-tunnus, VAT identifier, both parties, delivery date and VAT on the page."
+  },
+  {
+   "id": "fi-payment",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "rule": "FI-PAYMENT",
+   "guidelines": [
+    "finvoice/3.0#FI-PAYMENT"
+   ],
+   "text": "Due date, IBAN, the viitenumero and a bank barcode that matches them."
+  },
+  {
+   "id": "only-what-was-done",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "Only the licences and the training are invoiced, at the agreed prices; nothing is invented."
+  },
+  {
+   "id": "revision-kept",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-2"
+   ],
+   "text": "The revision changes the licences and the totals that follow, and nothing else."
+  }
+ ],
+ "truth": {
+  "number": "2026-118",
+  "issue_date": "2026-10-12",
+  "due_date": "2026-10-26",
+  "delivery_date": "2026-10-09",
+  "currency": "EUR",
+  "payment_terms": "14 days net",
+  "syntax": "finvoice",
+  "buyer_reference": "Aino Esimerkki",
+  "late_interest": "Korkolain mukainen",
+  "complaint_period": "8 pv",
+  "seller": {
+   "name": "Koeyhtiö Ohjelmisto Oy",
+   "legal_form": "Oy",
+   "street": "Koekatu 3",
+   "postcode": "00100",
+   "city": "Helsinki",
+   "country": "FI",
+   "business_id": "1234567-1",
+   "vat_id": "FI12345671",
+   "registered_office": "Helsinki",
+   "contact": {
+    "name": "Ville Koe",
+    "phone": "+358 9 000 0001",
+    "email": "lasku@koe.example"
+   }
+  },
+  "buyer": {
+   "name": "Esimerkki Kuljetus Oy",
+   "street": "Testitie 9",
+   "postcode": "20100",
+   "city": "Turku",
+   "country": "FI",
+   "business_id": "7654321-2",
+   "vat_id": "FI76543212"
+  },
+  "payment": {
+   "means_code": "58",
+   "iban": "FI21 1234 5600 0007 85",
+   "bic": "NDEAFIHH",
+   "reference": "10485"
+  },
+  "doc": "invoice",
+  "type_code": "380",
+  "first": {
+   "lines": [
+    {
+     "name": "Ajojärjestelmän käyttölisenssi, kuukausi",
+     "quantity": 12,
+     "unit": "C62",
+     "unit_price": 45.0,
+     "vat_rate": 25.5,
+     "vat_category": "S"
+    },
+    {
+     "name": "Käyttökoulutus",
+     "quantity": 6,
+     "unit": "HUR",
+     "unit_price": 95.0,
+     "vat_rate": 25.5,
+     "vat_category": "S"
+    }
+   ]
+  },
+  "revision": {
+   "lines": [
+    {
+     "name": "Ajojärjestelmän käyttölisenssi, kuukausi",
+     "quantity": 15,
+     "unit": "C62",
+     "unit_price": 45.0,
+     "vat_rate": 25.5,
+     "vat_category": "S"
+    },
+    {
+     "name": "Käyttökoulutus",
+     "quantity": 6,
+     "unit": "HUR",
+     "unit_price": 95.0,
+     "vat_rate": 25.5,
+     "vat_category": "S"
+    }
+   ]
+  }
+ },
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "cen-en16931/2017",
+  "din-5008/2020",
+  "fi-arvonlisaverolaki/2026",
+  "finvoice/3.0"
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and every business, VAT and bank number are invented and obviously fake.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen."
+}

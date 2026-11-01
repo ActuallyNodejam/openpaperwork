@@ -1,0 +1,1 @@
+The client changed its accent colour: replace #F2B705 with #D7263D everywhere, and treat #F2B705 as no longer in the palette. Also remove the Timeline slide and put the opening date, 2 May 2027, on the last slide. The deck now has five slides. Keep everything else.

@@ -1,0 +1,121 @@
+{
+  "id": "quotes-001",
+  "title": "Compare quotes against a budget and deadline",
+  "person": "An operations assistant choosing equipment for a small team.",
+  "format": "xlsx",
+  "output": "comparison.xlsx",
+  "review": [
+    "All input quantities, prices, shipping and dates are preserved except the explicitly revised quote.",
+    "Recalculation in a named spreadsheet engine proves formulas respond to input edits; cached values alone do not prove this.",
+    "Eligibility combines both budget and delivery; reasons and recommendation are correct.",
+    "Currency, dates and labels are readable with no clipped columns; the workbook remains editable."
+  ],
+  "revised_review": [
+    "Studio Supply is ineligible after its delivery change; Northlight is now the cheapest eligible option.",
+    "No old recommendation survives in notes, formatting or summaries."
+  ],
+  "version": "1.4.0",
+  "status": "draft",
+  "locale": "en",
+  "source": "Synthetic material created for this evaluation pack; no customer inputs.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+  "sector": {
+    "naics": "54",
+    "name": "Professional, Scientific, and Technical Services"
+  },
+  "occupation": {
+    "soc": "13-1023.00",
+    "name": "Purchasing Agents, Except Wholesale, Retail, and Farm Products"
+  },
+  "guidelines": [
+    "openpaperwork/0.1.0",
+    "every-file/1.1.0"
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#FMT-2",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "inputs-kept",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-1",
+        "openpaperwork/0.1.0#REV-2"
+      ],
+      "text": "All input quantities, prices, shipping and dates are preserved, except the explicitly revised quote at the revision stage."
+    },
+    {
+      "id": "eligibility",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-1",
+        "openpaperwork/0.1.0#FACT-2"
+      ],
+      "text": "Eligibility combines both budget and delivery date; each ineligible option has a correct reason, and the recommendation names the cheapest eligible supplier."
+    },
+    {
+      "id": "recalc",
+      "stage": "both",
+      "grader": "recalc",
+      "guidelines": [
+        "openpaperwork/0.1.0#CALC-1"
+      ],
+      "text": "After raising the Northlight quantity by one in a copy, recalculation in LibreOffice raises its total by its unit price.",
+      "recalc": {
+        "edit": {
+          "sheet": "Comparison",
+          "key_col": "Supplier",
+          "key": "Northlight",
+          "col": "Quantity",
+          "delta": 1
+        },
+        "check": {
+          "sheet": "Comparison",
+          "key_col": "Supplier",
+          "key": "Northlight",
+          "col": "Total EUR",
+          "factor": 42.5
+        }
+      }
+    },
+    {
+      "id": "labels",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#READ-1"
+      ],
+      "text": "Currency, dates and column labels are readable and clearly labelled."
+    },
+    {
+      "id": "print-width",
+      "stage": "both",
+      "grader": "render",
+      "guidelines": [
+        "openpaperwork/0.1.0#PAGE-1"
+      ],
+      "max_pages": "sheets",
+      "text": "Printed, each sheet fits on one page, so the PDF has no more pages than the workbook has sheets."
+    },
+    {
+      "id": "revised-choice",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#REV-1"
+      ],
+      "text": "Studio Supply is ineligible after its delivery change, Northlight is now the recommended cheapest eligible option, and no old recommendation survives in notes, formatting or summaries."
+    }
+  ],
+  "sheet_checks": "quotes"
+}

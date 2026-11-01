@@ -1,0 +1,1 @@
+Write memo.docx, a one-page internal memo from the supplied meeting notes. Use a To, From, Date and Subject header, then say what changes, when it starts, which appointments it covers, what staff must do, and who to ask. Use plain English. Do not present anything the notes leave undecided as agreed.

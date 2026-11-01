@@ -1,0 +1,50 @@
+{
+  "language": "en",
+  "date": "2026-10-09",
+  "sender": {
+    "name": "Cedar Ridge Software Inc.",
+    "street": "410 Market Street, Suite 300",
+    "city": "Portland",
+    "state": "OR",
+    "postcode": "97204",
+    "country": "US",
+    "email": "hello@cedarridge.example",
+    "phone": "(503) 555-0142",
+    "web": "cedarridge.example"
+  },
+  "recipient": {
+    "name": "Harbor County Library District",
+    "attention": "Attn: Ms. Dana Whitfield, Director",
+    "street": "1200 Elm Avenue",
+    "city": "Astoria",
+    "state": "OR",
+    "postcode": "97103-4021",
+    "country": "US"
+  },
+  "references": [
+    {
+      "kind": "ours",
+      "value": "CR-2026-118"
+    }
+  ],
+  "contact": {
+    "name": "Paul Navarro",
+    "phone": "(503) 555-0147",
+    "email": "paul@cedarridge.example"
+  },
+  "subject": "Renewal of your catalog software license for 2027",
+  "salutation": "Dear Ms. Whitfield:",
+  "body": [
+    "Thank you for renewing with us for another year. This letter confirms the terms we discussed on September 30.",
+    "Your license for the catalog and circulation software renews on January 1, 2027, at $14,400 a year, the same price as this year. The renewal now includes the mobile app for patrons at no extra cost.",
+    "Please sign and return the enclosed renewal form by December 1, 2026. If you have any questions, call me at (503) 555-0147."
+  ],
+  "closing": "Sincerely,",
+  "signatory": {
+    "name": "Paul Navarro",
+    "role": "Account Manager"
+  },
+  "enclosures": [
+    "Renewal form"
+  ]
+}

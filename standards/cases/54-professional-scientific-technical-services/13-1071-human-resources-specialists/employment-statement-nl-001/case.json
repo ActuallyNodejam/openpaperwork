@@ -1,0 +1,130 @@
+{
+  "id": "employment-statement-nl-001",
+  "title": "Write the Dutch opgave van de arbeidsvoorwaarden for a one-year calibration technician",
+  "person": "An HR adviser at a Dutch measurement-technology firm whose new technician has only an e-mailed offer.",
+  "format": "docx",
+  "output": "opgave.docx",
+  "locale": "nl-NL",
+  "sector": {
+    "naics": "54",
+    "name": "Professional, Scientific, and Technical Services"
+  },
+  "occupation": {
+    "soc": "13-1071.00",
+    "name": "Human Resources Specialists"
+  },
+  "review": [
+    "Opgave voor Sanne Hoekstra: kalibratietechnicus in Groningen, bepaalde tijd van 01-02-2027 tot en met 31-01-2028 met één maand proeftijd; € 3.700 bruto per maand, 8 % vakantiebijslag, betaling op de 24e per bank; 40 uur per week; 25 vakantiedagen; pensioenregeling ja; geen cao, geen uitzend-, payroll- of oproepovereenkomst; opzegging volgens artikel 7:672 BW; ondertekend door de werkgever en gedateerd binnen een week na de start."
+  ],
+  "revised_review": [
+    "Het loon wordt € 3.900 bruto per maand; verder niets gewijzigd."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "items",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-ITEMS",
+      "guidelines": [
+        "bw-7-655/2026-07#NL-02",
+        "bw-7-655/2026-07#NL-03",
+        "bw-7-655/2026-07#NL-05"
+      ],
+      "text": "Every item of 7:655 lid 1 is there; pension, agency or payroll and on-call are answered, not marked niet van toepassing."
+    },
+    {
+      "id": "dates",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-DATES",
+      "guidelines": [
+        "bw-7-655/2026-07#NL-01"
+      ],
+      "text": "Dated within a week of 1 February 2027."
+    },
+    {
+      "id": "probation",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-PROBATION",
+      "guidelines": [
+        "bw-7-655/2026-07#NL-06"
+      ],
+      "text": "One month's probation in a one-year contract, the most 7:652 lid 4 a allows."
+    },
+    {
+      "id": "pay",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-PAY",
+      "guidelines": [
+        "bw-7-655/2026-07#NL-04"
+      ],
+      "text": "EUR 3.700,00 per maand, paid monthly by bank transfer."
+    },
+    {
+      "id": "signed",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-SIGNED",
+      "guidelines": [
+        "bw-7-655/2026-07#NL-08"
+      ],
+      "text": "The employer signs the opgave."
+    },
+    {
+      "id": "reference",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-REFERENCE",
+      "guidelines": [
+        "bw-7-655/2026-07#NL-07"
+      ],
+      "text": "Only the notice periods point to the law; the parties, place, function and dates are stated."
+    },
+    {
+      "id": "lang",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-LANG",
+      "guidelines": [
+        "bw-7-655/2026-07#NL-10"
+      ],
+      "text": "Every heading is Dutch."
+    },
+    {
+      "id": "revised-pay",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "bw-7-655/2026-07#NL-04"
+      ],
+      "text": "The pay is EUR 3.900,00 per maand and nothing else changed."
+    }
+  ],
+  "version": "1.0.0",
+  "status": "draft",
+  "source": "Synthetic material created for this evaluation pack; the companies and people are invented.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+  "guidelines": [
+    "bw-7-655/2026-07",
+    "every-file/1.1.0"
+  ]
+}

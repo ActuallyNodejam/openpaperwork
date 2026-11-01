@@ -1,0 +1,59 @@
+{
+  "language": "it",
+  "date": "2026-10-09",
+  "sender": {
+    "name": "Esempio Stampa S.r.l.",
+    "street": "Via dell'Esempio 8",
+    "postcode": "20100",
+    "city": "Milano",
+    "province": "MI",
+    "country": "IT",
+    "vat_id": "00000000000",
+    "registered_office": "Via dell'Esempio 8, 20100 Milano",
+    "register": "Registro delle Imprese di Milano Monza Brianza Lodi",
+    "register_number": "00000000000",
+    "share_capital": "50.000,00 euro i.v.",
+    "email": "info@esempio-stampa.example",
+    "phone": "+39 00 0000 0000",
+    "web": "esempio-stampa.example"
+  },
+  "recipient": {
+    "name": "Esempio Cartoleria S.r.l.",
+    "attention": "C.A. dott.ssa Marta Bellini",
+    "street": "Corso del Campione 21",
+    "postcode": "40100",
+    "city": "Bologna",
+    "province": "BO",
+    "country": "IT"
+  },
+  "references": [
+    {
+      "kind": "yours",
+      "value": "MB/2026-041"
+    },
+    {
+      "kind": "ours",
+      "value": "ES-1187"
+    }
+  ],
+  "contact": {
+    "name": "Paolo Conti",
+    "phone": "+39 00 0000 0004",
+    "email": "paolo@esempio-stampa.example"
+  },
+  "subject": "Preventivo per il catalogo di primavera 2027",
+  "salutation": "Gentile dottoressa Bellini,",
+  "body": [
+    "La ringraziamo per la richiesta del 2 ottobre. Stamperemo volentieri il Suo catalogo di primavera: 3.000 copie di 48 pagine in formato A4, in brossura cucita.",
+    "Il prezzo è di 6.840 euro, IVA esclusa. Consegniamo entro dodici giorni lavorativi dall'approvazione della prova di stampa.",
+    "Il preventivo è valido fino al 13 novembre 2026. Per qualsiasi domanda può rivolgersi a Paolo Conti."
+  ],
+  "signatory": {
+    "name": "Chiara Fontana",
+    "role": "Direttrice commerciale"
+  },
+  "enclosures": [
+    "Campioni di carta",
+    "Condizioni generali"
+  ]
+}

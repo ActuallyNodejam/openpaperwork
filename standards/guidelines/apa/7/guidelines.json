@@ -1,0 +1,193 @@
+{
+ "issuer": "apa",
+ "version": "7",
+ "link": "https://apastyle.apa.org",
+ "date": "2026-10-07",
+ "status": "draft",
+ "title": "APA Style, 7th edition: citations, reference list and student paper format",
+ "source": {
+  "standard": "Publication Manual of the American Psychological Association, 7th edition (2020)",
+  "machine_form": "apa.csl in this folder, verbatim from citation-style-language/styles, commit 32078ede72b9224e1ed02c546668e20ee7c75585 (2026-02-14), <updated> 2026-02-07, SHA-256 1ece4fb3c295e66d04b4394e295aa58a87741ceeef1658192437eb9953c2f13e",
+  "note": "Rules paraphrase the manual by chapter and point to the free APA Style topic page. Section numbers are left out because they were not checked against the printed manual. Where a rule and apa.csl disagree, the CSL output for the same metadata decides the reference form."
+ },
+ "license": "Rule wording: Apache-2.0 with this repository. apa.csl: CC BY-SA 3.0, see NOTICE.md.",
+ "rules": [
+  {
+   "id": "APA-CIT-1",
+   "grader": "script",
+   "chapter": 8,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles/author-date",
+   "text": "Every in-text citation has a reference list entry with the same first author and year, and every entry is cited in the text.",
+   "source": "Publication Manual 7th ed. §8.4 (consistency between citations and the list; personal communications are cited but not listed)"
+  },
+  {
+   "id": "APA-CIT-2",
+   "grader": "script",
+   "chapter": 8,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles/author-date",
+   "text": "A work by three or more authors is cited with the first author and et al. from the first citation; a work by one or two authors names every author each time."
+  },
+  {
+   "id": "APA-CIT-3",
+   "grader": "script",
+   "chapter": 8,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/citations/basic-principles/parenthetical-versus-narrative",
+   "text": "Two authors are joined by an ampersand inside parentheses and by the word and in running text."
+  },
+  {
+   "id": "APA-CIT-4",
+   "grader": "judge",
+   "chapter": 8,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/citations/quotations",
+   "text": "A direct quotation gives the page or paragraph number; a paraphrase does not need one."
+  },
+  {
+   "id": "APA-CIT-5",
+   "grader": "judge",
+   "chapter": 8,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/citations/appropriate-citation",
+   "text": "Each claim taken from a source is cited to that source and to no other; a source is cited only for what it reports."
+  },
+  {
+   "id": "APA-CIT-6",
+   "grader": "judge",
+   "chapter": 8,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/citations/published-archival-version",
+   "text": "When a preprint and its published version both exist, the published version is cited and listed, not the preprint.",
+   "source": "APA 7 reference guidance: cite the published version of record when one exists"
+  },
+  {
+   "id": "APA-REF-1",
+   "grader": "script",
+   "chapter": 9,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/references/lists/reference-list-order",
+   "text": "Entries are in alphabetical order letter by letter by the author element (nothing precedes something), then by year.",
+   "source": "Publication Manual 7th ed. §9.44: alphabetical order of entries"
+  },
+  {
+   "id": "APA-REF-2",
+   "grader": "script",
+   "chapter": 9,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/references/lists/reference-list-format",
+   "text": "Each entry has a 0.5 inch hanging indent."
+  },
+  {
+   "id": "APA-REF-3",
+   "grader": "script",
+   "chapter": 9,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/references/dois-urls",
+   "text": "A DOI is written as a https://doi.org/ link with no DOI: label; a work without a DOI gets none invented."
+  },
+  {
+   "id": "APA-REF-4",
+   "grader": "script",
+   "chapter": 9,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/references/elements-list-entry",
+   "text": "The author element lists up to 20 authors in source order as Surname, Initials, with an ampersand before the final author; with 21 or more, the first 19, an ellipsis and the final author, no ampersand. A group author is written in full.",
+   "source": "Publication Manual 7th ed. §9.8: up to 20 authors; with 21 or more, the first 19, an ellipsis, then the last author"
+  },
+  {
+   "id": "APA-REF-5",
+   "grader": "script",
+   "chapter": 9,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/references/elements-list-entry",
+   "text": "The year follows the author element in parentheses with a period, (2021)., and matches the source."
+  },
+  {
+   "id": "APA-REF-6",
+   "grader": "script",
+   "chapter": 9,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/references/examples/journal-article-references",
+   "text": "A periodical entry gives volume(issue) and the page range with an en dash, never a hyphen."
+  },
+  {
+   "id": "APA-REF-7",
+   "grader": "script",
+   "chapter": 9,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/references/elements-list-entry",
+   "text": "Italics go on the periodical name and volume and on a book or report title, never on an article or chapter title."
+  },
+  {
+   "id": "APA-REF-8",
+   "grader": "script",
+   "chapter": 9,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/capitalization/sentence-case",
+   "text": "Article, chapter, book and report titles are in sentence case, proper nouns kept; periodical names keep title case."
+  },
+  {
+   "id": "APA-REF-9",
+   "grader": "judge",
+   "chapter": 10,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/references/examples/edited-book-chapter-references",
+   "text": "A chapter in an edited book names the editors as Initials Surname (Eds.), the book title and the chapter page range (pp. x–y), then the publisher."
+  },
+  {
+   "id": "APA-REF-10",
+   "grader": "judge",
+   "chapter": 10,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/references/examples/preprint-article-references",
+   "text": "A preprint entry adds the description [Preprint] after the italic title and names the archive before the DOI or URL.",
+   "source": "APA 7 reference type Preprint, with [Preprint] after the title"
+  },
+  {
+   "id": "APA-FMT-1",
+   "grader": "script",
+   "chapter": 9,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/references/lists/reference-list-format",
+   "text": "The list starts on a label reading References, bold and centered."
+  },
+  {
+   "id": "APA-FMT-2",
+   "grader": "script",
+   "chapter": 2,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/paper-format/line-spacing",
+   "text": "All text, the reference list included, is double spaced with no extra space before or after paragraphs."
+  },
+  {
+   "id": "APA-FMT-3",
+   "grader": "script",
+   "chapter": 2,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/paper-format/font",
+   "text": "One accepted font is used throughout the text: Times New Roman 12, Calibri 11, Arial 11, Georgia 11, Lucida Sans Unicode 10 or Computer Modern 10.",
+   "source": "Publication Manual 7th ed. §2.19: font"
+  },
+  {
+   "id": "APA-FMT-4",
+   "grader": "script",
+   "chapter": 2,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/paper-format/paragraph-alignment-indentation",
+   "text": "Body paragraphs begin with a 0.5 inch first-line indent and are left aligned."
+  },
+  {
+   "id": "APA-FMT-5",
+   "grader": "script",
+   "chapter": 2,
+   "page": "https://apastyle.apa.org/style-grammar-guidelines/paper-format/headings",
+   "text": "A level 1 heading is centered, bold and in title case."
+  },
+  {
+   "id": "APA-NO-INTRO",
+   "grader": "script",
+   "script": "academic_style.py",
+   "text": "The paper has no heading named Introduction; the paper title is the opening heading of the text.",
+   "standard_conformance": true,
+   "source": "Publication Manual 7th ed. §2.11 and §2.27: the paper title heads the first page of text; no heading Introduction"
+  },
+  {
+   "id": "APA-REFS-NEW-PAGE",
+   "grader": "script",
+   "script": "academic_style.py",
+   "text": "The reference list starts on a page of its own, after the text.",
+   "standard_conformance": true,
+   "source": "Publication Manual 7th ed. §2.12: the reference list starts on a new page after the text"
+  },
+  {
+   "id": "APA-REF-CITED",
+   "grader": "script",
+   "script": "academic_style.py",
+   "text": "Every listed reference is cited in the text and every in-text citation has an entry, except personal communications, which are cited in the text only.",
+   "standard_conformance": true,
+   "source": "Publication Manual 7th ed. §8.4"
+  }
+ ]
+}

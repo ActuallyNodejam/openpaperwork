@@ -1,0 +1,4 @@
+Eksempel Prøve AS, Eksempelveien 4, 0150 Oslo. Org.nr. 999 999 999 MVA, registrert i Foretaksregisteret.
+Kontakt: Per Prøve, +47 22 00 00 01, post@eksempel-prove.example. EHF-adresse 0192:999999999.
+Bank: kontonr. 1234.56.78903. KID for denne fakturaen: 20260212.
+Betalingsbetingelser: 14 dager netto. Siste faktura var nr. 2026-0212.

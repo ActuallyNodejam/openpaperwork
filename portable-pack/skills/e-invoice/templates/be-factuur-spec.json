@@ -1,0 +1,61 @@
+{
+  "number": "2026/0412",
+  "issue_date": "2026-10-12",
+  "due_date": "2026-11-11",
+  "delivery_date": "2026-10-08",
+  "currency": "EUR",
+  "payment_terms": "30 days net",
+  "buyer_reference": "Els Voorbeeld",
+  "seller": {
+    "name": "Schelde Proefwerk BV",
+    "legal_form": "BV",
+    "street": "Voorbeeldstraat 12",
+    "postcode": "2000",
+    "city": "Antwerpen",
+    "country": "BE",
+    "register_number": "0123.456.749",
+    "vat_id": "BE0123456749",
+    "register": "RPR Antwerpen, afdeling Antwerpen",
+    "registered_office": "Antwerpen",
+    "electronic_address": "0208:0123456749",
+    "contact": {
+      "name": "Pieter Voorbeeld",
+      "phone": "+32 3 000 00 00",
+      "email": "factuur@schelde.example"
+    }
+  },
+  "buyer": {
+    "name": "Voorbeeld Schoonmaak NV",
+    "street": "Proefplein 3",
+    "postcode": "9000",
+    "city": "Gent",
+    "country": "BE",
+    "register_number": "0987.654.394",
+    "vat_id": "BE0987654394",
+    "electronic_address": "0208:0987654394"
+  },
+  "payment": {
+    "means_code": "58",
+    "iban": "BE68 5390 0754 7034",
+    "bic": "GKCCBEBB",
+    "reference": "+++202/6101/20124+++"
+  },
+  "lines": [
+    {
+      "name": "Advies productieplanning",
+      "quantity": 14,
+      "unit": "HUR",
+      "unit_price": 95.0,
+      "vat_rate": 21,
+      "vat_category": "S"
+    },
+    {
+      "name": "Workshop arbeidsveiligheid, een dag",
+      "quantity": 1,
+      "unit": "C62",
+      "unit_price": 1250.0,
+      "vat_rate": 21,
+      "vat_category": "S"
+    }
+  ]
+}

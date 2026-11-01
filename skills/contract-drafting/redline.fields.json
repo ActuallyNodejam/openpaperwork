@@ -1,0 +1,9 @@
+{
+ "about": "Every key redline_create.py reads from a redline's data file. The builder stops on a key that is not here, and on a value of another shape (skills/_shared/spec_guard.py). A remark for the other side goes in an edit's comment.",
+ "open": {"edits": "comment"},
+ "fields": {
+  "source": "text", "output": "text", "author": "text", "date": "text",
+  "edits": [{"find": "text", "replace": "text", "after": "text", "insert": "text", "after_paragraph": "text",
+             "paragraph": "text", "occurrence": "number", "comment": "text"}]
+ }
+}

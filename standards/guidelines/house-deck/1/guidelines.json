@@ -1,0 +1,56 @@
+{
+ "issuer": "house-deck",
+ "version": "1",
+ "date": "2026-10-05",
+ "status": "draft",
+ "title": "The house deck layout",
+ "source": {
+  "standard": "the house layout built and accepted in this arc",
+  "machine_form": "skills/html-deck/frame.css, the house page markup and the deck page types the builder emits; the measure is standards/checks/measure_fill.py"
+ },
+ "license": "repository licence",
+ "rules": [
+  {
+   "id": "DECK-PAGES",
+   "grader": "script",
+   "script": "housedeck.py",
+   "text": "The deck has the pages the request asks for, each in the house page container."
+  },
+  {
+   "id": "DECK-TYPE",
+   "grader": "script",
+   "script": "housedeck.py",
+   "text": "No text is set below 18px and body copy is 22px or more."
+  },
+  {
+   "id": "DECK-ACCENT",
+   "grader": "script",
+   "script": "housedeck.py",
+   "text": "One accent colour at most beyond the neutral ground and ink."
+  },
+  {
+   "id": "DECK-TRACE",
+   "grader": "script",
+   "script": "housedeck.py",
+   "text": "Every number printed on the pages appears in the case data."
+  },
+  {
+   "id": "DECK-FILL",
+   "grader": "script",
+   "script": "housedeck.py",
+   "text": "Every house page carries content across the body: measured on the rendered page, at least 0.12 of the body band covered and at least 0.10 of its lower half."
+  },
+  {
+   "id": "DECK-PARTS",
+   "grader": "script",
+   "script": "housedeck.py",
+   "text": "Every page carries the parts its type calls for."
+  },
+  {
+   "id": "DECK-BOUNDS",
+   "grader": "script",
+   "script": "housedeck.py",
+   "text": "No content box crosses the footer line and no two content boxes overlap."
+  }
+ ]
+}

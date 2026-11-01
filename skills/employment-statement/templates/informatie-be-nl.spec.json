@@ -1,0 +1,52 @@
+{
+  "law": "be",
+  "language": "nl",
+  "given": "2026-11-16",
+  "employer": {
+    "name": "Schelde Software BV",
+    "number": "KBO 0723.456.789",
+    "address": "Voskenslaan 30, 9000 Gent",
+    "signatory": "Pieter Van Damme, zaakvoerder"
+  },
+  "worker": {
+    "name": "Lotte Claes",
+    "address": "Brugsesteenweg 140, 9000 Gent"
+  },
+  "place": "Voskenslaan 30, 9000 Gent",
+  "job": {
+    "title": "Klantendienstmedewerker (bediende)",
+    "description": "Telefonische en schriftelijke ondersteuning van klanten bij de software van de werkgever."
+  },
+  "start": "2026-11-16",
+  "term": {
+    "type": "fixed",
+    "end": "2027-05-15",
+    "basis": "vervanging tijdens een zwangerschaps- en ouderschapsverlof"
+  },
+  "probation": null,
+  "pay": {
+    "amount": 1580,
+    "currency": "EUR",
+    "per": "month",
+    "paid": "maandelijks, uiterlijk de vierde werkdag van de volgende maand",
+    "method": "overschrijving op de bankrekening van de werknemer",
+    "components": [
+      {
+        "name": "Maaltijdcheques",
+        "text": "8 EUR per gewerkte dag, waarvan 1,09 EUR ten laste van de werknemer"
+      }
+    ]
+  },
+  "hours": {
+    "pattern": "variable",
+    "guaranteed": "19 uur per week (halftijds)",
+    "reference": "maandag tot en met zaterdag tussen 7.00 en 20.00 uur",
+    "notice": "het rooster wordt minstens zeven werkdagen vooraf schriftelijk meegedeeld",
+    "extra_pay": "meeruren worden betaald volgens het arbeidsreglement"
+  },
+  "training": "Één opleidingsdag per kwartaal over nieuwe versies van de software",
+  "leave": "Jaarlijkse vakantie volgens de gecoördineerde wetten betreffende de jaarlijkse vakantie van de werknemers van 28 juni 1971 en het arbeidsreglement",
+  "termination": "De arbeidsovereenkomst eindigt van rechtswege op de einddatum; een opzegging vooraf gebeurt schriftelijk met de termijnen van artikel 37/2 en volgende van de wet van 3 juli 1978 betreffende de arbeidsovereenkomsten; vorderingen uit de overeenkomst verjaren een jaar na het einde ervan (artikel 15 van dezelfde wet)",
+  "collective": "Aanvullend paritair comité voor de bedienden (PC 200); de akkoorden in de onderneming staan in de bijlage bij het arbeidsreglement",
+  "social_security": "Rijksdienst voor Sociale Zekerheid (RSZ)"
+}

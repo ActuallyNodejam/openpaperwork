@@ -1,0 +1,97 @@
+Sources behind the letter layouts for Norway, Denmark, Finland, the United States, the United Kingdom, Canada,
+Australia, Belgium, the Netherlands, Austria, Ireland, Spain, Italy and Poland (skills/_shared/letter.py LAYOUTS,
+WINDOW_SOURCES and postal_lines, skills/business-letter, skills/_checks/letter_check.py). Read 2026-10-09; the
+wave 9 countries on 2026-10-09 and 2026-10-10.
+
+GOV.UK style guide (dates such as 9 October 2026),
+https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/
+Contains public sector information licensed under the Open Government Licence v3.0.
+https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+
+Cited only, no text copied (no open licence stated, or a non-commercial one):
+- USPS Publication 28, Postal Addressing Standards, s.224; USPS DMM 601 6.3 and Publication 25 (window clearance).
+- UPU addressing sheets for Norway, Denmark, Finland, the UK, the USA, Canada and Australia, and the Letter Post
+  Regulations RL 123.3.3 (the country on the last line, in capitals). (c) UPU.
+- Royal Mail, Canada Post, Australia Post, Posten/Bring (MV1 terms for machine-sorted mail), Posti and PostNord
+  addressing guidance.
+- Office québécois de la langue française, Vitrine linguistique: the parts of an administrative letter.
+- Australian Government Style Manual, emails and letters. (c) Commonwealth of Australia.
+- Translation Bureau, Writing Tips Plus (complimentary close). Government of Canada.
+- US Navy Correspondence Manual SECNAV M-5216.5 (the business letter); a US Government work.
+- Kotimaisten kielten keskus, Kielitoimiston ohjepankki (CC BY-NC-ND 4.0; cited only).
+- SFS 2487, NS 4129, ISO 269 and DIN 680 are paid standards and were not read. The Finnish address field
+  (18 mm from the left, 36 mm from the top, 90 x 30 mm) and the 23 mm columns are the numbers the
+  koma-script-SFS letter class (LPPL 1.3c, https://ctan.org/pkg/koma-script-sfs) carries; the numbers only,
+  no code or text.
+
+Amtliches Regelwerk der deutschen Rechtschreibung, Rat für deutsche Rechtschreibung, 2024 (the salutation with a
+comma, the closing without a mark: § 72, Hinweis),
+https://www.rechtschreibrat.com/DOX/RfdR_Amtliches-Regelwerk_2024.pdf
+Published under the Creative Commons Attribution 4.0 International Licence
+(https://creativecommons.org/licenses/by/4.0/). The rule is restated in our own words.
+
+Unicode CLDR 48.2 (the long date patterns, the short time and the month names for nl, nl-BE, fr-BE, de-AT and
+en-IE, as values in skills/_shared/letter.py), https://github.com/unicode-org/cldr-json
+Copyright (c) Unicode, Inc. Distributed under the Unicode License v3 (https://www.unicode.org/license.txt),
+which permits use, copy and distribution of the data files with this notice.
+
+Wave 8, cited only, no text copied (no reuse terms stated; all rights reserved assumed):
+- bpost, MassPost Gids, sections 1 (Adressering) and 2 (De geadresseerde zendingen), January 2026: the address
+  lines, the address on the right, the 30 x 140 mm indexing zone, the 15 mm and 4 mm margins of a window.
+- PostNL, Vormgevingsvoorwaarden 2026 (valid from 1 July 2026), artikel 1 and bijlagen 1, 3 and 4: the address
+  zone, the index zone, 1234 AB and two spaces before the town in capitals, the country in capitals abroad.
+- Österreichische Post, Richtig adressieren (2020, file of 2024): the address lines, the window of at least
+  90 x 35 mm and the 5 mm quiet zone, the town and the country in capitals abroad.
+- An Post, Speed up your post (2019): the address structure, the Eircode last, no punctuation, the 20 mm
+  margins and the 15 mm and 5 mm insets of text in a window.
+- Deutsche Post, Automationsfähige Briefsendungen, Leitfaden (January 2026), 3.1.2; Royal Mail, Mailmark Letters
+  specification requirements (February 2020); Posten Bring, MV1 Plain envelopes (2022-11-11); Posti, envelope
+  range from 1.1.2019; Canada Post, Machineable Mail Standard self-assessment tool (2021); Australia Post, Envelope
+  zones and Correct addressing (2023); USPS DMM 202.2.1 and 601.6.3: the zones a window must stay in. No operator
+  publishes a window position; Sweden's and Denmark's were not confirmed against a PostNord document.
+- Taaladvies.net (Taalunie, Instituut voor de Nederlandse Taal, Onze Taal): Opmaak van een zakelijke brief in
+  Nederland and in België, Komma na aanhef, Met vriendelijke groet(en) / hoogachtend.
+- Kotimaisten kielten keskus, Kielitoimiston ohjepankki, Sivunumerointi (CC BY-NC-ND 4.0; cited only): the page
+  count in brackets after the page number.
+- NBN Z 01-002, NEN 1026 and ÖNORM A 1080 are paid standards and were not read.
+
+Wave 9 (Spain, Italy, Poland), read 2026-10-09 and 2026-10-10.
+
+Cited only, no text copied (no reuse terms stated; all rights reserved assumed):
+- Correos, Dimensiones y pesos de los envíos, https://www.correos.es/es/es/atencion-al-cliente/enviar/dimensiones-y-pesos
+  and the page's drawing of a normalised item: the address block at most 140 mm from the right edge, the 74 x 40 mm
+  franking zone, the 15 mm bar-code strip. The figure for the strip kept clear at the right edge is partly hidden
+  in the drawing (it reads 8 +/- 1 mm).
+- Poste Italiane, Caratteristiche standard degli invii, Posta indescritta (PRS.INDES.STA.2, version 3 of 3 March
+  2026), 1.1.3, 4.1.6 and 4.2.6 to 4.2.9: the 140 x 140 mm address area, the window at the bottom right, the zones
+  of respect. Poste Italiane, Standard di composizione degli indirizzi (August 2023): the lines of an address.
+- Poczta Polska, Zasady poprawnego adresowania i oznakowania przesyłek listowych (file of September 2025),
+  https://www.poczta-polska.pl/wp-content/uploads/2025/09/Zasady-poprawnego-adresowania-przesylek.pdf : the address
+  field, the window's clearances, the postcode and the locality in capitals, the country's name in Polish.
+- UPU addressing sheets for Spain (01/2013), Italy and Poland (08/2018). (c) UPU.
+- No operator or maker document gives a window position for these three countries: the layouts use the DIN
+  window mirrored to the right on a DL envelope, inside each operator's zone, and say so.
+- Real Academia Española, Puntuación de saludos y despedidas en cartas y correos electrónicos (Español al día),
+  and the Diccionario panhispánico de dudas, entries dos puntos and coma, https://www.rae.es : a colon after the
+  salutation, a comma after a closing with no verb, a comma between place and date. rae.es refused a direct fetch;
+  the rules were read through a search tool's reading of those pages and are restated in our own words.
+- Poradnia Językowa PWN, Interpunkcja zwrotów adresatywnych oraz pożegnalnych (A. Wolański, 27 November 2021),
+  https://sjp.pwn.pl/poradnia/haslo/Interpunkcja-zwrotow-adresatywnych-oraz-pozegnalnych;17928.html : a comma
+  after the salutation, no mark after the closing formula.
+- No Italian authority's rule for the salutation and the closing was looked up; none is scripted.
+
+Unicode CLDR 48.2.3 (the long and short date patterns, the short time, the month names and the number signs for
+es, it and pl, as values in skills/_shared/letter.py and skills/_checks/locales.json),
+https://github.com/unicode-org/cldr-json , Unicode License v3 as above.
+
+Company particulars on letters, official texts outside copyright, restated in our own words:
+- Spain: Código de Comercio (Real Decreto de 22 de agosto de 1885) art. 24, consolidated text of the Boletín
+  Oficial del Estado, https://www.boe.es/buscar/act.php?id=BOE-A-1885-6627 (last updated 9 May 2023). Legal and
+  regulatory provisions are not the object of intellectual property: Ley de Propiedad Intelectual (Real Decreto
+  Legislativo 1/1996) art. 13.
+- Italy: Codice civile (Regio decreto 16 marzo 1942, n. 262) arts. 2250 and 2497-bis, text in force on Normattiva,
+  https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262 . The texts of official acts
+  of the State are outside the copyright law: legge 22 aprile 1941, n. 633, art. 5.
+- Poland: Kodeks spółek handlowych (ustawa z dnia 15 września 2000 r.) arts. 206 and 374, unified text of the
+  Internetowy System Aktów Prawnych as of 3 June 2026, https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20000941037 .
+  Normative acts are not the object of copyright: ustawa o prawie autorskim i prawach pokrewnych art. 4.

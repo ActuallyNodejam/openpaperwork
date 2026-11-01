@@ -1,0 +1,96 @@
+% IEEE conference paper. Starter file written for OpenPaperwork; it uses the IEEEtran class
+% that ships with the TeX distribution and copies nothing from IEEE's own template files.
+\documentclass[conference]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+
+\begin{document}
+
+\title{Cold-Start Latency in Managed Vector Search:\\A Two-Week Measurement}
+
+% For blind review keep this block exactly as it is. For the final version, replace it with
+% \IEEEauthorblockN{Name} and \IEEEauthorblockA{Department, Organisation \\ City, Country \\ email}
+\author{\IEEEauthorblockN{Anonymous Author(s)}
+\IEEEauthorblockA{Submitted for blind review}}
+
+\maketitle
+
+\begin{abstract}
+Managed vector indexes are usually described by their steady-state recall and throughput.
+We instead measure the first query after an idle period, the cold start, on one managed
+service over fourteen days. Across 2{,}480 cold starts the median latency was 780\,ms,
+seven times the warm median, and the slowest decile exceeded four seconds. Cold-start cost
+scaled with index size but not with the number of replicas, which suggests the delay sits
+in loading index segments rather than in request routing. We report the method, the
+distribution, and the two configuration changes that removed most of the tail.
+\end{abstract}
+
+\begin{IEEEkeywords}
+vector search, cold start, latency measurement, managed services
+\end{IEEEkeywords}
+
+\section{Introduction}
+Approximate nearest-neighbour indexes are memory resident by design. When a managed
+service scales a replica down, the next query must rebuild or reload the index before it
+can answer. Operators see this as an occasional slow query; users see it as a first
+interaction that feels broken. Published evaluations report warm percentiles, because
+warm measurement is easy to automate \cite{example-survey}.
+
+This paper asks a narrow question: how large is the cold-start penalty in practice, and
+what does it scale with? We measured one managed vector service for fourteen days,
+issuing the first query of every idle window and recording the service's own latency
+figures alongside client-side timing.
+
+\section{Method}
+We issued one query every fifteen minutes to a three-replica index of 4.2 million
+768-dimensional vectors, and treated a query as cold when the preceding idle gap exceeded
+ten minutes. Warm queries ran in a separate stream against the same index so that both
+distributions come from the same days and the same data. We recorded client time to first
+byte, service-reported latency, and the replica that answered.
+
+\begin{table}[b]
+\caption{Latency by state, milliseconds, over fourteen days}
+\label{tab:latency}
+\centering
+\begin{tabular}{lrrr}
+\toprule
+State & Median & p90 & Max \\
+\midrule
+Warm        & 110 & 190  & 640 \\
+Cold        & 780 & 4{,}100 & 9{,}800 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Results}
+Table~\ref{tab:latency} gives the two distributions. The cold median is 7.1 times the warm
+median, and the gap widens in the tail: the cold p90 is more than twenty times the warm
+p90. Cold starts were 3.1 per cent of queries but 41 per cent of the total time spent
+waiting.
+
+Cold-start latency correlated with index size ($r = 0.71$) and not with replica count
+($r = 0.08$), which points at segment loading rather than scheduling. Raising the minimum
+replica count from one to two, and enabling the service's keep-warm option, removed 86 per
+cent of cold starts above one second at a cost of 19 per cent more instance hours.
+
+\section{Discussion}
+The measurement is limited to one service, one index shape and one region, so the numbers
+are not a ranking. What generalises is the shape: a heavy tail that steady-state
+benchmarks do not show and that a keep-warm setting can remove. We recommend that managed
+services report a cold-start percentile beside their warm figures, since the first query
+of a session is the one a person remembers.
+
+\begin{thebibliography}{2}
+\bibitem{example-survey}
+A.~Example and B.~Sample, ``A survey of approximate nearest-neighbour benchmarks,''
+\emph{Journal of Invented Systems}, vol.~12, no.~3, pp.~210--219, 2025.
+
+\bibitem{example-notes}
+C.~Placeholder, ``Notes on index reload behaviour in shared clusters,'' in \emph{Proc.
+Invented Conference on Systems Measurement}, 2026, pp.~44--51.
+\end{thebibliography}
+
+\end{document}

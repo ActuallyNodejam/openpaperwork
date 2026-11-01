@@ -1,0 +1,55 @@
+{
+  "number": "CN-2026-0012",
+  "issue_date": "2026-10-19",
+  "delivery_date": "2026-09-30",
+  "currency": "GBP",
+  "payment_terms": "Refund within 14 days",
+  "buyer_reference": "Accounts payable, ref. EX-77",
+  "seller": {
+    "name": "Example Studio Ltd",
+    "legal_form": "Ltd",
+    "street": "1 Example Street",
+    "postcode": "M1 1AA",
+    "city": "Manchester",
+    "country": "GB",
+    "vat_id": "GB123456727",
+    "electronic_address": "9932:GB123456727",
+    "register_number": "00000001",
+    "registered_in": "England and Wales",
+    "registered_office": "1 Example Street, Manchester M1 1AA",
+    "contact": {
+      "name": "Sam Example",
+      "phone": "+44 161 000 0000",
+      "email": "ar@studio.example"
+    }
+  },
+  "buyer": {
+    "name": "Sample Trading plc",
+    "street": "2 Sample Road",
+    "postcode": "LS1 1AA",
+    "city": "Leeds",
+    "country": "GB",
+    "vat_id": "GB987654353",
+    "electronic_address": "9932:GB987654353"
+  },
+  "payment": {
+    "means_code": "30",
+    "sort_code": "60-16-13",
+    "account": "31926819",
+    "iban": "GB29 NWBK 6016 1331 9268 19"
+  },
+  "lines": [
+    {
+      "name": "Website design, two days not delivered",
+      "quantity": 2,
+      "unit": "DAY",
+      "unit_price": 650.0,
+      "vat_rate": 20,
+      "vat_category": "S"
+    }
+  ],
+  "type_code": "381",
+  "preceding_invoice": "INV-2026-0207",
+  "preceding_invoice_date": "2026-10-05",
+  "note": "Credit for two days of design not delivered on invoice INV-2026-0207."
+}

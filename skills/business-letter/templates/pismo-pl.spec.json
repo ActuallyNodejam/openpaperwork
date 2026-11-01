@@ -1,0 +1,57 @@
+{
+  "language": "pl",
+  "date": "2026-10-09",
+  "sender": {
+    "name": "Przykład Druk sp. z o.o.",
+    "street": "ul. Przykładowa 5",
+    "postcode": "00-000",
+    "city": "Warszawa",
+    "country": "PL",
+    "vat_id": "0000000000",
+    "registered_office": "Warszawa",
+    "register": "Sąd Rejonowy dla m.st. Warszawy w Warszawie, XII Wydział Gospodarczy Krajowego Rejestru Sądowego",
+    "register_number": "0000000000",
+    "share_capital": "50 000,00 zł",
+    "email": "biuro@przyklad-druk.example",
+    "phone": "+48 00 000 00 00",
+    "web": "przyklad-druk.example"
+  },
+  "recipient": {
+    "name": "Przykład Księgarnia sp. z o.o.",
+    "attention": "Pani Katarzyna Lis",
+    "street": "ul. Wzorcowa 14 lok. 3",
+    "postcode": "30-000",
+    "city": "Kraków",
+    "country": "PL"
+  },
+  "references": [
+    {
+      "kind": "yours",
+      "value": "KL/2026-041"
+    },
+    {
+      "kind": "ours",
+      "value": "PD-1187"
+    }
+  ],
+  "contact": {
+    "name": "Tomasz Wrona",
+    "phone": "+48 00 000 00 04",
+    "email": "tomasz@przyklad-druk.example"
+  },
+  "subject": "Oferta na druk katalogu wiosennego 2027",
+  "salutation": "Szanowna Pani,",
+  "body": [
+    "dziękujemy za zapytanie z 2 października. Chętnie wydrukujemy Państwa katalog wiosenny: 3000 egzemplarzy po 48 stron w formacie A4, w oprawie szytej.",
+    "Cena wynosi 6840 euro netto. Dostarczamy w ciągu dwunastu dni roboczych od zatwierdzenia wydruku próbnego.",
+    "Oferta jest ważna do 13 listopada 2026. W razie pytań prosimy o kontakt z Tomaszem Wroną."
+  ],
+  "signatory": {
+    "name": "Agnieszka Sowa",
+    "role": "Dyrektor handlowy"
+  },
+  "enclosures": [
+    "Próbki papieru",
+    "Ogólne warunki"
+  ]
+}

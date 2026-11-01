@@ -1,0 +1,46 @@
+{
+  "issuer": "mike-workflows",
+  "version": "ce62e6a2d3f4",
+  "link": "https://github.com/Open-Legal-Products/mike-workflows",
+  "license": "MIT, Copyright (c) 2026 Mike; the nine NDA columns as presence checks in our own words, the nda-review checklist word for word and the dpa-review steps condensed in skills/contract-drafting/checklists, credited in THIRD_PARTY.md. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Open Legal Products, mike-workflows: NDA tabular review, NDA review and DPA review",
+  "source": "Open Legal Products, mike-workflows at revision ce62e6a2d3f4: tabular-review-workflows/nda-tabular-review/table-columns.yaml (nine review columns), assistant-workflows/nda-review/SKILL.md (Open Legal Products) and assistant-workflows/dpa-review/SKILL.md (Victor Wang).",
+  "rules": [
+    {
+      "id": "NDA-ELEMENTS",
+      "grader": "script",
+      "text": "A confidentiality agreement states its direction, defines Confidential Information, sets the receiving party's obligations, carries the four standard carve-outs, names the permitted disclosures, the term, return or destruction, the remedies, and the governing law and courts.",
+      "source": "table-columns.yaml, columns 0 to 8",
+      "check": "legal_check.py LEGAL-NDA"
+    },
+    {
+      "id": "REVIEW-LEDGER",
+      "grader": "script",
+      "text": "Every item of the review checklist gets exactly one verdict: Finding, Acceptable, Not applicable or Missing information; each Finding says whether it is a legal issue or a commercial preference, and the two are kept apart.",
+      "source": "dpa-review SKILL.md, Operating rules (coverage ledger; separate legal defects from commercial preferences)",
+      "check": "legal_check.py LEGAL-VERDICT"
+    },
+    {
+      "id": "REVIEW-QUOTE",
+      "grader": "script",
+      "text": "Every finding quotes the supplied paper word for word.",
+      "source": "dpa-review SKILL.md, Operating rules (quote and anchor findings to the supplied paper)",
+      "check": "legal_check.py LEGAL-QUOTE"
+    },
+    {
+      "id": "REVIEW-SIDE",
+      "grader": "judge",
+      "text": "The review is written for one party's side, asked for when it is not clear, and reads each item's general and side-specific points.",
+      "source": "nda-review SKILL.md, Instructions; dpa-review SKILL.md, Establish context"
+    },
+    {
+      "id": "REDLINE-DOCX",
+      "grader": "script",
+      "text": "Proposed edits go into a copy of the supplied Word file as visible tracked changes, never a rebuilt document; nothing outside the edits changes.",
+      "source": "dpa-review SKILL.md, Build a redline deterministically, steps 1 and 7",
+      "check": "legal_check.py LEGAL-REDLINE, LEGAL-ORIGINAL"
+    }
+  ]
+}

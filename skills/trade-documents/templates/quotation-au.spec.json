@@ -1,0 +1,67 @@
+{
+  "type": "quotation",
+  "language": "en-AU",
+  "number": "Q-2026-0915",
+  "issue_date": "2026-10-12",
+  "references": [
+    {
+      "label": "Your enquiry",
+      "value": "2026-10-07"
+    }
+  ],
+  "dates": [
+    {
+      "label": "Valid until",
+      "value": "2026-11-11"
+    },
+    {
+      "label": "Delivery time",
+      "value": "7 business days from order"
+    }
+  ],
+  "currency": "AUD",
+  "seller": {
+    "name": "Example Pumps Pty Ltd",
+    "street": "9 Example Way",
+    "postcode": "4110",
+    "city": "Acacia Ridge QLD",
+    "country": "Australia",
+    "register_number": "12 345 678 901",
+    "email": "sales@example-pumps.example",
+    "phone": "07 5550 0100"
+  },
+  "buyer": {
+    "name": "Darling Downs Irrigation Pty Ltd",
+    "street": "44 Sample Street",
+    "postcode": "4350",
+    "city": "Toowoomba QLD",
+    "country": "Australia",
+    "vat_id": "98 765 432 109"
+  },
+  "delivery_terms": {
+    "rule": "DAP",
+    "place": "Toowoomba QLD"
+  },
+  "transport": "road",
+  "payment_terms": "30 days from the end of the month of invoice",
+  "lines": [
+    {
+      "code": "SC-750",
+      "description": "Centrifugal pump, 7.5 kW, 3-phase",
+      "quantity": 2,
+      "unit": "pcs",
+      "unit_price": 3180.0,
+      "discount_percent": 0,
+      "vat_rate": 10
+    },
+    {
+      "code": "SC-020",
+      "description": "Pressure switch kit",
+      "quantity": 2,
+      "unit": "pcs",
+      "unit_price": 265.0,
+      "discount_percent": 0,
+      "vat_rate": 10
+    }
+  ]
+}

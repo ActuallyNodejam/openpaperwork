@@ -1,0 +1,68 @@
+{
+  "number": "2026-0142",
+  "series": "A",
+  "issue_date": "2026-10-09",
+  "due_date": "2026-11-08",
+  "delivery_date": "2026-10-06",
+  "currency": "EUR",
+  "payment_terms": "30 days net",
+  "order_reference": "PED-2026-077",
+  "seller": {
+    "name": "Ejemplo Imprenta S.L.",
+    "legal_form": "S.L.",
+    "street": "Calle del Ejemplo 12",
+    "postcode": "28001",
+    "city": "Madrid",
+    "province": "Madrid",
+    "country": "ES",
+    "vat_id": "ESB12345674",
+    "register": "Registro Mercantil de Madrid",
+    "contact": {
+      "name": "Lucía Ejemplo",
+      "phone": "+34 910 000 000",
+      "email": "facturas@imprenta.example"
+    },
+    "registered_office": "Madrid",
+    "register_number": "tomo 0000, folio 000, hoja M-000000"
+  },
+  "buyer": {
+    "name": "Ejemplo Librería S.A.",
+    "street": "Avenida de la Muestra 4",
+    "postcode": "46700",
+    "city": "Gandia",
+    "province": "Valencia",
+    "country": "ES",
+    "vat_id": "ESA99999997"
+  },
+  "payment": {
+    "means_code": "58",
+    "iban": "ES91 2100 0418 4502 0005 1332",
+    "bic": "CAIXESBBXXX"
+  },
+  "lines": [
+    {
+      "name": "Impresión de catálogo, 48 páginas, cuatricromía",
+      "quantity": 1500,
+      "unit": "C62",
+      "unit_price": 1.84,
+      "vat_rate": 21,
+      "vat_category": "S"
+    },
+    {
+      "name": "Diseño y maquetación",
+      "quantity": 12,
+      "unit": "HUR",
+      "unit_price": 58.0,
+      "vat_rate": 21,
+      "vat_category": "S"
+    },
+    {
+      "name": "Libro de muestras encuadernado",
+      "quantity": 40,
+      "unit": "C62",
+      "unit_price": 14.5,
+      "vat_rate": 4,
+      "vat_category": "S"
+    }
+  ]
+}

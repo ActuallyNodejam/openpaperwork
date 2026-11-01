@@ -1,0 +1,119 @@
+{
+ "id": "verbale-it-001",
+ "title": "Scrivi il verbale dell'assemblea ordinaria di una società di ingegneria",
+ "person": "The chair of a small Italian engineering company, an S.p.A. with two shareholders.",
+ "format": "docx",
+ "output": "verbale.docx",
+ "locale": "it-IT",
+ "sector": {
+  "naics": "54",
+  "name": "Professional, Scientific, and Technical Services"
+ },
+ "occupation": {
+  "soc": "11-1011.00",
+  "name": "Chief Executives"
+ },
+ "review": [
+  "Both resolutions are recorded with their votes, those taking part are listed with their shares, and the chair's findings and the way of voting are stated."
+ ],
+ "revised_review": [
+  "The dividend is 40.000 euro; 60.000 euro appears nowhere."
+ ],
+ "truth": {
+  "revision": {
+   "stale": [
+    "60.000"
+   ]
+  }
+ },
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "head",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-HEAD",
+   "guidelines": [
+    "roberts-rules/1915#MIN-01",
+    "roberts-rules/1915#MIN-03"
+   ],
+   "text": "The body, the kind of meeting and the date are given."
+  },
+  {
+   "id": "times",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-TIMES",
+   "guidelines": [
+    "roberts-rules/1915#MIN-09"
+   ],
+   "text": "The opening and closing times are given."
+  },
+  {
+   "id": "signed",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-SIGNED",
+   "guidelines": [
+    "it-codice-civile/2026#IT-MIN-01"
+   ],
+   "text": "The chair and the secretary each have a signature line."
+  },
+  {
+   "id": "statute",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-STATUTE",
+   "guidelines": [
+    "it-codice-civile/2026#IT-MIN-02",
+    "it-codice-civile/2026#IT-MIN-03",
+    "it-codice-civile/2026#IT-MIN-04"
+   ],
+   "text": "Those taking part and their shares, how the votes were cast and their result, and the chair's findings are in the verbale."
+  },
+  {
+   "id": "language",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-LANGUAGE",
+   "guidelines": [
+    "letter-layouts/2026-10#LETTER-LANGUAGE"
+   ],
+   "text": "Labels and signature roles are in Italian."
+  },
+  {
+   "id": "decisions",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "it-codice-civile/2026#IT-MIN-03"
+   ],
+   "text": "The accounts at 31 December 2025 are approved and, of the profit of 152.000 euro, 60.000 euro are paid as a dividend and the rest goes to the extraordinary reserve, both unanimously with 100.000 votes; the reply does not call the verbale approved or valid."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and addresses are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "roberts-rules/1915",
+  "it-codice-civile/2026",
+  "letter-layouts/2026-10",
+  "every-file/1.1.0"
+ ]
+}

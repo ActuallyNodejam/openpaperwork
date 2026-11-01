@@ -1,0 +1,96 @@
+{
+ "id": "safety-001",
+ "title": "Make a quarterly safety briefing deck",
+ "format": "pptx",
+ "output": "safety.pptx",
+ "slides": 4,
+ "person": "A warehouse supervisor preparing a short safety briefing for the crew.",
+ "sector": {
+  "naics": "48-49",
+  "name": "Transportation and Warehousing"
+ },
+ "occupation": {
+  "soc": "53-1042.00",
+  "name": "First-Line Supervisors of Helpers, Laborers, and Material Movers, Hand"
+ },
+ "review": [
+  "The chart shows near misses 9, 14, 11 and minor injuries by month with labels.",
+  "Main cause 15 of 34 near misses; no rates, trend or invented cause.",
+  "Actions with owner Ali Berg and start date 2026-10-12.",
+  "Four readable slides with editable text and an editable chart."
+ ],
+ "revised_review": [
+  "August minor injuries are 2 and the minor-injury total is 5 everywhere."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#FMT-2",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "chart",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1",
+    "openpaperwork/0.1.0#FMT-2"
+   ],
+   "text": "An editable chart labelled by month shows near misses 9 (2026-07), 14 (2026-08), 11 (2026-09) and minor injuries 2, 3, 1 at the first stage or 2, 2, 1 at the revision stage."
+  },
+  {
+   "id": "cause-and-actions",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "The deck names unsecured pallets at height as the main cause (15 of 34 near misses) and lists the daily rack-guard check owned by Ali Berg from 2026-10-12 and the Friday materials-storage walk."
+  },
+  {
+   "id": "limits",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-2"
+   ],
+   "text": "The deck claims no incident rate, no improving or worsening trend and no lost-time injury, and invents no other cause."
+  },
+  {
+   "id": "slides",
+   "stage": "both",
+   "grader": "render",
+   "guidelines": [
+    "openpaperwork/0.1.0#PAGE-1"
+   ],
+   "max_pages": 4,
+   "min_pages": 4,
+   "text": "The deck renders as exactly four slides."
+  },
+  {
+   "id": "revised-figure",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-1",
+    "openpaperwork/0.1.0#REV-2"
+   ],
+   "text": "August minor injuries are 2 in the chart and any text, the quarter total of minor injuries, if given, is 5 rather than 6, and near-miss figures are unchanged."
+  }
+ ],
+ "status": "draft",
+ "locale": "en",
+ "source": "Synthetic material created for this evaluation pack; no customer inputs.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "every-file/1.1.0"
+ ],
+ "version": "1.2.0"
+}

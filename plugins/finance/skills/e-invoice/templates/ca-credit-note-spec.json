@@ -1,0 +1,51 @@
+{
+  "number": "CN-2026-014",
+  "issue_date": "2026-10-20",
+  "delivery_date": "2026-10-01",
+  "currency": "CAD",
+  "payment_terms": "Refund within 15 days",
+  "order_reference": "PO-4471",
+  "seller": {
+    "name": "Example Maple Software Inc.",
+    "street": "100 Example Avenue",
+    "postcode": "M5V 0A1",
+    "city": "Toronto ON",
+    "country": "CA",
+    "gst_number": "123456782 RT0001",
+    "contact": {
+      "name": "Jordan Example",
+      "phone": "+1 416 555 0100",
+      "email": "billing@maple.example"
+    }
+  },
+  "buyer": {
+    "name": "Sample Logistics Ltd.",
+    "street": "200 Sample Street",
+    "postcode": "K1P 1A1",
+    "city": "Ottawa ON",
+    "country": "CA"
+  },
+  "payment": {
+    "bank": "Electronic funds transfer",
+    "transit": "00011",
+    "account": "1234567"
+  },
+  "taxes": [
+    {
+      "name": "HST (ON)",
+      "rate": 13
+    }
+  ],
+  "lines": [
+    {
+      "name": "Software subscription, annual, 5 seats cancelled",
+      "quantity": 5,
+      "unit": "C62",
+      "unit_price": 180.0
+    }
+  ],
+  "type_code": "381",
+  "preceding_invoice": "2026-318",
+  "preceding_invoice_date": "2026-10-05",
+  "note": "Credit for five seats cancelled within the trial period on invoice 2026-318."
+}

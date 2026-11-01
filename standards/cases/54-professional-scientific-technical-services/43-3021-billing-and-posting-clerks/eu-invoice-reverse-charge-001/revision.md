@@ -1,0 +1,1 @@
+Add one more service line, one day of migration support at 135.00, under the same reverse-charge treatment. Update the totals and the VAT breakdown, and keep the note, the other line and the payment details as they are.

@@ -1,0 +1,108 @@
+Official statutory texts behind the employment statement pack (skills/employment-statement and
+skills/_checks/employment_check.py), waves 6 to 9. Each is cited by section and restated in our own
+words; no text is copied whole. Only the official publications are authentic.
+
+Norway: Lov om arbeidsmiljø, arbeidstid og stillingsvern mv. (arbeidsmiljøloven), LOV-2005-06-17-62,
+§§ 14-5, 14-6, 14-7, 14-9 and 15-6, as amended by lov 15. desember 2023 nr. 88 (in force 1 July 2024).
+https://lovdata.no/lov/2005-06-17-62, read 2026-10-09. Laws are not protected by copyright in Norway
+(åndsverkloven § 14). Credited here though no licence asks for it.
+
+Denmark: Lov nr. 501 af 16. maj 2023 om ansættelsesbeviser og visse arbejdsvilkår, §§ 3, 4 and 6.
+https://www.retsinformation.dk/eli/lta/2023/501, read 2026-10-09. Laws are not protected by copyright
+in Denmark (ophavsretsloven § 9). Credited here though no licence asks for it.
+
+Finland: Työsopimuslaki (55/2001), 1 luku 4 § and 2 luku 4 §, Finlex consolidated text (version
+through 72/2026), https://www.finlex.fi/fi/lainsaadanto/2001/55, read 2026-10-09. Laws are not
+protected by copyright in Finland (tekijänoikeuslaki 9 §). Credited here though no licence asks for it.
+
+Canada: Canada Labour Code (R.S.C., 1985, c. L-2) s. 253.2 and Canada Labour Standards Regulations
+(C.R.C., c. 986) s. 3.1, in English and French, Justice Laws Website (regulations current to
+2026-09-21), read 2026-10-09. Reproduced under the Reproduction of Federal Law Order (SI/97-5): anyone
+may reproduce federal enactments without charge or permission, with due diligence for accuracy and
+not as an official version. This is not an official version.
+
+Ontario: Ontario Regulation 285/01, s. 1.2, as added by O. Reg. 477/24, and the Employment Standards
+Act, 2000, S.O. 2000, c. 41, s. 2 (5) and (7), e-Laws, read 2026-10-09.
+© King's Printer for Ontario, 2024. The King's Printer permits anyone to reproduce statutes and
+regulations without permission or charge, accurately and with Crown copyright acknowledged. This is
+not an official version.
+
+United States: the Fair Labor Standards Act, 29 U.S.C. 207(a)(1) and 213(a)(1), and 29 CFR part 541:
+works of the United States Government, not subject to copyright (17 U.S.C. 105). New York Labor Law
+§ 195(1), California Labor Code § 2810.5 and Montana Code Annotated 39-2-904: state statutes, whose
+text is not copyrightable (Georgia v. Public.Resource.Org, 590 U.S. 255 (2020)). New York Labor Law
+§ 195(1) was read on the New York State Senate's site (nysenate.gov, the revision of 2 October 2020) on
+2026-10-09: the notice at hiring, its items, the two languages, the signed and dated acknowledgment kept
+six years and the overtime rate for a non-exempt employee are as the check asks. California Labor Code
+§ 2810.5 was read that day through the Labor Commissioner's own notice template (DLSE-NTE, rev. 11/2023)
+and its questions and answers on dir.ca.gov, because the legislature's site answered 403 again; verify
+the California text against the official one before relying on it.
+
+Australia: Fair Work Act 2009 (Cth) ss. 15A, 125, 125B, 323, 333E, 333F and 333K, cited by section and
+restated; no text copied. The Fair Work Ombudsman's information statements are not copied (the
+Ombudsman's site licenses its material for non-commercial use only); the pack tells the employer to
+attach the Ombudsman's own current statements.
+
+United Kingdom: the Employment Rights Act 1996 ss. 1 to 3 are credited on the Open Government Licence
+notice (licenses/uk-analysis-function-ogl-v3.txt).
+
+Belgium (wave 8): Loi du 7 octobre 2022 transposant partiellement la directive (UE) 2019/1152 du
+Parlement européen et du Conseil du 20 juin 2019 relative à des conditions de travail transparentes et
+prévisibles dans l'Union européenne / Wet van 7 oktober 2022 houdende gedeeltelijke omzetting van
+Richtlijn (EU) 2019/1152, arts. 4 to 7, Moniteur belge / Belgisch Staatsblad 31 October 2022, numac
+2022206298, in force 10 November 2022. Loi du 3 juillet 1978 relative aux contrats de travail, arts.
+15, 67 (repealed by the law of 26 December 2013 from 1 January 2014) and 127. Decreet van 19 juli 1973
+tot regeling van het gebruik van de talen voor de sociale betrekkingen tussen de werkgevers en de
+werknemers, arts. 2 and 5; Décret du 30 juin 1982 relatif à la protection de la liberté de l'emploi des
+langues et de l'usage de la langue française en matière de relations sociales entre les employeurs et
+leur personnel, arts. 1 and 2. Consolidated texts on Justel, https://www.ejustice.just.fgov.be, read
+2026-10-09. Official acts are not protected by copyright in Belgium (Code de droit économique art.
+XI.172 § 2). Credited here though no licence asks for it.
+
+Netherlands (wave 8): Burgerlijk Wetboek Boek 7, arts. 7:652 and 7:655, version in force from 1 July
+2026, https://wetten.overheid.nl/BWBR0005290, read 2026-10-09. Laws are not protected by copyright in
+the Netherlands (Auteurswet art. 11). Credited here though no licence asks for it.
+
+Austria (wave 8): Arbeitsvertragsrechts-Anpassungsgesetz (AVRAG), BGBl. Nr. 459/1993, § 2 as amended
+by BGBl. I Nr. 11/2024 (in force 28 March 2024); Allgemeines bürgerliches Gesetzbuch § 1158 (2);
+Angestelltengesetz § 19 (2). Rechtsinformationssystem des Bundes, https://www.ris.bka.gv.at, read
+2026-10-09. Laws are not protected by copyright in Austria (Urheberrechtsgesetz § 7). Credited here
+though no licence asks for it.
+
+Ireland (wave 8): Terms of Employment (Information) Act 1994 (No. 5 of 1994), ss. 3, 3A, 4 and 6D, as
+amended by the Employment (Miscellaneous Provisions) Act 2018 and the European Union (Transparent and
+Predictable Working Conditions) Regulations 2022 (S.I. No. 686 of 2022), and the Protection of
+Employees (Fixed-Term Work) Act 2003 s. 9A. Enacted texts on https://www.irishstatutebook.ie, read
+2026-10-09. Contains Oireachtas information licensed under the Oireachtas (Open Data) PSI Licence,
+which incorporates the Creative Commons Attribution 4.0 International licence. The consolidation was
+read on the Law Reform Commission's Revised Acts (revisedacts.lawreform.ie) to find the text in force;
+nothing was taken from that site.
+
+Spain (wave 9): Real Decreto 723/2026, de 9 de septiembre, por el que se transpone la Directiva (UE)
+2019/1152 del Parlamento Europeo y del Consejo, de 20 de junio de 2019, relativa a unas condiciones
+laborales transparentes y previsibles en la Unión Europea, arts. 2 to 7 (BOE núm. 228 of 15 September
+2026, BOE-A-2026-19200; in force 5 October 2026). It develops art. 8.5 of the texto refundido de la Ley
+del Estatuto de los Trabajadores (Real Decreto Legislativo 2/2015) and repealed Real Decreto 1659/1998,
+de 24 de julio. Estatuto de los Trabajadores arts. 8.5 and 14, consolidated text last updated 3 October
+2026. https://www.boe.es, read 2026-10-09. Legal and regulatory provisions are not the object of
+intellectual property in Spain (texto refundido de la Ley de Propiedad Intelectual, Real Decreto
+Legislativo 1/1996, art. 13). The BOE's conditions of reuse (resolution of the Agencia Estatal Boletín
+Oficial del Estado of 27 June 2024) ask for this notice: Basado en datos de la Agencia Estatal Boletín
+Oficial del Estado, https://www.boe.es. The consolidated texts read are informative only and have no
+legal value; the Real Decreto's was last updated on 15 September 2026.
+
+Italy (wave 9): Decreto legislativo 26 maggio 1997, n. 152, arts. 1 and 2, as in force from 28 June
+2026: art. 1 replaced by decreto legislativo 27 giugno 2022, n. 104, art. 4; its comma 5-bis changed by
+decreto-legge 4 maggio 2023, n. 48, art. 26, converted by legge 3 luglio 2023, n. 85; its letter q-bis)
+and comma 3 by decreto-legge 30 aprile 2026, n. 62, art. 11, converted by legge 25 giugno 2026, n. 112.
+Decreto legislativo 27 giugno 2022, n. 104, art. 7, as in force from 12 January 2025. Normattiva,
+https://www.normattiva.it, the text in force on 2026-10-09, read that day. The copyright law does not
+apply to the texts of official acts of the State and of public administrations (legge 22 aprile 1941,
+n. 633, art. 5). Credited here though no licence asks for it.
+
+Poland (wave 9): Ustawa z dnia 26 czerwca 1974 r. – Kodeks pracy, arts. 25, 29 and 29(1), and arts. 36,
+129, 132 to 134, 151(1), 154 and 264, which the Polish starter points to; the Sejm's consolidated text
+of 18 August 2026 (t.j. Dz. U. z 2025 r. poz. 277, amended to Dz. U. z 2026 r. poz. 1046),
+https://isap.sejm.gov.pl, read 2026-10-09. Normative acts and their official drafts are not the object
+of copyright in Poland (ustawa z dnia 4 lutego 1994 r. o prawie autorskim i prawach pokrewnych, art. 4
+pkt 1). Credited here though no licence asks for it.

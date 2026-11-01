@@ -1,0 +1,220 @@
+{
+  "id": "brand-deck-001",
+  "title": "Build a deck that follows a brand kit file",
+  "format": "pptx",
+  "output": "deck.pptx",
+  "slides": {
+    "first": 6,
+    "revision": 5
+  },
+  "person": "A designer preparing a client pitch in the studio brand.",
+  "sector": {
+    "naics": "54",
+    "name": "Professional, Scientific, and Technical Services"
+  },
+  "occupation": {
+    "soc": "27-1024.00",
+    "name": "Graphic Designers"
+  },
+  "truth": {
+    "kit": {
+      "slide_ratio": "16:9",
+      "fonts": {
+        "heading": "Liberation Sans",
+        "body": "Liberation Serif"
+      },
+      "limits": {
+        "max_words_per_slide": 40,
+        "max_body_paragraphs": 4,
+        "min_font_pt": 18
+      },
+      "footer": "Northwind Studio · Confidential"
+    },
+    "palette": {
+      "first": [
+        "#0B1F3A",
+        "#F2B705",
+        "#FFFFFF",
+        "#5A6B7B"
+      ],
+      "revision": [
+        "#0B1F3A",
+        "#D7263D",
+        "#FFFFFF",
+        "#5A6B7B"
+      ]
+    },
+    "slides": {
+      "first": 6,
+      "revision": 5
+    }
+  },
+  "review": [
+    "Every kit rule holds on every slide.",
+    "Figures and dates survive the shortening."
+  ],
+  "revised_review": [
+    "The accent colour is replaced everywhere and the deck has five slides."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.3.0#FMT-1",
+        "openpaperwork/0.3.0#FMT-2",
+        "openpaperwork/0.3.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "kit-ratio",
+      "stage": "both",
+      "grader": "script",
+      "script": "brandkit.py",
+      "rule": "KIT-RATIO",
+      "guidelines": [
+        "openpaperwork/0.3.0#KIT-RATIO"
+      ],
+      "text": "The slide size has the brand kit ratio."
+    },
+    {
+      "id": "kit-count",
+      "stage": "both",
+      "grader": "script",
+      "script": "brandkit.py",
+      "rule": "KIT-COUNT",
+      "guidelines": [
+        "openpaperwork/0.3.0#KIT-COUNT"
+      ],
+      "text": "The deck has the requested number of slides."
+    },
+    {
+      "id": "kit-font",
+      "stage": "both",
+      "grader": "script",
+      "script": "brandkit.py",
+      "rule": "KIT-FONT",
+      "guidelines": [
+        "openpaperwork/0.3.0#KIT-FONT"
+      ],
+      "text": "Every text run resolves to a brand-kit font."
+    },
+    {
+      "id": "kit-color",
+      "stage": "both",
+      "grader": "script",
+      "script": "brandkit.py",
+      "rule": "KIT-COLOR",
+      "guidelines": [
+        "openpaperwork/0.3.0#KIT-COLOR"
+      ],
+      "text": "Every colour on a slide is in the brand palette and every text run has a palette colour."
+    },
+    {
+      "id": "kit-words",
+      "stage": "both",
+      "grader": "script",
+      "script": "brandkit.py",
+      "rule": "KIT-WORDS",
+      "guidelines": [
+        "openpaperwork/0.3.0#KIT-WORDS"
+      ],
+      "text": "No slide exceeds the kit limits for words and body paragraphs."
+    },
+    {
+      "id": "kit-minpt",
+      "stage": "both",
+      "grader": "script",
+      "script": "brandkit.py",
+      "rule": "KIT-MINPT",
+      "guidelines": [
+        "openpaperwork/0.3.0#KIT-MINPT"
+      ],
+      "text": "No text is smaller than the kit minimum size."
+    },
+    {
+      "id": "kit-footer",
+      "stage": "both",
+      "grader": "script",
+      "script": "brandkit.py",
+      "rule": "KIT-FOOTER",
+      "guidelines": [
+        "openpaperwork/0.3.0#KIT-FOOTER"
+      ],
+      "text": "The kit footer is on every slide."
+    },
+    {
+      "id": "kit-title",
+      "stage": "both",
+      "grader": "script",
+      "script": "brandkit.py",
+      "rule": "KIT-TITLE",
+      "guidelines": [
+        "openpaperwork/0.3.0#KIT-TITLE"
+      ],
+      "text": "Every slide has a title in the title placeholder."
+    },
+    {
+      "id": "kit-bounds",
+      "stage": "both",
+      "grader": "script",
+      "script": "brandkit.py",
+      "rule": "KIT-BOUNDS",
+      "guidelines": [
+        "openpaperwork/0.3.0#KIT-BOUNDS"
+      ],
+      "text": "No shape extends past the slide edge."
+    },
+    {
+      "id": "kit-plain",
+      "stage": "both",
+      "grader": "script",
+      "script": "brandkit.py",
+      "rule": "KIT-PLAIN",
+      "guidelines": [
+        "openpaperwork/0.4.0#KIT-PLAIN"
+      ],
+      "text": "Nothing decorative is on a slide: no drawn shape without text and no shadow, unless the kit's style declares a title rule."
+    },
+    {
+      "id": "figures",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.3.0#FACT-1"
+      ],
+      "text": "Every figure and date the deck states matches the content file: visitors 82,000 in 2023 and 64,000 in 2025, 310 interviews, total EUR 180,000 with 60,000, 75,000, 25,000 and 20,000, opening 2 May 2027 and approval on 14 November 2026. The problem, idea, budget and ask are each covered."
+    },
+    {
+      "id": "no-invention",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.3.0#FACT-2"
+      ],
+      "text": "The deck adds no figure, claim, partner or promise that the content file does not contain."
+    },
+    {
+      "id": "revised",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.3.0#REV-1",
+        "openpaperwork/0.3.0#REV-2"
+      ],
+      "text": "There is no Timeline slide, the last slide carries the opening date 2 May 2027, and the remaining sections are unchanged in substance."
+    }
+  ],
+  "status": "draft",
+  "locale": "en",
+  "version": "1.2.0",
+  "guidelines": [
+    "every-file/1.1.0",
+    "openpaperwork/0.4.0",
+    "openpaperwork/0.3.0"
+  ],
+  "source": "Synthetic material created for this evaluation pack; no customer inputs.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen."
+}

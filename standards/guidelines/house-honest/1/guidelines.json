@@ -1,0 +1,162 @@
+{
+  "issuer": "house-honest",
+  "version": "1",
+  "license": "House rules; no external standard is claimed. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-10",
+  "status": "draft",
+  "title": "A clean check must mean a whole page: what the builders refuse and what the checks no longer pass",
+  "source": "OpenPaperwork. Written after a measurement on 2026-10-10 in which a pack's check passed on pages that said less than the person's notes, or said it wrong. Every rule here is a house rule or a plain defect check and says so; none says a page is complete, correct or lawful, each says what is missing or does not add up.",
+  "rules": [
+    {
+      "id": "GIVEN-KEY",
+      "grader": "script",
+      "kind": "house",
+      "text": "A builder reads its data file against its own list of fields before anything is laid out. A key it has no field for is an error that names the key, the nearest key the builder knows and the place of that pack where a fact with no field of its own is printed; nothing is built.",
+      "source": "House rule on the builders' own input, not a published standard. From a measurement of 20 office documents on 2026-10-10: where a pack's check passed, the page said less than the person's notes in half the runs, because the builder printed what it had a field for and left the rest off without a word.",
+      "check": "skills/_shared/spec_guard.py with spec.fields.json in each pack"
+    },
+    {
+      "id": "GIVEN-SHAPE",
+      "grader": "script",
+      "kind": "house",
+      "text": "A value of another shape than its field takes is an error, never a guess: a list of lines given as one string (it printed one letter a line), an amount or a quantity given as text, a VAT rate written as a fraction (0.2 where 20 percent is meant).",
+      "source": "House rule on the builders' own input, not a published standard. A purchase order with VAT worked out at 0.2 percent and a terms paragraph printed one letter a line both passed their check in the same measurement.",
+      "check": "skills/_shared/spec_guard.py"
+    },
+    {
+      "id": "GIVEN-PLACE",
+      "grader": "script",
+      "kind": "house",
+      "text": "Every pack has one place for a fact its form has no field for, printed as written where that document puts such lines: a company's further particulars with its register details in the footer of a letter, a trade document and an invoice (sender.further, seller.further, buyer.further), a free line under an invoice's totals (note) and a trade document's (notes), lines before the first item of minutes (notes), a last heading of an employment statement (further), an agreement's modifications, a requirements specification's facts, the notes of annual accounts.",
+      "source": "House rule, not a published standard.",
+      "check": "the builders; tests/test_honest.py in each pack"
+    },
+    {
+      "id": "GIVEN-KIND",
+      "grader": "script",
+      "kind": "house",
+      "text": "A key the builder knows and this document has no place for is an error by name: a bank account on a purchase order, the recipient's e-mail address on a trade document, an item an employment statement's chosen law has no heading for, a field of one country's minutes in another's, a term a standard agreement's Cover Page does not have, a line the annual accounts' layouts lack.",
+      "source": "House rule, not a published standard.",
+      "check": "not_printed() in trade_create.py, minutes_create.py, statement_create.py and annual_create.py; build_standard() in agreement_create.py"
+    },
+    {
+      "id": "MINUTES-EMPTY",
+      "grader": "script",
+      "kind": "defect",
+      "script": "thin_pages.py",
+      "formats": [
+        "docx"
+      ],
+      "text": "Every item of business has something recorded under it: what was reported or noted, a motion, a decision, or in words that nothing was decided. A heading with nothing under it fails.",
+      "source": "A defect check, not a rule from a standard: minutes with every agenda heading and nothing under any of them passed their check in the measurement of 2026-10-10."
+    },
+    {
+      "id": "LETTER-EMPTY",
+      "grader": "script",
+      "kind": "defect",
+      "script": "thin_pages.py",
+      "formats": [
+        "docx",
+        "pdf"
+      ],
+      "text": "A letter has a body, and an address a postman can deliver to: the addressee, the street and number or a PO box, the town, and the postcode where the country delivers by postcode.",
+      "source": "A defect check, not a rule from a standard: an address window holding only a town passed its check in the measurement of 2026-10-10. The form of each line stays LETTER-ADDRESS's, which cites each post office."
+    },
+    {
+      "id": "TRADE-EMPTY",
+      "grader": "script",
+      "kind": "defect",
+      "script": "thin_pages.py",
+      "formats": [
+        "docx",
+        "xlsx",
+        "pdf"
+      ],
+      "text": "A trade document's recipient and its sender each have an address a postman can deliver to, and every line says what it is.",
+      "source": "A defect check, not a rule from a standard."
+    },
+    {
+      "id": "EMPLOY-EMPTY",
+      "grader": "script",
+      "kind": "defect",
+      "script": "thin_pages.py",
+      "formats": [
+        "docx"
+      ],
+      "text": "Every heading of an employment statement has a line under it; an item that does not apply says so with its reason.",
+      "source": "A defect check, not a rule from a standard."
+    },
+    {
+      "id": "LEGAL-EMPTY",
+      "grader": "script",
+      "kind": "defect",
+      "script": "thin_pages.py",
+      "formats": [
+        "docx"
+      ],
+      "text": "Every heading of an agreement, a review or a redline has text under it.",
+      "source": "A defect check, not a rule from a standard."
+    },
+    {
+      "id": "NOTES-FLOOR",
+      "grader": "script",
+      "kind": "house",
+      "script": "notes_floor.py",
+      "formats": [
+        "docx",
+        "xlsx",
+        "pptx",
+        "pdf",
+        "html"
+      ],
+      "text": "A question, never a fail. The check reads the person's own files in the folder (never the output, a builder's data file or a page a builder wrote) and lists the hard tokens the notes hold and the page does not: e-mail addresses, IBANs, phone, tax and register numbers, document numbers, dates, amounts. A token the page carries a few characters off is named as changed, with both forms. For a letter and minutes, a figure the data file's text carries that is nowhere in the notes and does not follow from figures standing on one line of them (a sum, a difference, a quantity times a price, a share the notes state in words) is listed too. It does not run when the folder holds no notes.",
+      "source": "House rule, not a published standard. It reads tokens, never meaning: a fact written in words is not seen, and a pass says nothing about it. From the measurement of 2026-10-10: a register number and a share capital left off an invoice, an invoice number rewritten, a sender's e-mail address replaced by a shorter one, each with a clean check."
+    },
+    {
+      "id": "LAYOUT-NEVER",
+      "grader": "script",
+      "kind": "house",
+      "text": "The FAIL line of every rule about fit, width, a window, fill or the number of pages ends with what may change (the type size inside its floor, where a value wraps, where a line stands, an abbreviation the post office itself uses) and the sentence \"Never change a name, an address or a number to make it fit.\"",
+      "source": "House rule on the checks' own words, not a published standard. In the measurement of 2026-10-10 a rule said an e-mail address ran 1 mm past the edge, and the agent replaced the sender's address with a shorter one it made up.",
+      "check": "skills/_checks/packcheck.py: LAYOUT_RULES and layout_tail(), where the line is printed"
+    },
+    {
+      "id": "GIVEN-FOLDER",
+      "grader": "script",
+      "kind": "house",
+      "text": "A builder refuses an output path inside the library's own folder (the skills folder, or the plugin around it), where the person never looks, and its message names the working folder. Every example in a pack's SKILL.md runs the builder from the working folder.",
+      "source": "House rule on the builders, not a published standard. In the measurement of 2026-10-10 six runs built their file beside the plugin, and the reply named a path the person would not look in.",
+      "check": "skills/_shared/spec_guard.py: output_guard(), called by every builder"
+    },
+    {
+      "id": "COMPANY-ONCE",
+      "grader": "script",
+      "kind": "house",
+      "text": "A company's own particulars are written once, in company.json in the person's folder: the seller party of EN 16931-1 (BG-4 to BG-7), its payment details (BG-16, BG-17) and the mentions its country's company law asks for. Every builder that prints a sender fills what its data file leaves out from the file, takes only what it has a field for, and stops when the data file says something else. A particular the person's files do not give is declared unknown, printed as nothing and warned about.",
+      "source": "House rule, not a published standard; the shape of the file is EN 16931-1's seller party, cited, nothing copied. In the measurement of 2026-10-10 the commonest fault, with and without the library, was a company particular the notes held and the page lost.",
+      "check": "skills/_shared/company.py: apply(), called by the letter, trade, invoice, minutes, employment and agreement builders; make writes the file"
+    },
+    {
+      "id": "COMPANY-FILE",
+      "grader": "script",
+      "kind": "house",
+      "script": "company_check.py",
+      "formats": [
+        "docx",
+        "xlsx",
+        "pdf",
+        "html"
+      ],
+      "text": "When the folder holds a company.json and the page is that company's, the data file the page was built from says nothing else about the company than the file does, and the page carries the company's name and its numbers (the VAT number and the register number, where that kind of document prints them) as the file gives them. It does not apply without the file or to another company's page.",
+      "source": "House rule, not a published standard."
+    },
+    {
+      "id": "ONE-FOOTER",
+      "grader": "script",
+      "kind": "house",
+      "text": "A company's own address reads the same in the footer of its letter, its invoice and its trade document: the name, the street, and its country's town line in ordinary case (28001 Madrid, 40121 Bologna (BO), Leeds LS1 4BR), with the country last when the paper goes abroad. The post office's capitals and line breaks belong to the address field, which a machine reads; a footer is the company's imprint. One function writes the lines for every builder, and nothing the data gives for the address (a second line, a locality, a province) is left off.",
+      "source": "House rule, not a published standard. The order of town and postcode per country is the one the letter layouts in skills/_shared/letter.py already take from each post office's own address guidance (after the town in the United States, Canada, Australia, the United Kingdom and Ireland, before it elsewhere); nothing new is cited and nothing copied.",
+      "check": "skills/_shared/letter.py: own_address(), town_line() and country_line(), called by the letter, invoice and trade builders; OneFooter in each of the three packs' tests/test_honest.py"
+    }
+  ]
+}

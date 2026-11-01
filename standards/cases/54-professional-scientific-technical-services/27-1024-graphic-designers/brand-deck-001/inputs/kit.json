@@ -1,0 +1,11 @@
+{
+  "brand": "Northwind Studio",
+  "slide_ratio": "16:9",
+  "fonts": {"heading": "Liberation Sans", "body": "Liberation Serif"},
+  "palette": ["#0B1F3A", "#F2B705", "#FFFFFF", "#5A6B7B"],
+  "text_colours": "every text run is set to a palette colour",
+  "title": "every slide has a title in the layout's title placeholder",
+  "limits": {"max_words_per_slide": 40, "max_body_paragraphs": 4, "min_font_pt": 18},
+  "footer": "Northwind Studio · Confidential",
+  "footer_rule": "the footer text appears on every slide and is exempt from the word and font-size limits"
+}

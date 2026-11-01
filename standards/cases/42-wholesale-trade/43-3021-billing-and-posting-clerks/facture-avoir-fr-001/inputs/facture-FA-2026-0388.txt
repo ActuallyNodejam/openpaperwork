@@ -1,0 +1,9 @@
+Facture FA-2026-0388 du 18/09/2026
+Client : Librairie Essai SAS, 5 boulevard de l'Essai, 67000 Strasbourg — SIREN 000 000 067 — TVA FR19000000067
+Adresse de facturation électronique : 000000067
+Livraison : entrepôt Librairie Essai, 14 rue du Dépôt, 67100 Strasbourg
+Nature : livraisons de biens
+
+Cahier ligné A5, 96 pages        200 pce x 2,40 € HT  = 480,00 € HT   TVA 20 %
+Stylo bille bleu, boîte de 50     12 pce x 18,50 € HT =  222,00 € HT   TVA 20 %
+Total HT 702,00 €, TVA 140,40 €, TTC 842,40 €

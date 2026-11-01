@@ -1,0 +1,54 @@
+{
+  "language": "nl",
+  "date": "2026-10-09",
+  "sender": {
+    "name": "Waddenlicht Installaties B.V.",
+    "street": "Oosterhamrikkade 60",
+    "postcode": "9713 KE",
+    "city": "Groningen",
+    "country": "NL",
+    "vat_id": "NL812345678B01",
+    "registered_office": "Groningen",
+    "register_number": "81234567",
+    "email": "info@waddenlicht.example",
+    "phone": "+31 50 000 0000",
+    "web": "waddenlicht.example"
+  },
+  "recipient": {
+    "name": "Voorbeeld Distributie B.V.",
+    "attention": "De heer P. Jansen",
+    "street": "Kanaalweg 41",
+    "postcode": "9601 AA",
+    "city": "Hoogezand",
+    "country": "NL"
+  },
+  "references": [
+    {
+      "kind": "yours",
+      "value": "PJ/26-118"
+    },
+    {
+      "kind": "ours",
+      "value": "WI-2026-344"
+    }
+  ],
+  "contact": {
+    "name": "Ruben Bakker",
+    "phone": "+31 50 000 0004",
+    "email": "ruben.bakker@waddenlicht.example"
+  },
+  "subject": "offerte voor ledverlichting in 24 kantoren",
+  "salutation": "Geachte heer Jansen,",
+  "body": [
+    "Hartelijk dank voor uw aanvraag van 1 oktober. Graag bieden wij u de levering en montage aan van ledverlichting in de 24 kantoren aan de Meerpaal.",
+    "De prijs bedraagt 96.000 euro, exclusief btw. Wij kunnen in week 3 van 2027 beginnen en ronden het werk binnen vier weken af.",
+    "Deze offerte is geldig tot 13 november 2026. Heeft u vragen, dan kunt u contact opnemen met Ruben Bakker."
+  ],
+  "signatory": {
+    "name": "Marloes de Vries",
+    "role": "Directeur"
+  },
+  "enclosures": [
+    "Technische specificatie"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "timeline",
+  "title": "The office move",
+  "eyebrow": "Milestones",
+  "description": "From signing the lease in February to the first day in the new office in September.",
+  "language": "en",
+  "events": [
+    {"date": "2026-02-10", "name": "Lease signed"},
+    {"date": "2026-03-15", "name": "Layout agreed", "note": "with all teams"},
+    {"date": "2026-05-04", "name": "Fit-out starts"},
+    {"date": "2026-07-20", "name": "Furniture delivered"},
+    {"date": "2026-08-31", "name": "Move weekend", "focal": true},
+    {"date": "2026-09-01", "name": "First day"}
+  ],
+  "source": "Move plan, version 4"
+}

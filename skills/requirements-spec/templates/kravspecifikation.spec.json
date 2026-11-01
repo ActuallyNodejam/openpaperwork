@@ -1,0 +1,43 @@
+{
+  "language": "sv",
+  "product": "doseringspump DP-2",
+  "organisation": "Sjöviks Vatten AB",
+  "document": "SV-KS-031",
+  "version": "1.0",
+  "date": "2026-10-21",
+  "status": "Utkast för granskning",
+  "author": "Karin Holmqvist",
+  "approver": "Olof Bergman",
+  "purpose": "Specifikationen anger vad doseringspumpen DP-2 behöver klara, så att leverantör, montör och driftpersonal arbetar efter samma lista.",
+  "scope": "Den omfattar pumpen, dess styrenhet och larmutgång. Kemikalietanken och rörledningen ingår inte.",
+  "definitions": [
+    {"term": "Dosering", "meaning": "Den volym fällningskemikalie som pumpen matar per timme."}
+  ],
+  "facts": [
+    "Pumpen kommer att stå i kemikalierummet, där temperaturen är 5 °C till 30 °C."
+  ],
+  "requirements": [
+    {"id": "DP-001", "section": "Dosering", "text": "Pumpen ska dosera från 0,5 L/h till 20 L/h.",
+     "rationale": "Täcker flödet både vid lågsäsong och vid vårflod.", "verification": "test"},
+    {"id": "DP-002", "section": "Dosering", "text": "Pumpen ska hålla doseringen inom ± 2 % av inställt värde.",
+     "rationale": "Fällningen blir ojämn vid större avvikelse.", "verification": "test"},
+    {"id": "DP-003", "section": "Styrning", "text": "Pumpen ska ta emot börvärdet som en signal på 4 mA till 20 mA.",
+     "rationale": "Styrsystemet ger börvärden på det sättet.", "verification": "demonstration"},
+    {"id": "DP-004", "section": "Styrning", "text": "Pumpen ska skicka ett larm till driftcentralen inom 10 s efter att doseringen stoppat.",
+     "rationale": "Ett stopp märks annars först vid nästa provtagning.", "verification": "test"},
+    {"id": "DP-005", "section": "Utförande", "text": "Pumpen ska väga högst 12 kg utan kemikalier.",
+     "rationale": "En person ska kunna bära den vid byte.", "verification": "inspection"},
+    {"id": "DP-006", "section": "Utförande", "text": "Pumpen ska tåla ett mottryck på 1,0 MPa (TBR-1).",
+     "rationale": "Mottrycket i den nya ledningen är beräknat men inte uppmätt.", "verification": "analysis"}
+  ],
+  "goals": [
+    {"id": "DP-M01", "text": "Pumpen bör gå att serva utan specialverktyg.", "rationale": "Driftpersonalen har sällan specialverktyg med sig."}
+  ],
+  "tbd": [
+    {"id": "TBR-1", "requirement": "DP-006", "estimate": "1,0 MPa", "closes": "Tryckmätning i den nya ledningen",
+     "owner": "Karin Holmqvist", "due": "2026-11-15"}
+  ],
+  "history": [
+    {"version": "1.0", "date": "2026-10-21", "change": "Första utgåvan", "author": "Karin Holmqvist"}
+  ]
+}

@@ -1,0 +1,84 @@
+{
+ "id": "nda-law-missing-001",
+ "title": "An NDA where the notes do not say which law",
+ "person": "A freelance consultant who needs an NDA with a new client and has not thought about governing law.",
+ "format": "docx",
+ "output": "nda.docx",
+ "locale": "en",
+ "sector": {
+  "naics": "54",
+  "name": "Professional, Scientific, and Technical Services"
+ },
+ "occupation": {
+  "soc": "13-1111.00",
+  "name": "Management Analysts"
+ },
+ "review": [
+  "The governing law is not chosen for the person: the reply asks which law and courts they want, or the draft is held until they answer; no default law appears."
+ ],
+ "revised_review": [
+  "With the person's answer, Danish law and the Copenhagen City Court, the NDA is complete and passes its checks."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "parties",
+   "stage": "revision",
+   "grader": "script",
+   "script": "legal_check.py",
+   "rule": "LEGAL-PARTIES",
+   "guidelines": [
+    "house-drafting/1#DRAFT-PARTIES"
+   ],
+   "text": "Both parties are named with their registration numbers and addresses."
+  },
+  {
+   "id": "law",
+   "stage": "revision",
+   "grader": "script",
+   "script": "legal_check.py",
+   "rule": "LEGAL-LAW",
+   "guidelines": [
+    "house-drafting/1#DRAFT-LAW"
+   ],
+   "text": "After the person's answer the governing law is Danish law, with no placeholder."
+  },
+  {
+   "id": "asks",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-2"
+   ],
+   "text": "At the first stage the governing law and courts are asked for, not chosen; no default law such as Delaware or Swedish law is written in."
+  },
+  {
+   "id": "no-advice",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-2"
+   ],
+   "text": "The reply says this is a drafting check, not legal advice, and rates no risk."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies and people are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "house-drafting/1",
+  "mike-workflows/ce62e6a2d3f4",
+  "every-file/1.1.0"
+ ]
+}

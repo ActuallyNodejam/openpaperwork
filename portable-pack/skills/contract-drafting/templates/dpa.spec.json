@@ -1,0 +1,36 @@
+{
+  "standard": "common-paper-dpa-1.1",
+  "kind": "dpa",
+  "effective_date": "2026-12-01",
+  "parties": [
+    {"name": "Siffra Bokföring AB", "registration": "556000-0021", "address": "Kungsgatan 18, 753 21 Uppsala, Sweden", "role": "Provider",
+     "notice_address": "dataskydd@siffra.example", "signatory": {"name": "Johan Ek", "title": "Managing Director"}},
+    {"name": "Exempel Frakt AB", "registration": "556000-0022", "address": "Industrivägen 4, 331 41 Värnamo, Sweden", "role": "Customer",
+     "signatory": {"name": "Sara Kvarnberg", "title": "Chief Executive Officer"}}
+  ],
+  "terms": {
+    "Agreement": "The Bookkeeping and Payroll Services Agreement between the parties dated 1 December 2026",
+    "Provider Security Contact": "security@siffra.example",
+    "Categories of Data Subjects": "Customer's employees and the contact persons at Customer's customers and suppliers",
+    "Categories of Personal Data": "Names, contact details, personal identity numbers, salary and tax details, bank account numbers for salary payments, and invoice details",
+    "Special Category Data": "Sick leave records that show an employee was absent through illness (data concerning health)",
+    "Special Category Data Restrictions or Safeguards": "Only the two payroll staff named in Provider's access list can see sick leave records; they are kept apart from other payroll data and deleted 24 months after the payroll month.",
+    "Frequency of Transfer": "Continuous, as Customer uploads documents and runs payroll each month",
+    "Nature and Purpose of Processing": "Bookkeeping, monthly payroll and statutory reporting to the Swedish Tax Agency on Customer's behalf",
+    "Duration of Processing": "For the term of the Agreement and until the data is returned or deleted under Section 7",
+    "Competent Supervisory Authority": "Integritetsskyddsmyndigheten (IMY), Sweden",
+    "Security Policy": [
+      "Staff who process Customer Personal Data are bound by a written duty of confidentiality and are trained in data protection each year.",
+      "Access by named account with two-factor sign-in; payroll data only for payroll staff.",
+      "Data encrypted in transit (TLS 1.2 or later) and at rest; nightly backups kept in Sweden for 35 days.",
+      "Personal data breaches handled under Provider's written incident routine, reviewed each year."
+    ],
+    "Approved Subprocessors": [
+      "Nordmoln Hosting AB, Sweden: hosting of the bookkeeping system",
+      "Lönebyrån Systems AB, Sweden: the payroll software and its support"
+    ]
+  },
+  "governing_law": "",
+  "modifications": [],
+  "_note": "The Governing Member State (the law and courts for the EEA SCCs) is the parties' choice: ask the person, never fill it in."
+}

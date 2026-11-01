@@ -1,0 +1,57 @@
+{
+ "number": "INV-2026-0007",
+ "issue_date": "2026-10-01",
+ "due_date": "2026-10-31",
+ "delivery_date": "2026-09-28",
+ "currency": "EUR",
+ "payment_terms": "30 days net",
+ "seller": {
+  "name": "Nordlicht Kontor GmbH",
+  "street": "Chausseestrasse 42",
+  "postcode": "10115",
+  "city": "Berlin",
+  "country": "DE",
+  "vat_id": "DE123456789"
+ },
+ "buyer": {
+  "name": "Beispiel Buerobedarf GmbH",
+  "street": "Speicherstadt 8",
+  "postcode": "20457",
+  "city": "Hamburg",
+  "country": "DE",
+  "vat_id": "DE987654321"
+ },
+ "payment": {
+  "means_code": "58",
+  "iban": "DE02120300000000202051"
+ },
+ "lines": [
+  {
+   "name": "Buerostuhl Ergonomi 200",
+   "quantity": 4,
+   "unit": "C62",
+   "unit_price": 245.0,
+   "discount_percent": 0,
+   "vat_rate": 19,
+   "vat_category": "S"
+  },
+  {
+   "name": "Schreibtisch 160x80",
+   "quantity": 2,
+   "unit": "C62",
+   "unit_price": 410.0,
+   "discount_percent": 0,
+   "vat_rate": 19,
+   "vat_category": "S"
+  },
+  {
+   "name": "Lieferung und Montage",
+   "quantity": 1,
+   "unit": "C62",
+   "unit_price": 350.0,
+   "discount_percent": 0,
+   "vat_rate": 19,
+   "vat_category": "S"
+  }
+ ]
+}

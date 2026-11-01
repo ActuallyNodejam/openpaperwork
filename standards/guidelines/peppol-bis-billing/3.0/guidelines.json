@@ -1,0 +1,18 @@
+{
+ "issuer": "peppol-bis-billing",
+ "version": "3.0",
+ "link": "https://docs.peppol.eu/poacc/billing/3.0/",
+ "license": "Cited only: OpenPeppol's Peppol BIS Billing 3.0 (docs.peppol.eu/poacc/billing/3.0, github.com/OpenPEPPOL/peppol-bis-invoice-3) states no licence and its guide says it may not be modified or redistributed without OpenPeppol's consent. Nothing of it is copied: the rules of release 3.0.21 are fetched from docs.peppol.eu, compiled with SchXslt 1.10.1 (MIT) and run untouched in the KoSIT validator (Apache-2.0). Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "Peppol BIS Billing 3.0: the UBL invoice and credit note Norway, Denmark, Finland, the UK, Belgium, the Netherlands, Austria and Ireland receive",
+ "source": "Peppol BIS Billing 3.0, release 3.0.21 (published 2026-05-20, mandatory from 2026-08-17): CEN-EN16931-UBL.sch (SHA-256 268d4f7a2688) and PEPPOL-EN16931-UBL.sch (SHA-256 62e5b67892f1) as docs.peppol.eu publishes them, with the national rules NO-R-001, NO-R-002 (Norway, EHF), DK-R-002 to DK-R-017 (Denmark) and NL-R-001 to NL-R-009 (the Netherlands), and PEPPOL-COMMON-R043 for the Belgian enterprise number under 0208. Belgium makes this format the rule between its businesses from 1 January 2026 (Royal Decree no. 1 art. 13ter). Erhvervsstyrelsen's document strategy of 5 March 2026 drops OIOUBL 3.0 for a Peppol-based Nemhandel BIS 4 from 2028-2029, so Peppol BIS 3 is the Danish format to write today. Read 2026-10-09.",
+ "rules": [
+  {
+   "id": "EINV-PEPPOL",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "text": "The official Peppol BIS Billing 3.0 rules (CEN EN 16931 UBL and PEPPOL, with the Norwegian, Danish and Dutch rules) accept the UBL beside the page; skipped when they are not installed."
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+Order confirmation,Customer order,Item,Description,Unit,Ordered,Unit price SEK
+OC-2026-0342,PO-7731,ESP-210,"Label printer, two colour",pcs,2,38500.00
+OC-2026-0342,PO-7731,GRD-064,"Paper shredder, 64 mm feed",pcs,3,6200.00
+OC-2026-0342,PO-7731,CUP-180,"Ring binders 180 sheets, box of 48",box,10,1150.00
+OC-2026-0342,PO-7731,BEA-1KG,"Sample goods, 1 kg bag",bag,120,189.00

@@ -1,0 +1,76 @@
+{
+  "issuer": "it-dlgs-152-1997",
+  "version": "2026-06",
+  "link": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-05-26;152",
+  "license": "Italian official acts, outside the copyright law (legge 22 aprile 1941, n. 633, art. 5); restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Decreto legislativo 152/1997 art. 1: le informazioni sul rapporto di lavoro",
+  "source": "Decreto legislativo 26 maggio 1997, n. 152, arts. 1 and 2, as in force from 28 June 2026: art. 1 replaced by decreto legislativo 27 giugno 2022, n. 104, art. 4; comma 5-bis changed by decreto-legge 4 maggio 2023, n. 48, art. 26 (legge 85/2023); letter q-bis) and comma 3 by decreto-legge 30 aprile 2026, n. 62, art. 11 (legge 112/2026). Decreto legislativo 27 giugno 2022, n. 104, art. 7, as in force from 12 January 2025. Normattiva, the text in force on 2026-10-09, read that day.",
+  "note": "A drafting check, not legal advice: the scripted rules read whether a particular is there, never whether a term is lawful.",
+  "rules": [
+    {
+      "id": "IT-01",
+      "grader": "script",
+      "text": "The contract or the hiring notice is handed over before work starts; what they do not give follows in writing within seven days of the start, and letters g), i), l), m), q), q-bis) and r) within one month.",
+      "source": "art. 1 c. 2, 3",
+      "check": "employment_check.py EMPLOY-DATES"
+    },
+    {
+      "id": "IT-02",
+      "grader": "script",
+      "text": "The parties with the employer's seat or domicile, the place of work (or that it varies or is the worker's to choose), the grade, level and qualification or a short description of the work, the start and the type of relationship with a fixed term's expected length.",
+      "source": "art. 1 c. 1 a) to f)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "IT-03",
+      "grader": "script",
+      "text": "The initial pay with its elements, the period and the manner of payment; or the reference to the law or the collective agreement that sets it.",
+      "source": "art. 1 c. 1 n), c. 5-bis",
+      "check": "employment_check.py EMPLOY-PAY"
+    },
+    {
+      "id": "IT-04",
+      "grader": "script",
+      "text": "Agency users, training, holidays and other paid leave, the notice, the working time (for an unpredictable one the guaranteed hours, the reference hours and days and the notice), the bodies that receive the contributions and automated decision or monitoring systems.",
+      "source": "art. 1 c. 1 g), i), l), m), o), p), r), s)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "IT-05",
+      "grader": "script",
+      "text": "The collective agreement with the parties that signed it and, for a private employer, the single alphanumeric code CNEL assigns to the national agreement (q-bis), added by D.L. 62/2026; the date it took effect is unproved against Normattiva, so the statement asks for the code and says it may not yet be required.",
+      "source": "art. 1 c. 1 q), q-bis)",
+      "check": "employment_check.py EMPLOY-AGREEMENT"
+    },
+    {
+      "id": "IT-06",
+      "grader": "script",
+      "text": "A probation of at most six months; in a fixed term one day of actual work per fifteen calendar days, at most fifteen days up to six months and thirty days under twelve months.",
+      "source": "art. 1 c. 1 h); D.Lgs. 104/2022 art. 7",
+      "check": "employment_check.py EMPLOY-PROBATION"
+    },
+    {
+      "id": "IT-07",
+      "grader": "script",
+      "text": "Only letters h), i), l), m), n), o) and r) may be given by naming the law or the collective agreement; the rest are stated.",
+      "source": "art. 1 c. 5-bis",
+      "check": "employment_check.py EMPLOY-REFERENCE"
+    },
+    {
+      "id": "IT-08",
+      "grader": "script",
+      "text": "A posting abroad whatever its length, a mission over four consecutive weeks: the country and length, the currency, the further benefits and the repatriation, before departure.",
+      "source": "art. 2",
+      "check": "employment_check.py EMPLOY-ABROAD"
+    },
+    {
+      "id": "IT-09",
+      "grader": "script",
+      "text": "Every heading is in Italian.",
+      "source": "art. 1",
+      "check": "employment_check.py EMPLOY-LANG"
+    }
+  ]
+}

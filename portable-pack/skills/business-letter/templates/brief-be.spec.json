@@ -1,0 +1,56 @@
+{
+  "language": "nl",
+  "date": "2026-10-09",
+  "sender": {
+    "name": "Dijleboord Drukkerij NV",
+    "street": "Vaartstraat 14",
+    "postcode": "3000",
+    "city": "Leuven",
+    "country": "BE",
+    "vat_id": "BE 0734.567.890",
+    "registered_office": "Vaartstraat 14, 3000 Leuven",
+    "register": "RPR Leuven",
+    "register_number": "0734.567.890",
+    "email": "info@dijleboord.example",
+    "phone": "+32 16 00 00 00",
+    "web": "dijleboord.example"
+  },
+  "recipient": {
+    "name": "Hageland Fietsatelier BV",
+    "attention": "Mevrouw Sofie Jacobs",
+    "street": "Diestsestraat 88 bus 2",
+    "postcode": "3000",
+    "city": "Leuven",
+    "country": "BE"
+  },
+  "references": [
+    {
+      "kind": "yours",
+      "value": "SJ/2026-041"
+    },
+    {
+      "kind": "ours",
+      "value": "DD-1187"
+    }
+  ],
+  "contact": {
+    "name": "Bram Claes",
+    "phone": "+32 16 00 00 04",
+    "email": "bram.claes@dijleboord.example"
+  },
+  "subject": "Offerte voor uw voorjaarscatalogus 2027",
+  "salutation": "Geachte mevrouw Jacobs,",
+  "body": [
+    "Dank u voor uw aanvraag van 2 oktober. Wij drukken uw voorjaarscatalogus graag: 3.000 exemplaren, 48 pagina's op A4, genaaid gebrocheerd.",
+    "De prijs bedraagt 6.840 euro, exclusief btw. Wij leveren binnen twaalf werkdagen nadat u de drukproef hebt goedgekeurd.",
+    "Deze offerte blijft geldig tot 13 november 2026. Voor vragen kunt u Bram Claes bereiken."
+  ],
+  "signatory": {
+    "name": "Katrien Peeters",
+    "role": "Gedelegeerd bestuurder"
+  },
+  "enclosures": [
+    "Papierstalen",
+    "Algemene voorwaarden"
+  ]
+}

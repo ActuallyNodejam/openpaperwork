@@ -1,0 +1,66 @@
+{
+  "number": "INV-26-0457",
+  "issue_date": "2026-10-12",
+  "due_date": "2026-11-11",
+  "delivery_date": "2026-10-06",
+  "currency": "EUR",
+  "payment_terms": "30 days net",
+  "order_reference": "PO 7781",
+  "seller": {
+    "name": "Liffey Example Ltd",
+    "legal_form": "Ltd",
+    "street": "1 Sample Street",
+    "city": "Dublin",
+    "postcode": "D02 AB12",
+    "country": "IE",
+    "vat_id": "IE1234567T",
+    "register_number": "654321",
+    "registered_office": "1 Sample Street, Dublin 2",
+    "electronic_address": "9935:IE1234567T",
+    "contact": {
+      "name": "Aoife Example",
+      "phone": "+353 1 000 0000",
+      "email": "accounts@liffey.example"
+    }
+  },
+  "buyer": {
+    "name": "Example Packaging Ltd",
+    "street": "5 Trial Road",
+    "city": "Cork",
+    "postcode": "T12 CD34",
+    "country": "IE",
+    "vat_id": "IE7654321G",
+    "electronic_address": "9935:IE7654321G"
+  },
+  "payment": {
+    "means_code": "58",
+    "iban": "IE29 AIBK 9311 5212 3456 78",
+    "bic": "AIBKIE2D"
+  },
+  "lines": [
+    {
+      "name": "Access control service visit",
+      "quantity": 5,
+      "unit": "HUR",
+      "unit_price": 85.0,
+      "vat_rate": 23,
+      "vat_category": "S"
+    },
+    {
+      "name": "Thermal printer paper, case",
+      "quantity": 10,
+      "unit": "C62",
+      "unit_price": 24.0,
+      "vat_rate": 23,
+      "vat_category": "S"
+    },
+    {
+      "name": "Fire safety training, half day",
+      "quantity": 1,
+      "unit": "C62",
+      "unit_price": 450.0,
+      "vat_rate": 13.5,
+      "vat_category": "S"
+    }
+  ]
+}

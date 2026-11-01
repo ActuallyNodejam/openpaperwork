@@ -1,0 +1,1 @@
+Make the agreed changes to agreement.docx as tracked changes, so the client can review them: the fee becomes EUR 4,400 per month, and invoices become payable within 45 days. Save the result as agreement-tracked.docx. Do not change anything else, and do not accept the changes.

@@ -1,0 +1,198 @@
+{
+ "id": "annual-accounts-sv-001",
+ "title": "Gör årsredovisningen för ett litet konsultbolag med vinst och utdelning",
+ "person": "The CEO of a two-person project management company in Luleå who prepares the annual report herself from the trial balance.",
+ "format": "docx",
+ "output": "arsredovisning-2025.docx",
+ "locale": "sv",
+ "sector": {
+  "naics": "54",
+  "name": "Professional, Scientific, and Technical Services"
+ },
+ "occupation": {
+  "soc": "13-2011.00",
+  "name": "Accountants and Auditors"
+ },
+ "review": [
+  "Tallbacka Projektledning AB, 556000-0002, calendar year 2025 under K2: net sales 1 680 000 kr, result after financial items 353 800 kr, a 60 000 kr periodiseringsfond, tax 60 500 kr and a profit of 233 300 kr; total assets 945 600 kr (2024: 725 200 kr); the 100 000 kr dividend paid in 2025 shown in the changes in equity; 484 300 kr at the meeting's disposal, 150 000 kr proposed as dividend and 334 300 kr carried forward; signed in Luleå on 24 March 2026 by Maria Nordin and Anders Lund."
+ ],
+ "revised_review": [
+  "The board proposes 120 000 kr in dividend: 364 300 kr is carried forward; nothing else changes."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "parts",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-PARTS",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-01",
+    "arsredovisningslagen/1995-1554#ARL-15",
+    "eu-accounting-directive/2013-34#ACC-01",
+    "bfn-k2/2016-10#K2-01",
+    "bfn-k2/2016-10#K2-05"
+   ],
+   "text": "Management report (business, events, multi-year overview, changes in equity, disposition), income statement, balance sheet, notes and signatures, in that order, with the name and organisation number."
+  },
+  {
+   "id": "amounts",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-AMOUNTS",
+   "guidelines": [
+    "bfn-k2/2016-10#K2-02"
+   ],
+   "text": "Amounts in whole kronor, the unit stated once and kept."
+  },
+  {
+   "id": "years",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-YEARS",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-05",
+    "eu-accounting-directive/2013-34#ACC-02"
+   ],
+   "text": "Last year's figures beside this year's on every line, taken from last year's report."
+  },
+  {
+   "id": "sums",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-SUMS",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-07"
+   ],
+   "text": "Every subtotal and result line adds up, both years."
+  },
+  {
+   "id": "balance",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-BALANCE",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-06"
+   ],
+   "text": "Total assets 945 600 kr equal equity and liabilities (2024: 725 200 kr)."
+  },
+  {
+   "id": "result",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-RESULT",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-08"
+   ],
+   "text": "The year's result is the same in every place it appears."
+  },
+  {
+   "id": "equity",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-EQUITY",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-16",
+    "bfn-k2/2016-10#K2-06"
+   ],
+   "text": "The changes in equity run from last year's balance sheet to this year's."
+  },
+  {
+   "id": "disposition",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-DISPOSITION",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-17",
+    "bfn-k2/2016-10#K2-07"
+   ],
+   "text": "484 300 kr at the meeting's disposal; 150 000 kr dividend and 334 300 kr carried forward (revision: 120 000 kr and 364 300 kr)."
+  },
+  {
+   "id": "notes",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-NOTES",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-09",
+    "arsredovisningslagen/1995-1554#ARL-10",
+    "arsredovisningslagen/1995-1554#ARL-13",
+    "eu-accounting-directive/2013-34#ACC-06",
+    "eu-accounting-directive/2013-34#ACC-09",
+    "bfn-k2/2016-10#K2-08"
+   ],
+   "text": "Accounting policies, average number of employees and the fixed-asset note, numbered in order, the carrying amount matching the balance sheet."
+  },
+  {
+   "id": "signed",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-SIGNED",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-02",
+    "eu-accounting-directive/2013-34#ACC-11",
+    "bfn-k2/2016-10#K2-03"
+   ],
+   "text": "Both board members sign under a place and date after the year end."
+  },
+  {
+   "id": "comparatives",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-05",
+    "eu-accounting-directive/2013-34#ACC-02"
+   ],
+   "text": "Last year's column repeats the 2024 report's figures, including the 192 600 kr profit and the 110 000 kr periodiseringsfonder."
+  },
+  {
+   "id": "not-worked-out",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-12",
+    "bfn-k2/2016-10#K2-04"
+   ],
+   "text": "Tax, the periodiseringsfond and depreciation are taken from the trial balance, never recomputed; the board's statement on the dividend is asked for or left to the board, not written for it."
+  },
+  {
+   "id": "revised-dividend",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-17"
+   ],
+   "text": "The revised report proposes 120 000 kr in dividend and carries 364 300 kr forward."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, organisation numbers and figures are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "arsredovisningslagen/1995-1554",
+  "eu-accounting-directive/2013-34",
+  "bfn-k2/2016-10",
+  "every-file/1.1.0"
+ ]
+}

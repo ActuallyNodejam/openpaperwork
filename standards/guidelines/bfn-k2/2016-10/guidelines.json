@@ -1,0 +1,74 @@
+{
+  "issuer": "bfn-k2",
+  "version": "2016-10",
+  "link": "https://www.bfn.se/wp-content/uploads/vl16-10-k2ar-kons2025.pdf",
+  "license": "Bokföringsnämnden's general advice and guidance, BFNAR 2016:10 (K2) and BFNAR 2012:1 (K3). Cited only: each rule names the chapter it points to and is written in our own words; no text, example or layout is copied. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "BFNAR 2016:10 Årsredovisning i mindre företag (K2)",
+  "source": "Bokföringsnämnden, BFNAR 2016:10 Årsredovisning i mindre företag (K2), the consolidated version for financial years beginning after 31 December 2025 (vl16-10-k2ar-kons2025.pdf), chapters 3 (the form of the annual report), 4 (layouts), 5 (management report) and 18 (notes); BFNAR 2012:1 (K3) named for companies outside K2. Read 2026-10-09.",
+  "note": "Cited, never copied. A company that does not apply K2, or a larger company, follows K3 (BFNAR 2012:1), which asks for more than this pack writes.",
+  "rules": [
+    {
+      "id": "K2-01",
+      "grader": "script",
+      "text": "The parts come in the order management report, income statement, balance sheet, notes, then the signatures.",
+      "source": "kap. 3",
+      "check": "annual_accounts_check.py ANNUAL-PARTS"
+    },
+    {
+      "id": "K2-02",
+      "grader": "script",
+      "text": "The report states its currency and the unit of its amounts and rounds them the same way throughout.",
+      "source": "kap. 3",
+      "check": "annual_accounts_check.py ANNUAL-AMOUNTS"
+    },
+    {
+      "id": "K2-03",
+      "grader": "script",
+      "text": "The report is signed and dated.",
+      "source": "kap. 3",
+      "check": "annual_accounts_check.py ANNUAL-SIGNED"
+    },
+    {
+      "id": "K2-04",
+      "grader": "judge",
+      "text": "The income statement and balance sheet use K2's layouts for an aktiebolag.",
+      "source": "kap. 4"
+    },
+    {
+      "id": "K2-05",
+      "grader": "script",
+      "text": "The management report describes the business and gives a multi-year overview of net sales, the result after financial items and the equity ratio.",
+      "source": "kap. 5",
+      "check": "annual_accounts_check.py ANNUAL-PARTS"
+    },
+    {
+      "id": "K2-06",
+      "grader": "script",
+      "text": "The management report sets out the changes in equity.",
+      "source": "kap. 5",
+      "check": "annual_accounts_check.py ANNUAL-EQUITY"
+    },
+    {
+      "id": "K2-07",
+      "grader": "script",
+      "text": "An aktiebolag's management report gives the funds at the meeting's disposal and the board's proposal for them.",
+      "source": "kap. 5",
+      "check": "annual_accounts_check.py ANNUAL-DISPOSITION"
+    },
+    {
+      "id": "K2-08",
+      "grader": "script",
+      "text": "The notes begin with the accounting policies and include the notes K2 asks a smaller company for.",
+      "source": "kap. 18",
+      "check": "annual_accounts_check.py ANNUAL-NOTES"
+    },
+    {
+      "id": "K2-09",
+      "grader": "judge",
+      "text": "A company outside K2, or one that chooses K3, is told this pack does not cover it. Outside K2 by BFNAR 2016:10 punkter 1.1A to 1.1C (as amended by BFNAR 2025:2): a public company; a parent of a larger group, or of a smaller group that prepares consolidated accounts; a natural person or an estate; a bostadsrättsförening or bostadsförening; a company with a branch abroad; one that paid in shares for goods or services; one with convertible debt it issued or similar compound instruments; one holding crypto-assets beyond taking them now and then as payment; and one with a material deferred tax liability or buildings bringing at least 75 percent of net sales, unless the 1.1C exceptions apply.",
+      "source": "BFNAR 2016:10 kapitel 1 punkter 1.1A-1.1C, https://www.bfn.se/wp-content/uploads/vl16-10-k2ar-kons2025.pdf; BFNAR 2012:1"
+    }
+  ]
+}

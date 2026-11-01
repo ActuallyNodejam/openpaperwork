@@ -1,0 +1,14 @@
+NASA Systems Engineering Handbook, NASA/SP-2016-6105 Rev 2, Appendix C: How to Write a Good Requirement
+National Aeronautics and Space Administration
+https://www.nasa.gov/seh/appendix-c-how-to-write-a-good-requirement
+Web edition last updated 26 July 2023, read 2026-10-08.
+
+A work of the United States Government, not subject to copyright in the United States (17 U.S.C. 105).
+Credited here though no licence asks for it. NASA does not endorse this software.
+
+Changes: the checklist items used here (C.1 shall, will and should; C.3 positive statements and a TBD or TBR
+with who resolves it and by when; C.4 clarity, one thought per statement, unique numbering, verification by
+test, demonstration, inspection or analysis, and the lists of ambiguous and unverifiable terms) are restated in
+our own words in skills/_checks/requirements_check.py, skills/requirements-spec and
+standards/guidelines/nasa-seh; the term lists are kept as published, with a Swedish translation of
+our own.

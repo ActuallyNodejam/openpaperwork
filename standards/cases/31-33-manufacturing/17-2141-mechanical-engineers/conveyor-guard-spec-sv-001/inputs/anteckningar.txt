@@ -1,0 +1,12 @@
+Möte om nytt skydd vid transportband 3 (linje 2), Vänerby Förpackning AB, 7 okt 2026.
+Närvarande: Lina Sjöberg (produktion), Jonas Berglund (underhåll), jag (Amir Haddad, konstruktion).
+- Skyddet ska täcka bandets indragningspunkter vid båda vändtrumlorna.
+- Ska vara tillräckligt starkt, Jonas vill att nätet klarar 1kN utan att bli bestående deformerat.
+- Nätet: maskor max 20mm, minst 120 mm till trumman (enligt säkerhetsavståndstabellen).
+- Luckan får inte gå att öppna när bandet går. Förregling med säkerhetsbrytare kopplad till bandets stopp.
+- Bandet måste ha stannat inom 2 sek efter att luckan öppnats. Leverantören har inte bekräftat stopptiden, Jonas kollar till 15 november.
+- Luckan ska vara lätt att öppna, max 15Kg? (Lina menar 150 N).
+- Vikt per sektion helst under 12 kg så en person kan lyfta den.
+- Gul, RAL 1023.
+- Rengöring: tål högtryckstvätt 80°C, 100 bar etc.
+- Montering ska gå snabbt vid service.

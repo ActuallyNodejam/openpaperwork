@@ -1,0 +1,54 @@
+{
+  "language": "fi",
+  "date": "2026-10-09",
+  "sender": {
+    "name": "Esimerkki Tietotekniikka Oy",
+    "street": "Teollisuustie 9",
+    "postcode": "33720",
+    "city": "Tampere",
+    "country": "FI",
+    "vat_id": "FI32145678",
+    "registered_office": "Tampere",
+    "register_number": "3214567-8",
+    "email": "myynti@tietotekniikka.example",
+    "phone": "+358 3 555 0120"
+  },
+  "recipient": {
+    "name": "Esimerkkikoulu",
+    "attention": "Rehtori Aino Laine",
+    "street": "Koulukatu 5",
+    "postcode": "40100",
+    "city": "Jyväskylä",
+    "country": "FI"
+  },
+  "references": [
+    {
+      "kind": "yours",
+      "value": "Tarjouspyyntö 25.9.2026"
+    },
+    {
+      "kind": "ours",
+      "value": "ET-588"
+    }
+  ],
+  "contact": {
+    "name": "Juha Niemi",
+    "phone": "+358 3 555 0124",
+    "email": "juha.niemi@tietotekniikka.example"
+  },
+  "subject": "Tarjous luokkien tietokoneista",
+  "salutation": "Hyvä rehtori Laine",
+  "body": [
+    "Kiitos tarjouspyynnöstänne. Tarjoamme kolmeen luokkaan yhteensä 84 kannettavaa tietokonetta ja laturia.",
+    "Hinta on 31 920 euroa (alv 0 %). Toimitus on viikolla 2/2027, ja asennus sisältyy hintaan.",
+    "Tarjous on voimassa 13.11.2026 asti."
+  ],
+  "signatory": {
+    "name": "Juha Niemi",
+    "role": "Myyntipäällikkö"
+  },
+  "enclosures": [
+    "Tuote-esite",
+    "Toimitusehdot"
+  ]
+}

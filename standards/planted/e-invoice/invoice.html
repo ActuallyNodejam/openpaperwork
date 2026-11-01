@@ -1,0 +1,128 @@
+<!doctype html><html lang="sv-SE"><head><meta charset="utf-8">
+<meta name="generator" content="nodejam-page-builder">
+<meta name="layout" content="DIN 5008:2020 Form B">
+<title>Faktura INV-0001</title><style>
+@page{size:A4;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:210mm}
+body{position:relative;min-height:297mm;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#12100E;font-size:10pt;line-height:1.4}
+.mark{position:absolute;left:0;width:5mm;border-top:0.2mm solid #9A9088}
+.hole{width:7mm}
+.head{position:absolute;left:25mm;right:20mm;top:15mm}
+.head .name{font-size:15pt;font-weight:700;letter-spacing:-.2px}
+.field{position:absolute;left:20mm;top:45mm;width:85mm;padding-left:5mm}
+.return{height:17.7mm;display:flex;align-items:flex-end;padding-bottom:1mm;font-size:7pt;color:#6B6259}
+.return span{border-bottom:0.2mm solid #9A9088}
+.address{height:27.3mm;font-size:10pt;line-height:1.35}
+.info{position:absolute;left:125mm;top:50mm;width:75mm}
+.info div{display:flex;gap:3mm;font-size:8.5pt;line-height:1.5}
+.info dt{width:34mm;flex:none;color:#6B6259}
+.info dd{font-variant-numeric:tabular-nums}
+.body{padding:0 20mm 0 25mm}
+h1{font-size:12pt;font-weight:700;margin-bottom:5mm}
+table{width:100%;border-collapse:collapse}
+thead{display:table-header-group}
+tr{break-inside:avoid}
+.flow>tbody>tr{break-inside:auto}
+.flow>*>tr>td{padding:0;border:0;font-size:inherit}
+.flow .top{height:25mm}
+.flow .foot{height:30mm}
+.end,.sum{break-inside:avoid}
+th{font-size:8pt;color:#6B6259;font-weight:600;text-align:left;border-bottom:0.3mm solid #12100E;padding:1.5mm 0;vertical-align:bottom}
+td{border-bottom:0.2mm solid #E3DCD3;padding:1.8mm 0;vertical-align:top;font-size:9pt}
+th+th,td+td{padding-left:2.5mm}
+.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.sum{margin-top:4mm;margin-left:auto;width:85mm}
+.sum td{border:none;padding:0.8mm 0;font-size:9.5pt}
+.sum td:first-child{color:#6B6259}
+.sum .gross td{border-top:0.3mm solid #12100E;padding-top:2mm;font-weight:700;color:#12100E}
+.terms{margin-top:6mm;font-size:9.5pt}
+.terms p{margin-top:1.5mm}
+.note{margin-top:4mm;font-size:9.5pt}
+.sign{margin-top:14mm;font-size:9.5pt}
+.extra{margin-bottom:5mm;font-size:9.5pt}
+footer{position:fixed;left:25mm;right:20mm;bottom:8mm;border-top:0.2mm solid #E3DCD3;padding-top:2.5mm;
+ display:grid;grid-template-columns:1.1fr 1.2fr 1.1fr;gap:5mm;font-size:7pt;line-height:1.45;color:#6B6259}
+
+.info{width:65mm}.info dl{display:grid;grid-template-columns:max-content minmax(0,1fr);column-gap:3mm}.info dl+dl{margin-top:1.6mm}.info div{display:contents}.info dt{width:auto;white-space:nowrap}.info dd{min-width:0;overflow-wrap:anywhere}
+
+/* look: Open default (skills/_shared/page_look.py) */
+body{font-family:"Arial","Liberation Sans",Arial,Helvetica,sans-serif;color:#1A1C1F;font-size:10pt;line-height:15pt;font-weight:400}
+b,strong{font-weight:400}
+.mark{border-top-color:#6A6B6D}
+.head .name{font-size:16pt;line-height:21pt;letter-spacing:-0.02em;font-weight:400}
+.return{color:#6A6B6D}
+.return span{border-bottom:0.5pt solid #6A6B6D}
+.info{font-size:8.5pt;line-height:12pt}
+.info div{font-size:inherit;line-height:inherit}
+.info dt{color:#6A6B6D}
+h1{font-size:22pt;line-height:27pt;letter-spacing:-0.02em;font-weight:400;margin:0 0 20pt}
+.k{color:#6A6B6D}
+.extra{font-size:10pt;line-height:15pt;margin:0 0 12pt}
+.lines{border-collapse:separate;border-spacing:0}
+.lines th{font-size:8.5pt;line-height:12pt;color:#6A6B6D;font-weight:400;border-bottom:0.75pt solid #1A1C1F;padding:0 0 5pt}
+.lines td{font-size:10pt;line-height:15pt;border-bottom:0.5pt solid #E3E3E4;padding:6pt 0}
+.lines th+th,.lines td+td{padding-left:12pt}
+.lines th,.lines td{width:1px}
+.lines .d{width:auto}
+.lines.tight th,.lines.tight td{white-space:nowrap}
+.lines.tight .d{white-space:normal}
+.lines.snug th+th,.lines.snug td+td{padding-left:8pt}
+.lines.dense td{font-size:8.5pt;line-height:12pt}
+.lines.denser th+th,.lines.denser td+td{padding-left:4pt}
+.sum{margin-top:8pt;margin-left:auto;width:auto;min-width:calc(50% - 2.5mm)}
+.sum td{border:none;padding:1.5pt 0;font-size:10pt;line-height:15pt}
+.sum td:first-child{color:#6A6B6D;padding-right:12pt}
+.sum tr:nth-last-child(2) td{padding-bottom:6pt}
+.sum .gross td{border-top:0.75pt solid #1A1C1F;padding-top:6pt;padding-bottom:0;font-size:14pt;line-height:20pt;letter-spacing:-0.02em;font-weight:400;color:#1A1C1F;white-space:nowrap}
+.note,.legal{margin-top:24pt;font-size:10pt;line-height:15pt;color:#1A1C1F}
+.note+.note,.note+.legal,.legal+.note{margin-top:8pt}
+.close{margin-top:24pt;break-inside:avoid}
+.pay{display:grid;grid-template-columns:minmax(calc(25% - 3.75mm),max-content) minmax(0,1fr);column-gap:5mm;border-top:0.5pt solid #E3E3E4;padding-top:6pt;font-size:10pt;line-height:15pt}
+.pay .k{white-space:nowrap}
+.pay .v{font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.sign{margin-top:24pt;font-size:10pt;line-height:15pt}
+.pay+.sign{margin-top:24pt}
+footer{width:165mm;border-top:0.5pt solid #E3E3E4;padding-top:6pt;grid-template-columns:calc(25% - 3.75mm) calc(33.333% - 3.333mm) calc(41.667% - 2.917mm);gap:0 5mm;font-size:8.5pt;line-height:12pt;color:#6A6B6D}
+.compact h1{margin-bottom:12pt}
+.compact .extra{margin-bottom:7.2pt}
+.compact .lines td{padding-top:3.6pt;padding-bottom:3.6pt}
+.compact .sum{margin-top:4.8pt}
+.compact .sum tr:nth-last-child(2) td{padding-bottom:3.6pt}
+.compact .sum .gross td{padding-top:3.6pt}
+.compact .note,.compact .legal,.compact .close,.compact .sign{margin-top:14.4pt}
+.compact .note+.note,.compact .note+.legal,.compact .legal+.note{margin-top:4.8pt}
+.compact .pay{padding-top:3.6pt}
+.run{position:absolute;left:25mm;width:165mm;display:flex;justify-content:space-between;font-size:8.5pt;line-height:12pt;color:#6A6B6D}
+</style></head><body>
+<div class="mark" style="top:105mm"></div><div class="mark hole" style="top:148.5mm"></div><div class="mark" style="top:210mm"></div>
+<div class="head"><div class="name">Example Seller Ltd</div></div>
+<div class="field"><div class="return"><span>Example Seller Ltd · 1 Example Street · 00000 Example City</span></div><div class="address">Example Buyer Ltd<br>2 Example Road<br>00000 Example Town</div></div>
+<div class="info"><dl><div><dt>Fakturanummer</dt><dd>INV-0001</dd></div><div><dt>Fakturadatum</dt><dd>2026-01-15</dd></div><div><dt>Förfallodatum</dt><dd>2026-02-14</dd></div><div><dt>Levererat</dt><dd>2026-01-15</dd></div><div><dt>Valuta</dt><dd>SEK</dd></div><div><dt>Kundens momsreg.nr</dt><dd>SE000000000002</dd></div></dl></div>
+<section class="body"><table class="flow"><thead><tr><td><div class="top"></div></td></tr></thead>
+<tfoot><tr><td><div class="foot"></div></td></tr></tfoot>
+<tbody><tr><td><h1>Faktura INV-0001</h1><table class='lines'><thead><tr><th class='d'>Beskrivning</th><th class='n'>Antal</th><th>Enhet</th><th class='n'>À-pris</th><th class='n'>Netto</th></tr></thead><tbody><tr><td class='d'>Example item</td><td class='n'>1</td><td>st</td><td class='n'>100,00</td><td class='n'>100,00</td></tr></tbody></table><table class='sum'><tbody><tr class='net'><td>Netto</td><td class='n'>100,00 SEK</td></tr><tr><td>Moms 25%</td><td class='n'>25,00 SEK</td></tr><tr class='total gross'><td>Att betala</td><td class='n'>125,00 SEK</td></tr></tbody></table><div class="close"><div class="pay"><div class="k">Betalningsvillkor</div><div class="v">30 dagar netto</div><div class="k">Förfallodatum</div><div class="v">2026-02-14</div><div class="k">IBAN</div><div class="v">SE00 0000 0000 0000 0000 0000</div></div></div></td></tr></tbody></table></section>
+<footer><div>Example Seller Ltd<br>1 Example Street<br>00000 Example City</div><div>Momsreg.nr SE000000000001</div><div>IBAN SE00 0000 0000 0000 0000 0000</div></footer>
+<script>
+const info=document.querySelector('.info'),mm=96/25.4;
+const low=Math.max(90.0*mm,(info.offsetTop+info.offsetHeight));
+document.querySelector('.body').style.paddingTop=(low+8.46*mm-25*mm)+'px';
+</script>
+<script>
+(function(){const mm=96/25.4,H=297*mm,q=s=>document.querySelector(s),foot=q('footer'),sec=q('.body'),cell=q('.flow>tbody>tr>td');
+const reserve=gap=>{let k=30*mm;
+if(foot){const h=foot.getBoundingClientRect().height+parseFloat(getComputedStyle(foot).bottom)+gap*mm;if(h>k)k=h}
+document.querySelectorAll('.flow .foot').forEach(e=>{e.style.height=k+'px'});return k};
+let keep=reserve(6);
+const cs=getComputedStyle(sec),width=sec.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);
+document.querySelectorAll('table.lines').forEach(t=>{const wide=()=>t.getBoundingClientRect().width>width+0.5,d=t.querySelector('th.d');
+t.classList.add('tight');
+if(wide()||(d&&d.getBoundingClientRect().width<width*0.38)){t.classList.remove('tight');t.classList.add('snug')}
+if(wide())t.classList.add('dense');if(wide())t.classList.add('denser')});
+const end=()=>cell.getBoundingClientRect().bottom+window.scrollY,fits=()=>end()<=H-keep-mm;
+if(!fits()){document.body.classList.add('compact');keep=reserve(3.6);
+if(!fits()){document.body.classList.remove('compact');keep=reserve(6)}}
+const close=q('.close');
+if(close&&fits())close.style.marginTop=(parseFloat(getComputedStyle(close).marginTop)+H-keep-mm-end())+'px'})();
+</script>
+</body></html>

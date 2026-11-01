@@ -1,0 +1,271 @@
+{
+ "id": "factura-es-001",
+ "title": "A Spanish factura for a month of translation work, as a page and an unsigned Facturae file",
+ "person": "The office manager of a small Zaragoza translation agency invoicing a publisher near Barcelona.",
+ "format": "pdf",
+ "output": "factura.pdf",
+ "extra_outputs": [
+  "factura.xml"
+ ],
+ "locale": "es-ES",
+ "sector": {
+  "naics": "54",
+  "name": "Professional, Scientific, and Technical Services"
+ },
+ "occupation": {
+  "soc": "43-3021.00",
+  "name": "Billing and Posting Clerks"
+ },
+ "review": [
+  "Factura 2026-0187, serie A, de 9/10/2026: 42.000 palabras a 0,09 € y 6 h a 45,00 €, base imponible 4.050,00 €, IVA 21 % 850,50 €, total 4.900,50 €; NIF B12345674, NIF del cliente A99999997. El fichero Facturae no va firmado."
+ ],
+ "revised_review": [
+  "46.000 palabras: base imponible 4.410,00 €, IVA 926,10 €, total 5.336,10 €; lo demás no cambia."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "locale-date",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-DATE",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-DATE"
+   ],
+   "text": "Dates on the page are in the d/M/yyyy form."
+  },
+  {
+   "id": "locale-number",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-NUMBER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-NUMBER"
+   ],
+   "text": "Amounts use the locale's separators."
+  },
+  {
+   "id": "locale-paper",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-PAPER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-PAPER"
+   ],
+   "text": "The page is the locale's paper."
+  },
+  {
+   "id": "locale-order",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-LOCALE-ORDER",
+   "guidelines": [
+    "cen-en16931/2017#EINV-LOCALE-ORDER"
+   ],
+   "text": "The page is written in the language of the order itself."
+  },
+  {
+   "id": "page-din5008",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-DIN5008",
+   "guidelines": [
+    "din-5008/2020#EINV-PAGE-DIN5008"
+   ],
+   "text": "The page is laid out on the seller country's letter layout, or on the library's letter sheet (DIN 5008 Form B) where the library has none for it."
+  },
+  {
+   "id": "vat-label",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-VAT-LABEL",
+   "guidelines": [
+    "cen-en16931/2017#EINV-VAT-LABEL"
+   ],
+   "text": "Every VAT number on the page carries its label."
+  },
+  {
+   "id": "page-trace",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-TRACE",
+   "guidelines": [
+    "cen-en16931/2017#EINV-PAGE-TRACE"
+   ],
+   "text": "Every number on the page traces to the order: what it says, and what the invoice arithmetic makes of it."
+  },
+  {
+   "id": "page-no-extra",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-NO-EXTRA",
+   "guidelines": [
+    "cen-en16931/2017#EINV-PAGE-NO-EXTRA"
+   ],
+   "text": "No field appears on the page unless the order carries its data."
+  },
+  {
+   "id": "facturae",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-FACTURAE",
+   "guidelines": [
+    "facturae/3.2.2#EINV-FACTURAE"
+   ],
+   "text": "The Facturae 3.2.2 schema accepts the file beside the page; skipped without it."
+  },
+  {
+   "id": "es-invoice",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "rule": "ES-INVOICE",
+   "guidelines": [
+    "es-reglamento-facturacion/2026#ES-INVOICE"
+   ],
+   "text": "The NIF of both parties, the series, both addresses, the unit prices, the rate and the IVA on the page; the Facturae is class OO."
+  },
+  {
+   "id": "company-particulars",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PARTICULARS",
+   "guidelines": [
+    "invoice-company-particulars/2026-10#EINV-PARTICULARS"
+   ],
+   "text": "The page states what the seller's own company statute puts on an invoice; a particular the files do not give is declared unknown and printed nowhere."
+  },
+  {
+   "id": "only-what-was-done",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "Only September's words and the six hours are invoiced, at the agreed prices; nothing is invented, and the reply says the Facturae is not signed."
+  },
+  {
+   "id": "revision-kept",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-2"
+   ],
+   "text": "The revision changes the number of words and the totals that follow, and nothing else."
+  }
+ ],
+ "truth": {
+  "number": "2026-0187",
+  "series": "A",
+  "issue_date": "2026-10-09",
+  "due_date": "2026-11-08",
+  "delivery_date": "2026-09-30",
+  "currency": "EUR",
+  "payment_terms": "30 days net",
+  "order_reference": "PED-2026-311",
+  "seller": {
+   "name": "Ejemplo Traducciones S.L.",
+   "legal_form": "S.L.",
+   "street": "Calle del Ejemplo 8",
+   "postcode": "50001",
+   "city": "Zaragoza",
+   "province": "Zaragoza",
+   "country": "ES",
+   "vat_id": "ESB12345674",
+   "registered_office": "Zaragoza",
+   "register": "Registro Mercantil de Zaragoza",
+   "register_number": "tomo 0000, folio 000, hoja Z-00000",
+   "contact": {
+    "name": "Marta Ejemplo",
+    "phone": "+34 976 000 000",
+    "email": "facturas@traducciones.example"
+   }
+  },
+  "buyer": {
+   "name": "Ejemplo Editorial S.A.",
+   "street": "Avenida de la Muestra 21",
+   "postcode": "08100",
+   "city": "Mollet del Vallès",
+   "province": "Barcelona",
+   "country": "ES",
+   "vat_id": "ESA99999997"
+  },
+  "payment": {
+   "means_code": "58",
+   "iban": "ES91 2100 0418 4502 0005 1332",
+   "bic": "CAIXESBBXXX"
+  },
+  "doc": "invoice",
+  "type_code": "380",
+  "first": {
+   "lines": [
+    {
+     "name": "Traducción inglés-español, septiembre de 2026 (palabras)",
+     "quantity": 42000,
+     "unit": "C62",
+     "unit_price": 0.09,
+     "vat_rate": 21,
+     "vat_category": "S"
+    },
+    {
+     "name": "Revisión de maqueta",
+     "quantity": 6,
+     "unit": "HUR",
+     "unit_price": 45.0,
+     "vat_rate": 21,
+     "vat_category": "S"
+    }
+   ]
+  },
+  "revision": {
+   "lines": [
+    {
+     "name": "Traducción inglés-español, septiembre de 2026 (palabras)",
+     "quantity": 46000,
+     "unit": "C62",
+     "unit_price": 0.09,
+     "vat_rate": 21,
+     "vat_category": "S"
+    },
+    {
+     "name": "Revisión de maqueta",
+     "quantity": 6,
+     "unit": "HUR",
+     "unit_price": 45.0,
+     "vat_rate": 21,
+     "vat_category": "S"
+    }
+   ]
+  }
+ },
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "cen-en16931/2017",
+  "din-5008/2020",
+  "es-reglamento-facturacion/2026",
+  "facturae/3.2.2"
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and every business, VAT and bank number are invented and obviously fake.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen."
+}

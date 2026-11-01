@@ -1,0 +1,43 @@
+{
+  "pack": "employment-statement",
+  "template": "employment-statement-ca.spec.json",
+  "clean": "statement.docx",
+  "files": [
+    "spec.json",
+    "statement.docx"
+  ],
+  "faults": [
+    {
+      "file": "no-pay.docx",
+      "replaces": "statement.docx",
+      "planted": "the basic pay line is removed",
+      "fails": [
+        "EMPLOY-PAY"
+      ],
+      "also_failed_when_made": []
+    },
+    {
+      "file": "no-start-date.docx",
+      "replaces": "statement.docx",
+      "planted": "the start date is removed",
+      "fails": [
+        "EMPLOY-DATES"
+      ],
+      "also_failed_when_made": [
+        "EMPLOY-EMPTY",
+        "EMPLOY-ITEMS"
+      ]
+    },
+    {
+      "file": "gap-left.docx",
+      "replaces": "statement.docx",
+      "planted": "a gap is left for the person",
+      "fails": [
+        "OUTPUT-OPEN-GAP"
+      ],
+      "also_failed_when_made": [
+        "EMPLOY-ITEMS"
+      ]
+    }
+  ]
+}

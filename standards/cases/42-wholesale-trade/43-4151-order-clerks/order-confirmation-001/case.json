@@ -1,0 +1,309 @@
+{
+ "id": "order-confirmation-001",
+ "title": "Confirm a purchase order with one item partly in stock",
+ "person": "An order clerk at a small wholesaler confirming a customer order.",
+ "format": "xlsx",
+ "output": "order-confirmation.xlsx",
+ "review": [
+  "It says plainly that one of the two label printers is delivered with the rest and the second follows on 18 November 2026, and that everything else is confirmed in full.",
+  "Prices, discount and terms are those of the quotation and price list; nothing is added such as a freight charge or a changed price."
+ ],
+ "revised_review": [
+  "The old delivery term and the 4 November date are gone.",
+  "It now says the customer collects from the warehouse in Gothenburg on 5 November 2026 and that the second machine is ready on 18 November.",
+  "Quantities, prices, totals, references and payment terms are unchanged."
+ ],
+ "version": "1.1.1",
+ "status": "draft",
+ "locale": "en",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and numbers are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "sector": {
+  "naics": "42",
+  "name": "Wholesale Trade"
+ },
+ "occupation": {
+  "soc": "43-4151.00",
+  "name": "Order Clerks"
+ },
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "oasis-ubl/2.1",
+  "icc-incoterms/2020",
+  "cen-en16931/2017",
+  "every-file/1.1.0"
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "names-itself",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-TYPE",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-TYPE"
+   ],
+   "text": "The file is headed as an order confirmation."
+  },
+  {
+   "id": "header",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-HEAD",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-HEAD"
+   ],
+   "text": "Number OC-2026-0342, the date 22 October 2026, both companies with their VAT IDs, and SEK."
+  },
+  {
+   "id": "references",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-REFS",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-REFS"
+   ],
+   "text": "It refers to purchase order PO-7731 and quotation Q-2026-0187."
+  },
+  {
+   "id": "lines",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-LINES",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-LINES"
+   ],
+   "text": "All four items with quantity, unit price and a line amount that is a formula."
+  },
+  {
+   "id": "totals",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-TOTALS",
+   "guidelines": [
+    "cen-en16931/2017#EINV-TOTALS"
+   ],
+   "text": "Total excluding VAT, VAT at 25% and 12% and the total including VAT are right and are formulas."
+  },
+  {
+   "id": "dates",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-DATES",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-DATES"
+   ],
+   "text": "It states the confirmed date for the first delivery and 18 November 2026 for the second label printer."
+  },
+  {
+   "id": "payment",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-PAY",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-PAY"
+   ],
+   "text": "Payment terms are 30 days net."
+  },
+  {
+   "id": "delivery-term",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "INCO-1",
+   "guidelines": [
+    "icc-incoterms/2020#INCO-1"
+   ],
+   "text": "The delivery term reads DAP Malmö, Incoterms 2020 (FCA Gothenburg after the revision)."
+  },
+  {
+   "id": "no-sea-rule",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "INCO-2",
+   "guidelines": [
+    "icc-incoterms/2020#INCO-2"
+   ],
+   "text": "No sea-only delivery rule is used."
+  },
+  {
+   "id": "partial-told-plainly",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "It says plainly that one of the two label printers is delivered with the rest and the second follows on 18 November 2026, and that everything else is confirmed in full."
+  },
+  {
+   "id": "nothing-invented",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-2"
+   ],
+   "text": "Prices, discount and terms are those of the quotation and price list; nothing is added such as a freight charge or a changed price."
+  },
+  {
+   "id": "nothing-stale",
+   "stage": "revision",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-STALE",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-1"
+   ],
+   "text": "The old delivery term and the 4 November date are gone."
+  },
+  {
+   "id": "collection",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-1"
+   ],
+   "text": "It now says the customer collects from the warehouse in Gothenburg on 5 November 2026 and that the second machine is ready on 18 November."
+  },
+  {
+   "id": "kept",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-2"
+   ],
+   "text": "Quantities, prices, totals, references and payment terms are unchanged."
+  },
+  {
+   "id": "letter-din5008",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-DIN5008",
+   "guidelines": [
+    "din-5008/2020#LETTER-DIN5008"
+   ],
+   "text": "A PDF or Word document sits on DIN 5008 Form B; a workbook skips this."
+  },
+  {
+   "id": "letter-company",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-COMPANY",
+   "guidelines": [
+    "eu-company-law/2017-1132#LETTER-COMPANY"
+   ],
+   "text": "The seller's register details are on the letter when the files give them."
+  }
+ ],
+ "truth": {
+  "doc": "order_confirmation",
+  "number": "OC-2026-0342",
+  "issue_date": "2026-10-22",
+  "currency": "SEK",
+  "seller": {
+   "name": "Västhamn Grossist AB",
+   "unknown": ["registered_office", "register_number"],
+   "street": "Hamngatan 14",
+   "postcode": "411 14",
+   "city": "Gothenburg",
+   "country": "Sweden",
+   "vat_id": "SE559012345601"
+  },
+  "buyer": {
+   "name": "Exempel Kontor AB",
+   "street": "Industrigatan 8",
+   "postcode": "211 20",
+   "city": "Malmö",
+   "country": "Sweden",
+   "vat_id": "SE556677889901"
+  },
+  "references": [
+   "PO-7731",
+   "Q-2026-0187"
+  ],
+  "payment": [
+   "30\\s*days"
+  ],
+  "transport": "road",
+  "lines": [
+   {
+    "code": "ESP-210",
+    "description": "Label printer, two colour",
+    "quantity": 2,
+    "unit": "pcs",
+    "unit_price": 38500.0,
+    "discount_percent": 0,
+    "vat_rate": 25
+   },
+   {
+    "code": "GRD-064",
+    "description": "Paper shredder, 64 mm feed",
+    "quantity": 3,
+    "unit": "pcs",
+    "unit_price": 6200.0,
+    "discount_percent": 0,
+    "vat_rate": 25
+   },
+   {
+    "code": "CUP-180",
+    "description": "Ring binders 180 sheets, box of 48",
+    "quantity": 10,
+    "unit": "box",
+    "unit_price": 1150.0,
+    "discount_percent": 0,
+    "vat_rate": 25
+   },
+   {
+    "code": "BEA-1KG",
+    "description": "Sample goods, 1 kg bag",
+    "quantity": 120,
+    "unit": "bag",
+    "unit_price": 189.0,
+    "discount_percent": 5,
+    "vat_rate": 12
+   }
+  ],
+  "first": {
+   "incoterm": {
+    "rule": "DAP",
+    "place": "Malmö"
+   },
+   "dates": {
+    "first delivery": "2026-11-04",
+    "second machine": "2026-11-18"
+   }
+  },
+  "revision": {
+   "incoterm": {
+    "rule": "FCA",
+    "place": "Gothenburg"
+   },
+   "dates": {
+    "collection": "2026-11-05",
+    "second machine": "2026-11-18"
+   },
+   "stale": [
+    "\\bDAP\\b",
+    "2026-11-04"
+   ]
+  }
+ }
+}

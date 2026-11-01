@@ -1,0 +1,54 @@
+{
+  "language": "nb",
+  "date": "2026-10-09",
+  "sender": {
+    "name": "Fjellvind Rørlegger AS",
+    "street": "Industrivegen 14",
+    "postcode": "2815",
+    "city": "Gjøvik",
+    "country": "NO",
+    "vat_id": "923 456 781 MVA",
+    "register": "Foretaksregisteret",
+    "register_number": "923 456 781",
+    "registered_office": "Gjøvik",
+    "email": "post@fjellvind-ror.example",
+    "phone": "+47 61 55 20 40"
+  },
+  "recipient": {
+    "name": "Eksempel Lager AS",
+    "attention": "v/ daglig leder Ingrid Haugen",
+    "street": "Solsidevegen 3",
+    "postcode": "2821",
+    "city": "Gjøvik",
+    "country": "NO"
+  },
+  "references": [
+    {
+      "kind": "yours",
+      "value": "Henvendelse 28.9."
+    },
+    {
+      "kind": "ours",
+      "value": "26/0412"
+    }
+  ],
+  "contact": {
+    "name": "Erlend Moe",
+    "phone": "+47 61 55 20 44",
+    "email": "erlend@fjellvind-ror.example"
+  },
+  "subject": "Tilbud på utskifting av vannrør i lagerbygg B",
+  "salutation": "Hei Ingrid,",
+  "body": [
+    "Takk for befaringen 2. oktober. Her er tilbudet vi lovet.",
+    "Vi skifter de fire vannrørene i lagerbygg B fra kjeller til tak, med nye avgreininger i hver etasje. Prisen er kr 486 000 inkl. mva., og arbeidet tar seks uker. Vi kan starte 4. januar 2027.",
+    "Tilbudet gjelder til 15. november 2026. Ring meg gjerne om dere vil gå gjennom det før ledermøtet."
+  ],
+  "signatory": {
+    "name": "Erlend Moe",
+    "role": "Prosjektleder"
+  },
+  "enclosures": [
+    "Tilbud 26/0412 med fremdriftsplan"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "layers",
+  "title": "Where the rules live",
+  "eyebrow": "Layer stack",
+  "description": "Five layers from company policy at the top to each person's checklist at the bottom, with the team routines as the layer under discussion.",
+  "direction": "more general",
+  "layers": [
+    {"name": "Company policy", "note": "set by the board"},
+    {"name": "Department rules", "note": "one per department"},
+    {"name": "Team routines", "note": "where most changes happen", "focal": true},
+    {"name": "Templates", "note": "letters, forms, decks"},
+    {"name": "Personal checklists", "note": "each person's own"}
+  ]
+}

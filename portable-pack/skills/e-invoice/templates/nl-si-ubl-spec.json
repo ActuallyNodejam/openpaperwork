@@ -1,0 +1,61 @@
+{
+  "number": "2026-0119",
+  "issue_date": "2026-10-12",
+  "due_date": "2026-11-11",
+  "delivery_date": "2026-10-07",
+  "currency": "EUR",
+  "payment_terms": "30 days net",
+  "buyer_reference": "OIN-ref 4410",
+  "seller": {
+    "name": "Proefwerk Utrecht B.V.",
+    "legal_form": "B.V.",
+    "street": "Voorbeeldlaan 10",
+    "postcode": "3511 AB",
+    "city": "Utrecht",
+    "country": "NL",
+    "register_number": "12345678",
+    "vat_id": "NL123456782B01",
+    "registered_office": "Utrecht",
+    "electronic_address": "0106:12345678",
+    "contact": {
+      "name": "Sanne Voorbeeld",
+      "phone": "+31 30 000 0000",
+      "email": "facturen@proefwerk.example"
+    }
+  },
+  "buyer": {
+    "name": "Voorbeeld Logistiek B.V.",
+    "street": "Proefstraat 4",
+    "postcode": "8011 AA",
+    "city": "Zwolle",
+    "country": "NL",
+    "register_number": "87654321",
+    "vat_id": "NL876543219B01",
+    "electronic_address": "0106:87654321"
+  },
+  "payment": {
+    "means_code": "58",
+    "iban": "NL91 ABNA 0417 1643 00",
+    "bic": "ABNANL2A",
+    "reference": "2026-0118"
+  },
+  "lines": [
+    {
+      "name": "Onderhoud toegangscontrole",
+      "quantity": 6,
+      "unit": "HUR",
+      "unit_price": 88.0,
+      "vat_rate": 21,
+      "vat_category": "S"
+    },
+    {
+      "name": "Vakboek magazijnbeheer",
+      "quantity": 3,
+      "unit": "C62",
+      "unit_price": 42.5,
+      "vat_rate": 9,
+      "vat_category": "S"
+    }
+  ],
+  "syntax": "si-ubl"
+}

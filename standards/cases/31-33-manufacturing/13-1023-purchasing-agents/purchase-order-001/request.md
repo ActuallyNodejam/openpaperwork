@@ -1,0 +1,1 @@
+Please turn our purchase request into a purchase order to Rheintal Bauteile, based on their quotation (both are in `inputs/`). They write to us in English, so write it in English, as a Word file: `purchase-order.docx`.

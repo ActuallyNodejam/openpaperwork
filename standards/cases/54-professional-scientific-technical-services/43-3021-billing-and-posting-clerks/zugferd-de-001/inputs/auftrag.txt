@@ -1,0 +1,7 @@
+Auftrag vom 28.09.2026, Kunde: Muster Handel GmbH, Probestraße 3, 00000 Musterstadt, USt-IdNr. DE000000001
+E-Rechnungen an: eingang@muster-handel.example
+
+Wartung der Kühlanlage am 06.10.2026
+- Wartungspauschale Kühlanlage: 1 x 640,00 EUR netto, 19 %
+- Arbeitszeit Techniker: 3,5 Std x 85,00 EUR netto, 19 %
+- Fachbuch Kältetechnik (gedruckt): 1 x 49,00 EUR netto, 7 %

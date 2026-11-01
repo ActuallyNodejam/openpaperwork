@@ -1,0 +1,43 @@
+{
+  "type_code": "381",
+  "number": "CN-0001",
+  "issue_date": "2026-02-10",
+  "preceding_invoice": "INV-0001",
+  "preceding_invoice_date": "2026-01-15",
+  "delivery_date": "2026-01-15",
+  "currency": "SEK",
+  "payment_terms": "Refund within 14 days",
+  "note": "Credit for one returned item on invoice INV-0001.",
+  "seller": {
+    "name": "Example Seller Ltd",
+    "unknown": ["f_tax"],
+    "street": "1 Example Street",
+    "postcode": "00000",
+    "city": "Example City",
+    "country": "SE",
+    "vat_id": "SE000000000001"
+  },
+  "buyer": {
+    "name": "Example Buyer Ltd",
+    "street": "2 Example Road",
+    "postcode": "00000",
+    "city": "Example Town",
+    "country": "SE",
+    "vat_id": "SE000000000002"
+  },
+  "payment": {
+    "means_code": "58",
+    "iban": "SE00 0000 0000 0000 0000 0000"
+  },
+  "lines": [
+    {
+      "name": "Example item, returned",
+      "quantity": 1,
+      "unit": "C62",
+      "unit_price": 1000.0,
+      "discount_percent": 0,
+      "vat_rate": 25,
+      "vat_category": "S"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+A New Tax System (Goods and Services Tax) Act 1999 (Cth), sections 29-70 and 29-75, and A New Tax System
+(Goods and Services Tax) Regulations 2019 (Cth), section 29-70.01, Federal Register of Legislation,
+https://www.legislation.gov.au, read 2026-10-09.
+
+The Federal Register of Legislation's content is licensed under the Creative Commons Attribution 4.0
+International licence (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/
+Attribution: Federal Register of Legislation, Commonwealth of Australia.
+
+Changes: what a tax invoice and an adjustment note state, and the A$1,000 limit for the buyer's identity,
+are restated in our own words in skills/e-invoice/scripts/countries.py and
+skills/_checks/einvoice_country.py (AU-TAX-INVOICE). The ATO's own web pages were not copied. This is not
+tax advice.

@@ -1,0 +1,10 @@
+{
+  "page": "A4",
+  "margins_mm": 25,
+  "font": "Liberation Sans",
+  "body_pt": 10.5,
+  "title": "the document title uses the built-in Title style",
+  "headings": "each section starts with the built-in Heading 1 style",
+  "footer": "a page number field in the footer",
+  "max_pages": 3
+}

@@ -1,0 +1,63 @@
+{
+  "number": "10459",
+  "issue_date": "2026-10-05",
+  "due_date": "2026-10-19",
+  "delivery_date": "2026-10-01",
+  "currency": "EUR",
+  "payment_terms": "14 days net",
+  "buyer_reference": "Liisa Esimerkki",
+  "late_interest": "Korkolain mukainen",
+  "complaint_period": "8 pv",
+  "seller": {
+    "name": "Esimerkki Konsultointi Oy",
+    "legal_form": "Oy",
+    "street": "Esimerkkikatu 5",
+    "postcode": "00100",
+    "city": "Helsinki",
+    "country": "FI",
+    "business_id": "1234567-1",
+    "vat_id": "FI12345671",
+    "registered_office": "Helsinki",
+    "electronic_address": "0216:003712345671",
+    "contact": {
+      "name": "Matti Esimerkki",
+      "phone": "+358 9 000 0000",
+      "email": "lasku@esim.example"
+    }
+  },
+  "buyer": {
+    "name": "Testi Tehdas Oy",
+    "street": "Koekuja 2",
+    "postcode": "33100",
+    "city": "Tampere",
+    "country": "FI",
+    "business_id": "7654321-2",
+    "vat_id": "FI76543212",
+    "electronic_address": "0216:003776543212"
+  },
+  "payment": {
+    "means_code": "58",
+    "iban": "FI21 1234 5600 0007 85",
+    "bic": "NDEAFIHH",
+    "reference": "202604123"
+  },
+  "lines": [
+    {
+      "name": "Asiantuntijatyö, prosessikartoitus",
+      "quantity": 16,
+      "unit": "HUR",
+      "unit_price": 115.0,
+      "vat_rate": 25.5,
+      "vat_category": "S"
+    },
+    {
+      "name": "Työpaja, puolipäivä",
+      "quantity": 1,
+      "unit": "C62",
+      "unit_price": 640.0,
+      "vat_rate": 25.5,
+      "vat_category": "S"
+    }
+  ],
+  "syntax": "finvoice"
+}

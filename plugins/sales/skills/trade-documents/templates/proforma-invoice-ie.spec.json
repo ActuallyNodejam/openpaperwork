@@ -1,0 +1,82 @@
+{
+  "type": "proforma_invoice",
+  "language": "en-IE",
+  "number": "PF-2026-0219",
+  "issue_date": "2026-10-14",
+  "references": [
+    {
+      "label": "Your purchase order",
+      "value": "PO-55102"
+    }
+  ],
+  "dates": [
+    {
+      "label": "Valid until",
+      "value": "2026-11-13"
+    }
+  ],
+  "currency": "EUR",
+  "seller": {
+    "name": "Liffey Precision Components Ltd",
+    "street": "Unit 4, Ballymount Business Park",
+    "postcode": "D24 X2Y3",
+    "city": "Dublin 24",
+    "country": "Ireland",
+    "vat_id": "IE1234567T",
+    "email": "sales@liffey-precision.example",
+    "phone": "+353 1 000 0000",
+    "registered_office": "Unit 4, Ballymount Business Park, Dublin 24",
+    "register": "Ireland",
+    "register_number": "654321",
+    "managing_directors": [
+      "Aoife Brennan",
+      "Tomasz Nowak (Polish)"
+    ]
+  },
+  "buyer": {
+    "name": "Pennine Fluid Systems Ltd",
+    "street": "12 Example Way",
+    "postcode": "M17 1AA",
+    "city": "Manchester",
+    "country": "United Kingdom",
+    "vat_id": "GB123456789"
+  },
+  "delivery_terms": {
+    "rule": "CPT",
+    "place": "Manchester, United Kingdom"
+  },
+  "transport": "road",
+  "payment_terms": "100 percent in advance by bank transfer",
+  "bank": {
+    "bank": "Example Bank Ireland",
+    "iban": "IE29 AIBK 9311 5212 3456 78",
+    "bic": "EXAMIE2D"
+  },
+  "lines": [
+    {
+      "code": "LP-V40",
+      "description": "Stainless steel ball valve, DN40, PN40",
+      "quantity": 30,
+      "unit": "pcs",
+      "unit_price": 74.0,
+      "discount_percent": 0,
+      "vat_rate": 0,
+      "hs_code": "8481.80",
+      "origin": "Ireland"
+    },
+    {
+      "code": "LP-F40",
+      "description": "Weld-neck flange, DN40",
+      "quantity": 60,
+      "unit": "pcs",
+      "unit_price": 18.5,
+      "discount_percent": 0,
+      "vat_rate": 0,
+      "hs_code": "7307.91",
+      "origin": "Ireland"
+    }
+  ],
+  "notes": [
+    "Goods exported from Ireland to Great Britain: zero-rated for VAT."
+  ]
+}

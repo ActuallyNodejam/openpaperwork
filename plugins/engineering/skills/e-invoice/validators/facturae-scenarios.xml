@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- A scenario for the KoSIT validator (github.com/itplr-kosit/validator, Apache-2.0) that checks
+  - a Spanish Facturae 3.2.2 file against the schema facturae.gob.es publishes (Facturaev3_2_2.xml; reuse
+  - under Ley 37/2007 with the source named: Ministerio de Hacienda y Administraciones Públicas - Ministerio de
+  - Industria, Energía y Turismo). The schema allows a file with no ds:Signature; no public entry point does.
+  - This file is ours; the files it names are run from where they are installed, untouched:
+  -   kosit/        the KoSIT XRechnung validator configuration (Apache-2.0): the report stylesheets and
+  -                 the XML Signature schema among its UBL 2.1 files
+  -   facturae/     Facturaev3_2_2.xml
+  - skills/e-invoice/scripts/fetch_validators.py installs them at pinned SHA-256 sums.
+  - The schema imports the W3C XML Signature schema by its address on w3.org. The validator runs without a
+  - network, so the same schema is named first, from the copy OASIS UBL 2.1 carries inside the KoSIT
+  - configuration; the import then finds its namespace loaded and fetches nothing.
+  -->
+<scenarios xmlns="http://www.xoev.de/de/validator/framework/1/scenarios" frameworkVersion="1.0.0">
+  <name>Facturae 3.2.2</name>
+  <author>Nodejam OpenPaperwork, e-invoice pack</author>
+  <date>2026-10-10</date>
+  <description>
+    <p>Validates a Facturae 3.2.2 file against the Facturae 3.2.2 schema.</p>
+  </description>
+  <scenario>
+    <name>Facturae 3.2.2 (schema)</name>
+    <description><p>Validates a Facturae 3.2.2 file against the Facturae 3.2.2 schema.</p></description>
+    <namespace prefix="doc">http://www.facturae.gob.es/formato/Versiones/Facturaev3_2_2.xml</namespace>
+    <namespace prefix="rep">http://www.xoev.de/de/validator/varl/1</namespace>
+    <match>exists(/doc:Facturae)</match>
+    <validateWithXmlSchema>
+      <resource>
+        <name>XML Signature core schema (the copy UBL 2.1 carries)</name>
+        <location>kosit/resources/ubl/2.1/xsd/common/UBL-xmldsig-core-schema-2.1.xsd</location>
+      </resource>
+      <resource>
+        <name>Facturae 3.2.2 schema</name>
+        <location>facturae/Facturaev3_2_2.xml</location>
+      </resource>
+    </validateWithXmlSchema>
+    <createReport>
+      <resource>
+        <name>Validation report</name>
+        <location>kosit/resources/xrechnung-report.xsl</location>
+      </resource>
+    </createReport>
+    <acceptMatch>/rep:report/rep:assessment[1]/rep:accept[1]</acceptMatch>
+  </scenario>
+  <noScenarioReport>
+    <resource>
+      <name>Default Report</name>
+      <location>kosit/resources/default-report.xsl</location>
+    </resource>
+  </noScenarioReport>
+</scenarios>

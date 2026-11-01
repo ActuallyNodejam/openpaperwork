@@ -1,0 +1,56 @@
+{
+  "law": "at",
+  "language": "de",
+  "given": "2026-11-02",
+  "employer": {
+    "name": "Donaukeller Maschinenbau GmbH",
+    "number": "FN 412345 k, Landesgericht Linz",
+    "address": "Hafenstraße 27, 4020 Linz",
+    "signatory": "DI Andrea Pichler, Geschäftsführerin"
+  },
+  "worker": {
+    "name": "Stefan Gruber",
+    "address": "Wiener Straße 112, 4020 Linz"
+  },
+  "place": "Hafenstraße 27, 4020 Linz",
+  "grading": "Kollektivvertrag für Angestellte der Metallindustrie, Beschäftigungsgruppe F, erstes Jahr",
+  "job": {
+    "title": "Konstrukteur",
+    "description": "Konstruktion von Getriebegehäusen und Vorrichtungen im CAD-System, Erstellung der Fertigungszeichnungen."
+  },
+  "start": "2026-11-02",
+  "term": {
+    "type": "permanent"
+  },
+  "probation": {
+    "months": 1
+  },
+  "termination": "Kündigungsfristen und -termine nach § 20 Angestelltengesetz: der Arbeitgeber mit sechs Wochen zum Quartalsende, die Frist steigt mit der Dauer des Arbeitsverhältnisses; der Arbeitnehmer mit einem Monat zum Monatsletzten. Die Kündigung wird schriftlich ausgesprochen; vor einer Kündigung durch den Arbeitgeber wird der Betriebsrat verständigt (§ 105 ArbVG)",
+  "pay": {
+    "amount": 3650,
+    "currency": "EUR",
+    "per": "month",
+    "paid": "monatlich im Nachhinein, am Letzten des Monats",
+    "method": "Überweisung auf das Gehaltskonto des Arbeitnehmers",
+    "components": [
+      {
+        "name": "Sonderzahlungen",
+        "text": "Urlaubszuschuss und Weihnachtsremuneration je in Höhe eines Monatsgehalts nach dem Kollektivvertrag"
+      }
+    ],
+    "overtime_rate": "Grundstundenlohn mit 50 % Zuschlag nach dem Kollektivvertrag"
+  },
+  "leave": "30 Werktage pro Arbeitsjahr nach § 2 Urlaubsgesetz",
+  "hours": {
+    "pattern": "fixed",
+    "standard": "38,5 Stunden pro Woche",
+    "schedule": "Montag bis Donnerstag 7:30 bis 16:15 Uhr, Freitag 7:30 bis 13:00 Uhr",
+    "breaks": "30 Minuten Mittagspause von Montag bis Donnerstag"
+  },
+  "collective": "Kollektivvertrag für Angestellte der Metallindustrie und die Betriebsvereinbarung über die Gleitzeit; beide liegen im Büro des Betriebsrats, Halle 1, zur Einsichtnahme auf",
+  "insurance": {
+    "social_insurer": "Österreichische Gesundheitskasse, Landesstelle Oberösterreich, Linz",
+    "bv_kasse": "Beispiel Vorsorgekasse AG, Musterplatz 1, 1010 Wien"
+  },
+  "training": "Fortbildung zum CAD-System nach Vereinbarung, in der Arbeitszeit und auf Kosten des Arbeitgebers"
+}

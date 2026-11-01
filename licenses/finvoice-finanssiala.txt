@@ -1,0 +1,10 @@
+Finvoice 3.0, Finanssiala ry (Finance Finland): the Finvoice 3.0 schema (Finvoice3.0.xsd, 27.9.2023) and
+the Finvoice 3.0 implementation guidelines, https://www.finanssiala.fi/en/topics/finvoice-standard
+Read 2026-10-09.
+
+Finanssiala's Finvoice page states: "All materials on this page are freely usable."
+
+Changes: skills/e-invoice/scripts/finvoice_create.py writes Finvoice 3.0 messages in our own code,
+following the schema's element names and order; the schema itself is not copied into this repository.
+skills/e-invoice/scripts/fetch_validators.py fetches it at its SHA-256 for the EINV-FINVOICE check.
+The bank barcode (Pankkiviivakoodi, version 4) is written from Finanssiala's published description.

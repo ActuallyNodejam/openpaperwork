@@ -1,0 +1,51 @@
+{
+  "law": "ie",
+  "given": "2026-11-02",
+  "employer": {
+    "name": "Liffey Precision Components Ltd",
+    "number": "Company number 654321",
+    "address": "Unit 4, Ballymount Business Park, Dublin 24, D24 X2Y3",
+    "signatory": "Aoife Brennan, Director"
+  },
+  "worker": {
+    "name": "Ciara Walsh",
+    "address": "22 Example Road, Dublin 12"
+  },
+  "place": "Unit 4, Ballymount Business Park, Dublin 24",
+  "job": {
+    "title": "Quality technician",
+    "description": "Inspection of machined valve components and keeping the quality records."
+  },
+  "start": "2026-11-02",
+  "term": {
+    "type": "permanent"
+  },
+  "probation": {
+    "months": 6,
+    "conditions": "Reviewed with the employee at three and at six months"
+  },
+  "pay": {
+    "amount": 19.5,
+    "currency": "EUR",
+    "per": "hour",
+    "paid": "weekly, every Friday, in arrears",
+    "method": "credit transfer to the employee's bank account",
+    "overtime_rate": "one and a half times the hourly rate for hours over 39 in a week",
+    "reference_period": "one week, Monday to Sunday"
+  },
+  "hours": {
+    "pattern": "fixed",
+    "per_day": "7.8 hours",
+    "per_week": "39 hours",
+    "standard": "Monday to Friday, 08:00 to 16:18, with an unpaid 30-minute lunch break",
+    "overtime": "only at the employer's request, paid at the overtime rate above"
+  },
+  "leave": "20 working days of annual leave a year and the public holidays, under the Organisation of Working Time Act 1997",
+  "sickness": "Statutory sick pay under the Sick Leave Act 2022 as in force, and company sick pay at full pay for up to ten working days a year on a medical certificate",
+  "pension": "No occupational pension scheme; the employer contributes to the automatic enrolment retirement savings system for eligible employees",
+  "termination": "Notice under the Minimum Notice and Terms of Employment Act 1973: one week from either side in the first two years of service, the employer's notice rising with service",
+  "collective": null,
+  "training": "Induction and quality-system training in the first month, as paid working time",
+  "agency": null,
+  "social_security": "The Department of Social Protection's Social Insurance Fund (PRSI, collected by Revenue)"
+}

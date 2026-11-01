@@ -1,0 +1,141 @@
+{
+  "issuer": "letter-layouts",
+  "version": "2026-10",
+  "link": "https://pe.usps.com/text/pub28/28c2_009.htm",
+  "license": "Cited sources, no text copied: USPS Publication 28 and DMM 601, the UPU addressing sheets and Letter Post Regulations, Royal Mail, Canada Post, Australia Post, Posten/Bring, Posti and PostNord addressing guidance, the OQLF, the Australian Government Style Manual and SECNAV M-5216.5; the GOV.UK style guide under the Open Government Licence v3.0; SFS 2487, NS 4129, ISO 269 and DIN 680 are paid standards and were not read. Wave 8, cited with no text copied (no reuse terms stated): bpost MassPost Gids, PostNL Vormgevingsvoorwaarden 2026, Österreichische Post Richtig adressieren, An Post Speed up your post, the Deutsche Post, Royal Mail, Canada Post and Australia Post zone guides, Taaladvies.net and Kielitoimiston ohjepankki (CC BY-NC-ND 4.0). Ported with credit: the Amtliches Regelwerk der deutschen Rechtschreibung 2024 (CC BY 4.0) and Unicode CLDR 48 (Unicode License v3). NBN Z 01-002, NEN 1026 and ÖNORM A 1080 are paid standards and were not read. Wave 9, cited with no text copied (no reuse terms stated): Correos, Dimensiones y pesos de los envíos; Poste Italiane, Caratteristiche standard degli invii and Standard di composizione degli indirizzi; Poczta Polska, Zasady poprawnego adresowania i oznakowania przesyłek listowych; the UPU sheets for Spain, Italy and Poland; the Real Academia Española (read at second hand, the site refused a direct fetch) and Poradnia Językowa PWN. Unicode CLDR 48.2.3 for es, it and pl (Unicode License v3). Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-10",
+  "status": "draft",
+  "title": "The business letter outside DIN 5008: Norway, Denmark, Finland, the United States, the United Kingdom, Canada, Australia, Belgium, the Netherlands, Austria, Ireland, Spain, Italy and Poland",
+  "source": "USPS Publication 28 s.224 (https://pe.usps.com/text/pub28/28c2_009.htm) and DMM 601 6.3 (https://pe.usps.com/text/dmm300/601.htm); UPU addressing sheets (https://www.upu.int/UPU/media/upu/PostalEntitiesFiles/addressingUnit/norEn.pdf and the DNK, FIN, GBR, USA, AUS sheets); UPU Letter Post Regulations RL 123.3.3; Bring MV1 terms for machine-sorted mail (11.11.2022); Canada Post addressing guidelines; GOV.UK A to Z style guide (https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/style-guides/a-to-z-style-guide/); Australian Government Style Manual, emails and letters (https://www.stylemanual.gov.au/content-types/emails-and-letters); OQLF, synthèse des éléments de la lettre administrative (https://vitrinelinguistique.oqlf.gouv.qc.ca/23309/la-redaction-et-la-communication/redaction-administrative-et-commerciale/correspondance/lettre/synthese-des-elements-de-la-lettre-administrative); Unicode CLDR long date formats; koma-script-SFS (LPPL) for the SFS 2487 address field numbers.; wave 8: bpost MassPost Gids sections 1 and 2, January 2026 (https://www.bpost.be/sites/default/files/commercial/masspost/2026/Masspost_NL_2_De_geadresseerde_zendingen_2026_DEF.pdf); PostNL Vormgevingsvoorwaarden 2026, valid from 1 July 2026 (https://www.postnl.nl/api/assets/blt43aa441bfc1e29f2/blt4ffa36a4adacd306/vormgevingsvoorwaarden-2026-vanaf-1-juli-2026.pdf); Österreichische Post, Richtig adressieren (https://assets.post.at/-/media/Dokumente/De/Geschaeftlich/Versenden/web-Richtig-Adressieren-2024.pdf); An Post, Speed up your post (https://anpost.com/AnPost/media/PDFs/Mail%20Media/Speed-up-your-post.pdf); Taaladvies.net, Opmaak van een zakelijke brief in Nederland and in België (https://taaladvies.net/opmaak-van-een-zakelijke-brief-in-nederland-algemeen/, https://taaladvies.net/opmaak-van-een-zakelijke-brief-in-belgie-algemeen/); Amtliches Regelwerk der deutschen Rechtschreibung 2024, § 72 (https://www.rechtschreibrat.com/DOX/RfdR_Amtliches-Regelwerk_2024.pdf); Kielitoimiston ohjepankki, Sivunumerointi (https://kielitoimistonohjepankki.fi/ohje/sivunumerointi/); Unicode CLDR 48 (https://github.com/unicode-org/cldr-json).; wave 9: Correos, Dimensiones y pesos de los envíos and its drawing of a normalised item (https://www.correos.es/es/es/atencion-al-cliente/enviar/dimensiones-y-pesos); Poste Italiane, Caratteristiche standard degli invii, Posta indescritta, version 3 of 3 March 2026 (https://business.poste.it/business/files/1476529273720/caratteristiche-standard-invii-posta-indescritta.pdf) and Standard di composizione degli indirizzi, August 2023 (https://business.poste.it/business/files/1476593482113/standard-composizione-indirizzi.pdf); Poczta Polska, Zasady poprawnego adresowania i oznakowania przesyłek listowych (https://www.poczta-polska.pl/wp-content/uploads/2025/09/Zasady-poprawnego-adresowania-przesylek.pdf); UPU sheets ESP, ITA and POL; Real Academia Española, Puntuación de saludos y despedidas en cartas y correos electrónicos (https://www.rae.es/espanol-al-dia/puntuacion-de-saludos-y-despedidas-en-cartas-y-correos-electronicos) and the Diccionario panhispánico de dudas, coma (https://www.rae.es/dpd/coma), read through a search tool's reading of the pages; Poradnia Językowa PWN, Interpunkcja zwrotów adresatywnych oraz pożegnalnych (https://sjp.pwn.pl/poradnia/haslo/Interpunkcja-zwrotow-adresatywnych-oraz-pozegnalnych;17928.html); Unicode CLDR 48.2.3. Read 2026-10-09; the wave 9 sources on 2026-10-09 and 2026-10-10.",
+  "note": "No postal operator publishes the position of an envelope window. Each publishes the zone a window or an address must stay in, so every window in skills/_shared/letter.py LAYOUTS is a common maker's window placed inside that zone. \"windows\" names, per country, what was read on 2026-10-09 and what it confirms; nobody has tried a real envelope. Wave 9: for Spain, Italy and Poland no operator's or maker's document gives a window position either; the window is the DIN window mirrored to the right on a DL envelope (90 x 45 mm, 20 mm from the right edge, 15 mm from the bottom), which lies inside all three published zones, and the side margins the address keeps in Spain and Italy are this library's own, not published numbers.",
+  "rules": [
+    {
+      "id": "LETTER-WINDOW",
+      "grader": "script",
+      "text": "A letter from Norway, Denmark, Finland, the US, the UK, Canada, Australia, Belgium, the Netherlands, Austria or Ireland has the recipient's address inside the window of the envelope that country uses, clear of its edges by what the operator asks (4 mm in Belgium, 5 mm in Austria, 15 mm from the left and 5 mm elsewhere in Ireland), and nothing else in the window. The window is on the right in Belgium. In Word the page, the margins and the address row put it there. Wave 9: a letter from Spain, Italy or Poland has the address in a window on the right, inside the zone the operator publishes: at most 140 mm from the envelope's right edge, under the franking zone and above the bar-code strip (Correos); inside 140 x 140 mm from the bottom right corner with 5 mm kept clear above and below the address (Poste Italiane); 10 mm inside the window and 5 mm inside its right edge (Poczta Polska).",
+      "source": "The operators' published zones, per country in \"windows\" above; SFS 2487 address field as koma-script-SFS carries it; ISO 269 / DIN 680 window cited",
+      "check": "letter_check.py LETTER-WINDOW"
+    },
+    {
+      "id": "LETTER-ADDRESS",
+      "grader": "script",
+      "text": "The address is written the way the recipient's post office reads it: CITY ST  ZIP in capitals with no punctuation in the US, MUNICIPALITY PROV  A1A 1A1 in Canada, LOCALITY STATE  POSTCODE in Australia, the post town in capitals and the postcode alone on the last line in the UK, the postcode and the town (in capitals in Norway and Finland) in the Nordics; mail abroad ends with the country in capitals. Wave 8: in Belgium three to seven lines with the postcode and the municipality last, the municipality in capitals; in the Netherlands 1234 AB, two spaces, the town in capitals; in Austria the postcode and the town, and abroad the town and the country in capitals; in Ireland every element on its own line, the county above the Eircode, the Eircode alone on the last line, no punctuation. Wave 9: in Spain the postcode and the locality in capitals and the province on a line of its own; in Italy three to six lines, the building above the street, the CAP, the locality and the province's two letters on one line, the street and the locality lines in capitals with no punctuation, the foreign state last abroad; in Poland the postcode as XX-XXX left of the locality, the locality in capitals, and the country's name in Polish abroad.",
+      "source": "USPS Publication 28 s.224; Canada Post; Australia Post; Royal Mail; Posten, Posti, PostNord; UPU RL 123.3.3; bpost MassPost Gids section 1; PostNL Vormgevingsvoorwaarden 2026 bijlagen 1 and 3; Österreichische Post, Richtig adressieren; An Post, Speed up your post; Correos (UPU sheet ESP); Poste Italiane, Standard di composizione degli indirizzi, August 2023; Poczta Polska, Zasady poprawnego adresowania i oznakowania przesyłek listowych",
+      "check": "letter_check.py LETTER-ADDRESS"
+    },
+    {
+      "id": "LETTER-DATE",
+      "grader": "script",
+      "text": "The letter's date is written out in its language: October 9, 2026 (US, Canada), 9 October 2026 (UK, Australia), 9. oktober 2026 (Norwegian, Danish), 9.10.2026 (Finnish), Montréal, le 9 octobre 2026 (Canadian French), 9 oktober 2026 (Dutch), 9. Oktober 2026 and Jänner for January (Austria), Namur, le 9 octobre 2026 (Belgian French), 9 October 2026 (Ireland); a DIN 5008 letter keeps its numeric date. Wave 9: Madrid, 9 de octubre de 2026 (Spanish, the place and a comma before the date), Milano, 9 ottobre 2026 (Italian), Warszawa, 9 października 2026 (Polish, the month in the genitive).",
+      "source": "Unicode CLDR long dates; GOV.UK style guide, dates (OGL v3); OQLF, the place and date line; Unicode CLDR 48.2.3 for es, it and pl; Diccionario panhispánico de dudas, coma (the comma between place and date)",
+      "check": "letter_check.py LETTER-DATE"
+    },
+    {
+      "id": "LETTER-FORM",
+      "grader": "script",
+      "text": "The salutation and closing follow the variant: Dear Ms. Berg: and Sincerely, in the US; a comma after the complimentary close in Canada; Yours faithfully after Dear Sir or Madam and Yours sincerely to a named person in the UK and Australia, with no punctuation in Australia; in French Objet :, a salutation with a comma, a closing sentence that repeats it, and « » quotation marks. In the Netherlands a comma after the salutation and after the closing (Met vriendelijke groet,); in Belgium a comma after the closing only when the salutation has one; in German a comma (seldom an exclamation mark) after the salutation and no mark after Mit freundlichen Grüßen; Ireland as the United Kingdom. Wave 9: in Spanish a colon after the salutation, never a comma, and a comma or a full stop after a closing with no verb (Atentamente,); in Polish a comma or an exclamation mark after the salutation and no mark after the closing (Z poważaniem). No Italian authority's rule was found: the check scripts none for Italian and says so.",
+      "source": "SECNAV M-5216.5, the business letter; Translation Bureau, Writing Tips Plus; Australian Government Style Manual, emails and letters; OQLF, the parts of an administrative letter; Taaladvies.net (the Dutch and the Belgian letter; BIN standard NBN Z 01-002 as it describes it); Amtliches Regelwerk der deutschen Rechtschreibung 2024, § 72 (CC BY 4.0); no Belgian authority's rule for the French letter and no Irish one was found; Real Academia Española, Puntuación de saludos y despedidas en cartas y correos electrónicos (read at second hand); Poradnia Językowa PWN, Interpunkcja zwrotów adresatywnych oraz pożegnalnych (2021)",
+      "check": "letter_check.py LETTER-FORM"
+    },
+    {
+      "id": "LETTER-LANGUAGE",
+      "grader": "script",
+      "text": "Every label on the letter, the footer's included, is in the letter's language; no Date or Registered office on a Norwegian letter.",
+      "source": "Our own rule: one language throughout",
+      "check": "letter_check.py LETTER-LANGUAGE"
+    },
+    {
+      "id": "LETTER-PAGES",
+      "grader": "script",
+      "text": "A Finnish letter numbers its pages in the head, the page count in brackets after the page number: 1 (2).",
+      "source": "Kielitoimiston ohjepankki, Sivunumerointi, citing SFS 2487 (cited; SFS 2487 is a paid standard and was not read)",
+      "check": "letter_check.py LETTER-PAGES"
+    },
+    {
+      "id": "LETTER-PLAIN",
+      "grader": "judge",
+      "text": "The body says what the reader is asked to do or what was decided first, in short paragraphs.",
+      "source": "GOV.UK style guide, plain English (OGL v3)"
+    }
+  ],
+  "windows": {
+    "DE": {
+      "status": "zone",
+      "source": "Deutsche Post, Automationsfähige Briefsendungen, Leitfaden, January 2026, 3.1.2: a window at least 40 mm from the top and 15 mm from the other edges, usually 90 x 45 mm; zone published, exact window position not published. The DIN 680 position and the DIN 5008 Form B field are paid standards and were not read.",
+      "link": "https://www.deutschepost.de/dam/dpag/images/P_p/printmailing/downloads/dp-automationsfaehige-briefsendungen-2026.pdf"
+    },
+    "SE": {
+      "status": "unconfirmed",
+      "source": "Not confirmed against a PostNord document. The page is DIN 5008 Form B."
+    },
+    "DK": {
+      "status": "unconfirmed",
+      "source": "Not confirmed against a PostNord document. The ISO 269 / DIN 680 window, as for Norway."
+    },
+    "NO": {
+      "status": "zone",
+      "source": "Posten Bring, MV1 Plain envelopes, 2022-11-11, section 6: the address at least 40 mm from the top and 15 mm from the sides, the lowest 20 mm kept for barcodes; zone published, exact window position not published.",
+      "link": "https://www.bring.no/en/terms-and-conditions/terms-and-conditions-items-of-identical-format/discount-terms-machine-readable-mail/MV1-Plain%20envelopes_11.11.2022.pdf"
+    },
+    "FI": {
+      "status": "partly",
+      "source": "Posti, its own envelope range from 1.1.2019: C65 and C5 windows 95 x 35 mm, 18 mm from the left and 40 mm from the top, so the address keeps out of 36 to 40 mm where the SFS 2487 field begins. SFS 2487 is a paid standard and was not read.",
+      "link": "https://www.posti.fi/mzj3zpe8qb7p/1xCfEJVOa0bPBHFXiw38TO/2e08c78b34335dca2b1988819108a0ce/kuvia-postikuorista-sv.pdf"
+    },
+    "US": {
+      "status": "zone",
+      "source": "USPS DMM 601.6.3 (1/8 inch clear inside the window) and 202.2.1 (the OCR read area); zone published, exact window position not published. The #10 window itself comes from a printer's listing, not a standard.",
+      "link": "https://pe.usps.com/text/dmm300/601.htm"
+    },
+    "CA": {
+      "status": "zone",
+      "source": "Canada Post, Machineable Mail Standard self-assessment tool, 2021-01-11: the address zone 35 mm from the top and 10 mm from the other edges, windows inside it; zone published, exact window position not published. The #10 window from a printer's listing.",
+      "link": "https://origin-www.canadapost.ca/cpc/doc/en/support/commercial-mail/machineable-mail-standard-self-assessment-tool.pdf"
+    },
+    "GB": {
+      "status": "confirmed",
+      "source": "Royal Mail, Mailmark Letters specification requirements, February 2020: windows at least 15 mm from the top and sides and 18 mm from the bottom. The 90 x 35 mm DL window 19 mm from the left and 18 mm from the bottom (a reseller's listing) fits; a 90 x 45 mm window 15 mm from the bottom does not and is no longer used.",
+      "link": "https://www.royalmailwholesale.com/mint-project/uploads/689449491.pdf"
+    },
+    "AU": {
+      "status": "zone",
+      "source": "Australia Post, Envelope zones and Correct addressing, 2023: 15 mm kept clear along the bottom and the right edge; no window drawing, so the position is not confirmed.",
+      "link": "https://auspost.com.au/sending/guidelines/addressing-guidelines/envelope-zones"
+    },
+    "BE": {
+      "status": "zone",
+      "source": "bpost, MassPost Gids section 2, January 2026: an address without a window is on the right; a window is never in the indexing zone (30 mm high, 140 mm long, bottom right), 15 mm from the side edges, 4 mm around the address; zone published, exact window position not published. The window is therefore on the right, its rectangle worked out from the zones, not from a maker's drawing.",
+      "link": "https://www.bpost.be/sites/default/files/commercial/masspost/2026/Masspost_NL_2_De_geadresseerde_zendingen_2026_DEF.pdf"
+    },
+    "NL": {
+      "status": "zone",
+      "source": "PostNL, Vormgevingsvoorwaarden 2026 (from 1 July 2026), artikel 1 and bijlage 4: the address zone 40 mm from the top and 15 mm from the other sides, an index zone 20 mm high at the bottom right; zone published, exact window position not published, nor a side.",
+      "link": "https://www.postnl.nl/api/assets/blt43aa441bfc1e29f2/blt4ffa36a4adacd306/vormgevingsvoorwaarden-2026-vanaf-1-juli-2026.pdf"
+    },
+    "AT": {
+      "status": "zone",
+      "source": "Österreichische Post, Richtig adressieren (2020, file of 2024): a window of at least 90 x 35 mm, 5 mm quiet zone around the address; zone published, exact window position not published. ÖNORM A 1080 is a paid standard and was not read.",
+      "link": "https://assets.post.at/-/media/Dokumente/De/Geschaeftlich/Versenden/web-Richtig-Adressieren-2024.pdf"
+    },
+    "IE": {
+      "status": "zone",
+      "source": "An Post, Speed up your post, 2019: the address block 20 mm in from both sides, 20 mm clear at the bottom, text 15 mm from the window's left edge and 5 mm from the others; zone published, exact window position not published.",
+      "link": "https://anpost.com/AnPost/media/PDFs/Mail%20Media/Speed-up-your-post.pdf"
+    },
+    "ES": {
+      "status": "zone",
+      "source": "Correos, Dimensiones y pesos de los envíos, the drawing of a normalised item (read 2026-10-09): the address block at most 140 mm from the right edge, under the 74 x 40 mm franking zone and above the 15 mm bar-code strip, as far right as possible, about 8 mm kept clear at the right edge (the drawing's own figure is partly hidden); zone published, exact window position not published.",
+      "link": "https://www.correos.es/es/es/atencion-al-cliente/enviar/dimensiones-y-pesos"
+    },
+    "IT": {
+      "status": "zone",
+      "source": "Poste Italiane, Caratteristiche standard degli invii, Posta indescritta, version 3 of 3 March 2026, 1.1.3, 4.1.6 and 4.2.7: the address block inside 140 x 140 mm from the bottom right corner and 15 mm from the edges, the window at the bottom right, 15 mm kept white left and right of the block and 5 mm above and below; zone published, exact window position not published.",
+      "link": "https://business.poste.it/business/files/1476529273720/caratteristiche-standard-invii-posta-indescritta.pdf"
+    },
+    "PL": {
+      "status": "zone",
+      "source": "Poczta Polska, Zasady poprawnego adresowania i oznakowania przesyłek listowych (file of September 2025): the address field at the bottom right, at least 40 mm from the top and 15 mm from the right and bottom edges, at most 140 mm from the right edge; a window at least 15 mm from the right edge, the address 10 mm inside it and 5 mm inside its right edge; zone published, exact window position not published.",
+      "link": "https://www.poczta-polska.pl/wp-content/uploads/2025/09/Zasady-poprawnego-adresowania-przesylek.pdf"
+    }
+  }
+}

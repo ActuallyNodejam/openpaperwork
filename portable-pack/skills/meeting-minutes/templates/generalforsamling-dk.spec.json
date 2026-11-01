@@ -1,0 +1,46 @@
+{
+  "language": "da",
+  "country": "DK",
+  "body": "Kystlys Tryk ApS",
+  "company_number": "41 22 63 85",
+  "meeting": "annual general",
+  "date": "2026-04-28",
+  "start": "17:00",
+  "end": "17:45",
+  "place": "Selskabets kontor, Havnegade 21, Aarhus C",
+  "chair": "Anne Vestergaard",
+  "secretary": "Søren Bach",
+  "shareholders": [
+    {
+      "name": "Hanne Lund",
+      "shares": 30000,
+      "votes": 30000
+    },
+    {
+      "name": "Lund Invest ApS",
+      "shares": 20000,
+      "votes": 20000,
+      "by": "Hanne Lund"
+    }
+  ],
+  "items": [
+    {
+      "title": "Godkendelse af årsrapporten for 2025",
+      "decisions": [
+        "Årsrapporten blev godkendt"
+      ]
+    },
+    {
+      "title": "Anvendelse af overskud",
+      "decisions": [
+        "Årets overskud på 412.000 kr. overføres til næste år"
+      ]
+    },
+    {
+      "title": "Valg af revisor",
+      "decisions": [
+        "Revisionsfirmaet Aarhus Revision genvælges"
+      ]
+    }
+  ]
+}

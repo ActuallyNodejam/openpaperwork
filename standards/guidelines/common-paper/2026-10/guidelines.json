@@ -1,0 +1,32 @@
+{
+  "issuer": "common-paper",
+  "version": "2026-10",
+  "link": "https://commonpaper.com/standards/",
+  "license": "CC BY 4.0, Common Paper, Inc. (stated in each repository's README); the Standard Terms are carried word for word in skills/contract-drafting/standards with every change recorded, credited in THIRD_PARTY.md and licenses/common-paper-cc-by-4.0.txt. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Common Paper standard agreements: Mutual NDA 1.0, DPA 1.1, Cloud Service Agreement 2.1",
+  "source": "Common Paper, github.com/CommonPaper: Mutual-NDA at 2a3068b6c0ab, DPA at 9f1c40d3fb0b, CSA at aaaa2826a0c8 (tag 2.1) (https://github.com/CommonPaper).",
+  "rules": [
+    {
+      "id": "CP-COVER",
+      "grader": "script",
+      "text": "The agreement is a Cover Page the parties fill in plus the Standard Terms; every Cover Page field is filled with the parties' own words, and the governing law and courts rows are the ones the person chose, never a template default.",
+      "source": "Mutual-NDA-coverpage.md; the Variables the DPA and CSA Standard Terms name",
+      "check": "legal_check.py LEGAL-LAW"
+    },
+    {
+      "id": "CP-TERMS",
+      "grader": "judge",
+      "text": "The Standard Terms are Common Paper's word for word, apart from the changes the standard file records; anything the parties agree differently is written on the Cover Page as a modification.",
+      "source": "README of each repository: modifications go on the Cover Page",
+      "check": "agreement_create.py lays the terms out from standards/*.json"
+    },
+    {
+      "id": "CP-NOTICE",
+      "grader": "judge",
+      "text": "The agreement credits Common Paper, links the CC BY 4.0 licence and says what was changed.",
+      "source": "CC BY 4.0 section 3(a)"
+    }
+  ]
+}

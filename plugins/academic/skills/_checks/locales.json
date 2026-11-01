@@ -1,0 +1,755 @@
+{
+ "version": "1",
+ "date": "2026-10-09",
+ "note": "The every-file floor takes a locale. Europe is the default; the United States is the first one after it. Each field names where the rule comes from. Country entries (de-DE, da-DK, sv-SE, en-GB, fr-FR, nb-NO, fi-FI, en-US, en-CA, fr-CA, en-AU, nl-NL, nl-BE, fr-BE, de-AT, en-IE, es-ES, it-IT, pl-PL) carry CLDR's own short date and number forms; eu stays the default for a case that names no country.",
+ "sources": {
+  "cldr": {
+   "name": "Unicode CLDR, UTS #35",
+   "url": "https://www.unicode.org/reports/tr35/",
+   "machine_form": "cldr-json, cldr-dates-full and cldr-numbers-full",
+   "read": "2026-10-05",
+   "covers": [
+    "date",
+    "number"
+   ]
+  },
+  "iso216": {
+   "name": "ISO 216, writing paper and certain classes of printed matter",
+   "covers": [
+    "paper.eu"
+   ],
+   "read": "name only; iso.org served a challenge page"
+  },
+  "ansi-y14.1": {
+   "name": "ANSI/ASME Y14.1, decimal inch drawing sheet size and format",
+   "covers": [
+    "paper.us"
+   ],
+   "read": "name only"
+  },
+  "iso4217": {
+   "name": "ISO 4217, codes for the representation of currencies",
+   "covers": [
+    "currency"
+   ],
+   "read": "name only; iso.org served nothing"
+  }
+ },
+ "locales": {
+  "eu": {
+   "paper": {
+    "name": "A4",
+    "mm": [
+     210,
+     297
+    ],
+    "pt": [
+     595,
+     842
+    ],
+    "source": "iso216"
+   },
+   "date": {
+    "pattern": "dd.MM.yyyy",
+    "cldr_short": "dd.MM.yy",
+    "example": "05.10.2026",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ",",
+    "group": ".",
+    "example": "1.234,56",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "source": "iso4217"
+   }
+  },
+  "us": {
+   "paper": {
+    "name": "US Letter",
+    "in": [
+     8.5,
+     11
+    ],
+    "pt": [
+     612,
+     792
+    ],
+    "source": "ansi-y14.1"
+   },
+   "date": {
+    "pattern": "MM/DD/YYYY",
+    "cldr_short": "M/d/yy",
+    "example": "10/05/2026",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ".",
+    "group": ",",
+    "example": "1,234.56",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": "USD",
+    "symbol": "$",
+    "source": "iso4217"
+   }
+  },
+  "de-DE": {
+   "paper": {
+    "name": "A4",
+    "mm": [
+     210,
+     297
+    ],
+    "pt": [
+     595,
+     842
+    ],
+    "source": "iso216"
+   },
+   "date": {
+    "pattern": "dd.MM.yyyy",
+    "example": "05.10.2026",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ",",
+    "group": ".",
+    "example": "1.234,56",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  },
+  "da-DK": {
+   "paper": {
+    "name": "A4",
+    "mm": [
+     210,
+     297
+    ],
+    "pt": [
+     595,
+     842
+    ],
+    "source": "iso216"
+   },
+   "date": {
+    "pattern": "dd.MM.yyyy",
+    "example": "05.10.2026",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ",",
+    "group": ".",
+    "example": "1.234,56",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  },
+  "sv-SE": {
+   "paper": {
+    "name": "A4",
+    "mm": [
+     210,
+     297
+    ],
+    "pt": [
+     595,
+     842
+    ],
+    "source": "iso216"
+   },
+   "date": {
+    "pattern": "yyyy-MM-dd",
+    "example": "2026-10-05",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ",",
+    "group": " ",
+    "example": "1 234,56",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  },
+  "en-GB": {
+   "paper": {
+    "name": "A4",
+    "mm": [
+     210,
+     297
+    ],
+    "pt": [
+     595,
+     842
+    ],
+    "source": "iso216"
+   },
+   "date": {
+    "pattern": "dd/MM/yyyy",
+    "example": "05/10/2026",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ".",
+    "group": ",",
+    "example": "1,234.56",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  },
+  "fr-FR": {
+   "paper": {
+    "name": "A4",
+    "mm": [
+     210,
+     297
+    ],
+    "pt": [
+     595,
+     842
+    ],
+    "source": "iso216"
+   },
+   "date": {
+    "pattern": "dd/MM/yyyy",
+    "example": "05/10/2026",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ",",
+    "group": " ",
+    "example": "1 234,56",
+    "note": "CLDR fr groups with a narrow no-break space (U+202F) and writes the euro after the amount, 1 234,56 €",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  },
+  "nb-NO": {
+   "paper": {
+    "name": "A4",
+    "mm": [
+     210,
+     297
+    ],
+    "pt": [
+     595,
+     842
+    ],
+    "source": "iso216"
+   },
+   "date": {
+    "pattern": "dd.MM.yyyy",
+    "example": "09.10.2026",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ",",
+    "group": " ",
+    "example": "1 234,56",
+    "note": "CLDR nb groups with a no-break space (U+00A0); a plain space reads the same and the floor takes either",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  },
+  "fi-FI": {
+   "paper": {
+    "name": "A4",
+    "mm": [
+     210,
+     297
+    ],
+    "pt": [
+     595,
+     842
+    ],
+    "source": "iso216"
+   },
+   "date": {
+    "pattern": "d.M.yyyy",
+    "example": "9.10.2026",
+    "note": "CLDR fi short d.M.y: day and month without a leading zero",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ",",
+    "group": " ",
+    "example": "1 234,56",
+    "note": "CLDR fi groups with a no-break space (U+00A0); a plain space reads the same and the floor takes either",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  },
+  "en-US": {
+   "paper": {
+    "name": "US Letter",
+    "in": [
+     8.5,
+     11
+    ],
+    "pt": [
+     612,
+     792
+    ],
+    "source": "ansi-y14.1",
+    "note": "Canada writes business documents on the same 8.5 x 11 in sheet"
+   },
+   "date": {
+    "pattern": "MM/dd/yyyy",
+    "cldr_short": "M/d/yy",
+    "example": "10/09/2026",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ".",
+    "group": ",",
+    "example": "1,234.56",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  },
+  "en-CA": {
+   "paper": {
+    "name": "US Letter",
+    "in": [
+     8.5,
+     11
+    ],
+    "pt": [
+     612,
+     792
+    ],
+    "source": "ansi-y14.1",
+    "note": "Canada writes business documents on the same 8.5 x 11 in sheet"
+   },
+   "date": {
+    "pattern": "yyyy-MM-dd",
+    "cldr_short": "y-MM-dd",
+    "example": "2026-10-09",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ".",
+    "group": ",",
+    "example": "1,234.56",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  },
+  "fr-CA": {
+   "paper": {
+    "name": "US Letter",
+    "in": [
+     8.5,
+     11
+    ],
+    "pt": [
+     612,
+     792
+    ],
+    "source": "ansi-y14.1",
+    "note": "Canada writes business documents on the same 8.5 x 11 in sheet"
+   },
+   "date": {
+    "pattern": "yyyy-MM-dd",
+    "cldr_short": "y-MM-dd",
+    "example": "2026-10-09",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ",",
+    "group": " ",
+    "example": "1 234,56",
+    "note": "CLDR fr-CA groups with a no-break space (U+00A0); a plain space reads the same and the floor takes either",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  },
+  "en-AU": {
+   "paper": {
+    "name": "A4",
+    "mm": [
+     210,
+     297
+    ],
+    "pt": [
+     595,
+     842
+    ],
+    "source": "iso216"
+   },
+   "date": {
+    "pattern": "dd/MM/yyyy",
+    "cldr_short": "d/M/yy",
+    "example": "09/10/2026",
+    "note": "the CLDR en-AU short order, day first, with the four-digit year the other entries use",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ".",
+    "group": ",",
+    "example": "1,234.56",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  },
+  "nl-NL": {
+   "paper": {
+    "name": "A4",
+    "mm": [
+     210,
+     297
+    ],
+    "pt": [
+     595,
+     842
+    ],
+    "source": "iso216"
+   },
+   "date": {
+    "pattern": "dd-MM-yyyy",
+    "cldr_short": "dd-MM-y",
+    "example": "09-10-2026",
+    "note": "CLDR nl short: day, month and year joined by hyphens",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ",",
+    "group": ".",
+    "example": "1.234,56",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  },
+  "nl-BE": {
+   "paper": {
+    "name": "A4",
+    "mm": [
+     210,
+     297
+    ],
+    "pt": [
+     595,
+     842
+    ],
+    "source": "iso216"
+   },
+   "date": {
+    "pattern": "d/MM/yyyy",
+    "cldr_short": "d/MM/y",
+    "example": "9/10/2026",
+    "note": "CLDR nl-BE short: day without a leading zero, slashes",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ",",
+    "group": ".",
+    "example": "1.234,56",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  },
+  "fr-BE": {
+   "paper": {
+    "name": "A4",
+    "mm": [
+     210,
+     297
+    ],
+    "pt": [
+     595,
+     842
+    ],
+    "source": "iso216"
+   },
+   "date": {
+    "pattern": "d/MM/yyyy",
+    "cldr_short": "d/MM/yy",
+    "example": "9/10/2026",
+    "note": "CLDR fr-BE short order with the four-digit year the other entries use",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ",",
+    "group": " ",
+    "example": "1 234,56",
+    "note": "CLDR fr groups with a narrow no-break space (U+202F); a plain space reads the same and the floor takes either",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  },
+  "de-AT": {
+   "paper": {
+    "name": "A4",
+    "mm": [
+     210,
+     297
+    ],
+    "pt": [
+     595,
+     842
+    ],
+    "source": "iso216"
+   },
+   "date": {
+    "pattern": "dd.MM.yyyy",
+    "cldr_short": "dd.MM.yy",
+    "example": "09.10.2026",
+    "note": "CLDR de-AT medium date; the long form writes Jänner for January",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ",",
+    "group": ".",
+    "example": "1.234,56",
+    "note": "CLDR de-AT groups a plain number with a no-break space (1 234,56) and an amount of money with a point (currencyGroup, € 1.234,56); the documents here print amounts, so the point",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  },
+  "en-IE": {
+   "paper": {
+    "name": "A4",
+    "mm": [
+     210,
+     297
+    ],
+    "pt": [
+     595,
+     842
+    ],
+    "source": "iso216"
+   },
+   "date": {
+    "pattern": "dd/MM/yyyy",
+    "cldr_short": "dd/MM/y",
+    "example": "09/10/2026",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ".",
+    "group": ",",
+    "example": "1,234.56",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  },
+  "de-BE": {
+   "paper": {
+    "name": "A4",
+    "mm": [
+     210,
+     297
+    ],
+    "pt": [
+     595,
+     842
+    ],
+    "source": "iso216"
+   },
+   "date": {
+    "pattern": "dd.MM.yyyy",
+    "cldr_short": "dd.MM.yy",
+    "example": "09.10.2026",
+    "note": "CLDR de-BE short order with the four-digit year the other entries use",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ",",
+    "group": ".",
+    "example": "1.234,56",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  },
+  "es-ES": {
+   "paper": {
+    "name": "A4",
+    "mm": [
+     210,
+     297
+    ],
+    "pt": [
+     595,
+     842
+    ],
+    "source": "iso216"
+   },
+   "date": {
+    "pattern": "d/M/yyyy",
+    "cldr_short": "d/M/yy",
+    "example": "9/10/2026",
+    "note": "CLDR es short order with the four-digit year the other entries use; the long form is 9 de octubre de 2026",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ",",
+    "group": ".",
+    "example": "1.234,56",
+    "note": "CLDR es groups from five digits (minimumGroupingDigits 2: 1234,56 and 12.345,67); the documents here print amounts and group every thousand",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  },
+  "it-IT": {
+   "paper": {
+    "name": "A4",
+    "mm": [
+     210,
+     297
+    ],
+    "pt": [
+     595,
+     842
+    ],
+    "source": "iso216"
+   },
+   "date": {
+    "pattern": "dd/MM/yyyy",
+    "cldr_short": "dd/MM/yy",
+    "example": "09/10/2026",
+    "note": "CLDR it short order with the four-digit year the other entries use; the long form is 9 ottobre 2026",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ",",
+    "group": ".",
+    "example": "1.234,56",
+    "note": "CLDR it groups from five digits (minimumGroupingDigits 2); the documents here print amounts and group every thousand",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  },
+  "pl-PL": {
+   "paper": {
+    "name": "A4",
+    "mm": [
+     210,
+     297
+    ],
+    "pt": [
+     595,
+     842
+    ],
+    "source": "iso216"
+   },
+   "date": {
+    "pattern": "d.MM.yyyy",
+    "cldr_short": "d.MM.y",
+    "example": "9.10.2026",
+    "note": "CLDR pl short: day without a leading zero, points; the long form takes the month in the genitive, 9 października 2026",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ",",
+    "group": " ",
+    "example": "1 234,56",
+    "note": "CLDR pl groups with a no-break space (U+00A0), from five digits (minimumGroupingDigits 2); a plain space reads the same and the floor takes either",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": null,
+    "note": "the order sets the currency",
+    "source": "iso4217"
+   }
+  }
+ },
+ "rules": [
+  {
+   "id": "LOCALE-PAPER",
+   "text": "The page is the locale's paper size: A4 for eu and the European and Australian entries, US Letter for us, en-US, en-CA and fr-CA."
+  },
+  {
+   "id": "LOCALE-DATE",
+   "text": "Dates are written in the locale's order: dd.MM.yyyy for eu, MM/DD/YYYY for us."
+  },
+  {
+   "id": "LOCALE-NUMBER",
+   "text": "Numbers use the locale's separators: 1.234,56 for eu, 1,234.56 for us."
+  },
+  {
+   "id": "LOCALE-CURRENCY",
+   "text": "The amount carries the locale's currency: EUR for eu, USD for us."
+  }
+ ]
+}

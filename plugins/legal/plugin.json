@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "openpaperwork-legal",
+  "version": "0.1.0",
+  "description": "Legal: an NDA, a DPA or a cloud service agreement drafted on Common Paper's standard terms, and the other side's agreement reviewed and handed back with tracked changes, each with a drafting check; not legal advice.",
+  "author": {
+    "name": "OpenPaperwork"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "legal"
+  ]
+}

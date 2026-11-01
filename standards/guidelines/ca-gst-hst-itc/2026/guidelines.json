@@ -1,0 +1,18 @@
+{
+ "issuer": "ca-gst-hst-itc",
+ "version": "2026",
+ "link": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-91-45/",
+ "license": "Reproduction of Federal Law Order (SI/97-5); notice licenses/einvoice-ca-federal-law.txt. Not an official version; restated in our own words. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "What a Canadian invoice states for GST/HST",
+ "source": "Input Tax Credit Information (GST/HST) Regulations, SOR/91-45, s. 3, current to 2026-09-30: under $100, from $100, from $500. Revenu Québec's QST registration number, cited. Read 2026-10-09.",
+ "rules": [
+  {
+   "id": "CA-GST-HST",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "text": "The supplier's name, the date and the total; from $100 the GST/HST registration number and each tax; from $500 the buyer's name and the terms of payment; untaxed lines marked; the QST number when QST is charged, on the page."
+  }
+ ]
+}

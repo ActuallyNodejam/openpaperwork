@@ -1,0 +1,111 @@
+{
+ "id": "price-list-vat-001",
+ "title": "Make a price list with VAT and a trade discount the shop can change",
+ "person": "A shop owner selling garden tools who wants prices with and without VAT for trade customers.",
+ "format": "xlsx",
+ "output": "prices.xlsx",
+ "locale": "en",
+ "sector": {
+  "naics": "44-45",
+  "name": "Retail Trade"
+ },
+ "occupation": {
+  "soc": "41-2031.00",
+  "name": "Retail Salespersons"
+ },
+ "review": [
+  "Each of the five tools shows its price excluding VAT, the 10 percent trade price and the price including 25 percent VAT; the VAT rate and the discount are inputs."
+ ],
+ "revised_review": [
+  "With the trade discount at 15 percent every trade price follows; nothing else changes."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "no-merged",
+   "stage": "both",
+   "grader": "script",
+   "script": "sheet_check.py",
+   "rule": "SHEET-MERGED",
+   "guidelines": [
+    "uk-analysis-function/2021#UKSS-03",
+    "fast-standard/02c#FAST-24"
+   ],
+   "text": "No merged cells."
+  },
+  {
+   "id": "nothing-hidden",
+   "stage": "both",
+   "grader": "script",
+   "script": "sheet_check.py",
+   "rule": "SHEET-HIDDEN",
+   "guidelines": [
+    "uk-analysis-function/2021#UKSS-18",
+    "fast-standard/02c#FAST-08"
+   ],
+   "text": "No hidden rows, columns or sheets."
+  },
+  {
+   "id": "headings",
+   "stage": "both",
+   "grader": "script",
+   "script": "sheet_check.py",
+   "rule": "SHEET-HEADINGS",
+   "guidelines": [
+    "uk-analysis-function/2021#UKSS-05"
+   ],
+   "text": "Every column of the table has one unique heading."
+  },
+  {
+   "id": "numbers",
+   "stage": "both",
+   "grader": "script",
+   "script": "sheet_check.py",
+   "rule": "SHEET-NUMBERS",
+   "guidelines": [
+    "uk-analysis-function/2021#UKSS-11",
+    "uk-analysis-function/2021#UKSS-13"
+   ],
+   "text": "Every value in a column of numbers is stored as a number."
+  },
+  {
+   "id": "assumptions",
+   "stage": "both",
+   "grader": "script",
+   "script": "sheet_check.py",
+   "rule": "SHEET-HARDCODED",
+   "guidelines": [
+    "fast-standard/02c#FAST-16"
+   ],
+   "text": "The VAT rate and the discount sit in their own labelled cells; no formula types 1.25 or 0.9 in."
+  },
+  {
+   "id": "prices",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "The spade reads 349, 314.10 trade and 436.25 including VAT; the other four follow the same way."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the people, clubs, shops and numbers are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "uk-analysis-function/2021",
+  "fast-standard/02c",
+  "every-file/1.1.0"
+ ]
+}

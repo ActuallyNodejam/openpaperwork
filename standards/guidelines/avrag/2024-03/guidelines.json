@@ -1,0 +1,69 @@
+{
+  "issuer": "avrag",
+  "version": "2024-03",
+  "link": "https://www.ris.bka.gv.at/eli/bgbl/1993/459/P2/NOR40260833",
+  "license": "Austrian statute, not protected by copyright (Urheberrechtsgesetz § 7); restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "AVRAG § 2: der Dienstzettel",
+  "source": "Arbeitsvertragsrechts-Anpassungsgesetz (BGBl. Nr. 459/1993) § 2 as amended by BGBl. I Nr. 11/2024, in force 28 March 2024; ABGB § 1158 (2); Angestelltengesetz § 19 (2). RIS, read 2026-10-09.",
+  "note": "A drafting check, not legal advice: the scripted rules read whether a particular is there, never whether a term is lawful.",
+  "rules": [
+    {
+      "id": "AT-01",
+      "grader": "script",
+      "text": "The Dienstzettel is handed over without delay after the start; the check holds it to the seven days of Art. 5(1) of Directive (EU) 2019/1152.",
+      "source": "§ 2 (1)",
+      "check": "employment_check.py EMPLOY-DATES"
+    },
+    {
+      "id": "AT-02",
+      "grader": "script",
+      "text": "Both parties' names and addresses, the start, a fixed term's end, the notice period, notice dates and procedure, the usual place of work with the company's seat, any classification and the work.",
+      "source": "§ 2 (2) 1 to 8",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "AT-03",
+      "grader": "script",
+      "text": "The basic pay as an amount, the other elements such as the special payments, overtime pay, when and how it is paid.",
+      "source": "§ 2 (2) 9",
+      "check": "employment_check.py EMPLOY-PAY"
+    },
+    {
+      "id": "AT-04",
+      "grader": "script",
+      "text": "The annual leave, the normal daily or weekly hours, the collective agreement and works agreements with the room where they can be read, and the social insurance institution and BV-Kasse with their addresses.",
+      "source": "§ 2 (2) 10 to 13",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "AT-05",
+      "grader": "script",
+      "text": "A probation of at most one month.",
+      "source": "§ 2 (2) 14; ABGB § 1158 (2); AngG § 19 (2)",
+      "check": "employment_check.py EMPLOY-PROBATION"
+    },
+    {
+      "id": "AT-06",
+      "grader": "script",
+      "text": "Only the items § 2 (5) names may point to a law or collective agreement; the basic pay never.",
+      "source": "§ 2 (5)",
+      "check": "employment_check.py EMPLOY-REFERENCE"
+    },
+    {
+      "id": "AT-07",
+      "grader": "script",
+      "text": "Work abroad over a month: the country and length, the currency, the return to Austria and the extra pay, before departure.",
+      "source": "§ 2 (3)",
+      "check": "employment_check.py EMPLOY-ABROAD"
+    },
+    {
+      "id": "AT-08",
+      "grader": "script",
+      "text": "Every heading is in German.",
+      "source": "§ 2",
+      "check": "employment_check.py EMPLOY-LANG"
+    }
+  ]
+}

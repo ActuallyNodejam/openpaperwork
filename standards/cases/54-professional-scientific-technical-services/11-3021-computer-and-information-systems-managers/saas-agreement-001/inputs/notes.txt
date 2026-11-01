@@ -1,0 +1,6 @@
+Us: Molnhyllan AB, 556000-0031, Sankt Eriksgatan 63, 112 34 Stockholm. Maria Wikström (CEO) signs. Notices to legal@molnhyllan.example.
+Them: Bergström Cykel AB, 556000-0032, Storgatan 22, 903 26 Umeå. Per Bergström (MD) signs. Notices to inkop@bergstromcykel.example.
+Product: Molnhyllan Lager for three shops, 15 named users. 12 months from 1 January 2027, SEK 4,500/month ex VAT, invoiced monthly in advance, 30 days.
+Support weekdays 08-17 by email and phone, answer within one working day. Notice of non-renewal 30 days before the end.
+Liability cap: 12 months' fees. We cover IP infringement claims; they cover nothing. A DPA is signed separately on 1 January.
+Swedish law, Stockholm District Court.

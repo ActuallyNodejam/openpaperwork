@@ -1,0 +1,49 @@
+{
+  "language": "en",
+  "company": {"name": "Exempel Städ AB", "org_number": "556000-0001", "seat": "Gävle"},
+  "year": {"start": "2025-01-01", "end": "2025-12-31"},
+  "prior": {"start": "2024-01-01", "end": "2024-12-31"},
+  "report": {
+    "business": "The company runs an office cleaning service with a small supplies shop in central Gävle.",
+    "events": "The shop was closed for eight weeks in the spring while the street outside was rebuilt, and sales fell. In June the shareholder made an unconditional shareholder contribution of SEK 150,000 to strengthen the company's equity. The board expects sales to return to the 2024 level in 2026 and presents the accounts on the assumption that the business continues.",
+    "earlier_years": [{"year": "2023", "net_sales": 1201000, "result_after_financial": 41200, "solidity": 38},
+                      {"year": "2022", "net_sales": 1155000, "result_after_financial": 36800, "solidity": 35}]
+  },
+  "income": {
+    "net_sales": [1184000, 1236000],
+    "raw_materials": [-402000, -398000],
+    "other_external": [-356000, -331000],
+    "personnel": [-548000, -455000],
+    "depreciation": [-42000, -42000],
+    "interest_expense": [-9600, -8100],
+    "tax": [0, -400]
+  },
+  "balance": {
+    "raw_stock": [18500, 21000],
+    "other_receivables": [6200, 4800],
+    "prepaid": [15000, 14500],
+    "cash": [211400, 212000],
+    "share_capital": [25000, 25000],
+    "retained": [null, 41700],
+    "lt_credit": [120000, 160000],
+    "st_credit": [40000, 40000],
+    "trade_payables": [46300, 38900],
+    "tax_liabilities": [0, 400],
+    "st_other": [31800, 29600],
+    "accrued": [52400, 41200]
+  },
+  "equity_changes": {"shareholder_contribution": 150000},
+  "disposition": {"dividend": 0},
+  "fixed_assets": {"equipment": {"opening_cost": [210000, 210000], "additions": [0, 0],
+                                 "opening_depreciation": [-84000, -42000], "depreciation": [-42000, -42000]}},
+  "principles": ["Equipment is depreciated on a straight-line basis over five years.",
+                 "Inventories are valued at the lower of cost and net realisable value."],
+  "employees": [2, 2],
+  "pledged": [{"label": "Floating charges", "amounts": [200000, 200000]}],
+  "contingent": [],
+  "notes": [{"title": "Non-current liabilities", "attach": "lt_credit",
+             "text": "No part of the liabilities to credit institutions falls due later than five years after the balance sheet date."}],
+  "signing": {"place": "Gävle", "date": "2026-04-22",
+              "board": [{"name": "Sara Holm", "role": "Board member and managing director"},
+                        {"name": "Jonas Wik", "role": "Board member"}]}
+}

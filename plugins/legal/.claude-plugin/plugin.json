@@ -1,0 +1,12 @@
+{
+  "name": "openpaperwork-legal",
+  "description": "Legal: an NDA, a DPA or a cloud service agreement drafted on Common Paper's standard terms, and the other side's agreement reviewed and handed back with tracked changes, each with a drafting check; not legal advice.",
+  "version": "0.1.0",
+  "author": {
+    "name": "OpenPaperwork"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "legal"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "issuer": "printed-money",
+  "version": "2026-10",
+  "link": "https://europa.eu/youreurope/business/taxation/vat/vat-rules-rates/index_en.htm",
+  "license": "Rates are facts and are restated as numbers, each with its source and the day it was read; nothing is copied. European Union pages may be reused under Commission Decision 2011/833/EU; GOV.UK is under the Open Government Licence v3.0; Skatteetaten and the Australian Act are cited by link. EN 16931-1 is cited by rule id and no standard text is copied. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-10",
+  "status": "draft",
+  "title": "Money recomputed where it is printed, and a tax rate its country has",
+  "source": "The arithmetic: EN 16931-1:2017, business rules BR-CO-10, BR-CO-13, BR-CO-14, BR-CO-15 and BR-CO-17, cited by id (the sum of the line amounts, the total without VAT, the total VAT, the total with VAT, and the VAT of a category as its taxable amount times its rate), as the library's invoice guideline cen-en16931/2017 cites them. The rates, read 2026-10-10: the European Union's table \"List of VAT rates applied in EU member countries\" (https://europa.eu/youreurope/business/taxation/vat/vat-rules-rates/index_en.htm, last checked by its publisher 13 July 2026) for Austria, Belgium, Denmark, Finland, France, Germany, Ireland, Italy, the Netherlands, Poland, Spain and Sweden; GOV.UK, VAT rates (https://www.gov.uk/vat-rates); Skatteetaten, Value added tax, 2026 (https://www.skatteetaten.no/en/rates/value-added-tax/). Australia's 10 percent is cited from A New Tax System (Goods and Services Tax) Act 1999 s 9-70 (https://www.legislation.gov.au/C2004A00446/latest/text) and was NOT confirmed against an official page that day (the tax office's page refused the fetch).",
+  "note": "The table is skills/_checks/tax_rates.json. Special territories and schemes with rates of their own (Corsica, the Canary Islands, Jungholz and Mittelberg, flat-rate farmers, the recargo de equivalencia) are not in it, and Canada and the United States have no national list: their sales taxes are named one by one and no rate there is held against a table. A drafting check of sums and rates as printed; it is not tax advice and never says which rate a supply takes.",
+  "rules": [
+    {
+      "id": "TRADE-SUMS",
+      "grader": "script",
+      "script": "money_check.py",
+      "formats": [
+        "docx",
+        "xlsx",
+        "pdf"
+      ],
+      "kind": "standard",
+      "text": "On a quotation, an order confirmation and a pro forma invoice every line carries its quantity, unit price and line amount, the line amount is the quantity times the unit price less any discount (rounded half up to two decimals), the total excluding VAT is the sum of the line amounts, VAT is calculated once per rate on the sum of that rate's lines and the total including VAT is the two added.",
+      "source": "EN 16931-1 BR-CO-10, BR-CO-13, BR-CO-14, BR-CO-15, BR-CO-17, cited by id; on a trade document the arithmetic is this library's own choice, the one its purchase order rules (TRADE-PO-LINES, TRADE-PO-TOTAL) already use, with the same calculator."
+    },
+    {
+      "id": "EINV-SUMS",
+      "grader": "script",
+      "script": "money_check.py",
+      "formats": [
+        "pdf",
+        "html"
+      ],
+      "kind": "standard",
+      "text": "An invoice page adds up as printed, in the page's own number forms: each line's amount is its quantity times its unit price less the discount the order gives the line, the lines add up to the total without tax, that total and the tax rows add up to the amount due, and with one rate on the invoice the tax is that rate of the total without tax.",
+      "source": "EN 16931-1 BR-CO-10, BR-CO-13, BR-CO-15, BR-CO-17, cited by id. Read from the page, so it holds for the countries outside EN 16931 too (Australia, Canada, the United States)."
+    },
+    {
+      "id": "TRADE-RATE",
+      "grader": "script",
+      "script": "money_check.py",
+      "formats": [
+        "docx",
+        "xlsx",
+        "pdf"
+      ],
+      "kind": "standard",
+      "text": "Every VAT rate on a trade document is a rate the seller's country has, or the buyer's country's for a sale taxed there. A rate written as a fraction (0.2 where 20 percent is meant) fails. A rate that was in force until a date passes with a question.",
+      "source": "The published rates of each country (see the set's source); skills/_checks/tax_rates.json."
+    },
+    {
+      "id": "EINV-RATE",
+      "grader": "script",
+      "script": "money_check.py",
+      "formats": [
+        "pdf",
+        "html"
+      ],
+      "kind": "standard",
+      "text": "Every VAT rate on an invoice is a rate the seller's country has, or the buyer's country's for a sale taxed there. A rate written as a fraction fails. A rate that was in force until a date passes with a question.",
+      "source": "The published rates of each country (see the set's source); skills/_checks/tax_rates.json."
+    }
+  ]
+}

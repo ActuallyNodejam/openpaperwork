@@ -1,0 +1,25 @@
+name: Suggest an improvement
+description: A change to how a pack works or is installed. For a new document or country, use "Ask for a standard".
+labels: [enhancement]
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: What were you trying to get done?
+      description: The task in your own words, and who it is for.
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What should change?
+      description: What you expected to be able to do, and what stood in the way.
+    validations:
+      required: true
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: Checked first
+      options:
+        - label: I searched the open issues and did not find this.
+          required: true

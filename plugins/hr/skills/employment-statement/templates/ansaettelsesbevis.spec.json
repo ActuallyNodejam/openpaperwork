@@ -1,0 +1,53 @@
+{
+  "language": "da",
+  "law": "dk",
+  "given": "2027-01-20",
+  "employer": {
+    "name": "Havnelys Grafisk ApS",
+    "number": "CVR-nr. 12 34 56 78",
+    "address": "Toldbodgade 7, 8000 Aarhus C",
+    "signatory": "Mette Lund, direktør"
+  },
+  "worker": {
+    "name": "Sofie Kragh",
+    "address": "Vestergade 20, 8000 Aarhus C"
+  },
+  "place": "Toldbodgade 7, 8000 Aarhus C",
+  "job": {
+    "title": "Grafisk designer",
+    "description": "Udarbejder tryksager, emballage og materialer til kundernes kampagner."
+  },
+  "start": "2027-02-01",
+  "term": {
+    "type": "permanent"
+  },
+  "agency": null,
+  "probation": {
+    "months": 3,
+    "conditions": "under prøvetiden kan begge parter opsige ansættelsen med 14 dages varsel, jf. funktionærlovens § 2, stk. 5"
+  },
+  "leave": "Ferie efter ferieloven med løn under ferie og ferietillæg. Herudover 5 feriefridage om året",
+  "termination": "Opsigelse skal ske skriftligt. Opsigelsesvarslerne følger funktionærlovens § 2",
+  "pay": {
+    "amount": 38500,
+    "currency": "DKK",
+    "per": "month",
+    "paid": "månedsvis bagud, sidste bankdag i måneden",
+    "method": "overførsel til lønmodtagerens NemKonto",
+    "components": [
+      {
+        "name": "Pensionsbidrag",
+        "text": "12 procent af lønnen, heraf betaler arbejdsgiveren 8 procent"
+      }
+    ]
+  },
+  "hours": {
+    "pattern": "fixed",
+    "standard": "37 timer om ugen, mandag til fredag",
+    "overtime": "overarbejde efter aftale; det afspadseres time for time"
+  },
+  "training": "Arbejdsgiveren betaler et relevant fagligt kursus om året efter aftale",
+  "collective": null,
+  "social_security": "Arbejdsgiveren indbetaler ATP-bidrag til ATP og har arbejdsskadeforsikring i Eksempel Forsikring A/S",
+  "abroad": null
+}

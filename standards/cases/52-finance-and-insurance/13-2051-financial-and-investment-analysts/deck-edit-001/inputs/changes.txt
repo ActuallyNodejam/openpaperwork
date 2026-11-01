@@ -1,0 +1,1 @@
+Fictional fund administrator. Update the deck for the third quarter of 2026: the subtitle becomes Q3 2026; add Q3 to the chart with assets of 451 (EUR m); the growth line on the chart slide should compare Q3 with Q2, rounded to one decimal place. Leave the title slide's title and the Open items slide unchanged.

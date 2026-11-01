@@ -1,0 +1,25 @@
+{
+  "domain": "engineering",
+  "hands_back": [
+    "*.docx"
+  ],
+  "default": "requirements.docx",
+  "check": "python3 {here}/../_checks/packcheck.py requirements-spec {file}",
+  "recognises": {
+    "file": "*.json",
+    "has": [
+      "product",
+      "requirements"
+    ]
+  },
+  "asks": [
+    {
+      "id": "requirements",
+      "kind": "a requirements specification",
+      "words": {
+        "en": "requirements specification, requirements spec, requirement specification, requirements document, SRS",
+        "sv": "kravspecifikation, kravspec"
+      }
+    }
+  ]
+}

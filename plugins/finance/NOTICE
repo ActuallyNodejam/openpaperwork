@@ -1,0 +1,31 @@
+OpenPaperwork portable pack
+Copyright 2026 Nodejam AB. Licensed under the Apache License, Version 2.0 (LICENSE). The OpenPaperwork
+and Nodejam names and marks are not licensed with it.
+
+mcp/checks/floor.py ports check logic from OfficeCLI (https://github.com/iOfficeAI/OfficeCLI,
+commit b590a433a6a699bfe1008b9e4c581521528bcb77), Apache-2.0, Copyright 2026 OfficeCLI
+(https://OfficeCLI.AI). Licence text: licenses/officecli-apache-2.0.txt.
+
+skills/contract-drafting/standards carries the Standard Terms of Common Paper's Mutual NDA 1.0, DPA 1.0
+and Cloud Service Agreement 3.0 (https://github.com/CommonPaper), CC BY 4.0, Common Paper, Inc., with the
+changes listed in each file. Notice and changes: licenses/common-paper-cc-by-4.0.txt.
+
+skills/contract-drafting/checklists and skills/_checks/legal_check.py port the NDA and DPA review
+workflows of Open Legal Products' mike-workflows (https://github.com/Open-Legal-Products/mike-workflows,
+commit ce62e6a2d3f4), MIT, Copyright (c) 2026 Mike. Licence text: licenses/mike-workflows-mit.txt.
+
+skills/e-invoice/page/facturx_pdf.py ports the Factur-X attachment and XMP code of akretion's factur-x
+(https://github.com/akretion/factur-x, release 7.4), BSD-3-Clause, Copyright (c) 2016-2023 Alexis de
+Lattre, onto pypdf. Licence text: licenses/factur-x-bsd-3.txt.
+
+skills/_checks/fr_invoice_check.py and skills/e-invoice/scripts/einvoice_create.py restate the French
+BR-FR rules of FNFE-MPE France_RFE (https://github.com/fnfempe/France_RFE, commit 97ba0f3d4ef2),
+Apache-2.0; no schematron is copied. Licence text: licenses/fnfe-france-rfe-apache-2.0.txt.
+
+The French invoice mentions restate CGI annexe II art. 242 nonies A and Code de commerce L441-9,
+L441-10 and D441-5 (Légifrance, impots.gouv.fr, service-public.fr), reused under the Licence Ouverte 2.0
+(Etalab). Notice: licenses/fr-official-texts-etalab-2.0.txt.
+
+skills/_checks/credit_note_check.py restates German rules of the KoSIT XRechnung schematron
+(https://github.com/itplr-kosit/xrechnung-schematron, v2.6.0), Apache-2.0; no schematron is copied.
+Licence text: licenses/xrechnung-schematron-apache-2.0.txt.

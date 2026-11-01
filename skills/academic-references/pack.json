@@ -1,0 +1,20 @@
+{
+  "domain": "academic",
+  "hands_back": [
+    "*.docx"
+  ],
+  "default": "report.docx",
+  "check": "python3 {here}/../_checks/packcheck.py academic-references {file}",
+  "recognises": {
+    "file": "draft.docx"
+  },
+  "asks": [
+    {
+      "id": "references",
+      "kind": "a reference list or citations in APA, IEEE or Vancouver style",
+      "words": {
+        "en": "reference list, bibliography, citations, apa 7, apa style, vancouver style, works cited"
+      }
+    }
+  ]
+}

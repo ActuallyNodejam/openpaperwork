@@ -1,0 +1,92 @@
+{
+ "issuer": "ieee-conference",
+ "version": "1.8b",
+ "date": "2026-10-03",
+ "status": "draft",
+ "title": "IEEE conference paper layout (IEEEtran class)",
+ "source": {
+  "class": "IEEEtran.cls V1.8b (2015/08/26) by Michael Shell, LaTeX Project Public License 1.3, as shipped in the TeX distribution; not copied into this repository",
+  "documents": [
+   "IEEEtran HOWTO for V1.8b (bundled with the class on CTAN, https://ctan.org/pkg/ieeetran)",
+   "IEEE conference manuscript templates, https://www.ieee.org/conferences/publishing/templates.html",
+   "IEEE Reference Guide, see guidelines/ieee/2025-03-28 for the reference entry rules"
+  ],
+  "retrieved": "2026-10-03",
+  "note": "Rules paraphrase the class documentation; no IEEE template file or text is copied. The folder version is the class version the rules were checked against. The page limit and whether review is blind are set by each conference, so a case supplies them."
+ },
+ "license": "Rule wording and the starter file skills/paper/templates/ieee-conference/paper.tex: Apache-2.0 with this repository.",
+ "rules": [
+  {
+   "id": "IEEEC-BUILD-1",
+   "grader": "script",
+   "text": "The paper's source builds to a PDF from a clean folder with no errors."
+  },
+  {
+   "id": "IEEEC-CLASS-1",
+   "grader": "script",
+   "text": "The document class is IEEEtran with the conference option."
+  },
+  {
+   "id": "IEEEC-LAYOUT-1",
+   "grader": "script",
+   "text": "Pages are US letter and the margins, columns, type size and line spacing are the class's own: no layout package, length change, one-column switch or smaller body type."
+  },
+  {
+   "id": "IEEEC-PAGE-1",
+   "grader": "script",
+   "text": "The PDF is within the page limit the venue sets, references included unless the call says otherwise."
+  },
+  {
+   "id": "IEEEC-SEC-1",
+   "grader": "script",
+   "text": "The paper has an abstract without citations, Index Terms, the sections the call asks for in order, and a reference list, with no starter text left."
+  },
+  {
+   "id": "IEEEC-REF-1",
+   "grader": "script",
+   "text": "Citations are bracketed numbers assigned in order of first citation; the list follows that order, every entry is cited, every citation is listed, article titles are in quotation marks and each entry has a year."
+  },
+  {
+   "id": "IEEEC-ANON-1",
+   "grader": "script",
+   "text": "For blind review the author block reads Anonymous and no name, organisation, email, grant or acknowledgment appears in the PDF or its document properties; earlier work by the authors is cited in the third person."
+  },
+  {
+   "id": "IEEEC-FIG-1",
+   "grader": "judge",
+   "text": "Every table and figure has a caption and is referred to by number in the text."
+  },
+  {
+   "id": "PAPER-FONTS",
+   "grader": "script",
+   "script": "academic_style.py",
+   "text": "House convention, not a sourced standard rule: The PDF embeds the template Times family for text and no Computer Modern or Latin Modern faces. Checked as a house convention, not as a rule of the standard.",
+   "house_convention": true,
+   "standard_conformance": false
+  },
+  {
+   "id": "PAPER-CITE-COVER",
+   "grader": "script",
+   "script": "academic_style.py",
+   "text": "House convention, not a sourced standard rule: Every reference in the list is cited in the text. Checked as a house convention, not as a rule of the standard.",
+   "house_convention": true,
+   "standard_conformance": false
+  },
+  {
+   "id": "PAPER-REF-RECORD",
+   "grader": "script",
+   "script": "academic_style.py",
+   "text": "House convention, not a sourced standard rule: Every published paper in the reference list carries its DOI, arXiv id or URL, and every author it lists is in the registry's record for it. Checked as a house convention, not as a rule of the standard.",
+   "house_convention": true,
+   "standard_conformance": false
+  },
+  {
+   "id": "PAPER-CLAIM-CITE",
+   "grader": "script",
+   "script": "academic_style.py",
+   "text": "House convention, not a sourced standard rule: A sentence that claims something of the field or of others' work cites its source in that sentence. Checked as a house convention, not as a rule of the standard.",
+   "house_convention": true,
+   "standard_conformance": false
+  }
+ ]
+}

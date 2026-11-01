@@ -1,0 +1,57 @@
+{
+  "domain": "finance",
+  "hands_back": [
+    "*.pdf"
+  ],
+  "default": "invoice.pdf",
+  "check": "python3 {here}/../_checks/packcheck.py e-invoice {file}",
+  "recognises": {
+    "file": "*.json",
+    "has": [
+      "lines",
+      "number"
+    ],
+    "without": [
+      "type"
+    ]
+  },
+  "asks": [
+    {
+      "id": "invoice",
+      "kind": "an invoice",
+      "words": {
+        "en": "invoice, tax invoice",
+        "de": "Rechnung, Ausgangsrechnung, Abschlagsrechnung, Schlussrechnung, Teilrechnung, Kundenrechnung, XRechnung",
+        "fr": "facture",
+        "nl": "factuur, facturen, verkoopfactuur",
+        "sv": "faktura, kundfaktura",
+        "nb": "faktura",
+        "da": "faktura",
+        "fi": "lasku, myyntilasku, verkkolasku",
+        "es": "factura",
+        "it": "fattura",
+        "pl": "faktura"
+      }
+    },
+    {
+      "id": "credit_note",
+      "kind": "a credit note",
+      "words": {
+        "en": "credit note, credit memo, adjustment note",
+        "de": "Gutschrift, Rechnungskorrektur, Stornorechnung, Korrekturrechnung",
+        "fr": "note de crédit, facture d'avoir, facture rectificative",
+        "nl": "creditnota, creditfactuur, credit nota",
+        "sv": "kreditfaktura, kreditnota",
+        "nb": "kreditnota, kreditfaktura",
+        "da": "kreditnota, kreditfaktura",
+        "fi": "hyvityslasku",
+        "es": "factura rectificativa, nota de crédito, nota de abono",
+        "it": "nota di credito, nota di accredito, nota di variazione",
+        "pl": "faktura korygująca, korekta faktury, nota korygująca"
+      },
+      "weak": {
+        "fr": "avoir"
+      }
+    }
+  ]
+}

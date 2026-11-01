@@ -1,0 +1,70 @@
+{
+  "type": "order_confirmation",
+  "language": "fi",
+  "number": "TV-2026-1180",
+  "issue_date": "2026-10-14",
+  "references": [
+    {
+      "label": "Tilauksenne",
+      "value": "PO-88231"
+    },
+    {
+      "label": "Tarjouksemme",
+      "value": "TR-2026-0921"
+    }
+  ],
+  "dates": [
+    {
+      "label": "Vahvistettu toimituspäivä",
+      "value": "2026-10-28"
+    }
+  ],
+  "currency": "EUR",
+  "seller": {
+    "name": "Kaamos Pakkaus Oy",
+    "street": "Tehdaskatu 8",
+    "postcode": "40100",
+    "city": "Jyväskylä",
+    "country": "Suomi",
+    "vat_id": "FI12345678",
+    "email": "myynti@kaamos-pakkaus.example",
+    "phone": "+358 14 000 0000",
+    "registered_office": "Jyväskylä",
+    "register": "Kaupparekisteri",
+    "register_number": "1234567-8"
+  },
+  "buyer": {
+    "name": "Esimerkki Verkkokauppa Oy",
+    "street": "Kauppakatu 21",
+    "postcode": "53100",
+    "city": "Lappeenranta",
+    "country": "Suomi",
+    "vat_id": "FI87654321"
+  },
+  "delivery_terms": {
+    "rule": "DAP",
+    "place": "Lappeenranta, Suomi"
+  },
+  "transport": "road",
+  "payment_terms": "14 päivää netto laskun päiväyksestä",
+  "lines": [
+    {
+      "code": "KP-120",
+      "description": "Aaltopahvilaatikko 400 × 300 × 200 mm",
+      "quantity": 2000,
+      "unit": "pcs",
+      "unit_price": 0.86,
+      "discount_percent": 0,
+      "vat_rate": 25.5
+    },
+    {
+      "code": "KP-305",
+      "description": "Paperipussi, ruskea, 2 kg",
+      "quantity": 5000,
+      "unit": "pcs",
+      "unit_price": 0.12,
+      "discount_percent": 5,
+      "vat_rate": 25.5
+    }
+  ]
+}

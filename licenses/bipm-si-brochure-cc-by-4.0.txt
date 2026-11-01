@@ -1,0 +1,15 @@
+The International System of Units (SI), 9th edition 2019, version 4.01 (June 2026)
+Bureau International des Poids et Mesures (BIPM)
+https://www.bipm.org/en/publications/si-brochure
+https://doi.org/10.59161/AUEZ1291
+Read 2026-10-08.
+
+Licensed under the Creative Commons Attribution 4.0 International License, as the copyright statement on the
+reverse of the title page of the English PDF (version 4.01) gives it.
+https://creativecommons.org/licenses/by/4.0/
+
+Changes: the rules used here (section 5.2 unit symbols: no abbreviation, no plural, no full stop, one solidus,
+symbols and names not mixed; 5.4.3 a space between the number and the unit, the degree Celsius included and the
+plane-angle degree excepted; 5.4.7 a space before %) are restated in our own words in
+skills/_checks/requirements_check.py, skills/requirements-spec/SKILL.md and standards/guidelines/bipm-si;
+no text is copied whole. The BIPM does not endorse this software.

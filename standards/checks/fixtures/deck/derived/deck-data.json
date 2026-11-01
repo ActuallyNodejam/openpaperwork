@@ -1,0 +1,1 @@
+{"incoming": {"q1": 120, "q2": 150}, "resolved": {"q1": 108, "q2": 135}, "by_type_q1": {"access": 48, "hardware": 30}, "by_type_q2": {"access": 62, "hardware": 48}, "median_hours": {"q1": 2.4, "q2": 2.1}}

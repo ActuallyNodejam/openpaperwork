@@ -1,0 +1,32 @@
+{
+  "standard": "common-paper-csa-2.1",
+  "kind": "csa",
+  "effective_date": "2027-01-01",
+  "parties": [
+    {"name": "Molnhyllan AB", "registration": "556000-0031", "address": "Sankt Eriksgatan 63, 112 34 Stockholm, Sweden", "role": "Provider",
+     "notice_address": "legal@molnhyllan.example", "signatory": {"name": "Maria Wikström", "title": "Chief Executive Officer"}},
+    {"name": "Bergström Cykel AB", "registration": "556000-0032", "address": "Storgatan 22, 903 26 Umeå, Sweden", "role": "Customer",
+     "notice_address": "inkop@bergstromcykel.example", "signatory": {"name": "Per Bergström", "title": "Managing Director"}}
+  ],
+  "terms": {
+    "General Cap Amount": "The Fees paid or payable by Customer in the 12 months before the event giving rise to the claim",
+    "Provider Covered Claims": "Any claim that the Cloud Service, used as this Agreement allows, infringes a third party's intellectual property rights",
+    "Customer Covered Claims": "None",
+    "Increased Cap Amount": "None",
+    "Increased Claims": "None",
+    "Unlimited Claims": "None",
+    "Additional Warranties": "None",
+    "DPA": "The Data Processing Agreement between the parties dated 1 January 2027",
+    "Cloud Service": "Molnhyllan Lager, the stock and order management service, for up to three shops and 15 named users",
+    "Order Date": "1 January 2027",
+    "Subscription Period": "12 months from the Order Date",
+    "Non-Renewal Notice Date": "30 days before the end of the Subscription Period",
+    "Fees": "SEK 4,500 a month, excluding VAT",
+    "Payment Process": "Invoiced monthly in advance; payment within 30 days of the invoice date",
+    "Technical Support": "Email and phone support on Swedish working days, 08:00 to 17:00 CET, first answer within one working day"
+  },
+  "governing_law": "",
+  "courts": "",
+  "modifications": [],
+  "_note": "The Governing Law and the Chosen Courts are the parties' choice: ask the person, never fill them in."
+}

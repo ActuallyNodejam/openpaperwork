@@ -1,0 +1,1 @@
+Our customer's accounting system only accepts electronic invoices. Create invoice.xml from order.csv and parties.txt: an electronic invoice that follows the European standard EN 16931, in the Cross Industry Invoice format used by Factur-X. It must pass an EN 16931 validator. Use only the details in the two files and follow the rounding rule in parties.txt.

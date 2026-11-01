@@ -1,0 +1,30 @@
+diagram-design, Cathryn Lavery (https://github.com/cathrynlavery/diagram-design), version 2.6.74 at commit
+7a2e22170ee838e859d8142ba825d83f8b6375e6. Read 2026-10-12.
+Changes: scripts/verify-geometry.py and skills/diagram-design/scripts/self_check.py are copied unchanged (a header
+line added) as skills/_checks/diagram_geometry.py and skills/_checks/diagram_contract.py. SKILL.md, the style guide,
+primitives-core.md, layout-budget.md, output-spec.md and seven type references (flowchart, swimlane, org chart,
+timeline, gantt, quadrant, layer stack) are restated in skills/diagram/SKILL.md and drawn by
+skills/diagram/scripts/diagram.py; the look comes from skills/business-deck/look.json instead of its skin, with no
+web font. The other 37 types, the dark, full and motion variants, the imports and onboarding are left out.
+
+MIT License
+
+Copyright (c) 2025 Cathryn Lavery
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

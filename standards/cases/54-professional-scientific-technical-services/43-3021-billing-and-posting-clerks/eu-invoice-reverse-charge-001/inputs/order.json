@@ -1,0 +1,49 @@
+{
+ "number": "INV-2026-0011",
+ "issue_date": "2026-10-15",
+ "due_date": "2026-11-14",
+ "delivery_date": "2026-10-12",
+ "currency": "EUR",
+ "payment_terms": "30 days net",
+ "note": "Reverse charge: the customer accounts for the VAT.",
+ "seller": {
+  "name": "Nordlicht Kontor GmbH",
+  "street": "Chausseestrasse 42",
+  "postcode": "10115",
+  "city": "Berlin",
+  "country": "DE",
+  "vat_id": "DE123456789"
+ },
+ "buyer": {
+  "name": "Bureau Lumiere SARL",
+  "street": "12 rue de Rivoli",
+  "postcode": "75001",
+  "city": "Paris",
+  "country": "FR",
+  "vat_id": "FR12345678901"
+ },
+ "payment": {
+  "means_code": "58",
+  "iban": "DE02120300000000202051"
+ },
+ "lines": [
+  {
+   "name": "Beratung Softwaremigration",
+   "quantity": 20,
+   "unit": "HUR",
+   "unit_price": 135.0,
+   "discount_percent": 0,
+   "vat_rate": 0,
+   "vat_category": "AE"
+  },
+  {
+   "name": "Wartung Oktober",
+   "quantity": 1,
+   "unit": "C62",
+   "unit_price": 500.0,
+   "discount_percent": 0,
+   "vat_rate": 0,
+   "vat_category": "AE"
+  }
+ ]
+}

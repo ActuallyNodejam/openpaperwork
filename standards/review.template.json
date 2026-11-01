@@ -1,0 +1,20 @@
+{
+  "case_id": null,
+  "case_version": null,
+  "stage": null,
+  "output_sha256": null,
+  "reviewer": null,
+  "method": "human or named model plus version",
+  "render_engine": null,
+  "render_version": null,
+  "render_evidence": [],
+  "criteria": [
+    {
+      "criterion": null,
+      "verdict": "not_reviewed",
+      "evidence": null
+    }
+  ],
+  "acceptance": "not_reviewed",
+  "notes": null
+}

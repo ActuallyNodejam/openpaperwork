@@ -1,0 +1,118 @@
+{
+ "id": "board-minutes-uk-001",
+ "title": "Write up the board minutes from the meeting about the new office",
+ "person": "The company secretary of a small UK design consultancy.",
+ "format": "docx",
+ "output": "minutes.docx",
+ "locale": "en-GB",
+ "sector": {
+  "naics": "54",
+  "name": "Professional, Scientific, and Technical Services"
+ },
+ "occupation": {
+  "soc": "11-1011.00",
+  "name": "Chief Executives"
+ },
+ "review": [
+  "The office lease and the interim dividend are recorded as resolutions; the chair signs; a quorum was present."
+ ],
+ "revised_review": [
+  "The dividend is 8p per share; 6p appears nowhere."
+ ],
+ "truth": {
+  "revision": {
+   "stale": [
+    "6p"
+   ]
+  }
+ },
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "head",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-HEAD",
+   "guidelines": [
+    "roberts-rules/1915#MIN-01",
+    "roberts-rules/1915#MIN-03"
+   ],
+   "text": "The body, the kind of meeting and the date are given."
+  },
+  {
+   "id": "times",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-TIMES",
+   "guidelines": [
+    "roberts-rules/1915#MIN-09"
+   ],
+   "text": "The opening and closing times are given."
+  },
+  {
+   "id": "signed",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-SIGNED",
+   "guidelines": [
+    "uk-companies-act/2006#UK-MIN-02"
+   ],
+   "text": "The minutes carry the signature lines the statute asks for."
+  },
+  {
+   "id": "statute",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-STATUTE",
+   "guidelines": [
+    "uk-companies-act/2006#UK-MIN-03",
+    "uk-companies-act/2006#UK-MIN-04"
+   ],
+   "text": "What the statute asks the minutes to hold is there."
+  },
+  {
+   "id": "language",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-LANGUAGE",
+   "guidelines": [
+    "letter-layouts/2026-10#LETTER-LANGUAGE"
+   ],
+   "text": "Labels and signature roles are in the minutes' language."
+  },
+  {
+   "id": "decisions",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "uk-companies-act/2006#UK-MIN-04"
+   ],
+   "text": "The lease of Unit 2, Mill Yard at £38,500 a year and the interim dividend are recorded as the board's resolutions."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and addresses are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "roberts-rules/1915",
+  "uk-companies-act/2006",
+  "letter-layouts/2026-10",
+  "every-file/1.1.0"
+ ]
+}

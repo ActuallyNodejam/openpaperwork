@@ -1,0 +1,49 @@
+{
+  "language": "en",
+  "law": "us",
+  "work_state": "NY",
+  "given": "2026-10-20",
+  "employer": {
+    "name": "Example Packaging Supply LLC",
+    "operating_name": "Example Packaging",
+    "address": "210 Hudson Avenue, Albany, NY 12210",
+    "phone": "(518) 555-0142",
+    "signatory": "Dana Whitfield, Operations Manager"
+  },
+  "worker": {
+    "name": "Marcus Reyes",
+    "address": "45 Lark Street, Apt 3, Albany, NY 12210"
+  },
+  "job": {
+    "title": "Warehouse associate",
+    "description": "Receiving, picking and packing orders, and keeping the stock counts. You report to the warehouse lead."
+  },
+  "start": "2026-11-02",
+  "place": "The Albany warehouse, 210 Hudson Avenue, Albany, NY 12210",
+  "term": {
+    "type": "at-will"
+  },
+  "flsa": {
+    "status": "non-exempt"
+  },
+  "pay": {
+    "amount": 21.5,
+    "currency": "USD",
+    "per": "hour",
+    "overtime_rate": "$32.25 an hour",
+    "paid": "weekly, every Friday, for the week ending the Sunday before",
+    "method": "direct deposit to your bank account"
+  },
+  "hours": {
+    "pattern": "fixed",
+    "standard": "full-time, 40 hours a week, Monday to Friday, 7:00 a.m. to 3:30 p.m. with a 30-minute unpaid meal break"
+  },
+  "leave": "Paid sick leave as New York Labor Law 196-b provides, and 10 days of paid vacation a year, accrued monthly",
+  "benefits": "Health insurance from the first of the month after 30 days of employment, and a 401(k) plan with a match of 3 percent of pay",
+  "conditions": "This offer depends on your completing Form I-9 and showing documents that establish your identity and employment authorization by your third day of work",
+  "state_notice": {
+    "allowances": "None",
+    "payday": "Friday",
+    "primary_language": "English"
+  }
+}

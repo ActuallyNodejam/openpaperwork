@@ -1,0 +1,54 @@
+{
+  "number": "K-2026-019",
+  "issue_date": "2026-10-20",
+  "delivery_date": "2026-09-30",
+  "currency": "DKK",
+  "payment_terms": "Tilbagebetales inden 14 dage",
+  "buyer_reference": "Mette Eksempel",
+  "seller": {
+    "name": "Havbro Design ApS",
+    "legal_form": "ApS",
+    "street": "Prøvegade 12",
+    "postcode": "8000",
+    "city": "Aarhus C",
+    "country": "DK",
+    "cvr": "12345674",
+    "vat_id": "DK12345674",
+    "electronic_address": "0184:12345674",
+    "registered_office": "Aarhus",
+    "contact": {
+      "name": "Jens Eksempel",
+      "phone": "+45 80 00 00 00",
+      "email": "post@havbro.example"
+    }
+  },
+  "buyer": {
+    "name": "Lyngby Eksempel A/S",
+    "street": "Testvej 3",
+    "postcode": "2800",
+    "city": "Kongens Lyngby",
+    "country": "DK",
+    "cvr": "11223346",
+    "vat_id": "DK11223346",
+    "electronic_address": "0184:11223346"
+  },
+  "payment": {
+    "means_code": "42",
+    "bank_reg": "1234",
+    "account": "0001234567"
+  },
+  "lines": [
+    {
+      "name": "Plakater A2, tryk, trykfejl",
+      "quantity": 10,
+      "unit": "C62",
+      "unit_price": 62.5,
+      "vat_rate": 25,
+      "vat_category": "S"
+    }
+  ],
+  "type_code": "381",
+  "preceding_invoice": "F-2026-118",
+  "preceding_invoice_date": "2026-10-05",
+  "note": "Kreditnota for ti plakater med trykfejl på faktura F-2026-118."
+}

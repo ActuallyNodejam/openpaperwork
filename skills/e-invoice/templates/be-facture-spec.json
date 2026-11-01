@@ -1,0 +1,61 @@
+{
+  "number": "F-2026-0207",
+  "issue_date": "2026-10-12",
+  "due_date": "2026-11-11",
+  "delivery_date": "2026-10-09",
+  "currency": "EUR",
+  "payment_terms": "30 days net",
+  "order_reference": "BC-5521",
+  "seller": {
+    "name": "Meuse Exemple SRL",
+    "legal_form": "SRL",
+    "street": "Rue de l'Exemple 7",
+    "postcode": "4000",
+    "city": "Liège",
+    "country": "BE",
+    "register_number": "0202.020.217",
+    "vat_id": "BE0202020217",
+    "register": "RPM Liège, division Liège",
+    "registered_office": "Liège",
+    "electronic_address": "0208:0202020217",
+    "contact": {
+      "name": "Claire Exemple",
+      "phone": "+32 4 000 00 00",
+      "email": "factures@meuse.example"
+    }
+  },
+  "buyer": {
+    "name": "Librairie Test Namur SA",
+    "street": "Place d'Essai 1",
+    "postcode": "5000",
+    "city": "Namur",
+    "country": "BE",
+    "register_number": "0111.111.124",
+    "vat_id": "BE0111111124",
+    "electronic_address": "0208:0111111124"
+  },
+  "payment": {
+    "means_code": "58",
+    "iban": "BE68 5390 0754 7034",
+    "bic": "GKCCBEBB",
+    "reference": "+++202/6102/00148+++"
+  },
+  "lines": [
+    {
+      "name": "Guide pratique, édition 2026 (livre imprimé)",
+      "quantity": 40,
+      "unit": "C62",
+      "unit_price": 18.5,
+      "vat_rate": 6,
+      "vat_category": "S"
+    },
+    {
+      "name": "Mise en page sur mesure",
+      "quantity": 6,
+      "unit": "HUR",
+      "unit_price": 70.0,
+      "vat_rate": 21,
+      "vat_category": "S"
+    }
+  ]
+}

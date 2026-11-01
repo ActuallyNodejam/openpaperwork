@@ -1,0 +1,33 @@
+Belgian, Dutch and Austrian laws and official texts on invoices, used by the e-invoice pack
+
+Official texts are not protected by copyright in these countries:
+- Belgium: Code of Economic Law art. XI.172 § 2, official acts of the authority give no copyright.
+- The Netherlands: Auteurswet art. 11, no copyright in laws, decrees and ordinances; the Belastingdienst
+  publishes its site text under CC0 (belastingdienst.nl, copyright page).
+- Austria: Urheberrechtsgesetz § 7, laws, decrees and official publications are free works.
+
+Sources, read 2026-10-09:
+- Belgium: Royal Decree no. 1 of 29 December 1992 on VAT, art. 5 § 1 (9°bis "Autoliquidation" /
+  "Btw verlegd" quoted) and art. 12 § 3 (a correcting document refers to the invoice), Justel
+  consolidation of 31-12-2025; the Law of 6 February 2024 (VAT Code art. 53 § 2bis) and the Royal Decree
+  of 8 July 2025, which added art. 13ter and 13quater on structured e-invoices from 1 January 2026 and
+  left art. 5 as it was; Code of companies and associations art. 2:20; Royal Decree of 24 June 2003
+  art. 3 on the enterprise number; Flemish decree of 19 July 1973 art. 2 and 5 § 1 and § 2/1 (inserted by
+  the decree of 7 July 2017, in force 11 August 2017), all on ejustice.just.fgov.be. Justel carries no
+  German text of Royal Decree no. 1, so the German mention is that of Council Directive 2006/112/EC
+  Art. 226(11a), "Steuerschuldnerschaft des Leistungsempfängers" (EU legal text, reuse under Commission
+  Decision 2011/833/EU), the words FPS Finance's German pages use (finanzen.belgium.be).
+- The Netherlands: Wet op de omzetbelasting 1968 art. 34f and 35a (version from 1 January 2026, lid 1 m
+  "btw verlegd" quoted) and Handelsregisterwet 2007 art. 27 lid 1, wetten.overheid.nl; Belastingdienst
+  "Factuureisen"; Ondernemersplein "Nummers voor de btw".
+- Austria: Umsatzsteuergesetz 1994 § 11 (as in force since 24 December 2025, last amended by BGBl. I
+  Nr. 97/2025; Abs. 1 Z 3 lit. b for the recipient's UID over 10 000 euros, lit. i for the supplier's,
+  Abs. 1a "Steuerschuldnerschaft des Leistungsempfängers" quoted), Unternehmensgesetzbuch § 14,
+  e-Rechnungsverordnung (BGBl. II Nr. 505/2012, § 4 and § 5), RIS (ris.bka.gv.at); BMF, "Konstruktionsregeln
+  der UID" (Stand November 2020) for the UID check digit and its sample; erechnung.gv.at on the formats the
+  federal portal takes (ebInterface, UBL) and the order reference.
+
+Changes: the requirements are restated in our own words as builder refusals and page checks in
+skills/e-invoice/scripts/countries.py, skills/e-invoice/page/country_page.py and
+skills/_checks/einvoice_country.py; only the fixed mentions above are quoted. This is not legal or tax
+advice.

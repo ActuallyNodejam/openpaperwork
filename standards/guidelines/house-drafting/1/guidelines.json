@@ -1,0 +1,60 @@
+{
+  "issuer": "house-drafting",
+  "version": "1",
+  "license": "House rules; no external standard is claimed. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-08",
+  "status": "draft",
+  "title": "Drafting check for agreements",
+  "source": "OpenPaperwork: the structure of an agreement, never its merits.",
+  "rules": [
+    {
+      "id": "DRAFT-PARTIES",
+      "grader": "script",
+      "text": "Every party is named with its registration number and address.",
+      "source": "drafting practice",
+      "check": "legal_check.py LEGAL-PARTIES"
+    },
+    {
+      "id": "DRAFT-DATE",
+      "grader": "script",
+      "text": "The agreement states the date it takes effect.",
+      "source": "drafting practice",
+      "check": "legal_check.py LEGAL-DATE"
+    },
+    {
+      "id": "DRAFT-TERMS",
+      "grader": "script",
+      "text": "Each defined term is defined once and used.",
+      "source": "drafting practice",
+      "check": "legal_check.py LEGAL-TERMS"
+    },
+    {
+      "id": "DRAFT-XREF",
+      "grader": "script",
+      "text": "Every cross-reference points at a clause that exists.",
+      "source": "drafting practice",
+      "check": "legal_check.py LEGAL-XREF"
+    },
+    {
+      "id": "DRAFT-LAW",
+      "grader": "script",
+      "text": "A governing law clause names the law the parties chose, with no placeholder; the library never fills it in.",
+      "source": "drafting practice",
+      "check": "legal_check.py LEGAL-LAW"
+    },
+    {
+      "id": "DRAFT-SIGN",
+      "grader": "script",
+      "text": "There is a signature block for every party.",
+      "source": "drafting practice",
+      "check": "legal_check.py LEGAL-SIGN"
+    },
+    {
+      "id": "DRAFT-NO-VERDICT",
+      "grader": "script",
+      "text": "A review names findings item by item and never gives a verdict on the agreement as a whole: not compliant, lawful, valid or approved, and not safe or ready to sign.",
+      "source": "OpenPaperwork: the library gives no legal advice",
+      "check": "legal_check.py LEGAL-WORDING"
+    }
+  ]
+}

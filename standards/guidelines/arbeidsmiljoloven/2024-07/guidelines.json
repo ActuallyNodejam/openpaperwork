@@ -1,0 +1,90 @@
+{
+  "issuer": "arbeidsmiljoloven",
+  "version": "2024-07",
+  "link": "https://lovdata.no/lov/2005-06-17-62",
+  "license": "Norwegian law, not protected by copyright (åndsverkloven § 14); restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Arbeidsmiljøloven §§ 14-5 to 14-7, 14-9 and 15-6: the written employment contract",
+  "source": "Lov om arbeidsmiljø, arbeidstid og stillingsvern mv. (arbeidsmiljøloven), LOV-2005-06-17-62, as amended by lov 15. desember 2023 nr. 88 in force 1 July 2024. Read on lovdata.no 2026-10-09.",
+  "note": "A drafting check, not legal advice: the scripted rules read whether a particular is there, never whether a term is lawful.",
+  "rules": [
+    {
+      "id": "NO-01",
+      "grader": "script",
+      "text": "A written contract is in place within seven days of the start when the employment runs more than a month, and at once when it runs less or the worker is hired out.",
+      "source": "§ 14-5 (2), (3)",
+      "check": "employment_check.py EMPLOY-DATES"
+    },
+    {
+      "id": "NO-02",
+      "grader": "script",
+      "text": "The contract gives the parties, the workplace (or that the work moves, with the employer's business address), the work or title, and the start.",
+      "source": "§ 14-6 (1) a-d",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "NO-03",
+      "grader": "script",
+      "text": "A temporary hire gives its expected length and its basis under § 14-9.",
+      "source": "§ 14-6 (1) e; § 14-9 (2)",
+      "check": "employment_check.py EMPLOY-NO-TEMP"
+    },
+    {
+      "id": "NO-04",
+      "grader": "script",
+      "text": "A probation gives its length; at most six months, and in a temporary hire at most half its length.",
+      "source": "§ 14-6 (1) f; § 15-6 (3)",
+      "check": "employment_check.py EMPLOY-PROBATION"
+    },
+    {
+      "id": "NO-05",
+      "grader": "script",
+      "text": "Holidays and holiday pay, how the holiday is fixed, and any other paid absence; the notice periods and how the employment ends.",
+      "source": "§ 14-6 (1) g, h",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "NO-06",
+      "grader": "script",
+      "text": "The pay at the start with each supplement and benefit (pension, board, night allowance) stated separately, how and when it is paid.",
+      "source": "§ 14-6 (1) i",
+      "check": "employment_check.py EMPLOY-PAY"
+    },
+    {
+      "id": "NO-07",
+      "grader": "script",
+      "text": "The length and placing of the daily and weekly hours, and the breaks.",
+      "source": "§ 14-6 (1) j, k",
+      "check": "employment_check.py EMPLOY-NO-HOURS"
+    },
+    {
+      "id": "NO-08",
+      "grader": "script",
+      "text": "Any special working-time arrangement, shift changes and work beyond the agreed hours with its pay, collective agreements and who made them, the user undertaking of a hired-out worker, training the employer offers, and the social security the employer provides with the institutions paid.",
+      "source": "§ 14-6 (1) l-q",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "NO-09",
+      "grader": "script",
+      "text": "Only items g to k, m, p and q may be given by pointing to a law, a regulation or a collective agreement.",
+      "source": "§ 14-6 (2)",
+      "check": "employment_check.py EMPLOY-REFERENCE"
+    },
+    {
+      "id": "NO-10",
+      "grader": "script",
+      "text": "Work abroad for more than four consecutive weeks: the countries and length, the currency, the benefits and the terms of the journey home, agreed before departure.",
+      "source": "§ 14-7",
+      "check": "employment_check.py EMPLOY-ABROAD"
+    },
+    {
+      "id": "NO-11",
+      "grader": "script",
+      "text": "The contract is written in Norwegian throughout, headings included.",
+      "source": "house rule for a Norwegian document",
+      "check": "employment_check.py EMPLOY-LANG"
+    }
+  ]
+}

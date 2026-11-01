@@ -1,0 +1,55 @@
+{
+  "type_code": "381",
+  "number": "2026-0009",
+  "series": "R",
+  "issue_date": "2026-10-20",
+  "currency": "EUR",
+  "preceding_invoice": "2026-0142",
+  "preceding_series": "A",
+  "preceding_invoice_date": "2026-10-09",
+  "note": "Devolución de 200 catálogos con defecto de corte",
+  "correction": {
+    "reason_code": "16",
+    "period": {
+      "from": "2026-10-01",
+      "to": "2026-12-31"
+    }
+  },
+  "seller": {
+    "name": "Ejemplo Imprenta S.L.",
+    "legal_form": "S.L.",
+    "street": "Calle del Ejemplo 12",
+    "postcode": "28001",
+    "city": "Madrid",
+    "province": "Madrid",
+    "country": "ES",
+    "vat_id": "ESB12345674",
+    "register": "Registro Mercantil de Madrid",
+    "contact": {
+      "name": "Lucía Ejemplo",
+      "phone": "+34 910 000 000",
+      "email": "facturas@imprenta.example"
+    },
+    "registered_office": "Madrid",
+    "register_number": "tomo 0000, folio 000, hoja M-000000"
+  },
+  "buyer": {
+    "name": "Ejemplo Librería S.A.",
+    "street": "Avenida de la Muestra 4",
+    "postcode": "46700",
+    "city": "Gandia",
+    "province": "Valencia",
+    "country": "ES",
+    "vat_id": "ESA99999997"
+  },
+  "lines": [
+    {
+      "name": "Impresión de catálogo, 48 páginas, cuatricromía",
+      "quantity": 200,
+      "unit": "C62",
+      "unit_price": 1.84,
+      "vat_rate": 21,
+      "vat_category": "S"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "issuer": "eu-company-law",
+  "version": "2017-1132",
+  "link": "https://eur-lex.europa.eu/eli/dir/2017/1132/oj",
+  "license": "EU legal text, reusable under Commission Decision 2011/833/EU; the article is cited. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-07",
+  "status": "draft",
+  "source": "Directive (EU) 2017/1132 relating to certain aspects of company law, Art. 26 (letters and order forms), with the national rules that carry it: GmbHG 35a and HGB 37a in Germany, aktiebolagslagen 28 kap. 5 § in Sweden. Only the requirements are cited.",
+  "rules": [
+    {
+      "id": "LETTER-COMPANY",
+      "grader": "script",
+      "text": "A company's letters and order forms state the register and registration number, the legal form and the registered office; a GmbH also names its managing directors. When the files do not give them, the reply says which are missing.",
+      "source": "Directive (EU) 2017/1132 Art. 26; GmbHG 35a; aktiebolagslagen 28 kap. 5 §",
+      "check": "letter_check.py LETTER-COMPANY"
+    }
+  ]
+}

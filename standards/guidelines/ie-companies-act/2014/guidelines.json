@@ -1,0 +1,60 @@
+{
+  "issuer": "ie-companies-act",
+  "version": "2014",
+  "link": "https://revisedacts.lawreform.ie/eli/2014/act/38/revised/en/html",
+  "license": "(c) Government of Ireland; Oireachtas copyright material reused under the Oireachtas (Open Data) PSI Licence, which incorporates CC BY 4.0; restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Companies Act 2014 ss.160, 161, 166 and 199: the minutes of directors' and general meetings",
+  "source": "Companies Act 2014 (No. 38 of 2014), ss. 160, 161, 166, 182 and 199 as enacted, read on irishstatutebook.ie 2026-10-09. Later amendments were not read for these sections.",
+  "rules": [
+    {
+      "id": "IE-MIN-01",
+      "grader": "script",
+      "text": "The minutes of a directors' meeting give the names of the directors present.",
+      "source": "s.166(1)(b)",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "IE-MIN-02",
+      "grader": "script",
+      "text": "Every resolution and the proceedings of a directors' meeting are entered in the minutes, and so is every appointment of an officer.",
+      "source": "s.166(1)(a) and (c)",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "IE-MIN-03",
+      "grader": "script",
+      "text": "Minutes signed by the chairperson of the meeting, or of the next one, are evidence of the proceedings; the minutes carry the chairperson's signature line.",
+      "source": "s.166(3); s.199(3) for general meetings",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "IE-MIN-04",
+      "grader": "script",
+      "text": "The directors act with a quorum, two unless they fix another number and one for a sole director; the minutes say one was present.",
+      "source": "s.160(6)",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "IE-MIN-05",
+      "grader": "script",
+      "text": "A resolution in writing signed by all the directors is as valid as one passed at a meeting; its record carries every director's signature line.",
+      "source": "s.161(1)",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "IE-MIN-06",
+      "grader": "script",
+      "text": "The minutes of a general meeting record its proceedings and the terms of every resolution.",
+      "source": "s.199(1)",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "IE-MIN-07",
+      "grader": "judge",
+      "text": "Minutes are entered in the books as soon as may be after the meeting.",
+      "source": "s.166(2); s.199(1)"
+    }
+  ]
+}

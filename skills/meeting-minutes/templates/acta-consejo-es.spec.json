@@ -1,0 +1,68 @@
+{
+  "language": "es",
+  "country": "ES",
+  "body": "Ejemplo Imprenta S.A.",
+  "company_number": "A00000000",
+  "meeting": "board",
+  "number": "7/2026",
+  "date": "2026-10-14",
+  "start": "10:00",
+  "end": "11:40",
+  "place": "Calle del Ejemplo 12, Madrid",
+  "convened": {
+    "date": "2026-10-05",
+    "how": "por correo electrónico a todos los consejeros"
+  },
+  "chair": "Elena Robles",
+  "secretary": "Marcos Vidal",
+  "present": [
+    "Elena Robles",
+    "Javier Soler",
+    "Nuria Campos"
+  ],
+  "represented": [
+    {
+      "name": "Pablo Ortega",
+      "by": "Elena Robles"
+    }
+  ],
+  "in_attendance": [
+    "Marcos Vidal (secretario no consejero)"
+  ],
+  "quorum": true,
+  "items": [
+    {
+      "title": "Presupuesto de 2027",
+      "notes": "La dirección financiera presenta el presupuesto de 2027, con unos ingresos previstos de 4,2 millones de euros.",
+      "decisions": [
+        {
+          "text": "aprobar el presupuesto de 2027 tal como se ha presentado",
+          "unanimous": true
+        }
+      ]
+    },
+    {
+      "title": "Compra de una prensa digital",
+      "notes": "Se examinan dos ofertas para sustituir la prensa de 2014.",
+      "decisions": [
+        {
+          "text": "autorizar la compra de una prensa digital por un máximo de 380.000 euros",
+          "for": [
+            "Elena Robles",
+            "Javier Soler",
+            "Pablo Ortega"
+          ],
+          "against": [
+            "Nuria Campos"
+          ]
+        }
+      ],
+      "dissent": [
+        {
+          "name": "Nuria Campos",
+          "text": "considera que la inversión debe aplazarse hasta conocer los resultados del ejercicio"
+        }
+      ]
+    }
+  ]
+}

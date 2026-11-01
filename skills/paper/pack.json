@@ -1,0 +1,24 @@
+{
+  "domain": "academic",
+  "hands_back": [
+    "*.pdf"
+  ],
+  "default": "paper.pdf",
+  "check": "python3 {here}/../_checks/packcheck.py paper {file}",
+  "recognises": {
+    "file": "*.json",
+    "has": [
+      "sections"
+    ],
+    "also": "*.tex"
+  },
+  "asks": [
+    {
+      "id": "paper",
+      "kind": "a research paper in a publisher's layout",
+      "words": {
+        "en": "research paper, conference paper, journal paper, ieee paper, acm paper, preprint, manuscript, journal submission, conference submission"
+      }
+    }
+  ]
+}

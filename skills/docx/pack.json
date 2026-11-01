@@ -1,0 +1,11 @@
+{
+  "domain": "formats",
+  "hands_back": [
+    "*.docx"
+  ],
+  "default": "report.docx",
+  "check": "python3 {here}/../_checks/packcheck.py docx {file}",
+  "recognises": {
+    "file": "notes.txt"
+  }
+}

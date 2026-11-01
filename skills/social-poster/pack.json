@@ -1,0 +1,14 @@
+{
+  "domain": "marketing",
+  "asks": [
+    {
+      "id": "poster",
+      "kind": "a fair or event poster",
+      "words": {
+        "en": "event poster, fair poster, trade show poster, trade-show poster, poster, instagram square, instagram story, fair post, trade fair post, save-the-date card, thank-you post, agenda card",
+        "de": "Plakat, Messeplakat",
+        "sv": "affisch, mässaffisch"
+      }
+    }
+  ]
+}

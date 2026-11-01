@@ -1,0 +1,71 @@
+{
+  "type": "purchase_order",
+  "language": "en",
+  "number": "PO-2026-0001",
+  "issue_date": "2026-03-02",
+  "quotation": "Q-2026-0001",
+  "requested_delivery_date": "2026-03-23",
+  "references": [
+    {
+      "label": "Our reference",
+      "value": "Example Buyer, purchasing"
+    }
+  ],
+  "currency": "EUR",
+  "seller": {
+    "name": "Example Supplier GmbH",
+    "street": "Beispielweg 1",
+    "postcode": "20095",
+    "city": "Hamburg",
+    "country": "Germany",
+    "vat_id": "DE000000001"
+  },
+  "buyer": {
+    "name": "Example Customer AB",
+    "street": "Storgatan 2",
+    "postcode": "211 34",
+    "city": "Malmö",
+    "country": "Sweden",
+    "vat_id": "SE556000000002",
+    "registered_office": "Malmö",
+    "register_number": "556000-0001",
+    "email": "purchasing@example-customer.example",
+    "phone": "+46 40 000 00 00"
+  },
+  "deliver_to": {
+    "name": "Example Customer AB, goods reception",
+    "street": "Lagervägen 5",
+    "postcode": "213 75",
+    "city": "Malmö",
+    "country": "Sweden"
+  },
+  "delivery_terms": {
+    "rule": "DAP",
+    "place": "Malmö, Sweden"
+  },
+  "transport": "road",
+  "payment_terms": "30 days net from invoice date",
+  "lines": [
+    {
+      "code": "A-100",
+      "description": "Example part, steel",
+      "quantity": 40,
+      "unit": "pcs",
+      "unit_price": 12.5,
+      "discount_percent": 0,
+      "vat_rate": 0
+    },
+    {
+      "code": "B-200",
+      "description": "Example bracket, aluminium",
+      "quantity": 15,
+      "unit": "pcs",
+      "unit_price": 31.2,
+      "discount_percent": 5,
+      "vat_rate": 0
+    }
+  ],
+  "notes": [
+    "Prices, discount and VAT as in your quotation Q-2026-0001. Please confirm this order and the delivery date."
+  ]
+}

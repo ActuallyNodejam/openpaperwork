@@ -1,0 +1,63 @@
+{
+  "type": "purchase_order",
+  "language": "fi",
+  "number": "OT-2026-0074",
+  "issue_date": "2026-10-15",
+  "quotation": "Q-2026-3301",
+  "requested_delivery_date": "2026-11-05",
+  "references": [
+    {
+      "label": "Viitteemme",
+      "value": "Ville Koski"
+    }
+  ],
+  "currency": "EUR",
+  "buyer": {
+    "name": "Kaamos Pakkaus Oy",
+    "street": "Tehdaskatu 8",
+    "postcode": "40100",
+    "city": "Jyväskylä",
+    "country": "Suomi",
+    "vat_id": "FI12345678",
+    "email": "myynti@kaamos-pakkaus.example",
+    "phone": "+358 14 000 0000",
+    "registered_office": "Jyväskylä",
+    "register": "Kaupparekisteri",
+    "register_number": "1234567-8"
+  },
+  "seller": {
+    "name": "Exempel Kartong AB",
+    "street": "Bruksgatan 3",
+    "postcode": "652 21",
+    "city": "Karlstad",
+    "country": "Sverige",
+    "vat_id": "SE556000000003"
+  },
+  "deliver_to": {
+    "name": "Kaamos Pakkaus Oy, tavaranvastaanotto",
+    "street": "Tehdaskatu 8",
+    "postcode": "40100",
+    "city": "Jyväskylä",
+    "country": "Suomi"
+  },
+  "delivery_terms": {
+    "rule": "DAP",
+    "place": "Jyväskylä, Suomi"
+  },
+  "transport": "road",
+  "payment_terms": "30 päivää netto laskun päiväyksestä",
+  "lines": [
+    {
+      "code": "EK-500",
+      "description": "Kartonkiarkki 700 × 1000 mm, 350 g/m²",
+      "quantity": 12000,
+      "unit": "pcs",
+      "unit_price": 0.21,
+      "discount_percent": 0,
+      "vat_rate": 0
+    }
+  ],
+  "notes": [
+    "Yhteisökauppa: ostaja tilittää arvonlisäveron (käännetty verovelvollisuus)."
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "type": "purchase_order",
+  "language": "pl",
+  "number": "ZAM-2026-0211",
+  "issue_date": "2026-10-20",
+  "quotation": "OF-2026-0398",
+  "requested_delivery_date": "2026-11-10",
+  "references": [
+    {
+      "label": "Nasz znak",
+      "value": "Marek Wójcik"
+    }
+  ],
+  "currency": "PLN",
+  "seller": {
+    "name": "Przykład Opakowania S.A.",
+    "street": "ul. Wzorcowa 3",
+    "postcode": "30-001",
+    "city": "Kraków",
+    "country": "Polska",
+    "vat_id": "PL9876543210"
+  },
+  "buyer": {
+    "name": "Przykład Logistyka sp. z o.o.",
+    "street": "ul. Przykładowa 7",
+    "postcode": "60-001",
+    "city": "Poznań",
+    "country": "Polska",
+    "vat_id": "PL1234563218",
+    "email": "zakupy@przyklad-logistyka.example",
+    "phone": "+48 61 000 00 00",
+    "registered_office": "ul. Przykładowa 7, 60-001 Poznań",
+    "register": "Sąd Rejonowy Poznań – Nowe Miasto i Wilda w Poznaniu, VIII Wydział Gospodarczy KRS",
+    "register_number": "0000123456",
+    "share_capital": "50 000,00 zł"
+  },
+  "deliver_to": {
+    "name": "Przykład Logistyka sp. z o.o., magazyn",
+    "street": "ul. Składowa 2",
+    "postcode": "60-002",
+    "city": "Poznań",
+    "country": "Polska"
+  },
+  "payment_terms": "przelew, 30 dni od daty wystawienia faktury",
+  "lines": [
+    {
+      "code": "ZW-110",
+      "description": "Taśma pakowa 48 mm × 66 m, akrylowa",
+      "quantity": 4000,
+      "unit": "pcs",
+      "unit_price": 3.85,
+      "discount_percent": 0,
+      "vat_rate": 23
+    },
+    {
+      "code": "PR-450",
+      "description": "Zestaw etykiet wysyłkowych 100 × 150 mm",
+      "quantity": 1200,
+      "unit": "kpl.",
+      "unit_price": 14.2,
+      "discount_percent": 4,
+      "vat_rate": 23
+    }
+  ],
+  "notes": [
+    "Prosimy o potwierdzenie zamówienia i terminu dostawy w ciągu 3 dni roboczych."
+  ]
+}

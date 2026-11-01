@@ -1,0 +1,86 @@
+{
+  "issuer": "es-company-law",
+  "version": "2026",
+  "link": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544",
+  "license": "Spanish legal and regulatory provisions, outside intellectual property (Ley de Propiedad Intelectual, Real Decreto Legislativo 1/1996, art. 13); restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-10",
+  "status": "draft",
+  "title": "Ley de Sociedades de Capital arts. 192, 202, 203 and 250, Reglamento del Registro Mercantil arts. 97 to 103 and Código de Comercio art. 24: the acta of a board and of a general meeting, and what a company states on its letters",
+  "source": "Ley de Sociedades de Capital, Real Decreto Legislativo 1/2010 (https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544, consolidated text last updated 19 December 2025, arts. 192, 202, 203 and 250 unchanged); Reglamento del Registro Mercantil, Real Decreto 1784/1996 (https://www.boe.es/buscar/act.php?id=BOE-A-1996-17533, last updated 14 June 2023); Código de Comercio (https://www.boe.es/buscar/act.php?id=BOE-A-1885-6627, last updated 9 May 2023). Read on the Boletín Oficial del Estado on 2026-10-09.",
+  "rules": [
+    {
+      "id": "ES-MIN-01",
+      "grader": "script",
+      "text": "A board's discussions and resolutions go in a book of actas, each signed by the chair and the secretary; the secretary signs with the visto bueno of whoever chaired.",
+      "source": "LSC art. 250; RRM art. 99.3",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "ES-MIN-02",
+      "grader": "script",
+      "text": "The acta states the date and the place of the meeting, and the day and the way it was called, unless it is a junta universal.",
+      "source": "RRM art. 97.1 1.ª and 2.ª",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "ES-MIN-03",
+      "grader": "script",
+      "text": "A board's acta names the members who came and those another member stood for; a general meeting's says how many members with a vote came in person and how many by proxy, and the share of the capital each group holds.",
+      "source": "RRM art. 97.1 4.ª",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "ES-MIN-04",
+      "grader": "script",
+      "text": "The list of those attending stands at the head of the acta or is attached to it, signed by the secretary with the chair's visto bueno; in a limited company (S.L.) it goes inside the acta.",
+      "source": "LSC art. 192; RRM art. 98",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "ES-MIN-05",
+      "grader": "script",
+      "text": "The acta holds every resolution and its vote: the majorities at a general meeting, how many members voted for at a board; an opposition is recorded when the member who voted against asks.",
+      "source": "LSC art. 202.1; RRM art. 97.1 6.ª and 7.ª",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "ES-MIN-06",
+      "grader": "script",
+      "text": "The acta records its own approval: by the meeting at its end or, for a general meeting, within fifteen days by the chair and two members, one for the majority and one for the minority; when it is not approved as the meeting ends, the day and the manner are stated.",
+      "source": "LSC art. 202.2; RRM art. 97.1 8.ª and art. 99",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "ES-MIN-07",
+      "grader": "script",
+      "text": "At a junta universal the acta names everyone there after the date, the place and the agenda, each name followed by a signature.",
+      "source": "RRM art. 97.1 4.ª",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "ES-MIN-08",
+      "grader": "judge",
+      "text": "The acta gives the full text of the call, or for a junta universal the points accepted as the agenda, and a summary of what was discussed and of the remarks a member asked to have recorded.",
+      "source": "RRM art. 97.1 3.ª and 5.ª"
+    },
+    {
+      "id": "ES-MIN-09",
+      "grader": "judge",
+      "text": "When a notary is called to the general meeting the notary's acta is the meeting's acta: it needs no approval and no signature of the chair and the secretary. A file written here is a working record and the reply says so.",
+      "source": "LSC art. 203; RRM arts. 101 to 103"
+    },
+    {
+      "id": "ES-MIN-10",
+      "grader": "judge",
+      "text": "These particulars are asked for entry in the Registro Mercantil; the reply does not call the acta registrable, approved or valid.",
+      "source": "RRM art. 97.3"
+    },
+    {
+      "id": "ES-CO-01",
+      "grader": "script",
+      "text": "A company states on its documents, letters, order forms and invoices its registered office, the particulars of its entry in the Registro Mercantil and its legal form, and that it is in liquidation when it is; a company that names its capital names the subscribed and the paid-up capital.",
+      "source": "Código de Comercio art. 24.1",
+      "check": "letter_check.py LETTER-COMPANY"
+    }
+  ]
+}

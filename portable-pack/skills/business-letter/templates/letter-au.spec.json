@@ -1,0 +1,53 @@
+{
+  "language": "en",
+  "date": "2026-10-09",
+  "sender": {
+    "name": "Example Logistics Pty Ltd",
+    "street": "88 Wharf Street",
+    "city": "Brisbane",
+    "state": "QLD",
+    "postcode": "4000",
+    "country": "AU",
+    "register_number": "51 612 345 678",
+    "email": "accounts@example-logistics.example",
+    "phone": "07 5550 1234"
+  },
+  "recipient": {
+    "name": "Example Printing Co-operative",
+    "attention": "Attention: Ms Kate Brennan",
+    "street": "12 Banna Avenue",
+    "city": "Griffith",
+    "state": "NSW",
+    "postcode": "2680",
+    "country": "AU"
+  },
+  "references": [
+    {
+      "kind": "yours",
+      "value": "KB/10/26"
+    },
+    {
+      "kind": "ours",
+      "value": "SCL-4410"
+    }
+  ],
+  "contact": {
+    "name": "Liam O'Connor",
+    "phone": "07 5550 1238",
+    "email": "liam@example-logistics.example"
+  },
+  "subject": "Freight rates for the 2027 peak season",
+  "salutation": "Dear Ms Brennan",
+  "body": [
+    "Thank you for your letter of 2 October asking about freight for next year's peak season.",
+    "From 1 February 2027 our rate for palletised freight from Griffith to Brisbane will be $2.85 per pallet kilometre, up from $2.70, because of higher fuel and road-user charges. Bookings made before 15 December will be charged at this year's rate.",
+    "I would be happy to meet your board to go through the rates."
+  ],
+  "signatory": {
+    "name": "Liam O'Connor",
+    "role": "Account Manager"
+  },
+  "enclosures": [
+    "Rate card 2027"
+  ]
+}

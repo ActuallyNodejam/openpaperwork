@@ -1,0 +1,60 @@
+{
+  "number": "2026-319",
+  "issue_date": "2026-10-05",
+  "due_date": "2026-11-04",
+  "delivery_date": "2026-10-01",
+  "currency": "CAD",
+  "payment_terms": "30 days net",
+  "language": "fr",
+  "order_reference": "BC-2210",
+  "seller": {
+    "name": "Exemple Traduction Inc.",
+    "street": "10, rue de l'Exemple",
+    "postcode": "H2X 1Y1",
+    "city": "Montréal QC",
+    "country": "CA",
+    "gst_number": "123456782 RT0001",
+    "qst_number": "1234567890 TQ0001",
+    "contact": {
+      "name": "Camille Exemple",
+      "phone": "+1 514 555 0100",
+      "email": "compta@exemple.example"
+    }
+  },
+  "buyer": {
+    "name": "Exemple Emballages Inc.",
+    "street": "20, boulevard Échantillon",
+    "postcode": "G1R 1A1",
+    "city": "Québec QC",
+    "country": "CA"
+  },
+  "payment": {
+    "bank": "Virement",
+    "transit": "00011",
+    "account": "7654321"
+  },
+  "taxes": [
+    {
+      "name": "GST",
+      "rate": 5
+    },
+    {
+      "name": "QST",
+      "rate": 9.975
+    }
+  ],
+  "lines": [
+    {
+      "name": "Traduction, catalogue 2027 (12 000 mots)",
+      "quantity": 12000,
+      "unit": "C62",
+      "unit_price": 0.22
+    },
+    {
+      "name": "Révision et mise en page",
+      "quantity": 6,
+      "unit": "HUR",
+      "unit_price": 75.0
+    }
+  ]
+}

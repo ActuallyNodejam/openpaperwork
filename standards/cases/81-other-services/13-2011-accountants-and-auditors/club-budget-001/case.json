@@ -1,0 +1,111 @@
+{
+ "id": "club-budget-001",
+ "title": "Turn the treasurer's notes into next season's club budget",
+ "person": "The volunteer treasurer of a small rowing club preparing the budget for the annual meeting.",
+ "format": "xlsx",
+ "output": "budget.xlsx",
+ "locale": "en",
+ "sector": {
+  "naics": "81",
+  "name": "Other Services (except Public Administration)"
+ },
+ "occupation": {
+  "soc": "13-2011.00",
+  "name": "Accountants and Auditors"
+ },
+ "review": [
+  "Income and costs match the notes, the membership fee and member count are inputs the totals follow, and the result is a surplus of 5,100."
+ ],
+ "revised_review": [
+  "With 92 members the income is 111,400 and the result 13,500, following from the changed member count alone."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "no-merged",
+   "stage": "both",
+   "grader": "script",
+   "script": "sheet_check.py",
+   "rule": "SHEET-MERGED",
+   "guidelines": [
+    "uk-analysis-function/2021#UKSS-03",
+    "fast-standard/02c#FAST-24"
+   ],
+   "text": "No merged cells."
+  },
+  {
+   "id": "nothing-hidden",
+   "stage": "both",
+   "grader": "script",
+   "script": "sheet_check.py",
+   "rule": "SHEET-HIDDEN",
+   "guidelines": [
+    "uk-analysis-function/2021#UKSS-18",
+    "fast-standard/02c#FAST-08"
+   ],
+   "text": "No hidden rows, columns or sheets."
+  },
+  {
+   "id": "headings",
+   "stage": "both",
+   "grader": "script",
+   "script": "sheet_check.py",
+   "rule": "SHEET-HEADINGS",
+   "guidelines": [
+    "uk-analysis-function/2021#UKSS-05"
+   ],
+   "text": "Every column of the table has one unique heading."
+  },
+  {
+   "id": "numbers",
+   "stage": "both",
+   "grader": "script",
+   "script": "sheet_check.py",
+   "rule": "SHEET-NUMBERS",
+   "guidelines": [
+    "uk-analysis-function/2021#UKSS-11",
+    "uk-analysis-function/2021#UKSS-13"
+   ],
+   "text": "Every value in a column of numbers is stored as a number."
+  },
+  {
+   "id": "assumptions",
+   "stage": "both",
+   "grader": "script",
+   "script": "sheet_check.py",
+   "rule": "SHEET-HARDCODED",
+   "guidelines": [
+    "fast-standard/02c#FAST-16"
+   ],
+   "text": "The fee and the member count sit in their own labelled cells; no formula types them in."
+  },
+  {
+   "id": "figures",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "Income 103,000 (85 x 1,200 plus the sponsor's 1,000), costs 97,900, and a result of 5,100; the fee and member count are inputs the totals follow."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the people, clubs, shops and numbers are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "uk-analysis-function/2021",
+  "fast-standard/02c",
+  "every-file/1.1.0"
+ ]
+}

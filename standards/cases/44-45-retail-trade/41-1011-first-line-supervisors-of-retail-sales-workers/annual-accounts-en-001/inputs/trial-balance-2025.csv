@@ -1,0 +1,31 @@
+account,name,balance_sek
+1220,Equipment,150000
+1229,Accumulated depreciation on equipment,-90000
+1460,Inventory of books,12400
+1630,Tax account,5100
+1710,Prepaid rent,11000
+1930,Business account,157900
+2081,Share capital,-25000
+2091,Retained earnings,-35500
+2093,Shareholder contribution received 2025,-120000
+2350,Bank loan (long-term part),-60000
+2417,Bank loan (part due within a year),-30000
+2440,Trade payables,-33800
+2650,VAT,-7200
+2710,PAYE tax withheld,-9800
+2731,Employer contributions,-7600
+2920,Accrued holiday pay,-18900
+2990,Other accrued expenses,-12800
+3010,Sales,-968000
+4010,Books purchased for resale,331000
+5010,Rent,144000
+5020,Electricity,38600
+5410,Consumables,22300
+6070,Card fees,14900
+6310,Insurance,9800
+6530,Accounting services,31200
+6991,Other external expenses,26200
+7010,Wages,326000
+7510,Employer contributions,102000
+7832,Depreciation on equipment,30000
+8410,Interest on bank loan,6200

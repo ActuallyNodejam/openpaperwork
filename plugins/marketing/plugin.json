@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "openpaperwork-marketing",
+  "version": "0.1.0",
+  "description": "Marketing: business decks handed back as a PDF, built to consulting structure, with an editable PowerPoint file with native charts and tables when asked, and fair and event posters made from a folder's own words and marks, each with its check.",
+  "author": {
+    "name": "OpenPaperwork"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "marketing"
+  ]
+}

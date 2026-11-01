@@ -1,0 +1,4 @@
+Exemple Traduction Inc., 10, rue de l'Exemple, Montréal QC H2X 1Y1.
+No de TPS/TVH 123456782 RT0001, no de TVQ 1234567890 TQ0001.
+Virement : transit 00011, compte 7654321. Paiement à 30 jours. Dernière facture : 2026-411.
+Personne-ressource : Camille Exemple, +1 514 555 0100, compta@exemple.example.

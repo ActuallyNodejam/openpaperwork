@@ -1,0 +1,47 @@
+{
+  "language": "en",
+  "country": "IE",
+  "body": "Shannonbank Analytics Limited",
+  "company_number": "123456",
+  "meeting": "annual general",
+  "date": "2026-06-16",
+  "start": "15:00",
+  "end": "15:35",
+  "place": "4 Harbour Row, Limerick",
+  "chair": "Niamh Gallagher",
+  "secretary": "Conor Byrne",
+  "shareholders": [
+    {
+      "name": "Niamh Gallagher",
+      "shares": 600,
+      "votes": 600
+    },
+    {
+      "name": "Example Holdings Limited",
+      "shares": 400,
+      "votes": 400,
+      "by": "Declan Walsh"
+    }
+  ],
+  "quorum": true,
+  "items": [
+    {
+      "title": "Financial statements for 2025",
+      "decisions": [
+        "that the financial statements for the year ended 31 December 2025, with the directors' and auditors' reports, be received"
+      ]
+    },
+    {
+      "title": "Dividend",
+      "decisions": [
+        "that a final dividend of €0.40 per ordinary share be declared, payable on 30 June 2026"
+      ]
+    },
+    {
+      "title": "Auditors",
+      "decisions": [
+        "that the directors be authorised to fix the remuneration of the auditors"
+      ]
+    }
+  ]
+}

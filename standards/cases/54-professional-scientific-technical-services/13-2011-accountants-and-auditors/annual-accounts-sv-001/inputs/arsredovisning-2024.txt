@@ -1,0 +1,40 @@
+Utdrag ur årsredovisningen för Tallbacka Projektledning AB, räkenskapsåret 2024-01-01 – 2024-12-31 (kr)
+
+Flerårsöversikt                         2024        2023
+Nettoomsättning                    1 540 000   1 395 000
+Resultat efter finansiella poster    292 600     241 300
+Soliditet (%)                             64          58
+
+Resultaträkning 2024
+Nettoomsättning                        1 540 000
+Övriga externa kostnader                -198 000
+Personalkostnader                     -1 041 000
+Av- och nedskrivningar                    -9 000
+Rörelseresultat                          292 000
+Övriga ränteintäkter                         600
+Resultat efter finansiella poster        292 600
+Förändring av periodiseringsfonder       -50 000
+Resultat före skatt                      242 600
+Skatt på årets resultat                  -50 000
+Årets resultat                           192 600
+
+Balansräkning 2024-12-31
+Inventarier, verktyg och installationer   36 000
+Kundfordringar                           213 000
+Övriga fordringar                          7 900
+Förutbetalda kostnader                    23 000
+Kassa och bank                           445 300
+Summa tillgångar                         725 200
+Aktiekapital                              25 000
+Balanserat resultat                      158 400
+Årets resultat                           192 600
+Summa eget kapital                       376 000
+Periodiseringsfonder                     110 000
+Leverantörsskulder                        18 700
+Aktuella skatteskulder                     9 800
+Övriga skulder                            82 300
+Upplupna kostnader                       128 400
+Summa eget kapital och skulder           725 200
+
+Not Inventarier: köpta i januari 2024 för 45 000 kr, skrivs av på fem år; 2024 års avskrivning 9 000 kr.
+Medelantal anställda 2024: 2.

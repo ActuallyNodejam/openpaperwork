@@ -1,0 +1,346 @@
+{
+ "id": "quote-001",
+ "title": "Answer a customer enquiry with a quotation",
+ "person": "A sales representative at a small wholesaler answering a price enquiry.",
+ "format": "docx",
+ "output": "quotation.docx",
+ "review": [
+  "Nothing is promised that the inputs do not support: no delivery date, lead time, warranty, freight charge or discount beyond the price list.",
+  "A customer can see at a glance what is offered, what it costs in total and until when the offer holds."
+ ],
+ "revised_review": [
+  "It is marked Revision 1 and the old quantities, amounts and validity date are gone.",
+  "The sample goods line shows the 5% volume discount now that the quantity is 120, and no other line has a discount.",
+  "Everything not asked to change is unchanged: the customer, the other lines, the terms and the quotation number."
+ ],
+ "version": "1.1.1",
+ "status": "draft",
+ "locale": "en",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and numbers are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "sector": {
+  "naics": "42",
+  "name": "Wholesale Trade"
+ },
+ "occupation": {
+  "soc": "41-4012.00",
+  "name": "Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products"
+ },
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "oasis-ubl/2.1",
+  "icc-incoterms/2020",
+  "cen-en16931/2017",
+  "every-file/1.1.0"
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "names-itself",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-TYPE",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-TYPE"
+   ],
+   "text": "The file is headed as a quotation."
+  },
+  {
+   "id": "header",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-HEAD",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-HEAD"
+   ],
+   "text": "Quotation number Q-2026-0187, the date 15 October 2026, both companies with their VAT IDs, and SEK."
+  },
+  {
+   "id": "customer-reference",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-REFS",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-REFS"
+   ],
+   "text": "The customer reference BK-2210 is on the quotation."
+  },
+  {
+   "id": "lines",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-LINES",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-LINES"
+   ],
+   "text": "All four items with quantity, unit price and line amount."
+  },
+  {
+   "id": "totals",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-TOTALS",
+   "guidelines": [
+    "cen-en16931/2017#EINV-TOTALS"
+   ],
+   "text": "Total excluding VAT, VAT at 25% and at 12%, and total including VAT are right."
+  },
+  {
+   "id": "valid-until",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-DATES",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-DATES"
+   ],
+   "text": "The quotation says until when it is valid: 14 November 2026, or 30 November 2026 after the revision."
+  },
+  {
+   "id": "payment",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-PAY",
+   "guidelines": [
+    "oasis-ubl/2.1#TRD-PAY"
+   ],
+   "text": "Payment terms are 30 days net."
+  },
+  {
+   "id": "delivery-term",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "INCO-1",
+   "guidelines": [
+    "icc-incoterms/2020#INCO-1"
+   ],
+   "text": "The delivery term reads DAP Malmö, Incoterms 2020."
+  },
+  {
+   "id": "no-sea-rule",
+   "stage": "both",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "INCO-2",
+   "guidelines": [
+    "icc-incoterms/2020#INCO-2"
+   ],
+   "text": "No sea-only delivery rule is used for a road delivery."
+  },
+  {
+   "id": "nothing-invented",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-2"
+   ],
+   "text": "Nothing is promised that the inputs do not support: no delivery date, lead time, warranty, freight charge or discount beyond the price list."
+  },
+  {
+   "id": "reads-as-offer",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#READ-1"
+   ],
+   "text": "A customer can see at a glance what is offered, what it costs in total and until when the offer holds."
+  },
+  {
+   "id": "nothing-stale",
+   "stage": "revision",
+   "grader": "script",
+   "script": "trade.py",
+   "rule": "TRD-STALE",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-1"
+   ],
+   "text": "It is marked Revision 1 and the old quantities, amounts and validity date are gone."
+  },
+  {
+   "id": "volume-discount",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-1"
+   ],
+   "text": "The sample goods line shows the 5% volume discount now that the quantity is 120, and no other line has a discount."
+  },
+  {
+   "id": "kept",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-2"
+   ],
+   "text": "Everything not asked to change is unchanged: the customer, the other lines, the terms and the quotation number."
+  },
+  {
+   "id": "letter-din5008",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-DIN5008",
+   "guidelines": [
+    "din-5008/2020#LETTER-DIN5008"
+   ],
+   "text": "A PDF or Word document sits on DIN 5008 Form B; a workbook skips this."
+  },
+  {
+   "id": "letter-company",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-COMPANY",
+   "guidelines": [
+    "eu-company-law/2017-1132#LETTER-COMPANY"
+   ],
+   "text": "The seller's register details are on the letter when the files give them."
+  }
+ ],
+ "truth": {
+  "doc": "quotation",
+  "number": "Q-2026-0187",
+  "issue_date": "2026-10-15",
+  "currency": "SEK",
+  "seller": {
+   "name": "Västhamn Grossist AB",
+   "unknown": ["registered_office", "register_number"],
+   "street": "Hamngatan 14",
+   "postcode": "411 14",
+   "city": "Gothenburg",
+   "country": "Sweden",
+   "vat_id": "SE559012345601"
+  },
+  "buyer": {
+   "name": "Exempel Kontor AB",
+   "street": "Industrigatan 8",
+   "postcode": "211 20",
+   "city": "Malmö",
+   "country": "Sweden",
+   "vat_id": "SE556677889901"
+  },
+  "references": [
+   "BK-2210"
+  ],
+  "payment": [
+   "30\\s*days"
+  ],
+  "incoterm": {
+   "rule": "DAP",
+   "place": "Malmö"
+  },
+  "transport": "road",
+  "first": {
+   "lines": [
+    {
+     "code": "ESP-210",
+     "description": "Label printer, two colour",
+     "quantity": 2,
+     "unit": "pcs",
+     "unit_price": 38500.0,
+     "discount_percent": 0,
+     "vat_rate": 25
+    },
+    {
+     "code": "GRD-064",
+     "description": "Paper shredder, 64 mm feed",
+     "quantity": 4,
+     "unit": "pcs",
+     "unit_price": 6200.0,
+     "discount_percent": 0,
+     "vat_rate": 25
+    },
+    {
+     "code": "CUP-180",
+     "description": "Ring binders 180 sheets, box of 48",
+     "quantity": 10,
+     "unit": "box",
+     "unit_price": 1150.0,
+     "discount_percent": 0,
+     "vat_rate": 25
+    },
+    {
+     "code": "BEA-1KG",
+     "description": "Sample goods, 1 kg bag",
+     "quantity": 80,
+     "unit": "bag",
+     "unit_price": 189.0,
+     "discount_percent": 0,
+     "vat_rate": 12
+    }
+   ],
+   "dates": {
+    "valid until": "2026-11-14"
+   }
+  },
+  "revision": {
+   "lines": [
+    {
+     "code": "ESP-210",
+     "description": "Label printer, two colour",
+     "quantity": 2,
+     "unit": "pcs",
+     "unit_price": 38500.0,
+     "discount_percent": 0,
+     "vat_rate": 25
+    },
+    {
+     "code": "GRD-064",
+     "description": "Paper shredder, 64 mm feed",
+     "quantity": 3,
+     "unit": "pcs",
+     "unit_price": 6200.0,
+     "discount_percent": 0,
+     "vat_rate": 25
+    },
+    {
+     "code": "CUP-180",
+     "description": "Ring binders 180 sheets, box of 48",
+     "quantity": 10,
+     "unit": "box",
+     "unit_price": 1150.0,
+     "discount_percent": 0,
+     "vat_rate": 25
+    },
+    {
+     "code": "BEA-1KG",
+     "description": "Sample goods, 1 kg bag",
+     "quantity": 120,
+     "unit": "bag",
+     "unit_price": 189.0,
+     "discount_percent": 5,
+     "vat_rate": 12
+    }
+   ],
+   "dates": {
+    "valid until": "2026-11-30"
+   },
+   "stale": [
+    "2026-11-14",
+    158559.4,
+    128420,
+    15120,
+    24800
+   ],
+   "must": [
+    "revision\\s*1|rev\\.?\\s*1\\b"
+   ]
+  }
+ }
+}

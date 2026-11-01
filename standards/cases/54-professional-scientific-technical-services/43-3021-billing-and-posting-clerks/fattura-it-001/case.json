@@ -1,0 +1,281 @@
+{
+ "id": "fattura-it-001",
+ "title": "An Italian fattura for a month of project management, as a courtesy page and a FatturaPA file",
+ "person": "The administrator of a small Bologna engineering firm invoicing a logistics company in Verona.",
+ "format": "pdf",
+ "output": "fattura.pdf",
+ "extra_outputs": [
+  "fattura.xml"
+ ],
+ "locale": "it-IT",
+ "sector": {
+  "naics": "54",
+  "name": "Professional, Scientific, and Technical Services"
+ },
+ "occupation": {
+  "soc": "43-3021.00",
+  "name": "Billing and Posting Clerks"
+ },
+ "review": [
+  "Fattura 2026/214 del 09/10/2026: 38 ore a 85,00 € e un'analisi a 1.200,00 €, imponibile 4.430,00 €, IVA 22% 974,60 €, totale 5.404,60 €; P. IVA IT01234567897, P. IVA cliente IT09876543217, codice destinatario ABC1234. Il file FatturaPA non è stato trasmesso."
+ ],
+ "revised_review": [
+  "42 ore: imponibile 4.770,00 €, IVA 1.049,40 €, totale 5.819,40 €; il resto non cambia."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "locale-date",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-DATE",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-DATE"
+   ],
+   "text": "Dates on the page are in the dd/MM/yyyy form."
+  },
+  {
+   "id": "locale-number",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-NUMBER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-NUMBER"
+   ],
+   "text": "Amounts use the locale's separators."
+  },
+  {
+   "id": "locale-paper",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-PAPER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-PAPER"
+   ],
+   "text": "The page is the locale's paper."
+  },
+  {
+   "id": "locale-order",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-LOCALE-ORDER",
+   "guidelines": [
+    "cen-en16931/2017#EINV-LOCALE-ORDER"
+   ],
+   "text": "The page is written in the language of the order itself."
+  },
+  {
+   "id": "page-din5008",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-DIN5008",
+   "guidelines": [
+    "din-5008/2020#EINV-PAGE-DIN5008"
+   ],
+   "text": "The page is laid out on the seller country's letter layout, or on the library's letter sheet (DIN 5008 Form B) where the library has none for it."
+  },
+  {
+   "id": "vat-label",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-VAT-LABEL",
+   "guidelines": [
+    "cen-en16931/2017#EINV-VAT-LABEL"
+   ],
+   "text": "Every VAT number on the page carries its label."
+  },
+  {
+   "id": "page-trace",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-TRACE",
+   "guidelines": [
+    "cen-en16931/2017#EINV-PAGE-TRACE"
+   ],
+   "text": "Every number on the page traces to the order: what it says, and what the invoice arithmetic makes of it."
+  },
+  {
+   "id": "page-no-extra",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-NO-EXTRA",
+   "guidelines": [
+    "cen-en16931/2017#EINV-PAGE-NO-EXTRA"
+   ],
+   "text": "No field appears on the page unless the order carries its data."
+  },
+  {
+   "id": "fatturapa",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-FATTURAPA",
+   "guidelines": [
+    "fatturapa/1.2.3#EINV-FATTURAPA"
+   ],
+   "text": "The FatturaPA schema 1.2.3 accepts the file beside the page; skipped without it."
+  },
+  {
+   "id": "it-invoice",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "rule": "IT-INVOICE",
+   "guidelines": [
+    "it-dpr-633/2026#IT-INVOICE"
+   ],
+   "text": "The partita IVA of both parties, both addresses, the unit prices, the rate and the IVA on the page; the FatturaPA is TD01 for a private party (FPR12)."
+  },
+  {
+   "id": "company-particulars",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PARTICULARS",
+   "guidelines": [
+    "invoice-company-particulars/2026-10#EINV-PARTICULARS"
+   ],
+   "text": "The page states what the seller's own company statute puts on an invoice; a particular the files do not give is declared unknown and printed nowhere."
+  },
+  {
+   "id": "only-what-was-done",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "Only September's hours and the one analysis are invoiced, at the agreed prices; nothing is invented, the regime fiscale is the one the files give, and the reply says the file was not sent to the Sistema di Interscambio."
+  },
+  {
+   "id": "revision-kept",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-2"
+   ],
+   "text": "The revision changes the hours and the totals that follow, and nothing else."
+  }
+ ],
+ "truth": {
+  "number": "2026/214",
+  "issue_date": "2026-10-09",
+  "due_date": "2026-11-08",
+  "delivery_date": "2026-09-30",
+  "currency": "EUR",
+  "payment_terms": "30 days net",
+  "order_reference": "ORD-2026-88",
+  "seller": {
+   "name": "Esempio Ingegneria S.r.l.",
+   "legal_form": "S.r.l.",
+   "street": "Via dell'Esempio 5",
+   "postcode": "40121",
+   "city": "Bologna",
+   "province": "BO",
+   "country": "IT",
+   "vat_id": "IT01234567897",
+   "tax_code": "01234567897",
+   "tax_regime": "RF01",
+   "registered_office": "Bologna",
+   "register": "Registro delle Imprese di Bologna",
+   "register_number": "01234567897",
+   "share_capital": "20.000,00 euro i.v.",
+   "rea": {
+    "office": "BO",
+    "number": "000000",
+    "share_capital": 20000,
+    "sole_shareholder": false,
+    "in_liquidation": false
+   },
+   "contact": {
+    "name": "Paolo Esempio",
+    "phone": "+39 051 000 0000",
+    "email": "fatture@ingegneria.example"
+   }
+  },
+  "buyer": {
+   "name": "Esempio Logistica S.p.A.",
+   "street": "Corso del Campione 30",
+   "postcode": "37121",
+   "city": "Verona",
+   "province": "VR",
+   "country": "IT",
+   "vat_id": "IT09876543217",
+   "recipient_code": "ABC1234"
+  },
+  "payment": {
+   "means_code": "58",
+   "iban": "IT60 X054 2811 1010 0000 0123 456",
+   "bic": "BPPIITRRXXX"
+  },
+  "doc": "invoice",
+  "type_code": "380",
+  "first": {
+   "lines": [
+    {
+     "name": "Gestione progetto, settembre 2026",
+     "quantity": 38,
+     "unit": "HUR",
+     "unit_price": 85.0,
+     "vat_rate": 22,
+     "vat_category": "S"
+    },
+    {
+     "name": "Analisi dei processi di magazzino",
+     "quantity": 1,
+     "unit": "C62",
+     "unit_price": 1200.0,
+     "vat_rate": 22,
+     "vat_category": "S"
+    }
+   ]
+  },
+  "revision": {
+   "lines": [
+    {
+     "name": "Gestione progetto, settembre 2026",
+     "quantity": 42,
+     "unit": "HUR",
+     "unit_price": 85.0,
+     "vat_rate": 22,
+     "vat_category": "S"
+    },
+    {
+     "name": "Analisi dei processi di magazzino",
+     "quantity": 1,
+     "unit": "C62",
+     "unit_price": 1200.0,
+     "vat_rate": 22,
+     "vat_category": "S"
+    }
+   ]
+  }
+ },
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "cen-en16931/2017",
+  "din-5008/2020",
+  "it-dpr-633/2026",
+  "fatturapa/1.2.3"
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and every business, VAT and bank number are invented and obviously fake.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen."
+}

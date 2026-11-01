@@ -1,0 +1,69 @@
+{
+  "type": "purchase_order",
+  "language": "de-AT",
+  "number": "B-2026-0291",
+  "issue_date": "2026-10-15",
+  "quotation": "AN-26-5512",
+  "requested_delivery_date": "2026-11-09",
+  "references": [
+    {
+      "label": "Unser Zeichen",
+      "value": "Ing. Lukas Huber"
+    }
+  ],
+  "currency": "EUR",
+  "buyer": {
+    "name": "Donaukeller Maschinenbau GmbH",
+    "street": "Hafenstraße 27",
+    "postcode": "4020",
+    "city": "Linz",
+    "country": "Österreich",
+    "vat_id": "ATU12345678",
+    "email": "einkauf@donaukeller.example",
+    "phone": "+43 732 000000",
+    "registered_office": "Linz",
+    "register": "Landesgericht Linz",
+    "register_number": "FN 412345 k"
+  },
+  "seller": {
+    "name": "Murtal Antriebstechnik GmbH",
+    "street": "Industriepark 3",
+    "postcode": "8740",
+    "city": "Zeltweg",
+    "country": "Österreich",
+    "vat_id": "ATU87654321"
+  },
+  "deliver_to": {
+    "name": "Donaukeller Maschinenbau GmbH, Warenannahme Halle 2",
+    "street": "Hafenstraße 27",
+    "postcode": "4020",
+    "city": "Linz",
+    "country": "Österreich"
+  },
+  "delivery_terms": {
+    "rule": "DAP",
+    "place": "Linz, Österreich"
+  },
+  "transport": "road",
+  "payment_terms": "14 Tage 2 % Skonto, 30 Tage netto",
+  "lines": [
+    {
+      "code": "MA-G90",
+      "description": "Stirnradgetriebe, Übersetzung 1:20, 4 kW",
+      "quantity": 4,
+      "unit": "pcs",
+      "unit_price": 1240.0,
+      "discount_percent": 0,
+      "vat_rate": 20
+    },
+    {
+      "code": "MA-K15",
+      "description": "Elastische Kupplung, Bohrung 35 mm",
+      "quantity": 4,
+      "unit": "pcs",
+      "unit_price": 86.0,
+      "discount_percent": 0,
+      "vat_rate": 20
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "openpaperwork-finance",
+  "version": "0.1.0",
+  "description": "Finance: invoices and credit notes with the file each country takes (Factur-X / ZUGFeRD and XRechnung for Germany and France; Peppol BIS 3 for Norway, Denmark, Finland, the UK, Belgium, the Netherlands (or SI-UBL), Austria (or ebInterface) and Ireland; Facturae for Spain, FatturaPA for Italy, the KSeF invoice for Poland), tax invoices for Australia, Canada and the US, and a smaller Swedish company's annual report (K2), each with its scripted check.",
+  "author": {
+    "name": "OpenPaperwork"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "finance"
+  ]
+}

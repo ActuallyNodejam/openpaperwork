@@ -1,0 +1,45 @@
+{
+  "issuer": "uk-companies-act",
+  "version": "2006",
+  "link": "https://www.legislation.gov.uk/ukpga/2006/46",
+  "license": "Contains public sector information licensed under the Open Government Licence v3.0; restated in our own words. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Companies Act 2006 ss.248, 249, 355, 356 and the Model Articles for private companies, arts. 11 and 15",
+  "source": "Companies Act 2006 c.46, revised text up to date to 7 October 2026; Companies (Model Articles) Regulations 2008 SI 2008/3229, Schedule 1. Read on legislation.gov.uk 2026-10-09.",
+  "rules": [
+    {
+      "id": "UK-MIN-01",
+      "grader": "judge",
+      "text": "Minutes of every directors' meeting are recorded and kept for at least ten years.",
+      "source": "s.248"
+    },
+    {
+      "id": "UK-MIN-02",
+      "grader": "script",
+      "text": "Minutes signed by the chair of the meeting or of the next one are evidence of the proceedings; the minutes carry the chair's signature line.",
+      "source": "s.249; s.356(4) for general meetings",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "UK-MIN-03",
+      "grader": "script",
+      "text": "Directors decide at a meeting only with a quorum (two unless fixed otherwise); the minutes say one was present.",
+      "source": "Model Articles art. 11",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "UK-MIN-04",
+      "grader": "script",
+      "text": "Every decision of the directors is recorded and the record kept ten years.",
+      "source": "Model Articles art. 15",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "UK-MIN-05",
+      "grader": "judge",
+      "text": "Minutes of general meetings and written resolutions are kept ten years.",
+      "source": "s.355"
+    }
+  ]
+}

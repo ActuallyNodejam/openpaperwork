@@ -1,0 +1,18 @@
+{
+ "issuer": "uk-vat-notice-700-21",
+ "version": "2024",
+ "link": "https://www.gov.uk/guidance/record-keeping-for-vat-notice-70021",
+ "license": "Open Government Licence v3.0, Crown copyright; notice licenses/einvoice-uk-hmrc-ogl-v3.txt. Restated in our own words. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "What a UK VAT invoice states",
+ "source": "HMRC VAT Notice 700/21, section 4 (4.1 a full VAT invoice; 4.4 and 4.5 the simplified invoice up to £250, cited), last updated 18 March 2024; Companies Act 2006 s 82 and SI 2015/17 reg 25 for a company's details. Read 2026-10-09.",
+ "rules": [
+  {
+   "id": "UK-VAT-INVOICE",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "text": "The number, date, tax point when it differs, the supplier's name, address and VAT registration number, the customer's name and address, each line's quantity, unit price and rate, the total excluding VAT and the total VAT (in sterling) on the page."
+  }
+ ]
+}

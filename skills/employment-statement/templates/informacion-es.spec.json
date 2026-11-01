@@ -1,0 +1,66 @@
+{
+  "law": "es",
+  "language": "es",
+  "given": "2026-10-26",
+  "employer": {
+    "name": "Ejemplo Imprenta S.L.",
+    "number": "NIF B12345674",
+    "address": "Calle del Ejemplo 12, 28001 Madrid",
+    "signatory": "Javier Molina Santos, administrador"
+  },
+  "worker": {
+    "name": "Marta Ruiz Ortega",
+    "address": "Avenida de la Muestra 4, 28002 Madrid"
+  },
+  "start": "2026-11-02",
+  "term": {
+    "type": "permanent"
+  },
+  "place": "Calle del Ejemplo 12, 28001 Madrid",
+  "job": {
+    "title": "Oficial de preimpresión",
+    "description": "Preparación de archivos, pruebas de color y planchas para la impresión offset.",
+    "group": "grupo 3, personal de preimpresión, del convenio colectivo aplicable"
+  },
+  "pay": {
+    "amount": 1850,
+    "currency": "EUR",
+    "per": "month",
+    "components": [
+      {
+        "name": "Plus de transporte",
+        "text": "95,00 € al mes"
+      },
+      {
+        "name": "Pagas extraordinarias",
+        "text": "dos al año, de una mensualidad de salario base cada una"
+      }
+    ],
+    "paid": "mensual, el último día hábil de cada mes",
+    "method": "transferencia a la cuenta bancaria de la persona trabajadora"
+  },
+  "hours": {
+    "pattern": "fixed",
+    "standard": "8 horas diarias, 40 horas semanales y 1.780 horas anuales",
+    "schedule": "de lunes a viernes de 8:00 a 16:30, con 30 minutos de pausa",
+    "shifts": "conforme al artículo 41 del Estatuto de los Trabajadores",
+    "overtime": "voluntarias, compensadas con descanso equivalente"
+  },
+  "leave": "30 días naturales al año; las fechas se fijan de común acuerdo",
+  "probation": {
+    "months": 2,
+    "conditions": "ambas partes realizan las experiencias que son el objeto de la prueba"
+  },
+  "training": "Formación en preimpresión y en prevención de riesgos, a cargo de la empresa",
+  "algorithms": null,
+  "equality": "Sin plan de igualdad (menos de cincuenta personas trabajadoras) ni medidas propias de conciliación. El protocolo frente al acoso sexual y por razón de sexo se entrega con este documento",
+  "termination": "Conforme a los artículos 49 a 56 del Estatuto de los Trabajadores y al convenio colectivo",
+  "collective": {
+    "name": "Convenio colectivo de ejemplo del sector de artes gráficas",
+    "code": "99000000000000",
+    "published": "Boletín Oficial del Estado de 03/03/2025",
+    "validity": "del 1 de enero de 2025 al 31 de diciembre de 2027"
+  },
+  "social_security": "Instituto Nacional de la Seguridad Social (contingencias comunes) y Mutua de Ejemplo, mutua colaboradora (contingencias profesionales). Sin mejoras voluntarias ni planes de pensiones",
+  "changes": "Por acuerdo escrito o conforme a los artículos 39 y 41 del Estatuto de los Trabajadores"
+}

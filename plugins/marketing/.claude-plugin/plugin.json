@@ -1,0 +1,12 @@
+{
+  "name": "openpaperwork-marketing",
+  "description": "Marketing: business decks handed back as a PDF, built to consulting structure, with an editable PowerPoint file with native charts and tables when asked, and fair and event posters made from a folder's own words and marks, each with its check.",
+  "version": "0.1.0",
+  "author": {
+    "name": "OpenPaperwork"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "marketing"
+  ]
+}

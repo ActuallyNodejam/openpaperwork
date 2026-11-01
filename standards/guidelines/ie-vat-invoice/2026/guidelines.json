@@ -1,0 +1,19 @@
+{
+ "issuer": "ie-vat-invoice",
+ "version": "2026",
+ "link": "https://www.irishstatutebook.ie/eli/2010/si/639/made/en/print",
+ "license": "Contains Irish Public Sector Information licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) licence: the Irish Statute Book under the Oireachtas (Open Data) PSI Licence, Revenue's pages under its PSI licence; notice licenses/einvoice-ie-cc-by-4.0.txt. Restated in our own words. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "What an Irish VAT invoice and credit note state",
+ "source": "Value-Added Tax Consolidation Act 2010 ss. 66 and 67 and the Value-Added Tax Regulations 2010 (S.I. No. 639 of 2010) reg. 20: (2) the particulars of an invoice, with (e) the customer's VAT number and \"an indication that a reverse charge applies\", in no fixed words, and (f) the same for goods to another member state; (5) a credit note, with both parties' registration numbers, its reason and a cross-reference to the invoice. Revenue has no invoice manual; its guidance is two pages, \"What information is required on a VAT invoice?\" (published 16 March 2026) and \"What information is required on a VAT credit note?\" (published 6 October 2026), https://www.revenue.ie/en/vat/vat-records-invoices-credit-notes/index.aspx. Ireland has no e-invoicing duty in force: Revenue's roadmap phases one in for domestic B2B sales, large corporates in November 2028 and, in November 2029, businesses that also trade with other EU states (the domestic rule widened, not cross-border e-invoicing, which follows with the EU's ViDA rules in July 2030). Read 2026-10-09.",
+ "note": "Unproved: the article mapping in these rules was not proved against the official text in the 2026-10-20 standards audit.",
+ "rules": [
+  {
+   "id": "IE-VAT-INVOICE",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "text": "The number and date, the supplier's name, address and VAT number, the customer's name and address, the date of supply, each line's unit price and rate, the VAT per rate and the total, in euro; for a reverse charge the customer's VAT number and any clear note that a reverse charge applies; on a credit note its reason, the customer's VAT number and the invoice it refers to."
+  }
+ ]
+}

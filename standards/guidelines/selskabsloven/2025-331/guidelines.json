@@ -1,0 +1,39 @@
+{
+  "issuer": "selskabsloven",
+  "version": "2025-331",
+  "link": "https://www.retsinformation.dk/eli/lta/2025/331",
+  "license": "Danish law, not protected by copyright (ophavsretsloven § 9); restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Selskabsloven § 128 (bestyrelsesprotokol) and § 101 (generalforsamlingsprotokol)",
+  "source": "Bekendtgørelse af lov om aktie- og anpartsselskaber (selskabsloven), LBK nr. 331 af 20/03/2025. Read on retsinformation.dk 2026-10-09; read again the same day against the four acts Retsinformation lists as amending the law since: lov nr. 710 af 20/06/2025 (§ 2), lov nr. 1648 af 16/12/2025 (§ 16), lov nr. 1765 af 29/12/2025 (§ 4) and lov nr. 729 af 01/09/2026 (§ 5). None changes § 101 or § 128.",
+  "rules": [
+    {
+      "id": "DK-MIN-01",
+      "grader": "script",
+      "text": "A board of more than one member keeps a protocol of its proceedings, signed by every member present.",
+      "source": "§ 128, stk. 1",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "DK-MIN-02",
+      "grader": "script",
+      "text": "A member present who disagrees with a decision may have their view entered in the protocol.",
+      "source": "§ 128, stk. 2",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "DK-MIN-03",
+      "grader": "script",
+      "text": "The general meeting elects a dirigent; a protocol of the proceedings is kept and signed by the dirigent.",
+      "source": "§ 101, stk. 1 og 3",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "DK-MIN-04",
+      "grader": "judge",
+      "text": "The general meeting protocol, or a certified copy, is available to the shareholders within two weeks.",
+      "source": "§ 101, stk. 4"
+    }
+  ]
+}

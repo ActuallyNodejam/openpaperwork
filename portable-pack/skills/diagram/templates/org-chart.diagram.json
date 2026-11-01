@@ -1,0 +1,16 @@
+{
+  "type": "org-chart",
+  "title": "Who owns what in the project",
+  "eyebrow": "Project team",
+  "description": "The project lead owns the whole project, with design, budget and purchasing reporting to them and two outside partners on call.",
+  "people": [
+    {"id": "lead", "name": "Project lead", "role": "decisions and the plan", "focal": true},
+    {"id": "design", "name": "Design", "role": "concept and drawings", "reports_to": "lead"},
+    {"id": "budget", "name": "Budget", "role": "costs and suppliers", "reports_to": "lead"},
+    {"id": "buy", "name": "Purchasing", "role": "orders and delivery", "reports_to": "lead"},
+    {"id": "arch", "name": "Architect", "role": "outside, large jobs", "reports_to": "design", "kind": "optional"},
+    {"id": "builder", "name": "Builder", "role": "outside, on site", "reports_to": "buy", "kind": "external"}
+  ],
+  "legend": [{"kind": "focal", "label": "front door"}, {"kind": "step", "label": "team"},
+             {"kind": "external", "label": "outside partner"}, {"kind": "optional", "label": "when needed"}]
+}

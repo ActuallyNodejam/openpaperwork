@@ -1,0 +1,156 @@
+{
+  "name": "Open default",
+  "about": "The look of a deck, apart from its structure. A company pack replaces this file (or passes its own with --look) and the structure, the page types and the check stay as they are. The open default is one ink on white with a dark ground for the cover and the closing page only, one system-safe face at normal weight, sentence case, and no accent: the highlight is full ink against greys. Colours are hex without the hash. Sizes are points on a 960 x 540 page; a type entry is [size, line pitch].",
+  "density": "standard",
+  "output": {
+    "about": "What a build hands back. The PDF is always written. 'editable' true also writes the PowerPoint file beside it on every build, for a company whose colleagues edit decks; the open default writes it only when the person asks for a file to edit.",
+    "editable": false
+  },
+  "page": {
+    "width": 960,
+    "height": 540
+  },
+  "face": {
+    "about": "One face for everything. Arial is on every Mac and Windows computer, and LibreOffice sets Liberation Sans on the same widths. 'advance' is how much wider the face sets than Helvetica's widths (Helvetica Neue is 1.05). 'weight' is 400 or 700 for all text; a pack may ask for bold titles with title_weight 700.",
+    "name": "Arial",
+    "advance": 1.0,
+    "weight": 400,
+    "title_weight": 400
+  },
+  "ink": {
+    "about": "Light pages. 'second' is the ink at 65 percent on white (5.3:1): at 60 percent it is 4.48:1, under WCAG 2.2's 4.5:1 for small print. 'hairline' only separates, it carries no meaning. 'raised' marks the one highlighted row or column of a table.",
+    "ground": "FFFFFF",
+    "ink": "1A1C1F",
+    "second": "6A6B6D",
+    "hairline": "E3E3E4",
+    "rule": "1A1C1F",
+    "raised": "F2F2F2"
+  },
+  "dark": {
+    "about": "The cover and the closing page.",
+    "ground": "181818",
+    "ink": "DFDFDF",
+    "second": "8F8F8F",
+    "hairline": "2E2E2E"
+  },
+  "marks": {
+    "about": "Chart marks. One mark or one series is the highlight, every other is neutral; each is at least 3:1 against the ground (WCAG 2.2, 1.4.11). 'series' are the neutral tones for the second to fourth series in order; a white entry is drawn with an ink outline. A company pack may name one accent as 'highlight'.",
+    "highlight": "1A1C1F",
+    "neutral": "8A8B8D",
+    "series": ["8A8B8D", "55575A", "FFFFFF"],
+    "outline": "1A1C1F",
+    "on_dark": "FFFFFF",
+    "line_width": 2.25,
+    "neutral_line_width": 1.5,
+    "gap_width": 50
+  },
+  "corner": 4,
+  "tracking": {
+    "about": "Letter spacing for large type, in em: set on the title, headline, lead and big-figure styles of the layouts from 'from_pt' up, never on runs. Body and small print stay at 0.",
+    "em": -0.02,
+    "from_pt": 14,
+    "styles": ["display", "headline", "title", "lead", "figure", "number"]
+  },
+  "running": {
+    "about": "The running line: the organisation (its logo, or its name when no logo file is given), the deck title, the section and the page number, all on one baseline. 'place' is top or bottom.",
+    "place": "top"
+  },
+  "logo": {
+    "about": "Paths are read beside this file. 'height' is the logo's height in points on a light or dark page; 'below_baseline' is the share of that height that hangs under the running line's baseline (0 for a wordmark without descenders).",
+    "file": "",
+    "dark_file": "",
+    "height": 12,
+    "below_baseline": 0.0,
+    "alt": ""
+  },
+  "labels": {
+    "about": "A label's key sits one line above its value (the cover's small print, a key figure's name above its number).",
+    "key_above_value": true
+  },
+  "grid": {
+    "about": "Twelve columns between the side margins. 'content_from' is the column the titles and bodies start in: 1 is the full width; 5 keeps the first four columns for the section label, as a press deck does.",
+    "columns": 12,
+    "content_from": 1
+  },
+  "text": {
+    "about": "Long-form pages on the real page (a report, a memo, a trade page), which the deck ignores. Sizes are points on A4 or Letter by locale; a type entry is [size, line pitch], as in the scale. 'measure' is the most characters on a body line, counted on the face's average width; 'side_min', 'top' and 'bottom' are millimetres: the least side margin and the clear space over the running line and under the footer. 'block' is where the text block stands when the measure leaves room: left, or hang (the first third kept for section numbers and labels). 'body' is running text, never under 11; 'small' is captions, source lines, footnotes, the running line and the footer, in ink.second; 'lead' is a summary's first paragraph; 'h1' to 'h3' are the three heading levels, told apart by size and space at face.title_weight; 'title' is a title page's title. 'para_gap' is the space after a paragraph, 'heading_gap' the space over and under a heading, 'figure_gap' the space over a caption and under a source line, all in points. Large type takes 'tracking' as the deck does.",
+    "measure": 72,
+    "side_min": 25,
+    "top": 25,
+    "bottom": 25,
+    "block": "left",
+    "body": [11, 16],
+    "small": [9, 12],
+    "lead": [14, 20],
+    "h1": [22, 27],
+    "h2": [16, 21],
+    "h3": [12, 16],
+    "title": [34, 38],
+    "para_gap": 8,
+    "heading_gap": [24, 8],
+    "figure_gap": 16
+  },
+  "trade": {
+    "about": "What only a trade page needs: an invoice, a credit note, a quotation, an order confirmation, a purchase order, a delivery note or a pro forma, on the letter sheet of the country it is sent from (skills/_shared/page_look.py). The window, the information block's place and the margins are the layout's and are not set here. From 'text' the page takes h1 for the document's name and number, h2 for the sender's name, lead for the total, heading_gap and para_gap for the space over a block and between notes. 'body' is a table row, a note and the closing block; 'small' is the page's one size of small print (the information block, the column heads, the company details at the foot, the running line of a second page), never under 8.5; 'row_air' the points of air over and under a row; 'rule' and 'hairline' the two line weights in points; 'title_gap' the points under the document's name. The footer, the totals and the closing block stand on the grid's columns between the margins: 'gutter' is the millimetres between two columns, 'footer_columns' how many columns each of the footer's three blocks takes, 'totals_columns' how many the totals take from the right, 'key_columns' how many the closing block's keys take from the left. 'foot_gap' is the millimetres kept clear over the footer. 'tight' is the share of its air (row_air, the gaps, foot_gap) a document keeps when it misses one page by a little and that brings it back onto one page.",
+    "body": [10, 15],
+    "small": [8.5, 12],
+    "row_air": 6,
+    "rule": 0.75,
+    "hairline": 0.5,
+    "title_gap": 20,
+    "gutter": 5,
+    "footer_columns": [3, 4, 5],
+    "totals_columns": 6,
+    "key_columns": 3,
+    "foot_gap": 6,
+    "tight": 0.6
+  },
+  "scale": {
+    "about": "One block per density preset: margins, gaps and the type scale. 'top' is where the running line starts, 'bottom' the clear space under the source line, 'gap' the space between the title and the body. The steps of the scale, largest first: display (the cover and the closing statement only), headline (a section or appendix divider, and a quote), title (every content page), lead (a statement or takeaway inside the body, one step under the title), body, small. 'figure' is a key figure.",
+    "sparse": {
+      "margin": 60,
+      "gutter": 20,
+      "top": 34,
+      "bottom": 34,
+      "gap": 22,
+      "display": [64, 68],
+      "headline": [52, 56],
+      "title": [30, 35],
+      "lead": [24, 30],
+      "body": [18, 24],
+      "small": [11, 14],
+      "figure": [96, 100],
+      "chart": 13
+    },
+    "standard": {
+      "margin": 44,
+      "gutter": 16,
+      "top": 23,
+      "bottom": 24,
+      "gap": 18,
+      "display": [56, 60],
+      "headline": [40, 44],
+      "title": [24, 29],
+      "lead": [20, 26],
+      "body": [16, 21],
+      "small": [11, 14],
+      "figure": [72, 76],
+      "chart": 12
+    },
+    "full": {
+      "margin": 32,
+      "gutter": 12,
+      "top": 18,
+      "bottom": 18,
+      "gap": 14,
+      "display": [48, 52],
+      "headline": [34, 38],
+      "title": [20, 24],
+      "lead": [16, 21],
+      "body": [13, 17],
+      "small": [9, 12],
+      "figure": [56, 60],
+      "chart": 10
+    }
+  }
+}

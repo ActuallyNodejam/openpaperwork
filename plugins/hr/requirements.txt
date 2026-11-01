@@ -1,0 +1,11 @@
+python-docx
+python-pptx
+openpyxl
+# Printing a PDF page (invoices, trade documents); then run: playwright install chromium
+playwright
+# The Factur-X PDF (e-invoice): the XML inside the printed page
+pypdf
+# The poster (social-poster): the picture recoloured by arithmetic
+numpy
+Pillow
+pypdfium2

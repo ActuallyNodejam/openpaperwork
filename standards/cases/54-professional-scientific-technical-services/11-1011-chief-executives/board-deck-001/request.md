@@ -1,0 +1,1 @@
+Can you make the board deck for 22 October from my notes (`inputs/board-notes.md`)? A PowerPoint the directors can open and edit, `Board update Q3 2026.pptx`. Open with the answer, show where churn comes from, and end on the one thing we ask the board to decide.

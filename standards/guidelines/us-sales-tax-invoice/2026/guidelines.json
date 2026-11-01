@@ -1,0 +1,18 @@
+{
+ "issuer": "us-sales-tax-invoice",
+ "version": "2026",
+ "link": "https://www.usa.gov/state-taxes",
+ "license": "No standard to license: the United States has no federal invoice standard and no VAT. These are the conventions the pack writes, stated plainly. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "A US invoice with sales tax: conventions, not a standard",
+ "source": "Sales tax is a state and local tax set by each jurisdiction; no federal rule prescribes an invoice's contents. Each state's tax agency, listed at usa.gov/state-taxes, sets its rates and rules. The page states each jurisdiction's tax on its own line, on Letter paper with US dates and numbers. Written 2026-10-09.",
+ "rules": [
+  {
+   "id": "US-SALES-TAX",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "text": "No VAT wording; each sales tax the order lists on the page with its rate and amount; subtotal plus the taxes is the total."
+  }
+ ]
+}

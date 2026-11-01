@@ -1,0 +1,130 @@
+{
+  "id": "employment-statement-es-001",
+  "title": "Escribe la información sobre los elementos esenciales del contrato para una nueva técnica de almacén",
+  "person": "An HR administrator at a Spanish logistics firm whose new hire starts in a week; since October 2026 the information is owed before the first day.",
+  "format": "docx",
+  "output": "informacion.docx",
+  "locale": "es-ES",
+  "sector": {
+    "naics": "54",
+    "name": "Professional, Scientific, and Technical Services"
+  },
+  "occupation": {
+    "soc": "13-1071.00",
+    "name": "Human Resources Specialists"
+  },
+  "review": [
+    "Información para Lucía Navarro Gil: técnica de almacén, grupo profesional 2, en Valencia desde el 16/11/2026, contrato indefinido con dos meses de periodo de prueba; salario base 1.900 € brutos al mes más plus de transporte y dos pagas extraordinarias, pago mensual por transferencia; 8 horas diarias, 40 semanales y 1.776 anuales; 30 días naturales de vacaciones; el convenio con su código, su publicación en el BOE y su vigencia; INSS y mutua; sin sistemas algorítmicos; el protocolo frente al acoso; cómo se modifican las condiciones; fechada antes del primer día."
+  ],
+  "revised_review": [
+    "El salario base pasa a 1.950 € brutos al mes; nada más cambia."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "items",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-ITEMS",
+      "guidelines": [
+        "es-working-conditions/2026-09#ES-02",
+        "es-working-conditions/2026-09#ES-04",
+        "es-working-conditions/2026-09#ES-06"
+      ],
+      "text": "Every item of art. 3.2 is there: the registered address and the workplace, the professional group, the daily, weekly and annual working time, the protocol against harassment, the Social Security body and the mutual, and how the terms may be changed."
+    },
+    {
+      "id": "dates",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-DATES",
+      "guidelines": [
+        "es-working-conditions/2026-09#ES-01"
+      ],
+      "text": "Dated before 16 November 2026, the first day."
+    },
+    {
+      "id": "probation",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-PROBATION",
+      "guidelines": [
+        "es-working-conditions/2026-09#ES-05"
+      ],
+      "text": "Two months' probation, its length stated."
+    },
+    {
+      "id": "pay",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-PAY",
+      "guidelines": [
+        "es-working-conditions/2026-09#ES-03"
+      ],
+      "text": "1.900 € brutos al mes, each supplement on its own line, paid monthly by transfer."
+    },
+    {
+      "id": "agreement",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-AGREEMENT",
+      "guidelines": [
+        "es-working-conditions/2026-09#ES-07"
+      ],
+      "text": "The convenio with its code, the BOE date it was published and its period of validity."
+    },
+    {
+      "id": "reference",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-REFERENCE",
+      "guidelines": [
+        "es-working-conditions/2026-09#ES-08"
+      ],
+      "text": "The ending points to the Estatuto de los Trabajadores and the convenio; the parties, the place, the work and the agreement itself are stated."
+    },
+    {
+      "id": "lang",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-LANG",
+      "guidelines": [
+        "es-working-conditions/2026-09#ES-10"
+      ],
+      "text": "Every heading is Spanish."
+    },
+    {
+      "id": "revised-pay",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "es-working-conditions/2026-09#ES-03"
+      ],
+      "text": "The base pay is 1.950 € brutos al mes and nothing else changed."
+    }
+  ],
+  "version": "1.0.0",
+  "status": "draft",
+  "source": "Synthetic material created for this evaluation pack; the companies and people are invented.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+  "guidelines": [
+    "es-working-conditions/2026-09",
+    "every-file/1.1.0"
+  ]
+}

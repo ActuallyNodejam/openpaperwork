@@ -1,0 +1,14 @@
+{
+  "conversation_id": "0c0c0000-0000-4000-8000-000000000003",
+  "generation_id": "0c0c0000-0000-4000-8000-0000000000b1",
+  "model": "default",
+  "hook_event_name": "beforeSubmitPrompt",
+  "cursor_version": "2026.10.01",
+  "workspace_roots": [
+    "/home/person/work"
+  ],
+  "user_email": null,
+  "transcript_path": null,
+  "prompt": "Make the invoice for order.json as invoice.pdf.",
+  "attachments": []
+}

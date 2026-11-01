@@ -1,0 +1,303 @@
+{
+ "id": "proposal-deck-002",
+ "title": "A full proposal for the cleaning of six offices, with the options placed, a quote, a picture and an appendix",
+ "person": "The bid manager of a facilities company with forty cleaners, writing the full proposal after walking the customer's offices.",
+ "format": "pdf",
+ "output": "Cleaning proposal Example Freight.pdf",
+ "locale": "en-GB",
+ "sector": {
+  "naics": "54",
+  "name": "Professional, Scientific, and Technical Services"
+ },
+ "occupation": {
+  "soc": "13-1111.00",
+  "name": "Management Analysts"
+ },
+ "review": [
+  "The saving of GBP 56,000 a year, the six offices' costs, the three options with their savings and the 95% audit target are in the deck; the matrix highlights the quadrant where one contract sits and the title names it; the quote is one sentence with its speaker's role; the audit report is shown whole with a caption and a source; the floor-area table and what the price covers stand behind the closing page, numbered A1 and A2."
+ ],
+ "revised_review": [
+  "The decision date is 9 December 2026 on every page that mentions it; 4 December appears nowhere."
+ ],
+ "truth": {
+  "doc": "deck",
+  "revision": {
+   "stale": [
+    "4 December"
+   ]
+  }
+ },
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "title",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-TITLE",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-TITLE"
+   ],
+   "text": "Every content page is titled with its message, as a sentence."
+  },
+  {
+   "id": "one-idea",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-ONE-IDEA",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-ONE-IDEA"
+   ],
+   "text": "One message and one exhibit a page."
+  },
+  {
+   "id": "storyline",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-STORYLINE",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-STORYLINE"
+   ],
+   "text": "From eight pages on the deck opens with the answer and shows its storyline."
+  },
+  {
+   "id": "next-steps",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-NEXT-STEPS",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-NEXT-STEPS"
+   ],
+   "text": "The deck closes on actions with an owner and a date each."
+  },
+  {
+   "id": "source",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-SOURCE",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-SOURCE"
+   ],
+   "text": "Every chart and table names its source."
+  },
+  {
+   "id": "placeholder",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-PLACEHOLDER",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-PLACEHOLDER"
+   ],
+   "text": "No placeholder or filler text."
+  },
+  {
+   "id": "chart-head",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-CHART-HEAD",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-CHART-HEAD"
+   ],
+   "text": "Every chart names its measure, unit and period."
+  },
+  {
+   "id": "chart-labels",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-CHART-LABELS",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-CHART-LABELS"
+   ],
+   "text": "Charts are labelled on their marks, horizontally."
+  },
+  {
+   "id": "chart-honest",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-CHART-HONEST",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-CHART-HONEST"
+   ],
+   "text": "Bars start at zero; no 3D; no crowded pie."
+  },
+  {
+   "id": "chart-earns",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-CHART-EARNS",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-CHART-EARNS"
+   ],
+   "text": "A chart shows more than the figures beside it."
+  },
+  {
+   "id": "highlight",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-HIGHLIGHT",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-HIGHLIGHT"
+   ],
+   "text": "At most one highlight a chart or table, on what the title names."
+  },
+  {
+   "id": "table",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-TABLE",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-TABLE"
+   ],
+   "text": "Tables are as tall as their rows, numbers right-aligned, one precision a column."
+  },
+  {
+   "id": "fit",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-FIT",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-FIT"
+   ],
+   "text": "All text fits its box."
+  },
+  {
+   "id": "fill",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-FILL",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-FILL"
+   ],
+   "text": "Every content page fills the body inside the preset's bounds."
+  },
+  {
+   "id": "words",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-WORDS",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-WORDS"
+   ],
+   "text": "Every content page carries a number of words inside the preset's bounds."
+  },
+  {
+   "id": "type",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-TYPE",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-TYPE"
+   ],
+   "text": "Nothing under the preset's smallest size; one title size."
+  },
+  {
+   "id": "contrast",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-CONTRAST",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-CONTRAST"
+   ],
+   "text": "Text and chart marks have the contrast WCAG 2.2 asks for."
+  },
+  {
+   "id": "grid",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-GRID",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-GRID"
+   ],
+   "text": "The title and the running line sit at one position, on one baseline."
+  },
+  {
+   "id": "file",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-FILE",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-FILE"
+   ],
+   "text": "Slide titles, reading order, alternative text, language and file name are in place."
+  },
+  {
+   "id": "matrix",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-MATRIX",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-MATRIX"
+   ],
+   "text": "The matrix names its axes and quadrants and highlights what its title says."
+  },
+  {
+   "id": "figure",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-FIGURE",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-FIGURE"
+   ],
+   "text": "The figure is one picture at its own proportions, with a caption, a source and alternative text."
+  },
+  {
+   "id": "quote",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-QUOTE",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-QUOTE"
+   ],
+   "text": "The quote is one sentence with who said it and their role, and nothing else."
+  },
+  {
+   "id": "appendix",
+   "stage": "both",
+   "grader": "script",
+   "script": "business_deck.py",
+   "rule": "BDECK-APPENDIX",
+   "guidelines": [
+    "business-deck/2026-10#BDECK-APPENDIX"
+   ],
+   "text": "Backup pages stand behind the closing page in the appendix's own count."
+  }
+ ],
+ "version": "1.1.0",
+ "status": "draft",
+ "source": "Synthetic material created for this library; the companies, people, figures and addresses are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "business-deck/2026-10"
+ ]
+}

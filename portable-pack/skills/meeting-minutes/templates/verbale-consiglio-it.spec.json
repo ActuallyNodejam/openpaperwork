@@ -1,0 +1,54 @@
+{
+  "language": "it",
+  "country": "IT",
+  "body": "Esempio Stampa S.p.A.",
+  "company_number": "00000000000",
+  "meeting": "board",
+  "number": "5/2026",
+  "date": "2026-10-14",
+  "start": "15:00",
+  "end": "16:10",
+  "place": "Via dell'Esempio 8, Milano",
+  "chair": "Chiara Fontana",
+  "secretary": "Paolo Conti",
+  "present": [
+    "Chiara Fontana",
+    "Luca Marchetti",
+    "Silvia Greco"
+  ],
+  "absent": [
+    "Giorgio Sala"
+  ],
+  "in_attendance": [
+    "Marta Bellini (presidente del collegio sindacale)"
+  ],
+  "quorum": true,
+  "items": [
+    {
+      "title": "Budget 2027",
+      "notes": "L'amministratore delegato presenta il budget 2027, con ricavi previsti per 4,2 milioni di euro.",
+      "decisions": [
+        {
+          "text": "di approvare il budget 2027 come presentato",
+          "unanimous": true
+        }
+      ]
+    },
+    {
+      "title": "Acquisto di una macchina da stampa digitale",
+      "notes": "Sono esaminate due offerte per sostituire la macchina del 2014.",
+      "decisions": [
+        {
+          "text": "di autorizzare l'acquisto di una macchina da stampa digitale per un importo massimo di 380.000 euro",
+          "for": [
+            "Chiara Fontana",
+            "Luca Marchetti"
+          ],
+          "against": [
+            "Silvia Greco"
+          ]
+        }
+      ]
+    }
+  ]
+}

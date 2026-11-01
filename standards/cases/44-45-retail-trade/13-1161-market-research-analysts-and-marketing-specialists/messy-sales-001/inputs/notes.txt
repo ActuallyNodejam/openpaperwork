@@ -1,0 +1,1 @@
+Fictional shop chain, July 2026 export from two tills. Amounts use a comma for decimals and a dot for thousands. Dates written with slashes are day/month/year. The same order number twice is a duplicate export; keep one. A negative amount is a refund and stays in the totals. Convert SEK at 11.40 SEK per EUR.

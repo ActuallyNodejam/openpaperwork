@@ -1,0 +1,5 @@
+Fictional parties.
+Seller: Nordlicht Kontor GmbH, Chausseestrasse 42, 10115 Berlin, DE. VAT ID DE123456789. Bank account (IBAN): DE02120300000000202051.
+Buyer: Beispiel Buerobedarf GmbH, Speicherstadt 8, 20457 Hamburg, DE. VAT ID DE987654321.
+Invoice number: INV-2026-0007. Issue date: 2026-10-01. Delivery date: 2026-09-28. Due date: 2026-10-31. Payment terms: 30 days net, by bank transfer. Currency: EUR.
+Rounding: round each line net amount to two decimals, then calculate VAT once per VAT rate on the sum of that rate line nets, rounded to two decimals.

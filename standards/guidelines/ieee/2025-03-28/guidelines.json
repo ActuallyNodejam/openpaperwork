@@ -1,0 +1,58 @@
+{
+ "issuer": "ieee",
+ "version": "2025-03-28",
+ "link": "https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/create-the-text-of-your-article/ieee-editorial-style-manual/",
+ "date": "2026-10-07",
+ "status": "draft",
+ "title": "IEEE reference style: numbered citations and reference list",
+ "source": {
+  "standard": "IEEE Reference Guide, version 3.28.2025 (IEEE Publication Operations, IEEE Author Center)",
+  "machine_form": "ieee.csl in this folder, verbatim from citation-style-language/styles, commit 1ccf4696be22ea0b55f83cc9163bde3061fddb0a (2026-01-07), <updated> 2024-03-27, title 'IEEE Reference Guide version 11.29.2023', SHA-256 b4c7619fc16c45a31e4cc3271eab94ffe83192d3b4c7fc729470a3b459448de3",
+  "note": "Read 2026-10-07 from the Author Center's own link. The CSL file is still titled 11.29.2023 and already writes every citation number out, which is what the 2025 guide asks. Where IEEE's own LaTeX conference template (IEEEtran with the cite package) compresses a range, a paper built on that template keeps the template's form."
+ },
+ "license": "Rule wording: Apache-2.0 with this repository. ieee.csl: CC BY-SA 3.0, see NOTICE.md.",
+ "rules": [
+  {
+   "id": "IEEE-CIT-1",
+   "grader": "script",
+   "text": "Citations are numbers in square brackets, assigned in the order each source is first cited. Ranges are written out, [1], [2], [3], [4], not [1]–[4].",
+   "source": "IEEE Reference Guide 3.28.2025, I.1 References in Text"
+  },
+  {
+   "id": "IEEE-CIT-2",
+   "grader": "judge",
+   "text": "A bracketed number stands in the sentence like a footnote or as a noun (as shown in [3]); it is placed before the punctuation.",
+   "source": "IEEE Reference Guide 3.28.2025, I.1: on the line, in square brackets, inside the punctuation"
+  },
+  {
+   "id": "IEEE-REF-1",
+   "grader": "script",
+   "text": "The list is numbered [1] to [n] in citation order, not alphabetically; every listed number is cited and every cited number is listed.",
+   "source": "IEEE Reference Guide 3.28.2025, II Style: numbers flush left in brackets"
+  },
+  {
+   "id": "IEEE-REF-2",
+   "grader": "judge",
+   "text": "Authors are written initials first (A. B. Surname); up to six are listed, more than six become the first author and et al.",
+   "source": "IEEE Reference Guide 3.28.2025, II Style: all authors up to six; more than six, the first author and et al."
+  },
+  {
+   "id": "IEEE-REF-3",
+   "grader": "judge",
+   "text": "An article title is in quotation marks in sentence case; the journal name is abbreviated and italic, followed by vol., no., pp. and the date.",
+   "source": "IEEE Reference Guide 3.28.2025, Periodicals: J. K. Author, \"Name of paper,\" Abbrev. Title of Periodical, vol. x, no. x, pp. xxx–xxx, Abbrev. Month, year"
+  },
+  {
+   "id": "IEEE-REF-4",
+   "grader": "judge",
+   "text": "A DOI is given as doi: 10.xxxx when the source has one, and the reference ends with a period.",
+   "source": "IEEE Reference Guide 3.28.2025, II Style and Periodicals"
+  },
+  {
+   "id": "IEEE-CIT-3",
+   "grader": "judge",
+   "text": "A source named in the text with three or more authors is written as the first author and et al.",
+   "source": "IEEE Reference Guide 3.28.2025, I.1 NOTE"
+  }
+ ]
+}

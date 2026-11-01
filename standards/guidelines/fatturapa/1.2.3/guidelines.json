@@ -1,0 +1,18 @@
+{
+ "issuer": "fatturapa",
+ "version": "1.2.3",
+ "link": "https://www.fatturapa.gov.it/it/norme-e-regole/documentazione-fattura-elettronica/formato-fatturapa/",
+ "license": "Cited only: fatturapa.gov.it reserves every right in its contents (the format itself is allegato A of DM 3 aprile 2013, n. 55, an official act). Nothing of the schema or the specifications is copied: the schema is fetched at a pinned SHA-256 and run untouched in the KoSIT validator (Apache-2.0). Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-10",
+ "status": "draft",
+ "title": "FatturaPA: the Italian e-invoice the Sistema di Interscambio takes",
+ "source": "Schema 1.2.3 (Schema_VFPR12_v1.2.3.xsd, one file for FPR12 and FPA12, SHA-256 152944f6eef9) and the technical specifications 1.4, valid from 1 April 2025. Invoices between parties resident or established in Italy are issued only as e-invoices through the Sistema di Interscambio in this format (D.Lgs. 127/2015 art. 1 comma 3; from 1 January 2027 art. 77 of the Testo unico IVA). FPR12 goes to a private party, FPA12 to a public body; TD01 is an invoice, TD04 a credit note. The library writes the file and sends nothing: the page beside it is a courtesy copy. Read 2026-10-09.",
+ "rules": [
+  {
+   "id": "EINV-FATTURAPA",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "text": "The FatturaPA schema 1.2.3 accepts the Italian invoice or credit note beside the page; skipped when it is not installed. The file is not sent to the Sistema di Interscambio, and the rule's evidence says so."
+  }
+ ]
+}

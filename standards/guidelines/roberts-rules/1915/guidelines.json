@@ -1,0 +1,105 @@
+{
+  "issuer": "roberts-rules",
+  "version": "1915",
+  "link": "https://www.gutenberg.org/ebooks/75990",
+  "license": "Public domain in the USA (Project Gutenberg #75990); the rules are restated in our own words. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-08",
+  "status": "draft",
+  "title": "Robert's Rules of Order Revised for Deliberative Assemblies",
+  "source": "Henry M. Robert, Robert's Rules of Order Revised for Deliberative Assemblies (Scott, Foresman, 1915), section 59 (the secretary) and section 60 (the minutes); Project Gutenberg eBook #75990.",
+  "rules": [
+    {
+      "id": "MIN-01",
+      "grader": "script",
+      "text": "The minutes say the kind of meeting: regular, special or adjourned.",
+      "source": "§60(a)",
+      "check": "minutes_check.py MINUTES-HEAD"
+    },
+    {
+      "id": "MIN-02",
+      "grader": "script",
+      "text": "The minutes name the body that met.",
+      "source": "§60(b)",
+      "check": "minutes_check.py MINUTES-HEAD"
+    },
+    {
+      "id": "MIN-03",
+      "grader": "script",
+      "text": "The minutes give the date, and the place when it varies.",
+      "source": "§60(c)",
+      "check": "minutes_check.py MINUTES-HEAD"
+    },
+    {
+      "id": "MIN-04",
+      "grader": "script",
+      "text": "The regular chair and secretary were present, or the minutes name who stood in.",
+      "source": "§60(d)",
+      "check": "minutes_check.py MINUTES-OFFICERS"
+    },
+    {
+      "id": "MIN-05",
+      "grader": "judge",
+      "text": "The minutes say whether the previous minutes were approved or their reading was dispensed with.",
+      "source": "§60(e)"
+    },
+    {
+      "id": "MIN-06",
+      "grader": "script",
+      "text": "Every main motion that was not withdrawn is recorded with what became of it.",
+      "source": "§60(f)",
+      "check": "minutes_check.py MINUTES-MOTIONS"
+    },
+    {
+      "id": "MIN-07",
+      "grader": "script",
+      "text": "A motion names its mover, not its seconder.",
+      "source": "§60",
+      "check": "minutes_check.py MINUTES-MOTIONS"
+    },
+    {
+      "id": "MIN-08",
+      "grader": "judge",
+      "text": "Points of order and appeals are recorded with whether they were sustained or lost.",
+      "source": "§60(f)"
+    },
+    {
+      "id": "MIN-09",
+      "grader": "script",
+      "text": "The minutes give the time the meeting opened and the time it adjourned.",
+      "source": "§60(g)",
+      "check": "minutes_check.py MINUTES-TIMES"
+    },
+    {
+      "id": "MIN-10",
+      "grader": "script",
+      "text": "A counted or ballot vote gives the numbers; a roll-call vote gives the names.",
+      "source": "§60",
+      "check": "minutes_check.py MINUTES-MOTIONS"
+    },
+    {
+      "id": "MIN-11",
+      "grader": "judge",
+      "text": "Minutes record what was done, not what was said, with no praise or blame.",
+      "source": "§59, §60"
+    },
+    {
+      "id": "MIN-12",
+      "grader": "judge",
+      "text": "An adopted resolution is written out in full.",
+      "source": "§60"
+    },
+    {
+      "id": "MIN-13",
+      "grader": "script",
+      "text": "The secretary signs the minutes, and the president too when they are published.",
+      "source": "§60",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "MIN-14",
+      "grader": "judge",
+      "text": "Minutes that are not habitually approved at the next meeting carry, at their end, the word Approved, the date of approval and the secretary's signature.",
+      "source": "§60"
+    }
+  ]
+}

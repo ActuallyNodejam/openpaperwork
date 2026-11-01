@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" data-nj-canvas="__CANVAS__"__MASK__>
+<head>
+<meta charset="utf-8">
+<!-- The fair poster, ported from the old app's social pack 0.3
+     templates/event.html and its deck.css rules (.social-fair-*). The layout is
+     fixed: this file owns it, the script only fills the slots and the look's
+     tokens, and brand facts come from the folder. Never edit this file to make
+     one fair fit; write less copy or leave the optional slot out. -->
+<title>__TITLE__</title>
+<style>
+__FONT_FACES__
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; width: __W__px; height: __H__px; overflow: hidden; }
+
+html { __CANVAS_TOKENS__ }
+html { --look-ground: __GROUND__; --look-ground-dark: __GROUND_DARK__; --look-ink: __INK__; --look-soft: __SOFT__;
+  --look-line: __LINE__; --look-scrim-head: __SCRIM_HEAD__; --look-scrim-foot: __SCRIM_FOOT__;
+  --look-clear: __CLEAR__; --look-on: __ON__; --look-mark: __MARK__; }
+
+body { background: transparent; font-family: "Inter", "Noto Sans SC", sans-serif; color: var(--look-ink); }
+
+.slide { position: relative; width: __W__px; height: __H__px; overflow: hidden; background: var(--look-ground); }
+/* The motion pass renders the same page with no background: the picture there
+   comes from the recoloured clip, so the ground must not cover it. */
+.slide[data-background="none"] { background: var(--look-ground-dark); }
+
+.social-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.social-scrim { position: absolute; inset: 0;
+  background: linear-gradient(180deg, var(--look-scrim-head) 0%, var(--look-clear) 30%,
+    var(--look-clear) 52%, var(--look-scrim-foot) 100%); }
+
+/* A screen shorter than the page (the capture window) scales the whole page
+   down by one factor; print restores the page at its own size so the PDF keeps
+   the exact canvas. Nothing inside the page moves or resizes. */
+@page { size: __PAGE_W__mm __PAGE_H__mm; margin: 0; }
+/* Mask mode paints the page's own shapes pure white on black, so the app's
+   capture can hand back the page as a stencil the film pass can blend. The
+   capture has no alpha channel, so a stencil is how the type keeps its exact
+   coverage over the moving picture. */
+html[data-mask] .slide { background: #000 !important; }
+html[data-mask] [data-slot] { color: #fff !important; }
+html[data-mask="light"] .social-scrim { display: none !important; }
+html[data-mask="dark"] .social-frame { visibility: hidden !important; }
+/* The dark stencil keeps the scrim's own gradient; its near-white stop reads
+   over the picture as the shadow the page puts there. */
+@media print { body { zoom: 1 !important; } }
+body { zoom: __SCALE__; }
+
+.social-frame { position: absolute; z-index: 1;
+  top: calc(var(--nj-safe-top) + var(--social-m));
+  right: calc(var(--nj-safe-right) + var(--social-m));
+  bottom: calc(var(--nj-safe-bottom) + var(--social-m));
+  left: calc(var(--nj-safe-left) + var(--social-m));
+  padding: var(--look-pad-top, 0px) 0 var(--look-pad-bottom, 0px);
+  display: flex; flex-direction: column; }
+
+.social-fair-headline { font-family: "Inter", sans-serif; font-weight: 400;
+  font-size: var(--social-t-fair-head); line-height: 1.06; letter-spacing: -0.02em;
+  color: var(--look-on); text-wrap: balance; margin: 0; }
+.social-fair-venue { font-family: "Signal Mono", ui-monospace, monospace;
+  font-size: var(--social-t-fair-small); line-height: 1.35; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--look-soft); margin: 18px 0 0; max-width: var(--look-venue-w, 72%); }
+
+.social-fair-brand { display: flex; align-items: center; justify-content: space-between;
+  gap: var(--social-sp-3); margin: auto 0; padding: var(--social-sp-3) 0; }
+.social-fair-wordmark { height: var(--social-fair-wordmark-h); width: auto; max-width: 52%;
+  object-fit: contain; object-position: left center; filter: var(--look-mark); }
+.social-fair-partner { height: var(--social-fair-partner-h); width: auto; max-width: 40%;
+  object-fit: contain; object-position: right center; margin-left: auto; filter: var(--look-mark); }
+.social-fair-brand:empty { display: none; }
+
+.social-fair-when { display: flex; justify-content: space-between; align-items: flex-end;
+  gap: var(--social-sp-3); }
+.social-fair-cell { min-width: 0; }
+.social-fair-at { text-align: var(--look-at-align, right); margin-left: auto; }
+.social-fair-label { font-family: "Signal Mono", ui-monospace, monospace;
+  font-size: var(--social-t-fair-small); line-height: 1.2; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--look-soft); margin: 0 0 10px; }
+.social-fair-area { margin: 12px 0 0; }
+.social-fair-big { font-family: "Inter", sans-serif; font-weight: 400;
+  font-size: var(--social-t-fair-big); line-height: 1.05; letter-spacing: -0.02em;
+  color: var(--look-on); margin: 0; white-space: nowrap; }
+
+.social-fair-claim { font-family: "Inter", sans-serif; font-weight: 400;
+  font-size: var(--social-t-fair-claim); line-height: 1.15; letter-spacing: -0.01em;
+  color: var(--look-on); margin: var(--social-sp-3) 0 0; max-width: 78%; text-wrap: balance; }
+
+.social-marks { list-style: none; display: flex; align-items: center; flex-wrap: nowrap;
+  gap: var(--social-mark-gap); margin: var(--social-sp-3) 0 0; padding: 0; min-width: 0; }
+.social-mark { flex: 0 1 auto; min-width: 0; display: flex; align-items: center; }
+.social-mark img { height: var(--social-mark-h); width: auto; max-width: 100%; object-fit: contain;
+  filter: var(--look-mark); }
+</style>
+</head>
+<body>
+<div class="slide social-fair" data-background="__BACKGROUND_STATE__">
+  __BACKGROUND__
+  <div class="social-scrim"></div>
+  <div class="social-frame">
+    <div class="social-fair-head">
+      <h1 class="social-fair-headline" data-slot="headline">__HEADLINE__</h1>
+      <p class="social-fair-venue" data-slot="venue">__VENUE__</p>
+    </div>
+    <div class="social-fair-brand">
+      __WORDMARK____PARTNER__
+    </div>
+    <div class="social-fair-when">
+      <div class="social-fair-cell">
+        __YEAR_LABEL__
+        <p class="social-fair-big" data-slot="band">__BAND__</p>
+      </div>
+      __AT_CELL__
+    </div>
+    __CLAIM_BLOCK__
+    __MARKS__
+  </div>
+</div>
+</body>
+</html>

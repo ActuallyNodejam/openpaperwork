@@ -1,0 +1,84 @@
+{
+  "type": "quotation",
+  "language": "nl",
+  "number": "OF-2026-0318",
+  "issue_date": "2026-10-14",
+  "references": [
+    {
+      "label": "Uw aanvraag van",
+      "value": "2026-10-09"
+    },
+    {
+      "label": "Onze referentie",
+      "value": "Sanne de Vries"
+    }
+  ],
+  "dates": [
+    {
+      "label": "Geldig tot",
+      "value": "2026-11-13"
+    },
+    {
+      "label": "Levertijd",
+      "value": "3 weken na opdracht"
+    }
+  ],
+  "currency": "EUR",
+  "seller": {
+    "name": "Polderlicht Installatietechniek B.V.",
+    "street": "Kanaalweg 41",
+    "postcode": "3526 KM",
+    "city": "Utrecht",
+    "country": "Nederland",
+    "vat_id": "NL123456789B01",
+    "email": "verkoop@polderlicht.example",
+    "phone": "+31 30 000 0000",
+    "registered_office": "Utrecht",
+    "register_number": "12345678"
+  },
+  "buyer": {
+    "name": "Eemland Facilitair B.V.",
+    "street": "Stationsplein 7",
+    "postcode": "3818 LE",
+    "city": "Amersfoort",
+    "country": "Nederland",
+    "vat_id": "NL987654321B01"
+  },
+  "delivery_terms": {
+    "rule": "DAP",
+    "place": "Amersfoort, Nederland"
+  },
+  "transport": "road",
+  "payment_terms": "30 dagen netto na factuurdatum",
+  "lines": [
+    {
+      "code": "PL-640",
+      "description": "LED-paneel 60 × 60 cm, 4000 K, 36 W",
+      "quantity": 40,
+      "unit": "pcs",
+      "unit_price": 62.5,
+      "discount_percent": 5,
+      "vat_rate": 21
+    },
+    {
+      "code": "PL-120",
+      "description": "Noodverlichtingsarmatuur, 3 uur autonomie",
+      "quantity": 8,
+      "unit": "pcs",
+      "unit_price": 118.0,
+      "discount_percent": 0,
+      "vat_rate": 21
+    },
+    {
+      "description": "Montage en inregeling",
+      "quantity": 12,
+      "unit": "uur",
+      "unit_price": 68.0,
+      "discount_percent": 0,
+      "vat_rate": 21
+    }
+  ],
+  "notes": [
+    "De korting van 5 procent geldt bij afname van minimaal 40 panelen."
+  ]
+}

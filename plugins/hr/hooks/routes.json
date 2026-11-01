@@ -1,0 +1,87 @@
+{
+  "note": "What people call each kind of file this plugin's packs make. Built by scripts/build-portable-pack.py from the asks list in each pack's pack.json and the titles the packs' own pages print; change it there, never here. Read by hooks/pack_route.py.",
+  "routes": [
+    {
+      "skill": "employment-statement",
+      "checks": true,
+      "kinds": [
+        {
+          "id": "statement",
+          "kind": "the written terms of employment",
+          "words": {
+            "en": [
+              "written statement of particulars",
+              "statement of particulars",
+              "written statement of employment",
+              "terms of employment",
+              "employment terms",
+              "statement of employment terms",
+              "employment statement",
+              "employment contract",
+              "contract of employment",
+              "employment agreement",
+              "offer letter"
+            ],
+            "de": [
+              "Dienstzettel",
+              "Arbeitsvertrag",
+              "Dienstvertrag",
+              "Nachweis der Arbeitsbedingungen",
+              "Niederschrift der Arbeitsbedingungen"
+            ],
+            "fr": [
+              "contrat de travail",
+              "conditions d'emploi",
+              "document d'information sur la relation de travail",
+              "lettre d'embauche",
+              "lettre d'engagement"
+            ],
+            "nl": [
+              "arbeidsovereenkomst",
+              "arbeidscontract",
+              "arbeidsvoorwaarden"
+            ],
+            "sv": [
+              "anställningsbevis",
+              "anställningsavtal",
+              "anställningsvillkor"
+            ],
+            "nb": [
+              "arbeidsavtale",
+              "ansettelsesavtale",
+              "arbeidskontrakt"
+            ],
+            "da": [
+              "ansættelsesbevis",
+              "ansættelseskontrakt",
+              "ansættelsesaftale",
+              "ansættelsesvilkår"
+            ],
+            "fi": [
+              "työsopimus",
+              "työsopimuksen",
+              "työsopimusta",
+              "selvitys työnteon keskeisistä ehdoista",
+              "työnteon keskeiset ehdot"
+            ],
+            "es": [
+              "contrato de trabajo",
+              "contrato laboral",
+              "elementos esenciales del contrato"
+            ],
+            "it": [
+              "contratto di lavoro",
+              "lettera di assunzione",
+              "informativa sul rapporto di lavoro"
+            ],
+            "pl": [
+              "umowa o pracę",
+              "informacja o warunkach zatrudnienia",
+              "warunki zatrudnienia"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

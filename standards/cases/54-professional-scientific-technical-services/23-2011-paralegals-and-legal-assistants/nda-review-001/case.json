@@ -1,0 +1,110 @@
+{
+  "id": "nda-review-001",
+  "title": "Review the NDA the other side sent",
+  "person": "A paralegal at a small print company, asked to look over a counterparty's confidentiality agreement before a meeting.",
+  "format": "docx",
+  "output": "review.docx",
+  "locale": "en",
+  "sector": {
+    "naics": "54",
+    "name": "Professional, Scientific, and Technical Services"
+  },
+  "occupation": {
+    "soc": "23-2011.00",
+    "name": "Paralegals and Legal Assistants"
+  },
+  "truth": {
+    "input": "their-nda.docx",
+    "side": "Receiving Party",
+    "expected_findings": [
+      "one-way, not mutual",
+      "one carve-out of four",
+      "liability however caused",
+      "no compelled-disclosure exception",
+      "ten-year survival",
+      "back-up copies",
+      "non-solicit",
+      "contractual penalty on top of damages",
+      "Schedule 1 not attached"
+    ]
+  },
+  "review": [
+    "A review written for Exempel Tryck AB as the Receiving Party: every item of the NDA review checklist has one verdict, every finding quotes their words exactly, legal issues and commercial preferences are listed apart, and the missing Schedule 1 is marked Missing information."
+  ],
+  "revised_review": [
+    "The review now also gives the recipient-liability item as a Finding (strict liability for its employees' acts) and nothing else changes."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "ledger",
+      "stage": "both",
+      "grader": "script",
+      "script": "legal_check.py",
+      "rule": "LEGAL-VERDICT",
+      "guidelines": [
+        "mike-workflows/ce62e6a2d3f4#REVIEW-LEDGER"
+      ],
+      "text": "Every checklist item has exactly one verdict and each finding is marked legal or commercial."
+    },
+    {
+      "id": "quotes",
+      "stage": "both",
+      "grader": "script",
+      "script": "legal_check.py",
+      "rule": "LEGAL-QUOTE",
+      "guidelines": [
+        "mike-workflows/ce62e6a2d3f4#REVIEW-QUOTE"
+      ],
+      "text": "Every finding quotes their agreement word for word."
+    },
+    {
+      "id": "no-verdict",
+      "stage": "both",
+      "grader": "script",
+      "script": "legal_check.py",
+      "rule": "LEGAL-WORDING",
+      "guidelines": [
+        "house-drafting/1#DRAFT-NO-VERDICT"
+      ],
+      "text": "The memo never calls the agreement compliant, lawful or ready to sign."
+    },
+    {
+      "id": "side",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "mike-workflows/ce62e6a2d3f4#REVIEW-SIDE"
+      ],
+      "text": "The review is written from the Receiving Party's side and the findings are the ones that matter to it."
+    },
+    {
+      "id": "no-advice",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-2"
+      ],
+      "text": "The reply says this is not legal advice, gives no verdict on the agreement as a whole and suggests a lawyer reads it before anyone signs."
+    }
+  ],
+  "guidelines": [
+    "openpaperwork/0.1.0",
+    "house-drafting/1",
+    "mike-workflows/ce62e6a2d3f4",
+    "every-file/1.1.0"
+  ],
+  "version": "1.0.0",
+  "status": "draft",
+  "source": "Synthetic material created for this evaluation pack; the companies and people are invented.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen."
+}

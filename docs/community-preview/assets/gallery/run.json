@@ -1,0 +1,213 @@
+{
+ "model": "deepseek/deepseek-flash",
+ "cases": {
+  "brief-001": {
+   "balance_start_cny": 48.23,
+   "first": {
+    "start": "2026-10-02T17:21:43Z",
+    "end": "2026-10-02T17:22:31Z",
+    "elapsed_s": 48.4,
+    "rc": 0,
+    "cost_cny": 0.0,
+    "balance_after_cny": 48.23,
+    "check_rc": 0,
+    "tokens": {
+     "i": 18737,
+     "o": 1880,
+     "r": 2134,
+     "c": 175616,
+     "steps": 13,
+     "tools": {
+      "skill": 1,
+      "write": 1,
+      "shell": 6,
+      "read": 6
+     },
+     "app_reported_cost_usd": 0.00575
+    },
+    "mechanical_pass": true,
+    "failed_checks": [],
+    "output_files": [
+     "brief.docx"
+    ],
+    "output_sha256": [
+     "91d77ee9e201cdc0"
+    ]
+   },
+   "session_id": "ses_f025d25dcffe7L7VigcSvWoHOI",
+   "revision": {
+    "start": "2026-10-02T17:22:32Z",
+    "end": "2026-10-02T17:22:43Z",
+    "elapsed_s": 11.2,
+    "rc": 0,
+    "cost_cny": 0.0,
+    "balance_after_cny": 48.23,
+    "check_rc": 0,
+    "tokens": {
+     "i": 1044,
+     "o": 1092,
+     "r": 593,
+     "c": 99456,
+     "steps": 4,
+     "tools": {
+      "write": 1,
+      "shell": 2,
+      "read": 1
+     },
+     "app_reported_cost_usd": 0.00147
+    },
+    "mechanical_pass": true,
+    "failed_checks": [],
+    "output_files": [
+     "brief.docx"
+    ],
+    "output_sha256": [
+     "6fe88cd067379074"
+    ]
+   },
+   "balance_end_cny": 48.23
+  },
+  "quotes-001": {
+   "balance_start_cny": 48.23,
+   "first": {
+    "start": "2026-10-02T17:22:58Z",
+    "end": "2026-10-02T17:25:50Z",
+    "elapsed_s": 171.2,
+    "rc": 0,
+    "cost_cny": 0.06,
+    "balance_after_cny": 48.17,
+    "check_rc": 0,
+    "tokens": {
+     "i": 46290,
+     "o": 7106,
+     "r": 14704,
+     "c": 1577728,
+     "steps": 41,
+     "tools": {
+      "write": 1,
+      "shell": 28,
+      "read": 12,
+      "search": 1,
+      "edit": 1,
+      "execute": 1,
+      "skill": 1
+     },
+     "app_reported_cost_usd": 0.02476
+    },
+    "mechanical_pass": true,
+    "failed_checks": [],
+    "output_files": [
+     "comparison.xlsx"
+    ],
+    "output_sha256": [
+     "5df8336442b079fd"
+    ]
+   },
+   "session_id": "ses_f025bff79ffe793T1ALYmXS5Gd",
+   "revision": {
+    "start": "2026-10-02T17:25:50Z",
+    "end": "2026-10-02T17:26:03Z",
+    "elapsed_s": 13.4,
+    "rc": 0,
+    "cost_cny": 0.0,
+    "balance_after_cny": 48.17,
+    "check_rc": 0,
+    "tokens": {
+     "i": 1571,
+     "o": 676,
+     "r": 537,
+     "c": 270080,
+     "steps": 4,
+     "tools": {
+      "shell": 3,
+      "read": 1
+     },
+     "app_reported_cost_usd": 0.00177
+    },
+    "mechanical_pass": true,
+    "failed_checks": [],
+    "output_files": [
+     "comparison.xlsx"
+    ],
+    "output_sha256": [
+     "09ec8f559be1e5fd"
+    ]
+   },
+   "balance_end_cny": 48.17
+  },
+  "update-001": {
+   "balance_start_cny": 48.17,
+   "first": {
+    "start": "2026-10-02T17:26:04Z",
+    "end": "2026-10-02T17:27:47Z",
+    "elapsed_s": 103.2,
+    "rc": 0,
+    "cost_cny": 0.1,
+    "balance_after_cny": 48.07,
+    "check_rc": 0,
+    "tokens": {
+     "i": 46916,
+     "o": 5272,
+     "r": 8096,
+     "c": 1029888,
+     "steps": 34,
+     "tools": {
+      "write": 2,
+      "shell": 20,
+      "read": 16,
+      "edit": 2,
+      "execute": 1,
+      "skill": 2
+     },
+     "app_reported_cost_usd": 0.01815
+    },
+    "mechanical_pass": true,
+    "failed_checks": [],
+    "output_files": [
+     "update.pptx"
+    ],
+    "output_sha256": [
+     "6796e65ef4b748cf"
+    ]
+   },
+   "session_id": "ses_f02592a2dffen0iBkkSh3dL6Cb",
+   "revision": {
+    "start": "2026-10-02T17:27:48Z",
+    "end": "2026-10-02T17:28:11Z",
+    "elapsed_s": 23.3,
+    "rc": 0,
+    "cost_cny": 0.0,
+    "balance_after_cny": 48.07,
+    "check_rc": 0,
+    "tokens": {
+     "i": 4192,
+     "o": 1986,
+     "r": 1254,
+     "c": 424832,
+     "steps": 7,
+     "tools": {
+      "edit": 4,
+      "shell": 4,
+      "read": 5
+     },
+     "app_reported_cost_usd": 0.00385
+    },
+    "mechanical_pass": true,
+    "failed_checks": [],
+    "output_files": [
+     "update.pptx"
+    ],
+    "output_sha256": [
+     "91d841da948392b5"
+    ]
+   },
+   "balance_end_cny": 48.07
+  }
+ },
+ "balance_start_cny": 48.23,
+ "balance_end_cny": 48.07,
+ "retries": 0,
+ "human_interventions": 0,
+ "surface": "bundled nodejam-cli (OpenPaperwork 2.0.18 linux-unpacked) serve on 127.0.0.1 with password + cli run --server --auto, isolated HOME, DEEPSEEK_API_KEY env only; not the desktop UI",
+ "pricing_note": "cost_cny from balance delta (2-decimal granularity); app_reported_cost_usd from models.dev snapshot price 0.15/0.60/0.003 USD per M"
+}

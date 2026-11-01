@@ -1,0 +1,75 @@
+{
+  "type": "quotation",
+  "language": "fr",
+  "number": "DV-2026-0187",
+  "issue_date": "2026-10-15",
+  "currency": "EUR",
+  "references": [
+    {
+      "label": "Votre demande du",
+      "value": "2026-10-12"
+    }
+  ],
+  "dates": [
+    {
+      "label": "Valable jusqu'au",
+      "value": "2026-11-14"
+    },
+    {
+      "label": "Délai de livraison",
+      "value": "10 jours ouvrés"
+    }
+  ],
+  "seller": {
+    "name": "Atelier Exemple SAS",
+    "legal_form": "SAS",
+    "share_capital": 10000,
+    "rcs": "RCS Lyon",
+    "siren": "000 000 018",
+    "street": "1 rue de l'Exemple",
+    "postcode": "69000",
+    "city": "Lyon",
+    "country": "FR",
+    "vat_id": "FR66000000018",
+    "registered_office": "1 rue de l'Exemple, 69000 Lyon",
+    "email": "ventes@atelier-exemple.example",
+    "phone": "+33 4 00 00 00 00"
+  },
+  "buyer": {
+    "name": "Société Cliente Exemple SARL",
+    "street": "2 avenue de l'Essai",
+    "postcode": "75000",
+    "city": "Paris",
+    "country": "FR",
+    "vat_id": "FR90000000026"
+  },
+  "delivery_terms": {
+    "rule": "DAP",
+    "place": "Paris, France"
+  },
+  "transport": "road",
+  "payment_terms": "30 jours nets à compter de la date de facture",
+  "lines": [
+    {
+      "code": "CRT-600",
+      "description": "Cartons d'expédition double cannelure 600 x 400 x 400 mm",
+      "quantity": 500,
+      "unit": "pcs",
+      "unit_price": 1.85,
+      "discount_percent": 5,
+      "vat_rate": 20
+    },
+    {
+      "code": "ADH-50",
+      "description": "Ruban adhésif imprimé 50 mm x 100 m",
+      "quantity": 72,
+      "unit": "pcs",
+      "unit_price": 3.4,
+      "discount_percent": 0,
+      "vat_rate": 20
+    }
+  ],
+  "notes": [
+    "Prix fermes pendant la durée de validité du devis."
+  ]
+}

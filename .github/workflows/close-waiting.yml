@@ -1,0 +1,72 @@
+# Closes what has waited too long, so no maintainer has to. A pull request labelled
+# needs:compliance or needs:issue closes 72 hours after pr-standards first commented; an issue
+# labelled needs:repro closes after 3 days with no activity. Maintainers and listed team members
+# are never closed. It checks out nothing, runs no pull request code and uses no secret.
+# The 72-hour close began as OpenCode's compliance-close workflow (THIRD_PARTY.md,
+# the OpenCode row); the repro close follows Biome's idea, restated (THIRD_PARTY.md).
+name: close-waiting
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  close:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+    steps:
+      - name: Close waiting pull requests and issues
+        uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7.1.0
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const base = context.payload.repository?.default_branch || 'main';
+            const now = Date.now();
+            const hours = h => h * 60 * 60 * 1000;
+
+            let members = new Set();
+            try {
+              const { data } = await github.rest.repos.getContent({ owner, repo, path: '.github/TEAM_MEMBERS', ref: base });
+              members = new Set(Buffer.from(data.content, 'base64').toString().split('\n')
+                .map(l => l.trim().toLowerCase()).filter(l => l && !l.startsWith('#')));
+            } catch (e) {}
+            const exempt = item => ['OWNER', 'MEMBER'].includes(item.author_association)
+              || members.has((item.user?.login || '').toLowerCase());
+
+            const open = async label => github.paginate(github.rest.issues.listForRepo,
+              { owner, repo, labels: label, state: 'open', per_page: 100 });
+
+            // Pull requests: 72 hours from the pr-standards comment.
+            const seen = new Set();
+            for (const label of ['needs:compliance', 'needs:issue']) {
+              for (const item of await open(label)) {
+                if (!item.pull_request || seen.has(item.number) || exempt(item)) continue;
+                seen.add(item.number);
+                const comments = await github.paginate(github.rest.issues.listComments,
+                  { owner, repo, issue_number: item.number, per_page: 100 });
+                const flagged = comments.find(c => c.body.includes('<!-- pr-compliance -->'));
+                if (!flagged || now - new Date(flagged.created_at).getTime() < hours(72)) continue;
+                await github.rest.issues.createComment({ owner, repo, issue_number: item.number,
+                  body: 'Closed because the description still does not follow the pull request template 72 hours after we asked. Thank you for the work: open it again, or a new one, once it does.' });
+                await github.rest.pulls.update({ owner, repo, pull_number: item.number, state: 'closed' });
+                core.info(`Closed PR #${item.number}`);
+              }
+            }
+
+            // Issues: 3 quiet days with needs:repro.
+            for (const item of await open('needs:repro')) {
+              if (item.pull_request || exempt(item)) continue;
+              if (now - new Date(item.updated_at).getTime() < hours(72)) continue;
+              await github.rest.issues.createComment({ owner, repo, issue_number: item.number,
+                body: 'Closed because there has been no smallest input that shows it for 3 days. Add one and we will open it again.' });
+              await github.rest.issues.update({ owner, repo, issue_number: item.number, state: 'closed', state_reason: 'not_planned' });
+              core.info(`Closed issue #${item.number}`);
+            }

@@ -1,0 +1,3 @@
+Beispiel Kältetechnik GmbH, Musterstraße 5, 1010 Wien. UID-Nr. ATU23456784. FN 123456a, Handelsgericht Wien, Sitz Wien.
+Bank: IBAN AT61 1904 3002 3457 3201, BIC BKAUATWW. Zahlungsziel 14 Tage netto. Letzte Rechnung RE-2026-0411.
+Ansprechperson: Lukas Beispiel, +43 1 000 00 00, rechnung@beispiel-kaelte.example.

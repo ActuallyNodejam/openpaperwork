@@ -1,0 +1,39 @@
+{
+  "language": "en",
+  "country": "IE",
+  "body": "Shannonbank Analytics Limited",
+  "company_number": "123456",
+  "meeting": "board",
+  "number": "2026/06",
+  "date": "2026-10-20",
+  "start": "10:00",
+  "end": "11:10",
+  "place": "4 Harbour Row, Limerick",
+  "chair": "Niamh Gallagher",
+  "secretary": "Conor Byrne",
+  "present": [
+    "Niamh Gallagher",
+    "Declan Walsh",
+    "Sinéad Kelly"
+  ],
+  "in_attendance": [
+    "Conor Byrne (company secretary)"
+  ],
+  "quorum": true,
+  "previous_minutes": "approved",
+  "items": [
+    {
+      "title": "Appointment of finance officer",
+      "decisions": [
+        "that Orla Doyle be appointed chief financial officer of the company from 1 November 2026"
+      ]
+    },
+    {
+      "title": "Office lease",
+      "notes": "The secretary reported on the offer for the first floor at 4 Harbour Row.",
+      "decisions": [
+        "that the company enter into a five-year lease of the first floor at €38,000 a year, and that Declan Walsh sign it for the company"
+      ]
+    }
+  ]
+}

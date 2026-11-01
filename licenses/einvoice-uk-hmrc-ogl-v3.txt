@@ -1,0 +1,14 @@
+HMRC, VAT Notice 700/21 "Record keeping for VAT", section 4 (VAT invoices), last updated 18 March 2024
+https://www.gov.uk/guidance/record-keeping-for-vat-notice-70021
+The Company, Limited Liability Partnership and Business (Names and Trading Disclosures) Regulations 2015
+(SI 2015/17), regulation 25, and the Companies Act 2006 section 82, on legislation.gov.uk.
+Read 2026-10-09.
+
+Contains public sector information licensed under the Open Government Licence v3.0.
+https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+GOV.UK states: "All content is available under the Open Government Licence v3.0, except where otherwise
+stated." Crown copyright.
+
+Changes: the contents of a full VAT invoice (4.1) and the £250 limit of a simplified invoice (4.4, 4.5)
+are restated in our own words as refusals and page checks in skills/e-invoice/scripts/countries.py and
+skills/_checks/einvoice_country.py (UK-VAT-INVOICE); no text is copied whole. This is not tax advice.

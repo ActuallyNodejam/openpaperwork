@@ -1,0 +1,71 @@
+{
+  "type": "delivery_note",
+  "language": "fr-BE",
+  "number": "BL-2026-0733",
+  "issue_date": "2026-10-16",
+  "references": [
+    {
+      "label": "Votre bon de commande",
+      "value": "BC-2026-118"
+    }
+  ],
+  "dates": [
+    {
+      "label": "Date d'expédition",
+      "value": "2026-10-16"
+    }
+  ],
+  "seller": {
+    "name": "Meuse Hydraulique SRL",
+    "street": "Quai de la Batte 14",
+    "postcode": "4000",
+    "city": "Liège",
+    "country": "Belgique",
+    "vat_id": "BE0798765432",
+    "email": "expedition@meuse-hydraulique.example",
+    "phone": "+32 4 000 00 00",
+    "registered_office": "Quai de la Batte 14, 4000 Liège",
+    "register": "RPM Liège, division Liège",
+    "register_number": "0798.765.432"
+  },
+  "buyer": {
+    "name": "Ateliers Mosans SA",
+    "street": "Rue de l'Industrie 9",
+    "postcode": "5000",
+    "city": "Namur",
+    "country": "Belgique"
+  },
+  "deliver_to": {
+    "name": "Ateliers Mosans SA, réception des marchandises",
+    "street": "Rue de l'Industrie 9",
+    "postcode": "5000",
+    "city": "Namur",
+    "country": "Belgique"
+  },
+  "delivery_terms": {
+    "rule": "DAP",
+    "place": "Namur, Belgique"
+  },
+  "transport": "road",
+  "packages": 3,
+  "gross_weight_kg": 212.4,
+  "lines": [
+    {
+      "code": "MH-V25",
+      "description": "Vérin hydraulique double effet, course 250 mm",
+      "quantity": 6,
+      "unit": "pcs",
+      "delivered": 6
+    },
+    {
+      "code": "MH-F12",
+      "description": "Flexible haute pression 1/2\", 1,5 m",
+      "quantity": 24,
+      "unit": "pcs",
+      "delivered": 18
+    }
+  ],
+  "notes": [
+    "Les 6 flexibles restants suivent la semaine prochaine."
+  ]
+}

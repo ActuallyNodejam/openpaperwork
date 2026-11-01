@@ -1,0 +1,97 @@
+{
+  "id": "employment-statement-au-001",
+  "title": "Write the statement of employment terms for an Australian casual retail assistant",
+  "person": "The store manager of a Brisbane bike shop putting on a casual weekend assistant.",
+  "format": "docx",
+  "output": "statement.docx",
+  "locale": "en-AU",
+  "sector": {
+    "naics": "44-45",
+    "name": "Retail Trade"
+  },
+  "occupation": {
+    "soc": "41-1011.00",
+    "name": "First-Line Supervisors of Retail Sales Workers"
+  },
+  "review": [
+    "Casual employment for Mia Thompson as retail assistant from 14/11/2026 under the General Retail Industry Award 2020, $31.85 an hour including the casual loading, paid weekly by EFT; rostered weekends; leave and notice as the NES provide; super to her chosen fund; the Fair Work and Casual Employment Information Statements named; A4."
+  ],
+  "revised_review": [
+    "She becomes part-time from 1 February 2027 at 20 hours a week; the casual statement is no longer needed."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "statements",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-AU-STATEMENTS",
+      "guidelines": [
+        "fair-work-act/2009#AU-01"
+      ],
+      "text": "The FWIS and the CEIS are named."
+    },
+    {
+      "id": "pay",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-PAY",
+      "guidelines": [
+        "fair-work-act/2009#AU-02"
+      ],
+      "text": "$31.85 an hour, weekly, by EFT."
+    },
+    {
+      "id": "items",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-ITEMS",
+      "guidelines": [
+        "fair-work-act/2009#AU-04"
+      ],
+      "text": "Type, position, place, start, hours, leave and notice."
+    },
+    {
+      "id": "paper",
+      "stage": "both",
+      "grader": "script",
+      "script": "locale_floor.py",
+      "rule": "LOCALE-PAPER",
+      "guidelines": [
+        "openpaperwork/0.1.0#LOCALE-PAPER"
+      ],
+      "text": "A4."
+    },
+    {
+      "id": "revised-type",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "fair-work-act/2009#AU-01",
+        "fair-work-act/2009#AU-04"
+      ],
+      "text": "Part-time from 1 February 2027 at 20 hours a week; the casual loading and the CEIS gone, the FWIS still named."
+    }
+  ],
+  "version": "1.0.0",
+  "status": "draft",
+  "source": "Synthetic material created for this evaluation pack; the companies and people are invented.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+  "guidelines": [
+    "fair-work-act/2009",
+    "openpaperwork/0.1.0",
+    "every-file/1.1.0"
+  ]
+}

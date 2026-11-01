@@ -1,0 +1,237 @@
+{
+ "id": "faktura-korygujaca-pl-001",
+ "title": "A Polish faktura korygująca for pages billed twice, as a page and a KSeF FA(3) file",
+ "person": "The bookkeeper of a small Poznań translation company correcting an invoice sent to a publisher in Gdańsk.",
+ "format": "pdf",
+ "output": "korekta.pdf",
+ "extra_outputs": [
+  "korekta.xml"
+ ],
+ "locale": "pl-PL",
+ "sector": {
+  "naics": "54",
+  "name": "Professional, Scientific, and Technical Services"
+ },
+ "occupation": {
+  "soc": "43-3021.00",
+  "name": "Billing and Posting Clerks"
+ },
+ "review": [
+  "Faktura korygująca FK/2026/10/3 z 9.10.2026 do faktury FV/2026/09/041 z 30.09.2026 (numer KSeF 1234563218-20260930-000000-000000-00): -12 stron po 95,00 zł, netto -1 140,00 zł, VAT 23% -262,20 zł, razem -1 402,20 zł; NIP 123-456-32-18, NIP nabywcy 987-654-32-10. Plik FA(3) nie został wysłany do KSeF."
+ ],
+ "revised_review": [
+  "14 stron: netto -1 330,00 zł, VAT -305,90 zł, razem -1 635,90 zł; reszta bez zmian."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "locale-date",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-DATE",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-DATE"
+   ],
+   "text": "Dates on the page are in the d.MM.yyyy form."
+  },
+  {
+   "id": "locale-number",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-NUMBER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-NUMBER"
+   ],
+   "text": "Amounts use the locale's separators."
+  },
+  {
+   "id": "locale-paper",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-PAPER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-PAPER"
+   ],
+   "text": "The page is the locale's paper."
+  },
+  {
+   "id": "locale-order",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-LOCALE-ORDER",
+   "guidelines": [
+    "cen-en16931/2017#EINV-LOCALE-ORDER"
+   ],
+   "text": "The page is written in the language of the order itself."
+  },
+  {
+   "id": "page-din5008",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-DIN5008",
+   "guidelines": [
+    "din-5008/2020#EINV-PAGE-DIN5008"
+   ],
+   "text": "The page is laid out on the seller country's letter layout, or on the library's letter sheet (DIN 5008 Form B) where the library has none for it."
+  },
+  {
+   "id": "vat-label",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-VAT-LABEL",
+   "guidelines": [
+    "cen-en16931/2017#EINV-VAT-LABEL"
+   ],
+   "text": "Every VAT number on the page carries its label."
+  },
+  {
+   "id": "page-trace",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-TRACE",
+   "guidelines": [
+    "cen-en16931/2017#EINV-PAGE-TRACE"
+   ],
+   "text": "Every number on the page traces to the order: what it says, and what the invoice arithmetic makes of it."
+  },
+  {
+   "id": "page-no-extra",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-NO-EXTRA",
+   "guidelines": [
+    "cen-en16931/2017#EINV-PAGE-NO-EXTRA"
+   ],
+   "text": "No field appears on the page unless the order carries its data."
+  },
+  {
+   "id": "ksef",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-KSEF",
+   "guidelines": [
+    "ksef-fa/3#EINV-KSEF"
+   ],
+   "text": "The logical structure FA(3) accepts the file beside the page; skipped without it."
+  },
+  {
+   "id": "pl-invoice",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "rule": "PL-INVOICE",
+   "guidelines": [
+    "pl-ustawa-vat/2026#PL-INVOICE"
+   ],
+   "text": "The NIP of both parties, both addresses, the net unit price, the rate and the tax on the page, with the corrected invoice and its KSeF number; the amounts are the correction itself, with a minus sign; the FA(3) is KOR."
+  },
+  {
+   "id": "only-what-was-done",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "Only the pages billed twice are corrected, at the invoice's own price; nothing is invented, and the reply says the file was not sent to KSeF."
+  },
+  {
+   "id": "revision-kept",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-2"
+   ],
+   "text": "The revision changes the number of pages and the totals that follow, and nothing else."
+  }
+ ],
+ "truth": {
+  "number": "FK/2026/10/3",
+  "issue_date": "2026-10-09",
+  "currency": "PLN",
+  "preceding_invoice": "FV/2026/09/041",
+  "preceding_invoice_date": "2026-09-30",
+  "preceding_ksef_number": "1234563218-20260930-000000-000000-00",
+  "note": "Strony policzone dwukrotnie",
+  "seller": {
+   "name": "Przykład Tłumaczenia sp. z o.o.",
+   "legal_form": "sp. z o.o.",
+   "street": "ul. Przykładowa 3",
+   "postcode": "61-001",
+   "city": "Poznań",
+   "country": "PL",
+   "vat_id": "PL1234563218",
+   "register_number": "0000000000",
+   "register": "Sąd Rejonowy Poznań – Nowe Miasto i Wilda, VIII Wydział Gospodarczy KRS",
+   "share_capital": "20 000,00 zł",
+   "registered_office": "Poznań",
+   "contact": {
+    "name": "Jan Przykład",
+    "phone": "+48 61 000 00 00",
+    "email": "faktury@tlumaczenia.example"
+   }
+  },
+  "buyer": {
+   "name": "Przykład Wydawnictwo S.A.",
+   "street": "ul. Wzorcowa 15",
+   "postcode": "80-001",
+   "city": "Gdańsk",
+   "country": "PL",
+   "vat_id": "PL9876543210"
+  },
+  "doc": "credit_note",
+  "type_code": "381",
+  "first": {
+   "lines": [
+    {
+     "name": "Tłumaczenie instrukcji obsługi (strony)",
+     "quantity": 12,
+     "unit": "C62",
+     "unit_price": 95.0,
+     "vat_rate": 23,
+     "vat_category": "S"
+    }
+   ]
+  },
+  "revision": {
+   "lines": [
+    {
+     "name": "Tłumaczenie instrukcji obsługi (strony)",
+     "quantity": 14,
+     "unit": "C62",
+     "unit_price": 95.0,
+     "vat_rate": 23,
+     "vat_category": "S"
+    }
+   ]
+  }
+ },
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "cen-en16931/2017",
+  "din-5008/2020",
+  "pl-ustawa-vat/2026",
+  "ksef-fa/3"
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and every business, VAT and bank number are invented and obviously fake.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen."
+}

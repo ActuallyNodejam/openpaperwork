@@ -1,0 +1,64 @@
+{
+  "language": "it",
+  "country": "IT",
+  "body": "Esempio Stampa S.p.A.",
+  "company_number": "00000000000",
+  "meeting": "annual general",
+  "date": "2026-04-28",
+  "start": "10:30",
+  "end": "11:25",
+  "place": "Via dell'Esempio 8, Milano",
+  "chair": "Chiara Fontana",
+  "secretary": "Paolo Conti",
+  "quorum": true,
+  "voting": "voto palese per alzata di mano",
+  "shareholders": [
+    {
+      "name": "Chiara Fontana",
+      "shares": 60000,
+      "votes": 60000
+    },
+    {
+      "name": "Esempio Finanziaria S.r.l.",
+      "shares": 30000,
+      "votes": 30000,
+      "by": "Luca Marchetti"
+    },
+    {
+      "name": "Giorgio Sala",
+      "shares": 10000,
+      "votes": 10000
+    }
+  ],
+  "in_attendance": [
+    "Marta Bellini (presidente del collegio sindacale)"
+  ],
+  "items": [
+    {
+      "title": "Bilancio al 31 dicembre 2025",
+      "notes": "Il presidente illustra il bilancio dell'esercizio 2025, che chiude con un utile di 212.400 euro.",
+      "decisions": [
+        {
+          "text": "di approvare il bilancio al 31 dicembre 2025",
+          "unanimous": true
+        }
+      ]
+    },
+    {
+      "title": "Destinazione dell'utile",
+      "decisions": [
+        {
+          "text": "di destinare l'utile di esercizio a riserva straordinaria",
+          "votes": {
+            "for": 90000,
+            "against": 0,
+            "abstained": 10000
+          },
+          "abstained": [
+            "Giorgio Sala"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+/* The deck frame, from the Nodejam HTML deck skeleton v1.6: the base tokens a pack overrides,
+   then the 1920x1080 page frame and print rules. A deck never edits this file. */
+
+  /* The ONLY block a theme or an org design file rewrites. A pack replaces values, never names. */
+  :root {
+  /* House floor: never set text below this, and body copy is 22px or more. */
+  --nj-t-floor: 18px;
+  --nj-t-body-min: 22px;
+    /* colour */
+    --nj-bg: #faf8f4;        --nj-surface: #ffffff;   --nj-ink: #101a2b;
+    --nj-ink-2: #42506a;     --nj-muted: #5d6678;     --nj-line: #e4ded3;
+    --nj-accent: var(--brand-accent);          /* set from the brand the person names */    --nj-accent-ink: var(--brand-accent-ink, var(--brand-accent));
+    --nj-dark-bg: #101a2b;   --nj-dark-ink: #f2efe9;  --nj-dark-ink-2: #c6cee0;
+    --nj-dark-line: #35476a; --nj-dark-accent: var(--brand-accent);
+    --nj-series-1: #101a2b;  --nj-series-2: #f0a92a;  --nj-series-3: #42506a;
+    --nj-series-4: #8a5a06;  --nj-series-5: #7d879b;  --nj-series-6: #c6cee0;
+    /* type: families, then one size per role */
+    --nj-font-display: "Inter", "Helvetica Neue", Arial, sans-serif;
+    --nj-font-body: "Inter", "Helvetica Neue", Arial, sans-serif;
+    --nj-font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+    --nj-t-hero: 88px;  --nj-t-title: 64px; --nj-t-h3: 40px; --nj-t-lead: 36px;
+    --nj-t-body: 30px;  --nj-t-small: 26px; --nj-t-micro: 22px; --nj-t-cite: 22px;
+    --nj-lh-tight: 1.05; --nj-lh-body: 1.3;   /* a pack may set a px line, e.g. 26px */
+    --nj-track-caps: 0.18em; --nj-track-label: 0.08em; --nj-track-tight: -0.01em;
+    /* space */
+    --nj-pad-x: 96px; --nj-pad-y: 68px;
+    --nj-sp-1: 12px; --nj-sp-2: 20px; --nj-sp-3: 32px; --nj-sp-4: 48px; --nj-sp-5: 64px;
+    --nj-radius: 18px;
+    /* fixed widths a page grammar leans on */
+    --nj-col-side: 620px; --nj-col-key: 240px;   /* column widths, never a border */
+    --nj-rule-w: 2px; --nj-rule-strong-w: 3px;   /* the only widths a border or a rule takes */
+  }
+
+  /* Fixed. A deck never edits this block. */
+  /* The canvas. Written here for 16x9; the door writes this line, the slide size and the
+     @page size for the deck's own data-nj-canvas, and the check regenerates them byte for byte.
+     The safe zone is the band a platform's own chrome covers: 9x16 is 250px top, 340px bottom. */
+  :root { --nj-canvas-w: 1920px; --nj-canvas-h: 1080px; --nj-safe-top: 0px; --nj-safe-right: 0px; --nj-safe-bottom: 0px; --nj-safe-left: 0px; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: #232833; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-family: var(--nj-font-body); font-size: var(--nj-t-body); line-height: var(--nj-lh-body);
+    color: var(--nj-ink); -webkit-font-smoothing: antialiased; counter-reset: nj-slide; }
+  .slide { position: relative; width: 1920px; height: 1080px; overflow: hidden; margin: 0 auto 40px;
+    padding: var(--nj-pad-y) var(--nj-pad-x); display: flex; flex-direction: column;
+    background: var(--nj-bg); color: var(--nj-ink); counter-increment: nj-slide; }
+  .slide.dark { background: var(--nj-dark-bg); color: var(--nj-dark-ink); }
+  .slide.bleed { padding: 0; }
+  .slide.placed { padding: 0; display: block; }   /* absolutely placed page, what a pack uses */
+  .slide[data-nj-number]::before { content: counter(nj-slide); position: absolute; right: var(--nj-pad-x);
+    bottom: 28px; font-size: var(--nj-t-micro); color: var(--nj-muted); }
+  aside.notes { display: none; }            /* presenter notes, one per slide, never printed */
+  img { display: block; max-width: 100%; }
+  .bleed img, .placed img { max-width: none; }     /* cover and contain crops size themselves */
+  @page { size: 1920px 1080px; margin: 0; }
+  @media print {
+    html, body { background: none; }
+    .slide { margin: 0; break-after: page; page-break-after: always; }
+    .slide:last-of-type { break-after: auto; page-break-after: auto; }
+  }
+
+
+/* The type floor is enforced, not suggested. A pack or a model that sets a smaller size on text
+   inside a page is raised to the floor rather than left below it. Headings keep their own sizes
+   because they are already larger. */
+.page p, .page li, .page td, .page th, .page span, .page figcaption,
+.page caption, .page small, .page .caption, .page .note {
+  font-size: max(var(--nj-t-floor, 18px), 1em);
+}

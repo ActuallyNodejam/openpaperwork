@@ -1,0 +1,18 @@
+{
+ "issuer": "pl-ustawa-vat",
+ "version": "2026",
+ "link": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20040540535",
+ "license": "Polish normative acts and official documents are not objects of copyright (ustawa o prawie autorskim i prawach pokrewnych art. 4 pkt 1 and 2); notice licenses/einvoice-es-it-pl-official-texts.txt. Restated in our own words. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-10",
+ "status": "draft",
+ "title": "What a Polish faktura and faktura korygująca state",
+ "source": "Ustawa z dnia 11 marca 2004 r. o podatku od towarów i usług, the consolidated text kept by the Chancellery of the Sejm as of 20 July 2026 (ISAP). Art. 106e ust. 1: the date (1), a number (2), both parties' names and addresses (3), the seller's and the buyer's tax numbers (4, 5), the date of the supply when it differs (6), what is supplied, its measure and quantity (7, 8), the net unit price (9), discounts (10), the net value (11), the rate (12), the net value and the tax per rate (13, 14), the total (15), „metoda kasowa” (16), „odwrotne obciążenie” (18), „mechanizm podzielonej płatności” on an invoice over 15 000 zł for goods or services of annex 15 supplied to a taxpayer (18a), the ground of an exemption (19); ust. 11: the tax is stated in złoty. Art. 106j ust. 2: a correcting invoice carries its own number and date, the KSeF number of the invoice it corrects where one was given, that invoice's data and the correction per rate; ust. 2a: the words „FAKTURA KORYGUJĄCA” and the reason are optional. Art. 106ga: taxpayers issue structured invoices in the Krajowy System e-Faktur, from 1 February 2026 those whose 2024 sales passed 200 000 000 zł and from 1 April 2026 the others (art. 145l); until 31 December 2026 a seller whose invoices in a month total no more than 10 000 zł may still issue outside it (art. 145m). Art. 106gb ust. 5: a structured invoice used outside KSeF carries the code that gives access to it there. The NIP's check digit was not read from an official text (the form is the FA(3) schema's own pattern; a mismatch only warns). Read 2026-10-09.",
+ "rules": [
+  {
+   "id": "PL-INVOICE",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "text": "The number and date, the seller's NIP (ten digits in the form FA(3) takes), both parties' names and addresses, the buyer's tax number, each line's net unit price and rate, the tax per rate and in złoty, the date of the supply when it differs, „odwrotne obciążenie”, „mechanizm podzielonej płatności” and „metoda kasowa” when the order carries them, the ground of an exemption, a correcting invoice's invoice and its KSeF number, on the page; the FA(3) beside the page is KOR with DaneFaKorygowanej for a correcting invoice, else VAT, with the same annotations."
+  }
+ ]
+}

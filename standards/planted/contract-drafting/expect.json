@@ -1,0 +1,30 @@
+{
+  "pack": "contract-drafting",
+  "template": "nda.spec.json",
+  "clean": "agreement.docx",
+  "files": [
+    "spec.json",
+    "agreement.docx"
+  ],
+  "faults": [
+    {
+      "file": "no-governing-law.docx",
+      "replaces": "agreement.docx",
+      "planted": "the governing law is removed",
+      "fails": [
+        "LEGAL-LAW"
+      ],
+      "also_failed_when_made": []
+    },
+    {
+      "file": "no-second-party.docx",
+      "replaces": "agreement.docx",
+      "planted": "a party's name is removed",
+      "fails": [
+        "LEGAL-PARTIES",
+        "LEGAL-SIGN"
+      ],
+      "also_failed_when_made": []
+    }
+  ]
+}

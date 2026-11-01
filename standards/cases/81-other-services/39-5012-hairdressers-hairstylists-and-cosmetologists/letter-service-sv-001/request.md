@@ -1,0 +1,1 @@
+Kan du skriva ett brev till serviceföretaget om ventilationen? Allt står i `inputs/notes.txt`. Ett riktigt brev på svenska, som Word-fil, daterat 14 oktober 2026, från mig, Mira Holm. Spara det som `brev.docx`.

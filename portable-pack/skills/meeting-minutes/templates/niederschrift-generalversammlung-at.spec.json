@@ -1,0 +1,48 @@
+{
+  "language": "de",
+  "country": "AT",
+  "body": "Beispiel Netzwerktechnik GmbH",
+  "company_number": "FN 123456 a",
+  "meeting": "annual general",
+  "date": "2026-06-18",
+  "start": "14:00",
+  "end": "14:45",
+  "recorded": "2026-06-18",
+  "place": "Sitz der Gesellschaft, Gewerbepark 9, 6020 Innsbruck",
+  "chair": "Ing. Johanna Auer",
+  "secretary": "Mag. Paul Egger",
+  "shareholders": [
+    {
+      "name": "Ing. Johanna Auer",
+      "shares": 21000,
+      "votes": 21000
+    },
+    {
+      "name": "Beispiel Beteiligungs GmbH",
+      "shares": 14000,
+      "votes": 14000,
+      "by": "Ing. Johanna Auer"
+    }
+  ],
+  "quorum": true,
+  "items": [
+    {
+      "title": "Feststellung des Jahresabschlusses 2025",
+      "decisions": [
+        "Der Jahresabschluss zum 31. Dezember 2025 wird festgestellt"
+      ]
+    },
+    {
+      "title": "Verwendung des Bilanzgewinns",
+      "decisions": [
+        "Vom Bilanzgewinn von 184.000 Euro werden 60.000 Euro ausgeschüttet; der Rest wird auf neue Rechnung vorgetragen"
+      ]
+    },
+    {
+      "title": "Entlastung der Geschäftsführung",
+      "decisions": [
+        "Der Geschäftsführung wird für das Geschäftsjahr 2025 die Entlastung erteilt"
+      ]
+    }
+  ]
+}

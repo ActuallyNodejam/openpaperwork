@@ -1,0 +1,45 @@
+{
+  "language": "fr",
+  "country": "BE",
+  "body": "Ateliers Mosans SA",
+  "company_number": "0756.789.012",
+  "meeting": "board",
+  "number": "2026/04",
+  "date": "2026-10-22",
+  "start": "10:00",
+  "end": "11:15",
+  "place": "Siège de la société, rue des Brasseurs 21, 5000 Namur",
+  "chair": "Hélène Lambert",
+  "secretary": "Olivier Dumont",
+  "present": [
+    "Hélène Lambert",
+    "Marc Renard",
+    "Céline Dubois"
+  ],
+  "in_attendance": [
+    "Olivier Dumont (directeur financier)"
+  ],
+  "quorum": true,
+  "previous_minutes": "approved",
+  "items": [
+    {
+      "title": "Bail de l'atelier de Jambes",
+      "notes": "Le directeur financier présente l'offre de bail pour l'atelier de la rue de Dave.",
+      "conflict": [
+        {
+          "name": "Marc Renard",
+          "text": "il est copropriétaire de l'immeuble que la société envisage de louer"
+        }
+      ],
+      "decisions": [
+        "La société prend l'atelier en location pour neuf ans au loyer annuel de 42 000 euros ; le loyer correspond à deux offres comparables, et Marc Renard n'a pris part ni à la délibération ni au vote"
+      ]
+    },
+    {
+      "title": "Ligne de crédit",
+      "decisions": [
+        "Le conseil approuve l'ouverture d'une ligne de crédit de 250 000 euros auprès de la banque de la société"
+      ]
+    }
+  ]
+}

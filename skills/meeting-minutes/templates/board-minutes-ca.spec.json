@@ -1,0 +1,38 @@
+{
+  "language": "en",
+  "country": "CA",
+  "body": "Maple Leaf Instruments Ltd.",
+  "company_number": "1234567-8",
+  "meeting": "board",
+  "date": "2026-10-14",
+  "start": "10:00",
+  "end": "11:15",
+  "place": "250 Albert Street, Ottawa, Ontario",
+  "chair": "Grace Thompson",
+  "secretary": "Marc Gagnon",
+  "present": [
+    "Grace Thompson",
+    "Ravi Patel",
+    "Claire Dubois"
+  ],
+  "in_attendance": [
+    "Marc Gagnon (corporate secretary)"
+  ],
+  "quorum": true,
+  "previous_minutes": "approved",
+  "items": [
+    {
+      "title": "Service centre in Calgary",
+      "notes": "The president presented the plan for a service centre in Calgary.",
+      "decisions": [
+        "that the corporation open a service centre in Calgary, Alberta, at a cost not to exceed $350,000"
+      ]
+    },
+    {
+      "title": "Auditor",
+      "decisions": [
+        "that the reappointment of the auditor be put to the shareholders at the annual meeting"
+      ]
+    }
+  ]
+}

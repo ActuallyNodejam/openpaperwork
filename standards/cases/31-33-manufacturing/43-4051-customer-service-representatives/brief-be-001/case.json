@@ -1,0 +1,149 @@
+{
+ "id": "brief-be-001",
+ "title": "Schrijf een brief aan een webwinkel over de latere levering van haar verpakkingen",
+ "person": "A customer manager at a small Flemish printing house writing to a web shop that orders its boxes there.",
+ "format": "pdf",
+ "output": "brief.pdf",
+ "locale": "nl-BE",
+ "sector": {
+  "naics": "31-33",
+  "name": "Manufacturing"
+ },
+ "occupation": {
+  "soc": "43-4051.00",
+  "name": "Customer Service Representatives"
+ },
+ "review": [
+  "It answers the web shop's e-mail of 1 October, gives the new delivery date of 30 October with the reason, and offers the 5 per cent reduction."
+ ],
+ "revised_review": [
+  "The delivery date is 6 November everywhere; 30 October appears nowhere."
+ ],
+ "truth": {
+  "seller": {
+   "name": "Netekant Drukwerk BV",
+   "country": "BE",
+   "registered_office": "Liersesteenweg 41, 2800 Mechelen",
+   "register": "RPR Antwerpen, afdeling Mechelen",
+   "register_number": "0778.901.234"
+  },
+  "buyer": {
+   "name": "Voorbeeld Webwinkel BV",
+   "country": "BE"
+  },
+  "revision": {
+   "stale": [
+    "30 oktober"
+   ]
+  }
+ },
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "window",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-WINDOW",
+   "guidelines": [
+    "letter-layouts/2026-10#LETTER-WINDOW"
+   ],
+   "text": "The address sits in the window on the right, where bpost's zones put it."
+  },
+  {
+   "id": "address",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-ADDRESS",
+   "guidelines": [
+    "letter-layouts/2026-10#LETTER-ADDRESS"
+   ],
+   "text": "The address is written as bpost reads it: the postcode and the municipality last, the municipality in capitals."
+  },
+  {
+   "id": "date",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-DATE",
+   "guidelines": [
+    "letter-layouts/2026-10#LETTER-DATE"
+   ],
+   "text": "The date is written out in Dutch."
+  },
+  {
+   "id": "form",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-FORM",
+   "guidelines": [
+    "letter-layouts/2026-10#LETTER-FORM"
+   ],
+   "text": "The closing takes a comma when the salutation has one."
+  },
+  {
+   "id": "parts",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-PARTS",
+   "guidelines": [
+    "din-5008/2020#LETTER-PARTS"
+   ],
+   "text": "Subject, closing and signatory are in the letter, as its spec names them."
+  },
+  {
+   "id": "language",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-LANGUAGE",
+   "guidelines": [
+    "letter-layouts/2026-10#LETTER-LANGUAGE"
+   ],
+   "text": "Every label is in Dutch."
+  },
+  {
+   "id": "company",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-COMPANY",
+   "guidelines": [
+    "company-mentions/2026-10#CM-BE"
+   ],
+   "text": "The seat, the enterprise number and RPR with the court are on the letter."
+  },
+  {
+   "id": "answers",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "It gives the new delivery date, the reason (the cutting die arrived late) and the 5 per cent reduction on this order."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and addresses are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "letter-layouts/2026-10",
+  "din-5008/2020",
+  "company-mentions/2026-10",
+  "every-file/1.1.0"
+ ]
+}

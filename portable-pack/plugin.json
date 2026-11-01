@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "openpaperwork",
+  "version": "0.1.0",
+  "description": "OpenPaperwork's whole library, from invoices to board minutes: finance, sales, legal, HR, operations, marketing, engineering, academic and the formats, for Germany, France, Sweden, Norway, Denmark, Finland, the UK, the US, Canada, Australia, Belgium, the Netherlands, Austria, Ireland, Spain, Italy and Poland, with their scripted checks.",
+  "author": {
+    "name": "OpenPaperwork"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "finance",
+    "sales",
+    "legal",
+    "hr",
+    "operations",
+    "marketing",
+    "engineering",
+    "academic",
+    "formats"
+  ]
+}

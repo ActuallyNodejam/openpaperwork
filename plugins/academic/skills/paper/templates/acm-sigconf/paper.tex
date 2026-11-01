@@ -1,0 +1,58 @@
+% ACM conference paper (sigconf). Starter file written for OpenPaperwork; it uses acmart.cls v2.20
+% (2026/08/16), shipped unmodified beside this file under the LaTeX Project Public License 1.3c, so
+% the TeX distribution's older acmart is not used. Nothing is copied from ACM's sample files.
+% For blind review keep [anonymous,review]. For the final version use \documentclass[sigconf]{acmart}.
+\documentclass[sigconf,anonymous,review]{acmart}
+\usepackage{booktabs}
+
+% Blind review: no copyright block and no conference banner.
+\setcopyright{none}
+\settopmatter{printacmref=false}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+\acmConference{}{}{}
+
+\usepackage{newunicodechar}   % punctuation the Times fonts have no glyph for under XeTeX (tectonic)
+\newunicodechar{—}{\textemdash}\newunicodechar{–}{\textendash}\newunicodechar{…}{\ldots}
+\newunicodechar{‘}{\textquoteleft}\newunicodechar{’}{\textquoteright}
+\newunicodechar{“}{\textquotedblleft}\newunicodechar{”}{\textquotedblright}\newunicodechar{−}{\ensuremath{-}}
+
+\begin{document}
+
+\title{TITLE OF THE PAPER}
+
+% acmart hides this block when the anonymous option is on. Fill it in for the final version.
+\author{Author Name}
+\affiliation{\institution{Organisation}\city{City}\country{Country}}
+\email{author@example.org}
+
+\begin{abstract}
+ABSTRACT, one paragraph, no citations.
+\end{abstract}
+
+\begin{CCSXML}
+<ccs2012>
+<concept><concept_id>10003120</concept_id><concept_desc>Human-centered computing</concept_desc><concept_significance>500</concept_significance></concept>
+</ccs2012>
+\end{CCSXML}
+\ccsdesc[500]{Human-centered computing}
+
+\keywords{first keyword, second keyword, third keyword}
+
+\maketitle
+
+\section{Introduction}
+TEXT. Cite with \cite{key1}.
+
+\section{Related Work}
+TEXT.
+
+\section{Conclusion}
+TEXT.
+
+% No acknowledgments in a blind-review version. In the final version use \begin{acks} ... \end{acks}.
+
+\begin{thebibliography}{00}
+\bibitem{key1} Ann B. Author and Carl Author. 2020. Title of the article. \emph{Journal Name} 1, 2 (2020), 3--4. \url{https://doi.org/10.0000/xxxx}
+\end{thebibliography}
+
+\end{document}

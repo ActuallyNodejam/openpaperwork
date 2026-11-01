@@ -1,0 +1,38 @@
+{
+  "description": "OpenPaperwork: the plugin's own Python set up once in the plugin's data folder, a hint when an ask names a kind of file a pack makes, and the pack check over the files this turn wrote; a red check sends the agent back to fix the file, three times at most.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/first_use.py\"",
+            "timeout": 600
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/pack_route.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/pack_stop.py\"",
+            "timeout": 600
+          }
+        ]
+      }
+    ]
+  }
+}

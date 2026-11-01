@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- A scenario for the KoSIT validator (github.com/itplr-kosit/validator, Apache-2.0) that checks a Finvoice 3.0
+  - invoice against the official Finvoice 3.0 schema of Finanssiala ry (Finvoice3.0.xsd of 27.9.2023; "All
+  - materials on this page are freely usable", finanssiala.fi). This file is ours; the files it names are run
+  - untouched from where they are installed:
+  -   kosit/     the KoSIT XRechnung validator configuration (Apache-2.0): the report stylesheets
+  -   finvoice/  Finvoice3.0.xsd
+  - skills/e-invoice/scripts/fetch_validators.py installs both at pinned versions.
+  -->
+<scenarios xmlns="http://www.xoev.de/de/validator/framework/1/scenarios" frameworkVersion="1.0.0">
+  <name>Finvoice 3.0</name>
+  <author>Nodejam OpenPaperwork, e-invoice pack</author>
+  <date>2026-10-09</date>
+  <description>
+    <p>Validates a Finvoice 3.0 message against the Finvoice 3.0 schema of Finanssiala ry.</p>
+  </description>
+  <scenario>
+    <name>Finvoice 3.0 (schema)</name>
+    <description><p>The Finvoice 3.0 schema of 27.9.2023.</p></description>
+    <namespace prefix="rep">http://www.xoev.de/de/validator/varl/1</namespace>
+    <match>exists(/Finvoice[@Version = '3.0'])</match>
+    <validateWithXmlSchema>
+      <resource>
+        <name>Finvoice 3.0 schema</name>
+        <location>finvoice/Finvoice3.0.xsd</location>
+      </resource>
+    </validateWithXmlSchema>
+    <createReport>
+      <resource>
+        <name>Validation report</name>
+        <location>kosit/resources/xrechnung-report.xsl</location>
+      </resource>
+    </createReport>
+    <acceptMatch>/rep:report/rep:assessment[1]/rep:accept[1]</acceptMatch>
+  </scenario>
+  <noScenarioReport>
+    <resource>
+      <name>Default Report</name>
+      <location>kosit/resources/default-report.xsl</location>
+    </resource>
+  </noScenarioReport>
+</scenarios>

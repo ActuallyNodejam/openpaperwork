@@ -1,0 +1,12 @@
+Kickoff with Riverside Catchment Trust, 6 Oct 2026. Product: RL-5 river level logger.
+Present: Priya Raman (our lead engineer), Sam Ohlin (trust field officer), me (Joel Mertens, Tarnby Hydrometrics).
+- Measures water level with the pressure sensor we already use, range 0-5m, accurate to +/-5mm.
+- Also water temp, -5 to 35°C, +/-0.2°C.
+- Logs every 15 mins. Must store at least a year of readings.
+- Uploads over LTE-M once a day. Sam: "it should be fast and easy for the field team".
+- Battery should last ages. Priya estimates 18 months on 2 D cells, not measured yet, she will confirm by 30 Nov.
+- Has to survive floods: submerged to 10m for 72hrs.
+- Weight under 2 Kg incl batteries, mounts on a 50mm pole.
+- Shall not lose data if the battery runs out.
+- Field team want a status LED etc.
+- Operating -20°C to 50°C.

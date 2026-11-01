@@ -1,0 +1,47 @@
+{
+  "language": "nl",
+  "country": "NL",
+  "body": "Waddenlicht Installaties B.V.",
+  "company_number": "81234567",
+  "meeting": "annual general",
+  "date": "2026-05-27",
+  "start": "16:00",
+  "end": "16:40",
+  "place": "Kantoor van de vennootschap, Oosterhamrikkade 60, Groningen",
+  "chair": "Marloes de Vries",
+  "secretary": "Ruben Bakker",
+  "shareholders": [
+    {
+      "name": "Voorbeeld Holding B.V.",
+      "shares": 600,
+      "votes": 600,
+      "by": "Marloes de Vries"
+    },
+    {
+      "name": "Voorbeeld Beheer B.V.",
+      "shares": 400,
+      "votes": 400,
+      "by": "Sander Visser"
+    }
+  ],
+  "items": [
+    {
+      "title": "Vaststelling van de jaarrekening 2025",
+      "decisions": [
+        "De jaarrekening over 2025 wordt vastgesteld"
+      ]
+    },
+    {
+      "title": "Bestemming van de winst",
+      "decisions": [
+        "Van de winst van 212.000 euro wordt 80.000 euro als dividend uitgekeerd; de rest wordt toegevoegd aan de reserves"
+      ]
+    },
+    {
+      "title": "Decharge van het bestuur",
+      "decisions": [
+        "Aan de bestuurders wordt decharge verleend voor het in 2025 gevoerde bestuur"
+      ]
+    }
+  ]
+}

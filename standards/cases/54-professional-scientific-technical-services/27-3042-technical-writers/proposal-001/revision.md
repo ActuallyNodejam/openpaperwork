@@ -1,0 +1,1 @@
+Two changes. Delta Hydrology Institute now coordinates instead of Northwind Studio AB: make it participant 1 and the coordinator, with Northwind Studio AB as a partner. And we will not use the optional summary section, so make sure the document has no section 2.3. Keep everything else.

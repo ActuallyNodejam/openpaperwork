@@ -1,0 +1,83 @@
+{
+  "issuer": "bw-7-655",
+  "version": "2026-07",
+  "link": "https://wetten.overheid.nl/BWBR0005290",
+  "license": "Dutch statute, not protected by copyright (Auteurswet art. 11); restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Burgerlijk Wetboek 7:655 and 7:652: de opgave van de arbeidsvoorwaarden",
+  "source": "Burgerlijk Wetboek Boek 7, arts. 7:652 and 7:655, version in force from 8 October 2026 (arts. 7:652 and 7:655 read as in the version from 1 July 2026) (wetten.overheid.nl BWBR0005290). Read 2026-10-09.",
+  "note": "A drafting check, not legal advice: the scripted rules read whether a particular is there, never whether a term is lawful.",
+  "rules": [
+    {
+      "id": "NL-01",
+      "grader": "script",
+      "text": "Items a to e, h, i and q within a week of the start, the rest within a month; work abroad before departure.",
+      "source": "7:655 lid 3",
+      "check": "employment_check.py EMPLOY-DATES"
+    },
+    {
+      "id": "NL-02",
+      "grader": "script",
+      "text": "The parties with their homes, the place of work, the function, the start and a fixed term's end or length.",
+      "source": "7:655 lid 1 a to e",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "NL-03",
+      "grader": "script",
+      "text": "Whether the worker joins a pension scheme, whether it is an agency or payroll contract (and the user), whether it is for an indefinite time and whether an on-call contract: answered, never marked not applicable.",
+      "source": "7:655 lid 1 j, m, n, o, p",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "NL-04",
+      "grader": "script",
+      "text": "The pay with its starting amount, its elements, and how and how often it is paid.",
+      "source": "7:655 lid 1 h",
+      "check": "employment_check.py EMPLOY-PAY"
+    },
+    {
+      "id": "NL-05",
+      "grader": "script",
+      "text": "Holidays and other paid leave, the termination procedure, the hours (or the variable schedule's guaranteed hours, days and notice), the cao, training and the social security institutions.",
+      "source": "7:655 lid 1 f, g, i, l, r, s",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "NL-06",
+      "grader": "script",
+      "text": "A probation of at most two months; one month in a fixed term under two years or with no calendar end, unless a collective agreement sets a longer one; none in a contract of six months or less.",
+      "source": "7:652 lid 3 to 7",
+      "check": "employment_check.py EMPLOY-PROBATION"
+    },
+    {
+      "id": "NL-07",
+      "grader": "script",
+      "text": "Only items f to i, k and q to s may point to a cao; the rest are stated.",
+      "source": "7:655 lid 2",
+      "check": "employment_check.py EMPLOY-REFERENCE"
+    },
+    {
+      "id": "NL-08",
+      "grader": "script",
+      "text": "The employer signs the opgave.",
+      "source": "7:655 lid 3",
+      "check": "employment_check.py EMPLOY-SIGNED"
+    },
+    {
+      "id": "NL-09",
+      "grader": "script",
+      "text": "Work outside the Netherlands over four consecutive weeks: the country and length, the housing, the social insurance, the currency, the allowances and the return.",
+      "source": "7:655 lid 1 k",
+      "check": "employment_check.py EMPLOY-ABROAD"
+    },
+    {
+      "id": "NL-10",
+      "grader": "script",
+      "text": "Every heading is in Dutch.",
+      "source": "7:655",
+      "check": "employment_check.py EMPLOY-LANG"
+    }
+  ]
+}

@@ -1,0 +1,337 @@
+{
+ "issuer": "business-deck",
+ "version": "2026-10",
+ "link": "https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/",
+ "license": "Each source's own terms, listed under sources: Open Government Licence v3.0, Apache-2.0, US public domain with CC0 1.0, and the W3C Document License for the criteria cited. The rules are restated in our own words with credit; no text or image is copied. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-10",
+ "status": "draft",
+ "title": "The structure of a business deck",
+ "source": "UK Government Analysis Function, Data visualisation: charts and Data visualisation: tables (https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/, https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-tables/); Urban Institute, Data Visualization Style Guide (https://urbaninstitute.github.io/graphics-styleguide/); US federal plain language guidelines, Add useful headings; Section508.gov, Create accessible presentations; CFPB design system, data visualization guidelines; W3C, WCAG 2.2. All read 2026-10-10.",
+ "sources": [
+  {
+   "issuer": "UK Government Analysis Function",
+   "title": "Data visualisation: charts",
+   "version": "guidance as published, read 2026-10-10",
+   "link": "https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/",
+   "license": "Open Government Licence v3.0, Crown copyright (the site's terms of use, section 6); images excluded",
+   "use": "ported, restated in our own words"
+  },
+  {
+   "issuer": "UK Government Analysis Function",
+   "title": "Data visualisation: tables",
+   "version": "guidance as published, read 2026-10-10",
+   "link": "https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-tables/",
+   "license": "Open Government Licence v3.0, Crown copyright",
+   "use": "ported, restated in our own words"
+  },
+  {
+   "issuer": "Urban Institute",
+   "title": "Data Visualization Style Guide",
+   "version": "updated 27 August 2025",
+   "link": "https://urbaninstitute.github.io/graphics-styleguide/",
+   "license": "Apache-2.0 (the LICENSE of github.com/UrbanInstitute/graphics-styleguide)",
+   "use": "ported, restated in our own words"
+  },
+  {
+   "issuer": "US General Services Administration",
+   "title": "Federal plain language guidelines, Add useful headings",
+   "version": "repository main, read 2026-10-10",
+   "link": "https://github.com/GSA/plainlanguage.gov/blob/main/_pages/guidelines/organize/add-useful-headings.md",
+   "license": "US Government work, public domain in the United States; CC0 1.0 worldwide (the repository's LICENSE.md)",
+   "use": "ported, restated in our own words"
+  },
+  {
+   "issuer": "US General Services Administration, Section508.gov",
+   "title": "Create accessible presentations; How to author PowerPoint for accessibility",
+   "version": "reviewed July 2026",
+   "link": "https://www.section508.gov/create/presentations/",
+   "license": "US Government work, public domain in the United States; CC0 1.0 worldwide (the LICENSE.md of github.com/GSA/section508.gov)",
+   "use": "ported, restated in our own words"
+  },
+  {
+   "issuer": "Consumer Financial Protection Bureau",
+   "title": "Design system, data visualization guidelines",
+   "version": "as published, read 2026-10-10",
+   "link": "https://cfpb.github.io/design-system/guidelines/data-visualization-guidelines",
+   "license": "CC0 1.0 (the LICENSE of github.com/cfpb/design-system)",
+   "use": "ported, restated in our own words"
+  },
+  {
+   "issuer": "W3C",
+   "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+   "version": "W3C Recommendation 12 December 2024",
+   "link": "https://www.w3.org/TR/WCAG22/",
+   "license": "W3C Document License 2023: copies with a link and the notice, no adapted text",
+   "use": "cited: criteria 1.1.1, 1.4.1, 1.4.3, 1.4.11 and 2.4.2 by number, their ratios as facts"
+  },
+  {
+   "issuer": "IBM",
+   "title": "Carbon Design System, data visualization, chart anatomy",
+   "version": "as published, read 2026-10-10",
+   "link": "https://carbondesignsystem.com/data-visualization/chart-anatomy/",
+   "license": "Apache-2.0 (the LICENSE of github.com/carbon-design-system/carbon-website)",
+   "use": "the names of a chart's parts"
+  },
+  {
+   "issuer": "nexu-io",
+   "title": "open-design, simple-deck checklist and layouts, ib-pitch-book checklist",
+   "version": "repository main, read 2026-10-10",
+   "link": "https://github.com/nexu-io/open-design",
+   "license": "Apache-2.0 (the repository's root LICENSE)",
+   "use": "ideas restated in our own words"
+  },
+  {
+   "issuer": "IBCS Association",
+   "title": "International Business Communication Standards",
+   "version": "2.0, approved 11 June 2026",
+   "link": "https://www.ibcs.com/standards/",
+   "license": "CC BY-SA 4.0",
+   "use": "followed in our own words only; no text or picture copied"
+  }
+ ],
+ "measured": {
+  "about": "Published consulting decks, measured page by page; conventions and measurements are facts, the decks themselves are all rights reserved and nothing of them is copied. Words are all words on a page; fill is the share of a 12 by 16 grid over the body that carries any ink; sizes are scaled to a page 540 pt high. Each triple is the tenth percentile, the median and the ninetieth.",
+  "decks": [
+   {
+    "deck": "McKinsey & Company, USPS Future Business Model, 2010",
+    "link": "https://about.usps.com/future-postal-service/mckinsey-usps-future-bus-model2.pdf",
+    "pages_sampled": "19 of 39",
+    "words": [
+     24,
+     77,
+     149
+    ],
+    "fill": [
+     0.56,
+     0.82,
+     0.89
+    ],
+    "title_words": [
+     1,
+     18,
+     23
+    ],
+    "most_used_size_pt": [
+     11,
+     14,
+     16
+    ]
+   },
+   {
+    "deck": "Boston Consulting Group, Reshaping NYCHA support functions, 2012",
+    "link": "https://www.nyc.gov/assets/nycha/downloads/pdf/BCG-report-NYCHA-Key-Findings-and-Recommendations-8-15-12vFinal.pdf",
+    "pages_sampled": "28 of 112",
+    "words": [
+     55,
+     165,
+     298
+    ],
+    "fill": [
+     0.28,
+     0.76,
+     0.96
+    ],
+    "title_words": [
+     2,
+     7,
+     14
+    ],
+    "most_used_size_pt": [
+     8,
+     12,
+     16
+    ]
+   },
+   {
+    "deck": "BCG Executive Perspectives, Guide to Cost and Growth, 2025",
+    "link": "https://www.bcg.com/assets/2025/executive-perspectives-guide-to-cost-and-growth-15jan.pdf",
+    "pages_sampled": "23 of 24",
+    "words": [
+     31,
+     171,
+     286
+    ],
+    "fill": [
+     0.56,
+     0.78,
+     0.91
+    ],
+    "title_words": [
+     2,
+     11,
+     14
+    ],
+    "most_used_size_pt": [
+     12,
+     14,
+     16
+    ]
+   }
+  ],
+  "ours": "The pack's fill count leaves out hairlines and light grounds, so its numbers run lower than the figures above: across its three invented decks the content pages measure 0.29 to 0.65 in the Standard preset (lower half from 0.19) and 0.16 to 0.59 in Sparse (lower half from 0.14). The presets' bounds are those lows less 0.02."
+ },
+ "note": "Every bound that says how much a page carries is a number in skills/business-deck/density.json (presets sparse, standard, full); the check reads the bound of the preset the deck was built in. The deck is handed back as a PDF: its pages are written as HTML and printed, and the builder writes a description of every page into the file (the PDF's page-piece dictionary), which the check holds against the printed pages, so every page measure of a PDF is taken on the real page. The editable PowerPoint file is written when it is asked for; its page measures are taken on a drawing of its pages where LibreOffice is installed and estimated from the file where it is not, and the evidence says which.",
+ "rules": [
+  {
+   "id": "BDECK-TITLE",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "A content page's title states the page's message as a sentence: inside the preset's word range, at most the preset's lines, in sentence case, with no colon at its end, and never just the name of a kind of page. The builder takes one closing full stop off a page's title; a cover or closing statement that is a full sentence keeps its own.",
+   "source": "US plain language guidelines, Add useful headings (statement headings); Analysis Function charts, Titles (the headline title gives the chart's message)"
+  },
+  {
+   "id": "BDECK-ONE-IDEA",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "No two pages share a title, and a page holds one exhibit: one chart, one table, one picture, one matrix, or one row of small charts.",
+   "source": "The measured consulting decks: one exhibit under one title"
+  },
+  {
+   "id": "BDECK-STORYLINE",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "From the preset's page count on, the deck has an executive summary of three to five blocks, each naming a section that exists, an agenda, and its sections marked by the section's name in the running line of every page or by a divider; from the preset's divider page count on, each section opens on a divider page. A page continued as (2/2) counts once. Backup pages behind the appendix divider do not count. Backup pages behind the appendix divider do not count. Backup pages behind the appendix divider do not count.",
+   "source": "The measured consulting decks: the summary on the second or third page, the agenda repeated, a section label on every page"
+  },
+  {
+   "id": "BDECK-NEXT-STEPS",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "The last page before the closing lists actions, each with an owner and a date.",
+   "source": "open-design, simple-deck checklist: the close asks for something"
+  },
+  {
+   "id": "BDECK-SOURCE",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "Every chart, table and figure has a source line under it that names where it comes from.",
+   "source": "Analysis Function charts and tables, Source; Urban Institute style guide, source line; open-design, pitch-book checklist"
+  },
+  {
+   "id": "BDECK-PLACEHOLDER",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "No page carries placeholder or filler text, and no chart carries a label a tool wrote for want of a name (Series 1, Value, Measure).",
+   "source": "open-design, deck checklists: no placeholder text"
+  },
+  {
+   "id": "BDECK-CHART-HEAD",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "A chart names its measure, its unit and its period once, in the line above it.",
+   "source": "Analysis Function charts, Titles (the statistical subtitle); Urban Institute style guide (name the unit once)"
+  },
+  {
+   "id": "BDECK-CHART-LABELS",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "Categories and values are labelled; up to the preset's number of series are named beside their marks with no legend; all chart text is horizontal.",
+   "source": "Analysis Function charts (label directly, avoid legends, horizontal text); Urban Institute style guide (directly label the data and omit the legend)"
+  },
+  {
+   "id": "BDECK-CHART-HONEST",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "Bars start at zero, a chart has one value scale and no 3D, a pie has at most the preset's parts, and a chart has at most the preset's series.",
+   "source": "Analysis Function charts (do not break the numerical axis on bar charts; keep it simple: no 3D shapes; pie charts; at most four parts a stack); Urban Institute style guide; CFPB data visualization guidelines (no more than five data types)"
+  },
+  {
+   "id": "BDECK-CHART-EARNS",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "A chart plots at least the preset's number of values and does more than repeat the figures printed beside it.",
+   "source": "Our own rule, from a defect in the earlier deck pack; open-design, simple-deck checklist (one number on a figure page)"
+  },
+  {
+   "id": "BDECK-HIGHLIGHT",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "A chart or table highlights at most one mark, series, row or column, the title names what is highlighted, and every other mark is a neutral grey.",
+   "source": "The measured consulting decks: greys and one strong colour for what the title is about; WCAG 2.2, 1.4.1"
+  },
+  {
+   "id": "BDECK-TABLE",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "A table has a header row and at least the preset's rows, numbers and their headings right-aligned, one precision down a column, thousands separators, the unit in the heading and not in every cell, no merged cells and no blank rows, and rows no taller than the preset's row pitch. Digits in threes after a separator are read as thousands, so 1,900 above 850 is one precision. Digits in threes after a separator are read as thousands, so 1,900 above 850 is one precision. Digits in threes after a separator are read as thousands, so 1,900 above 850 is one precision.",
+   "source": "Analysis Function tables (numbers; column headers, row labels and merged cells; white space; source); Section 508, tables"
+  },
+  {
+   "id": "BDECK-FIT",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "All text fits its box and no table runs off the page. On a PDF this is measured on the printed pages: the lines each text really takes, words that are not on the page, a word that leaves its column, letters past the page's edge. On a PowerPoint file it is measured with the face's own letter widths.",
+   "source": "Section 508, readable text; our own measure"
+  },
+  {
+   "id": "BDECK-FILL",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "On a content page the share of the body that carries ink is inside the preset's bounds and the lower half is not empty, so a page whose content stops in its upper half fails; a closing page carries more than one line; a drawn panel is at least the preset's share full. A quote page is held to its own lower bound. On a PDF the pages measured are the printed ones; on a PowerPoint file a drawing of its pages where LibreOffice is installed, else an estimate from the file, and the evidence says which.",
+   "source": "The density preset, tuned on our own renders; the measured consulting decks for comparison"
+  },
+  {
+   "id": "BDECK-WORDS",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "A content page carries a number of words inside the preset's bounds; a list has at most the preset's points, on one level, each at most two lines; a takeaway is one sentence of at most the preset's lines. A section name or a running title set in Title Case is asked about, as a warning and never a failure: labels are in sentence case unless they are names.",
+   "source": "The density preset; the measured consulting decks for comparison"
+  },
+  {
+   "id": "BDECK-TYPE",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "Nothing is set under the preset's smallest size, most of a page's text is at the preset's body size or more, and content titles share one size. On a PDF the sizes are read off the printed page, a chart's labels included.",
+   "source": "The density preset; WCAG 2.2 large-text sizes"
+  },
+  {
+   "id": "BDECK-CONTRAST",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "Text has a contrast of at least 4.5:1 against its ground, or 3:1 from 18 pt (14 pt bold), and a chart mark at least 3:1. On a PDF the colours are read off the printed page.",
+   "source": "WCAG 2.2, success criteria 1.4.3 and 1.4.11"
+  },
+  {
+   "id": "BDECK-GRID",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "Everything keeps inside the preset's margin; the title and the running line sit at one position on every page; the parts of the running line share one baseline; every page but the cover has a page number and the cover has a date. On a PDF the baselines are the printed ones.",
+   "source": "The measured consulting decks: the title top at one height, a page number on every page"
+  },
+  {
+   "id": "BDECK-FILE",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "Every slide has its title in the title placeholder and first in the reading order; charts and pictures have alternative text of at most 250 characters; the file has a title, a language and a name of its own. A PDF also has text that can be read and searched on every page, bookmarks or page labels to find a section by, and the description of its pages its builder wrote into it: a PDF made another way is not taken for a checked deck.",
+   "source": "Section 508, How to author PowerPoint for accessibility (modules 1, 7, 10, 13); CFPB data visualization guidelines (alt text); WCAG 2.2, 1.1.1 and 2.4.2"
+  },
+  {
+   "id": "BDECK-MATRIX",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "A 2x2 matrix names what each of its two axes measures and both ends of each, names its four quadrants, places between the preset's least and most items inside its axes with no two names on top of each other, keeps every word horizontal, and highlights exactly one quadrant, which the title names, or an item in it.",
+   "source": "Analysis Function charts (when labelling axes always use horizontal text; label directly); one highlight as in BDECK-HIGHLIGHT; WCAG 2.2, 1.4.1. The 2x2 form itself is the consulting convention, followed in our own words"
+  },
+  {
+   "id": "BDECK-FIGURE",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "A figure page shows one picture whole, at its own proportions and with at least the preset's pixels for each inch it is shown at, covering at least the preset's share of the body and inside the margins, with a caption of at most the preset's lines that does not repeat the title, and alternative text that says what the picture shows, not its file name.",
+   "source": "Urban Institute style guide (a figure's title, source and notes); Section 508 and the CFPB guidelines (alternative text); WCAG 2.2, 1.1.1; the density preset for size and sharpness"
+  },
+  {
+   "id": "BDECK-QUOTE",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "A quote page holds one sentence inside the preset's word range, with who said it and their role, and nothing else: no picture, no panel, no italics or capitals, no quotation mark as an ornament. A deck holds at most the preset's number of quote pages.",
+   "source": "open-design, simple-deck checklist (one quote per deck) and layouts (one quote, one attribution), read 2026-10-10; the role and the plain setting are our own rule"
+  },
+  {
+   "id": "BDECK-APPENDIX",
+   "grader": "script",
+   "script": "business_deck.py",
+   "text": "An appendix opens with one divider after the closing page. Every page behind it is a content page numbered in the appendix's own count, a letter and a number in order, and carries the appendix's name in its running line. Backup pages do not count towards the storyline and stand under every other rule.",
+   "source": "The measured consulting decks keep backup pages in an appendix behind the close; Section 508 (every slide keeps its title and its place in the reading order); the numbering is our own rule"
+  }
+ ]
+}

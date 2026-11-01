@@ -1,0 +1,39 @@
+{
+  "language": "en",
+  "country": "GB",
+  "body": "Example Analytics Ltd",
+  "company_number": "09876543",
+  "meeting": "board",
+  "number": "2026/07",
+  "date": "2026-10-15",
+  "start": "09:30",
+  "end": "11:00",
+  "place": "18 Wharf Road, Leeds LS1 4BR",
+  "chair": "Helen Carter",
+  "secretary": "James Okoro",
+  "present": [
+    "Helen Carter",
+    "Priya Shah",
+    "David Hughes"
+  ],
+  "in_attendance": [
+    "James Okoro (company secretary)"
+  ],
+  "quorum": true,
+  "previous_minutes": "approved",
+  "items": [
+    {
+      "title": "New office lease",
+      "notes": "The finance director reported on the offer for the second floor at 18 Wharf Road.",
+      "decisions": [
+        "that the company enter into a five-year lease of the second floor at £46,000 a year, and that Priya Shah sign it for the company"
+      ]
+    },
+    {
+      "title": "Interim dividend",
+      "decisions": [
+        "that an interim dividend of £0.12 per ordinary share be paid on 30 November 2026"
+      ]
+    }
+  ]
+}

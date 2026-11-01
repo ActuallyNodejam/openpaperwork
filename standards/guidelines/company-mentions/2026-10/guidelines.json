@@ -1,0 +1,81 @@
+{
+  "issuer": "company-mentions",
+  "version": "2026-10",
+  "link": "https://www.ejustice.just.fgov.be/eli/loi/2019/03/23/2019A40586/justel",
+  "license": "Belgian, Dutch and Austrian statutes, not protected by copyright (CDE art. XI.172 § 2, Auteurswet art. 11, UrhG § 7); the Irish Companies Act 2014 under the Oireachtas (Open Data) PSI Licence (CC BY 4.0). Spanish, Italian and Polish official texts outside copyright (Ley de Propiedad Intelectual art. 13, legge 633/1941 art. 5, ustawa o prawie autorskim art. 4 pkt 1), the BOE's consolidated text under the Agencia Estatal BOE's conditions of 27 June 2024. Restated in our own words. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "What a company prints on its letters and order forms in Belgium, the Netherlands, Austria, Ireland, Spain, Italy and Poland",
+  "source": "Code des sociétés et des associations / Wetboek van vennootschappen en verenigingen art. 2:20; Handelsregisterwet 2007 art. 27 (https://wetten.overheid.nl/BWBR0021777) and BW 2:186; Unternehmensgesetzbuch § 14 (https://www.ris.bka.gv.at/NormDokument.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10001702&Paragraf=14); Companies Act 2014 s.151 (https://www.irishstatutebook.ie/eli/2014/act/38/section/151/enacted/en/html), which took over regulation 9 of the European Communities (Companies) Regulations 1973 (S.I. No. 163 of 1973, revoked by the Act's Schedule 2). Wave 9: Código de Comercio art. 24 (https://www.boe.es/buscar/act.php?id=BOE-A-1885-6627, consolidated text, informative only); Codice civile art. 2250, in force since 29 July 2009 (Normattiva); Kodeks spółek handlowych art. 206 § 1 and art. 374 § 1, the Sejm's consolidated text of 3 June 2026 (https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20000941037). Each carries Art. 26 of Directive (EU) 2017/1132. Read 2026-10-09.",
+  "rules": [
+    {
+      "id": "CM-BE",
+      "grader": "script",
+      "text": "A Belgian company prints its name, legal form, seat, enterprise number, RPR or RPM with the court of its seat, and its e-mail and website when it has them.",
+      "source": "CSA / WVV art. 2:20",
+      "check": "letter_check.py LETTER-COMPANY"
+    },
+    {
+      "id": "CM-NL",
+      "grader": "script",
+      "text": "A Dutch company prints its KvK number on letters, orders, invoices and quotations, and a BV or NV its full name and seat.",
+      "source": "Handelsregisterwet 2007 art. 27; BW 2:186",
+      "check": "letter_check.py LETTER-COMPANY"
+    },
+    {
+      "id": "CM-AT",
+      "grader": "script",
+      "text": "An Austrian company prints its firm, legal form, seat, Firmenbuch number and Firmenbuch court; no managing directors.",
+      "source": "UGB § 14 (1)",
+      "check": "letter_check.py LETTER-COMPANY"
+    },
+    {
+      "id": "CM-IE",
+      "grader": "script",
+      "text": "An Irish company prints its name and legal form, its place of registration and number and its registered office on business letters and order forms, and on a business letter every director's name with the nationality when not Irish.",
+      "source": "Companies Act 2014 s.151 (2), (1)",
+      "check": "letter_check.py LETTER-COMPANY"
+    },
+    {
+      "id": "CM-ES",
+      "grader": "script",
+      "text": "A Spanish company prints, on its documents, correspondence, order notes and invoices, its domicile, the particulars of its entry in the Registro Mercantil and its legal form; when it names its capital, the subscribed and the paid-up capital.",
+      "source": "Código de Comercio art. 24",
+      "check": "letter_check.py LETTER-COMPANY"
+    },
+    {
+      "id": "CM-IT",
+      "grader": "script",
+      "text": "An Italian company prints its seat, the register office where it is entered and the number; an S.p.A., S.a.p.a. or S.r.l. its capital as paid up; that it is in liquidation; an S.p.A. or S.r.l. that it has a sole shareholder.",
+      "source": "Codice civile art. 2250",
+      "check": "letter_check.py LETTER-COMPANY"
+    },
+    {
+      "id": "CM-PL",
+      "grader": "script",
+      "text": "A Polish sp. z o.o. or S.A. prints, on letters and commercial orders, its name, seat and address, the registry court and its number in the register, its NIP and its share capital; an S.A. also the paid-up capital.",
+      "source": "Kodeks spółek handlowych art. 206 § 1, art. 374 § 1",
+      "check": "letter_check.py LETTER-COMPANY"
+    },
+    {
+      "id": "CM-WARN",
+      "grader": "judge",
+      "text": "When the files give no register number or seat, the document carries none and the reply says which details are missing and under which rule; a number is never made up.",
+      "source": "Directive (EU) 2017/1132 Art. 26; skills/trade-documents/scripts/trade_create.py company_warning"
+    },
+    {
+      "id": "CM-OWED",
+      "grader": "script",
+      "check": "letter_check.py LETTER-COMPANY",
+      "text": "A letter and a trade document (a purchase order as its buyer's) whose sender is a company fail when a particular its own company law asks its letters and order forms to state is neither given nor declared unknown. One the person's files do not give is declared in the sender (\"unknown\": [\"register_number\"]): it is printed as nothing, the rule then warns, and the reply says the page is not complete without it. A number is never made up.",
+      "source": "Each country's article as the set invoice-company-particulars/2026-10 cites it (every statute in its table names business letters and order forms), else Directive (EU) 2017/1132 Art. 26."
+    },
+    {
+      "id": "CM-INVOICE-READING",
+      "grader": "script",
+      "check": "letter_check.py LETTER-COMPANY",
+      "text": "On an invoice of a German, Austrian, Polish or Finnish company the same gap is a question (a warning), never a fail: the statutes' words stop at business letters, order forms and forms, and the message says whose reading it is.",
+      "source": "GmbHG § 35a, AktG § 80 and HGB § 37a; UGB § 14; Kodeks spółek handlowych art. 206 § 1 and art. 374 § 1; yritys- ja yhteisötietolaki (244/2001) 15 §. Germany: the IHK für Oberfranken Bayreuth, Pflichtangaben auf Geschäftsbriefen, Stand April 2019 (https://www.ihk.de/bayreuth/hauptnavigation/service/recht/geschaeftsbriefe/pflichtangaben-geschaeftsbrief-4404204), lists invoices among business letters; read 2026-10-10, cited, nothing copied. Austria, Poland and Finland: no chamber or ministry page reading an invoice as a business letter was found on 2026-10-10."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "language": "fr",
+  "country": "BE",
+  "body": "Verrerie du Condroz SRL",
+  "company_number": "0767.890.123",
+  "meeting": "annual general",
+  "date": "2026-06-09",
+  "start": "17:00",
+  "end": "17:40",
+  "place": "Siège de la société, chaussée de Dinant 140, 5590 Ciney",
+  "chair": "Isabelle Marchal",
+  "secretary": "Julien Petit",
+  "checkers": [
+    "Nathalie Simon"
+  ],
+  "shareholders": [
+    {
+      "name": "Isabelle Marchal",
+      "shares": 700,
+      "votes": 700
+    },
+    {
+      "name": "Marchal Participations SRL",
+      "shares": 200,
+      "votes": 200,
+      "by": "Isabelle Marchal"
+    },
+    {
+      "name": "Nathalie Simon",
+      "shares": 100,
+      "votes": 100
+    }
+  ],
+  "quorum": true,
+  "items": [
+    {
+      "title": "Approbation des comptes annuels de l'exercice 2025",
+      "decisions": [
+        "Les comptes annuels de l'exercice 2025 sont approuvés"
+      ]
+    },
+    {
+      "title": "Affectation du résultat",
+      "decisions": [
+        "Le bénéfice de 64 200 euros est reporté à l'exercice suivant"
+      ]
+    },
+    {
+      "title": "Décharge aux administrateurs",
+      "decisions": [
+        "Décharge est donnée aux administrateurs pour l'exercice 2025"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+ "about": "Every key minutes_create.py reads from the data file of minutes. The builder stops on a key that is not here, and on a value of another shape (skills/_shared/spec_guard.py). What was reported or noted under an item of business goes in that item's notes; a fact about the meeting as a whole that has no field of its own goes in the top-level notes, printed before the first item.",
+ "open": {"": "notes", "items": "notes"},
+ "hints": {
+  "company": "the company or body that met is \"body\"",
+  "company_name": "the company or body that met is \"body\"",
+  "organisation": "the company or body that met is \"body\"",
+  "location": "where the meeting was held is \"place\"",
+  "venue": "where the meeting was held is \"place\"",
+  "apologies": "those who sent apologies go in \"absent\", a list of names",
+  "attendees": "members present go in \"present\", others in \"in_attendance\", both lists of names",
+  "quorum_met": "write \"quorum\": true to record that a quorum was present; the number a quorum needs goes in \"notes\"",
+  "notice_given": "that notice was given goes in \"notes\", a list of lines printed before the first item",
+  "next_meeting": "the next meeting is an item of business: add it to \"items\" with its date in the item's \"notes\"",
+  "items.description": "what was reported or noted under an item goes in the item's \"notes\"",
+  "items.text": "what was reported or noted under an item goes in the item's \"notes\"",
+  "items.discussion": "what was reported or noted under an item goes in the item's \"notes\"",
+  "items.summary": "what was reported or noted under an item goes in the item's \"notes\"",
+  "items.resolution": "a resolution goes in the item's \"decisions\", a list: [\"that ...\"] or [{\"text\": \"that ...\", \"for\": [\"...\"], \"against\": [\"...\"], \"abstained\": [\"...\"]}]",
+  "items.resolutions": "resolutions go in the item's \"decisions\", a list",
+  "items.decision": "a decision goes in the item's \"decisions\", a list: [\"that ...\"]",
+  "items.number": "items are numbered in the order they are given; leave the number out",
+  "items.votes_for": "who voted for goes with the decision: \"decisions\": [{\"text\": \"that ...\", \"for\": [\"...\"], \"against\": [\"...\"], \"abstained\": [\"...\"]}]",
+  "items.votes_against": "who voted against goes with the decision: \"decisions\": [{\"text\": \"that ...\", \"for\": [\"...\"], \"against\": [\"...\"], \"abstained\": [\"...\"]}]",
+  "items.abstained": "who abstained goes with the decision: \"decisions\": [{\"text\": \"that ...\", \"for\": [\"...\"], \"against\": [\"...\"], \"abstained\": [\"...\"]}]",
+  "items.action": "who is to do what goes in the item's \"notes\""
+ },
+ "defs": {
+  "votes": {"for": "number", "against": "number", "abstained": "number"},
+  "decision": {"text": "text", "for": ["text"], "against": ["text"], "abstained": ["text"], "unanimous": "flag", "votes": "@votes"},
+  "named": {"name": "text", "text": "text"},
+  "convened": {"date": "text", "how": "text"}
+ },
+ "fields": {
+  "language": "text", "country": "text", "body": "text", "company_number": "text", "legal_form": "text",
+  "meeting": "text", "method": "text", "number": "text", "organ": "text",
+  "date": "text", "start": "text", "end": "text", "place": "text",
+  "chair": "text", "secretary": "text", "checkers": ["text"], "signers": ["text"],
+  "titles": {"chair": "text", "secretary": "text"},
+  "present": ["text"], "in_attendance": ["text"], "absent": ["text"],
+  "represented": [{"name": "text", "by": "text"}],
+  "quorum": "flag", "previous_minutes": "text",
+  "shareholders": [{"name": "text", "shares": "number", "votes": "number", "by": "text"}],
+  "shareholders_attached": "flag", "total_shares": "number",
+  "convened": "text | @convened",
+  "universal": "flag", "notice_approved": "flag", "recorded": "text", "notary": "text", "voting": "text", "incidents": "text",
+  "minutes_approved": {"date": "text", "how": "text"},
+  "notes": ["text"],
+  "items": [{
+   "title": "text", "notes": "text | [text]",
+   "motions": [{"text": "text", "mover": "text", "result": "text", "votes": "@votes"}],
+   "decisions": ["text | @decision"],
+   "dissent": ["@named"], "conflict": ["@named"]
+  }]
+ }
+}

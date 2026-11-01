@@ -1,0 +1,53 @@
+{
+  "type_code": "381",
+  "number": "AV-2026-0007",
+  "issue_date": "2026-09-29",
+  "preceding_invoice": "FA-2026-0042",
+  "preceding_invoice_date": "2026-09-15",
+  "delivery_date": "2026-09-11",
+  "currency": "EUR",
+  "operation": "services",
+  "vat_on_debits": true,
+  "payment_terms": "Remboursement sous 14 jours",
+  "late_penalty_rate": "trois fois le taux d'intérêt légal",
+  "early_payment_discount": "none",
+  "note": "Avoir sur la facture FA-2026-0042 : une journée d'atelier annulée.",
+  "seller": {
+    "name": "Atelier Exemple SAS",
+    "legal_form": "SAS",
+    "share_capital": 10000,
+    "rcs": "RCS Lyon",
+    "siren": "000 000 018",
+    "siret": "000 000 018 00010",
+    "street": "1 rue de l'Exemple",
+    "postcode": "69000",
+    "city": "Lyon",
+    "country": "FR",
+    "vat_id": "FR66000000018",
+    "electronic_address": "000000018"
+  },
+  "buyer": {
+    "name": "Société Cliente Exemple SARL",
+    "siren": "000 000 026",
+    "street": "2 avenue de l'Essai",
+    "postcode": "75000",
+    "city": "Paris",
+    "country": "FR",
+    "vat_id": "FR90000000026",
+    "electronic_address": "000000026"
+  },
+  "payment": {
+    "means_code": "58",
+    "iban": "FR76 0000 0000 0000 0000 0000 000"
+  },
+  "lines": [
+    {
+      "name": "Atelier de conception, journée annulée",
+      "quantity": 1,
+      "unit": "DAY",
+      "unit_price": 1200.0,
+      "vat_rate": 20,
+      "vat_category": "S"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "messy-sales-001",
+  "title": "Clean a messy sales export and total it by region",
+  "format": "xlsx",
+  "output": "sales.xlsx",
+  "person": "A retail analyst preparing a clean monthly sales view.",
+  "sector": {
+    "naics": "44-45",
+    "name": "Retail Trade"
+  },
+  "occupation": {
+    "soc": "13-1161.00",
+    "name": "Market Research Analysts and Marketing Specialists"
+  },
+  "review": [
+    "Seven orders, ISO dates, one A-102, refund kept, SEK converted by a rate cell.",
+    "Region totals and the grand total are correct formulas."
+  ],
+  "revised_review": [
+    "Every converted amount and total follows the 11.20 rate."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.2.0#FMT-1",
+        "openpaperwork/0.2.0#FMT-2",
+        "openpaperwork/0.2.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "clean-rows",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.2.0#DATA-1",
+        "openpaperwork/0.2.0#FACT-1"
+      ],
+      "text": "The Clean sheet has exactly seven orders, A-101 to A-107 with A-102 once, dates 2026-07-03, 2026-07-04, 2026-07-07, 2026-07-09, 2026-07-12, 2026-07-15 and 2026-07-18 in YYYY-MM-DD, amounts 1250.00, 980.50, 11400.00 SEK, 2000.00, -150.00 (refund kept), 5700.00 SEK and 640.00, and the Removed sheet lists the duplicate A-102 row."
+    },
+    {
+      "id": "totals",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.2.0#FACT-1"
+      ],
+      "text": "First stage at 11.40 SEK per EUR: Amount EUR is 1000.00 for A-103 and 500.00 for A-106; region totals North 2890.00, South 830.50, West 2500.00, grand total 6220.50. Revision stage at 11.20: A-103 about 1017.86, A-106 about 508.93; North about 2907.86, South 830.50, West about 2508.93, grand total about 6247.29 (rounding to the cent may differ by 0.01)."
+    },
+    {
+      "id": "rate",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.2.0#READ-1"
+      ],
+      "text": "The Rates sheet shows SEK with Units per EUR of 11.40 at the first stage and 11.20 at the revision stage, and labels and currency are readable."
+    },
+    {
+      "id": "recalc",
+      "stage": "both",
+      "grader": "recalc",
+      "guidelines": [
+        "openpaperwork/0.2.0#CALC-1"
+      ],
+      "text": "After raising the A-101 amount by 10 in a copy, recalculation in LibreOffice raises the North total by 10.",
+      "recalc": {
+        "edit": {
+          "sheet": "Clean",
+          "key_col": "Order",
+          "key": "A-101",
+          "col": "Amount",
+          "delta": 10
+        },
+        "check": {
+          "sheet": "Summary",
+          "key_col": "Region",
+          "key": "North",
+          "col": "Amount EUR",
+          "factor": 1
+        }
+      }
+    },
+    {
+      "id": "print-width",
+      "stage": "both",
+      "grader": "render",
+      "guidelines": [
+        "openpaperwork/0.2.0#PAGE-1"
+      ],
+      "max_pages": "sheets",
+      "text": "Printed, each sheet fits on one page, so the PDF has no more pages than the workbook has sheets."
+    }
+  ],
+  "status": "draft",
+  "locale": "en",
+  "version": "1.2.0",
+  "guidelines": [
+    "openpaperwork/0.2.0",
+    "every-file/1.1.0"
+  ],
+  "source": "Synthetic material created for this evaluation pack; no customer inputs.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen."
+}

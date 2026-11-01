@@ -1,0 +1,50 @@
+{
+  "language": "en",
+  "country": "US",
+  "body": "Cedar Ridge Software Inc.",
+  "meeting": "board",
+  "date": "2026-10-13",
+  "start": "14:00",
+  "end": "15:10",
+  "place": "410 Market Street, Suite 300, Portland, Oregon",
+  "chair": "Rachel Kim",
+  "secretary": "Daniel Ortiz",
+  "present": [
+    "Rachel Kim",
+    "Daniel Ortiz",
+    "Samuel Price",
+    "Ana Flores"
+  ],
+  "absent": [
+    "Thomas Lee"
+  ],
+  "quorum": true,
+  "previous_minutes": "approved",
+  "items": [
+    {
+      "title": "Line of credit",
+      "motions": [
+        {
+          "text": "that the corporation open a $500,000 revolving line of credit with Example Community Bank",
+          "mover": "Samuel Price",
+          "result": "adopted",
+          "votes": {
+            "for": 3,
+            "against": 1,
+            "abstained": 0
+          }
+        }
+      ]
+    },
+    {
+      "title": "Officer appointment",
+      "motions": [
+        {
+          "text": "that Ana Flores be appointed treasurer",
+          "mover": "Rachel Kim",
+          "result": "adopted"
+        }
+      ]
+    }
+  ]
+}

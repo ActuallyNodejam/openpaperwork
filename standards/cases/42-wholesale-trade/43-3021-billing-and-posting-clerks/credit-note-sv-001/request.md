@@ -1,0 +1,1 @@
+Exempel Butik har reklamerat leveransen på faktura 2026-1187 (se `inputs/`). Gör en kreditfaktura för det vi ska kreditera: som e-faktura i XML, `kreditfaktura.xml`, och samma kreditfaktura som PDF, `kreditfaktura.pdf`.

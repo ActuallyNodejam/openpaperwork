@@ -1,0 +1,119 @@
+{
+  "id": "employment-statement-fi-001",
+  "title": "Write the Finnish statement of the principal terms of work for a fixed-term data analyst",
+  "person": "An HR specialist at a Finnish analytics consultancy whose new analyst signed only an email offer.",
+  "format": "docx",
+  "output": "selvitys.docx",
+  "locale": "fi-FI",
+  "sector": {
+    "naics": "54",
+    "name": "Professional, Scientific, and Technical Services"
+  },
+  "occupation": {
+    "soc": "13-1071.00",
+    "name": "Human Resources Specialists"
+  },
+  "review": [
+    "Selvitys Emma Lehtiselle: data-analyytikko Oulussa 1.2.2027–31.1.2028, määräaikaisuuden peruste asiakasprojekti; koeaika neljä kuukautta; 3 900 EUR kuukaudessa, palkka kuun 15. päivänä tilille; 37,5 tuntia viikossa; vuosiloma vuosilomalain mukaan; irtisanomisaika työsopimuslain mukaan; työeläke ja tapaturmavakuutus nimetyissä yhtiöissä."
+  ],
+  "revised_review": [
+    "Palkka nousee 4 100 euroon kuukaudessa; muu ennallaan."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "items",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-ITEMS",
+      "guidelines": [
+        "tyosopimuslaki/2001-55#FI-02",
+        "tyosopimuslaki/2001-55#FI-06",
+        "tyosopimuslaki/2001-55#FI-07"
+      ],
+      "text": "Every 2:4 § item is there or marked ei sovelleta, the insurers named."
+    },
+    {
+      "id": "temp",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-FI-TEMP",
+      "guidelines": [
+        "tyosopimuslaki/2001-55#FI-03"
+      ],
+      "text": "The fixed term gives its end and its ground."
+    },
+    {
+      "id": "probation",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-PROBATION",
+      "guidelines": [
+        "tyosopimuslaki/2001-55#FI-04"
+      ],
+      "text": "Four months' probation, within half the fixed term."
+    },
+    {
+      "id": "pay",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-PAY",
+      "guidelines": [
+        "tyosopimuslaki/2001-55#FI-05"
+      ],
+      "text": "3 900 EUR a month, paid on the 15th by bank transfer."
+    },
+    {
+      "id": "dates",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-DATES",
+      "guidelines": [
+        "tyosopimuslaki/2001-55#FI-01"
+      ],
+      "text": "Dated within seven days of the start."
+    },
+    {
+      "id": "lang",
+      "stage": "both",
+      "grader": "script",
+      "script": "employment_check.py",
+      "rule": "EMPLOY-LANG",
+      "guidelines": [
+        "tyosopimuslaki/2001-55#FI-10"
+      ],
+      "text": "Every heading is Finnish."
+    },
+    {
+      "id": "revised-pay",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "tyosopimuslaki/2001-55#FI-05"
+      ],
+      "text": "The pay is 4 100 EUR a month and nothing else changed."
+    }
+  ],
+  "version": "1.0.0",
+  "status": "draft",
+  "source": "Synthetic material created for this evaluation pack; the companies and people are invented.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+  "guidelines": [
+    "tyosopimuslaki/2001-55",
+    "every-file/1.1.0"
+  ]
+}

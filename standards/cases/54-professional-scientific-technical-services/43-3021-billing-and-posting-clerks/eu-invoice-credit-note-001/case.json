@@ -1,0 +1,189 @@
+{
+ "id": "eu-invoice-credit-note-001",
+ "title": "Issue a credit note as XML and a readable PDF against an original invoice",
+ "version": "0.1.0",
+ "status": "draft",
+ "format": "xml",
+ "guideline": "cen-en16931/2017",
+ "checks": [
+  "einvoice",
+  "invoice_layout"
+ ],
+ "stage": {
+  "first": [
+   "invoice.xml",
+   "invoice.pdf"
+  ]
+ },
+ "sector": {
+  "naics": "54",
+  "name": "Professional, Scientific, and Technical Services"
+ },
+ "occupation": {
+  "soc": "43-3021.00",
+  "name": "Billing and Posting Clerks"
+ },
+ "output": "invoice.xml",
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "einv-head",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice.py",
+   "rule": "EINV-HEAD",
+   "guidelines": [
+    "cen-en16931/2017#EINV-HEAD"
+   ],
+   "text": "Invoice number, issue and due dates, seller, buyer, their VAT identifiers and the currency are as given."
+  },
+  {
+   "id": "locale-paper",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-PAPER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-PAPER"
+   ],
+   "text": "The page is the locale paper size."
+  },
+  {
+   "id": "locale-date",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-DATE",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-DATE"
+   ],
+   "text": "Dates are written in the locale order."
+  },
+  {
+   "id": "locale-number",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-NUMBER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-NUMBER"
+   ],
+   "text": "Numbers use the locale separators."
+  },
+  {
+   "id": "locale-currency",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-CURRENCY",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-CURRENCY"
+   ],
+   "text": "The amount carries the locale currency."
+  },
+  {
+   "id": "vat-label",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-VAT-LABEL",
+   "guidelines": [
+    "cen-en16931/2017#EINV-VAT-LABEL"
+   ],
+   "text": "Every VAT id on the page carries its label in the page's language."
+  },
+  {
+   "id": "locale-order",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-LOCALE-ORDER",
+   "guidelines": [
+    "cen-en16931/2017#EINV-LOCALE-ORDER"
+   ],
+   "text": "The page is written in the language of the order itself."
+  },
+  {
+   "id": "page-kind",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-KIND",
+   "guidelines": [
+    "cen-en16931/2017#EINV-PAGE-KIND"
+   ],
+   "text": "The page says credit note and names the invoice it corrects."
+  },
+  {
+   "id": "page-din5008",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-DIN5008",
+   "guidelines": [
+    "din-5008/2020#EINV-PAGE-DIN5008"
+   ],
+   "text": "The page is laid out on DIN 5008 Form B."
+  },
+  {
+   "id": "page-mentions",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-MENTIONS",
+   "guidelines": [
+    "eu-vat-directive/2006-112#EINV-PAGE-MENTIONS"
+   ],
+   "text": "The page carries the mentions the VAT Directive requires; an invoice that owes none skips this."
+  }
+ ],
+ "truth": {
+  "doc": "credit_note",
+  "type_code": "381",
+  "number": "CN-2026-0004",
+  "preceding_invoice": "INV-2026-0007",
+  "currency": "EUR",
+  "net": 245.0,
+  "vat": 46.55,
+  "total": 291.55,
+  "vat_category": {
+   "first": "S",
+   "revision": "S"
+  },
+  "header": {
+   "first": {
+    "Invoice number": "CN-2026-0004",
+    "Issue date": "2026-10-20",
+    "Due date": "2026-10-20",
+    "Seller": "Nordlicht Kontor GmbH",
+    "Seller VAT ID": "DE123456789",
+    "Buyer": "Beispiel Buerobedarf GmbH",
+    "Buyer VAT ID": "DE987654321",
+    "Currency": "EUR"
+   },
+   "revision": {}
+  },
+  "reverse_charge": {
+   "first": false,
+   "revision": false
+  }
+ },
+ "review": [
+  "The file says what the case asks for."
+ ],
+ "revised_review": [
+  "The file still says it after the revision."
+ ],
+ "source": "Synthetic material created for this evaluation pack; no customer inputs.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after the first output is frozen.",
+ "locale": "de-DE"
+}

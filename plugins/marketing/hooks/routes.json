@@ -1,0 +1,153 @@
+{
+  "note": "What people call each kind of file this plugin's packs make. Built by scripts/build-portable-pack.py from the asks list in each pack's pack.json and the titles the packs' own pages print; change it there, never here. Read by hooks/pack_route.py.",
+  "routes": [
+    {
+      "skill": "business-deck",
+      "checks": true,
+      "kinds": [
+        {
+          "id": "deck",
+          "kind": "a slide deck",
+          "words": {
+            "en": [
+              "deck",
+              "slide deck",
+              "slides",
+              "pitch deck",
+              "board deck",
+              "slideshow"
+            ],
+            "de": [
+              "Präsentation",
+              "Folien",
+              "Foliensatz"
+            ],
+            "fr": [
+              "diaporama",
+              "diapositives"
+            ],
+            "nl": [
+              "presentatie"
+            ],
+            "sv": [
+              "bildspel"
+            ],
+            "nb": [
+              "presentasjon",
+              "lysbilder"
+            ],
+            "da": [
+              "præsentation"
+            ],
+            "fi": [
+              "diaesitys",
+              "powerpoint-esitys",
+              "kalvot",
+              "kalvosarja"
+            ],
+            "es": [
+              "presentación",
+              "diapositivas"
+            ],
+            "it": [
+              "presentazione",
+              "diapositive"
+            ],
+            "pl": [
+              "prezentacja",
+              "slajdy"
+            ]
+          },
+          "weak": {
+            "en": [
+              "presentation"
+            ],
+            "fr": [
+              "présentation"
+            ]
+          },
+          "with": {
+            "en": [
+              "slides",
+              "slide",
+              "deck",
+              "board",
+              "meeting",
+              "management",
+              "investor",
+              "investors",
+              "pitch",
+              "powerpoint",
+              "keynote",
+              "make",
+              "create",
+              "build",
+              "prepare",
+              "give",
+              "styrelsen",
+              "ledningen",
+              "gör",
+              "skapa"
+            ],
+            "fr": [
+              "une",
+              "fais",
+              "faire",
+              "prépare",
+              "préparer",
+              "crée",
+              "créer",
+              "comité",
+              "direction",
+              "conseil",
+              "investisseurs"
+            ]
+          },
+          "unless": {
+            "en": [
+              "deck of cards",
+              "on deck",
+              "steam deck",
+              "tape deck",
+              "flight deck"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "skill": "social-poster",
+      "checks": false,
+      "kinds": [
+        {
+          "id": "poster",
+          "kind": "a fair or event poster",
+          "words": {
+            "en": [
+              "event poster",
+              "fair poster",
+              "trade show poster",
+              "trade-show poster",
+              "poster",
+              "instagram square",
+              "instagram story",
+              "fair post",
+              "trade fair post",
+              "save-the-date card",
+              "thank-you post",
+              "agenda card"
+            ],
+            "de": [
+              "Plakat",
+              "Messeplakat"
+            ],
+            "sv": [
+              "affisch",
+              "mässaffisch"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

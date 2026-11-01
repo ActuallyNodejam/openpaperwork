@@ -1,0 +1,40 @@
+{
+  "standard": "common-paper-mutual-nda-1.0",
+  "kind": "nda",
+  "effective_date": "2026-11-02",
+  "parties": [
+    {
+      "name": "Exempel Tryck AB",
+      "registration": "556677-8899",
+      "address": "Verkstadsgatan 7, 417 07 Gothenburg, Sweden",
+      "notice_address": "avtal@exempeltryck.example",
+      "signatory": {
+        "name": "Karin Lind",
+        "title": "Chief Executive Officer"
+      }
+    },
+    {
+      "name": "Brightwater Analytics Ltd",
+      "registration": "SC123456",
+      "address": "4 Quayside Lane, Leith, Edinburgh EH6 6QW, United Kingdom",
+      "notice_address": "legal@brightwater-analytics.example",
+      "signatory": {
+        "name": "Ewan Grant",
+        "title": "Commercial Director"
+      }
+    }
+  ],
+  "terms": {
+    "Purpose": "Evaluating whether to build a print-on-demand reporting service together, in which Brightwater supplies the analytics and Exempel Tryck prints and ships the reports.",
+    "MNDA Term": {
+      "years": 2
+    },
+    "Term of Confidentiality": {
+      "years": 3
+    }
+  },
+  "governing_law": "the laws of Sweden",
+  "courts": "the courts of Gothenburg",
+  "modifications": [],
+  "_note": "The governing law and the courts are the parties' choice: ask the person, never fill them in. Common Paper's own form defaults to a US state; this pack has no default."
+}

@@ -1,0 +1,52 @@
+{
+  "domain": "operations",
+  "hands_back": [
+    "*.docx",
+    "*.pdf"
+  ],
+  "default": "letter.pdf",
+  "check": "python3 {here}/../_checks/packcheck.py business-letter {file}",
+  "recognises": {
+    "file": "*.json",
+    "has": [
+      "recipient",
+      "subject",
+      "body"
+    ]
+  },
+  "asks": [
+    {
+      "id": "letter",
+      "kind": "a letter",
+      "words": {
+        "en": "letter",
+        "de": "Geschäftsbrief, Anschreiben, Kündigungsschreiben, Mahnschreiben, Mahnung, Zahlungserinnerung, Kündigung, Beschwerdebrief, Begleitschreiben, Bestätigungsschreiben, Briefe, Briefen",
+        "fr": "lettre, courrier",
+        "nl": "brieven, zakelijke brief, aanmaning, opzegbrief, opzeggingsbrief, klachtbrief, begeleidende brief",
+        "sv": "brev, affärsbrev, uppsägningsbrev, reklamationsbrev, följebrev",
+        "nb": "brev, forretningsbrev, oppsigelsesbrev, følgebrev",
+        "da": "brev, forretningsbrev, opsigelsesbrev, følgebrev",
+        "fi": "kirje, liikekirje, irtisanomiskirje, saatekirje",
+        "es": "carta comercial, carta de reclamación, carta certificada, burofax",
+        "it": "lettera, lettera commerciale, raccomandata, disdetta",
+        "pl": "pismo, list polecony, wypowiedzenie, wezwanie do zapłaty"
+      },
+      "weak": {
+        "de": "Brief",
+        "nl": "brief",
+        "es": "carta",
+        "pl": "list"
+      },
+      "with": {
+        "de": "einen, einem, den, dem, der, diesen, schreib, schreibe, schreiben, verfasse, verfassen, kunden, lieferanten, vermieter, firma, unterschreiben, abschicken",
+        "nl": "een, deze, onze, mijn, schrijf, schrijven, stuur, sturen, versturen, opstellen, klant, leverancier, verhuurder, ondertekenen",
+        "es": "una, esta, nuestra, escribe, escribir, redacta, redactar, enviar, envía, firmar, dirigida, formal, proveedor, cliente, arrendador",
+        "pl": "napisz, napisać, wyślij, wysłać, formalny, firmowy, klienta, dostawcy, urzędu, wynajmującego, podpisu, przygotuj"
+      },
+      "unless": {
+        "en": "capital letter, first letter, last letter, letter size, letter sized, letter paper, us letter, letter spacing, letter grade, lowercase letter, uppercase letter, letter case, drive letter, each letter, every letter, single letter, one letter, letter count, letter of the alphabet, letter of credit",
+        "es": "a la carta"
+      }
+    }
+  ]
+}

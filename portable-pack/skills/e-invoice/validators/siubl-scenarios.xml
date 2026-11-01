@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- A scenario for the KoSIT validator (github.com/itplr-kosit/validator, Apache-2.0) that checks a UBL 2.1
+  - invoice or credit note against SI-UBL 2.0, the Dutch NLCIUS: the UBL 2.1 schema and si-ubl-2.0.xsl of the
+  - Nederlandse Peppol Autoriteit (github.com/peppolautoriteit-nl/validation at 4e93ae86, release 2026-05-21,
+  - SI-UBL 2.0.3.13; MIT, Stichting Simplerinvoicing; the CEN EN 16931 rules in it are EUPL-1.2 and run
+  - untouched). This file is ours; the files it names are run from where they are installed:
+  -   kosit/  the KoSIT XRechnung validator configuration (Apache-2.0): the UBL 2.1 schema and the report
+  -           stylesheet
+  -   siubl/  si-ubl-2.0.xsl
+  - skills/e-invoice/scripts/fetch_validators.py installs both at pinned versions.
+  -->
+<scenarios xmlns="http://www.xoev.de/de/validator/framework/1/scenarios" frameworkVersion="1.0.0">
+  <name>SI-UBL 2.0 (NLCIUS)</name>
+  <author>Nodejam OpenPaperwork, e-invoice pack</author>
+  <date>2026-10-09</date>
+  <description>
+    <p>Validates a UBL 2.1 Invoice or CreditNote tagged as SI-UBL 2.0 against the NLCIUS rules.</p>
+  </description>
+  <scenario>
+    <name>SI-UBL 2.0 (UBL Invoice)</name>
+    <description><p>UBL 2.1 Invoice, SI-UBL 2.0 rules.</p></description>
+    <namespace prefix="inv">urn:oasis:names:specification:ubl:schema:xsd:Invoice-2</namespace>
+    <namespace prefix="rep">http://www.xoev.de/de/validator/varl/1</namespace>
+    <match>exists(/inv:Invoice)</match>
+    <validateWithXmlSchema>
+      <resource>
+        <name>XML Schema for UBL 2.1 Invoice</name>
+        <location>kosit/resources/ubl/2.1/xsd/maindoc/UBL-Invoice-2.1.xsd</location>
+      </resource>
+    </validateWithXmlSchema>
+    <validateWithSchematron>
+      <resource>
+        <name>SI-UBL 2.0 rules, 2.0.3.13</name>
+        <location>siubl/si-ubl-2.0.xsl</location>
+      </resource>
+    </validateWithSchematron>
+    <createReport>
+      <resource>
+        <name>Validation report</name>
+        <location>kosit/resources/xrechnung-report.xsl</location>
+      </resource>
+    </createReport>
+    <acceptMatch>/rep:report/rep:assessment[1]/rep:accept[1]</acceptMatch>
+  </scenario>
+  <scenario>
+    <name>SI-UBL 2.0 (UBL CreditNote)</name>
+    <description><p>UBL 2.1 CreditNote, SI-UBL 2.0 rules.</p></description>
+    <namespace prefix="cn">urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2</namespace>
+    <namespace prefix="rep">http://www.xoev.de/de/validator/varl/1</namespace>
+    <match>exists(/cn:CreditNote)</match>
+    <validateWithXmlSchema>
+      <resource>
+        <name>XML Schema for UBL 2.1 CreditNote</name>
+        <location>kosit/resources/ubl/2.1/xsd/maindoc/UBL-CreditNote-2.1.xsd</location>
+      </resource>
+    </validateWithXmlSchema>
+    <validateWithSchematron>
+      <resource>
+        <name>SI-UBL 2.0 rules, 2.0.3.13</name>
+        <location>siubl/si-ubl-2.0.xsl</location>
+      </resource>
+    </validateWithSchematron>
+    <createReport>
+      <resource>
+        <name>Validation report</name>
+        <location>kosit/resources/xrechnung-report.xsl</location>
+      </resource>
+    </createReport>
+    <acceptMatch>/rep:report/rep:assessment[1]/rep:accept[1]</acceptMatch>
+  </scenario>
+  <noScenarioReport>
+    <resource>
+      <name>Default Report</name>
+      <location>kosit/resources/default-report.xsl</location>
+    </resource>
+  </noScenarioReport>
+</scenarios>

@@ -1,0 +1,53 @@
+# Runs on every pull request and on the main line. No secrets, no model, read-only token.
+# The steps are the ones a maintainer runs before a merge: the library's own tests, the
+# pack checks' end state, the portable pack, and every check against its planted faults.
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  library:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6, reviewed 2026-10-01
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Library tests
+        run: python3 -m unittest -v standards/test_library.py
+      - name: Case protocol
+        working-directory: standards
+        run: python3 -m unittest -v test_protocol.py
+      - name: Pack check end state and open gaps
+        run: python3 -m unittest -v skills/_checks/tests/test_end_state.py
+      - name: Portable pack routing, hooks and installer
+        run: python3 -m unittest -v portable-pack/tests/test_route.py portable-pack/tests/test_stop_hook.py portable-pack/tests/test_install.py portable-pack/tests/test_agent_hooks.py
+  pack-grade:
+    # Each check fails a file that breaks its rule: the clean file from a pack's starter passes, and every file with
+    # one planted fault fails the rule it breaks (standards/planted, standards/test_planted.py). No model, no account.
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6, reviewed 2026-10-01
+        with:
+          persist-credentials: false
+          fetch-depth: 1
+      - name: Install the packs' Python packages and pdftotext
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+          python3 -m venv .venv
+          .venv/bin/pip install --quiet -r portable-pack/requirements.txt
+      - name: Planted faults fail, clean files pass
+        run: .venv/bin/python3 -m unittest -v standards/test_planted.py
+      - name: Which rules a planted fault trips
+        run: .venv/bin/python3 standards/test_planted.py --coverage

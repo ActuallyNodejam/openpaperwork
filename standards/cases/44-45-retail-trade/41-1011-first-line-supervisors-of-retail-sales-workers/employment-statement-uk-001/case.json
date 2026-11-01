@@ -1,0 +1,127 @@
+{
+ "id": "employment-statement-uk-001",
+ "title": "Write the written statement for a bookshop's Christmas temp on a fixed-term contract",
+ "person": "The owner and manager of an independent bookshop in Cornwall taking on a sales assistant for Christmas.",
+ "format": "docx",
+ "output": "statement.docx",
+ "locale": "en-GB",
+ "sector": {
+  "naics": "44-45",
+  "name": "Retail Trade"
+ },
+ "occupation": {
+  "soc": "41-1011.00",
+  "name": "First-Line Supervisors of Retail Sales Workers"
+ },
+ "review": [
+  "Callum Reid's fixed term runs from 16 November 2026 to 10 January 2027 with a two-week trial period; GBP 13.00 an hour paid weekly on Fridays by bank transfer, with double time on Boxing Day set out separately; 24 hours a week Thursday to Saturday; holiday as the notes put it (statutory, accruing, the rest paid in the last pay) with no number of days worked out; statutory sick pay only, the workplace pension, the 25 percent staff discount, one week's notice either side, no collective agreement and the paid till training."
+ ],
+ "revised_review": [
+  "The end date is 31 January 2027 and nothing else changes."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "items",
+   "stage": "both",
+   "grader": "script",
+   "script": "employment_check.py",
+   "rule": "EMPLOY-ITEMS",
+   "guidelines": [
+    "uk-employment-rights-act/1996#ERA-02",
+    "uk-employment-rights-act/1996#ERA-06",
+    "uk-employment-rights-act/1996#ERA-07",
+    "uk-employment-rights-act/1996#ERA-08",
+    "uk-employment-rights-act/1996#ERA-09",
+    "uk-employment-rights-act/1996#ERA-10",
+    "uk-employment-rights-act/1996#ERA-11",
+    "uk-employment-rights-act/1996#ERA-12",
+    "uk-employment-rights-act/1996#ERA-15",
+    "uk-employment-rights-act/1996#ERA-16",
+    "uk-employment-rights-act/1996#ERA-18",
+    "uk-employment-rights-act/1996#ERA-19"
+   ],
+   "text": "Every section 1 particular is there or says there is nothing to state."
+  },
+  {
+   "id": "dates",
+   "stage": "both",
+   "grader": "script",
+   "script": "employment_check.py",
+   "rule": "EMPLOY-DATES",
+   "guidelines": [
+    "uk-employment-rights-act/1996#ERA-01",
+    "uk-employment-rights-act/1996#ERA-03",
+    "uk-employment-rights-act/1996#ERA-13"
+   ],
+   "text": "The start, the continuous employment date and an end date after the start; dated by the first day."
+  },
+  {
+   "id": "probation",
+   "stage": "both",
+   "grader": "script",
+   "script": "employment_check.py",
+   "rule": "EMPLOY-PROBATION",
+   "guidelines": [
+    "uk-employment-rights-act/1996#ERA-14"
+   ],
+   "text": "The two-week trial period with its length."
+  },
+  {
+   "id": "pay",
+   "stage": "both",
+   "grader": "script",
+   "script": "employment_check.py",
+   "rule": "EMPLOY-PAY",
+   "guidelines": [
+    "uk-employment-rights-act/1996#ERA-05"
+   ],
+   "text": "GBP 13.00 an hour, paid weekly by bank transfer."
+  },
+  {
+   "id": "holiday-as-given",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "uk-employment-rights-act/1996#ERA-07"
+   ],
+   "text": "Holiday is written as the notes give it; no number of holiday days or notice weeks is worked out."
+  },
+  {
+   "id": "end-date",
+   "stage": "first",
+   "grader": "judge",
+   "guidelines": [
+    "uk-employment-rights-act/1996#ERA-13"
+   ],
+   "text": "The end date is 10 January 2027."
+  },
+  {
+   "id": "revised-end-date",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "uk-employment-rights-act/1996#ERA-13"
+   ],
+   "text": "The end date is 31 January 2027."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies and people are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "uk-employment-rights-act/1996",
+  "every-file/1.1.0"
+ ]
+}

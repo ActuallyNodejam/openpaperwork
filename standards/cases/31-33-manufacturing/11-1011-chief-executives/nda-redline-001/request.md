@@ -1,0 +1,1 @@
+Please send Halvard's NDA (`inputs/their-nda.docx`) back with our changes marked as tracked changes, as `their-nda-redline.docx`: confidentiality should survive three years after termination, not ten; we must be allowed to keep copies in our routine back-ups; and we can share it with our professional advisers as well as employees. Don't change anything else.

@@ -1,0 +1,59 @@
+{
+  "number": "CM-1012",
+  "issue_date": "2026-10-14",
+  "delivery_date": "2026-10-02",
+  "currency": "USD",
+  "payment_terms": "Applied to the next invoice",
+  "order_reference": "PO 88213",
+  "seller": {
+    "name": "Example Supply Co. LLC",
+    "street": "100 Example Blvd, Suite 200",
+    "postcode": "78701",
+    "city": "Austin, TX",
+    "country": "US",
+    "sales_tax_permit": "00000000000",
+    "contact": {
+      "name": "Pat Example",
+      "phone": "+1 512 555 0100",
+      "email": "billing@supply.example"
+    }
+  },
+  "buyer": {
+    "name": "Example Packaging Inc.",
+    "street": "200 Sample St",
+    "postcode": "78702",
+    "city": "Austin, TX",
+    "country": "US"
+  },
+  "payment": {
+    "bank": "ACH transfer",
+    "routing": "000000000",
+    "account": "000123456789"
+  },
+  "taxes": [
+    {
+      "name": "Texas state sales tax",
+      "rate": 6.25
+    },
+    {
+      "name": "City of Austin",
+      "rate": 1
+    },
+    {
+      "name": "Austin MTA",
+      "rate": 1
+    }
+  ],
+  "lines": [
+    {
+      "name": "Print head set, returned",
+      "quantity": 2,
+      "unit": "C62",
+      "unit_price": 48.5
+    }
+  ],
+  "type_code": "381",
+  "preceding_invoice": "1087",
+  "preceding_invoice_date": "2026-10-05",
+  "note": "Credit for two print head sets returned unopened from invoice 1087."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "openpaperwork-formats",
+  "description": "Formats: Word, Excel, PowerPoint and PDF files, decks from a brand kit, and the floor every document, workbook and deck should pass (no cut-off text, no formula errors), with the same check as an MCP tool.",
+  "version": "0.1.0",
+  "author": {
+    "name": "OpenPaperwork"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "formats"
+  ]
+}

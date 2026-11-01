@@ -1,0 +1,41 @@
+{
+  "issuer": "fair-work-act",
+  "version": "2009",
+  "link": "https://www.legislation.gov.au/C2009A00028/latest/text",
+  "license": "Commonwealth legislation, cited by section and restated in our own words; nothing copied. The Fair Work Ombudsman's information statements are not copied (their site licenses its material for non-commercial use). Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Fair Work Act 2009: information statements, pay and fixed terms in an Australian statement of employment terms",
+  "source": "Fair Work Act 2009 (Cth) ss. 15A, 125, 125B, 323, 333E, 333F and 333K, as in force 2026. Read 2026-10-09.",
+  "note": "A drafting check, not legal advice: the scripted rules read whether a particular is there, never whether a term is lawful. Australian law lists no contents for a contract; the statement records the terms the employer gives and names the statements the Act requires.",
+  "rules": [
+    {
+      "id": "AU-01",
+      "grader": "script",
+      "text": "The employee gets the Fair Work Information Statement; a casual the Casual Employment Information Statement; a fixed-term employee the Fixed Term Contract Information Statement.",
+      "source": "ss. 125, 125B, 333K",
+      "check": "employment_check.py EMPLOY-AU-STATEMENTS"
+    },
+    {
+      "id": "AU-02",
+      "grader": "script",
+      "text": "Pay is in money, in full, at least monthly, and the statement says how often and how.",
+      "source": "s. 323",
+      "check": "employment_check.py EMPLOY-PAY"
+    },
+    {
+      "id": "AU-03",
+      "grader": "script",
+      "text": "A fixed term over two years is flagged unless an exception applies; a term that may be renewed or extended says it may be so once and gives the latest end, within two years, and one that may be renewed more than once is flagged.",
+      "source": "ss. 333E, 333F",
+      "check": "employment_check.py EMPLOY-DATES"
+    },
+    {
+      "id": "AU-04",
+      "grader": "script",
+      "text": "The type of employment (full-time, part-time, casual, fixed term), the position, the place, the start, the hours, leave and notice are there.",
+      "source": "s. 15A; the National Employment Standards, Part 2-2",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    }
+  ]
+}

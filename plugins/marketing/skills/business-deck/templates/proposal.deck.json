@@ -1,0 +1,359 @@
+{
+  "title": "Cleaning for six offices, proposal",
+  "organisation": "Example Facilities Ltd",
+  "language": "en-GB",
+  "pages": [
+    {
+      "type": "cover",
+      "title": "One cleaning contract for six offices saves GBP 56,000 a year",
+      "notes": "Open with the saving and the scope: one contract, six offices, GBP 56,000 a year.",
+      "subtitle": "Proposal to Example Freight Ltd",
+      "meta": [
+        {
+          "key": "Prepared for",
+          "value": "Example Freight Ltd"
+        },
+        {
+          "key": "Date",
+          "value": "12 November 2026"
+        },
+        {
+          "key": "Valid until",
+          "value": "31 January 2027"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "One contract for six offices saves GBP 56,000 a year and is audited monthly",
+      "notes": "Give the proposal in three sentences: what changes, what it saves, and how it is checked every month.",
+      "blocks": [
+        {
+          "section": "Today",
+          "lead": "Three suppliers clean six offices for GBP 412,000 a year.",
+          "points": ["No two contracts end in the same month", "The suppliers' own audits passed 82% of checks in 2026"]
+        },
+        {
+          "section": "Options",
+          "lead": "One contract saves most and takes the least effort to reach.",
+          "points": ["Renegotiating each contract saves about GBP 15,000 a year", "An own cleaning team saves GBP 22,000 and takes a year to build"]
+        },
+        {
+          "section": "Offer",
+          "lead": "GBP 356,000 a year, fixed for two years, with a monthly audit.",
+          "points": ["All six offices move to the new contract by March 2027", "A decision by 4 December keeps the January start"]
+        }
+      ]
+    },
+    {
+      "type": "agenda",
+      "title": "This proposal answers three questions",
+      "notes": "Name the three questions the proposal answers and move on.",
+      "items": [
+        {
+          "name": "Today",
+          "text": "What does cleaning cost, and what goes wrong?"
+        },
+        {
+          "name": "Options",
+          "text": "Which ways are there to change it?"
+        },
+        {
+          "name": "Offer",
+          "text": "What do we offer, at what price, and from when?"
+        }
+      ]
+    },
+    {
+      "type": "chart",
+      "section": "Today",
+      "title": "Riverside costs almost twice as much to clean as the smallest office",
+      "notes": "Start with the gap between the two ends of the chart. The difference is the reason for one contract.",
+      "kind": "bar",
+      "measure": "Cleaning cost today",
+      "unit": "GBP thousand a year",
+      "period": "2026",
+      "categories": ["Riverside", "Market Street", "Northgate", "Hillview", "Station Road", "Parkside"],
+      "series": [
+        {
+          "name": "Cleaning cost today",
+          "values": [96, 78, 71, 62, 55, 50]
+        }
+      ],
+      "highlight": "Riverside",
+      "takeaway": "Three suppliers clean six offices today, each to its own schedule.",
+      "points": ["The six offices cost GBP 412,000 a year together", "Riverside alone is GBP 96,000", "No two contracts end in the same month"],
+      "alt": "Bar chart of the yearly cleaning cost of six offices in GBP thousand, from 96 at Riverside down to 50 at Parkside, 412 in all.",
+      "source": "Source: Example Freight Ltd, supplier invoices 2026"
+    },
+    {
+      "type": "quote",
+      "section": "Today",
+      "title": "Three suppliers cost each office manager a day every month",
+      "notes": "Let the quote stand for a moment. It is the cost nobody sees in the invoices: a day a month for every office manager.",
+      "quote": "“I lose a day every month chasing three suppliers about cleans that were missed.”",
+      "name": "Jordan Example",
+      "role": "Office manager, Riverside, Example Freight Ltd",
+      "source": "Source: site walk at Riverside, 3 November 2026"
+    },
+    {
+      "type": "comparison",
+      "section": "Options",
+      "title": "One contract saves most, and it is the first to be ready",
+      "notes": "Walk the options in the order shown. One contract saves most and is ready first; say that plainly.",
+      "options": ["Renegotiate contracts", "One contract", "Own cleaning team"],
+      "rows": [
+        {
+          "label": "Cost a year",
+          "values": ["GBP 397,000", "GBP 356,000", "GBP 390,000"]
+        },
+        {
+          "label": "Saving a year",
+          "values": ["GBP 15,000", "GBP 56,000", "GBP 22,000"]
+        },
+        {
+          "label": "Suppliers",
+          "values": ["Three", "One", "None, a team of 14"]
+        },
+        {
+          "label": "Audits",
+          "values": ["Twice a year", "Every month", "Yours to set up"]
+        },
+        {
+          "label": "To change",
+          "values": ["Three negotiations", "One staff transfer", "Hiring a team"]
+        },
+        {
+          "label": "Ready by",
+          "values": ["April 2027", "March 2027", "January 2028"]
+        }
+      ],
+      "highlight": "One contract",
+      "source": "Source: Example Freight Ltd, supplier invoices 2026; Example Facilities Ltd, estimates of November 2026"
+    },
+    {
+      "type": "matrix",
+      "section": "Options",
+      "title": "One contract is the only option that saves much for little effort",
+      "notes": "Read the matrix from the top left corner: much saved for little effort. Only one option sits there.",
+      "x": {
+        "name": "Effort to change",
+        "low": "Little",
+        "high": "Much"
+      },
+      "y": {
+        "name": "Saving a year",
+        "low": "Small",
+        "high": "Large"
+      },
+      "quadrants": {
+        "top_left": "Do now",
+        "top_right": "Worth the effort",
+        "bottom_left": "Small gains",
+        "bottom_right": "Not worth it"
+      },
+      "items": [
+        {
+          "name": "One contract",
+          "x": 0.22,
+          "y": 0.88
+        },
+        {
+          "name": "Renegotiate contracts",
+          "x": 0.36,
+          "y": 0.3
+        },
+        {
+          "name": "Keep three suppliers",
+          "x": 0.04,
+          "y": 0.04
+        },
+        {
+          "name": "Own cleaning team",
+          "x": 0.84,
+          "y": 0.4
+        }
+      ],
+      "highlight": "Do now",
+      "takeaway": "Only one option is both a large saving and a small change.",
+      "points": ["Renegotiating keeps three suppliers and three ways of auditing", "An own team saves less and takes a year to build"],
+      "source": "Source: Example Facilities Ltd, estimates of November 2026"
+    },
+    {
+      "type": "figures",
+      "section": "Offer",
+      "title": "The offer comes down to three figures the offices can hold us to",
+      "notes": "These are the three figures the offices can hold us to. Say each once, with its unit.",
+      "figures": [
+        {
+          "label": "Saving",
+          "value": "56",
+          "unit": "GBP thousand a year",
+          "period": "from 2027",
+          "note": "GBP 412,000 today against GBP 356,000 offered, a cut of 14%."
+        },
+        {
+          "label": "Audit pass rate",
+          "value": "95%",
+          "unit": "of monthly checks",
+          "period": "by July 2027",
+          "note": "Up from 82% in 2026; the fee falls by 2% in any quarter under it."
+        },
+        {
+          "label": "Fixed price",
+          "value": "24",
+          "unit": "months",
+          "period": "from January 2027",
+          "note": "One contract with one end date, 31 December 2028."
+        }
+      ],
+      "takeaway": "The price is fixed for two years and tied to the audit result.",
+      "source": "Source: Example Facilities Ltd, offer of 12 November 2026"
+    },
+    {
+      "type": "table",
+      "section": "Offer",
+      "title": "All six offices cost GBP 356,000 a year under the offer, GBP 56,000 less",
+      "notes": "Do not read the table out. Give the total and the saving, and offer the office lines for questions.",
+      "head": "Cleaning cost by office, GBP thousand a year",
+      "columns": ["Office", "Today", "Offer", "Saving"],
+      "rows": [
+        ["Riverside", "96", "83", "13"],
+        ["Market Street", "78", "67", "11"],
+        ["Northgate", "71", "61", "10"],
+        ["Hillview", "62", "54", "8"],
+        ["Station Road", "55", "48", "7"],
+        ["Parkside", "50", "43", "7"],
+        ["All six offices", "412", "356", "56"]
+      ],
+      "highlight": "All six offices",
+      "takeaway": "Every office costs less; none pays for another's saving.",
+      "points": ["The price holds for two years from January 2027", "Prices exclude VAT"],
+      "source": "Source: Example Freight Ltd, supplier invoices 2026; Example Facilities Ltd, offer of 12 November 2026"
+    },
+    {
+      "type": "figure",
+      "section": "Offer",
+      "title": "One page a month shows every office's checks and open actions",
+      "notes": "Show what the offices get every month: one page of checks and open actions. Point at one example on it.",
+      "image": "proposal-audit-report.png",
+      "caption": "Monthly audit report, sample page for February 2027",
+      "alt": "A one-page report with a table of six offices: checks made, checks passed, pass rate and open actions. 198 of 208 checks passed, 95%, with 10 actions open.",
+      "takeaway": "You see the same report our site lead does.",
+      "points": ["Shared on the fifth working day of each month", "The fee falls by 2% in any quarter under 95%"],
+      "source": "Source: Example Facilities Ltd, audit report template, November 2026"
+    },
+    {
+      "type": "timeline",
+      "section": "Offer",
+      "title": "All six offices move to the new contract by March 2027",
+      "notes": "Give the end date first, March 2027, then the first office to move.",
+      "steps": [
+        {
+          "when": "December 2026",
+          "what": "Contract signed",
+          "detail": "Staff at all six offices are told the same week."
+        },
+        {
+          "when": "January 2027",
+          "what": "Riverside and Market Street start",
+          "detail": "The two largest offices go first, with daily checks."
+        },
+        {
+          "when": "February 2027",
+          "what": "First monthly audit shared",
+          "detail": "You see the same report our site lead does."
+        },
+        {
+          "when": "March 2027",
+          "what": "The last four offices start",
+          "detail": "Each on the day its old contract ends."
+        }
+      ]
+    },
+    {
+      "type": "next-steps",
+      "section": "Offer",
+      "title": "A decision by 4 December keeps the January start",
+      "notes": "Say what a decision by 4 December makes possible, and what slips if it comes later.",
+      "columns": ["Action", "Owner", "By"],
+      "steps": [
+        {
+          "action": "Walk all six offices with our site lead",
+          "detail": "Half a day; we bring the audit checklist.",
+          "owner": "Example Freight Ltd, operations",
+          "date": "20 November 2026"
+        },
+        {
+          "action": "Confirm the staff who wish to transfer",
+          "detail": "Their terms stay as they are.",
+          "owner": "Example Facilities Ltd",
+          "date": "27 November 2026"
+        },
+        {
+          "action": "Decide on the proposal",
+          "detail": "The price holds until 31 January 2027.",
+          "owner": "Example Freight Ltd, board",
+          "date": "4 December 2026"
+        },
+        {
+          "action": "Sign the two-year contract",
+          "detail": "One contract, one end date.",
+          "owner": "Both",
+          "date": "11 December 2026"
+        }
+      ]
+    },
+    {
+      "type": "closing",
+      "title": "We ask for a decision by 4 December 2026",
+      "notes": "Repeat the ask and the date. Say whom to reach.",
+      "contact": ["Example Facilities Ltd", "offers@facilities.example"],
+      "small": "Prices exclude VAT. The offer is valid until 31 January 2027."
+    },
+    {
+      "type": "appendix",
+      "title": "Appendix",
+      "notes": "Backup pages follow. Use them only if a question calls for them."
+    },
+    {
+      "type": "table",
+      "title": "The smaller offices cost most a square metre, today and under the offer",
+      "notes": "Backup for a question on cost a square metre: the smaller offices cost most, today and under the offer.",
+      "head": "Cleaning cost by floor area, 2026 and offered",
+      "columns": ["Office", "Floor area, m²", "Today, GBP per m²", "Offer, GBP per m²"],
+      "rows": [
+        ["Riverside", "1,900", "50.5", "43.7"],
+        ["Market Street", "1,500", "52.0", "44.7"],
+        ["Northgate", "1,300", "54.6", "46.9"],
+        ["Hillview", "1,100", "56.4", "49.1"],
+        ["Station Road", "850", "64.7", "56.5"],
+        ["Parkside", "750", "66.7", "57.3"],
+        ["All six offices", "7,400", "55.7", "48.1"]
+      ],
+      "takeaway": "The offer lowers the cost a square metre at every office by about a seventh.",
+      "points": ["Floor areas are from the 2026 office register", "Costs are a year's cleaning divided by the floor area"],
+      "source": "Source: Example Freight Ltd, office register and supplier invoices 2026; Example Facilities Ltd, offer of 12 November 2026"
+    },
+    {
+      "type": "text",
+      "title": "The price covers daily cleaning, supplies and the monthly audit",
+      "notes": "Backup for a question on scope: what the price covers and what it does not.",
+      "statement": "One price covers what the six offices need in a normal month.",
+      "points": [
+        {
+          "point": "In the price: cleaning on every working day",
+          "detail": "Desks, floors, meeting rooms and washrooms, to the schedule each office keeps today."
+        },
+        {
+          "point": "In the price: supplies and the monthly audit",
+          "detail": "Soap, paper and cleaning products, and the report shared with you each month."
+        },
+        {
+          "point": "Quoted apart: outside windows and deep carpet cleans",
+          "detail": "Twice a year at most offices; each job is quoted before it is booked."
+        }
+      ]
+    }
+  ]
+}

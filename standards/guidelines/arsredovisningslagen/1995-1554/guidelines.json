@@ -1,0 +1,139 @@
+{
+  "issuer": "arsredovisningslagen",
+  "version": "1995-1554",
+  "link": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/arsredovisningslag-19951554_sfs-1995-1554/",
+  "license": "Swedish statute, outside copyright under upphovsrättslagen (1960:729) 9 §; the rules are restated in our own words and the chapter and section cited. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Årsredovisningslag (1995:1554)",
+  "source": "Årsredovisningslag (1995:1554) as amended to SFS 2026:780: 1 kap. 3 § (smaller and larger companies), 2 kap. 1 and 7 §§ (the parts, signing and date), 3 kap. 3-5 and 11 §§ with bilaga 1 and 2 (the layouts, merged items, comparatives), 5 kap. 4, 8, 13-15, 20 and 22 §§ (notes), 6 kap. 1 and 2 §§ (management report, changes in equity, disposition of the result) and 8 kap. 3 § (filing). Read 2026-10-09.",
+  "note": "A drafting check, not accounting or legal advice: the scripted rules read which items are there and whether the numbers add up, never whether a valuation or a dividend is right.",
+  "rules": [
+    {
+      "id": "ARL-01",
+      "grader": "script",
+      "text": "The annual report holds a balance sheet, an income statement, notes and a management report.",
+      "source": "2 kap. 1 §",
+      "check": "annual_accounts_check.py ANNUAL-PARTS"
+    },
+    {
+      "id": "ARL-02",
+      "grader": "script",
+      "text": "Every board member and the managing director sign it, and it says the day it was signed.",
+      "source": "2 kap. 7 §",
+      "check": "annual_accounts_check.py ANNUAL-SIGNED"
+    },
+    {
+      "id": "ARL-03",
+      "grader": "judge",
+      "text": "The balance sheet follows the layout of bilaga 1 and the income statement that of bilaga 2 or 3, kept from year to year.",
+      "source": "3 kap. 3 §"
+    },
+    {
+      "id": "ARL-04",
+      "grader": "judge",
+      "text": "A smaller company may merge the numbered items of the balance sheet, and the first items of the income statement into a gross result when it then states net sales.",
+      "source": "3 kap. 4 § and 11 §"
+    },
+    {
+      "id": "ARL-05",
+      "grader": "script",
+      "text": "Every item of the balance sheet and income statement shows last year's amount beside this year's.",
+      "source": "3 kap. 5 §",
+      "check": "annual_accounts_check.py ANNUAL-YEARS"
+    },
+    {
+      "id": "ARL-06",
+      "grader": "script",
+      "text": "The balance sheet's assets equal its equity, untaxed reserves, provisions and liabilities.",
+      "source": "3 kap. 3 §, bilaga 1",
+      "check": "annual_accounts_check.py ANNUAL-BALANCE"
+    },
+    {
+      "id": "ARL-07",
+      "grader": "script",
+      "text": "The headings and subtotals of the layouts add up from the items under them.",
+      "source": "3 kap. 3 §, bilaga 1 and 2",
+      "check": "annual_accounts_check.py ANNUAL-SUMS"
+    },
+    {
+      "id": "ARL-08",
+      "grader": "script",
+      "text": "The year's result in the income statement is the year's result under equity in the balance sheet.",
+      "source": "bilaga 1 (A VI) and bilaga 2",
+      "check": "annual_accounts_check.py ANNUAL-RESULT"
+    },
+    {
+      "id": "ARL-09",
+      "grader": "script",
+      "text": "A note states the principles used to value assets, provisions and liabilities.",
+      "source": "5 kap. 4 §",
+      "check": "annual_accounts_check.py ANNUAL-NOTES"
+    },
+    {
+      "id": "ARL-10",
+      "grader": "script",
+      "text": "Each class of fixed asset has a note with its cost, additions, disposals and depreciation.",
+      "source": "5 kap. 8 §",
+      "check": "annual_accounts_check.py ANNUAL-NOTES"
+    },
+    {
+      "id": "ARL-11",
+      "grader": "judge",
+      "text": "Debts falling due more than five years after the balance sheet date are stated.",
+      "source": "5 kap. 13 §"
+    },
+    {
+      "id": "ARL-12",
+      "grader": "judge",
+      "text": "Pledged assets and contingent liabilities are stated.",
+      "source": "5 kap. 14 and 15 §§"
+    },
+    {
+      "id": "ARL-13",
+      "grader": "script",
+      "text": "A note gives the average number of employees.",
+      "source": "5 kap. 20 §",
+      "check": "annual_accounts_check.py ANNUAL-NOTES"
+    },
+    {
+      "id": "ARL-14",
+      "grader": "judge",
+      "text": "Significant events after the end of the financial year are given in a note.",
+      "source": "5 kap. 22 §"
+    },
+    {
+      "id": "ARL-15",
+      "grader": "script",
+      "text": "The management report gives a fair overview of the business and the significant events of the year.",
+      "source": "6 kap. 1 §",
+      "check": "annual_accounts_check.py ANNUAL-PARTS"
+    },
+    {
+      "id": "ARL-16",
+      "grader": "script",
+      "text": "The changes in equity since last year are set out, in the management report or as a statement of their own.",
+      "source": "6 kap. 2 § andra stycket",
+      "check": "annual_accounts_check.py ANNUAL-EQUITY"
+    },
+    {
+      "id": "ARL-17",
+      "grader": "script",
+      "text": "An aktiebolag's management report proposes how the profit or loss is disposed of.",
+      "source": "6 kap. 2 § första stycket",
+      "check": "annual_accounts_check.py ANNUAL-DISPOSITION"
+    },
+    {
+      "id": "ARL-18",
+      "grader": "judge",
+      "text": "The report claims nothing about filing: after the meeting adopts the statements, a board member or the managing director certifies a copy and files it with Bolagsverket within a month.",
+      "source": "8 kap. 3 §"
+    },
+    {
+      "id": "ARL-19",
+      "grader": "judge",
+      "text": "The pack is for a smaller company: one that passes no more than one of 50 employees, 40 million kronor in total assets and 80 million kronor in net sales in each of the last two years, and is not listed.",
+      "source": "1 kap. 3 §"
+    }
+  ]
+}

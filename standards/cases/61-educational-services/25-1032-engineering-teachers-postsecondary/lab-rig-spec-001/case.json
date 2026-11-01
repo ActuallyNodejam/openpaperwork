@@ -1,0 +1,193 @@
+{
+ "id": "lab-rig-spec-001",
+ "title": "Specify a beam-bending rig for a second-year strength of materials lab",
+ "person": "A lecturer writing the requirements for six teaching rigs that the workshop and an outside supplier will quote against.",
+ "format": "docx",
+ "output": "requirements.docx",
+ "locale": "en",
+ "sector": {
+  "naics": "61",
+  "name": "Educational Services"
+ },
+ "occupation": {
+  "soc": "25-1032.00",
+  "name": "Engineering Teachers, Postsecondary"
+ },
+ "review": [
+  "Simply supported span adjustable 300 mm to 800 mm, 20 mm × 6 mm beams in steel, aluminium and brass, loads up to 500 N in 5 N steps, a dial gauge reading 0.01 mm over 0 mm to 25 mm, set-up within 10 min, footprint at most 1.5 m × 0.75 m, frame deflection below 1 % of beam deflection at full load, at most 40 kg; the load-cell option is a TBD for Dr Amara Osei by 4 December 2026, and the six rigs and the delivery date stay out of the product requirements."
+ ],
+ "revised_review": [
+  "The maximum load is 300 N and the gauge travel 0 mm to 30 mm everywhere; nothing else changed."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "ids",
+   "stage": "both",
+   "grader": "script",
+   "script": "requirements_check.py",
+   "rule": "REQ-ID",
+   "guidelines": [
+    "nasa-seh/sp-2016-6105-rev2#RQ-11"
+   ],
+   "text": "Every requirement has an id of its own, used once."
+  },
+  {
+   "id": "verbs",
+   "stage": "both",
+   "grader": "script",
+   "script": "requirements_check.py",
+   "rule": "REQ-VERB",
+   "guidelines": [
+    "nasa-seh/sp-2016-6105-rev2#RQ-01",
+    "iso-iec-directives-2/2021#VF-01",
+    "iso-iec-directives-2/2021#VF-02"
+   ],
+   "text": "Requirements say shall, facts will and goals should; nothing says must."
+  },
+  {
+   "id": "one-thought",
+   "stage": "both",
+   "grader": "script",
+   "script": "requirements_check.py",
+   "rule": "REQ-ONE",
+   "guidelines": [
+    "nasa-seh/sp-2016-6105-rev2#RQ-09"
+   ],
+   "text": "One shall per requirement statement."
+  },
+  {
+   "id": "vague",
+   "stage": "both",
+   "grader": "script",
+   "script": "requirements_check.py",
+   "rule": "REQ-VAGUE",
+   "guidelines": [
+    "nasa-seh/sp-2016-6105-rev2#RQ-08",
+    "nasa-seh/sp-2016-6105-rev2#RQ-13"
+   ],
+   "text": "No vague word from the notes survives into a requirement."
+  },
+  {
+   "id": "positive",
+   "stage": "both",
+   "grader": "script",
+   "script": "requirements_check.py",
+   "rule": "REQ-NEGATIVE",
+   "guidelines": [
+    "nasa-seh/sp-2016-6105-rev2#RQ-05"
+   ],
+   "text": "Requirements are stated positively."
+  },
+  {
+   "id": "tbd",
+   "stage": "both",
+   "grader": "script",
+   "script": "requirements_check.py",
+   "rule": "REQ-TBD",
+   "guidelines": [
+    "nasa-seh/sp-2016-6105-rev2#RQ-06"
+   ],
+   "text": "Every TBD or TBR has an owner and a date."
+  },
+  {
+   "id": "verification",
+   "stage": "both",
+   "grader": "script",
+   "script": "requirements_check.py",
+   "rule": "REQ-VERIFY",
+   "guidelines": [
+    "nasa-seh/sp-2016-6105-rev2#RQ-12"
+   ],
+   "text": "Every requirement names test, analysis, inspection or demonstration."
+  },
+  {
+   "id": "units-space",
+   "stage": "both",
+   "grader": "script",
+   "script": "requirements_check.py",
+   "rule": "UNITS-SPACE",
+   "guidelines": [
+    "bipm-si/9-v4.01#SI-01",
+    "bipm-si/9-v4.01#SI-02",
+    "bipm-si/9-v4.01#SI-04",
+    "nist-sp811/2008#NIST-06",
+    "nist-sp811/2008#NIST-07"
+   ],
+   "text": "Every value has a space before its unit symbol, °C and % included."
+  },
+  {
+   "id": "units-symbol",
+   "stage": "both",
+   "grader": "script",
+   "script": "requirements_check.py",
+   "rule": "UNITS-SYMBOL",
+   "guidelines": [
+    "bipm-si/9-v4.01#SI-05",
+    "bipm-si/9-v4.01#SI-06",
+    "nist-sp811/2008#NIST-01",
+    "nist-sp811/2008#NIST-05"
+   ],
+   "text": "The notes' unit spellings are replaced by the SI symbols."
+  },
+  {
+   "id": "load-cell-tbd",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "nasa-seh/sp-2016-6105-rev2#RQ-06",
+    "nasa-seh/sp-2016-6105-rev2#RQ-15"
+   ],
+   "text": "The load-cell option is a TBD owned by Dr Amara Osei and due by 4 December 2026."
+  },
+  {
+   "id": "no-tasks",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "nasa-seh/sp-2016-6105-rev2#RQ-17"
+   ],
+   "text": "The quantity of six rigs and the delivery before the spring term are kept apart from the product requirements."
+  },
+  {
+   "id": "safe-made-specific",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "nasa-seh/sp-2016-6105-rev2#RQ-13"
+   ],
+   "text": "\"Safe for students\" and \"easy to set up\" are turned into conditions someone can check."
+  },
+  {
+   "id": "revised",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-1",
+    "openpaperwork/0.1.0#REV-2"
+   ],
+   "text": "The maximum load is 300 N and the gauge travel 0 mm to 30 mm everywhere; nothing else changed."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, schools and people are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "nasa-seh/sp-2016-6105-rev2",
+  "iso-iec-directives-2/2021",
+  "bipm-si/9-v4.01",
+  "nist-sp811/2008",
+  "every-file/1.1.0"
+ ]
+}

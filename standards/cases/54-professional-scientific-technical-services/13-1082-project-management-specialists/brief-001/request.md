@@ -1,0 +1,1 @@
+Turn the supplied meeting notes into brief.docx, an editable brief of at most two pages. Include purpose, agreed decisions, an action table with owners and dates, and open questions. Keep uncertainties explicit. Use clear headings and plain English. Do not invent decisions or assign an owner where none was agreed.

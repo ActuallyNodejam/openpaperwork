@@ -1,0 +1,18 @@
+{
+ "issuer": "ksef-fa",
+ "version": "3",
+ "link": "https://ksef.podatki.gov.pl/",
+ "license": "An electronic document template published by the Ministry of Finance of Poland is an official document (prawo autorskie art. 4 pkt 2). Nothing of it is copied: the four schema files are fetched at pinned SHA-256 sums and run in the KoSIT validator (Apache-2.0) from a copy the install writes, whose schemaLocation attributes name the file beside them and whose counts above 100 are unbounded. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-10",
+ "status": "draft",
+ "title": "The KSeF logical structure FA(3): the Polish structured invoice",
+ "source": "Logical structure FA(3), crd.gov.pl/wzor/2025/06/25/13775/schemat.xsd (kodSystemowy \"FA (3)\", wersjaSchemy \"1-0E\", SHA-256 b646b6b525f5), the same file as in the Ministry's github.com/CIRFMF/ksef-docs. RodzajFaktury VAT is an invoice, KOR a correcting invoice, written as the correction itself. The schema counts up to 10 000 lines and 50 000 corrected invoices, which java expands for about ten minutes a file, so the check loads the copy with those counts unbounded; FILETASK_KSEF_STRICT=1 loads the counts as published (both Polish starters pass that too). The library writes the file and sends nothing: it has no KSeF number, and the page carries neither that number nor the code of art. 106gb ust. 5. Read 2026-10-09.",
+ "rules": [
+  {
+   "id": "EINV-KSEF",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "text": "The Ministry's logical structure FA(3) accepts the Polish invoice or correcting invoice beside the page; skipped when it is not installed. The file is not sent to KSeF, and the rule's evidence says so."
+  }
+ ]
+}

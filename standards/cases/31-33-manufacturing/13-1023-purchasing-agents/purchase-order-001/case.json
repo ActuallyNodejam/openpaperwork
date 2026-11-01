@@ -1,0 +1,252 @@
+{
+ "id": "purchase-order-001",
+ "title": "Order components from a German supplier against its quotation, delivered across the border",
+ "person": "The purchasing agent of a small Danish electronics maker turning an internal purchase request into an order.",
+ "format": "docx",
+ "output": "purchase-order.docx",
+ "locale": "en-GB",
+ "sector": {
+  "naics": "31-33",
+  "name": "Manufacturing"
+ },
+ "occupation": {
+  "soc": "13-1023.00",
+  "name": "Purchasing Agents, Except Wholesale, Retail, and Farm Products"
+ },
+ "review": [
+  "Purchase order PO-2026-0412 from Fjordvind Elektronik ApS to Rheintal Bauteile GmbH answers quotation Q-RB-2026-0915: 450 connectors (828.00), 200 heat sinks (620.00) and 300 fuse holders (186.00), 1,634.00 EUR, delivered DAP Odense, Incoterms 2020, to the goods reception at Havnegade 40 by 9 November 2026."
+ ],
+ "revised_review": [
+  "600 connectors with the quotation's 3 % volume discount (1,070.88), a total of 1,876.88 EUR, and delivery by 2 November 2026; nothing else changed."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "head",
+   "stage": "both",
+   "grader": "script",
+   "script": "purchase_order_check.py",
+   "rule": "TRADE-PO-HEAD",
+   "guidelines": [
+    "oasis-ubl/2.1#TRADE-PO-HEAD"
+   ],
+   "text": "It is a purchase order PO-2026-0412 of 12 October 2026 from Fjordvind Elektronik ApS to Rheintal Bauteile GmbH, in EUR."
+  },
+  {
+   "id": "lines",
+   "stage": "both",
+   "grader": "script",
+   "script": "purchase_order_check.py",
+   "rule": "TRADE-PO-LINES",
+   "guidelines": [
+    "oasis-ubl/2.1#TRADE-PO-LINES"
+   ],
+   "text": "Each line has its quantity, the quoted unit price and the right line amount."
+  },
+  {
+   "id": "total",
+   "stage": "both",
+   "grader": "script",
+   "script": "purchase_order_check.py",
+   "rule": "TRADE-PO-TOTAL",
+   "guidelines": [
+    "oasis-ubl/2.1#TRADE-PO-TOTAL"
+   ],
+   "text": "The total is the sum of the lines."
+  },
+  {
+   "id": "delivery",
+   "stage": "both",
+   "grader": "script",
+   "script": "purchase_order_check.py",
+   "rule": "TRADE-PO-DELIVERY",
+   "guidelines": [
+    "oasis-ubl/2.1#TRADE-PO-DELIVERY"
+   ],
+   "text": "The requested delivery date and the goods reception address are on it."
+  },
+  {
+   "id": "incoterms",
+   "stage": "both",
+   "grader": "script",
+   "script": "purchase_order_check.py",
+   "rule": "TRADE-PO-INCOTERMS",
+   "guidelines": [
+    "icc-incoterms/2020#TRADE-PO-INCOTERMS"
+   ],
+   "text": "The goods cross from Germany to Denmark, so the term is DAP Odense, Incoterms 2020, as quoted."
+  },
+  {
+   "id": "quotation",
+   "stage": "both",
+   "grader": "script",
+   "script": "purchase_order_check.py",
+   "rule": "TRADE-PO-QUOTE",
+   "guidelines": [
+    "oasis-ubl/2.1#TRADE-PO-QUOTE"
+   ],
+   "text": "It names quotation Q-RB-2026-0915."
+  },
+  {
+   "id": "window",
+   "stage": "both",
+   "grader": "script",
+   "script": "purchase_order_check.py",
+   "rule": "TRADE-WINDOW",
+   "guidelines": [
+    "trade-locales/2026-10#TL-08"
+   ],
+   "text": "As the buyer's letter the Word page sits on the Danish letter layout: its margins, and the supplier's address inside the C5/E65 window."
+  },
+  {
+   "id": "letter-company",
+   "stage": "both",
+   "grader": "script",
+   "script": "letter_check.py",
+   "rule": "LETTER-COMPANY",
+   "guidelines": [
+    "eu-company-law/2017-1132#LETTER-COMPANY"
+   ],
+   "text": "As the buyer's letter it states the buyer's CVR number and registered office."
+  },
+  {
+   "id": "discount-condition",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "The 3 % volume discount is applied only to the connectors and only when 500 or more are ordered, as the quotation says."
+  },
+  {
+   "id": "revision-kept",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-2"
+   ],
+   "text": "The revision changes the connector quantity, its discount, the totals and the delivery date, and nothing else."
+  }
+ ],
+ "truth": {
+  "doc": "purchase_order",
+  "number": "PO-2026-0412",
+  "issue_date": "2026-10-12",
+  "currency": "EUR",
+  "buyer": {
+   "name": "Fjordvind Elektronik ApS",
+   "street": "Industrivej 22",
+   "postcode": "5260",
+   "city": "Odense S",
+   "country": "Denmark",
+   "registered_office": "Odense",
+   "register_number": "41234567"
+  },
+  "seller": {
+   "name": "Rheintal Bauteile GmbH",
+   "street": "Industriestraße 7",
+   "postcode": "79576",
+   "city": "Weil am Rhein",
+   "country": "Germany"
+  },
+  "deliver_to": {
+   "name": "Fjordvind Elektronik ApS, goods reception",
+   "street": "Havnegade 40",
+   "postcode": "5000",
+   "city": "Odense C",
+   "country": "Denmark"
+  },
+  "quotation": "Q-RB-2026-0915",
+  "delivery_terms": {
+   "rule": "DAP",
+   "place": "Odense"
+  },
+  "transport": "road",
+  "first": {
+   "requested_delivery_date": "2026-11-09",
+   "lines": [
+    {
+     "code": "RB-C12",
+     "description": "Connector 12-pin, 2.54 mm",
+     "quantity": 450,
+     "unit": "pcs",
+     "unit_price": 1.84,
+     "discount_percent": 0,
+     "vat_rate": 0
+    },
+    {
+     "code": "RB-H40",
+     "description": "Heat sink 40 mm, anodised",
+     "quantity": 200,
+     "unit": "pcs",
+     "unit_price": 3.1,
+     "discount_percent": 0,
+     "vat_rate": 0
+    },
+    {
+     "code": "RB-F5",
+     "description": "Fuse holder 5x20 mm",
+     "quantity": 300,
+     "unit": "pcs",
+     "unit_price": 0.62,
+     "discount_percent": 0,
+     "vat_rate": 0
+    }
+   ]
+  },
+  "revision": {
+   "requested_delivery_date": "2026-11-02",
+   "lines": [
+    {
+     "code": "RB-C12",
+     "description": "Connector 12-pin, 2.54 mm",
+     "quantity": 600,
+     "unit": "pcs",
+     "unit_price": 1.84,
+     "discount_percent": 3,
+     "vat_rate": 0
+    },
+    {
+     "code": "RB-H40",
+     "description": "Heat sink 40 mm, anodised",
+     "quantity": 200,
+     "unit": "pcs",
+     "unit_price": 3.1,
+     "discount_percent": 0,
+     "vat_rate": 0
+    },
+    {
+     "code": "RB-F5",
+     "description": "Fuse holder 5x20 mm",
+     "quantity": 300,
+     "unit": "pcs",
+     "unit_price": 0.62,
+     "discount_percent": 0,
+     "vat_rate": 0
+    }
+   ]
+  }
+ },
+ "version": "1.1.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and numbers are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "trade-locales/2026-10",
+  "openpaperwork/0.1.0",
+  "oasis-ubl/2.1",
+  "icc-incoterms/2020",
+  "letter-layouts/2026-10",
+  "eu-company-law/2017-1132",
+  "every-file/1.1.0"
+ ]
+}

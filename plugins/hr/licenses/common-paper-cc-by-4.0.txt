@@ -1,0 +1,30 @@
+Common Paper standard agreements
+Common Paper, Inc., https://commonpaper.com/standards/
+Read 2026-10-09.
+
+Used here (word for word, in skills/contract-drafting/standards/):
+- Common Paper Mutual Non-Disclosure Agreement, Version 1.0, Standard Terms and Cover Page
+  https://commonpaper.com/standards/mutual-nda/1.0/
+  github.com/CommonPaper/Mutual-NDA at 2a3068b6c0ab6015c440f541d5b215bc3ac2f4cb
+- Common Paper Data Processing Agreement, Version 1.1, Standard Terms
+  https://commonpaper.com/standards/data-processing-agreement/1.1/
+  github.com/CommonPaper/DPA at 9f1c40d3fb0bb900397a919d058a9c0870f6b0f0
+- Common Paper Cloud Service Agreement, Version 2.1, Standard Terms
+  https://commonpaper.com/standards/cloud-service-agreement/2.1/
+  github.com/CommonPaper/CSA at aaaa2826a0c853371bcda13a612e9874dd474f1e (tag 2.1)
+
+Licensed under the Creative Commons Attribution 4.0 International License, as each repository's
+README states ("Common Paper agreements are free to use and modify under CC BY 4.0").
+https://creativecommons.org/licenses/by/4.0/
+
+Changes:
+- All three are set in Word from the repositories' Markdown; Common Paper's links to the Cover Page
+  are shown as shaded Variables; invisible direction marks are dropped.
+- Mutual NDA, Section 9: "the laws of the State of" reads "the laws of", and "the federal or state
+  courts located in" reads "the courts of", so the parties can choose a law and courts outside the
+  United States. The Cover Page sets the Standard Terms out in full instead of incorporating the
+  posted version, shows only the options chosen, and adds each party's registration number.
+- DPA and Cloud Service Agreement: the repositories hold no Cover Page; the Cover Pages are our own
+  arrangement of the Variables the Standard Terms name (for the DPA in the order of Annexes I to
+  III of the EEA SCCs).
+Every generated agreement prints Common Paper's notice, the licence link and these changes at its end.

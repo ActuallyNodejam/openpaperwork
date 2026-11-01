@@ -1,0 +1,5 @@
+Fictional parties.
+Seller: Northwind Studio AB, Hamngatan 4, 411 14 Göteborg, Sweden. VAT ID SE556677889901. Bank account (IBAN): SE35 5000 0000 0549 1000 0003.
+Buyer: Lindqvist Print AB, Storgatan 12, 211 34 Malmö, Sweden. VAT ID SE559988776601.
+Invoice number: 2026-0412. Issue date: 2026-10-05. Delivery date: 2026-10-05. Payment terms: 30 days net, by bank transfer. Currency: EUR.
+Rounding: round each line's net amount to two decimals, then calculate VAT once per VAT rate on the sum of that rate's line nets, rounded to two decimals.

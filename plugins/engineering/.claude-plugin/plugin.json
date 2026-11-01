@@ -1,0 +1,12 @@
+{
+  "name": "openpaperwork-engineering",
+  "description": "Engineering: requirements specifications with numbered shall statements, verification and SI units, with a check that flags vague words.",
+  "version": "0.1.0",
+  "author": {
+    "name": "OpenPaperwork"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "engineering"
+  ]
+}

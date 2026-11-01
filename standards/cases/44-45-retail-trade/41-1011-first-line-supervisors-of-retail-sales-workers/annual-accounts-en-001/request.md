@@ -1,0 +1,1 @@
+Could you prepare the 2025 annual report for Hamnbodens Bokhandel AB from the trial balance (`inputs/trial-balance-2025.csv`), last year's report (`inputs/annual-report-2024.txt`) and my notes (`inputs/notes.txt`)? In English as a Word file, `annual-report-2025.docx`; it is for my co-owner, who reads no Swedish.

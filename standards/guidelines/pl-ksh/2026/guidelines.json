@@ -1,0 +1,74 @@
+{
+  "issuer": "pl-ksh",
+  "version": "2026",
+  "link": "https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20000941037",
+  "license": "Polish normative acts, not the object of copyright (ustawa o prawie autorskim i prawach pokrewnych art. 4); restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-10",
+  "status": "draft",
+  "title": "Kodeks spółek handlowych arts. 208(1), 222, 248, 376, 391 and 421, and arts. 206 and 374: the protocol of a board and of a shareholders' meeting, and what a company states on its letters",
+  "source": "Kodeks spółek handlowych, ustawa z dnia 15 września 2000 r. (Dz. U. 2000 Nr 94 poz. 1037), unified text of the Internetowy System Aktów Prawnych as of 3 June 2026 (https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20000941037), read 2026-10-09. Art. 208(1) is the article printed with a superscript 1 after 208.",
+  "rules": [
+    {
+      "id": "PL-MIN-01",
+      "grader": "script",
+      "text": "The resolutions of a sp. z o.o.'s shareholders' meeting are entered in the book of protocols and signed by those present, or at least by the chair and the person who drew up the protocol.",
+      "source": "KSH art. 248 § 1",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "PL-MIN-02",
+      "grader": "script",
+      "text": "The protocol states that the meeting was properly called and can adopt resolutions, and lists the resolutions adopted, the votes cast for each and the objections raised.",
+      "source": "KSH art. 248 § 2",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "PL-MIN-03",
+      "grader": "script",
+      "text": "The attendance list, signed by those taking part, is attached to the protocol; the check sees that the list is in the minutes or said to be attached, not the signatures.",
+      "source": "KSH art. 248 § 2",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "PL-MIN-04",
+      "grader": "script",
+      "text": "The management board's resolutions are recorded in a protocol that holds the agenda, the names of the members present (in an S.A., of those taking part in the vote) and the votes cast on each resolution; a member's dissenting opinion is noted with its reasons.",
+      "source": "KSH art. 208(1) (sp. z o.o.); art. 376 (S.A.)",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "PL-MIN-05",
+      "grader": "script",
+      "text": "The protocol is signed at least by the member who chaired the meeting or ordered the vote, unless the articles or the board's rules say otherwise.",
+      "source": "KSH art. 208(1); art. 376",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "PL-MIN-06",
+      "grader": "script",
+      "text": "The supervisory board's protocols follow the rules for the management board's.",
+      "source": "KSH art. 222 § 2; art. 391 § 2",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "PL-MIN-07",
+      "grader": "judge",
+      "text": "A joint-stock company's general meeting is recorded by a notary. A file written here is a working record and the reply says so.",
+      "source": "KSH art. 421 § 1"
+    },
+    {
+      "id": "PL-CO-01",
+      "grader": "script",
+      "text": "A sp. z o.o. states on its letters and orders, on paper and electronic, its name, seat and address, the registry court that keeps its file and its number in the register, its tax number (NIP), its share capital, and the group of companies it belongs to.",
+      "source": "KSH art. 206 § 1",
+      "check": "letter_check.py LETTER-COMPANY"
+    },
+    {
+      "id": "PL-CO-02",
+      "grader": "script",
+      "text": "A joint-stock company states the same and, with its share capital, the capital paid up.",
+      "source": "KSH art. 374 § 1",
+      "check": "letter_check.py LETTER-COMPANY"
+    }
+  ]
+}

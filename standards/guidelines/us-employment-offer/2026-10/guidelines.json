@@ -1,0 +1,62 @@
+{
+  "issuer": "us-employment-offer",
+  "version": "2026-10",
+  "link": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title29-section207",
+  "license": "29 U.S.C. and 29 CFR are works of the US Government, public domain (17 U.S.C. 105); New York Labor Law § 195, California Labor Code § 2810.5 and Mont. Code Ann. 39-2-904 are state statutes, not copyrightable (Georgia v. Public.Resource.Org, 2020). Restated in our own words. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "A US offer letter: the FLSA classification, the New York and California pay notices, at-will employment",
+  "source": "Fair Labor Standards Act, 29 U.S.C. 207(a)(1) and 213(a)(1); 29 CFR part 541 (541.400(b), 541.600); New York Labor Law § 195(1); California Labor Code § 2810.5; Montana Wrongful Discharge from Employment Act, Mont. Code Ann. 39-2-904. Read 2026-10-09: New York Labor Law § 195(1) on the New York State Senate's site (the revision of 2 October 2020); California Labor Code § 2810.5 through the Labor Commissioner's own notice template (DLSE-NTE, rev. 11/2023) and its questions and answers, the legislature's site answering 403.",
+  "note": "A drafting check, not legal advice: the scripted rules read whether a particular is there, never whether a term is lawful. No federal law asks for a written offer; the letter never says one does.",
+  "rules": [
+    {
+      "id": "US-01",
+      "grader": "script",
+      "text": "The letter says the employment is at will or for a set term; an at-will sentence for work in Montana is flagged, since the Wrongful Discharge from Employment Act may require good cause for a discharge after the probationary period (unproved: not read against the current code in the 2026-10-20 audit).",
+      "source": "Mont. Code Ann. 39-2-904",
+      "check": "employment_check.py EMPLOY-US-ATWILL"
+    },
+    {
+      "id": "US-02",
+      "grader": "script",
+      "text": "The FLSA classification: a non-exempt position is paid one and one-half times the regular rate for hours over 40 in a workweek; an exempt one names its exemption, and an exempt one paid by the hour is flagged.",
+      "source": "29 U.S.C. 207(a)(1), 213(a)(1); 29 CFR 541.600, 541.400(b)",
+      "check": "employment_check.py EMPLOY-US-FLSA"
+    },
+    {
+      "id": "US-03",
+      "grader": "script",
+      "text": "Work in New York: at hiring, the rate and basis of pay, the overtime rate for a non-exempt employee, allowances, the regular pay day, the employer's name and any doing-business-as names, the physical and mailing addresses, the telephone number and the employee's primary language, with a signed acknowledgment.",
+      "source": "N.Y. Lab. Law § 195(1)",
+      "check": "employment_check.py EMPLOY-US-STATE"
+    },
+    {
+      "id": "US-04",
+      "grader": "script",
+      "text": "Work in California, a non-exempt employee: at hiring, the rates of pay with overtime, allowances, the regular payday, the employer's names, addresses and telephone, the workers' compensation carrier, paid sick leave rights and any emergency or disaster declaration for the county.",
+      "source": "Cal. Lab. Code § 2810.5(a)(1), (c)",
+      "check": "employment_check.py EMPLOY-US-STATE"
+    },
+    {
+      "id": "US-05",
+      "grader": "script",
+      "text": "The letter never claims a federal duty to put an offer or statement in writing.",
+      "source": "no federal statute",
+      "check": "employment_check.py EMPLOY-US-WORDING"
+    },
+    {
+      "id": "US-06",
+      "grader": "script",
+      "text": "The parties, the position, the start, the pay and its basis, and the classification are there.",
+      "source": "the offer's terms",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "US-07",
+      "grader": "script",
+      "text": "A US letter prints on US Letter with US dates.",
+      "source": "house rule for a US document",
+      "check": "locale_floor.py LOCALE-PAPER"
+    }
+  ]
+}

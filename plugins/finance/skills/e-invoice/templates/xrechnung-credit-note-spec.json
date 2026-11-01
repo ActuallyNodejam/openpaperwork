@@ -1,0 +1,66 @@
+{
+  "type_code": "381",
+  "xrechnung": true,
+  "number": "GS-0001",
+  "issue_date": "2026-02-10",
+  "preceding_invoice": "RE-0001",
+  "preceding_invoice_date": "2026-01-15",
+  "delivery_date": "2026-01-15",
+  "currency": "EUR",
+  "buyer_reference": "00000000-EXAMPLE-00",
+  "payment_terms": "Erstattung innerhalb von 14 Tagen",
+  "note": "Gutschrift zur Rechnung RE-0001.",
+  "seller": {
+    "name": "Beispiel Verkauf GmbH",
+    "street": "Beispielstraße 1",
+    "postcode": "00000",
+    "city": "Beispielstadt",
+    "country": "DE",
+    "vat_id": "DE000000000",
+    "registered_office": "Beispielstadt",
+    "register": "Amtsgericht Beispielstadt",
+    "register_number": "HRB 00000",
+    "managing_directors": [
+      "Erika Beispiel"
+    ],
+    "contact": {
+      "name": "Max Beispiel",
+      "phone": "+49 000 0000000",
+      "email": "rechnung@beispiel-verkauf.example"
+    },
+    "electronic_address": "rechnung@beispiel-verkauf.example"
+  },
+  "buyer": {
+    "name": "Beispielbehörde",
+    "street": "Amtsweg 2",
+    "postcode": "00000",
+    "city": "Beispielstadt",
+    "country": "DE",
+    "electronic_address": {
+      "scheme": "0204",
+      "id": "00000000-EXAMPLE-00"
+    }
+  },
+  "payment": {
+    "means_code": "58",
+    "iban": "DE36 0000 0000 0000 0000 00"
+  },
+  "lines": [
+    {
+      "name": "Schulungstag, abgesagt",
+      "quantity": 1,
+      "unit": "DAY",
+      "unit_price": 900.0,
+      "vat_rate": 19,
+      "vat_category": "S"
+    },
+    {
+      "name": "Handbuch, zurückgegeben",
+      "quantity": 2,
+      "unit": "C62",
+      "unit_price": 35.0,
+      "vat_rate": 7,
+      "vat_category": "S"
+    }
+  ]
+}

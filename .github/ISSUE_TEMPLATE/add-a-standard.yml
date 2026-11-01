@@ -1,0 +1,56 @@
+name: Add a standard
+description: A document, country or field the library should cover, with its official source.
+labels: [standard]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The most useful thing to bring is a standard you know well. Open this issue with the
+        source before you build, so two people do not add the same standard. A source is
+        published, versioned and specific: "Peppol BIS Billing 3.0", with the release you read,
+        not "Swedish invoices". See [ADD_A_STANDARD.md](https://github.com/ActuallyNodejam/openpaperwork/blob/main/docs/community-preview/ADD_A_STANDARD.md).
+  - type: input
+    id: document
+    attributes:
+      label: Which document, and for which country or field?
+      placeholder: A VAT invoice for New Zealand
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Where is the official source written down?
+      description: The law, standard or guide, with its link. Say if it is paid or free to read.
+        Cite rule identifiers and write the rule in your own words; a paid standard is cited
+        by clause, never pasted.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Which version of it, or what date did it come into force?
+      placeholder: Peppol BIS Billing 3.0, release 2023-Q2
+    validations:
+      required: true
+  - type: textarea
+    id: rules
+    attributes:
+      label: Which rules matter most?
+      description: Three to five things a finished file must have, in your own words. Do not paste text from a paid standard.
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: If a check is wrong today, what does it say and what should it say?
+      description: The rule id from the check's output, the input (invented data), and the source that shows the right answer.
+    validations:
+      required: false
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Can you help?
+      options:
+        - label: I can review the guideline for this standard
+        - label: I can write invented cases
+        - label: I can write the check

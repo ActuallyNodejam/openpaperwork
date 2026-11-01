@@ -1,0 +1,239 @@
+{
+  "id": "paper-ieee-001",
+  "title": "Find real studies and write a blind-review IEEE conference paper opening",
+  "person": "A psychology lecturer preparing a short conference submission.",
+  "format": "pdf",
+  "output": "paper.pdf",
+  "extra_outputs": [
+    "paper.tex"
+  ],
+  "review": [
+    "The text covers all five points in the notes: how common short sleep is (with a number from a cited study), sleep and grades, sleep regularity, caffeine and evening screens, and whether sleep programmes help.",
+    "Outside the abstract, every statement of what a study found carries a citation, and each reference in the list is on the topic it is cited for, judging by its title. The abstract carries no citations, and the author's own statement of the gap their study fills needs none.",
+    "Correlational findings are described as associations, mixed or weak evidence on sleep programmes is reported as such, and no result is given for the author's own study, which has none yet.",
+    "Related Work ends by saying the study will compare sleep measured with wrist trackers against real exam grades from the same week.",
+    "Each reference shows a DOI or link the reader can follow."
+  ],
+  "revised_review": [
+    "A Conclusion of three or four sentences says what is known, what is not, and what the study will add.",
+    "At least two added references are about daytime naps and memory or learning, and the text cites them for that.",
+    "The earlier points, caveats and references are still there in substance."
+  ],
+  "version": "1.0.0",
+  "status": "draft",
+  "locale": "en",
+  "source": "Synthetic request and notes created for this evaluation pack; the person and university are invented. The papers the agent cites are real and are looked up at grading time.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+  "needs": [
+    "network",
+    "tex-engine"
+  ],
+  "sector": {
+    "naics": "61",
+    "name": "Educational Services"
+  },
+  "occupation": {
+    "soc": "25-1066.00",
+    "name": "Psychology Teachers, Postsecondary"
+  },
+  "guidelines": [
+    "openpaperwork/0.1.0",
+    "ieee-conference/1.8b",
+    "ieee/2025-03-28"
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "builds",
+      "stage": "both",
+      "grader": "script",
+      "rule": "IEEEC-BUILD-1",
+      "guidelines": [
+        "ieee-conference/1.8b#IEEEC-BUILD-1"
+      ],
+      "text": "The paper source saved beside the PDF builds cleanly.",
+      "script": "papercheck.py"
+    },
+    {
+      "id": "ieee-class",
+      "stage": "both",
+      "grader": "script",
+      "rule": "IEEEC-CLASS-1",
+      "guidelines": [
+        "ieee-conference/1.8b#IEEEC-CLASS-1"
+      ],
+      "text": "The paper uses the IEEE conference class.",
+      "script": "papercheck.py"
+    },
+    {
+      "id": "layout",
+      "stage": "both",
+      "grader": "script",
+      "rule": "IEEEC-LAYOUT-1",
+      "guidelines": [
+        "ieee-conference/1.8b#IEEEC-LAYOUT-1"
+      ],
+      "text": "US letter, two columns, the class layout untouched.",
+      "script": "papercheck.py"
+    },
+    {
+      "id": "page-limit",
+      "stage": "both",
+      "grader": "script",
+      "rule": "IEEEC-PAGE-1",
+      "guidelines": [
+        "ieee-conference/1.8b#IEEEC-PAGE-1"
+      ],
+      "text": "The PDF has at most 2 pages.",
+      "script": "papercheck.py"
+    },
+    {
+      "id": "sections",
+      "stage": "both",
+      "grader": "script",
+      "rule": "IEEEC-SEC-1",
+      "guidelines": [
+        "ieee-conference/1.8b#IEEEC-SEC-1"
+      ],
+      "text": "Abstract, Index Terms, Introduction and Related Work (and Conclusion after the revision) are present in order, with no starter text.",
+      "script": "papercheck.py"
+    },
+    {
+      "id": "reference-style",
+      "stage": "both",
+      "grader": "script",
+      "rule": "IEEEC-REF-1",
+      "guidelines": [
+        "ieee-conference/1.8b#IEEEC-REF-1"
+      ],
+      "text": "Numbered citations in order of first citation; at least five references (seven after the revision), all cited.",
+      "script": "papercheck.py"
+    },
+    {
+      "id": "anonymous",
+      "stage": "both",
+      "grader": "script",
+      "rule": "IEEEC-ANON-1",
+      "guidelines": [
+        "ieee-conference/1.8b#IEEEC-ANON-1"
+      ],
+      "text": "Nothing identifies Dana Whitfield or Northfield University in the PDF or its properties.",
+      "script": "papercheck.py"
+    },
+    {
+      "id": "references-real",
+      "stage": "both",
+      "grader": "script",
+      "rule": "CASE-REFS-REAL",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-2"
+      ],
+      "text": "Every reference has a DOI or arXiv id that a registry knows, and the registered title matches the entry.",
+      "script": "papercheck.py"
+    },
+    {
+      "id": "points-covered",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-1"
+      ],
+      "text": "The text covers all five points in the notes: how common short sleep is (with a number from a cited study), sleep and grades, sleep regularity, caffeine and evening screens, and whether sleep programmes help."
+    },
+    {
+      "id": "cited-claims",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-2"
+      ],
+      "text": "Outside the abstract, every statement of what a study found carries a citation, and each reference in the list is on the topic it is cited for, judging by its title. The abstract carries no citations, and the author's own statement of the gap their study fills needs none."
+    },
+    {
+      "id": "no-overclaim",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-2"
+      ],
+      "text": "Correlational findings are described as associations, mixed or weak evidence on sleep programmes is reported as such, and no result is given for the author's own study, which has none yet."
+    },
+    {
+      "id": "own-study",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-1"
+      ],
+      "text": "Related Work ends by saying the study will compare sleep measured with wrist trackers against real exam grades from the same week."
+    },
+    {
+      "id": "links",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#READ-1"
+      ],
+      "text": "Each reference shows a DOI or link the reader can follow."
+    },
+    {
+      "id": "conclusion-added",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#REV-1"
+      ],
+      "text": "A Conclusion of three or four sentences says what is known, what is not, and what the study will add."
+    },
+    {
+      "id": "nap-studies",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#REV-1"
+      ],
+      "text": "At least two added references are about daytime naps and memory or learning, and the text cites them for that."
+    },
+    {
+      "id": "kept",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#REV-2"
+      ],
+      "text": "The earlier points, caveats and references are still there in substance."
+    }
+  ],
+  "truth": {
+    "page_limit": 2,
+    "identity": [
+      "Whitfield",
+      "Northfield",
+      "dana.whitfield@northfield.example"
+    ],
+    "first": {
+      "sections": [
+        "Introduction",
+        "Related Work"
+      ],
+      "min_references": 5
+    },
+    "revision": {
+      "sections": [
+        "Introduction",
+        "Related Work",
+        "Conclusion"
+      ],
+      "min_references": 7
+    }
+  }
+}

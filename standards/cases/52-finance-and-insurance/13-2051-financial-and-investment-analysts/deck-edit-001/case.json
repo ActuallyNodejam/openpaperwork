@@ -1,0 +1,93 @@
+{
+  "id": "deck-edit-001",
+  "title": "Update an existing quarterly deck in place",
+  "format": "pptx",
+  "output": "quarterly-q3.pptx",
+  "slides": 3,
+  "person": "An analyst rolling a quarterly review deck forward by one quarter.",
+  "sector": {
+    "naics": "52",
+    "name": "Finance and Insurance"
+  },
+  "occupation": {
+    "soc": "13-2051.00",
+    "name": "Financial and Investment Analysts"
+  },
+  "review": [
+    "Subtitle, chart and growth line updated; title and Open items unchanged; native chart kept."
+  ],
+  "revised_review": [
+    "Q3 shows 446 and growth 1.8% everywhere."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.2.0#FMT-1",
+        "openpaperwork/0.2.0#FMT-2",
+        "openpaperwork/0.2.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "chart",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.2.0#FACT-1",
+        "openpaperwork/0.2.0#FMT-2"
+      ],
+      "text": "The chart is still a native, editable chart with categories Q1, Q2, Q3 and values 412, 438 and 451 at the first stage (446 for Q3 at the revision stage)."
+    },
+    {
+      "id": "growth",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.2.0#FACT-1"
+      ],
+      "text": "The growth line on the chart slide compares Q3 with Q2: up 3.0% at the first stage, up 1.8% at the revision stage; no line still compares Q2 with Q1 as current."
+    },
+    {
+      "id": "subtitle",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.2.0#FACT-1"
+      ],
+      "text": "The title slide subtitle reads Q3 2026."
+    },
+    {
+      "id": "preserved",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.2.0#EDIT-1"
+      ],
+      "text": "The title slide title is still \"Fund operations review\", the chart slide title is unchanged, and the Open items slide still lists exactly \"Custody fee renegotiation\" and \"New reporting portal pilot\"."
+    },
+    {
+      "id": "slides",
+      "stage": "both",
+      "grader": "render",
+      "guidelines": [
+        "openpaperwork/0.2.0#PAGE-1",
+        "openpaperwork/0.2.0#EDIT-1"
+      ],
+      "max_pages": 3,
+      "min_pages": 3,
+      "text": "The deck still renders as exactly three slides."
+    }
+  ],
+  "status": "draft",
+  "locale": "en",
+  "version": "1.2.0",
+  "guidelines": [
+    "openpaperwork/0.2.0",
+    "every-file/1.1.0"
+  ],
+  "source": "Synthetic material created for this evaluation pack; no customer inputs.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen."
+}

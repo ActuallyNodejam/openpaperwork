@@ -1,0 +1,118 @@
+{
+  "id": "budget-001",
+  "title": "Summarize quarterly spending against a budget",
+  "format": "xlsx",
+  "output": "budget.xlsx",
+  "person": "A volunteer coordinator reporting quarterly spending to a community association board.",
+  "sector": {
+    "naics": "81",
+    "name": "Other Services (except Public Administration)"
+  },
+  "occupation": {
+    "soc": "11-9151.00",
+    "name": "Social and Community Service Managers"
+  },
+  "review": [
+    "All twelve expenses are kept with their amounts and categories.",
+    "Summary formulas respond to an edited expense in a recalculating engine.",
+    "Venue at exactly its budget is Within; every status and total is correct.",
+    "Labels, currency and dates are readable with no clipped columns."
+  ],
+  "revised_review": [
+    "Printing becomes Over by EUR 53.00 and every total reflects the corrected Posters amount."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#FMT-2",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "inputs-kept",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-1",
+        "openpaperwork/0.1.0#REV-2"
+      ],
+      "text": "All twelve expense rows appear with their original dates, categories, descriptions and amounts (Posters is EUR 310.00 at the revision stage, all others unchanged)."
+    },
+    {
+      "id": "totals",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-1"
+      ],
+      "text": "First stage: Spent is Venue 1200.00, Printing 323.00, Travel 420.80, Materials 459.30, total 2403.10 of budget 2700.00; Remaining 0.00, 77.00, 179.20, 40.70, total 296.90; every status is Within, including Venue at exactly its budget. Revision stage: Printing spent 453.00, remaining -53.00, status Over; total spent 2533.10, remaining 166.90; other categories unchanged."
+    },
+    {
+      "id": "recalc",
+      "stage": "both",
+      "grader": "recalc",
+      "guidelines": [
+        "openpaperwork/0.1.0#CALC-1"
+      ],
+      "text": "After raising the Flyers expense by EUR 10 in a copy, recalculation in LibreOffice raises Printing spent by EUR 10.",
+      "recalc": {
+        "edit": {
+          "sheet": "Expenses",
+          "key_col": "Description",
+          "key": "Flyers",
+          "col": "Amount EUR",
+          "delta": 10
+        },
+        "check": {
+          "sheet": "Summary",
+          "key_col": "Category",
+          "key": "Printing",
+          "col": "Spent EUR",
+          "factor": 1
+        }
+      }
+    },
+    {
+      "id": "labels",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#READ-1"
+      ],
+      "text": "Sheets, column headers, currency and dates are clearly labelled and readable."
+    },
+    {
+      "id": "print-width",
+      "stage": "both",
+      "grader": "render",
+      "guidelines": [
+        "openpaperwork/0.1.0#PAGE-1"
+      ],
+      "max_pages": "sheets",
+      "text": "Printed, each sheet fits on one page, so the PDF has no more pages than the workbook has sheets."
+    },
+    {
+      "id": "revised-status",
+      "stage": "revision",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#REV-1"
+      ],
+      "text": "Printing is shown as Over after the correction, and no note, highlight or summary still describes Printing as within budget or uses the old 180.00 or 323.00 as current."
+    }
+  ],
+  "status": "draft",
+  "locale": "en",
+  "source": "Synthetic material created for this evaluation pack; no customer inputs.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+  "guidelines": [
+    "openpaperwork/0.1.0",
+    "every-file/1.1.0"
+  ],
+  "version": "1.2.0"
+}

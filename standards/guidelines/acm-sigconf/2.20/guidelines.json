@@ -1,0 +1,59 @@
+{
+  "issuer": "acm-sigconf",
+  "version": "2.20",
+  "date": "2026-10-20",
+  "status": "draft",
+  "title": "ACM conference paper layout (acmart class, sigconf)",
+  "source": {
+    "class": "acmart.cls v2.20 (2026/08/16) by Boris Veytsman, LaTeX Project Public License 1.3c, shipped unmodified beside the starter (skills/paper/templates/acm-sigconf/acmart.cls)",
+    "documents": [
+      "acmart class documentation (https://ctan.org/pkg/acmart)",
+      "ACM Primary Article Template, https://www.acm.org/publications/proceedings-template"
+    ],
+    "retrieved": "2026-10-20",
+    "note": "Rules paraphrase the class documentation; no ACM sample file or text is copied. The starter ships acmart 2.20, the current CTAN release, so the TeX engine's older copy is not used. The page limit and review mode are set by each conference, so a case supplies them."
+  },
+  "license": "Rule wording and the starter file skills/paper/templates/acm-sigconf/paper.tex: Apache-2.0 with this repository.",
+  "rules": [
+    {
+      "id": "ACMC-BUILD-1",
+      "grader": "script",
+      "text": "The paper's source builds to a PDF from a clean folder with no errors."
+    },
+    {
+      "id": "ACMC-CLASS-1",
+      "grader": "script",
+      "text": "The document class is acmart with the sigconf option."
+    },
+    {
+      "id": "ACMC-LAYOUT-1",
+      "grader": "script",
+      "text": "Pages are US letter and the margins, columns, type size and line spacing are the class's own: no layout package, length change, one-column switch or smaller body type."
+    },
+    {
+      "id": "ACMC-PAGE-1",
+      "grader": "script",
+      "text": "The PDF is within the page limit the venue sets, references included unless the call says otherwise."
+    },
+    {
+      "id": "ACMC-SEC-1",
+      "grader": "script",
+      "text": "The paper has an abstract without citations, Keywords and CCS Concepts, the sections the call asks for in order, and a reference list, with no starter text left."
+    },
+    {
+      "id": "ACMC-REF-1",
+      "grader": "script",
+      "text": "Citations are numbered and resolved, every entry is cited, every citation is listed, and each entry gives the authors, then the year, then the title (ACM Reference Format)."
+    },
+    {
+      "id": "ACMC-ANON-1",
+      "grader": "script",
+      "text": "For blind review the class is loaded with the anonymous option, which hides the author block, and no name, organisation, email, grant or acknowledgment appears in the PDF or its document properties; earlier work by the authors is cited in the third person."
+    },
+    {
+      "id": "ACMC-FIG-1",
+      "grader": "judge",
+      "text": "Every table and figure has a caption and is referred to by number in the text."
+    }
+  ]
+}

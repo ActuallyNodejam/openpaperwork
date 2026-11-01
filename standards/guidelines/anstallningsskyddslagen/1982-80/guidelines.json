@@ -1,0 +1,130 @@
+{
+  "issuer": "anstallningsskyddslagen",
+  "version": "1982-80",
+  "link": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-198280-om-anstallningsskydd_sfs-1982-80/",
+  "license": "Swedish statute, outside copyright under upphovsrättslagen (1960:729) 9 §; the rules are restated in our own words and the section is cited. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-08",
+  "status": "draft",
+  "title": "Lag (1982:80) om anställningsskydd",
+  "source": "Lag (1982:80) om anställningsskydd, as amended up to SFS 2022:836: 6 § (probation), 6 c § (written information), 6 d § (work abroad) and 6 e § (changes); Sweden's implementation of Directive (EU) 2019/1152. Read 2026-10-08.",
+  "note": "A drafting check, not legal advice: the scripted rules read whether a particular is there.",
+  "rules": [
+    {
+      "id": "LAS-01",
+      "grader": "script",
+      "text": "The statement gives the employer's and the worker's names and addresses, the start date, and the workplace or that the work is done at various places or where the worker chooses.",
+      "source": "6 c § andra stycket 1",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "LAS-02",
+      "grader": "script",
+      "text": "It describes the work briefly and gives the occupation or job title.",
+      "source": "6 c § andra stycket 2",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "LAS-03",
+      "grader": "script",
+      "text": "It says whether the employment is permanent, fixed-term or probationary; a fixed term gives its end date or what ends it and whether it is särskild visstidsanställning, vikariat or säsongsarbete.",
+      "source": "6 c § andra stycket 3",
+      "check": "employment_check.py EMPLOY-DATES"
+    },
+    {
+      "id": "LAS-04",
+      "grader": "script",
+      "text": "Pay gives the starting pay and other pay benefits separately, and how often and how it is paid.",
+      "source": "6 c § andra stycket 4",
+      "check": "employment_check.py EMPLOY-PAY"
+    },
+    {
+      "id": "LAS-05",
+      "grader": "script",
+      "text": "It gives the length of the normal working day or week, or how working time is measured when that cannot be fixed.",
+      "source": "6 c § andra stycket 5",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "LAS-06",
+      "grader": "judge",
+      "text": "It gives what applies to overtime or additional hours and their pay, where relevant.",
+      "source": "6 c § andra stycket 6"
+    },
+    {
+      "id": "LAS-07",
+      "grader": "script",
+      "text": "It gives the shortest notice of when the working hours are placed and, where relevant, that they vary between times and days and the rules for shift changes.",
+      "source": "6 c § andra stycket 7",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "LAS-08",
+      "grader": "script",
+      "text": "An agency worker is told the client companies' names and addresses.",
+      "source": "6 c § andra stycket 8",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "LAS-09",
+      "grader": "script",
+      "text": "Any right to training the employer provides is given.",
+      "source": "6 c § andra stycket 9",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "LAS-10",
+      "grader": "script",
+      "text": "The length of the paid holiday is given.",
+      "source": "6 c § andra stycket 10",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "LAS-11",
+      "grader": "script",
+      "text": "The rules both sides follow to end the employment are given, with the notice periods for a permanent employment.",
+      "source": "6 c § andra stycket 3 a och 11",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "LAS-12",
+      "grader": "script",
+      "text": "It says that employer contributions are paid to the state, and any social protection the employer provides.",
+      "source": "6 c § andra stycket 12",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "LAS-13",
+      "grader": "script",
+      "text": "Any collective agreement that applies is named.",
+      "source": "6 c § andra stycket 13",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "LAS-14",
+      "grader": "script",
+      "text": "The first paragraph and points 1 to 7 reach the worker by the seventh calendar day after work begins; points 9 to 13 within one month.",
+      "source": "6 c § tredje stycket",
+      "check": "employment_check.py EMPLOY-DATES"
+    },
+    {
+      "id": "LAS-15",
+      "grader": "script",
+      "text": "Before a worker leaves to work abroad for more than four consecutive weeks: the country, the period abroad, the currency of pay, the cash and in-kind benefits, and whether and on what terms the journey home is paid.",
+      "source": "6 d §",
+      "check": "employment_check.py EMPLOY-ABROAD"
+    },
+    {
+      "id": "LAS-16",
+      "grader": "script",
+      "text": "A probationary period is at most six months.",
+      "source": "6 § första stycket",
+      "check": "employment_check.py EMPLOY-PROBATION"
+    },
+    {
+      "id": "LAS-17",
+      "grader": "judge",
+      "text": "A change to any particular is given in writing no later than the day it applies.",
+      "source": "6 e §"
+    }
+  ]
+}

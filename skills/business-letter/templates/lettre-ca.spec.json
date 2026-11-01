@@ -1,0 +1,52 @@
+{
+  "language": "fr",
+  "date": "2026-10-09",
+  "sender": {
+    "name": "Boréal Logiciels inc.",
+    "street": "1200, boulevard René-Lévesque Ouest",
+    "city": "Montréal",
+    "province": "QC",
+    "postcode": "H3B 4W8",
+    "country": "CA",
+    "email": "info@boreal-logiciels.example",
+    "phone": "514 555-0160"
+  },
+  "recipient": {
+    "name": "Coopérative agricole du Lac",
+    "attention": "À l'attention de Madame Julie Tremblay",
+    "street": "45, rue Principale",
+    "city": "Alma",
+    "province": "QC",
+    "postcode": "G8B 1A1",
+    "country": "CA"
+  },
+  "references": [
+    {
+      "kind": "yours",
+      "value": "Courriel du 28 septembre"
+    },
+    {
+      "kind": "ours",
+      "value": "BL-2026-77"
+    }
+  ],
+  "contact": {
+    "name": "Louis Bergeron",
+    "phone": "514 555-0165",
+    "email": "louis@boreal-logiciels.example"
+  },
+  "subject": "Renouvellement de votre licence pour 2027",
+  "salutation": "Madame,",
+  "body": [
+    "Nous vous remercions de votre courriel du 28 septembre.",
+    "Votre licence du logiciel \"Récolte\" sera renouvelée le 1er janvier 2027 au prix de 9 600 $ par année, soit le même prix que cette année. Le module de traçabilité est désormais compris sans frais.",
+    "Nous vous saurions gré de nous retourner le formulaire de renouvellement signé avant le 1er décembre 2026."
+  ],
+  "signatory": {
+    "name": "Louis Bergeron",
+    "role": "Directeur des comptes"
+  },
+  "enclosures": [
+    "Formulaire de renouvellement"
+  ]
+}

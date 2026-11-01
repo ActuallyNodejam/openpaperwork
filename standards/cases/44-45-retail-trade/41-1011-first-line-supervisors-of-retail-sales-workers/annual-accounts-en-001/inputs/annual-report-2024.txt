@@ -1,0 +1,33 @@
+Extract from the annual report of Hamnbodens Bokhandel AB, financial year 2024-01-01 to 2024-12-31 (SEK)
+
+Income statement 2024
+Net sales                                1,052,000
+Goods for resale                          -347,000
+Other external expenses                   -279,000
+Personnel costs                           -392,000
+Depreciation                               -30,000
+Operating profit or loss                     4,000
+Interest expense                            -7,400
+Profit or loss after financial items        -3,400
+Profit or loss for the year                 -3,400
+
+Balance sheet 2024-12-31
+Equipment                                   90,000
+Inventories                                 13,900
+Other receivables                            4,200
+Prepaid expenses                            11,000
+Cash and bank                              140,700
+Total assets                               259,800
+Share capital                               25,000
+Retained earnings                           38,900
+Profit or loss for the year                 -3,400
+Total equity                                60,500
+Bank loan, non-current                      90,000
+Bank loan, current                          30,000
+Trade payables                              29,100
+Other liabilities                           22,900
+Accrued expenses                            27,300
+Total equity and liabilities               259,800
+
+Equipment: bought in January 2023 for SEK 150,000, depreciated over five years; accumulated depreciation SEK 60,000 at the end of 2024.
+Average number of employees 2024: 2. Pledged assets: floating charges SEK 150,000.

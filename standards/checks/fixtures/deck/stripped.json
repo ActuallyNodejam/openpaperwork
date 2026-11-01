@@ -1,0 +1,23 @@
+{
+ "title": "Empty",
+ "pages": [
+  {
+   "type": "cover"
+  },
+  {
+   "type": "numbers"
+  },
+  {
+   "type": "chart-bullets"
+  },
+  {
+   "type": "table"
+  },
+  {
+   "type": "timeline"
+  },
+  {
+   "type": "closing"
+  }
+ ]
+}

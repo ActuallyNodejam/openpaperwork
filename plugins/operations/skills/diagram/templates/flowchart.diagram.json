@@ -1,0 +1,22 @@
+{
+  "type": "flowchart",
+  "title": "How a purchase is approved",
+  "eyebrow": "Purchasing",
+  "description": "A request goes to the team lead; under 5,000 it is ordered at once, above that finance approves it first.",
+  "steps": [
+    {"id": "request", "name": "Request a purchase", "note": "form with supplier and price", "shape": "start"},
+    {"id": "lead", "name": "Team lead reviews", "note": "within two working days"},
+    {"id": "amount", "name": "Over 5,000?", "shape": "decision"},
+    {"id": "finance", "name": "Finance approves", "note": "checks the budget line", "focal": true},
+    {"id": "order", "name": "Order placed", "note": "confirmation to the requester", "shape": "end"}
+  ],
+  "links": [
+    {"from": "request", "to": "lead"},
+    {"from": "lead", "to": "amount"},
+    {"from": "amount", "to": "finance", "label": "yes"},
+    {"from": "amount", "to": "order", "label": "no"},
+    {"from": "finance", "to": "order", "label": "approved"}
+  ],
+  "legend": [{"kind": "focal", "label": "the one approval that can stop it"}, {"kind": "step", "label": "a step"}],
+  "source": "Purchasing policy, section 3"
+}

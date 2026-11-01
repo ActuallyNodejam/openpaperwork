@@ -1,0 +1,26 @@
+Norwegian, Danish and Finnish laws and regulations on invoices, used by the e-invoice pack
+
+Laws, regulations and official decisions are not protected by copyright in these countries:
+- Norway: åndsverkloven (LOV-2018-06-15-40) § 14, "lover, forskrifter, ... vedtak og andre beslutninger
+  av offentlig myndighet" are free of copyright.
+- Denmark: ophavsretsloven § 9, love, administrative forskrifter and
+  similar official documents are not subject to copyright.
+- Finland: tekijänoikeuslaki (404/1961) 9 §, lait ja asetukset and official decisions are free of
+  copyright.
+
+Sources, read 2026-10-09:
+- Forskrift om bokføring (bokføringsforskriften), FOR-2004-12-01-1558, kapittel 5-1, §§ 5-1-1 to 5-1-5
+  (Lovdata). The reverse-charge mark "Omvendt avgiftsplikt – Merverdiavgift ikke beregnet" (§ 5-1-1
+  nr. 7) and the word "Foretaksregisteret" (§ 5-1-2, which still points at § 10-2 of the 1985 register act, repealed on
+  1 January 2026; the duty now stands in § 7-2 of lov 20. juni 2025 nr. 106 om Foretaksregisteret) are quoted.
+- Bekendtgørelse om merværdiafgift (momsbekendtgørelsen) § 58, stk. 1 and 2, as Skattestyrelsens
+  Juridiske Vejledning A.B.3.3.1.4 restates it; Erhvervsstyrelsen, "Dokumentstrategi" for NemHandel
+  (5 March 2026) and its høringsnotat (nemhandel.dk), for OIOUBL 3.0 being dropped in favour of
+  a Peppol-based Nemhandel BIS 4 from 2028-2029.
+- Arvonlisäverolaki (1501/1993) 209 e § and 209 f §, as Verohallinto's guidance "Laskutusvaatimukset
+  arvonlisäverotuksessa" restates them. The mark "Käännetty verovelvollisuus" is quoted.
+
+Changes: the requirements are restated in our own words as builder fields, refusals and page checks in
+skills/e-invoice/scripts/countries.py, skills/e-invoice/page/country_page.py and
+skills/_checks/einvoice_country.py; only the fixed marks above are quoted. Lovdata's and Finlex's
+editorial additions are not used. This is not legal or tax advice.

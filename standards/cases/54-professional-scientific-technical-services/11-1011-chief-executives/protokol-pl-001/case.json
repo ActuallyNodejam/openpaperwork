@@ -1,0 +1,118 @@
+{
+ "id": "protokol-pl-001",
+ "title": "Napisz protokół z posiedzenia zarządu spółki logistycznej",
+ "person": "The president of the management board of a small Polish logistics company, a sp. z o.o. with three board members.",
+ "format": "docx",
+ "output": "protokol.docx",
+ "locale": "pl-PL",
+ "sector": {
+  "naics": "54",
+  "name": "Professional, Scientific, and Technical Services"
+ },
+ "occupation": {
+  "soc": "11-1011.00",
+  "name": "Chief Executives"
+ },
+ "review": [
+  "The agenda, the members present and the votes on both resolutions are recorded, and so is the dissenting opinion with its reason."
+ ],
+ "revised_review": [
+  "The lease covers eight vans; six appears nowhere."
+ ],
+ "truth": {
+  "revision": {
+   "stale": [
+    "sześciu",
+    "sześć"
+   ]
+  }
+ },
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "head",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-HEAD",
+   "guidelines": [
+    "roberts-rules/1915#MIN-01",
+    "roberts-rules/1915#MIN-03"
+   ],
+   "text": "The body, the kind of meeting and the date are given."
+  },
+  {
+   "id": "times",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-TIMES",
+   "guidelines": [
+    "roberts-rules/1915#MIN-09"
+   ],
+   "text": "The opening and closing times are given."
+  },
+  {
+   "id": "signed",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-SIGNED",
+   "guidelines": [
+    "pl-ksh/2026#PL-MIN-05"
+   ],
+   "text": "The member who chaired the meeting has a signature line."
+  },
+  {
+   "id": "statute",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-STATUTE",
+   "guidelines": [
+    "pl-ksh/2026#PL-MIN-04"
+   ],
+   "text": "The agenda, the members present and the votes on each resolution are in the protocol."
+  },
+  {
+   "id": "language",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-LANGUAGE",
+   "guidelines": [
+    "letter-layouts/2026-10#LETTER-LANGUAGE"
+   ],
+   "text": "Labels and signature roles are in Polish."
+  },
+  {
+   "id": "decisions",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "pl-ksh/2026#PL-MIN-04"
+   ],
+   "text": "The board leases six electric vans for five years, unanimously with three votes, and adopts the 2027 budget with two votes for and one against; Marek Zając's dissenting opinion, that the marketing budget is too high, is noted."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and addresses are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "roberts-rules/1915",
+  "pl-ksh/2026",
+  "letter-layouts/2026-10",
+  "every-file/1.1.0"
+ ]
+}

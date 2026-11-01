@@ -1,0 +1,54 @@
+{
+  "law": "nl",
+  "language": "nl",
+  "given": "2026-12-01",
+  "employer": {
+    "name": "Veenstra Analytics B.V.",
+    "number": "KvK 87654321",
+    "address": "Herestraat 41, 9711 LD Groningen",
+    "signatory": "Marieke Veenstra, directeur"
+  },
+  "worker": {
+    "name": "Daan Bakker",
+    "address": "Zuiderdiep 9, 9711 HG Groningen"
+  },
+  "place": "Herestraat 41, 9711 LD Groningen; twee dagen per week thuis",
+  "job": {
+    "title": "Data-analist",
+    "description": "Analyse van klantdata en rapportage aan de klanten van de werkgever."
+  },
+  "start": "2026-12-01",
+  "term": {
+    "type": "fixed",
+    "end": "2027-11-30"
+  },
+  "probation": {
+    "months": 1
+  },
+  "pay": {
+    "amount": 4200,
+    "currency": "EUR",
+    "per": "month",
+    "paid": "maandelijks, uiterlijk op de 25e van de maand",
+    "method": "overmaking naar de bankrekening van de werknemer",
+    "components": [
+      {
+        "name": "Vakantiebijslag",
+        "text": "8 % van het brutoloon, uitbetaald in mei"
+      }
+    ]
+  },
+  "hours": {
+    "pattern": "fixed",
+    "standard": "40 uur per week, maandag tot en met vrijdag van 8.30 tot 17.00 uur",
+    "overtime": "alleen in overleg, betaald tegen 125 % van het uurloon"
+  },
+  "leave": "25 vakantiedagen per jaar bij een volledige werkweek, waarvan 20 wettelijke (artikel 7:634 BW) en 5 bovenwettelijke",
+  "termination": "De overeenkomst eindigt van rechtswege op 30 november 2027; tussentijdse opzegging is overeengekomen, schriftelijk, met de termijnen van artikel 7:672 BW (voor de werkgever een maand bij een dienstverband korter dan vijf jaar, voor de werknemer een maand); de werkgever laat uiterlijk een maand voor het einde schriftelijk weten of de overeenkomst wordt voortgezet (artikel 7:668 BW)",
+  "pension": "Beschikbare-premieregeling bij een verzekeraar, vanaf de eerste werkdag",
+  "on_call": false,
+  "agency": null,
+  "collective": null,
+  "training": "Opleidingsbudget van € 1.500 per jaar",
+  "social_security": "UWV voor de werknemersverzekeringen; de Belastingdienst int de premies"
+}

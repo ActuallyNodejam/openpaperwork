@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" data-nj-canvas="__CANVAS__">
+<head>
+<meta charset="utf-8">
+<!-- The season agenda, ported from the old app's social pack 0.3
+     templates/agenda.html (a paper page: the brand's mark and the page's name on
+     top, the season as its title, one row per show with its place and dates).
+     The rows are grouped by month and carry the hall and booth at the right, the
+     way a brand's own agenda card reads. The layout is fixed: this file owns it,
+     agenda.py only fills the rows and the folder's own colours. Never edit this
+     file to make one season fit; the script sizes the type to the number of
+     shows. -->
+<title>__TITLE__</title>
+<style>
+__FONT_FACES__
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; width: __W__px; height: __H__px; overflow: hidden; }
+html { --u: __U__px; --name: __NAME__; --month: __MONTH__; --ground: __GROUND__; --ink: __INK__; --accent: __ACCENT__; }
+@page { size: __PAGE_W__mm __PAGE_H__mm; margin: 0; }
+@media print { body { zoom: 1 !important; } }
+body { zoom: __SCALE__; background: transparent; font-family: "Inter", "Noto Sans SC", sans-serif; color: var(--ink); }
+
+.slide { position: relative; width: __W__px; height: __H__px; overflow: hidden; background: var(--ground); }
+.agenda-frame { position: absolute; top: __TOP__px; bottom: __BOTTOM__px; left: calc(var(--u) * 46); right: calc(var(--u) * 46);
+  display: flex; flex-direction: column; justify-content: __JUSTIFY__; }
+
+.agenda-top { display: flex; align-items: center; gap: calc(var(--u) * 54); height: calc(var(--u) * 60); }
+/* The folder's wordmark is white artwork; the page draws it in its own ink through the artwork's shape. */
+.agenda-wordmark { height: calc(var(--u) * 46); width: calc(var(--u) * 46 * __MARK_RATIO__); background: var(--ink);
+  -webkit-mask: url("__WORDMARK__") left center / contain no-repeat; mask: url("__WORDMARK__") left center / contain no-repeat; }
+.agenda-word { margin: 0; font-size: calc(var(--u) * 56); line-height: 1; letter-spacing: -0.035em; font-weight: 400; }
+.agenda-season { margin: calc(var(--u) * 88) 0 0; font-size: calc(var(--u) * 104); line-height: 1; letter-spacing: -0.04em;
+  font-weight: 400; color: var(--accent); white-space: nowrap; }
+
+.agenda-month { margin: calc(var(--u) * var(--month) * 0.14) 0 calc(var(--u) * var(--month) * 0.23);
+  font-size: calc(var(--u) * var(--month)); line-height: 1;
+  letter-spacing: -0.045em; font-weight: 400; }
+.agenda-row { display: grid; grid-template-columns: calc(var(--u) * 184) minmax(0, 1fr) calc(var(--u) * __AT__);
+  align-items: start; margin: 0 0 calc(var(--u) * 30); }
+.agenda-mono { margin: 0; font-family: "Signal Mono", ui-monospace, monospace; font-size: calc(var(--u) * 24);
+  line-height: 1.2; letter-spacing: 0.04em; text-transform: uppercase; white-space: nowrap; }
+.agenda-big { margin: calc(var(--u) * 4) 0 0; font-size: calc(var(--u) * var(--name)); line-height: 1.1;
+  letter-spacing: -0.04em; font-weight: 400; white-space: nowrap; }
+/* A show with no hall or booth has the row to itself. */
+.agenda-wide > div { grid-column: 2 / 4; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="agenda-frame">
+    <div class="agenda-top">__MARK__<p class="agenda-word" data-slot="word">__WORD__</p></div>
+    <h1 class="agenda-season" data-slot="season">__SEASON__</h1>
+__GROUPS__
+  </div>
+</div>
+</body>
+</html>

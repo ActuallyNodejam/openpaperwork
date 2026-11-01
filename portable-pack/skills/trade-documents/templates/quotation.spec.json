@@ -1,0 +1,68 @@
+{
+  "type": "quotation",
+  "number": "Q-2026-0001",
+  "issue_date": "2026-01-15",
+  "references": [
+    {
+      "label": "Er förfrågan",
+      "value": "2026-01-12"
+    }
+  ],
+  "dates": [
+    {
+      "label": "Giltig till",
+      "value": "2026-02-14"
+    },
+    {
+      "label": "Leveranstid",
+      "value": "10 arbetsdagar från order"
+    }
+  ],
+  "currency": "SEK",
+  "seller": {
+    "name": "Example Wholesale AB",
+    "street": "Hamngatan 1",
+    "postcode": "411 14",
+    "city": "Göteborg",
+    "country": "Sverige",
+    "vat_id": "SE556000000001",
+    "registered_office": "Göteborg",
+    "register_number": "556000-0000",
+    "email": "sales@example-wholesale.example",
+    "phone": "+46 31 000 00 00"
+  },
+  "buyer": {
+    "name": "Example Customer AB",
+    "street": "Storgatan 2",
+    "postcode": "211 34",
+    "city": "Malmö",
+    "country": "Sverige",
+    "vat_id": "SE556000000002"
+  },
+  "delivery_terms": {
+    "rule": "DAP",
+    "place": "Malmö, Sverige"
+  },
+  "transport": "road",
+  "payment_terms": "30 dagar netto från fakturadatum",
+  "lines": [
+    {
+      "code": "A-100",
+      "description": "Exempelprodukt, 1 kg",
+      "quantity": 10,
+      "unit": "pcs",
+      "unit_price": 120.0,
+      "discount_percent": 0,
+      "vat_rate": 25
+    },
+    {
+      "code": "B-200",
+      "description": "Exempelvara, 500 g",
+      "quantity": 24,
+      "unit": "pcs",
+      "unit_price": 45.5,
+      "discount_percent": 5,
+      "vat_rate": 12
+    }
+  ]
+}

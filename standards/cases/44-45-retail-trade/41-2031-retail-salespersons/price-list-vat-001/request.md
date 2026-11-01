@@ -1,0 +1,1 @@
+Please make a price list as an Excel file, `prices.xlsx`, from `inputs/tools.txt`: each tool with its price excluding VAT, the trade price and the price including VAT. I want to be able to change the VAT rate and the discount myself.

@@ -1,0 +1,58 @@
+{
+  "law": "it",
+  "language": "it",
+  "given": "2026-10-30",
+  "employer": {
+    "name": "Esempio Stampa S.r.l.",
+    "number": "codice fiscale e partita IVA 12345678903",
+    "address": "Via Esempio 8, 20121 Milano",
+    "signatory": "Paolo Ferri, amministratore unico"
+  },
+  "worker": {
+    "name": "Chiara Fontana",
+    "address": "Via Campione 15, 20131 Milano"
+  },
+  "place": "Via Esempio 8, 20121 Milano",
+  "job": {
+    "title": "Impiegata amministrativa",
+    "description": "Tenuta della contabilità clienti e fornitori, emissione delle fatture e gestione degli incassi.",
+    "group": "impiegata di quarto livello del contratto collettivo applicato"
+  },
+  "start": "2026-11-02",
+  "term": {
+    "type": "permanent"
+  },
+  "probation": {
+    "months": 2
+  },
+  "training": "Formazione sulla salute e sicurezza sul lavoro e sul software gestionale, durante l'orario di lavoro e a carico del datore di lavoro",
+  "leave": "Si applicano l'articolo 10 del decreto legislativo 8 aprile 2003, n. 66 (quattro settimane di ferie all'anno) e il contratto collettivo applicato per i permessi retribuiti",
+  "termination": "Si applicano l'articolo 2118 del codice civile e il contratto collettivo applicato: il recesso è comunicato per iscritto, con il preavviso che il contratto collettivo fissa per il livello e l'anzianità di servizio",
+  "pay": {
+    "amount": 1850,
+    "currency": "EUR",
+    "per": "month",
+    "components": [
+      {
+        "name": "Tredicesima e quattordicesima mensilità",
+        "text": "secondo il contratto collettivo applicato"
+      }
+    ],
+    "paid": "mensile, entro il giorno 10 del mese successivo",
+    "method": "bonifico sul conto corrente del lavoratore"
+  },
+  "hours": {
+    "pattern": "fixed",
+    "standard": "40 ore settimanali",
+    "schedule": "dal lunedì al venerdì dalle 9:00 alle 18:00, con un'ora di pausa",
+    "overtime": "solo su richiesta del datore di lavoro, con le maggiorazioni del contratto collettivo applicato"
+  },
+  "collective": {
+    "name": "Contratto collettivo nazionale di lavoro di esempio per i dipendenti delle aziende grafiche",
+    "parties": "Associazione Esempio Imprese Grafiche e Sindacato Esempio Lavoratori Grafici",
+    "code": "X000",
+    "copy": "il testo è a disposizione del personale sulla rete aziendale"
+  },
+  "social_security": "INPS, sede di Milano, per i contributi previdenziali; INAIL, sede di Milano, per l'assicurazione contro gli infortuni sul lavoro e le malattie professionali. Il datore di lavoro non fornisce altre forme di protezione",
+  "algorithms": null
+}

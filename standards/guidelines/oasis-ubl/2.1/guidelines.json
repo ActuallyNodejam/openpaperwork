@@ -1,0 +1,129 @@
+{
+  "issuer": "oasis-ubl",
+  "version": "2.1",
+  "link": "https://docs.oasis-open.org/ubl/os-UBL-2.1/UBL-2.1.html",
+  "date": "2026-10-03",
+  "status": "draft",
+  "title": "Trade documents between a seller and a buyer: quotation, order confirmation, delivery note, pro forma invoice, purchase order",
+  "source": {
+    "standard": "OASIS Universal Business Language 2.1 (OASIS Standard, 4 November 2013), https://docs.oasis-open.org/ubl/os-UBL-2.1/UBL-2.1.html",
+    "documents": [
+      "UBL-Quotation-2.1 (required: issue date, seller, quoted total, at least one line)",
+      "UBL-OrderResponse-2.1 (required: ID, issue date, order reference, seller, buyer)",
+      "UBL-DespatchAdvice-2.1 (required: ID, issue date, despatch supplier, delivery customer, at least one line)",
+      "UBL-Invoice-2.1 for the pro forma invoice, with the amounts rule of cen-en16931/2017",
+      "UBL-Order-2.1 (required: ID, issue date, buyer customer party, seller supplier party, at least one order line; optional in UBL and asked for here: document currency, quotation document reference, delivery with its requested period and address, delivery terms, anticipated monetary total)"
+    ],
+    "retrieved": "2026-10-03",
+    "note": "The required fields were read from the UBL 2.1 schemas on the retrieval date. Rules are our paraphrase for a printed or spreadsheet document; no schema or specification text is copied. UBL is an XML standard, so these rules take its field lists, not its syntax. UN/CEFACT document type codes (UNTDID 1001) are left out because the UNECE code list could not be read by a script on that date. Peppol BIS Ordering and Despatch Advice 3 build on the same UBL types and were not copied. The Order fields were read from UBL-Order-2.1.xsd on 2026-10-08."
+  },
+  "license": "Rule wording: Apache-2.0 with this repository. OASIS permits works that explain or assist in implementing the standard.",
+  "rules": [
+    {
+      "id": "TRD-TYPE",
+      "grader": "script",
+      "script": "trade.py",
+      "text": "The document names what it is in its heading: quotation, order confirmation, delivery note or pro forma invoice. A pro forma invoice is never headed as an invoice."
+    },
+    {
+      "id": "TRD-HEAD",
+      "grader": "script",
+      "script": "trade.py",
+      "text": "It carries its own number and issue date, the seller and the buyer with their addresses and VAT identifiers, and the currency of any amounts."
+    },
+    {
+      "id": "TRD-REFS",
+      "grader": "script",
+      "script": "trade.py",
+      "text": "It refers by number to the documents it answers: the customer's enquiry or order, and the seller's quotation or order confirmation."
+    },
+    {
+      "id": "TRD-LINES",
+      "grader": "script",
+      "script": "trade.py",
+      "text": "Every line names the item and its quantity and unit; a priced document adds unit price and line amount, a delivery note adds ordered, delivered and outstanding quantities. In a workbook the line amounts are formulas."
+    },
+    {
+      "id": "TRD-TOTALS",
+      "grader": "script",
+      "script": "trade.py",
+      "text": "A priced document states the total excluding VAT, VAT per rate and the total including VAT, calculated as cen-en16931/2017 does; a zero VAT total is stated as zero. In a workbook they are formulas."
+    },
+    {
+      "id": "TRD-DATES",
+      "grader": "script",
+      "script": "trade.py",
+      "text": "The date the document exists to state is there: until when a quotation or pro forma holds, the confirmed delivery or collection date, the date of despatch."
+    },
+    {
+      "id": "TRD-PAY",
+      "grader": "script",
+      "script": "trade.py",
+      "text": "A priced document states the payment terms, and the bank details when payment is asked for in advance."
+    },
+    {
+      "id": "TRD-SHIP",
+      "grader": "script",
+      "script": "trade.py",
+      "text": "A delivery note states the number of packages and the gross weight and has a place for the receiver to sign."
+    },
+    {
+      "id": "TRD-NOPRICE",
+      "grader": "script",
+      "script": "trade.py",
+      "text": "A delivery note shows no price, amount or currency."
+    },
+    {
+      "id": "TRD-CUSTOMS",
+      "grader": "script",
+      "script": "trade.py",
+      "text": "A pro forma invoice for export gives the customs code and country of origin of every goods line."
+    },
+    {
+      "id": "TRD-STALE",
+      "grader": "script",
+      "script": "trade.py",
+      "text": "After a change, no replaced value is left anywhere in the document."
+    },
+    {
+      "id": "TRD-PARTIAL",
+      "grader": "judge",
+      "text": "When less is confirmed or delivered than was ordered, the document says so in plain words and says when the rest follows."
+    },
+    {
+      "id": "TRADE-PO-HEAD",
+      "grader": "script",
+      "script": "purchase_order_check.py",
+      "text": "A purchase order names itself as one with its number, and gives its issue date, the buyer who orders, the seller who supplies and the currency of its amounts.",
+      "source": "UBL-Order-2.1 cbc:ID, cbc:IssueDate, cac:BuyerCustomerParty, cac:SellerSupplierParty, cbc:DocumentCurrencyCode"
+    },
+    {
+      "id": "TRADE-PO-LINES",
+      "grader": "script",
+      "script": "purchase_order_check.py",
+      "text": "Every order line is there with its quantity, unit price and line amount, and the line amount is the quantity times the unit price less any discount, rounded half up to two decimals.",
+      "source": "UBL-Order-2.1 cac:OrderLine/cac:LineItem with cbc:Quantity, cac:Price and cbc:LineExtensionAmount"
+    },
+    {
+      "id": "TRADE-PO-TOTAL",
+      "grader": "script",
+      "script": "purchase_order_check.py",
+      "text": "The total excluding VAT is the sum of the line amounts; where VAT is charged, VAT once per rate and the total including it are stated.",
+      "source": "UBL-Order-2.1 cac:AnticipatedMonetaryTotal (cbc:LineExtensionAmount, cbc:PayableAmount) and cac:TaxTotal, with the amounts rule of cen-en16931/2017"
+    },
+    {
+      "id": "TRADE-PO-DELIVERY",
+      "grader": "script",
+      "script": "purchase_order_check.py",
+      "text": "The purchase order states the date the goods are wanted and the address they go to.",
+      "source": "UBL-Order-2.1 cac:Delivery with cac:RequestedDeliveryPeriod and cac:DeliveryAddress"
+    },
+    {
+      "id": "TRADE-PO-QUOTE",
+      "grader": "script",
+      "script": "purchase_order_check.py",
+      "text": "A purchase order that accepts a supplier's quotation names that quotation by its number.",
+      "source": "UBL-Order-2.1 cac:QuotationDocumentReference"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+ "issuer": "it-dpr-633",
+ "version": "2026",
+ "link": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.del.presidente.della.repubblica:1972-10-26;633~art21",
+ "license": "The texts of official acts of the Italian state are outside the copyright act (legge 22 aprile 1941, n. 633, art. 5); notice licenses/einvoice-es-it-pl-official-texts.txt. Restated in our own words. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-10",
+ "status": "draft",
+ "title": "What an Italian fattura and nota di credito state",
+ "source": "DPR 26 ottobre 1972, n. 633, the text in force on 9 October 2026 (Normattiva). Art. 21 comma 2: the date (a), a number (b), both parties' names and addresses (c, e), the seller's partita IVA (d), the customer's partita IVA or, for a resident who does not act as a business, the codice fiscale (f), what is supplied (g), the date of the supply when it differs (g-bis), the amounts (h), the rate, the tax and the taxable amount (l); comma 6: the annotation that stands in place of the tax («operazione non imponibile», «operazione esente» and the like); art. 17 and art. 21 comma 6-bis: «inversione contabile» for a reverse charge; art. 17-ter: the split payment; art. 26: variations, the credit note. The decree is repealed from 1 January 2027 by the Testo unico IVA (D.Lgs. 19 gennaio 2026, n. 10): art. 72 is the old art. 21, art. 64 the old art. 17, art. 65 the old art. 17-ter, art. 92 the old art. 26. An e-invoice that owes stamp duty carries an annotation that it was paid under DM 17 giugno 2014 (art. 6 comma 2). Not read from an official text: the partita IVA's check digit (a mismatch only warns), the words «scissione dei pagamenti» of DM 23 gennaio 2015 (read in the FatturaPA specification) and the stamp-duty threshold (the library never decides whether stamp duty is due). Read 2026-10-09.",
+ "note": "Unproved: the article mapping in these rules was not proved against the official text in the 2026-10-20 standards audit.",
+ "rules": [
+  {
+   "id": "IT-INVOICE",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "text": "The number and date, the seller's partita IVA (IT and eleven digits), both parties' names and addresses, the customer's partita IVA or codice fiscale, each line's unit price and rate, the tax per rate, the date of the supply when it differs, the annotation in place of the tax, «inversione contabile» for a reverse charge, «scissione dei pagamenti» and the stamp-duty annotation when the order asks for them, on the page; the FatturaPA beside the page is TD04 with its DatiFattureCollegate for a credit note, else TD01."
+  }
+ ]
+}

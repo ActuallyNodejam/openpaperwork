@@ -1,0 +1,76 @@
+Company law behind the minutes check (skills/_checks/minutes_check.py, skills/meeting-minutes). Read 2026-10-09.
+Every provision is restated in our own words; no text is copied whole.
+
+Norway: aksjeloven (LOV-1997-06-13-44) § 6-29 and § 5-16, https://lovdata.no/lov/1997-06-13-44
+Laws are free of copyright: åndsverkloven § 14 ("Lover, forskrifter, rettsavgjørelser og andre vedtak av
+offentlig myndighet er uten vern etter denne loven").
+
+Denmark: selskabsloven, LBK nr. 331 af 20/03/2025, § 128 and § 101, https://www.retsinformation.dk/eli/lta/2025/331
+Laws are free of copyright: ophavsretsloven § 9.
+Read again 2026-10-09 against the four acts Retsinformation lists as amending the law since: lov nr. 710 af
+20/06/2025 (§ 2), lov nr. 1648 af 16/12/2025 (§ 16), lov nr. 1765 af 29/12/2025 (§ 4) and lov nr. 729 af
+01/09/2026 (§ 5). None changes § 101 or § 128; lov nr. 729 only refers to § 101, stk. 5 and 6, in a new § 23 j.
+
+Finland: osakeyhtiölaki 624/2006, 6 luku 6 § and 5 luku 23 §, consolidated through 652/2024,
+https://www.finlex.fi/fi/lainsaadanto/2006/624
+Laws are free of copyright (tekijänoikeuslaki 9 §); Finlex open data is licensed CC BY 4.0
+(https://creativecommons.org/licenses/by/4.0/), source: Finlex, Oikeusministeriö.
+
+United Kingdom: Companies Act 2006 ss. 248, 249, 355, 356 and the Companies (Model Articles) Regulations 2008,
+Schedule 1, arts. 11 and 15, https://www.legislation.gov.uk/ukpga/2006/46
+Contains public sector information licensed under the Open Government Licence v3.0.
+https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+
+Canada: Canada Business Corporations Act (R.S.C. 1985, c. C-44) ss. 20, 114 and 117, current to 2026-09-21,
+https://laws-lois.justice.gc.ca/eng/acts/C-44/
+Reproduced under the Reproduction of Federal Law Order (SI/97-5); this is not an official version.
+
+Australia: Corporations Act 2001 ss. 248F, 251A and 251B, Compilation No. 149 (19 September 2026),
+https://www.legislation.gov.au/C2004A00818/latest/text
+Based on content from the Federal Register of Legislation at 9 October 2026. For the latest information on
+Australian Government law please go to https://www.legislation.gov.au. Licensed CC BY 4.0
+(https://creativecommons.org/licenses/by/4.0/).
+
+United States: Delaware General Corporation Law §§ 141(b), 141(f), 142(a) and 224,
+https://delcode.delaware.gov/title8/ ; cited by section, no text copied.
+Robert's Rules of Order Revised (1915), section 60, public domain in the USA (Project Gutenberg #75990),
+restated in our own words.
+
+Belgium: Code des sociétés et des associations / Wetboek van vennootschappen en verenigingen of 23 March 2019,
+arts. 5:75, 5:76, 5:77, 5:89, 5:90 and 5:93 (BV/SRL), 6:63, 6:64, 6:75, 6:76 and 6:79 (CV/SC), 7:95, 7:96,
+7:137, 7:138 and 7:141 (NV/SA), consolidated Dutch text read on Justel 2026-10-09,
+https://www.ejustice.just.fgov.be/eli/wet/2019/03/23/2019A40586/justel
+Official acts of the authorities are outside copyright: Code de droit économique art. XI.172 § 2.
+
+Netherlands: Burgerlijk Wetboek Boek 2, arts. 2:120 lid 4 and 2:230 lid 4 (and 2:13, 2:186), text in force from
+1 July 2026, https://wetten.overheid.nl/BWBR0003045/
+Laws are outside copyright: Auteurswet art. 11.
+
+Austria: Aktiengesetz §§ 92 and 120, GmbH-Gesetz §§ 30g and 40, consolidated federal law as of 2026-10-09,
+https://www.ris.bka.gv.at/ (Bundesrecht konsolidiert)
+Laws are outside copyright: Urheberrechtsgesetz § 7.
+
+Ireland: Companies Act 2014 (No. 38 of 2014) ss. 160, 161, 166, 182 and 199, as enacted,
+https://www.irishstatutebook.ie/eli/2014/act/38/enacted/en/html
+(c) Government of Ireland. Oireachtas copyright material, reused under the Oireachtas (Open Data) PSI Licence,
+which incorporates the Creative Commons Attribution 4.0 International Licence
+(https://creativecommons.org/licenses/by/4.0/).
+
+Spain: Ley de Sociedades de Capital (Real Decreto Legislativo 1/2010) arts. 191, 192, 202, 203 and 250,
+consolidated text of the Boletín Oficial del Estado (last updated 3 January 2025),
+https://www.boe.es/buscar/act.php?id=BOE-A-2010-10544 ; Reglamento del Registro Mercantil (Real Decreto
+1784/1996) arts. 97 to 103, consolidated text (last updated 14 June 2023),
+https://www.boe.es/buscar/act.php?id=BOE-A-1996-17533 . Read 2026-10-09.
+Legal and regulatory provisions are not the object of intellectual property: Ley de Propiedad Intelectual (Real
+Decreto Legislativo 1/1996) art. 13.
+
+Italy: Codice civile (Regio decreto 16 marzo 1942, n. 262) arts. 2371, 2375, 2388, 2421, 2478 and 2479-bis, text
+in force on Normattiva, read 2026-10-10,
+https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262
+The texts of official acts of the State are outside the copyright law: legge 22 aprile 1941, n. 633, art. 5.
+
+Poland: Kodeks spółek handlowych (ustawa z dnia 15 września 2000 r., Dz. U. 2000 Nr 94 poz. 1037) arts. 208(1),
+222, 248, 376, 391 and 421, unified text of the Internetowy System Aktów Prawnych as of 3 June 2026 (t.j. Dz. U.
+z 2024 r. poz. 18, with later amendments), read 2026-10-09,
+https://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20000941037
+Normative acts are not the object of copyright: ustawa o prawie autorskim i prawach pokrewnych art. 4.

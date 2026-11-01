@@ -1,0 +1,1 @@
+Studio Supply has changed its unit price to EUR 49.00 and delivery to 2026-11-13. Update only that quote, recalculate the comparison and revise the recommendation. The budget and required delivery date stay unchanged.

@@ -1,0 +1,20 @@
+UK Government Analysis Function, "Releasing statistics in spreadsheets" (guidance, published 30 June 2021)
+https://analysisfunction.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/
+Read 2026-10-08.
+
+Contains public sector information licensed under the Open Government Licence v3.0.
+https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+The site's terms of use (section 6) place its content under the Open Government Licence:
+https://analysisfunction.civilservice.gov.uk/terms-of-use/
+
+Changes: the rules are restated in our own words in skills/_checks/sheet_check.py,
+skills/xlsx/SKILL.md and standards/guidelines/uk-analysis-function; no text is copied whole.
+
+Employment Rights Act 1996, section 1 (statement of initial employment particulars), the revised text
+on legislation.gov.uk: https://www.legislation.gov.uk/ukpga/1996/18/section/1
+Read 2026-10-08.
+
+Contains public sector information licensed under the Open Government Licence v3.0.
+Changes: the particulars of section 1(2) to (4) are restated in our own words in
+skills/_checks/employment_check.py, skills/employment-statement and
+standards/guidelines/uk-employment-rights-act; no text is copied whole.

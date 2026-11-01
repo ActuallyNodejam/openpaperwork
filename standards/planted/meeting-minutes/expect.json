@@ -1,0 +1,40 @@
+{
+  "pack": "meeting-minutes",
+  "template": "board-minutes-uk.spec.json",
+  "clean": "minutes.docx",
+  "files": [
+    "spec.json",
+    "minutes.docx"
+  ],
+  "faults": [
+    {
+      "file": "no-quorum.docx",
+      "replaces": "minutes.docx",
+      "planted": "the quorum statement is removed",
+      "fails": [
+        "MINUTES-STATUTE"
+      ],
+      "also_failed_when_made": []
+    },
+    {
+      "file": "no-resolution.docx",
+      "replaces": "minutes.docx",
+      "planted": "a motion is recorded without its resolution",
+      "fails": [
+        "MINUTES-STATUTE"
+      ],
+      "also_failed_when_made": []
+    },
+    {
+      "file": "no-chair.docx",
+      "replaces": "minutes.docx",
+      "planted": "the chair's name is removed",
+      "fails": [
+        "MINUTES-OFFICERS"
+      ],
+      "also_failed_when_made": [
+        "MINUTES-SIGNED"
+      ]
+    }
+  ]
+}

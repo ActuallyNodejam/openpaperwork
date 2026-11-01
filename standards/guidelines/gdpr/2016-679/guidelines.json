@@ -1,0 +1,19 @@
+{
+  "issuer": "gdpr",
+  "version": "2016-679",
+  "link": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+  "license": "EU legal text, reusable under Commission Decision 2011/833/EU; the article is cited. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-08",
+  "status": "draft",
+  "title": "Regulation (EU) 2016/679 (General Data Protection Regulation), Article 28",
+  "source": "Regulation (EU) 2016/679, Article 28(3): what a contract between a controller and a processor sets out.",
+  "rules": [
+    {
+      "id": "DPA-28-3",
+      "grader": "script",
+      "text": "A data processing agreement sets out the subject-matter and duration, the nature and purpose, the types of personal data and categories of data subjects, and the processor's duties (a) to (h): documented instructions, confidentiality, Article 32 security, sub-processors, help with data subjects' rights, help with Articles 32 to 36, deletion or return, and information and audits.",
+      "source": "Article 28(3)",
+      "check": "legal_check.py LEGAL-DPA"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "language": "da",
+  "country": "DK",
+  "body": "Kystlys Tryk ApS",
+  "company_number": "41 22 63 85",
+  "meeting": "board",
+  "number": "4/2026",
+  "date": "2026-10-21",
+  "start": "15:00",
+  "end": "16:15",
+  "place": "Selskabets kontor, Havnegade 21, Aarhus C",
+  "chair": "Hanne Lund",
+  "secretary": "Søren Bach",
+  "present": [
+    "Hanne Lund",
+    "Jens Kjær",
+    "Line Dahl"
+  ],
+  "in_attendance": [
+    "Søren Bach (direktør)"
+  ],
+  "quorum": true,
+  "previous_minutes": "approved",
+  "items": [
+    {
+      "title": "Ny trykmaskine",
+      "notes": "Direktøren gennemgik tilbuddet på en ny digitalpresse til 1,4 mio. kr.",
+      "decisions": [
+        "at købe digitalpressen og finansiere den med leasing over fem år"
+      ],
+      "dissent": [
+        {
+          "name": "Line Dahl",
+          "text": "imod beslutningen på grund af likviditeten"
+        }
+      ]
+    },
+    {
+      "title": "Næste møde",
+      "decisions": [
+        "at næste bestyrelsesmøde holdes den 2. december 2026"
+      ]
+    }
+  ]
+}

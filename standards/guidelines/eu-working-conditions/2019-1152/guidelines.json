@@ -1,0 +1,176 @@
+{
+  "issuer": "eu-working-conditions",
+  "version": "2019-1152",
+  "link": "https://eur-lex.europa.eu/eli/dir/2019/1152/oj",
+  "license": "EU legal text, reusable under Commission Decision 2011/833/EU with the source acknowledged; the articles are restated in our own words and cited. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-08",
+  "status": "draft",
+  "title": "Directive (EU) 2019/1152 on transparent and predictable working conditions in the European Union",
+  "source": "Directive (EU) 2019/1152 of the European Parliament and of the Council of 20 June 2019, OJ L 186, 11.7.2019, p. 105, CELEX 32019L1152: Art. 4 (the information), 5 (when it is due), 6 (changes), 7 (work abroad) and 8 (probation). Read 2026-10-08.",
+  "note": "A drafting check, not legal advice: the scripted rules read whether a particular is there, never whether a term is allowed. Member states carry the directive into their own law and may go further.",
+  "rules": [
+    {
+      "id": "EMP-01",
+      "grader": "script",
+      "text": "The statement identifies the employer and the worker.",
+      "source": "Art. 4(2)(a)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "EMP-02",
+      "grader": "script",
+      "text": "It gives the place of work or, with no fixed place, says the worker works at various places or chooses where, and gives the employer's registered place of business.",
+      "source": "Art. 4(2)(b)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "EMP-03",
+      "grader": "script",
+      "text": "It gives the job title, grade, nature or category of the work, or a short description of it.",
+      "source": "Art. 4(2)(c)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "EMP-04",
+      "grader": "script",
+      "text": "It gives the date the employment begins.",
+      "source": "Art. 4(2)(d)",
+      "check": "employment_check.py EMPLOY-DATES"
+    },
+    {
+      "id": "EMP-05",
+      "grader": "script",
+      "text": "A fixed-term employment gives its end date or expected length, and the end comes after the start.",
+      "source": "Art. 4(2)(e)",
+      "check": "employment_check.py EMPLOY-DATES"
+    },
+    {
+      "id": "EMP-06",
+      "grader": "script",
+      "text": "A temporary agency worker is told the user undertakings when they are known.",
+      "source": "Art. 4(2)(f)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "EMP-07",
+      "grader": "script",
+      "text": "A probationary period is given with its length and conditions.",
+      "source": "Art. 4(2)(g)",
+      "check": "employment_check.py EMPLOY-PROBATION"
+    },
+    {
+      "id": "EMP-08",
+      "grader": "script",
+      "text": "Any training entitlement the employer provides is given.",
+      "source": "Art. 4(2)(h)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "EMP-09",
+      "grader": "script",
+      "text": "The paid leave is given, or how it is allocated and decided when the amount cannot be given yet.",
+      "source": "Art. 4(2)(i)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "EMP-10",
+      "grader": "script",
+      "text": "The procedure for ending the employment is given, with its formal requirements and the notice periods or how they are set.",
+      "source": "Art. 4(2)(j)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "EMP-11",
+      "grader": "script",
+      "text": "Pay gives the starting basic amount, any other elements set out separately, and how often and how it is paid.",
+      "source": "Art. 4(2)(k)",
+      "check": "employment_check.py EMPLOY-PAY"
+    },
+    {
+      "id": "EMP-12",
+      "grader": "script",
+      "text": "With a mostly predictable pattern: the length of the normal working day or week, overtime and its pay, and any shift-change arrangements.",
+      "source": "Art. 4(2)(l)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "EMP-13",
+      "grader": "script",
+      "text": "With a mostly unpredictable pattern: that the schedule varies, the guaranteed paid hours and the pay beyond them, the reference hours and days, and the minimum notice before work and any cancellation deadline.",
+      "source": "Art. 4(2)(m)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "EMP-14",
+      "grader": "script",
+      "text": "Any collective agreement governing the work is named, or the body that concluded it.",
+      "source": "Art. 4(2)(n)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "EMP-15",
+      "grader": "script",
+      "text": "Where it is the employer's job, the social security institutions receiving the contributions and any social protection the employer provides.",
+      "source": "Art. 4(2)(o)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "EMP-16",
+      "grader": "judge",
+      "text": "Points (g) to (l) and (o) may be given by reference to the law or the collective agreement that governs them, rather than written out.",
+      "source": "Art. 4(3)"
+    },
+    {
+      "id": "EMP-17",
+      "grader": "script",
+      "text": "Points (a) to (e), (g), (k), (l) and (m) reach the worker by the seventh calendar day of work; the rest within one month.",
+      "source": "Art. 5(1)",
+      "check": "employment_check.py EMPLOY-DATES"
+    },
+    {
+      "id": "EMP-18",
+      "grader": "judge",
+      "text": "A change to any of these particulars is given in a document no later than the day it takes effect.",
+      "source": "Art. 6(1)"
+    },
+    {
+      "id": "EMP-19",
+      "grader": "script",
+      "text": "Work in another country names the country and the expected length, the currency of pay, any benefits in cash or kind, and whether and on what terms the worker is brought home, and is given before departure.",
+      "source": "Art. 7(1)",
+      "check": "employment_check.py EMPLOY-ABROAD"
+    },
+    {
+      "id": "EMP-20",
+      "grader": "judge",
+      "text": "A posted worker is also told the pay due under the host country's law, the posting allowances and travel, board and lodging arrangements, and the host country's official website.",
+      "source": "Art. 7(2)"
+    },
+    {
+      "id": "EMP-21",
+      "grader": "script",
+      "text": "Unless the member state says otherwise, the work-abroad points do not apply to a period abroad of four consecutive weeks or less.",
+      "source": "Art. 7(4)",
+      "check": "employment_check.py EMPLOY-ABROAD"
+    },
+    {
+      "id": "EMP-22",
+      "grader": "script",
+      "text": "A probationary period over six months is flagged: six months is the general limit.",
+      "source": "Art. 8(1)",
+      "check": "employment_check.py EMPLOY-PROBATION"
+    },
+    {
+      "id": "EMP-23",
+      "grader": "judge",
+      "text": "In a fixed-term contract the probation is in proportion to the contract's length and the work; a renewal for the same job starts no new probation.",
+      "source": "Art. 8(2)"
+    },
+    {
+      "id": "EMP-24",
+      "grader": "judge",
+      "text": "A longer probation is for the member state to allow, only in exceptional cases; the statement is not where it is decided.",
+      "source": "Art. 8(3)"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+ "issuer": "be-royal-decree-no-1",
+ "version": "2026",
+ "link": "https://www.ejustice.just.fgov.be/eli/besluit/1992/12/29/1992003823/justel",
+ "license": "Belgian official acts carry no copyright (Code of Economic Law art. XI.172 § 2); notice licenses/einvoice-be-nl-at-official-texts.txt. Restated in our own words; the fixed mentions are quoted. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "What a Belgian invoice states",
+ "source": "Royal Decree no. 1 of 29 December 1992 on VAT (Justel consolidation of 31-12-2025): art. 5 § 1, 1° to 10°, with 9°bis, the one mention for a reverse charge, \"Btw verlegd\" in the Dutch text and \"Autoliquidation\" in the French; art. 12 § 3, a correcting document refers to the invoice it corrects; art. 13ter, added by the Royal Decree of 8 July 2025 with art. 5 left as it was: a business that owes a structured e-invoice (VAT Code art. 53 § 2bis, Law of 6 February 2024) sends it as Peppol BIS UBL over the Peppol network from 1 January 2026. Code of companies and associations art. 2:20: legal form, seat, enterprise number and RPR/RPM with the court, on invoices too. Royal Decree of 24 June 2003 art. 3 for the enterprise number. Flemish decree of 19 July 1973 art. 5 § 1 and § 2/1 (in force 11 August 2017): a firm in Flanders writes Dutch; an invoice to a customer in another EU or EEA state may also carry a valid version in a language of the EU or EEA. Justel carries no German text of the decree, so a German page writes the mention of VAT Directive 2006/112/EC Art. 226(11a), \"Steuerschuldnerschaft des Leistungsempfängers\". Febelfin's structured communication is cited for its check digits only (the first ten digits modulo 97, 97 for a remainder of 0). Read 2026-10-09.",
+ "note": "From 1 January 2026 the structured electronic invoice is the only legally required B2B invoice; a PDF or paper copy may go with it but no longer counts (FPS Finance, B2B FAQ questions 11 and 12). Both the supplier and the customer risk a fine (questions 7 and 8); the tolerance period ended on 31 March 2026. The amounts are set by royal decree and are not proved here from the official text, so none is named. https://einvoice.belgium.be/en/FAQ/general-questions-b2b",
+ "rules": [
+  {
+   "id": "BE-INVOICE",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "text": "The number and date, the supplier's name, address, enterprise number (modulus 97) and VAT number BE and the same digits, the customer's name and address and a business customer's VAT number, each line's unit price, the VAT per rate, \"Btw verlegd\" or \"Autoliquidation\" for a reverse charge, the invoice a credit note corrects and a structured communication whose check digits hold, on the page; in the UBL the enterprise number under scheme 0208."
+  }
+ ]
+}

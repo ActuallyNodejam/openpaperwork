@@ -1,0 +1,67 @@
+{
+  "type": "order_confirmation",
+  "language": "fr-CA",
+  "number": "CC-2026-0219",
+  "issue_date": "2026-10-14",
+  "references": [
+    {
+      "label": "Votre bon de commande",
+      "value": "BC-3390"
+    },
+    {
+      "label": "Notre soumission",
+      "value": "S-2026-0177"
+    }
+  ],
+  "dates": [
+    {
+      "label": "Date de livraison confirmée",
+      "value": "2026-10-30"
+    }
+  ],
+  "currency": "CAD",
+  "seller": {
+    "name": "Ateliers Baie-Acadie ltée",
+    "street": "95, rue de l'Exemple",
+    "postcode": "E1C 0A1",
+    "city": "Moncton (N.-B.)",
+    "country": "Canada",
+    "vat_id": "987654321 RT0001",
+    "email": "ventes@baie-acadie.example",
+    "phone": "506-555-0144"
+  },
+  "buyer": {
+    "name": "Coopérative Les Essais",
+    "street": "12, chemin de l'Essai",
+    "postcode": "E1A 0A2",
+    "city": "Dieppe (N.-B.)",
+    "country": "Canada",
+    "vat_id": "111222333 RT0001"
+  },
+  "delivery_terms": {
+    "rule": "DAP",
+    "place": "Dieppe (N.-B.)"
+  },
+  "transport": "road",
+  "payment_terms": "Net 30 jours à compter de la date de facture",
+  "lines": [
+    {
+      "code": "BA-40",
+      "description": "Étagère en acier galvanisé, 1 800 mm",
+      "quantity": 10,
+      "unit": "pcs",
+      "unit_price": 245.0,
+      "discount_percent": 0,
+      "vat_rate": 15
+    },
+    {
+      "code": "BA-41",
+      "description": "Bac de rangement, 60 L",
+      "quantity": 40,
+      "unit": "pcs",
+      "unit_price": 18.75,
+      "discount_percent": 10,
+      "vat_rate": 15
+    }
+  ]
+}

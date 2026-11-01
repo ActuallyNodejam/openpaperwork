@@ -1,0 +1,67 @@
+{
+  "issuer": "nist-sp811",
+  "version": "2008",
+  "link": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication811e2008.pdf",
+  "license": "A work of the US Government, not subject to copyright in the United States (17 U.S.C. 105); the rules are restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-08",
+  "status": "draft",
+  "title": "Guide for the Use of the International System of Units (SI)",
+  "source": "Ambler Thompson and Barry N. Taylor, Guide for the Use of the International System of Units (SI), NIST Special Publication 811, 2008 Edition, sections 6.1 and 7, read 2026-10-08.",
+  "rules": [
+    {
+      "id": "NIST-01",
+      "grader": "script",
+      "text": "Unit symbols stay the same in the plural: 75 cm, not 75 cms.",
+      "source": "6.1.3",
+      "check": "requirements_check.py UNITS-SYMBOL"
+    },
+    {
+      "id": "NIST-02",
+      "grader": "script",
+      "text": "A unit symbol takes no period unless it ends a sentence.",
+      "source": "6.1.4",
+      "check": "requirements_check.py UNITS-SYMBOL"
+    },
+    {
+      "id": "NIST-03",
+      "grader": "script",
+      "text": "The solidus is not repeated in one unit without parentheses: m/s², not m/s/s.",
+      "source": "6.1.6",
+      "check": "requirements_check.py UNITS-SYMBOL"
+    },
+    {
+      "id": "NIST-04",
+      "grader": "script",
+      "text": "Unit symbols and unit names are not used together: km/h or kilometres per hour, not km per hour.",
+      "source": "6.1.7",
+      "check": "requirements_check.py UNITS-SYMBOL"
+    },
+    {
+      "id": "NIST-05",
+      "grader": "script",
+      "text": "Units are never abbreviated: s not sec, min not mins, h not hrs, L not lit, A not amps.",
+      "source": "6.1.8",
+      "check": "requirements_check.py UNITS-SYMBOL"
+    },
+    {
+      "id": "NIST-06",
+      "grader": "script",
+      "text": "A space is left between the numerical value and the unit symbol, the degree Celsius included; none for the degree, minute and second of a plane angle.",
+      "source": "7.2",
+      "check": "requirements_check.py UNITS-SPACE"
+    },
+    {
+      "id": "NIST-07",
+      "grader": "script",
+      "text": "A space is left between the number and the symbol %, and the symbol is used rather than the word.",
+      "source": "7.10.2",
+      "check": "requirements_check.py UNITS-SPACE"
+    },
+    {
+      "id": "NIST-08",
+      "grader": "judge",
+      "text": "The value of a quantity is expressed in one unit.",
+      "source": "7.3"
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "title": "Board update, third quarter 2026",
+  "organisation": "Example Software Ltd",
+  "language": "en-GB",
+  "pages": [
+    {
+      "type": "cover",
+      "title": "Revenue is ahead of plan; churn in small accounts needs a decision",
+      "notes": "Open with the decision, not the quarter: revenue is ahead of plan, and churn in small accounts is the one thing the board is asked to act on today.",
+      "subtitle": "Board update, third quarter 2026",
+      "meta": [
+        {
+          "key": "Prepared for",
+          "value": "The board of directors"
+        },
+        {
+          "key": "Date",
+          "value": "22 October 2026"
+        },
+        {
+          "key": "Status",
+          "value": "Confidential"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "Revenue is ahead of plan and the board is asked to cut churn",
+      "notes": "Give the whole update in three sentences: the quarter is ahead, churn in small accounts is the exception, and the ask is one approval. Everything after this page is support.",
+      "blocks": [
+        {
+          "section": "Results",
+          "lead": "Recurring revenue reached EUR 18.4 million, 6% ahead of plan.",
+          "points": ["Gross margin is 78%, one point above plan, with hosting costs flat", "Cash stands at EUR 9.4 million, EUR 0.4 million more than planned"]
+        },
+        {
+          "section": "Customers",
+          "lead": "Churn in small accounts doubled in a year, to 4.2% a quarter.",
+          "points": ["Two in five of the accounts lost never finished setting up", "Mid-sized and large accounts are as steady as a year ago"]
+        },
+        {
+          "section": "Plan",
+          "lead": "Guided onboarding costs EUR 0.4 million and pays back within 7 months.",
+          "points": ["A pilot with 40 new accounts starts in December", "The board sees the result in February and decides on the roll-out"]
+        }
+      ]
+    },
+    {
+      "type": "agenda",
+      "title": "This update answers three questions",
+      "notes": "Name the three questions and say which one needs the board. Move on quickly; nobody needs the agenda explained.",
+      "items": [
+        {
+          "name": "Results",
+          "text": "Did the quarter meet the plan?"
+        },
+        {
+          "name": "Customers",
+          "text": "Where are accounts being lost, and why?"
+        },
+        {
+          "name": "Plan",
+          "text": "What should be done, and what does it cost?"
+        }
+      ]
+    },
+    {
+      "type": "chart",
+      "section": "Results",
+      "title": "Recurring revenue reached EUR 18.4 million in Q3 2026, 6% ahead of plan",
+      "notes": "Read the highlighted bar first, then the plan beside it. Say what drove the lead over plan in one sentence and stop.",
+      "kind": "column",
+      "measure": "Annual recurring revenue",
+      "unit": "EUR million",
+      "period": "Q3 2025 to Q3 2026",
+      "decimals": 1,
+      "categories": ["Q3 2025", "Q4 2025", "Q1 2026", "Q2 2026", "Q3 2026"],
+      "series": [
+        {
+          "name": "Annual recurring revenue",
+          "values": [14.1, 15.0, 16.2, 17.3, 18.4]
+        }
+      ],
+      "highlight": "Q3 2026",
+      "takeaway": "Growth came from larger accounts adding seats, not from price.",
+      "points": ["The plan for the quarter was EUR 17.4 million", "Net new revenue was EUR 1.1 million against 0.9 planned", "List prices have not changed since 2024"],
+      "alt": "Column chart of annual recurring revenue in EUR million for five quarters, rising from 14.1 in Q3 2025 to 18.4 in Q3 2026, 6% ahead of plan.",
+      "source": "Source: management accounts, 30 September 2026"
+    },
+    {
+      "type": "figures",
+      "section": "Results",
+      "title": "Three figures show a quarter that grew faster than its costs",
+      "notes": "Take the three figures left to right. The point is the last one: costs grew more slowly than revenue.",
+      "figures": [
+        {
+          "label": "Annual recurring revenue",
+          "value": "18.4",
+          "unit": "EUR million",
+          "period": "Q3 2026",
+          "note": "30% above the third quarter of 2025, and EUR 1.0 million over plan."
+        },
+        {
+          "label": "Gross margin",
+          "value": "78%",
+          "unit": "of revenue",
+          "period": "Q3 2026",
+          "note": "One point above plan: hosting costs stayed flat while revenue grew."
+        },
+        {
+          "label": "Net revenue retention",
+          "value": "104%",
+          "unit": "over twelve months",
+          "period": "to Q3 2026",
+          "note": "Customers a year old now spend 4% more, after all churn."
+        }
+      ],
+      "takeaway": "The business added a third to its revenue in a year without adding to the cost of serving it.",
+      "source": "Source: management accounts, 30 September 2026"
+    },
+    {
+      "type": "table",
+      "section": "Results",
+      "title": "Every plan line is on or ahead of target except churn in small accounts",
+      "notes": "Do not read the table out. Point at the one line that is behind, churn in small accounts, and say the rest is on or ahead of target.",
+      "head": "Plan and actual, third quarter 2026",
+      "columns": ["Measure", "Unit", "Plan", "Actual", "Difference"],
+      "rows": [
+        ["Annual recurring revenue", "EUR million", "17.4", "18.4", "+1.0"],
+        ["Net new recurring revenue", "EUR million", "0.9", "1.1", "+0.2"],
+        ["Gross margin", "% of revenue", "77.0", "78.0", "+1.0"],
+        ["Net revenue retention", "%", "103.0", "104.0", "+1.0"],
+        ["Churn, small accounts", "% a quarter", "2.5", "4.2", "+1.7"],
+        ["Cash at quarter end", "EUR million", "9.0", "9.4", "+0.4"]
+      ],
+      "highlight": "Churn, small accounts",
+      "takeaway": "Churn is the one line that moved the wrong way.",
+      "points": ["It is 1.7 points over plan", "The next section shows where and why"],
+      "source": "Source: management accounts, 30 September 2026"
+    },
+    {
+      "type": "chart",
+      "section": "Customers",
+      "title": "Churn in small accounts doubled in a year while larger accounts held steady",
+      "notes": "This is the problem page. Small accounts doubled their churn in a year; larger accounts did not move. Pause here for questions before the options.",
+      "kind": "line",
+      "measure": "Accounts lost in the quarter",
+      "unit": "% of accounts at its start",
+      "period": "Q3 2025 to Q3 2026",
+      "decimals": 1,
+      "categories": ["Q3 2025", "Q4 2025", "Q1 2026", "Q2 2026", "Q3 2026"],
+      "series": [
+        {
+          "name": "Small accounts",
+          "values": [2.1, 2.6, 3.1, 3.7, 4.2]
+        },
+        {
+          "name": "Mid-sized accounts",
+          "values": [1.4, 1.3, 1.4, 1.3, 1.4]
+        },
+        {
+          "name": "Large accounts",
+          "values": [0.5, 0.4, 0.5, 0.4, 0.4]
+        }
+      ],
+      "highlight": "Small accounts",
+      "takeaway": "Two in five lost small accounts never finished setting up.",
+      "points": ["62 small accounts cancelled in the quarter", "24 had not finished onboarding", "14 named price as the reason"],
+      "alt": "Line chart of accounts lost each quarter as a share of accounts, by size. Small accounts rise from 2.1% to 4.2% over five quarters; mid-sized stay near 1.4% and large near 0.4%.",
+      "source": "Source: billing system and exit survey, 30 September 2026"
+    },
+    {
+      "type": "comparison",
+      "section": "Plan",
+      "title": "Guided onboarding costs less than a price cut and acts on the cause",
+      "notes": "Walk the options in the order shown and say why a price cut treats the symptom. Guided onboarding is the recommendation.",
+      "options": ["Guided onboarding", "Price cut for small accounts"],
+      "rows": [
+        {
+          "label": "What changes",
+          "values": ["A specialist sets up each new account", "List price falls by 15%"]
+        },
+        {
+          "label": "Cost in year one",
+          "values": ["EUR 0.4 million", "EUR 0.9 million in revenue"]
+        },
+        {
+          "label": "Effect on churn",
+          "values": ["Towards the 2.5% planned", "Small: price is the second reason"]
+        },
+        {
+          "label": "Pays back",
+          "values": ["Within 7 months", "Not within the year"]
+        },
+        {
+          "label": "Can be undone",
+          "values": ["Yes, after the pilot", "Hardly: prices rarely rise again"]
+        },
+        {
+          "label": "Ready to start",
+          "values": ["December 2026", "January 2027"]
+        }
+      ],
+      "highlight": "Guided onboarding",
+      "source": "Source: finance model, October 2026"
+    },
+    {
+      "type": "process",
+      "section": "Plan",
+      "title": "Every new small account is set up with a specialist in four steps",
+      "notes": "Four steps, one sentence each. Say who owns each step, since that is the question the board will ask.",
+      "steps": [
+        {
+          "name": "Welcome call",
+          "detail": "On day one a specialist agrees with the account what it wants done first."
+        },
+        {
+          "name": "Guided setup",
+          "detail": "In the first week the data is imported and the whole team is invited."
+        },
+        {
+          "name": "First report together",
+          "detail": "By week three the account has built a report it will keep using."
+        },
+        {
+          "name": "Health check",
+          "detail": "On day 60 usage is reviewed and anything that is stuck gets fixed."
+        }
+      ],
+      "takeaway": "No new small account is left to set itself up."
+    },
+    {
+      "type": "timeline",
+      "section": "Plan",
+      "title": "The programme reaches every new small account by March 2027",
+      "notes": "Give the end date first, March 2027, then the milestone the board sees next.",
+      "steps": [
+        {
+          "when": "November 2026",
+          "what": "Two onboarding specialists hired",
+          "detail": "The budget is released on the board's approval."
+        },
+        {
+          "when": "December 2026",
+          "what": "Pilot starts with 40 new accounts",
+          "detail": "Every second new small account joins the pilot."
+        },
+        {
+          "when": "February 2027",
+          "what": "Board reviews pilot churn",
+          "detail": "The pilot goes on only if churn is under 3%."
+        },
+        {
+          "when": "March 2027",
+          "what": "Roll-out to all new small accounts",
+          "detail": "Existing accounts follow in the second half."
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "section": "Plan",
+      "title": "The pilot is judged on three results the board will see in February",
+      "notes": "Name the three results and say when the board sees them. This is how the pilot is held to account.",
+      "statement": "The programme goes on only if the pilot shows that it works.",
+      "points": [
+        {
+          "point": "Churn among pilot accounts is under 3% a quarter",
+          "detail": "Small accounts lost 4.2% in the third quarter; the plan for the year is 2.5%."
+        },
+        {
+          "point": "Nine in ten pilot accounts finish setup within a week",
+          "detail": "Today six in ten do, and the accounts that do not are the ones that leave."
+        },
+        {
+          "point": "The cost stays within EUR 0.4 million for the year",
+          "detail": "Two specialists and their tools, with no change to the price list."
+        }
+      ]
+    },
+    {
+      "type": "next-steps",
+      "section": "Plan",
+      "title": "The board is asked for one approval; management owns the steps after it",
+      "notes": "State the one approval asked for. The steps after it are management's and need no decision today.",
+      "columns": ["Action", "Owner", "By"],
+      "steps": [
+        {
+          "action": "Approve EUR 0.4 million for guided onboarding",
+          "detail": "The one decision asked of the board today.",
+          "owner": "The board",
+          "date": "22 October 2026"
+        },
+        {
+          "action": "Hire two onboarding specialists",
+          "detail": "Both start before the pilot does.",
+          "owner": "Head of customer success",
+          "date": "30 November 2026"
+        },
+        {
+          "action": "Start the pilot with 40 new accounts",
+          "detail": "Every second new small account joins.",
+          "owner": "Head of customer success",
+          "date": "1 December 2026"
+        },
+        {
+          "action": "Report pilot churn to the board",
+          "detail": "With the three results the pilot is judged on.",
+          "owner": "Chief financial officer",
+          "date": "18 February 2027"
+        }
+      ]
+    },
+    {
+      "type": "closing",
+      "title": "One decision today: EUR 0.4 million for guided onboarding",
+      "notes": "Repeat the ask in one sentence and stop talking. Say whom to reach with questions after the meeting.",
+      "contact": ["Example Software Ltd", "board@software.example"],
+      "small": "Figures are unaudited management accounts as at 30 September 2026."
+    }
+  ]
+}

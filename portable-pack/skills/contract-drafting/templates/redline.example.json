@@ -1,0 +1,17 @@
+{
+  "source": "their-nda.docx",
+  "output": "their-nda-redline.docx",
+  "author": "Exempel Tryck AB",
+  "date": "2026-11-03T09:00:00Z",
+  "edits": [
+    {"find": "ten (10) years after termination", "replace": "three (3) years after termination",
+     "comment": "Our prices and plans change every year; three years after the agreement ends is enough."},
+    {"find": ", including back-up copies", "replace": ", except copies kept in routine back-ups or required by law, which stay confidential"},
+    {"after": "to its employees", "insert": " and professional advisers bound by a duty of confidentiality"},
+    {"find": "The Recipient shall be liable for any disclosure of Confidential Information, however caused.",
+     "replace": "The Recipient shall protect the Confidential Information with at least the care it uses for its own similar information, and no less than reasonable care."},
+    {"after_paragraph": "3.1 The obligations in clause 2",
+     "paragraph": "3.2 The obligations in clause 2 also do not apply to information which the Recipient already knew without a duty of confidentiality, develops independently, or receives from a third party without a duty of confidentiality.",
+     "comment": "The usual carve-outs, so information we already have stays ours to use."}
+  ]
+}

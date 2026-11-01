@@ -1,0 +1,57 @@
+{
+ "issuer": "icmje",
+ "version": "2026-01",
+ "link": "https://www.icmje.org/recommendations/browse/manuscript-preparation/preparing-for-submission.html",
+ "license": "The ICMJE Recommendations are (c) International Committee of Medical Journal Editors, all rights reserved. They are cited by section and restated in our own words; no text is quoted. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "ICMJE Recommendations: references in a medical manuscript",
+ "source": "Recommendations for the Conduct, Reporting, Editing, and Publication of Scholarly Work in Medical Journals, updated January 2026, section IV.A.3.g References (i general considerations, ii style and format), read 2026-10-09.",
+ "rules": [
+  {
+   "id": "ICMJE-01",
+   "grader": "script",
+   "text": "References are numbered consecutively in the order they are first mentioned in the text.",
+   "source": "IV.A.3.g.ii",
+   "check": "academic_style.py VANC-ORDER"
+  },
+  {
+   "id": "ICMJE-02",
+   "grader": "script",
+   "text": "In the text, tables and legends a reference is marked with an Arabic numeral, the same form throughout; a journal's own form (brackets, parentheses or superscript) wins.",
+   "source": "IV.A.3.g.ii",
+   "check": "academic_style.py VANC-MARKS"
+  },
+  {
+   "id": "ICMJE-03",
+   "grader": "script",
+   "text": "Journal titles are abbreviated in the style MEDLINE uses.",
+   "source": "IV.A.3.g.ii",
+   "check": "academic_style.py VANC-JOURNAL"
+  },
+  {
+   "id": "ICMJE-04",
+   "grader": "judge",
+   "text": "A reference cited only in a table or figure legend is numbered where that table or figure is first cited in the text.",
+   "source": "IV.A.3.g.ii"
+  },
+  {
+   "id": "ICMJE-05",
+   "grader": "judge",
+   "text": "A preprint is cited as a preprint; accepted work not yet published is marked in press or forthcoming.",
+   "source": "IV.A.3.g.i"
+  },
+  {
+   "id": "ICMJE-06",
+   "grader": "judge",
+   "text": "A personal communication is cited in the text only, with the person and the date, never in the list.",
+   "source": "IV.A.3.g.i"
+  },
+  {
+   "id": "ICMJE-07",
+   "grader": "judge",
+   "text": "The style follows NLM's sample references and Citing Medicine.",
+   "source": "IV.A.3.g.ii"
+  }
+ ]
+}

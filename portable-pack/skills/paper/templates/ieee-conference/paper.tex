@@ -1,0 +1,56 @@
+% IEEE conference paper. Starter file written for OpenPaperwork; it uses the IEEEtran class
+% that ships with the TeX distribution and copies nothing from IEEE's own template files.
+\documentclass[conference]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}   % Times for the math as well as the text
+\renewcommand{\rmdefault}{ptm}   % the Times family IEEEtran sets
+\renewcommand{\sfdefault}{phv}
+\renewcommand{\ttdefault}{pcr}
+
+\usepackage{newunicodechar}   % punctuation the Times fonts have no glyph for under XeTeX (tectonic)
+\newunicodechar{—}{\textemdash}\newunicodechar{–}{\textendash}\newunicodechar{…}{\ldots}
+\newunicodechar{‘}{\textquoteleft}\newunicodechar{’}{\textquoteright}
+\newunicodechar{“}{\textquotedblleft}\newunicodechar{”}{\textquotedblright}\newunicodechar{−}{\ensuremath{-}}
+
+\begin{document}
+\normalfont\rmfamily   % force it after the class has run
+
+\title{TITLE OF THE PAPER}
+
+% For blind review keep this block exactly as it is. For the final version, replace it with
+% \IEEEauthorblockN{Name} and \IEEEauthorblockA{Department, Organisation \\ City, Country \\ email}
+\author{\IEEEauthorblockN{Anonymous Author(s)}
+\IEEEauthorblockA{Submitted for blind review}}
+
+\maketitle
+
+\begin{abstract}
+ABSTRACT, one paragraph, no citations.
+\end{abstract}
+
+\begin{IEEEkeywords}
+first keyword, second keyword, third keyword
+\end{IEEEkeywords}
+
+\section{Introduction}
+TEXT. Cite with numbers in order of first appearance \cite{key1}.
+
+\section{Related Work}
+TEXT.
+
+\section{Conclusion}
+TEXT.
+
+% No acknowledgment section in a blind-review version.
+
+\begin{thebibliography}{00}
+\bibitem{key1} A. B. Author and C. Author, ``Title of the article,'' \emph{Abbrev. J. Name}, vol. 1, no. 2, pp. 3--4, 2020, doi: 10.0000/xxxx.
+\end{thebibliography}
+
+\end{document}

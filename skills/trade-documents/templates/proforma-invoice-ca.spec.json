@@ -1,0 +1,74 @@
+{
+  "type": "proforma_invoice",
+  "language": "en-CA",
+  "number": "PF-2026-0051",
+  "issue_date": "2026-10-13",
+  "references": [
+    {
+      "label": "Your purchase order",
+      "value": "PO-4471"
+    }
+  ],
+  "dates": [
+    {
+      "label": "Valid until",
+      "value": "2026-11-12"
+    }
+  ],
+  "currency": "CAD",
+  "seller": {
+    "name": "Granite Shield Instruments Ltd.",
+    "street": "220 Example Drive",
+    "postcode": "K2K 0A1",
+    "city": "Ottawa ON",
+    "country": "Canada",
+    "vat_id": "123456789 RT0001",
+    "email": "orders@granite-shield.example",
+    "phone": "613-555-0123"
+  },
+  "buyer": {
+    "name": "Lakeshore Survey Partners LLC",
+    "street": "18 Sample Lane",
+    "postcode": "14202",
+    "city": "Buffalo, NY",
+    "country": "US"
+  },
+  "delivery_terms": {
+    "rule": "CPT",
+    "place": "Buffalo, NY"
+  },
+  "transport": "road",
+  "payment_terms": "100 percent in advance by bank transfer",
+  "bank": {
+    "bank": "Example Bank of Canada",
+    "account": "Transit 00011, institution 001, account 1234567",
+    "bic": "EXAMCATT"
+  },
+  "lines": [
+    {
+      "code": "GS-77",
+      "description": "Survey-grade GNSS receiver",
+      "quantity": 2,
+      "unit": "pcs",
+      "unit_price": 9850.0,
+      "discount_percent": 0,
+      "vat_rate": 0,
+      "hs_code": "8526.91",
+      "origin": "Canada"
+    },
+    {
+      "code": "GS-12",
+      "description": "Carbon-fibre survey pole, 2 m",
+      "quantity": 2,
+      "unit": "pcs",
+      "unit_price": 420.0,
+      "discount_percent": 0,
+      "vat_rate": 0,
+      "hs_code": "9015.90",
+      "origin": "Canada"
+    }
+  ],
+  "notes": [
+    "Goods exported from Canada: no GST/HST is charged (zero-rated export)."
+  ]
+}

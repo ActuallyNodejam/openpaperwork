@@ -1,0 +1,1 @@
+Fictional wholesaler, September 2026 receivables. Match payments to invoices by the invoice number in Reference. A payment may cover part of an invoice. Do not write off, net or move an overpayment; flag it. A payment that matches no invoice goes on an Unmatched sheet for follow-up, never into an invoice.

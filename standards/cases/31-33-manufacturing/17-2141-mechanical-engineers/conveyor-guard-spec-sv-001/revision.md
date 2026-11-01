@@ -1,0 +1,1 @@
+Jonas har fått svar från bandleverantören: stopptiden är 0,8 s, så kravet blir att bandet står still inom 1 s efter att luckan öppnats och den punkten är inte längre öppen. Lina vill också ha en nödstoppsknapp på varje sida av skyddet. Uppdatera specifikationen.

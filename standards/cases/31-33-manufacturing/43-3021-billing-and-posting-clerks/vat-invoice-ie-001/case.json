@@ -1,0 +1,263 @@
+{
+ "id": "vat-invoice-ie-001",
+ "title": "An Irish VAT invoice at two rates for an access control service and training, as a page and a Peppol file",
+ "person": "The accounts assistant of a small Dublin access control firm invoicing a packaging company in Cork.",
+ "format": "pdf",
+ "output": "invoice.pdf",
+ "extra_outputs": [
+  "invoice.xml"
+ ],
+ "locale": "en-IE",
+ "sector": {
+  "naics": "32",
+  "name": "Manufacturing"
+ },
+ "occupation": {
+  "soc": "43-3021.00",
+  "name": "Billing and Posting Clerks"
+ },
+ "review": [
+  "Invoice INV-26-0458 of 12/10/2026, date of supply 06/10/2026: 4 h × €85.00 and 2 × €46.00 at 23%, €450.00 at 13.5%, €882.00 excluding VAT, VAT €99.36 and €60.75, €1,042.11 due; VAT No. IE1234567T."
+ ],
+ "revised_review": [
+  "6 hours: €1,052.00 excluding VAT, VAT €138.46 and €60.75, €1,251.21 due; nothing else changes."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "locale-date",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-DATE",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-DATE"
+   ],
+   "text": "Dates on the page are in the dd/MM/yyyy form."
+  },
+  {
+   "id": "locale-number",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-NUMBER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-NUMBER"
+   ],
+   "text": "Amounts use the locale's separators."
+  },
+  {
+   "id": "locale-paper",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-PAPER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-PAPER"
+   ],
+   "text": "The page is the locale's paper."
+  },
+  {
+   "id": "locale-order",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-LOCALE-ORDER",
+   "guidelines": [
+    "cen-en16931/2017#EINV-LOCALE-ORDER"
+   ],
+   "text": "The page is written in the language of the order itself."
+  },
+  {
+   "id": "page-din5008",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-DIN5008",
+   "guidelines": [
+    "din-5008/2020#EINV-PAGE-DIN5008"
+   ],
+   "text": "The page is laid out on the seller country's letter layout, or on the library's letter sheet (DIN 5008 Form B) where the library has none for it."
+  },
+  {
+   "id": "vat-label",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-VAT-LABEL",
+   "guidelines": [
+    "cen-en16931/2017#EINV-VAT-LABEL"
+   ],
+   "text": "Every VAT number on the page carries its label."
+  },
+  {
+   "id": "peppol",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PEPPOL",
+   "guidelines": [
+    "peppol-bis-billing/3.0#EINV-PEPPOL"
+   ],
+   "text": "The official Peppol BIS Billing 3.0 rules accept the UBL beside the page; skipped without them."
+  },
+  {
+   "id": "ie-vat-invoice",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "rule": "IE-VAT-INVOICE",
+   "guidelines": [
+    "ie-vat-invoice/2026#IE-VAT-INVOICE"
+   ],
+   "text": "The VAT number, both parties, the date of supply, each line's unit price and rate, the VAT per rate and the total on the page."
+  },
+  {
+   "id": "company-particulars",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PARTICULARS",
+   "guidelines": [
+    "invoice-company-particulars/2026-10#EINV-PARTICULARS"
+   ],
+   "text": "The page states what the seller's own company statute puts on an invoice; a particular the files do not give is declared unknown and printed nowhere."
+  },
+  {
+   "id": "only-what-was-done",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "Only the service visit, the two seals and the training are invoiced, at the agreed prices and rates; nothing is invented."
+  },
+  {
+   "id": "revision-kept",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-2"
+   ],
+   "text": "The revision changes the hours and the totals that follow, and nothing else."
+  }
+ ],
+ "truth": {
+  "number": "INV-26-0458",
+  "issue_date": "2026-10-12",
+  "due_date": "2026-11-11",
+  "delivery_date": "2026-10-06",
+  "currency": "EUR",
+  "payment_terms": "30 days net",
+  "order_reference": "PO 7782",
+  "seller": {
+   "name": "Sample Access Works Ltd",
+   "legal_form": "Ltd",
+   "street": "1 Sample Street",
+   "postcode": "D02 AB12",
+   "city": "Dublin",
+   "country": "IE",
+   "vat_id": "IE1234567T",
+   "register_number": "654321",
+   "registered_office": "1 Sample Street, Dublin 2",
+   "electronic_address": "9935:IE1234567T",
+   "contact": {
+    "name": "Aoife Example",
+    "phone": "+353 1 000 0000",
+    "email": "accounts@sampleaccess.example"
+   }
+  },
+  "buyer": {
+   "name": "Test Packaging Cork Ltd",
+   "street": "5 Trial Road",
+   "postcode": "T12 CD34",
+   "city": "Cork",
+   "country": "IE",
+   "vat_id": "IE7654321G",
+   "electronic_address": "9935:IE7654321G"
+  },
+  "payment": {
+   "means_code": "58",
+   "iban": "IE29 AIBK 9311 5212 3456 78",
+   "bic": "AIBKIE2D"
+  },
+  "doc": "invoice",
+  "type_code": "380",
+  "first": {
+   "lines": [
+    {
+     "name": "Access control service visit",
+     "quantity": 4,
+     "unit": "HUR",
+     "unit_price": 85.0,
+     "vat_rate": 23,
+     "vat_category": "S"
+    },
+    {
+     "name": "Replacement door reader",
+     "quantity": 2,
+     "unit": "C62",
+     "unit_price": 46.0,
+     "vat_rate": 23,
+     "vat_category": "S"
+    },
+    {
+     "name": "Fire safety training, half day",
+     "quantity": 1,
+     "unit": "C62",
+     "unit_price": 450.0,
+     "vat_rate": 13.5,
+     "vat_category": "S"
+    }
+   ]
+  },
+  "revision": {
+   "lines": [
+    {
+     "name": "Access control service visit",
+     "quantity": 6,
+     "unit": "HUR",
+     "unit_price": 85.0,
+     "vat_rate": 23,
+     "vat_category": "S"
+    },
+    {
+     "name": "Replacement door reader",
+     "quantity": 2,
+     "unit": "C62",
+     "unit_price": 46.0,
+     "vat_rate": 23,
+     "vat_category": "S"
+    },
+    {
+     "name": "Fire safety training, half day",
+     "quantity": 1,
+     "unit": "C62",
+     "unit_price": 450.0,
+     "vat_rate": 13.5,
+     "vat_category": "S"
+    }
+   ]
+  }
+ },
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "cen-en16931/2017",
+  "din-5008/2020",
+  "ie-vat-invoice/2026",
+  "peppol-bis-billing/3.0"
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and every business, VAT and bank number are invented and obviously fake.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen."
+}

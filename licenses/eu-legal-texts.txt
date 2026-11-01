@@ -1,0 +1,22 @@
+EU legal texts, reused under Commission Decision 2011/833/EU of 12 December 2011 on the reuse of
+Commission documents (https://eur-lex.europa.eu/eli/dec/2011/833/oj).
+(c) European Union, https://eur-lex.europa.eu/, 1998-2026
+
+Directive (EU) 2019/1152 of the European Parliament and of the Council of 20 June 2019 on transparent
+and predictable working conditions in the European Union, OJ L 186, 11.7.2019, p. 105.
+CELEX 32019L1152, https://eur-lex.europa.eu/eli/dir/2019/1152/oj
+Read 2026-10-08.
+
+Directive 2013/34/EU of the European Parliament and of the Council of 26 June 2013 on the annual
+financial statements, consolidated financial statements and related reports of certain types of
+undertakings, OJ L 182, 29.6.2013, p. 19.
+CELEX 32013L0034, https://eur-lex.europa.eu/eli/dir/2013/34/oj
+Read 2026-10-09.
+
+Only the legal texts published in the Official Journal of the European Union are authentic.
+Changes: Article 4(2) (a) to (o), Article 4(3), Article 5(1), Article 7(1) and (4) and Article 8 are restated in our
+own words in skills/_checks/employment_check.py, skills/employment-statement and
+standards/guidelines/eu-working-conditions; no text is copied whole.
+Articles 3(2), 4(1), 9(5), 10, 13, 14, 16(1) and 33 and the layouts of Annexes III and V of Directive
+2013/34/EU are restated in our own words in skills/_checks/annual_accounts_check.py,
+skills/annual-accounts and standards/guidelines/eu-accounting-directive; no text is copied whole.

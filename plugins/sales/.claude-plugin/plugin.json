@@ -1,0 +1,12 @@
+{
+  "name": "openpaperwork-sales",
+  "description": "Sales: quotations, order confirmations, delivery notes, pro forma invoices and purchase orders for Sweden, Norway, Denmark, Finland, Germany, Austria, the Netherlands, Belgium, France, Spain, Italy, Poland, the UK, Ireland, the US, Canada and Australia, each with the company details its own law asks for and a scripted check.",
+  "version": "0.1.0",
+  "author": {
+    "name": "OpenPaperwork"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "sales"
+  ]
+}

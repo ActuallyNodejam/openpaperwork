@@ -1,0 +1,61 @@
+{
+  "number": "2026-0412",
+  "issue_date": "2026-10-05",
+  "due_date": "2026-10-19",
+  "delivery_date": "2026-10-02",
+  "currency": "NOK",
+  "payment_terms": "14 days net",
+  "buyer_reference": "Kari Eksempel",
+  "seller": {
+    "name": "Fjordlys Rådgivning AS",
+    "legal_form": "AS",
+    "street": "Eksempelgata 1",
+    "postcode": "0150",
+    "city": "Oslo",
+    "country": "NO",
+    "org_number": "999 999 999",
+    "vat_id": "NO999999999MVA",
+    "electronic_address": "0192:999999999",
+    "registered_office": "Oslo",
+    "contact": {
+      "name": "Ola Eksempel",
+      "phone": "+47 22 00 00 00",
+      "email": "post@fjordlys.example"
+    }
+  },
+  "buyer": {
+    "name": "Nordkapp Verksted AS",
+    "street": "Prøvevegen 8",
+    "postcode": "9750",
+    "city": "Honningsvåg",
+    "country": "NO",
+    "org_number": "888 888 888",
+    "vat_id": "NO888888888MVA",
+    "electronic_address": "0192:888888888"
+  },
+  "payment": {
+    "means_code": "30",
+    "account": "8601.11.17947",
+    "kid": "20260410",
+    "iban": "NO93 8601 1117 947"
+  },
+  "lines": [
+    {
+      "name": "Rådgivning, prosjektstyring",
+      "quantity": 12,
+      "unit": "HUR",
+      "unit_price": 1450.0,
+      "vat_rate": 25,
+      "vat_category": "S"
+    },
+    {
+      "name": "Kurshefte, trykt",
+      "quantity": 20,
+      "unit": "C62",
+      "unit_price": 189.0,
+      "discount_percent": 10,
+      "vat_rate": 25,
+      "vat_category": "S"
+    }
+  ]
+}

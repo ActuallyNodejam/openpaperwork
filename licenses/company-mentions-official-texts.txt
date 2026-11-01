@@ -1,0 +1,54 @@
+Official statutory texts behind the company details on letters and trade documents for Belgium, the
+Netherlands, Austria and Ireland (wave 8) and for Spain, Italy and Poland (wave 9): skills/_shared/letter.py
+company_missing and company_lines, skills/_checks/letter_check.py LETTER-COMPANY, skills/trade-documents
+(company_warning). Each is cited by
+article and restated in our own words; no text is copied whole. Only the official publications are
+authentic.
+
+Belgium: Code des sociétés et des associations / Wetboek van vennootschappen en verenigingen (loi du
+23 mars 2019), art. 2:20: the name, the legal form, the seat, the enterprise number, "RPM" or "RPR"
+with the court of the seat, the e-mail address and website where there are any, and liquidation.
+Justel, https://www.ejustice.just.fgov.be, read 2026-10-09. Official acts are not protected by
+copyright in Belgium (Code de droit économique art. XI.172 § 2).
+
+Netherlands: Handelsregisterwet 2007 art. 27 (the KvK number on letters, orders, invoices, quotations
+and other announcements) and Burgerlijk Wetboek Boek 2 art. 186 (a BV's full name and seat), versions
+in force on 2026-10-09, https://wetten.overheid.nl/BWBR0021777 and BWBR0003045, read that day. Laws
+are not protected by copyright in the Netherlands (Auteurswet art. 11).
+
+Austria: Unternehmensgesetzbuch § 14 (1) to (4), as amended by BGBl. I Nr. 133/2024: the firm, the
+legal form, the seat, the Firmenbuch number and court, on business letters, order forms and websites.
+The GmbH-Gesetz asks for no managing directors there. RIS, https://www.ris.bka.gv.at, read 2026-10-09.
+Laws are not protected by copyright in Austria (Urheberrechtsgesetz § 7).
+
+Ireland: Companies Act 2014 (No. 38 of 2014) s.151 (1) and (2): every director's present forename or
+initials and surname, any former names, and nationality if not Irish; the name and legal form, the
+place of registration and number, and the registered office. Subsection (1) binds business letters,
+subsection (2) business letters and order forms. The European Communities (Companies) Regulations 1973
+(S.I. No. 163 of 1973), whose regulation 9 first carried the rule, were revoked whole by Schedule 2
+Part 2 of the 2014 Act. https://www.irishstatutebook.ie, read 2026-10-09. Contains Oireachtas
+information licensed under the Oireachtas (Open Data) PSI Licence, which incorporates the Creative
+Commons Attribution 4.0 International licence.
+
+Spain (wave 9): Código de Comercio (Real Decreto de 22 de agosto de 1885), art. 24: a business subject to
+registration states, on all its documents, correspondence, order notes and invoices, its domicile and
+the particulars of its entry in the Registro Mercantil; a company also its legal form and, where it
+applies, that it is in liquidation; a mention of the capital names the subscribed and the paid-up
+capital. BOE consolidated text (BOE-A-1885-6627), https://www.boe.es, read 2026-10-09; informative only,
+with no legal value. Not the object of intellectual property (Ley de Propiedad Intelectual art. 13).
+Basado en datos de la Agencia Estatal Boletín Oficial del Estado.
+
+Italy (wave 9): Codice civile (regio decreto 16 marzo 1942, n. 262), art. 2250, in force since 29 July
+2009: the acts and correspondence of a company that must be entered in the registro delle imprese state
+its seat, the register office and the number of its entry; an S.p.A., S.a.p.a. or S.r.l. its capital as
+paid up and as the last balance sheet shows it; that it is in liquidation; and an S.p.A. or S.r.l. that
+it has a sole shareholder. Normattiva, https://www.normattiva.it, read 2026-10-09. Outside the copyright
+law (legge 22 aprile 1941, n. 633, art. 5).
+
+Poland (wave 9): Ustawa z dnia 15 września 2000 r. – Kodeks spółek handlowych, art. 206 § 1 (a spółka z
+ograniczoną odpowiedzialnością) and art. 374 § 1 (a spółka akcyjna): letters and commercial orders, on
+paper or electronic, and the company's website state its name, seat and address, the registry court and
+the number of its entry, its NIP, its share capital (an S.A. also the paid-up capital) and the group of
+companies it belongs to. The Sejm's consolidated text of 3 June 2026 (t.j. Dz. U. z 2024 r. poz. 18,
+amended to Dz. U. z 2026 r. poz. 644), https://isap.sejm.gov.pl, read 2026-10-09. Not the object of
+copyright (ustawa o prawie autorskim i prawach pokrewnych art. 4 pkt 1).

@@ -1,0 +1,100 @@
+{
+  "issuer": "cen-en16931",
+  "version": "2017",
+  "link": "https://ec.europa.eu/digital-building-blocks/sites/spaces/DIGITAL/pages/467108971",
+  "license": "EN 16931-1:2017 is CEN's copyright, free to read under the 2018 licence agreement between the European Commission and CEN; rules are cited by their business-rule id and paraphrased, no text of the standard is copied. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-03",
+  "status": "draft",
+  "source": "EN 16931-1:2017, the European standard for the semantic model of an electronic invoice, in the UN/CEFACT Cross Industry Invoice syntax used by Factur-X and ZUGFeRD. Rule identifiers such as BR-CO-15 are cited from the standard; no standard text is copied. The credit note rules (INV-CREDIT-*) restate business rules BR-55 and BR-CO-10 to BR-CO-18 by id. EINV-VALID runs the Mustang validator (Apache-2.0), a separate optional tool. A revision, EN 16931-1:2026, was approved by CEN's formal vote in March 2026 (https://ec.europa.eu/newsroom/digital/items/930407/en); the 2017 edition stays valid while it is brought in, and this set moves to it once Peppol BIS Billing validates against it.",
+  "rules": [
+    {
+      "id": "EINV-VALID",
+      "grader": "script",
+      "text": "The file validates as an EN 16931 invoice in an open-source validator, with no errors."
+    },
+    {
+      "id": "EINV-HEAD",
+      "grader": "script",
+      "text": "Invoice number, issue and due dates, seller, buyer, their VAT identifiers and the currency are as given."
+    },
+    {
+      "id": "EINV-LINES",
+      "grader": "script",
+      "text": "Every line is present with its quantity, VAT rate and a net amount rounded to two decimals."
+    },
+    {
+      "id": "EINV-VAT",
+      "grader": "script",
+      "text": "The VAT breakdown has one entry per category and rate, with VAT calculated on the sum of that group's line nets."
+    },
+    {
+      "id": "EINV-TOTALS",
+      "grader": "script",
+      "text": "The totals without VAT, of VAT and with VAT are stated and correct."
+    },
+    {
+      "id": "EINV-PAGE-TRACE",
+      "grader": "script",
+      "script": "einvoice_page.py",
+      "text": "Every number printed on the invoice page traces to the invoice data."
+    },
+    {
+      "id": "EINV-PAGE-NO-EXTRA",
+      "grader": "script",
+      "script": "einvoice_page.py",
+      "text": "No field appears on the invoice page unless the invoice data carries it."
+    },
+    {
+      "id": "EINV-PAGE-COMPLETE",
+      "grader": "script",
+      "script": "einvoice_page.py",
+      "text": "Invoice number, dates, both parties and their VAT identifiers, the payment account, every line, the totals and the VAT breakdown reach the page."
+    },
+    {
+      "id": "EINV-VAT-LABEL",
+      "text": "A VAT id on the page carries the label of the page's own language: USt-IdNr. DE123456789 on a German page, VAT ID on an English one, never a bare number.",
+      "source": "EN 16931-1:2017 seller and buyer VAT identifier (BT-31, BT-48), written the way the trade documents of that country write it",
+      "check": "einvoice_page.py EINV-VAT-LABEL"
+    },
+    {
+      "id": "EINV-LOCALE-ORDER",
+      "text": "The page is written in the customer's language when the order names one, else the seller's country's; an override that disagrees fails the check.",
+      "source": "Directive 2006/112/EC Art. 219a and 248a, see eu-vat-directive/2006-112#EINV-LANGUAGE; EN 16931 seller and buyer country codes (BT-40, BT-55)",
+      "check": "einvoice_page.py EINV-LOCALE-ORDER"
+    },
+    {
+      "id": "EINV-PAGE-KIND",
+      "text": "A credit note's page calls itself a credit note in the page's language and names the invoice it corrects.",
+      "source": "EN 16931-1:2017 invoice type code (BT-3, 381 credit note) and preceding invoice reference (BT-25)",
+      "check": "einvoice_page.py EINV-PAGE-KIND"
+    },
+    {
+      "id": "INV-CREDIT-TYPE",
+      "grader": "script",
+      "script": "credit_note_check.py",
+      "text": "A credit note is invoice type 381, never a 380 invoice with minus amounts, and has a number of its own that is not the number of the invoice it amends; its page calls itself a credit note.",
+      "source": "EN 16931-1:2017 invoice number (BT-1) and invoice type code (BT-3, UNTDID 1001 code 381)"
+    },
+    {
+      "id": "INV-CREDIT-REF",
+      "grader": "script",
+      "script": "credit_note_check.py",
+      "text": "A credit note names the invoice it amends by number and issue date, in the XML and on its page.",
+      "source": "EN 16931-1:2017 preceding invoice reference (BG-3: BT-25 and BT-26) and BR-55, which requires the number in every preceding invoice reference; see eu-vat-directive/2006-112#INV-CREDIT-AMENDS"
+    },
+    {
+      "id": "INV-CREDIT-SIGN",
+      "grader": "script",
+      "script": "credit_note_check.py",
+      "text": "A credit note's amounts and quantities are positive: its type code already says the money goes back, so a minus would reverse it twice.",
+      "source": "EN 16931-1:2017 invoice type code (BT-3) with the document totals (BG-22)"
+    },
+    {
+      "id": "INV-CREDIT-VAT",
+      "grader": "script",
+      "script": "credit_note_check.py",
+      "text": "The VAT is broken down once per category and rate: each group's taxable amount is the sum of its line nets, its VAT is that amount times the rate rounded to two decimals, and the totals without VAT, of VAT, with VAT and due add up.",
+      "source": "EN 16931-1:2017 BR-CO-10, BR-CO-13, BR-CO-14, BR-CO-15, BR-CO-16, BR-CO-17, BR-CO-18 and the category rules BR-S-08, BR-Z-08, BR-E-08, BR-AE-08, BR-K-08, BR-G-08; cited by id, not copied"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "id": "invoice-001",
+  "title": "Issue an invoice with mixed VAT rates",
+  "format": "xlsx",
+  "output": "invoice.xlsx",
+  "person": "A billing clerk issuing an invoice from an order export.",
+  "sector": {
+    "naics": "54",
+    "name": "Professional, Scientific, and Technical Services"
+  },
+  "occupation": {
+    "soc": "43-3021.00",
+    "name": "Billing and Posting Clerks"
+  },
+  "truth": {
+    "reverse_charge": {
+      "first": false,
+      "revision": true
+    },
+    "header": {
+      "first": {
+        "Invoice number": "2026-0412",
+        "Issue date": "2026-10-05",
+        "Due date": "2026-11-04",
+        "Seller": "Northwind Studio AB",
+        "Seller VAT ID": "SE556677889901",
+        "Buyer": "Lindqvist Print AB",
+        "Buyer VAT ID": "SE559988776601",
+        "Currency": "EUR"
+      },
+      "revision": {
+        "Buyer": "Lindqvist Group ApS",
+        "Buyer VAT ID": "DK12345678"
+      }
+    },
+    "note": {
+      "first": "",
+      "revision": "Reverse charge"
+    }
+  },
+  "review": [
+    "Header values, lines, the per-rate VAT table and totals are correct and formula-driven."
+  ],
+  "revised_review": [
+    "The Danish buyer, zero VAT, the reverse charge note and the new totals are in place."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.3.0#FMT-1",
+        "openpaperwork/0.3.0#FMT-2",
+        "openpaperwork/0.3.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "inv-head",
+      "stage": "both",
+      "grader": "script",
+      "script": "invoice.py",
+      "rule": "INV-HEAD",
+      "guidelines": [
+        "openpaperwork/0.3.0#INV-HEAD"
+      ],
+      "text": "The invoice shows its number, dates, parties, VAT IDs and currency as given."
+    },
+    {
+      "id": "inv-lines",
+      "stage": "both",
+      "grader": "script",
+      "script": "invoice.py",
+      "rule": "INV-LINES",
+      "guidelines": [
+        "openpaperwork/0.3.0#INV-LINES"
+      ],
+      "text": "Every line shows quantity, price, discount, rate and a net amount rounded to two decimals, as a formula."
+    },
+    {
+      "id": "inv-vat",
+      "stage": "both",
+      "grader": "script",
+      "script": "invoice.py",
+      "rule": "INV-VAT",
+      "guidelines": [
+        "openpaperwork/0.3.0#INV-VAT"
+      ],
+      "text": "VAT is calculated once per rate on the sum of that rate's line nets, as formulas."
+    },
+    {
+      "id": "inv-totals",
+      "stage": "both",
+      "grader": "script",
+      "script": "invoice.py",
+      "rule": "INV-TOTALS",
+      "guidelines": [
+        "openpaperwork/0.3.0#INV-TOTALS"
+      ],
+      "text": "Totals excluding VAT, VAT and including VAT are correct formulas."
+    },
+    {
+      "id": "recalc",
+      "stage": "both",
+      "grader": "recalc",
+      "guidelines": [
+        "openpaperwork/0.3.0#CALC-1"
+      ],
+      "text": "After raising the Courier quantity by one in a copy, recalculation in LibreOffice raises its net amount by its unit price.",
+      "recalc": {
+        "edit": {
+          "sheet": "Invoice",
+          "key_col": "Description",
+          "key": "Courier",
+          "col": "Quantity",
+          "delta": 1
+        },
+        "check": {
+          "sheet": "Invoice",
+          "key_col": "Description",
+          "key": "Courier",
+          "col": "Net amount",
+          "factor": 89.9
+        }
+      }
+    },
+    {
+      "id": "print-width",
+      "stage": "both",
+      "grader": "render",
+      "guidelines": [
+        "openpaperwork/0.3.0#PAGE-1"
+      ],
+      "max_pages": "sheets",
+      "text": "The invoice prints on one page."
+    },
+    {
+      "id": "readable",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.3.0#READ-1"
+      ],
+      "text": "The invoice reads as an invoice: labels, currency and dates are clear, and the seller and buyer addresses appear."
+    }
+  ],
+  "status": "draft",
+  "locale": "en",
+  "version": "1.2.0",
+  "guidelines": [
+    "openpaperwork/0.3.0",
+    "every-file/1.1.0"
+  ],
+  "source": "Synthetic material created for this evaluation pack; no customer inputs.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen."
+}

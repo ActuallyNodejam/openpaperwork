@@ -1,0 +1,40 @@
+Tallbacka Projektledning AB, 556000-0002
+Saldobalans per 2025-12-31 (kronor; debet positivt, kredit negativt). Bokslutet är bokat, resultatet är inte överfört.
+
+Konto  Benämning                                   Saldo
+1220   Inventarier                                 45 000
+1229   Ackumulerade avskrivningar inventarier     -18 000
+1510   Kundfordringar                             241 000
+1630   Avräkning skattekonto                        8 600
+1790   Förutbetalda kostnader                      24 000
+1930   Företagskonto                              645 000
+2081   Aktiekapital                               -25 000
+2091   Balanserad vinst                          -251 000
+2123   Periodiseringsfond tax 2023                -60 000
+2124   Periodiseringsfond tax 2024                -50 000
+2125   Periodiseringsfond tax 2025                -60 000
+2440   Leverantörsskulder                         -21 300
+2510   Skatteskulder                              -14 500
+2650   Redovisningskonto för moms                 -28 900
+2710   Personalskatt                              -32 400
+2731   Avräkning lagstadgade sociala avgifter     -27 600
+2920   Upplupna semesterlöner                     -96 300
+2990   Övriga upplupna kostnader                  -45 300
+3041   Försäljning tjänster                    -1 680 000
+5010   Lokalhyra                                   96 000
+5611   Drivmedel och bilkostnader                  38 400
+6110   Kontorsmateriel                             14 200
+6212   Mobiltelefon                                11 600
+6310   Företagsförsäkringar                         5 800
+6540   IT-tjänster                                 22 800
+6570   Bankkostnader                                1 400
+6991   Övriga externa kostnader                    23 800
+7210   Löner till tjänstemän                      790 000
+7412   Premier för tjänstepension                  54 000
+7510   Arbetsgivaravgifter                        248 000
+7533   Särskild löneskatt för pensionskostnader    13 000
+7832   Avskrivningar på inventarier                 9 000
+8311   Ränteintäkter                               -1 800
+8811   Avsättning till periodiseringsfond          60 000
+8910   Skatt på årets resultat                     60 500
+       Summa                                            0

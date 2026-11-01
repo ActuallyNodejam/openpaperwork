@@ -1,0 +1,72 @@
+{
+  "issuer": "it-codice-civile",
+  "version": "2026",
+  "link": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262",
+  "license": "Italian official acts of the State, outside the copyright law (legge 22 aprile 1941, n. 633, art. 5); restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-10",
+  "status": "draft",
+  "title": "Codice civile arts. 2371, 2375, 2479-bis, 2421 and 2478, and arts. 2250 and 2497-bis: the verbale of an assembly, the company's books, and what a company states in its correspondence",
+  "source": "Codice civile, Regio decreto 16 marzo 1942, n. 262, text in force read article by article on Normattiva on 2026-10-10 (https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262): art. 2250 in force from 29 July 2009, arts. 2371, 2375 and 2421 from 1 January 2004, art. 2478 from 7 April 2010, art. 2479-bis from 30 March 2009, art. 2497-bis from 29 February 2004.",
+  "rules": [
+    {
+      "id": "IT-MIN-01",
+      "grader": "script",
+      "text": "The resolutions of an S.p.A.'s assembly stand in a verbale signed by the chair and by the secretary or the notary.",
+      "source": "Codice civile art. 2375, first paragraph",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "IT-MIN-02",
+      "grader": "script",
+      "text": "The verbale gives the date of the assembly and, in it or attached, who took part and the capital each stood for.",
+      "source": "Codice civile art. 2375, first paragraph",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "IT-MIN-03",
+      "grader": "script",
+      "text": "It says how the votes were cast and what their result was, and lets one tell, in it or attached, which members were for, which abstained and which dissented.",
+      "source": "Codice civile art. 2375, first paragraph",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "IT-MIN-04",
+      "grader": "script",
+      "text": "The chair checks that the assembly is properly constituted, the identity and the standing of those present and the results of the votes, and the verbale gives account of those findings (an S.p.A. and an S.r.l.).",
+      "source": "Codice civile art. 2371, first paragraph; art. 2479-bis, fourth paragraph",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "IT-MIN-05",
+      "grader": "judge",
+      "text": "A member's statements on the agenda are summarised in the verbale when the member asks.",
+      "source": "Codice civile art. 2375, first paragraph"
+    },
+    {
+      "id": "IT-MIN-06",
+      "grader": "judge",
+      "text": "The verbale of an extraordinary assembly is drawn up by a notary. A file written here is a working record and the reply says so.",
+      "source": "Codice civile art. 2375, second paragraph"
+    },
+    {
+      "id": "IT-MIN-07",
+      "grader": "judge",
+      "text": "The verbale is drawn up without delay, in time for the filings and publications that depend on it, and entered in the company's book of assemblies; a board's meetings and resolutions go in the board's book. The code sets no contents for a board's verbale, and the check says so.",
+      "source": "Codice civile art. 2375, third paragraph; arts. 2421 and 2478"
+    },
+    {
+      "id": "IT-CO-01",
+      "grader": "script",
+      "text": "A company subject to registration states in its documents and correspondence its seat, the register office where it is entered and its registration number; an S.p.A., an S.a.p.a. and an S.r.l. state the capital as paid up and as shown in the last balance sheet, and an S.p.A. or S.r.l. whether it has a sole shareholder; after dissolution, that it is in liquidation.",
+      "source": "Codice civile art. 2250",
+      "check": "letter_check.py LETTER-COMPANY"
+    },
+    {
+      "id": "IT-CO-02",
+      "grader": "script",
+      "text": "A company names in its documents and correspondence the company or body whose direction and coordination it is under.",
+      "source": "Codice civile art. 2497-bis, first paragraph",
+      "check": "letter_check.py LETTER-COMPANY"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "language": "pl",
+  "country": "PL",
+  "body": "Przykład Druk sp. z o.o.",
+  "company_number": "0000000000",
+  "meeting": "board",
+  "number": "9/2026",
+  "date": "2026-10-14",
+  "start": "9:00",
+  "end": "9:50",
+  "place": "ul. Przykładowa 5, Warszawa",
+  "chair": "Agnieszka Sowa",
+  "secretary": "Tomasz Wrona",
+  "present": [
+    "Agnieszka Sowa",
+    "Marek Zając",
+    "Tomasz Wrona"
+  ],
+  "quorum": true,
+  "items": [
+    {
+      "title": "Budżet na rok 2027",
+      "notes": "Prezes zarządu przedstawiła projekt budżetu na rok 2027, zakładający przychody w wysokości 18 mln zł.",
+      "decisions": [
+        {
+          "text": "przyjąć budżet spółki na rok 2027",
+          "unanimous": true
+        }
+      ]
+    },
+    {
+      "title": "Zakup cyfrowej maszyny drukującej",
+      "notes": "Omówiono dwie oferty na zastąpienie maszyny z 2014 roku.",
+      "decisions": [
+        {
+          "text": "zawrzeć umowę zakupu cyfrowej maszyny drukującej za cenę nie wyższą niż 1,6 mln zł",
+          "for": [
+            "Agnieszka Sowa",
+            "Tomasz Wrona"
+          ],
+          "against": [
+            "Marek Zając"
+          ]
+        }
+      ],
+      "dissent": [
+        {
+          "name": "Marek Zając",
+          "text": "uważa, że zakup należy odłożyć do czasu zatwierdzenia wyników za rok 2026"
+        }
+      ]
+    }
+  ]
+}

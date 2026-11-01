@@ -1,0 +1,271 @@
+{
+  "issuer": "uk-analysis-function",
+  "version": "2021",
+  "link": "https://analysisfunction.civilservice.gov.uk/policy-store/releasing-statistics-in-spreadsheets/",
+  "license": "Contains public sector information licensed under the Open Government Licence v3.0; the rules are restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-08",
+  "status": "draft",
+  "title": "Releasing statistics in spreadsheets",
+  "source": "UK Government Analysis Function (Analysis Function Central Team, ONS), Releasing statistics in spreadsheets, published 30 June 2021, read 2026-10-08.",
+  "note": "Scope 'every' applies to any workbook and the app checks the scripted ones; scope 'statistics' applies to a published statistics table.",
+  "rules": [
+    {
+      "id": "UKSS-01",
+      "grader": "judge",
+      "scope": "statistics",
+      "text": "Every data table is marked up as an Excel table with a header row.",
+      "source": "Marking up tables"
+    },
+    {
+      "id": "UKSS-02",
+      "grader": "judge",
+      "scope": "statistics",
+      "text": "Tables have meaningful names, a plain style and no filter buttons.",
+      "source": "Naming tables; Make the default table accessible"
+    },
+    {
+      "id": "UKSS-03",
+      "grader": "script",
+      "scope": "every",
+      "text": "No merged or split cells and no tables inside tables.",
+      "source": "Merged and split cells and nested tables",
+      "check": "sheet_check.py SHEET-MERGED"
+    },
+    {
+      "id": "UKSS-04",
+      "grader": "judge",
+      "scope": "every",
+      "text": "No fully blank row or column inside a table.",
+      "source": "Blank rows and columns within tables"
+    },
+    {
+      "id": "UKSS-05",
+      "grader": "script",
+      "scope": "every",
+      "text": "One header row, and every column has its own unique text heading.",
+      "source": "Column headings",
+      "check": "sheet_check.py SHEET-HEADINGS"
+    },
+    {
+      "id": "UKSS-06",
+      "grader": "judge",
+      "scope": "every",
+      "text": "The same variable carries the same heading everywhere in the workbook.",
+      "source": "Consistency in column headings"
+    },
+    {
+      "id": "UKSS-07",
+      "grader": "judge",
+      "scope": "every",
+      "text": "Units go in round brackets after the heading.",
+      "source": "Units"
+    },
+    {
+      "id": "UKSS-08",
+      "grader": "judge",
+      "scope": "every",
+      "text": "One precision per column, thousands separated, a leading zero before a decimal point.",
+      "source": "Comparing numbers; Rounding"
+    },
+    {
+      "id": "UKSS-09",
+      "grader": "judge",
+      "scope": "every",
+      "text": "Totals sit at the edge of a table.",
+      "source": "Summary rows and columns"
+    },
+    {
+      "id": "UKSS-10",
+      "grader": "judge",
+      "scope": "statistics",
+      "text": "Avoid filters and freeze panes; if used, say so in column A above the table.",
+      "source": "Adding filters; Adding freeze panes"
+    },
+    {
+      "id": "UKSS-11",
+      "grader": "script",
+      "scope": "every",
+      "text": "A cell with no data is blank for one explained reason or carries a bracketed shorthand such as [x]; never '..', '-' or 'NA'.",
+      "source": "Cells with no data",
+      "check": "sheet_check.py SHEET-NUMBERS"
+    },
+    {
+      "id": "UKSS-12",
+      "grader": "judge",
+      "scope": "statistics",
+      "text": "No superscripts or symbols as markers; write [note 1] and explain shorthand in column A.",
+      "source": "Symbols, footnotes and codes"
+    },
+    {
+      "id": "UKSS-13",
+      "grader": "script",
+      "scope": "every",
+      "text": "Markers stay out of data cells, so a column of numbers holds numbers only.",
+      "source": "Signposting with note markers",
+      "check": "sheet_check.py SHEET-NUMBERS"
+    },
+    {
+      "id": "UKSS-14",
+      "grader": "judge",
+      "scope": "statistics",
+      "text": "Detailed notes go in a table on a sheet named Notes.",
+      "source": "Placement of detailed note text"
+    },
+    {
+      "id": "UKSS-15",
+      "grader": "judge",
+      "scope": "statistics",
+      "text": "A code sits in its own labelled cell, apart from its name and the data.",
+      "source": "Classifications and geography codes"
+    },
+    {
+      "id": "UKSS-16",
+      "grader": "judge",
+      "scope": "every",
+      "text": "Colour, shading or patterns are never the only way meaning is shown.",
+      "source": "Formatting"
+    },
+    {
+      "id": "UKSS-17",
+      "grader": "judge",
+      "scope": "every",
+      "text": "No vertical or diagonal text and no letter-spaced words.",
+      "source": "Formatting"
+    },
+    {
+      "id": "UKSS-18",
+      "grader": "script",
+      "scope": "every",
+      "text": "No hidden rows or columns unless column A explains them.",
+      "source": "Formatting",
+      "check": "sheet_check.py SHEET-HIDDEN"
+    },
+    {
+      "id": "UKSS-19",
+      "grader": "judge",
+      "scope": "statistics",
+      "text": "Text of 10 point or more in a sans-serif face, in the automatic colour, without italics or underlining.",
+      "source": "Formatting"
+    },
+    {
+      "id": "UKSS-20",
+      "grader": "judge",
+      "scope": "every",
+      "text": "Text is left-aligned; figures and their headings are right-aligned.",
+      "source": "Formatting"
+    },
+    {
+      "id": "UKSS-21",
+      "grader": "judge",
+      "scope": "every",
+      "text": "No indents made with the indent tool and no leading or trailing spaces in cells or sheet names.",
+      "source": "Machine readability"
+    },
+    {
+      "id": "UKSS-22",
+      "grader": "judge",
+      "scope": "statistics",
+      "text": "Periods are written out, such as Jan to Mar 2020, with full years and no dashes.",
+      "source": "Dates and time periods"
+    },
+    {
+      "id": "UKSS-23",
+      "grader": "judge",
+      "scope": "every",
+      "text": "Link text says where it goes, never 'click here' or a bare long address.",
+      "source": "Hyperlink text"
+    },
+    {
+      "id": "UKSS-24",
+      "grader": "judge",
+      "scope": "statistics",
+      "text": "Avoid images, logos and text boxes, and keep nothing important in headers or footers.",
+      "source": "Images; Other things to avoid"
+    },
+    {
+      "id": "UKSS-25",
+      "grader": "judge",
+      "scope": "statistics",
+      "text": "A complex workbook opens with a cover sheet and a table of contents.",
+      "source": "Cover sheet and table of contents"
+    },
+    {
+      "id": "UKSS-26",
+      "grader": "script",
+      "scope": "every",
+      "text": "Sheet names are unique and say what is on the sheet, and no sheet is blank.",
+      "source": "Worksheet names; Blank worksheets",
+      "check": "sheet_check.py SHEET-EMPTY"
+    },
+    {
+      "id": "UKSS-27",
+      "grader": "judge",
+      "scope": "statistics",
+      "text": "Cell A1 says what the sheet holds and A2 describes it.",
+      "source": "Information in column A; Where to place titles"
+    },
+    {
+      "id": "UKSS-28",
+      "grader": "judge",
+      "scope": "statistics",
+      "text": "A table starts in column A, with nothing below it.",
+      "source": "Positioning tables"
+    },
+    {
+      "id": "UKSS-29",
+      "grader": "judge",
+      "scope": "statistics",
+      "text": "One table per sheet, titled with the data, the period and the place.",
+      "source": "Titles"
+    },
+    {
+      "id": "UKSS-30",
+      "grader": "judge",
+      "scope": "statistics",
+      "text": "With several tables on a sheet, A2 gives their number and each has its own title.",
+      "source": "Worksheets with multiple tables"
+    },
+    {
+      "id": "UKSS-31",
+      "grader": "judge",
+      "scope": "statistics",
+      "text": "The cover gives the title, a summary, the source, the dates, the revision status and a contact, in column A.",
+      "source": "Cover sheet"
+    },
+    {
+      "id": "UKSS-32",
+      "grader": "judge",
+      "scope": "statistics",
+      "text": "Confidence bounds and significance go in their own labelled cells, in words rather than asterisks.",
+      "source": "Communicating uncertainty"
+    },
+    {
+      "id": "UKSS-33",
+      "grader": "judge",
+      "scope": "statistics",
+      "text": "A published table carries no macros, and its formulas are replaced by their values.",
+      "source": "Macros, formulas and application code"
+    },
+    {
+      "id": "UKSS-34",
+      "grader": "judge",
+      "scope": "statistics",
+      "text": "Saved with the cursor in A1 on every sheet and the first sheet active.",
+      "source": "Saving and publishing"
+    },
+    {
+      "id": "UKSS-35",
+      "grader": "judge",
+      "scope": "every",
+      "text": "The workbook's title and language are set in its properties.",
+      "source": "Document information"
+    },
+    {
+      "id": "UKSS-36",
+      "grader": "judge",
+      "scope": "statistics",
+      "text": "File names are short, lowercase and joined by dashes, without draft, final or a version.",
+      "source": "File names"
+    }
+  ]
+}

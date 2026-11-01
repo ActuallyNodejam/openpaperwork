@@ -1,0 +1,32 @@
+{
+  "issuer": "cbca",
+  "version": "1985-c44",
+  "link": "https://laws-lois.justice.gc.ca/eng/acts/C-44/",
+  "license": "Federal law reproduced under the Reproduction of Federal Law Order (SI/97-5), not an official version; restated in our own words. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Canada Business Corporations Act ss.20, 114 and 117",
+  "source": "Canada Business Corporations Act, R.S.C. 1985, c. C-44, current to 2026-09-21, English and French versions. Read on laws-lois.justice.gc.ca 2026-10-09.",
+  "rules": [
+    {
+      "id": "CA-MIN-01",
+      "grader": "judge",
+      "text": "The corporation keeps the minutes of the directors' meetings and resolutions (procès-verbaux des réunions et résolutions du conseil d'administration).",
+      "source": "s.20(2)"
+    },
+    {
+      "id": "CA-MIN-02",
+      "grader": "script",
+      "text": "The directors act only with a quorum, a majority of the number of directors unless the articles or by-laws say otherwise; the minutes say one was present.",
+      "source": "s.114(2)",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "CA-MIN-03",
+      "grader": "script",
+      "text": "A resolution in writing signed by every director entitled to vote is as valid as one passed at a meeting, and a copy is kept with the minutes.",
+      "source": "s.117(1), (2)",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    }
+  ]
+}

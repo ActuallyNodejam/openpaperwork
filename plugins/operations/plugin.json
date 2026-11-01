@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "openpaperwork-operations",
+  "version": "0.1.0",
+  "description": "Operations: business letters for Germany and Sweden (DIN 5008), Norway, Denmark, Finland, the US, the UK, Canada, Australia, Belgium, the Netherlands, Austria, Ireland, Spain, Italy and Poland, meeting minutes and company board and general-meeting minutes for the same countries except Germany, and decisions read out of a WhatsApp export.",
+  "author": {
+    "name": "OpenPaperwork"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "operations"
+  ]
+}

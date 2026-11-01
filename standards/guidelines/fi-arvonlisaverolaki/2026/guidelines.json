@@ -1,0 +1,18 @@
+{
+ "issuer": "fi-arvonlisaverolaki",
+ "version": "2026",
+ "link": "https://www.finlex.fi/fi/lainsaadanto/1993/1501",
+ "license": "Finnish law is free of copyright (tekijänoikeuslaki 9 §); notice licenses/einvoice-nordic-official-texts.txt. Restated in our own words; the mark Käännetty verovelvollisuus is quoted. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "What a Finnish invoice states",
+ "source": "Arvonlisäverolaki (1501/1993) 209 e § and 209 f § (the simplified invoice up to 400 euros, cited), as Verohallinto's guidance \"Laskutusvaatimukset arvonlisäverotuksessa\" restates them. Read 2026-10-09.",
+ "rules": [
+  {
+   "id": "FI-INVOICE",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "text": "The seller's Y-tunnus (check digit) and VAT identifier, both parties' names and addresses, number, date, delivery date and the VAT per rate on the page; Käännetty verovelvollisuus and the buyer's VAT identifier for a reverse charge; a credit note names the invoice it amends."
+  }
+ ]
+}

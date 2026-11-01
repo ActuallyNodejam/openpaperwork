@@ -1,0 +1,207 @@
+{
+ "id": "annual-accounts-en-001",
+ "title": "Prepare the annual report for a small bookshop with a loss and a shareholder contribution",
+ "person": "The owner of a small bookshop by the harbour in Ystad who wants the annual report in English for a co-owner who reads no Swedish.",
+ "format": "docx",
+ "output": "annual-report-2025.docx",
+ "locale": "en",
+ "sector": {
+  "naics": "44-45",
+  "name": "Retail Trade"
+ },
+ "occupation": {
+  "soc": "41-1011.00",
+  "name": "First-Line Supervisors of Retail Sales Workers"
+ },
+ "review": [
+  "Hamnbodens Bokhandel AB, 556000-0003, calendar year 2025 under K2, in English: net sales SEK 968,000, a loss of SEK 114,200 (2024: loss of SEK 3,400); the SEK 120,000 shareholder contribution shown in the changes in equity under retained earnings; total assets SEK 246,400 (2024: 259,800); SEK 41,300 carried forward and no dividend; floating charges of SEK 150,000 as pledged assets; signed in Ystad on 15 April 2026 by Elin Persson and Tomas Ek."
+ ],
+ "revised_review": [
+  "The unbooked SEK 14,000 supplier invoice is added: other external expenses SEK 301,000, a loss of SEK 128,200, trade payables SEK 47,800, equity SEK 52,300 and SEK 27,300 carried forward; total assets stay SEK 246,400."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "parts",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-PARTS",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-01",
+    "arsredovisningslagen/1995-1554#ARL-15",
+    "eu-accounting-directive/2013-34#ACC-01",
+    "bfn-k2/2016-10#K2-01",
+    "bfn-k2/2016-10#K2-05"
+   ],
+   "text": "Management report (business, events, multi-year overview, changes in equity, disposition), income statement, balance sheet, notes and signatures, in that order, with the name and organisation number."
+  },
+  {
+   "id": "amounts",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-AMOUNTS",
+   "guidelines": [
+    "bfn-k2/2016-10#K2-02"
+   ],
+   "text": "Amounts in whole kronor, the unit stated once and kept."
+  },
+  {
+   "id": "years",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-YEARS",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-05",
+    "eu-accounting-directive/2013-34#ACC-02"
+   ],
+   "text": "Last year's figures beside this year's on every line, taken from last year's report."
+  },
+  {
+   "id": "sums",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-SUMS",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-07"
+   ],
+   "text": "Every subtotal and result line adds up, both years."
+  },
+  {
+   "id": "balance",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-BALANCE",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-06"
+   ],
+   "text": "Total assets SEK 246,400 equal equity and liabilities (2024: 259,800), before and after the revision."
+  },
+  {
+   "id": "result",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-RESULT",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-08"
+   ],
+   "text": "The year's result is the same in every place it appears."
+  },
+  {
+   "id": "equity",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-EQUITY",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-16",
+    "bfn-k2/2016-10#K2-06"
+   ],
+   "text": "The changes in equity run from last year's balance sheet to this year's."
+  },
+  {
+   "id": "disposition",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-DISPOSITION",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-17",
+    "bfn-k2/2016-10#K2-07"
+   ],
+   "text": "SEK 41,300 at the meeting's disposal, all carried forward (revision: SEK 27,300)."
+  },
+  {
+   "id": "notes",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-NOTES",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-09",
+    "arsredovisningslagen/1995-1554#ARL-10",
+    "arsredovisningslagen/1995-1554#ARL-13",
+    "eu-accounting-directive/2013-34#ACC-06",
+    "eu-accounting-directive/2013-34#ACC-09",
+    "bfn-k2/2016-10#K2-08"
+   ],
+   "text": "Accounting policies, average number of employees and the fixed-asset note, numbered in order, the carrying amount matching the balance sheet."
+  },
+  {
+   "id": "signed",
+   "stage": "both",
+   "grader": "script",
+   "script": "annual_accounts_check.py",
+   "rule": "ANNUAL-SIGNED",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-02",
+    "eu-accounting-directive/2013-34#ACC-11",
+    "bfn-k2/2016-10#K2-03"
+   ],
+   "text": "Both board members sign under a place and date after the year end."
+  },
+  {
+   "id": "contribution",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-16",
+    "bfn-k2/2016-10#K2-06"
+   ],
+   "text": "The shareholder contribution is a row of its own in the changes in equity, not income in the income statement."
+  },
+  {
+   "id": "pledged",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-12",
+    "eu-accounting-directive/2013-34#ACC-07"
+   ],
+   "text": "A note gives the floating charges of SEK 150,000 as pledged assets for both years."
+  },
+  {
+   "id": "loss-language",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-15"
+   ],
+   "text": "The management report says plainly that the year made a loss and why, without calling the company sound or the accounts approved."
+  },
+  {
+   "id": "revised-invoice",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "arsredovisningslagen/1995-1554#ARL-08"
+   ],
+   "text": "The revised report carries the SEK 14,000 invoice through the result, the balance sheet, the changes in equity and the disposition."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, organisation numbers and figures are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "arsredovisningslagen/1995-1554",
+  "eu-accounting-directive/2013-34",
+  "bfn-k2/2016-10",
+  "every-file/1.1.0"
+ ]
+}

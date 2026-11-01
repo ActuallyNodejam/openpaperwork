@@ -1,0 +1,1 @@
+Storgatan was closed on 2 September (burst pipe). The export writes amounts with a space for thousands and a dash when a shop is closed. The export covers 1 to 3 September.

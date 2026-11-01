@@ -1,0 +1,38 @@
+{
+  "language": "en",
+  "country": "AU",
+  "body": "Example Logistics Pty Ltd",
+  "company_number": "ACN 612 345 678",
+  "meeting": "board",
+  "date": "2026-10-12",
+  "start": "08:30",
+  "end": "09:45",
+  "place": "88 Wharf Street, Brisbane",
+  "chair": "Michael Chen",
+  "secretary": "Sarah Wilson",
+  "present": [
+    "Michael Chen",
+    "Emma Davies",
+    "Liam O'Connor"
+  ],
+  "in_attendance": [
+    "Sarah Wilson (company secretary)"
+  ],
+  "quorum": true,
+  "previous_minutes": "approved",
+  "items": [
+    {
+      "title": "Refrigerated trailers",
+      "notes": "The operations director reported on the tender for four refrigerated trailers.",
+      "decisions": [
+        "that the company buy four refrigerated trailers from Darling Downs Trailers for $612,000"
+      ]
+    },
+    {
+      "title": "Next meeting",
+      "decisions": [
+        "that the next meeting be held on 9 November 2026"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "language": "fr",
+  "law": "ca",
+  "given": "2026-11-16",
+  "employer": {
+    "name": "Transports Riviera-Nord inc.",
+    "address": "455, rue de l'Exemple, Laval (Québec) H7T 0A1",
+    "signatory": "Julie Gagnon, directrice des ressources humaines"
+  },
+  "worker": {
+    "name": "Olivier Tremblay",
+    "address": "12, rue de l'Essai, Laval (Québec) H7N 0A2"
+  },
+  "job": {
+    "title": "Répartiteur",
+    "description": "Planifie les trajets des chauffeurs entre Montréal et Toronto, suit les chargements et répond aux chauffeurs."
+  },
+  "place": "455, rue de l'Exemple, Laval (Québec) H7T 0A1",
+  "start": "2026-11-02",
+  "term": {
+    "type": "permanent"
+  },
+  "probation": {
+    "months": 3,
+    "conditions": "une rencontre d'évaluation avec le chef de la répartition à la fin de la période"
+  },
+  "qualifications": "Deux ans d'expérience en répartition et une bonne connaissance des règles sur les heures de service des conducteurs",
+  "training": "Deux semaines de formation sur le logiciel de répartition au début de l'emploi, rémunérées et aux frais de l'employeur",
+  "hours": {
+    "pattern": "fixed",
+    "standard": "40 heures par semaine, du lundi au vendredi, de 8 h à 16 h 30, avec une pause non rémunérée de 30 minutes",
+    "overtime": "les heures au-delà de 8 heures par jour ou de 40 heures par semaine sont des heures supplémentaires, faites seulement à la demande du chef de la répartition (Code canadien du travail, art. 169 et 174)"
+  },
+  "pay": {
+    "amount": 27.0,
+    "currency": "CAD",
+    "per": "hour",
+    "overtime_rate": "40,50 $ l'heure",
+    "paid": "un jeudi sur deux",
+    "other_pay": "la prime annuelle, s'il y a lieu, est versée en mars",
+    "method": "dépôt direct dans le compte bancaire de l'employé"
+  },
+  "deductions": "Impôt sur le revenu fédéral et du Québec, cotisations au Régime de rentes du Québec, au Régime québécois d'assurance parentale et à l'assurance-emploi",
+  "expenses": "Les dépenses liées au travail sont réclamées au moyen du formulaire de dépenses, avec les reçus; les montants approuvés sont remboursés avec la paie suivante"
+}

@@ -1,0 +1,127 @@
+{
+ "id": "paper-ieee-coldstart-001",
+ "title": "Write an IEEE two-column conference paper from measurement notes",
+ "version": "0.1.0",
+ "status": "draft",
+ "format": "pdf",
+ "guideline": "ieee-conference/1.8b",
+ "checks": [
+  "papercheck"
+ ],
+ "stage": {
+  "first": [
+   "paper.pdf"
+  ],
+  "revision": [
+   "paper.pdf"
+  ]
+ },
+ "sector": {
+  "naics": "54",
+  "name": "Professional, Scientific, and Technical Services"
+ },
+ "occupation": {
+  "soc": "15-1252.00",
+  "name": "Software Developers"
+ },
+ "output": "paper.pdf",
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "paper-fonts",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "PAPER-FONTS",
+   "guidelines": [
+    "ieee-conference/1.8b#PAPER-FONTS"
+   ],
+   "text": "The PDF embeds the template Times family for text and no Computer Modern or Latin Modern faces."
+  },
+  {
+   "id": "paper-cites",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "PAPER-CITE-COVER",
+   "guidelines": [
+    "ieee-conference/1.8b#PAPER-CITE-COVER"
+   ],
+   "text": "Every reference in the list is cited in the text."
+  },
+  {
+   "id": "locale-paper",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-PAPER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-PAPER"
+   ],
+   "text": "The page is the locale paper size."
+  },
+  {
+   "id": "locale-date",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-DATE",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-DATE"
+   ],
+   "text": "Dates are written in the locale order."
+  },
+  {
+   "id": "locale-number",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-NUMBER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-NUMBER"
+   ],
+   "text": "Numbers use the locale separators."
+  },
+  {
+   "id": "locale-currency",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-CURRENCY",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-CURRENCY"
+   ],
+   "text": "The amount carries the locale currency."
+  }
+ ],
+ "truth": {
+  "doc": "paper",
+  "format": "ieee-conference",
+  "pages": 1,
+  "sections": [
+   "Introduction",
+   "Method",
+   "Results",
+   "Discussion"
+  ],
+  "references": 2
+ },
+ "review": [
+  "The file says what the case asks for."
+ ],
+ "revised_review": [
+  "The file still says it after the revision."
+ ],
+ "source": "Synthetic material created for this evaluation pack; no customer inputs.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after the first output is frozen.",
+ "locale": "en-US"
+}

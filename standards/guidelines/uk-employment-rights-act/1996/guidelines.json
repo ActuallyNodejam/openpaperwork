@@ -1,0 +1,166 @@
+{
+  "issuer": "uk-employment-rights-act",
+  "version": "1996",
+  "link": "https://www.legislation.gov.uk/ukpga/1996/18/part/I",
+  "license": "Contains public sector information licensed under the Open Government Licence v3.0; sections 1 to 3 are restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Employment Rights Act 1996, sections 1 to 3: statement of initial employment particulars",
+  "source": "Employment Rights Act 1996 (c. 18), sections 1 to 3, the revised text on legislation.gov.uk with the amendments in force from 6 April 2020 (S.I. 2018/1378 and S.I. 2019/731). Read 2026-10-08 and 2026-10-09.",
+  "note": "A drafting check, not legal advice: the scripted rules read whether a particular is there.",
+  "rules": [
+    {
+      "id": "ERA-01",
+      "grader": "script",
+      "text": "The particulars are in one document given no later than the first day of work; pensions, collective agreements and training may follow within two months.",
+      "source": "s.1(2); s.2(4)",
+      "check": "employment_check.py EMPLOY-DATES"
+    },
+    {
+      "id": "ERA-02",
+      "grader": "script",
+      "text": "The statement names the employer and the worker.",
+      "source": "s.1(3)(a)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "ERA-03",
+      "grader": "script",
+      "text": "It gives the date the employment began and, for an employee, the date continuous employment began.",
+      "source": "s.1(3)(b), (c)",
+      "check": "employment_check.py EMPLOY-DATES"
+    },
+    {
+      "id": "ERA-04",
+      "grader": "judge",
+      "text": "The other particulars are given as at a stated date no more than seven days before the statement.",
+      "source": "s.1(4)"
+    },
+    {
+      "id": "ERA-05",
+      "grader": "script",
+      "text": "Pay gives the scale or rate or how it is worked out, and the intervals at which it is paid.",
+      "source": "s.1(4)(a), (b)",
+      "check": "employment_check.py EMPLOY-PAY"
+    },
+    {
+      "id": "ERA-06",
+      "grader": "script",
+      "text": "Hours give the normal working hours, the days of the week, and whether and how they vary.",
+      "source": "s.1(4)(c)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "ERA-07",
+      "grader": "script",
+      "text": "Holidays, public holidays and holiday pay are given precisely enough to work out the entitlement, including accrued holiday pay when the job ends.",
+      "source": "s.1(4)(d)(i)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "ERA-08",
+      "grader": "script",
+      "text": "Sickness and sick pay, and any other paid leave, are given; from 6 April 2026 Statutory Sick Pay is paid from the first full day of sickness absence (Employment Rights Act 2025 ss. 10 and 11). A statement of the right to join a trade union is planned from 1 January 2027 and is not in force on 2026-10-20; a start on or after that date is warned.",
+      "source": "s.1(4)(d)(ii), (iia)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "ERA-09",
+      "grader": "script",
+      "text": "Pensions and pension schemes are given.",
+      "source": "s.1(4)(d)(iii)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "ERA-10",
+      "grader": "script",
+      "text": "Any other benefits the employer provides are given.",
+      "source": "s.1(4)(da)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "ERA-11",
+      "grader": "script",
+      "text": "The notice the worker must give and is entitled to receive is given, or a reference to the law or agreement that sets it.",
+      "source": "s.1(4)(e); s.2(3)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "ERA-12",
+      "grader": "script",
+      "text": "The job title or a short description of the work is given.",
+      "source": "s.1(4)(f)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "ERA-13",
+      "grader": "script",
+      "text": "Employment not meant to be permanent gives its expected length or, for a fixed term, its end date.",
+      "source": "s.1(4)(g)",
+      "check": "employment_check.py EMPLOY-DATES"
+    },
+    {
+      "id": "ERA-14",
+      "grader": "script",
+      "text": "Any probationary period is given with its length and conditions.",
+      "source": "s.1(4)(ga)",
+      "check": "employment_check.py EMPLOY-PROBATION"
+    },
+    {
+      "id": "ERA-15",
+      "grader": "script",
+      "text": "The place of work is given or, when it varies, that fact and the employer's address.",
+      "source": "s.1(4)(h)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "ERA-16",
+      "grader": "script",
+      "text": "Collective agreements that directly affect the terms are named, with who made them when the employer did not.",
+      "source": "s.1(4)(j)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "ERA-17",
+      "grader": "script",
+      "text": "Work outside the UK for more than a month gives the period, the currency of pay, any extra pay or benefits for it, and the terms of the return.",
+      "source": "s.1(4)(k); s.2(5)",
+      "check": "employment_check.py EMPLOY-ABROAD"
+    },
+    {
+      "id": "ERA-18",
+      "grader": "script",
+      "text": "Training the employer provides, the part of it the worker must complete, and any required training the worker pays for are given.",
+      "source": "s.1(4)(l) to (n)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "ERA-19",
+      "grader": "script",
+      "text": "Where there is nothing to state under a head, the statement says so.",
+      "source": "s.2(1)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "ERA-20",
+      "grader": "script",
+      "text": "Any other paid leave is given, or the statement says there is none.",
+      "source": "s.1(4)(d)(iia)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "ERA-21",
+      "grader": "script",
+      "text": "A note gives the disciplinary rules and procedure, to whom the worker appeals a disciplinary or dismissal decision and brings a grievance, and how, and any further steps (rules on health and safety at work aside).",
+      "source": "s.3(1), (2)",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "ERA-22",
+      "grader": "script",
+      "text": "Only sick pay, other paid leave, pensions and training may be given by pointing to another reasonably accessible document, and notice by pointing to the law or a collective agreement; every other particular is stated.",
+      "source": "s.2(2), (3)",
+      "check": "employment_check.py EMPLOY-REFERENCE"
+    }
+  ]
+}

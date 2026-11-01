@@ -1,0 +1,53 @@
+{
+  "issuer": "osakeyhtiolaki",
+  "version": "2006-624",
+  "link": "https://www.finlex.fi/fi/lainsaadanto/2006/624",
+  "license": "Finnish law, not protected by copyright (tekijänoikeuslaki 9 §); Finlex open data CC BY 4.0; restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Osakeyhtiölaki 6 luku 6 § (hallituksen pöytäkirja) and 5 luku 23 § (yhtiökokouksen pöytäkirja)",
+  "source": "Osakeyhtiölaki 624/2006, consolidated through 652/2024 (Finlex open data, dateConsolidated 2025-06-27). Read 2026-10-09.",
+  "rules": [
+    {
+      "id": "FI-MIN-01",
+      "grader": "script",
+      "text": "Minutes are drawn up for every board meeting, signed by the chair and, when the board has several members, at least one member the board picks.",
+      "source": "6 luku 6 §",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "FI-MIN-02",
+      "grader": "script",
+      "text": "Board members and the managing director may have a dissent recorded in the minutes.",
+      "source": "6 luku 6 §",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "FI-MIN-03",
+      "grader": "script",
+      "text": "The minutes are numbered in sequence and kept reliably.",
+      "source": "6 luku 6 §; 5 luku 23 §",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "FI-MIN-04",
+      "grader": "script",
+      "text": "At a general meeting the chair has a voting list (ääniluettelo) made and put in or attached to the minutes, which record the decisions and the votes.",
+      "source": "5 luku 23 §",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "FI-MIN-05",
+      "grader": "script",
+      "text": "The chair and one minutes checker the meeting elects sign the general meeting's minutes.",
+      "source": "5 luku 23 §",
+      "check": "minutes_check.py MINUTES-SIGNED"
+    },
+    {
+      "id": "FI-MIN-06",
+      "grader": "judge",
+      "text": "The general meeting's minutes are available to the shareholders within two weeks.",
+      "source": "5 luku 23 §"
+    }
+  ]
+}

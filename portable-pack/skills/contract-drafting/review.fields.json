@@ -1,0 +1,11 @@
+{
+ "about": "Every key review_create.py reads from a review's data file. The builder stops on a key that is not here, and on a value of another shape (skills/_shared/spec_guard.py). What the reader must know that no checklist item holds goes in assumptions.",
+ "open": {"": "assumptions", "items": "note"},
+ "fields": {
+  "document": "text", "report": "text", "title": "text", "checklist": "text", "for": "text", "side": "text", "other_party": "text",
+  "date": "text", "prepared_by": "text",
+  "assumptions": ["text"],
+  "items": [{"id": "text", "verdict": "text", "issue": "text", "clause": "text", "quote": "text | [text]",
+             "quotes": ["text"], "note": "text", "proposed_change": "text"}]
+ }
+}

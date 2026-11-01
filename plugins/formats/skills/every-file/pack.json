@@ -1,0 +1,10 @@
+{
+  "domain": "formats",
+  "hands_back": [
+    "*.docx",
+    "*.xlsx",
+    "*.pptx"
+  ],
+  "default": "file.docx",
+  "check": "python3 {here}/../_checks/packcheck.py every-file {file}"
+}

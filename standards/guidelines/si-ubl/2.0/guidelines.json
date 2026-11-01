@@ -1,0 +1,18 @@
+{
+ "issuer": "si-ubl",
+ "version": "2.0",
+ "link": "https://github.com/peppolautoriteit-nl/validation",
+ "license": "MIT, Copyright (c) 2017 Stichting Simplerinvoicing; notice licenses/si-ubl-simplerinvoicing-mit.txt. The BR-NL rules are restated in our own code with credit; the CEN EN 16931 rules inside si-ubl-2.0.xsl are EUPL-1.2 and run untouched, never copied. Rule wording: Apache-2.0 with this repository.",
+ "date": "2026-10-09",
+ "status": "draft",
+ "title": "SI-UBL 2.0, the Dutch NLCIUS: the UBL invoice and credit note the Dutch government takes",
+ "source": "SI-UBL 2.0.3.13, the validation artefacts of the Nederlandse Peppol Autoriteit (release of 2026-05-21, commit 4e93ae8681f4): schematron/si-ubl-2.0/si-ubl-2.0-nlcius.sch for the BR-NL rules (BR-NL-1 and -10 the KvK or OIN under 0106 or 0190, BR-NL-2 a buyer or order reference, BR-NL-3 and -4 street, city and postcode, BR-NL-11 and -12 the payment means, and the fields BR-NL-26, -30, -31 and -32 advise against) and xsl/si-ubl-2.0.xsl, fetched at that commit and run in the KoSIT validator (Apache-2.0). Read 2026-10-09.",
+ "rules": [
+  {
+   "id": "EINV-SI-UBL",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "text": "The official SI-UBL 2.0 rules accept an invoice or credit note tagged with the NLCIUS customization; skipped when they are not installed."
+  }
+ ]
+}

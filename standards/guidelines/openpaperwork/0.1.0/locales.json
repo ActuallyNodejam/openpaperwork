@@ -1,0 +1,120 @@
+{
+ "version": "1",
+ "date": "2026-10-05",
+ "note": "The every-file floor takes a locale. Europe is the default; the United States is the first one after it. Each field names where the rule comes from.",
+ "sources": {
+  "cldr": {
+   "name": "Unicode CLDR, UTS #35",
+   "url": "https://www.unicode.org/reports/tr35/",
+   "machine_form": "cldr-json, cldr-dates-full and cldr-numbers-full",
+   "read": "2026-10-05",
+   "covers": [
+    "date",
+    "number"
+   ]
+  },
+  "iso216": {
+   "name": "ISO 216, writing paper and certain classes of printed matter",
+   "covers": [
+    "paper.eu"
+   ],
+   "read": "name only; iso.org served a challenge page"
+  },
+  "ansi-y14.1": {
+   "name": "ANSI/ASME Y14.1, decimal inch drawing sheet size and format",
+   "covers": [
+    "paper.us"
+   ],
+   "read": "name only"
+  },
+  "iso4217": {
+   "name": "ISO 4217, codes for the representation of currencies",
+   "covers": [
+    "currency"
+   ],
+   "read": "name only; iso.org served nothing"
+  }
+ },
+ "locales": {
+  "eu": {
+   "paper": {
+    "name": "A4",
+    "mm": [
+     210,
+     297
+    ],
+    "pt": [
+     595,
+     842
+    ],
+    "source": "iso216"
+   },
+   "date": {
+    "pattern": "dd.MM.yyyy",
+    "cldr_short": "dd.MM.yy",
+    "example": "05.10.2026",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ",",
+    "group": ".",
+    "example": "1.234,56",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": "EUR",
+    "symbol": "\u20ac",
+    "source": "iso4217"
+   }
+  },
+  "us": {
+   "paper": {
+    "name": "US Letter",
+    "in": [
+     8.5,
+     11
+    ],
+    "pt": [
+     612,
+     792
+    ],
+    "source": "ansi-y14.1"
+   },
+   "date": {
+    "pattern": "MM/DD/YYYY",
+    "cldr_short": "M/d/yy",
+    "example": "10/05/2026",
+    "source": "cldr"
+   },
+   "number": {
+    "decimal": ".",
+    "group": ",",
+    "example": "1,234.56",
+    "source": "cldr"
+   },
+   "currency": {
+    "code": "USD",
+    "symbol": "$",
+    "source": "iso4217"
+   }
+  }
+ },
+ "rules": [
+  {
+   "id": "LOCALE-PAPER",
+   "text": "The page is the locale's paper size: A4 for eu, US Letter for us."
+  },
+  {
+   "id": "LOCALE-DATE",
+   "text": "Dates are written in the locale's order: dd.MM.yyyy for eu, MM/DD/YYYY for us."
+  },
+  {
+   "id": "LOCALE-NUMBER",
+   "text": "Numbers use the locale's separators: 1.234,56 for eu, 1,234.56 for us."
+  },
+  {
+   "id": "LOCALE-CURRENCY",
+   "text": "The amount carries the locale's currency: EUR for eu, USD for us."
+  }
+ ]
+}

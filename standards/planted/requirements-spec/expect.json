@@ -1,0 +1,38 @@
+{
+  "pack": "requirements-spec",
+  "template": "requirements.spec.json",
+  "clean": "requirements.docx",
+  "files": [
+    "spec.json",
+    "requirements.docx"
+  ],
+  "faults": [
+    {
+      "file": "vague-word.docx",
+      "replaces": "requirements.docx",
+      "planted": "a vague word enters a requirement",
+      "fails": [
+        "REQ-VAGUE"
+      ],
+      "also_failed_when_made": []
+    },
+    {
+      "file": "no-owner.docx",
+      "replaces": "requirements.docx",
+      "planted": "a TBR item loses its owner",
+      "fails": [
+        "REQ-TBD"
+      ],
+      "also_failed_when_made": []
+    },
+    {
+      "file": "may-not-shall.docx",
+      "replaces": "requirements.docx",
+      "planted": "a requirement drops its shall",
+      "fails": [
+        "REQ-VERB"
+      ],
+      "also_failed_when_made": []
+    }
+  ]
+}

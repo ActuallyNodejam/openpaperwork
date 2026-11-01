@@ -1,0 +1,26 @@
+{
+  "issuer": "bw-2",
+  "version": "2026-07",
+  "link": "https://wetten.overheid.nl/BWBR0003045/",
+  "license": "Dutch statute, outside copyright (Auteurswet art. 11); restated in our own words with credit. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Burgerlijk Wetboek Boek 2, arts. 2:120 lid 4 and 2:230 lid 4: the record of a general meeting's resolutions",
+  "source": "Burgerlijk Wetboek Boek 2 (BWBR0003045), text in force from 1 July 2026, read on wetten.overheid.nl 2026-10-09.",
+  "note": "Boek 2 sets no contents for the minutes of a board meeting; the company's articles do. The check passes nothing for a Dutch board and says so.",
+  "rules": [
+    {
+      "id": "NL-MIN-01",
+      "grader": "script",
+      "text": "The board keeps a record of the resolutions the general meeting adopts.",
+      "source": "art. 2:230 lid 4 (BV), art. 2:120 lid 4 (NV)",
+      "check": "minutes_check.py MINUTES-STATUTE"
+    },
+    {
+      "id": "NL-MIN-02",
+      "grader": "judge",
+      "text": "The record lies at the company's office for the shareholders and others with meeting rights to read, and a copy or an extract is given on request at no more than cost.",
+      "source": "art. 2:230 lid 4, art. 2:120 lid 4"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "language": "nl",
+  "country": "BE",
+  "body": "Dijleboord Drukkerij NV",
+  "company_number": "0734.567.890",
+  "meeting": "board",
+  "number": "2026/05",
+  "date": "2026-10-20",
+  "start": "14:00",
+  "end": "15:20",
+  "place": "Zetel van de vennootschap, Vaartstraat 14, 3000 Leuven",
+  "chair": "Katrien Peeters",
+  "secretary": "Bram Claes",
+  "present": [
+    "Katrien Peeters",
+    "Joris Wouters",
+    "Lieve Maes"
+  ],
+  "in_attendance": [
+    "Bram Claes (financieel directeur)"
+  ],
+  "quorum": true,
+  "previous_minutes": "approved",
+  "items": [
+    {
+      "title": "Huur van een magazijn",
+      "notes": "De financieel directeur licht het huurvoorstel voor het magazijn aan de Kolonel Begaultlaan toe.",
+      "conflict": [
+        {
+          "name": "Joris Wouters",
+          "text": "hij is mede-eigenaar van het pand dat de vennootschap wil huren"
+        }
+      ],
+      "decisions": [
+        "De vennootschap huurt het magazijn voor negen jaar tegen 38.000 euro per jaar; de huurprijs ligt in lijn met twee vergelijkbare aanbiedingen, en Joris Wouters nam niet deel aan de beraadslaging en de stemming"
+      ]
+    },
+    {
+      "title": "Aankoop van een digitale pers",
+      "decisions": [
+        "De raad keurt de aankoop van een digitale pers voor 420.000 euro goed, gefinancierd met een lening over zeven jaar"
+      ]
+    }
+  ]
+}

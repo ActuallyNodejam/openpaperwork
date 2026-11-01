@@ -1,0 +1,111 @@
+{
+ "id": "club-minutes-001",
+ "title": "Write up a rowing club's monthly meeting from the secretary's notes",
+ "person": "The volunteer secretary of a rowing club writing the minutes of the October meeting.",
+ "format": "docx",
+ "output": "minutes.docx",
+ "locale": "en",
+ "sector": {
+  "naics": "71",
+  "name": "Arts, Entertainment, and Recreation"
+ },
+ "occupation": {
+  "soc": "43-6014.00",
+  "name": "Secretaries and Administrative Assistants, Except Legal, Medical, and Executive"
+ },
+ "review": [
+  "The lease motion by Eva Berg is adopted 9 to 2 with 1 abstaining, the regatta entry is adopted and the bus motion lost; the meeting ran from 18:30 to 20:05."
+ ],
+ "revised_review": [
+  "The bus motion is recorded as withdrawn rather than lost, and nothing else changes."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "head",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-HEAD",
+   "guidelines": [
+    "roberts-rules/1915#MIN-01",
+    "roberts-rules/1915#MIN-02",
+    "roberts-rules/1915#MIN-03"
+   ],
+   "text": "The body, the kind of meeting and the date are given."
+  },
+  {
+   "id": "times",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-TIMES",
+   "guidelines": [
+    "roberts-rules/1915#MIN-09"
+   ],
+   "text": "The opening and adjournment times are given."
+  },
+  {
+   "id": "signed",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-SIGNED",
+   "guidelines": [
+    "roberts-rules/1915#MIN-13"
+   ],
+   "text": "The secretary signs."
+  },
+  {
+   "id": "officers",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-OFFICERS",
+   "guidelines": [
+    "roberts-rules/1915#MIN-04"
+   ],
+   "text": "Maria Lund chairs and Per Ek is the secretary."
+  },
+  {
+   "id": "motions",
+   "stage": "both",
+   "grader": "script",
+   "script": "minutes_check.py",
+   "rule": "MINUTES-MOTIONS",
+   "guidelines": [
+    "roberts-rules/1915#MIN-06",
+    "roberts-rules/1915#MIN-07",
+    "roberts-rules/1915#MIN-10"
+   ],
+   "text": "Each motion has its mover and its result, the lease vote with its numbers."
+  },
+  {
+   "id": "no-debate",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "roberts-rules/1915#MIN-11"
+   ],
+   "text": "The minutes record what was decided, not Lars's view in the debate."
+  }
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the clubs, companies and people are invented.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "roberts-rules/1915",
+  "every-file/1.1.0"
+ ]
+}

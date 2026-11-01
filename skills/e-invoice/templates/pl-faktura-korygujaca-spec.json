@@ -1,0 +1,46 @@
+{
+  "type_code": "381",
+  "number": "FK/2026/10/9",
+  "issue_date": "2026-10-20",
+  "currency": "PLN",
+  "preceding_invoice": "FV/2026/10/118",
+  "preceding_invoice_date": "2026-10-09",
+  "preceding_ksef_number": "1234563218-20261009-000000-000000-00",
+  "note": "Zwrot 200 katalogów z wadą cięcia",
+  "seller": {
+    "name": "Przykład Druk sp. z o.o.",
+    "legal_form": "sp. z o.o.",
+    "street": "ul. Przykładowa 12",
+    "postcode": "00-001",
+    "city": "Warszawa",
+    "country": "PL",
+    "vat_id": "PL1234563218",
+    "register_number": "0000000000",
+    "register": "Sąd Rejonowy dla m.st. Warszawy, XII Wydział Gospodarczy KRS",
+    "share_capital": "50 000,00 zł",
+    "registered_office": "Warszawa",
+    "contact": {
+      "name": "Zofia Przykład",
+      "phone": "+48 22 000 00 00",
+      "email": "faktury@druk.example"
+    }
+  },
+  "buyer": {
+    "name": "Przykład Księgarnia S.A.",
+    "street": "ul. Wzorcowa 4",
+    "postcode": "30-001",
+    "city": "Kraków",
+    "country": "PL",
+    "vat_id": "PL9876543210"
+  },
+  "lines": [
+    {
+      "name": "Druk katalogu, 48 stron, pełny kolor",
+      "quantity": 200,
+      "unit": "C62",
+      "unit_price": 7.9,
+      "vat_rate": 23,
+      "vat_category": "S"
+    }
+  ]
+}

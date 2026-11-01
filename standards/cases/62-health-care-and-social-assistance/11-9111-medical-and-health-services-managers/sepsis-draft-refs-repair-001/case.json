@@ -1,0 +1,184 @@
+{
+ "id": "sepsis-draft-refs-repair-001",
+ "title": "Repair the Vancouver references of a draft quality-improvement report",
+ "person": "A quality-improvement lead getting a sepsis screening report ready for a journal that follows the ICMJE Recommendations.",
+ "format": "docx",
+ "output": "sepsis-report.docx",
+ "locale": "en",
+ "sector": {
+  "naics": "62",
+  "name": "Health Care and Social Assistance"
+ },
+ "occupation": {
+  "soc": "11-9111.00",
+  "name": "Medical and Health Services Managers"
+ },
+ "review": [
+  "The draft's sources are renumbered [1] to [5] in order of first mention, the Velasquez-Thorne entry that nothing cites is gone from the list, the second listing of the Achterberg audit is merged into its first number, author initials and journal abbreviations lose their full stops, the Mbeki-Lund entry reads 2021;9(2):40-8 instead of (2021), vol. 9, pp., and the screening-tool page gives [Internet], [cited 2026 Oct 2] and Available from: with its URL; the report's wording and figures (312 patients, 61 % to 84 % screened within an hour) are unchanged."
+ ],
+ "revised_review": [
+  "Every in-text number is in parentheses, (1), instead of square brackets; nothing else changed."
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the authors, journals, organisations, DOIs (Crossref test prefix 10.5555) and web addresses (example.org) are invented, and no real study is presented as genuine.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "nlm-citing-medicine/2",
+  "icmje/2026-01",
+  "every-file/1.1.0"
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "order",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "VANC-ORDER",
+   "guidelines": [
+    "nlm-citing-medicine/2#CM-01",
+    "icmje/2026-01#ICMJE-01"
+   ],
+   "text": "Sources are numbered in the order the text first cites them."
+  },
+  {
+   "id": "marks",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "VANC-MARKS",
+   "guidelines": [
+    "icmje/2026-01#ICMJE-02"
+   ],
+   "text": "One in-text number form throughout."
+  },
+  {
+   "id": "list",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "VANC-LIST",
+   "guidelines": [
+    "nlm-citing-medicine/2#CM-02"
+   ],
+   "text": "The list runs 1 to n in number order, one entry per number."
+  },
+  {
+   "id": "cited",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "VANC-CITED",
+   "guidelines": [
+    "nlm-citing-medicine/2#CM-03"
+   ],
+   "text": "Every entry is cited and every cited number is listed."
+  },
+  {
+   "id": "once",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "VANC-ONCE",
+   "guidelines": [
+    "nlm-citing-medicine/2#CM-04"
+   ],
+   "text": "A source cited again keeps its first number and is listed once."
+  },
+  {
+   "id": "authors",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "VANC-AUTHORS",
+   "guidelines": [
+    "nlm-citing-medicine/2#CM-05",
+    "nlm-citing-medicine/2#CM-06"
+   ],
+   "text": "Authors as Surname and initials without full stops, six then et al."
+  },
+  {
+   "id": "journal",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "VANC-JOURNAL",
+   "guidelines": [
+    "nlm-citing-medicine/2#CM-07",
+    "icmje/2026-01#ICMJE-03"
+   ],
+   "text": "Abbreviated journal titles carry no full stops."
+  },
+  {
+   "id": "date",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "VANC-DATE",
+   "guidelines": [
+    "nlm-citing-medicine/2#CM-08"
+   ],
+   "text": "Journal entries read year;volume(issue):pages."
+  },
+  {
+   "id": "online",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "VANC-ONLINE",
+   "guidelines": [
+    "nlm-citing-medicine/2#CM-09"
+   ],
+   "text": "Online sources give [Internet], the date cited and Available from: with the URL."
+  },
+  {
+   "id": "figures-kept",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "312 patients and the rise from 61 % to 84 % screened within an hour are unchanged, as is the wording."
+  },
+  {
+   "id": "uncited-gone",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "nlm-citing-medicine/2#CM-03"
+   ],
+   "text": "The Velasquez-Thorne entry, which nothing cites, is out of the list; no sentence was invented to cite it."
+  },
+  {
+   "id": "nothing-guessed",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "nlm-citing-medicine/2#CM-13",
+    "openpaperwork/0.1.0#FACT-2"
+   ],
+   "text": "No issue, page range or DOI is added that the draft does not give."
+  },
+  {
+   "id": "revised",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "icmje/2026-01#ICMJE-02",
+    "openpaperwork/0.1.0#REV-2"
+   ],
+   "text": "Parentheses, (1), throughout; nothing else changed."
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+  "issuer": "eu-accounting-directive",
+  "version": "2013-34",
+  "link": "https://eur-lex.europa.eu/eli/dir/2013/34/oj",
+  "license": "EU legal text, reusable under Commission Decision 2011/833/EU with the source acknowledged; the articles are restated in our own words and cited. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "Directive 2013/34/EU on the annual financial statements, consolidated financial statements and related reports of certain types of undertakings",
+  "source": "Directive 2013/34/EU of the European Parliament and of the Council of 26 June 2013, OJ L 182, 29.6.2013, p. 19, CELEX 32013L0034: Art. 3(2) (small undertakings), 4(1), 9(5), 10, 13, 14, 16(1), 30(1) and 33, Annexes III and V. Read 2026-10-09.",
+  "note": "The frame each member state carries into its own law; Sweden's is årsredovisningslagen (1995:1554). A drafting check, not accounting advice.",
+  "rules": [
+    {
+      "id": "ACC-01",
+      "grader": "script",
+      "text": "The annual financial statements are one whole: at least a balance sheet, a profit and loss account and notes.",
+      "source": "Art. 4(1)",
+      "check": "annual_accounts_check.py ANNUAL-PARTS"
+    },
+    {
+      "id": "ACC-02",
+      "grader": "script",
+      "text": "Each balance sheet and profit and loss item shows the figure for the preceding year.",
+      "source": "Art. 9(5)",
+      "check": "annual_accounts_check.py ANNUAL-YEARS"
+    },
+    {
+      "id": "ACC-03",
+      "grader": "judge",
+      "text": "The balance sheet follows the layout of Annex III or IV.",
+      "source": "Art. 10"
+    },
+    {
+      "id": "ACC-04",
+      "grader": "judge",
+      "text": "The profit and loss account follows Annex V (by nature of expense) or VI (by function).",
+      "source": "Art. 13(1)"
+    },
+    {
+      "id": "ACC-05",
+      "grader": "judge",
+      "text": "A small undertaking may show an abridged balance sheet with only the lettered and roman-numbered items, and combine the first items of the profit and loss account into a gross result.",
+      "source": "Art. 14(1) and (2)"
+    },
+    {
+      "id": "ACC-06",
+      "grader": "script",
+      "text": "The notes disclose the accounting policies adopted.",
+      "source": "Art. 16(1)(a)",
+      "check": "annual_accounts_check.py ANNUAL-NOTES"
+    },
+    {
+      "id": "ACC-07",
+      "grader": "judge",
+      "text": "The notes give the total of commitments, guarantees and contingencies outside the balance sheet, and any security given.",
+      "source": "Art. 16(1)(d)"
+    },
+    {
+      "id": "ACC-08",
+      "grader": "judge",
+      "text": "The notes give debts due after more than five years and debts secured on the undertaking's assets.",
+      "source": "Art. 16(1)(g)"
+    },
+    {
+      "id": "ACC-09",
+      "grader": "script",
+      "text": "The notes give the average number of employees during the year.",
+      "source": "Art. 16(1)(h)",
+      "check": "annual_accounts_check.py ANNUAL-NOTES"
+    },
+    {
+      "id": "ACC-10",
+      "grader": "judge",
+      "text": "A small undertaking stays under two of three limits: a balance sheet total of EUR 5 million, net turnover of EUR 10 million and 50 employees on average (member states may raise the first two) (Art. 3(2) as amended by Delegated Directive (EU) 2023/2775, for financial years from 1 January 2024).",
+      "source": "Art. 3(2)"
+    },
+    {
+      "id": "ACC-11",
+      "grader": "script",
+      "text": "The board answers for the statements together, so the report carries the signatures of those who draw it up.",
+      "source": "Art. 33(1)",
+      "check": "annual_accounts_check.py ANNUAL-SIGNED"
+    },
+    {
+      "id": "ACC-12",
+      "grader": "judge",
+      "text": "The approved statements are published within twelve months of the balance sheet date; the report says nothing of having been filed.",
+      "source": "Art. 30(1)"
+    }
+  ]
+}

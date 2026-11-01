@@ -1,0 +1,98 @@
+{
+  "issuer": "every-file",
+  "version": "1.1.0",
+  "link": "https://www.w3.org/TR/WCAG22/",
+  "license": "WCAG 2.2 (W3C) and PDF/UA-1 (ISO 14289-1) are cited, not copied; the overflow, contrast and formula estimates are ported from OfficeCLI under Apache-2.0 (THIRD_PARTY.md). Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-04",
+  "status": "draft",
+  "auto": true,
+  "source": "The floor any Office output should pass, whatever the task. The slide overflow estimate, the dark-on-dark rule and the formula issue types are ported from OfficeCLI (Apache-2.0, see THIRD_PARTY.md). Contrast ratios follow WCAG 2.2. FLOOR-PDFUA runs veraPDF, a separate optional tool, against PDF/UA-1 (ISO 14289-1). 1.1.0 adds FLOOR-OVERLAP, also ported from OfficeCLI, after a real deck shipped with text behind pictures.",
+  "rules": [
+    {
+      "id": "FLOOR-FONT",
+      "grader": "script",
+      "script": "floor.py",
+      "formats": [
+        "docx",
+        "xlsx",
+        "pptx"
+      ],
+      "text": "The file uses at most two font families, resolved through runs, styles and the theme.",
+      "source": "House convention, not a published standard: at most two families, so the model cannot drift between typefaces. Kept because a mixed-font file is the most common visible slip; a brand kit or a style (APA 7 §2.19) that names its own fonts wins.",
+      "kind": "house"
+    },
+    {
+      "id": "FLOOR-OVERFLOW",
+      "grader": "script",
+      "script": "floor.py",
+      "formats": [
+        "xlsx",
+        "pptx"
+      ],
+      "text": "No text is estimated to overflow its slide shape, and no cell text or number is cut by its column or row.",
+      "source": "A defect check, not a style rule: text cut off by its box is lost to the reader. The estimate is ported from OfficeCLI (Apache-2.0, see THIRD_PARTY.md).",
+      "kind": "defect"
+    },
+    {
+      "id": "FLOOR-CONTRAST",
+      "grader": "script",
+      "script": "floor.py",
+      "formats": [
+        "docx",
+        "xlsx",
+        "pptx"
+      ],
+      "text": "Text with a set colour has a contrast ratio of at least 4.5:1 against its set background, or 3:1 for large text.",
+      "source": "WCAG 2.2 Success Criterion 1.4.3 Contrast (Minimum): 4.5:1, or 3:1 for large text (at least 18 pt, or 14 pt bold), with WCAG's relative luminance formula.",
+      "kind": "standard"
+    },
+    {
+      "id": "FLOOR-FORMULA",
+      "grader": "script",
+      "script": "floor.py",
+      "formats": [
+        "xlsx"
+      ],
+      "text": "Every formula carries a saved result and none is an error value.",
+      "source": "A defect check: ECMA-376 (Office Open XML) stores a formula's last result in the cell's value; a formula with no saved result shows nothing until recalculated, and an error value is a broken sum. Issue types ported from OfficeCLI.",
+      "kind": "defect"
+    },
+    {
+      "id": "FLOOR-META",
+      "grader": "script",
+      "script": "floor.py",
+      "formats": [
+        "docx",
+        "xlsx",
+        "pptx"
+      ],
+      "text": "The file has a title in its properties; slides have titles, pictures have alternative text, sheets are named and documents declare a language.",
+      "source": "WCAG 2.2 SC 2.4.2 Page Titled (a title), SC 1.1.1 Non-text Content (alternative text), SC 3.1.1 Language of Page (a declared language); slide titles and named sheets as Microsoft's Accessibility Checker rules for Office files ask.",
+      "kind": "standard"
+    },
+    {
+      "id": "FLOOR-PDFUA",
+      "grader": "script",
+      "script": "pdfua.py",
+      "formats": [
+        "docx",
+        "pptx"
+      ],
+      "text": "Exported as a tagged PDF, the file passes PDF/UA-1 in veraPDF. Skipped where the tool is absent; see checks/pdfua.py for the exporter findings left out.",
+      "source": "PDF/UA-1, ISO 14289-1, checked with veraPDF.",
+      "kind": "standard"
+    },
+    {
+      "id": "FLOOR-OVERLAP",
+      "grader": "script",
+      "script": "floor.py",
+      "formats": [
+        "pptx"
+      ],
+      "text": "No slide text is hidden behind a picture or an opaque shape drawn over it.",
+      "source": "A defect check: text drawn under a picture or an opaque shape cannot be read. Ported from OfficeCLI.",
+      "kind": "defect"
+    }
+  ],
+  "note": "Each rule says what it is: a published standard (WCAG 2.2, PDF/UA-1), a defect check (a file that loses text or figures), or a house convention (FLOOR-FONT). Sources recorded 2026-10-07."
+}

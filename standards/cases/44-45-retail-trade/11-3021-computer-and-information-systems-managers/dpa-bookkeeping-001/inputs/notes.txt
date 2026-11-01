@@ -1,0 +1,5 @@
+Kassaboken (our bookkeeping app) wants a DPA. We are the controller, they are the processor.
+Us: Exempel Kontor AB, 559012-3456, Industrigatan 8, 211 20 Malmö. Elin Sjö signs (Managing Director).
+Them: Kassaboken AB, 559876-5432, Stora Nygatan 20, 211 37 Malmö. Ola Strand, CEO.
+They hold names, contact details, bank details and invoices of our customers, suppliers and staff, for as long as we subscribe.
+Swedish law, Swedish courts. From 1 November 2026.

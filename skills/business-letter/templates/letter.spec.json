@@ -1,0 +1,39 @@
+{
+  "language": "en",
+  "date": "2026-10-15",
+  "sender": {
+    "name": "Exempel Tryck AB",
+    "street": "Verkstadsgatan 7",
+    "postcode": "417 07",
+    "city": "Gothenburg",
+    "country": "SE",
+    "vat_id": "SE556677889901",
+    "registered_office": "Gothenburg",
+    "register_number": "556677-8899",
+    "email": "hej@exempel-tryck.example",
+    "phone": "+46 31 555 01 20"
+  },
+  "recipient": {
+    "name": "Example Freight Ltd",
+    "attention": "Ms Ingrid Berg, Purchasing",
+    "street": "12 Harbour Street",
+    "postcode": "EH6 6NP",
+    "city": "Edinburgh",
+    "country": "United Kingdom"
+  },
+  "references": [
+    {"label": "Your letter of", "value": "2026-10-02"},
+    {"label": "Our reference", "value": "KL-114"}
+  ],
+  "contact": {"name": "Karin Lind", "phone": "+46 31 555 01 24", "email": "karin@exempel-tryck.example"},
+  "subject": "Paper prices from 1 January 2027",
+  "salutation": "Dear Ms Berg,",
+  "body": [
+    "Thank you for your letter of 2 October about the delivery folders for next year.",
+    "From 1 January 2027 our price for the 300 g uncoated folder rises from SEK 14.20 to SEK 15.10 a piece, because the mill has raised its board prices by 6 percent. Orders placed before 15 December are printed at this year's price.",
+    "If you would like to fix next year's quantity now, I am glad to send a quotation this week."
+  ],
+  "closing": "Kind regards",
+  "signatory": {"name": "Karin Lind", "role": "Customer manager"},
+  "enclosures": ["Price list 2027"]
+}

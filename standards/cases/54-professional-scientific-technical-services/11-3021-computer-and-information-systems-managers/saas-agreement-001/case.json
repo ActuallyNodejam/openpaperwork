@@ -1,0 +1,107 @@
+{
+  "id": "saas-agreement-001",
+  "title": "A subscription agreement for our stock system",
+  "person": "The head of IT at a small software company selling its stock management service to a bicycle retailer.",
+  "format": "docx",
+  "output": "agreement.docx",
+  "locale": "en",
+  "sector": {
+    "naics": "54",
+    "name": "Professional, Scientific, and Technical Services"
+  },
+  "occupation": {
+    "soc": "11-3021.00",
+    "name": "Computer and Information Systems Managers"
+  },
+  "review": [
+    "A Cloud Service Agreement on Common Paper's Standard Terms between Molnhyllan AB (Provider) and Bergström Cykel AB (Customer): the Key Terms and Order Form from the notes, Swedish law and the Stockholm District Court as the notes say, both signature blocks, Common Paper credited."
+  ],
+  "revised_review": [
+    "The Subscription Period is 24 months and the Fees SEK 4,200 a month; nothing else changes."
+  ],
+  "criteria": [
+    {
+      "id": "mechanical",
+      "stage": "both",
+      "grader": "check",
+      "guidelines": [
+        "openpaperwork/0.1.0#FMT-1",
+        "openpaperwork/0.1.0#REV-3"
+      ],
+      "text": "Every mechanical check in run.py passes for this stage."
+    },
+    {
+      "id": "parties",
+      "stage": "both",
+      "grader": "script",
+      "script": "legal_check.py",
+      "rule": "LEGAL-PARTIES",
+      "guidelines": [
+        "house-drafting/1#DRAFT-PARTIES"
+      ],
+      "text": "Both parties are named with their registration numbers and addresses."
+    },
+    {
+      "id": "law",
+      "stage": "both",
+      "grader": "script",
+      "script": "legal_check.py",
+      "rule": "LEGAL-LAW",
+      "guidelines": [
+        "common-paper/2026-10#CP-COVER"
+      ],
+      "text": "The governing law and courts are the ones the notes give, with no placeholder."
+    },
+    {
+      "id": "xref",
+      "stage": "both",
+      "grader": "script",
+      "script": "legal_check.py",
+      "rule": "LEGAL-XREF",
+      "guidelines": [
+        "house-drafting/1#DRAFT-XREF"
+      ],
+      "text": "Every cross-reference to the agreement's own sections resolves."
+    },
+    {
+      "id": "sign",
+      "stage": "both",
+      "grader": "script",
+      "script": "legal_check.py",
+      "rule": "LEGAL-SIGN",
+      "guidelines": [
+        "house-drafting/1#DRAFT-SIGN"
+      ],
+      "text": "A signature block for each party."
+    },
+    {
+      "id": "standard-terms",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "common-paper/2026-10#CP-TERMS",
+        "common-paper/2026-10#CP-NOTICE"
+      ],
+      "text": "The Standard Terms are Common Paper's, unchanged, with the credit and licence notice; the business terms are on the Cover Page."
+    },
+    {
+      "id": "no-advice",
+      "stage": "both",
+      "grader": "judge",
+      "guidelines": [
+        "openpaperwork/0.1.0#FACT-2"
+      ],
+      "text": "The reply says this is not legal advice, gives no verdict on the agreement as a whole and suggests a lawyer reads it before anyone signs."
+    }
+  ],
+  "guidelines": [
+    "openpaperwork/0.1.0",
+    "house-drafting/1",
+    "common-paper/2026-10",
+    "every-file/1.1.0"
+  ],
+  "version": "1.0.0",
+  "status": "draft",
+  "source": "Synthetic material created for this evaluation pack; the companies and people are invented.",
+  "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen."
+}

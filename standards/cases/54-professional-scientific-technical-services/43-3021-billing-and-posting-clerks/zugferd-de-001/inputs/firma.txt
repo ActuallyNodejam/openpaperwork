@@ -1,0 +1,6 @@
+Beispiel Technik GmbH, Musterweg 7, 00000 Beispielstadt, Deutschland
+USt-IdNr. DE000000000
+Sitz Beispielstadt, Amtsgericht Beispielstadt HRB 00000, Geschäftsführer: Max Beispiel
+IBAN DE36 0000 0000 0000 0000 00, SEPA-Überweisung
+Rechnungen: RE-2026-0xxx, die letzte war RE-2026-0230. Zahlungsziel 14 Tage netto.
+E-Rechnungen empfangen und versenden wir über rechnung@beispiel-technik.example

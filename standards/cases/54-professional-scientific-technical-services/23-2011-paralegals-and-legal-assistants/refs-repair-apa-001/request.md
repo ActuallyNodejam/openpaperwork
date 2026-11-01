@@ -1,0 +1,1 @@
+Repair report.docx from draft.docx: the citations are numbered and the reference list is inconsistent. Convert the citations to APA 7 author-date form and rebuild the reference list in APA 7 style, alphabetical, with hanging indents.

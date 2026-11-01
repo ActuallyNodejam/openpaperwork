@@ -1,0 +1,40 @@
+{
+  "issuer": "ontario-esa",
+  "version": "2025-07",
+  "link": "https://www.ontario.ca/laws/regulation/r24477",
+  "license": "© King's Printer for Ontario, 2024; statutes and regulations may be reproduced without permission or charge, accurately and with Crown copyright acknowledged; not an official version. Restated in our own words. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-09",
+  "status": "draft",
+  "title": "O. Reg. 285/01 s. 1.2 under the Employment Standards Act, 2000: information for a new employee",
+  "source": "Ontario Regulation 285/01 s. 1.2, added by O. Reg. 477/24 in force 1 July 2025; Employment Standards Act, 2000, S.O. 2000, c. 41, s. 2 (5) and (7). Read on ontario.ca 2026-10-09.",
+  "note": "A drafting check, not legal advice: the scripted rules read whether a particular is there, never whether a term is lawful.",
+  "rules": [
+    {
+      "id": "ON-01",
+      "grader": "script",
+      "text": "The information is given before the first day of work, or as soon after as reasonably possible when that is not practicable.",
+      "source": "s. 1.2 (1)",
+      "check": "employment_check.py EMPLOY-DATES"
+    },
+    {
+      "id": "ON-02",
+      "grader": "script",
+      "text": "The employer's legal name and any operating name; an address, a telephone number and one or more contact names.",
+      "source": "s. 1.2 (2) 1, 2",
+      "check": "employment_check.py EMPLOY-ITEMS"
+    },
+    {
+      "id": "ON-03",
+      "grader": "script",
+      "text": "Where the employee will first work, the starting wage rate, the pay period and pay day, and the expected first hours.",
+      "source": "s. 1.2 (2) 3-6",
+      "check": "employment_check.py EMPLOY-PAY"
+    },
+    {
+      "id": "ON-04",
+      "grader": "judge",
+      "text": "The employee also gets the Ministry's current Employment Standards Act poster within 30 days.",
+      "source": "ESA 2000 s. 2 (5), (7)"
+    }
+  ]
+}

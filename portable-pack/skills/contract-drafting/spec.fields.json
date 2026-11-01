@@ -1,0 +1,24 @@
+{
+ "about": "Every key agreement_create.py reads from an agreement's data file. The builder stops on a key that is not here, on a value of another shape, and on a Cover Page term the chosen standard does not have (skills/_shared/spec_guard.py). What the parties agreed that the standard's Cover Page has no field for goes in modifications, in their own words; a plain agreement (\"clauses\") is the parties' own words throughout.",
+ "open": {"": "modifications"},
+ "hints": {
+  "date": "the agreement's date is \"effective_date\": a date (2026-11-01), or \"last signature\" when it takes effect as the last party signs",
+  "law": "the governing law is \"governing_law\", the parties' own choice: never fill it in; one they did not give goes in \"unknown\"",
+  "jurisdiction": "the courts are \"courts\", the parties' own choice: never fill them in; when they did not say, \"unknown\": [\"courts\"]",
+  "parties.vat_id": "a party is named by name, registration and address: write a VAT number into \"registration\" beside the register number",
+  "parties.company_number": "a party's register number is \"registration\"",
+  "parties.email": "an address for notices is \"notice_address\"",
+  "parties.signatory.role": "the signatory's role is \"title\""
+ },
+ "fields": {
+  "standard": "text", "kind": "text", "title": "text", "copy": "text", "effective_date": "text",
+  "parties": [{"name": "text", "registration": "text", "address": "text", "notice_address": "text", "role": "text",
+               "short": "text", "signatory": {"name": "text", "title": "text"}}],
+  "terms": {"*": "any"},
+  "governing_law": "text", "courts": "text", "unknown": ["text"],
+  "modifications": ["text"],
+  "background": ["text"],
+  "definitions": [{"term": "text", "means": "text"}],
+  "clauses": [{"id": "text", "heading": "text", "text": "text | [text]", "items": "any"}]
+ }
+}

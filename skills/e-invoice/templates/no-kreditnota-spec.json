@@ -1,0 +1,54 @@
+{
+  "number": "K-2026-0031",
+  "issue_date": "2026-10-21",
+  "delivery_date": "2026-10-02",
+  "currency": "NOK",
+  "payment_terms": "Tilbakebetales innen 14 dager",
+  "buyer_reference": "Kari Eksempel",
+  "seller": {
+    "name": "Fjordlys Rådgivning AS",
+    "legal_form": "AS",
+    "street": "Eksempelgata 1",
+    "postcode": "0150",
+    "city": "Oslo",
+    "country": "NO",
+    "org_number": "999 999 999",
+    "vat_id": "NO999999999MVA",
+    "electronic_address": "0192:999999999",
+    "registered_office": "Oslo",
+    "contact": {
+      "name": "Ola Eksempel",
+      "phone": "+47 22 00 00 00",
+      "email": "post@fjordlys.example"
+    }
+  },
+  "buyer": {
+    "name": "Nordkapp Verksted AS",
+    "street": "Prøvevegen 8",
+    "postcode": "9750",
+    "city": "Honningsvåg",
+    "country": "NO",
+    "org_number": "888 888 888",
+    "vat_id": "NO888888888MVA",
+    "electronic_address": "0192:888888888"
+  },
+  "payment": {
+    "means_code": "30",
+    "account": "8601.11.17947",
+    "iban": "NO93 8601 1117 947"
+  },
+  "lines": [
+    {
+      "name": "Kurshefte, trykt, returnert",
+      "quantity": 2,
+      "unit": "C62",
+      "unit_price": 170.1,
+      "vat_rate": 25,
+      "vat_category": "S"
+    }
+  ],
+  "type_code": "381",
+  "preceding_invoice": "2026-0412",
+  "preceding_invoice_date": "2026-10-05",
+  "note": "Kreditering av to kurshefter som ble returnert, faktura 2026-0412."
+}

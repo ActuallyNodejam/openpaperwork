@@ -1,0 +1,109 @@
+{
+  "issuer": "fast-standard",
+  "version": "02c",
+  "link": "https://fast-standard.org/wp-content/uploads/2019/10/FAST-Standard-02c-July-2019.pdf",
+  "license": "CC BY 4.0 (FAST Standard Organisation); the rules are restated in our own words with credit, and the list of universal numbers is ours. Rule wording: Apache-2.0 with this repository.",
+  "date": "2026-10-08",
+  "status": "draft",
+  "title": "The FAST Standard",
+  "source": "FAST Standard Organisation, The FAST Standard: Practical, structured design rules for financial modelling, version 02c, July 2019. The rule numbers are FAST's.",
+  "note": "Scope 'every' applies to any workbook with formulas and the app checks the scripted ones; scope 'financial model' applies to a model.",
+  "rules": [
+    {
+      "id": "FAST-01",
+      "grader": "judge",
+      "scope": "every",
+      "text": "No deliberate circular references.",
+      "source": "1.01-11"
+    },
+    {
+      "id": "FAST-02",
+      "grader": "script",
+      "scope": "every",
+      "text": "The model lives in one workbook, with no links to other workbooks.",
+      "source": "1.03-01, 1.03-02",
+      "check": "sheet_check.py SHEET-LINKS"
+    },
+    {
+      "id": "FAST-04",
+      "grader": "judge",
+      "scope": "financial model",
+      "text": "Inputs, workings, presentation and control are kept on separate sheets.",
+      "source": "1.01-01, 1.02-03"
+    },
+    {
+      "id": "FAST-05",
+      "grader": "judge",
+      "scope": "financial model",
+      "text": "Logic flows left to right across sheets and top to bottom within one.",
+      "source": "1.02-01, 2.01-04, 2.01-05"
+    },
+    {
+      "id": "FAST-08",
+      "grader": "script",
+      "scope": "every",
+      "text": "Nothing is hidden: no hidden rows, columns, sheets or outline groups.",
+      "source": "2.01-08",
+      "check": "sheet_check.py SHEET-HIDDEN"
+    },
+    {
+      "id": "FAST-09",
+      "grader": "judge",
+      "scope": "every",
+      "text": "A formula stays the same along its row unless it is marked as temporary.",
+      "source": "3.02-01"
+    },
+    {
+      "id": "FAST-12",
+      "grader": "judge",
+      "scope": "every",
+      "text": "Formulas are short and never run over several lines.",
+      "source": "3.03-01, 3.03-03"
+    },
+    {
+      "id": "FAST-13",
+      "grader": "judge",
+      "scope": "every",
+      "text": "No nested IF formulas; flags do the work instead.",
+      "source": "3.03-05, 3.03-07"
+    },
+    {
+      "id": "FAST-16",
+      "grader": "script",
+      "scope": "every",
+      "text": "No number is typed into a formula apart from universal ones such as 12 or 1000; an assumption sits in its own labelled cell.",
+      "source": "3.04-01",
+      "check": "sheet_check.py SHEET-HARDCODED"
+    },
+    {
+      "id": "FAST-20",
+      "grader": "judge",
+      "scope": "every",
+      "text": "Every line item has its own label.",
+      "source": "3.05-01, 3.05-03"
+    },
+    {
+      "id": "FAST-21",
+      "grader": "judge",
+      "scope": "every",
+      "text": "Every line item states its unit.",
+      "source": "3.05-04, 3.05-08, 3.05-13"
+    },
+    {
+      "id": "FAST-23",
+      "grader": "script",
+      "scope": "every",
+      "text": "No NPV, OFFSET or INDIRECT.",
+      "source": "4.01-02, 4.01-03",
+      "check": "sheet_check.py SHEET-VOLATILE"
+    },
+    {
+      "id": "FAST-24",
+      "grader": "script",
+      "scope": "every",
+      "text": "No merged cells.",
+      "source": "4.02-02",
+      "check": "sheet_check.py SHEET-MERGED"
+    }
+  ]
+}

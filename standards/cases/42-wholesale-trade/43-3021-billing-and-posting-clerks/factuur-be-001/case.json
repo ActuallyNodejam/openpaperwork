@@ -1,0 +1,251 @@
+{
+ "id": "factuur-be-001",
+ "title": "A Belgian factuur for shipping boxes and printing, as a page and a Peppol file",
+ "person": "The bookkeeper of a small packaging wholesaler in Ghent invoicing a web shop in Leuven.",
+ "format": "pdf",
+ "output": "factuur.pdf",
+ "extra_outputs": [
+  "factuur.xml"
+ ],
+ "locale": "nl-BE",
+ "sector": {
+  "naics": "42",
+  "name": "Wholesale Trade"
+ },
+ "occupation": {
+  "soc": "43-3021.00",
+  "name": "Billing and Posting Clerks"
+ },
+ "review": [
+  "Factuur 2026/0045 van 12/10/2026: 40 × € 18,50 en 1 × € 120,00 aan 21%, € 860,00 excl. btw, btw € 180,60, € 1.040,60 te betalen; ondernemingsnummer 0111.222.376, gestructureerde mededeling +++202/6100/04532+++."
+ ],
+ "revised_review": [
+  "50 pakken: € 1.045,00 excl. btw, btw € 219,45, € 1.264,45 te betalen; verder niets gewijzigd."
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "locale-date",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-DATE",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-DATE"
+   ],
+   "text": "Dates on the page are in the d/MM/yyyy form."
+  },
+  {
+   "id": "locale-number",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-NUMBER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-NUMBER"
+   ],
+   "text": "Amounts use the locale's separators."
+  },
+  {
+   "id": "locale-paper",
+   "stage": "both",
+   "grader": "script",
+   "script": "locale_floor.py",
+   "rule": "LOCALE-PAPER",
+   "guidelines": [
+    "openpaperwork/0.1.0#LOCALE-PAPER"
+   ],
+   "text": "The page is the locale's paper."
+  },
+  {
+   "id": "locale-order",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-LOCALE-ORDER",
+   "guidelines": [
+    "cen-en16931/2017#EINV-LOCALE-ORDER"
+   ],
+   "text": "The page is written in the language of the order itself."
+  },
+  {
+   "id": "page-din5008",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PAGE-DIN5008",
+   "guidelines": [
+    "din-5008/2020#EINV-PAGE-DIN5008"
+   ],
+   "text": "The page is laid out on the seller country's letter layout, or on the library's letter sheet (DIN 5008 Form B) where the library has none for it."
+  },
+  {
+   "id": "vat-label",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-VAT-LABEL",
+   "guidelines": [
+    "cen-en16931/2017#EINV-VAT-LABEL"
+   ],
+   "text": "Every VAT number on the page carries its label."
+  },
+  {
+   "id": "peppol",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PEPPOL",
+   "guidelines": [
+    "peppol-bis-billing/3.0#EINV-PEPPOL"
+   ],
+   "text": "The official Peppol BIS Billing 3.0 rules accept the UBL beside the page; skipped without them."
+  },
+  {
+   "id": "be-invoice",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_country.py",
+   "rule": "BE-INVOICE",
+   "guidelines": [
+    "be-royal-decree-no-1/2026#BE-INVOICE"
+   ],
+   "text": "Enterprise number and VAT number, both parties, the customer's VAT number, unit prices, VAT per rate and the structured communication on the page; the enterprise number under 0208 in the UBL."
+  },
+  {
+   "id": "company-particulars",
+   "stage": "both",
+   "grader": "script",
+   "script": "einvoice_page.py",
+   "rule": "EINV-PARTICULARS",
+   "guidelines": [
+    "invoice-company-particulars/2026-10#EINV-PARTICULARS"
+   ],
+   "text": "The page states what the seller's own company statute puts on an invoice; a particular the files do not give is declared unknown and printed nowhere."
+  },
+  {
+   "id": "only-what-was-done",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "Only the shipping boxes and the one-off printing are invoiced, at the agreed prices; nothing is invented."
+  },
+  {
+   "id": "revision-kept",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-2"
+   ],
+   "text": "The revision changes the number of packs and the totals that follow, and nothing else."
+  }
+ ],
+ "truth": {
+  "number": "2026/0045",
+  "issue_date": "2026-10-12",
+  "due_date": "2026-11-11",
+  "delivery_date": "2026-10-08",
+  "currency": "EUR",
+  "payment_terms": "30 days net",
+  "order_reference": "BST-4471",
+  "buyer_reference": "Lotte Voorbeeld",
+  "seller": {
+   "name": "Proefdruk Verpakkingen BV",
+   "legal_form": "BV",
+   "street": "Voorbeeldlaan 8",
+   "postcode": "9000",
+   "city": "Gent",
+   "country": "BE",
+   "register_number": "0111.222.376",
+   "vat_id": "BE0111222376",
+   "register": "RPR Gent, afdeling Gent",
+   "registered_office": "Gent",
+   "electronic_address": "0208:0111222376",
+   "contact": {
+    "name": "Jonas Proef",
+    "phone": "+32 9 000 00 00",
+    "email": "facturen@proefdruk.example"
+   }
+  },
+  "buyer": {
+   "name": "Voorbeeld Webwinkel Leuven NV",
+   "street": "Proefstraat 12",
+   "postcode": "3000",
+   "city": "Leuven",
+   "country": "BE",
+   "register_number": "0222.333.403",
+   "vat_id": "BE0222333403",
+   "electronic_address": "0208:0222333403"
+  },
+  "payment": {
+   "means_code": "30",
+   "iban": "BE68 5390 0754 7034",
+   "bic": "GKCCBEBB",
+   "reference": "+++202/6100/04532+++"
+  },
+  "doc": "invoice",
+  "type_code": "380",
+  "first": {
+   "lines": [
+    {
+     "name": "Verzenddozen 26 cm, pak van 50",
+     "quantity": 40,
+     "unit": "C62",
+     "unit_price": 18.5,
+     "vat_rate": 21,
+     "vat_category": "S"
+    },
+    {
+     "name": "Bedrukking logo, eenmalig",
+     "quantity": 1,
+     "unit": "C62",
+     "unit_price": 120.0,
+     "vat_rate": 21,
+     "vat_category": "S"
+    }
+   ]
+  },
+  "revision": {
+   "lines": [
+    {
+     "name": "Verzenddozen 26 cm, pak van 50",
+     "quantity": 50,
+     "unit": "C62",
+     "unit_price": 18.5,
+     "vat_rate": 21,
+     "vat_category": "S"
+    },
+    {
+     "name": "Bedrukking logo, eenmalig",
+     "quantity": 1,
+     "unit": "C62",
+     "unit_price": 120.0,
+     "vat_rate": 21,
+     "vat_category": "S"
+    }
+   ]
+  }
+ },
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "cen-en16931/2017",
+  "din-5008/2020",
+  "be-royal-decree-no-1/2026",
+  "peppol-bis-billing/3.0"
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the companies, people, prices and every business, VAT and bank number are invented and obviously fake.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen."
+}

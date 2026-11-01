@@ -1,0 +1,52 @@
+The business deck pack (skills/business-deck, skills/_checks/business_deck.py) restates rules from the
+sources below in our own words. No text, image, palette or code of any of them is copied.
+
+UK Government Analysis Function, "Data visualisation: charts" and "Data visualisation: tables" (guidance)
+https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/
+https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-tables/
+Read 2026-10-10.
+
+Contains public sector information licensed under the Open Government Licence v3.0.
+https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+The site's terms of use (section 6) place its content under the Open Government Licence:
+https://analysisfunction.civilservice.gov.uk/terms-of-use/
+
+Changes: the chart and table rules are restated in our own words in skills/_checks/business_deck.py and
+skills/business-deck/SKILL.md; no text is copied whole and no image is used.
+
+Urban Institute, Data Visualization Style Guide (updated 27 August 2025)
+https://urbaninstitute.github.io/graphics-styleguide/
+Repository https://github.com/UrbanInstitute/graphics-styleguide, licensed under the Apache License,
+Version 2.0 (the repository's LICENSE): http://www.apache.org/licenses/LICENSE-2.0
+Read 2026-10-10.
+
+Changes: the parts a chart needs, direct labels before a legend and the legend's order are restated in
+our own words; no text, palette, template or code is copied.
+
+US federal plain language guidelines, "Add useful headings" (General Services Administration)
+https://github.com/GSA/plainlanguage.gov/blob/main/_pages/guidelines/organize/add-useful-headings.md
+Section508.gov, "Create accessible presentations" and "How to author PowerPoint for accessibility"
+https://www.section508.gov/create/presentations/
+Consumer Financial Protection Bureau, design system, "Data visualization guidelines"
+https://cfpb.github.io/design-system/guidelines/data-visualization-guidelines
+Read 2026-10-10.
+
+Works of the United States Government, in the public domain within the United States; each repository
+(GSA/plainlanguage.gov, GSA/section508.gov, cfpb/design-system) also waives copyright worldwide through
+the CC0 1.0 Universal public domain dedication:
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+W3C, Web Content Accessibility Guidelines (WCAG) 2.2, W3C Recommendation 12 December 2024
+https://www.w3.org/TR/WCAG22/
+Copyright (c) 2024 World Wide Web Consortium. https://www.w3.org/copyright/document-license-2023/
+The pack cites success criteria 1.1.1, 1.4.1, 1.4.3, 1.4.11 and 2.4.2 by number and uses their contrast
+ratios as facts. No text of the Recommendation is reproduced or adapted.
+
+Carbon Design System, data visualization (IBM)
+https://carbondesignsystem.com/data-visualization/chart-anatomy/
+Repository https://github.com/carbon-design-system/carbon-website, licensed under the Apache License,
+Version 2.0. Read 2026-10-10. Only the names of a chart's parts are used.
+
+Followed in our own words only, nothing copied: the International Business Communication Standards
+(IBCS, CC BY-SA 4.0), and the page conventions of published consulting decks, whose measurements are
+facts (page counts, word counts, type sizes, margins).

@@ -1,0 +1,49 @@
+{
+  "note": "What people call each kind of file this plugin's packs make. Built by scripts/build-portable-pack.py from the asks list in each pack's pack.json and the titles the packs' own pages print; change it there, never here. Read by hooks/pack_route.py.",
+  "routes": [
+    {
+      "skill": "academic-references",
+      "checks": true,
+      "kinds": [
+        {
+          "id": "references",
+          "kind": "a reference list or citations in APA, IEEE or Vancouver style",
+          "words": {
+            "en": [
+              "reference list",
+              "bibliography",
+              "citations",
+              "apa 7",
+              "apa style",
+              "vancouver style",
+              "works cited"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "skill": "paper",
+      "checks": true,
+      "kinds": [
+        {
+          "id": "paper",
+          "kind": "a research paper in a publisher's layout",
+          "words": {
+            "en": [
+              "research paper",
+              "conference paper",
+              "journal paper",
+              "ieee paper",
+              "acm paper",
+              "preprint",
+              "manuscript",
+              "journal submission",
+              "conference submission"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

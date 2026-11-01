@@ -1,0 +1,175 @@
+{
+ "id": "hand-hygiene-essay-vancouver-001",
+ "title": "Reference a nursing student's essay in Vancouver with superscript numbers",
+ "person": "A second-year student nurse finishing a 1,500-word essay for a module whose handbook asks for Vancouver.",
+ "format": "docx",
+ "output": "essay.docx",
+ "locale": "en",
+ "sector": {
+  "naics": "61",
+  "name": "Educational Services"
+ },
+ "occupation": {
+  "soc": "29-1141.00",
+  "name": "Registered Nurses"
+ },
+ "review": [
+  "The essay keeps the student's wording, replaces each (name, year) note with a superscript number in order of first mention, gives the eight-author Kowalczyk-Ames trial its first six authors then et al., lists the invented Example Infection Network guidance page with [Internet], updated and cited dates and its URL, and cites Danforth twice under the one number."
+ ],
+ "revised_review": [
+  "The Halvorsen 2019 book is gone from the text and the list, the sentence that cited it still reads as a whole sentence, the numbers after it move up by one, and nothing else changed."
+ ],
+ "version": "1.0.0",
+ "status": "draft",
+ "source": "Synthetic material created for this evaluation pack; the authors, journals, organisations, DOIs (Crossref test prefix 10.5555) and web addresses (example.org) are invented, and no real study is presented as genuine.",
+ "stage_policy": "Separate first and revision directories; reveal revision only after first output is frozen.",
+ "guidelines": [
+  "openpaperwork/0.1.0",
+  "nlm-citing-medicine/2",
+  "icmje/2026-01",
+  "every-file/1.1.0"
+ ],
+ "criteria": [
+  {
+   "id": "mechanical",
+   "stage": "both",
+   "grader": "check",
+   "guidelines": [
+    "openpaperwork/0.1.0#FMT-1",
+    "openpaperwork/0.1.0#REV-3"
+   ],
+   "text": "Every mechanical check in run.py passes for this stage."
+  },
+  {
+   "id": "order",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "VANC-ORDER",
+   "guidelines": [
+    "nlm-citing-medicine/2#CM-01",
+    "icmje/2026-01#ICMJE-01"
+   ],
+   "text": "Sources are numbered in the order the text first cites them."
+  },
+  {
+   "id": "marks",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "VANC-MARKS",
+   "guidelines": [
+    "icmje/2026-01#ICMJE-02"
+   ],
+   "text": "One in-text number form throughout."
+  },
+  {
+   "id": "list",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "VANC-LIST",
+   "guidelines": [
+    "nlm-citing-medicine/2#CM-02"
+   ],
+   "text": "The list runs 1 to n in number order, one entry per number."
+  },
+  {
+   "id": "cited",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "VANC-CITED",
+   "guidelines": [
+    "nlm-citing-medicine/2#CM-03"
+   ],
+   "text": "Every entry is cited and every cited number is listed."
+  },
+  {
+   "id": "once",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "VANC-ONCE",
+   "guidelines": [
+    "nlm-citing-medicine/2#CM-04"
+   ],
+   "text": "A source cited again keeps its first number and is listed once."
+  },
+  {
+   "id": "authors",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "VANC-AUTHORS",
+   "guidelines": [
+    "nlm-citing-medicine/2#CM-05",
+    "nlm-citing-medicine/2#CM-06"
+   ],
+   "text": "Authors as Surname and initials without full stops, six then et al."
+  },
+  {
+   "id": "journal",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "VANC-JOURNAL",
+   "guidelines": [
+    "nlm-citing-medicine/2#CM-07",
+    "icmje/2026-01#ICMJE-03"
+   ],
+   "text": "Abbreviated journal titles carry no full stops."
+  },
+  {
+   "id": "date",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "VANC-DATE",
+   "guidelines": [
+    "nlm-citing-medicine/2#CM-08"
+   ],
+   "text": "Journal entries read year;volume(issue):pages."
+  },
+  {
+   "id": "online",
+   "stage": "both",
+   "grader": "script",
+   "script": "academic_style.py",
+   "rule": "VANC-ONLINE",
+   "guidelines": [
+    "nlm-citing-medicine/2#CM-09"
+   ],
+   "text": "Online sources give [Internet], the date cited and Available from: with the URL."
+  },
+  {
+   "id": "wording-kept",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#FACT-1"
+   ],
+   "text": "Apart from the citation marks, the student's sentences are unchanged."
+  },
+  {
+   "id": "nothing-guessed",
+   "stage": "both",
+   "grader": "judge",
+   "guidelines": [
+    "nlm-citing-medicine/2#CM-13",
+    "openpaperwork/0.1.0#FACT-2"
+   ],
+   "text": "No issue, page or DOI is added that the sources list does not give."
+  },
+  {
+   "id": "revised",
+   "stage": "revision",
+   "grader": "judge",
+   "guidelines": [
+    "openpaperwork/0.1.0#REV-1",
+    "openpaperwork/0.1.0#REV-2"
+   ],
+   "text": "The Halvorsen book is gone, the sentence still reads, the later numbers move up; nothing else changed."
+  }
+ ]
+}

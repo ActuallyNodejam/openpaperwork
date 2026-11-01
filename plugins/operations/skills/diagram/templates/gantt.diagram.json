@@ -1,0 +1,17 @@
+{
+  "type": "gantt",
+  "title": "Website relaunch plan",
+  "eyebrow": "Project phases",
+  "description": "Four phases from research in January to launch in June, with build and content running side by side.",
+  "language": "en",
+  "tasks": [
+    {"phase": "Research", "name": "Interviews", "start": "2026-01-05", "end": "2026-01-30"},
+    {"phase": "Research", "name": "Findings", "start": "2026-02-02", "end": "2026-02-13"},
+    {"phase": "Design", "name": "Page designs", "start": "2026-02-16", "end": "2026-03-27"},
+    {"phase": "Build", "name": "Build pages", "start": "2026-03-30", "end": "2026-05-22", "focal": true},
+    {"phase": "Build", "name": "Write content", "start": "2026-04-06", "end": "2026-05-15"},
+    {"phase": "Launch", "name": "Test and fix", "start": "2026-05-25", "end": "2026-06-05"}
+  ],
+  "markers": [{"date": "2026-06-08", "name": "Launch"}],
+  "source": "Project plan, March"
+}
