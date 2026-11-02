@@ -1,0 +1,11 @@
+OpenPaperwork
+Copyright 2026 Nodejam AB
+
+Licensed under the Apache License, Version 2.0 (LICENSE). The OpenPaperwork and Nodejam names and
+marks are not licensed with it; see TRADEMARKS.md.
+
+This repository also carries code and text from other projects under their own licences. Each is
+listed in THIRD_PARTY.md with its full notice under licenses/. Among them: skills/docx, skills/pdf,
+skills/powerpoint and skills/xlsx (Nous Research) and skills/diagram (Cathryn Lavery) keep their MIT
+licences in their own LICENSE files, and the pull-request workflows .github/workflows/pr-standards.yml
+and close-waiting.yml began as OpenCode's (MIT, Copyright (c) 2025 opencode; licenses/opencode-mit.txt).
