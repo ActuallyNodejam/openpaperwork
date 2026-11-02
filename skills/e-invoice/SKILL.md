@@ -65,6 +65,14 @@ BIS Billing validates against it.
   and mid-size companies must issue them; small companies and
   micro-entreprises issue them from 1 September 2027 (impots.gouv.fr, "À
   partir de quand suis-je concerné", updated 16/01/2026).
+- A German company invoices another business in Germany. The invoice must be an
+  e-invoice, a structured file to EN 16931 (UStG § 14 Abs. 1 Satz 3 and 6, Abs. 2
+  Satz 2 Nr. 1), and the buyer's consent is not needed to send one. Paper or another
+  format is still allowed for a supply up to 31 December 2026, and for a supply in
+  2027 only when the issuer's total turnover the year before was at most 800,000
+  euros (an EDI invoice also stays allowed in 2027 with the buyer's consent); the transition ends on
+  31 December 2027 (UStG § 27 Abs. 38, gesetze-im-internet.de, read 2026-11-02). This
+  pack's CII file at the EN 16931 level is that format. Give no other date for it.
 - A customer or a public body only accepts invoices as XML.
 - A credit note (Gutschrift, kreditfaktura) against an invoice already sent,
   as XML and a page; XRechnung when a German public buyer asks for it.
