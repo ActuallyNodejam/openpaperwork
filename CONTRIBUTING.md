@@ -1,34 +1,43 @@
-# Help someone finish their work
+# Contributing to OpenPaperwork
 
-You do not need to change the agent engine to contribute. A clearer example,
-a better document check, a translation, or a reproducible bug can be valuable.
+You do not need to touch any agent to contribute. A standard your country or field uses, a sharper
+check, a clearer guideline, a translation or a reproducible bug are all worth bringing.
+
+## The most useful thing: a standard you know
+
+Know your country's invoice, your university's thesis format or a citation style well? Open an
+[Add a standard](https://github.com/ActuallyNodejam/openpaperwork/issues/new?template=add-a-standard.yml)
+issue with the source first, so two people do not build the same one, then follow
+[Add a standard](docs/community-preview/ADD_A_STANDARD.md). Issues labelled `standard` and
+`good first issue` are ones we have scoped already.
 
 ## Begin with a person's task
 
-Every user-facing change should tell this short story:
+Every change to what a file looks like or says should tell this short story:
 
 1. What did the person ask, in their own words?
 2. Which public-safe files did they start with?
 3. What should they receive, and how can we check it?
 4. What happened before and after the change?
-5. What setup, interruption or manual correction is still necessary?
+5. What still needs a person to fix by hand?
 
-“The agent supports tool X” does not finish that story. “A purchasing assistant
-can correct a delivery date without rebuilding the comparison” does.
-Use invented data or material you have permission to redistribute.
+"The pack supports format X" does not finish that story. "A seller in Germany gets an invoice
+KoSIT accepts without retyping the buyer's routing ID" does. Use invented data or material you
+have permission to redistribute.
 
 ## A small first change
 
-Pick one [contribution idea](docs/community-preview/FIRST_CONTRIBUTIONS.md).
-For a defect, include the smallest reproducible request and input. For a new
-workflow or a large product change, agree the intended behavior in an issue
-before building it. Keep one purpose per pull request.
+Pick one [contribution idea](docs/community-preview/FIRST_CONTRIBUTIONS.md). For a defect, include
+the smallest request and input that shows it. For a new pack or a large change, agree the
+behaviour in an issue before building it. Keep one purpose per pull request.
 
-The process is straightforward. Forking creates your own copy
-on GitHub. A branch isolates a change. A pull request asks the maintainers to
-review that change; it does not publish or deploy it. Automated checks and
-agent-assisted review provide evidence. A maintainer reviews the evidence and
-approves the merge. Contributors are credited in release notes.
+## How a change reaches main
+
+Fork the repository, make a branch, and open a pull request. CI runs the library's tests and every
+check against its planted faults; no secret and no model is used. A maintainer reviews and
+approves it. The maintainers keep this repository in step with their own tree, so an approved
+pull request is brought in from there with your commits and your name
+kept, and GitHub then shows it merged. Contributors are credited in the release notes.
 
 ## Show evidence
 
@@ -41,8 +50,6 @@ The [file-task protocol](standards/README.md) separates mechanical checks
 from factual and visual review. Passing one does not imply passing the others.
 Do not give an agent the expected answers when you run a case. No real customer
 files, private logs, credentials or paid services are required for these examples.
-
-Paid model runs require a separately approved budget.
 
 ## Sign off your commits
 

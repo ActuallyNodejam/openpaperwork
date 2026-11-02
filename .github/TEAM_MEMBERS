@@ -1,1 +1,3 @@
-# Release rehearsal; no upstream automation or maintainer identities.
+# Maintainers: exempt from the template helpers and the waiting close.
+matt-nodejam
+erik-nodejam

@@ -1,6 +1,7 @@
 # Small contributions with a clear purpose
 
-Draft issue candidates; no public issues have been opened.
+Ideas for a first change. Scoped ones are open as issues labelled `good first issue`, and new
+standards as `standard`.
 
 | Task | Contribution | What would demonstrate improvement |
 | --- | --- | --- |
